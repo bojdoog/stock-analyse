@@ -1,0 +1,7 @@
+2026-08-03 08:01:08,106 [ERROR] fetch_moneyflow_cnt_ths.py:288 获取 20250624~20250630 概念资金流向失败: HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.
+2026-08-03 08:01:08,107 [ERROR] fetch_moneyflow_cnt_ths.py:481 20250624~20250630 拉取失败: HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.
+2026-08-03 08:01:45,861 [ERROR] fetch_moneyflow_cnt_ths.py:288 获取 20251104~20251110 概念资金流向失败: HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.
+2026-08-03 08:01:45,861 [ERROR] fetch_moneyflow_cnt_ths.py:481 20251104~20251110 拉取失败: HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.
+2026-08-03 08:02:20,738 [ERROR] fetch_moneyflow_cnt_ths.py:288 获取 20260127~20260202 概念资金流向失败: HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.
+2026-08-03 08:02:20,739 [ERROR] fetch_moneyflow_cnt_ths.py:481 20260127~20260202 拉取失败: HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.
+2026-08-03 08:02:33,687 [INFO] fetch_moneyflow_cnt_ths.py:385 已更新 C:\_allCode\stock_analyse\data\moneyflow_cnt_ths\index.json（469 个文件）
