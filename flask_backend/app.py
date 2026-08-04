@@ -1,6 +1,10 @@
 import os
 import sys
 import threading
+import datetime
+import json
+import urllib.request
+
 from flask import Flask, send_from_directory, send_file, abort, jsonify, request
 from flask_cors import CORS
 
@@ -9,6 +13,54 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from config import Config
 from routes.api import api_bp
+
+# ---------- 访问日志 ----------
+LOG_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'logs')
+os.makedirs(LOG_DIR, exist_ok=True)
+
+# IP地理位置缓存
+_ip_location_cache = {}
+
+def _get_real_ip():
+    """获取真实客户端IP（处理nginx反向代理）"""
+    xff = request.headers.get('X-Forwarded-For')
+    if xff:
+        return xff.split(',')[0].strip()
+    xri = request.headers.get('X-Real-IP')
+    if xri:
+        return xri.strip()
+    return request.remote_addr or '-'
+
+def _get_ip_location(ip):
+    """查询IP归属地（带缓存）"""
+    if ip in _ip_location_cache:
+        return _ip_location_cache[ip]
+    if ip in ('127.0.0.1', '::1', 'localhost'):
+        _ip_location_cache[ip] = '本地'
+        return '本地'
+    try:
+        url = f'http://ip-api.com/json/{ip}?lang=zh-CN&fields=city,isp,country'
+        with urllib.request.urlopen(url, timeout=3) as resp:
+            data = json.loads(resp.read().decode())
+            if data.get('status') == 'success':
+                parts = [data.get('country', ''), data.get('city', ''), data.get('isp', '')]
+                loc = ' '.join(p for p in parts if p)
+                _ip_location_cache[ip] = loc or '未知'
+                return _ip_location_cache[ip]
+    except Exception:
+        pass
+    _ip_location_cache[ip] = '-'
+    return '-'
+
+def _write_access_log(line: str):
+    """写入访问日志文件"""
+    log_file = os.path.join(LOG_DIR, 'user_login.log')
+    try:
+        with open(log_file, 'a', encoding='utf-8') as f:
+            f.write(line + '\n')
+    except Exception:
+        pass  # 写入失败不影响主流程
+# ----------------------------
 
 
 def create_app(config_class=Config):
@@ -23,6 +75,20 @@ def create_app(config_class=Config):
         r'/api/*': {'origins': config_class.CORS_ORIGINS},
         r'/data/*': {'origins': config_class.CORS_ORIGINS},
     })
+    
+    # 请求访问日志
+    @app.before_request
+    def log_request():
+        # 只记录页面访问，不记录API接口请求
+        if request.path.startswith('/api/'):
+            return
+        now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        ip = _get_real_ip()
+        location = _get_ip_location(ip)
+        ua = (request.headers.get('User-Agent', '-')[:60])
+        line = f'[ACCESS] {now} | {ip} | {location} | {ua}'
+        print(line)
+        _write_access_log(line)
     
     # 注册 API 蓝图
     app.register_blueprint(api_bp)
