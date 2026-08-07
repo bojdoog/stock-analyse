@@ -1,0 +1,8 @@
+2026-08-01 17:04:10,556 [INFO] fetch_kline.py:158 从 C:\_allCode\stock-line\stocklist.csv 读取到 3082 只股票（排除板块：bj,gem,star）
+2026-08-01 17:04:10,556 [INFO] fetch_kline.py:245 开始抓取 3082 支股票 | 数据源:Tushare(日线,qfq) | 日期:20230101 → 20260801 | 排除:bj,gem,star
+2026-08-01 17:26:13,172 [INFO] fetch_kline.py:259 全部任务完成，数据已保存至 C:\_allCode\stock-line\public\data\stock
+2026-08-01 17:27:51,060 [INFO] fetch_kline.py:158 从 C:\_allCode\stock-line\stocklist.csv 读取到 5113 只股票（排除板块：bj,gem,star）
+2026-08-01 17:27:51,061 [INFO] fetch_kline.py:245 开始抓取 5113 支股票 | 数据源:Tushare(日线,qfq) | 日期:20230101 → 20260801 | 排除:bj,gem,star
+2026-08-01 17:55:56,498 [INFO] fetch_kline.py:259 全部任务完成，数据已保存至 C:\_allCode\stock-line\public\data\stock
+2026-08-01 18:34:23,148 [INFO] fetch_kline.py:158 从 C:\_allCode\stock-line\stocklist.csv 读取到 5113 只股票（排除板块：bj,gem,star）
+2026-08-01 18:34:23,149 [INFO] fetch_kline.py:245 开始抓取 5113 支股票 | 数据源:Tushare(日线,qfq) | 日期:20230101 → 20260801 | 排除:bj,gem,star
