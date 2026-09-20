@@ -8,11 +8,16 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "back_test_data" / "amv_research"))
+
 from formula import BASE, OUTPUT_FILE, calculate, build_daily_bars
 
 sys.path.insert(0, str(BASE))
 sys.path.insert(0, str(BASE.parent / 'flask_backend'))
-from download_amv_research import query, redact
+try:
+    from .download_amv_research import query, redact
+except ImportError:
+    from download_amv_research import query, redact
 from market_store import connect, file_content, save_dataframe
 from research_storage import archive_file, read_file
 

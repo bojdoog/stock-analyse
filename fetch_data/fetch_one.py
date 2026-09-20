@@ -6,9 +6,9 @@
 - 保存到 ../public/data/stock/{code}.csv
 
 用法：
-  python tools/fetch_one.py                  # 抓取 000001
-  python tools/fetch_one.py 600519           # 抓取贵州茅台
-  python tools/fetch_one.py 000001 20250101  # 抓取 000001 从2025-01-01开始
+  python fetch_data/fetch_one.py                  # 抓取 000001
+  python fetch_data/fetch_one.py 600519           # 抓取贵州茅台
+  python fetch_data/fetch_one.py 000001 20250101  # 抓取 000001 从2025-01-01开始
 """
 import datetime as dt
 import os
@@ -27,7 +27,7 @@ import tushare as ts
 # ---------- 配置 ----------
 TOKEN = "eb0e5fcfd014dfb595b4ca773f42d29570a3fb06edcca84fe19830db"
 START_DEFAULT = "20130104"
-DATA_DIR = Path(__file__).resolve().parent.parent.parent.parent / "data" / "stock"
+DATA_DIR = Path(__file__).resolve().parents[1] / "data" / "stock"
 
 
 def to_ts_code(code: str) -> str:

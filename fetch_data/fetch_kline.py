@@ -4,9 +4,9 @@
 - 保存到 ../public/data/stock/{code}.csv
 
 用法：
-  python tools/fetch_kline.py
-  python tools/fetch_kline.py --start 20250101 --end today
-  python tools/fetch_kline.py --stocklist ./stocklist.csv --workers 8
+  python fetch_data/fetch_kline.py
+  python fetch_data/fetch_kline.py --start 20250101 --end today
+  python fetch_data/fetch_kline.py --stocklist ./stocklist.csv --workers 8
 """
 from __future__ import annotations
 
@@ -191,7 +191,7 @@ def fetch_one(
                 silent_seconds = 15 * attempt
                 time.sleep(silent_seconds)
     else:
-        logger.error("%s 十次抓取均失败，已跳过！", code)
+        raise RuntimeError(f"{code} 九次抓取均失败")
 
 
 # --------------------------- 主入口 --------------------------- #
@@ -216,7 +216,7 @@ def main():
     )
     parser.add_argument(
         "--out",
-        default=Path(__file__).resolve().parent.parent.parent.parent / "data" / "stock",
+        default=Path(__file__).resolve().parents[1] / "data" / "stock",
         help="输出目录",
     )
     parser.add_argument("--workers", type=int, default=6, help="并发线程数")
@@ -253,13 +253,22 @@ def main():
     )
 
     # ---------- 多线程抓取（全量覆盖） ---------- #
+    failures = 0
     with ThreadPoolExecutor(max_workers=args.workers) as executor:
         futures = [
             executor.submit(fetch_one, code, start, end, out_dir)
             for code in codes
         ]
-        for _ in tqdm(as_completed(futures), total=len(futures), desc="下载进度"):
-            pass
+        for future in tqdm(as_completed(futures), total=len(futures), desc="下载进度"):
+            try:
+                future.result()
+            except Exception as exc:
+                failures += 1
+                logger.error("股票下载失败: %s", exc)
+
+    if failures:
+        logger.error("%d 支股票下载失败", failures)
+        sys.exit(1)
 
     logger.info("全部任务完成，数据已保存至 %s", out_dir.resolve())
 

@@ -24,10 +24,10 @@ public/data/
 | `src/pages/ActiveMarket/utils/backtest.ts` | **核心回测逻辑**（多头区间识别、排名、收益计算） |
 | `src/pages/ActiveMarket/components/KLineChart.tsx` | K线图组件（支持多图联动） |
 | `src/pages/ActiveMarket/components/BacktestChart.tsx` | 回测结果展示 |
-| `tools/fetch_moneyflow_ind_dc.py` | 东财行业资金流向拉取 |
-| `tools/fetch_moneyflow_cnt_ths.py` | 同花顺概念资金流向拉取 |
-| `tools/fetch_moneyflow_ind_ths.py` | 同花顺行业资金流向拉取 |
-| `tools/run_all_fetch.py` | 一键批量拉取所有数据 |
+| `../fetch_data/fetch_moneyflow_ind_dc.py` | 东财行业资金流向拉取 |
+| `../fetch_data/fetch_moneyflow_cnt_ths.py` | 同花顺概念资金流向拉取 |
+| `../fetch_data/fetch_moneyflow_ind_ths.py` | 同花顺行业资金流向拉取 |
+| `../fetch_data/run_all_fetch.py` | 一键批量拉取所有数据 |
 
 ## 排名方式（4种）
 1. `etf_gain` - ETF涨幅排名（启动日涨幅）
@@ -158,7 +158,7 @@ npm install
 npm run dev
 
 # 拉取数据
-python tools/run_all_fetch.py
+python ../fetch_data/run_all_fetch.py
 
 # 构建
 npm run build

@@ -6,6 +6,7 @@ No credential is stored in the output. Successful requests are cached for resume
 from __future__ import annotations
 
 import csv
+import argparse
 import datetime as dt
 import hashlib
 import json
@@ -17,15 +18,15 @@ import time
 
 import requests
 
-ROOT = Path(__file__).resolve().parent
-PROJECT = ROOT.parent
+PROJECT = Path(__file__).resolve().parents[1]
+ROOT = PROJECT / "back_test_data"
 START = '20240910'
-END = '20260911'
+END = dt.date.today().strftime('%Y%m%d')
 MANIFEST: list[dict] = []
 FAILURES: list[dict] = []
 TOKEN = os.environ.get('TUSHARE_TOKEN', '')
 if not TOKEN:
-    config = (PROJECT / 'flask_backend/utils/fetch_data/fetch_etf.py').read_text(encoding='utf-8-sig')
+    config = (PROJECT / 'fetch_data/fetch_etf.py').read_text(encoding='utf-8-sig')
     match = re.search(r'TOKEN\s*=\s*"([^\"]+)"', config)
     if not match:
         raise RuntimeError('Set TUSHARE_TOKEN to use the MCP endpoint')
@@ -108,7 +109,10 @@ def query(tool: str, arguments: dict, key: str):
     cached_content = read_file(cache)
     if cached_content is not None:
         saved = json.loads(cached_content)
-        if saved.get('request') == signature:
+        # Today's observations may still change; do not reuse an intraday snapshot.
+        current_day = dt.date.today().strftime('%Y%m%d')
+        request_end = arguments.get('end_date', arguments.get('trade_date'))
+        if saved.get('request') == signature and request_end is not None and str(request_end) < current_day:
             cache.parent.mkdir(parents=True, exist_ok=True)
             cache.write_bytes(cached_content)
             archive_output(cache)
@@ -188,7 +192,22 @@ def audit_table(name, rows, expected, date_field='trade_date', key_fields=None):
     return result
 
 
-def main():
+def main(argv=None):
+    global START, END
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--start', default='20240910', help='Start date, YYYYMMDD')
+    parser.add_argument('--end', default=dt.date.today().strftime('%Y%m%d'), help='End date, YYYYMMDD (default: today)')
+    args = parser.parse_args(argv)
+    try:
+        start = dt.datetime.strptime(args.start, '%Y%m%d').date()
+        end = dt.datetime.strptime(args.end, '%Y%m%d').date()
+    except ValueError:
+        parser.error('Dates must be valid YYYYMMDD dates')
+    if start > end:
+        parser.error('--start must not be after --end')
+    START, END = start.strftime('%Y%m%d'), end.strftime('%Y%m%d')
+    MANIFEST.clear()
+    FAILURES.clear()
     print(f'AMV research download: {START} to {END}', flush=True)
     metadata = ROOT / 'metadata'
     metadata.mkdir(parents=True, exist_ok=True)
@@ -347,12 +366,13 @@ def main():
     for name, result in quality['datasets'].items():
         lines.append(f'- {name}: {result["rows"]} 行，{result["dates"]} 个日期，缺 {len(result["missing_dates"])} 个交易日。')
     lines += ['', f'全零行业资金日：{quality["all_zero_flow_dates"]}', f'失败请求：{len(FAILURES)}', '',
-              '重复运行 python back_test_data/download_amv_research.py 可复用成功请求缓存并重试失败部分。']
+              '重复运行 python fetch_data/download_amv_research.py 可复用成功请求缓存并重试失败部分。']
     (ROOT / 'README.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
     print(json.dumps({'complete': not FAILURES, 'industry_codes': len(codes), 'expected_days': len(expected),
           'datasets': {k: {'rows': v['rows'], 'missing_days': len(v['missing_dates'])} for k, v in quality['datasets'].items()},
           'zero_flow_days': quality['all_zero_flow_dates'], 'failures': FAILURES}, ensure_ascii=False), flush=True)
+    return 1 if FAILURES else 0
 
 
 if __name__ == '__main__':
-    main()
+    raise SystemExit(main())

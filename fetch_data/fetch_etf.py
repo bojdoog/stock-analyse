@@ -7,9 +7,9 @@
 - 保存到 ../public/data/etf/{板块}_{简称}_{code}.csv
 
 用法：
-  python tools/fetch_etf.py                          # 抓取所有板块
-  python tools/fetch_etf.py 白酒 半导体              # 只抓取指定板块
-  python tools/fetch_etf.py --list                   # 列出可抓取的板块
+  python fetch_data/fetch_etf.py                          # 抓取所有板块
+  python fetch_data/fetch_etf.py 白酒 半导体              # 只抓取指定板块
+  python fetch_data/fetch_etf.py --list                   # 列出可抓取的板块
 """
 import datetime as dt
 import os
@@ -28,7 +28,7 @@ import tushare as ts
 # ---------- 配置 ----------
 TOKEN = "eb0e5fcfd014dfb595b4ca773f42d29570a3fb06edcca84fe19830db"
 START_DEFAULT = "20130104"
-DATA_DIR = Path(__file__).resolve().parents[2] / "data" / "etf"
+DATA_DIR = Path(__file__).resolve().parents[1] / "data" / "etf"
 
 # ---------- 板块 → 经典ETF代码（按成交活跃度、规模优选） ----------
 # 格式: (ts_code, 简称)

@@ -7,9 +7,9 @@
 - 保存到 ../public/data/index/{指数代码}.csv
 
 用法：
-  python tools/fetch_index.py                    # 抓取默认指数
-  python tools/fetch_index.py 000001 399006      # 抓取指定指数代码
-  python tools/fetch_index.py --list             # 列出常见指数代码
+  python fetch_data/fetch_index.py                    # 抓取默认指数
+  python fetch_data/fetch_index.py 000001 399006      # 抓取指定指数代码
+  python fetch_data/fetch_index.py --list             # 列出常见指数代码
 """
 import datetime as dt
 import os
@@ -28,7 +28,7 @@ import tushare as ts
 # ---------- 配置 ----------
 TOKEN = "eb0e5fcfd014dfb595b4ca773f42d29570a3fb06edcca84fe19830db"
 START_DEFAULT = "20130104"
-DATA_DIR = Path(__file__).resolve().parents[2] / "data" / "index"
+DATA_DIR = Path(__file__).resolve().parents[1] / "data" / "index"
 
 # ---------- 常见指数代码 ----------
 COMMON_INDEXES = {

@@ -138,7 +138,7 @@ class MarketStorageTest(unittest.TestCase):
         # Execute actual save functions with fixture data, without importing network clients or fetching.
         project = Path(__file__).resolve().parents[2]
         frame = pd.DataFrame([{'date': '20260912', 'industry_name': 'fixture', 'net_inflow': 1.25}])
-        for folder in ('flask_backend/utils/fetch_data', 'stock-line/tools'):
+        for folder in ('fetch_data',):
             for kind in ('ind_dc', 'ind_ths', 'cnt_ths'):
                 script = project / folder / f'fetch_moneyflow_{kind}.py'
                 tree = ast.parse(script.read_text(encoding='utf-8-sig'))

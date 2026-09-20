@@ -30,8 +30,8 @@
 
 抓取脚本：
 
-- ETF：`tools/fetch_etf.py`
-- 指数：`tools/fetch_index.py`
+- ETF：`../fetch_data/fetch_etf.py`
+- 指数：`../fetch_data/fetch_index.py`
 
 ---
 
@@ -177,8 +177,8 @@ nav_after_trade = nav_before_trade * (1 + trade_return)
 | 主页面     | `src/pages/ActiveMarket/index.tsx`                 |
 | K 线图组件 | `src/pages/ActiveMarket/components/KLineChart.tsx` |
 | 回测逻辑   | `src/pages/ActiveMarket/utils/backtest.ts`         |
-| ETF 抓取   | `tools/fetch_etf.py`                               |
-| 指数抓取   | `tools/fetch_index.py`                             |
+| ETF 抓取   | `../fetch_data/fetch_etf.py`                               |
+| 指数抓取   | `../fetch_data/fetch_index.py`                             |
 | 策略文档   | `docs/strategy.md`                                 |
 
 ---

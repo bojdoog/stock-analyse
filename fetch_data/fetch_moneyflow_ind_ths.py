@@ -5,9 +5,9 @@
 保存到 ../public/data/moneyflow_ind_ths/{date}.csv
 
 用法：
-  python tools/fetch_moneyflow_ind_ths.py
-  python tools/fetch_moneyflow_ind_ths.py --start 20230912 --end 20260731
-  python tools/fetch_moneyflow_ind_ths.py --date 20240927
+  python fetch_data/fetch_moneyflow_ind_ths.py
+  python fetch_data/fetch_moneyflow_ind_ths.py --start 20230912 --end 20260731
+  python fetch_data/fetch_moneyflow_ind_ths.py --date 20240927
 """
 from __future__ import annotations
 
@@ -371,7 +371,7 @@ def main():
     parser.add_argument("--end", help="结束日期 YYYYMMDD")
     parser.add_argument(
         "--out",
-        default=Path(__file__).resolve().parent.parent.parent.parent / "data" / "moneyflow_ind_ths",
+        default=Path(__file__).resolve().parents[1] / "data" / "moneyflow_ind_ths",
         help="输出目录",
     )
     parser.add_argument(

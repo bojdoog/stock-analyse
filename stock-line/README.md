@@ -36,14 +36,14 @@ pnpm build
 
 ```bash
 # 统一拉取所有数据
-python tools/run_all_fetch.py
+python ../fetch_data/run_all_fetch.py
 
 # 单独拉取
-python tools/fetch_etf.py                    # ETF 行情
-python tools/fetch_index.py                  # 指数行情
-python tools/fetch_moneyflow_ind_dc.py       # 东财行业资金流向
-python tools/fetch_moneyflow_cnt_ths.py      # 同花顺概念资金流向
-python tools/fetch_moneyflow_ind_ths.py      # 同花顺行业资金流向
+python ../fetch_data/fetch_etf.py                    # ETF 行情
+python ../fetch_data/fetch_index.py                  # 指数行情
+python ../fetch_data/fetch_moneyflow_ind_dc.py       # 东财行业资金流向
+python ../fetch_data/fetch_moneyflow_cnt_ths.py      # 同花顺概念资金流向
+python ../fetch_data/fetch_moneyflow_ind_ths.py      # 同花顺行业资金流向
 ```
 
 ## 数据存储

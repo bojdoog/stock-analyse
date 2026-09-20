@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-统一执行所有 fetch 脚本（除 fetch_kline.py 外）
+统一拉取行情、股票池日线、资金流向和活跃市值推导原始数据。
 
 资金流向脚本默认拉取全量数据：
   - 东财板块: 2023-09-12 ~ 今天
@@ -29,6 +29,8 @@ SCRIPTS: list[tuple[str, list[str]]] = [
     ("fetch_moneyflow_cnt_ths.py", ["--start", MONEYFLOW_START["fetch_moneyflow_cnt_ths.py"], "--end", today]),
     ("fetch_moneyflow_ind_dc.py", ["--start", MONEYFLOW_START["fetch_moneyflow_ind_dc.py"], "--end", today]),
     ("fetch_moneyflow_ind_ths.py", ["--start", MONEYFLOW_START["fetch_moneyflow_ind_ths.py"], "--end", today]),
+    ("download_amv_research.py", ["--start", "20240910", "--end", today]),
+    ("fetch_kline.py", ["--start", "20130104", "--end", today, "--exclude-boards"]),
 ]
 
 

@@ -3,7 +3,7 @@ import io
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "flask_backend"))
 from market_store import file_content, initialize, list_files, refresh_index, save_dataframe
 
 

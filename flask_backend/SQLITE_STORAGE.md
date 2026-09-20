@@ -52,7 +52,7 @@ python flask_backend/migrate_market_data.py --verify-only --report flask_backend
 ## 后续更新
 
 - 现有 `fetch-data.ps1`、`run_all_fetch.py` 和各单独抓取脚本仍可使用。
-- 两套入口（`flask_backend/utils/fetch_data` 和 `stock-line/tools`）均接入共用 SQLite 写入层。
+- 统一入口 `fetch_data/` 接入共用 SQLite 写入层。
 - 日线抓取按日期合并：保留旧历史，同日新数据覆盖旧值；空抓取不删除历史。
 - 资金流向按日快照更新；缺失日期检查及 `index.json` 从数据库生成。
 - `python back_test_data/amv_research/formula.py` 生成候选指标后，按库中上证指数补齐合成 OHLC、成交量和成交额，再入库并导出 `data/core_index/candidate_amv_close.csv`（沿用文件名，现包含全部七列）。生成前应先更新指数，缺少对应日量额时会报错，不跨日期填充。
