@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250616,881272.TI,软件开发,金橙子,2040.61,2.95,139,19.99,32.53,177.0,143.0,34.0,515230,软件ETF
 20250616,881155.TI,银行,青农商行,1354.0,1.29,84,3.64,3.7,120.0,91.0,28.0,512800,银行ETF
 20250616,881157.TI,证券,东吴证券,1452.76,1.36,49,4.54,8.76,101.0,74.0,26.0,512880,证券ETF

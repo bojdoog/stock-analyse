@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240709,半导体,4.93,960.83,29.43969392,5.35,15.980668,13.45902592,1,512480,半导体ETF
 20240709,通信设备,3.53,8842.36,15.09055536,4.64,9.04702512,6.04353024,3,515880,通信ETF
 20240709,汽车整车,2.37,1213.96,7.16679344,3.75,6.0310008,1.13579264,6,515030,新能源车ETF

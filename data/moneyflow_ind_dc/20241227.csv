@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241227,农牧饲渔,4.02,13180.61,8.25087936,4.42,7.8730248,0.37785456,1,510150,消费ETF
 20241227,船舶制造,1.6,823.98,3.03977536,6.1,2.05989152,0.97988384,2,512660,军工ETF
 20241227,航天航空,3.38,43885.64,1.17949536,0.49,3.77456224,-2.59506688,6,512660,军工ETF

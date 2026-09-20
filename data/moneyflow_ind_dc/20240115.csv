@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240115,半导体,0.89,1092.95,9.10969136,3.37,6.75034928,2.35934208,1,512480,半导体ETF
 20240115,旅游酒店,3.87,14643.29,7.51009456,6.5,7.06271904,0.44737552,2,510150,消费ETF
 20240115,工程建设,0.0,20105.96,5.99599312,5.74,8.25864768,-2.26265456,3,510300,沪深300ETF

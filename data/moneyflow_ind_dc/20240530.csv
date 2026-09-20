@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240530,半导体,2.78,969.24,21.1411,4.46,12.66775856,8.47334144,1,512480,半导体ETF
 20240530,船舶制造,2.17,711.26,4.71932208,7.72,2.06246912,2.65685296,2,512660,军工ETF
 20240530,文化传媒,0.03,7617.18,1.75360272,1.52,2.78125744,-1.02765472,5,512980,传媒ETF

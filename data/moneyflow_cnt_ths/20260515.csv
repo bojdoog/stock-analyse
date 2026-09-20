@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260515,885999.TI,汽车热管理,长盈通,108.2,1.4,2433.21,138,18.12,388.0,338.0,50.0,515030,新能源车ETF
 20260515,886008.TI,减速器,三瑞智能,139.48,3.04,2229.9,135,20.0,433.0,383.0,50.0,562500,机器人ETF
 20260515,886069.TI,人形机器人,三瑞智能,139.48,1.72,2763.13,443,20.0,1839.0,1794.0,45.0,562500,机器人ETF

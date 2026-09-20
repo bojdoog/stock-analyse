@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241224,886021.TI,国企改革,*ST中程,2.9,0.83,1211.79,2808,0.83,1279.0,1195.0,84.0,510300,沪深300ETF
 20241224,885921.TI,储能,九洲集团,8.26,1.63,1761.77,508,1.63,516.0,455.0,60.0,516160,新能源ETF
 20241224,885431.TI,新能源汽车,胜蓝股份,35.87,1.6,3108.45,829,1.6,830.0,770.0,59.0,515030,新能源车ETF

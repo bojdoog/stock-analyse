@@ -46,13 +46,18 @@ python tools/fetch_moneyflow_cnt_ths.py      # 同花顺概念资金流向
 python tools/fetch_moneyflow_ind_ths.py      # 同花顺行业资金流向
 ```
 
-## 数据目录
+## 数据存储
+
+日常读取优先使用本机 MySQL 的 `stock_analyse` 数据库，连接或登录失败自动使用 SQLite。
+抓取脚本更新 SQLite、CSV 导出副本并同步 MySQL；MySQL 故障期间的数据恢复后会自动补写。
+下面列的是导出目录。
+连接配置及迁移方法见 [MySQL 存储说明](../flask_backend/MYSQL_STORAGE.md)。
 
 | 目录 | 内容 | 来源 |
 |------|------|------|
-| `public/data/etf/` | ETF 日 K 线 | Tushare |
-| `public/data/index/` | 指数日 K 线 | Tushare |
-| `public/data/stock/` | 个股日 K 线 | Tushare |
-| `public/data/moneyflow_ind_dc/` | 东财行业资金流向 | `moneyflow_ind_dc` |
-| `public/data/moneyflow_cnt_ths/` | 同花顺概念资金流向 | `moneyflow_cnt_ths` |
-| `public/data/moneyflow_ind_ths/` | 同花顺行业资金流向 | `moneyflow_ind_ths` |
+| `data/etf/` | ETF 日 K 线 | Tushare |
+| `data/index/` | 指数日 K 线 | Tushare |
+| `data/stock/` | 个股日 K 线 | Tushare |
+| `data/moneyflow_ind_dc/` | 东财行业资金流向 | `moneyflow_ind_dc` |
+| `data/moneyflow_cnt_ths/` | 同花顺概念资金流向 | `moneyflow_cnt_ths` |
+| `data/moneyflow_ind_ths/` | 同花顺行业资金流向 | `moneyflow_ind_ths` |

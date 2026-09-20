@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250702,885914.TI,煤炭概念,安源煤业,6.59,1.24,1871.73,79,6.98,93.0,62.0,30.0,515220,煤炭ETF
 20250702,885878.TI,HJT电池,东方日升,10.44,1.41,2190.39,59,10.59,94.0,68.0,26.0,516290,光伏ETF
 20250702,886006.TI,钙钛矿电池,东方日升,10.44,1.33,758.52,57,10.59,92.0,74.0,17.0,516290,光伏ETF

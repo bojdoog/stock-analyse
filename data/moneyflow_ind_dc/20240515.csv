@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240515,半导体,-0.89,929.29,0.69609296,0.25,5.43744336,-4.7413504,4,512480,半导体ETF
 20240515,贵金属,0.35,1148.77,-0.27101616,-0.29,-0.30480608,0.03378992,15,512400,有色ETF
 20240515,水泥建材,0.4,19986.2,-0.32905496,-1.64,0.01466456,-0.34371952,16,510300,沪深300ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260710,885757.TI,区块链,佳缘科技,20.29,1.58,1401.32,260,19.99,761.0,705.0,55.0,515230,软件ETF
 20260710,886015.TI,创新药,益诺思,77.87,3.02,1241.33,276,20.0,410.0,357.0,53.0,510660,创新药ETF
 20260710,885934.TI,元宇宙,福石控股,4.91,1.4,1787.16,181,19.18,622.0,573.0,49.0,159869,游戏ETF

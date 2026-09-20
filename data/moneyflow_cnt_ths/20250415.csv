@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250415,885999.TI,汽车热管理,和而泰,19.18,0.21,1494.19,114,6.56,86.0,85.0,1.0,515030,新能源车ETF
 20250415,885874.TI,云游戏,*ST鹏博,1.03,0.87,1113.33,27,5.1,29.0,27.0,1.0,159869,游戏ETF
 20250415,885780.TI,啤酒概念,奥瑞金,5.38,0.27,1454.06,24,4.67,14.0,15.0,0.0,512690,白酒ETF

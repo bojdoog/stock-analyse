@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250120,酿酒行业,0.43,49250.67,7.43756928,4.98,4.27198416,3.16558512,2,512690,白酒ETF
 20250120,电池,2.24,892.88,6.62271408,2.53,1.2139384,5.40877568,3,516160,新能源ETF
 20250120,商业百货,1.39,16788.04,5.36827008,3.08,7.7629656,-2.39469552,4,510150,消费ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240516,银行,1.58,3262.49,18.91792384,6.71,15.75387904,3.1640448,1,512800,银行ETF
 20240516,通信设备,0.84,9920.81,6.76327424,1.98,4.77322496,1.99004928,6,515880,通信ETF
 20240516,工程建设,2.06,18202.29,5.5533208,3.75,4.2823624,1.2709584,8,510300,沪深300ETF

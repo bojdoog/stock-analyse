@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250725,半导体,1.91,1540.84,21.86243328,2.4,18.47150336,3.39092992,1,512480,半导体ETF
 20250725,文化传媒,1.3,10590.88,12.25747616,3.9,11.81302176,0.4444544,2,512980,传媒ETF
 20250725,互联网服务,1.54,29667.2,8.64006912,1.01,6.83275776,1.80731136,3,515230,软件ETF

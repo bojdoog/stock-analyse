@@ -1,0 +1,705 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "881136.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:44:59.488508+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"881136.TI\", \"con_code\": \"000017.SZ\", \"con_name\": \"深中华A\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"000026.SZ\", \"con_name\": \"飞亚达\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"001209.SZ\", \"con_name\": \"洪兴股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"001234.SZ\", \"con_name\": \"泰慕士\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"002029.SZ\", \"con_name\": \"七匹狼\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"002154.SZ\", \"con_name\": \"报喜鸟\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"002193.SZ\", \"con_name\": \"ST如意\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"002269.SZ\", \"con_name\": \"美邦服饰\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"002293.SZ\", \"con_name\": \"罗莱生活\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"002327.SZ\", \"con_name\": \"富安娜\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"002345.SZ\", \"con_name\": \"潮宏基\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"002397.SZ\", \"con_name\": \"梦洁股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"002404.SZ\", \"con_name\": \"嘉欣丝绸\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"002486.SZ\", \"con_name\": \"嘉麟杰\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"002494.SZ\", \"con_name\": \"华斯股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"002563.SZ\", \"con_name\": \"森马服饰\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"002569.SZ\", \"con_name\": \"*ST步森\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"002574.SZ\", \"con_name\": \"明牌珠宝\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"002634.SZ\", \"con_name\": \"*ST棒杰\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"002656.SZ\", \"con_name\": \"摩登大道\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"002687.SZ\", \"con_name\": \"乔治白\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"002721.SZ\", \"con_name\": \"金一文化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"002731.SZ\", \"con_name\": \"*ST萃华\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"002762.SZ\", \"con_name\": \"金发拉比\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"002763.SZ\", \"con_name\": \"汇洁股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"002780.SZ\", \"con_name\": \"三夫户外\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"002832.SZ\", \"con_name\": \"比音勒芬\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"002867.SZ\", \"con_name\": \"周大生\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"002875.SZ\", \"con_name\": \"安奈儿\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"003016.SZ\", \"con_name\": \"欣贺股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"003041.SZ\", \"con_name\": \"真爱美家\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"300005.SZ\", \"con_name\": \"探路者\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"300577.SZ\", \"con_name\": \"开润股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"300591.SZ\", \"con_name\": \"万里马\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"300840.SZ\", \"con_name\": \"酷特智能\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"300901.SZ\", \"con_name\": \"中胤时尚\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"300945.SZ\", \"con_name\": \"曼卡龙\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"300952.SZ\", \"con_name\": \"恒辉安防\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"301088.SZ\", \"con_name\": \"戎美股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"301177.SZ\", \"con_name\": \"迪阿股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"301276.SZ\", \"con_name\": \"嘉曼服饰\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"600107.SH\", \"con_name\": \"*ST尔雅\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"600137.SH\", \"con_name\": \"浪莎股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"600177.SH\", \"con_name\": \"雅戈尔\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"600398.SH\", \"con_name\": \"海澜之家\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"600400.SH\", \"con_name\": \"红豆股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"600439.SH\", \"con_name\": \"ST瑞贝卡\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"600612.SH\", \"con_name\": \"老凤祥\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"600630.SH\", \"con_name\": \"龙头股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"600735.SH\", \"con_name\": \"ST新华锦\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"600916.SH\", \"con_name\": \"中国黄金\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"601566.SH\", \"con_name\": \"九牧王\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"601718.SH\", \"con_name\": \"ST际华\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"603001.SH\", \"con_name\": \"奥康国际\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"603116.SH\", \"con_name\": \"红蜻蜓\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"603196.SH\", \"con_name\": \"璞源材料\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"603307.SH\", \"con_name\": \"扬州金泉\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"603365.SH\", \"con_name\": \"水星家纺\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"603511.SH\", \"con_name\": \"爱慕股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"603518.SH\", \"con_name\": \"锦泓集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"603557.SH\", \"con_name\": \"*ST起步\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"603558.SH\", \"con_name\": \"健盛集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"603587.SH\", \"con_name\": \"地素时尚\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"603608.SH\", \"con_name\": \"天创时尚\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"603665.SH\", \"con_name\": \"康隆达\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"603808.SH\", \"con_name\": \"歌力思\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"603839.SH\", \"con_name\": \"安正时尚\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"603877.SH\", \"con_name\": \"太平鸟\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"603900.SH\", \"con_name\": \"莱绅通灵\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"603908.SH\", \"con_name\": \"牧高笛\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"603958.SH\", \"con_name\": \"哈森股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"605003.SH\", \"con_name\": \"众望布艺\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"605138.SH\", \"con_name\": \"盛泰集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"605599.SH\", \"con_name\": \"菜百股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881136.TI\", \"con_code\": \"920262.BJ\", \"con_name\": \"太湖雪\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "881136.TI",
+      "con_code": "000017.SZ",
+      "con_name": "深中华A",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "000026.SZ",
+      "con_name": "飞亚达",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "001209.SZ",
+      "con_name": "洪兴股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "001234.SZ",
+      "con_name": "泰慕士",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "002029.SZ",
+      "con_name": "七匹狼",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "002154.SZ",
+      "con_name": "报喜鸟",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "002193.SZ",
+      "con_name": "ST如意",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "002269.SZ",
+      "con_name": "美邦服饰",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "002293.SZ",
+      "con_name": "罗莱生活",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "002327.SZ",
+      "con_name": "富安娜",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "002345.SZ",
+      "con_name": "潮宏基",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "002397.SZ",
+      "con_name": "梦洁股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "002404.SZ",
+      "con_name": "嘉欣丝绸",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "002486.SZ",
+      "con_name": "嘉麟杰",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "002494.SZ",
+      "con_name": "华斯股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "002563.SZ",
+      "con_name": "森马服饰",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "002569.SZ",
+      "con_name": "*ST步森",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "002574.SZ",
+      "con_name": "明牌珠宝",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "002634.SZ",
+      "con_name": "*ST棒杰",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "002656.SZ",
+      "con_name": "摩登大道",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "002687.SZ",
+      "con_name": "乔治白",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "002721.SZ",
+      "con_name": "金一文化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "002731.SZ",
+      "con_name": "*ST萃华",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "002762.SZ",
+      "con_name": "金发拉比",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "002763.SZ",
+      "con_name": "汇洁股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "002780.SZ",
+      "con_name": "三夫户外",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "002832.SZ",
+      "con_name": "比音勒芬",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "002867.SZ",
+      "con_name": "周大生",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "002875.SZ",
+      "con_name": "安奈儿",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "003016.SZ",
+      "con_name": "欣贺股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "003041.SZ",
+      "con_name": "真爱美家",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "300005.SZ",
+      "con_name": "探路者",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "300577.SZ",
+      "con_name": "开润股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "300591.SZ",
+      "con_name": "万里马",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "300840.SZ",
+      "con_name": "酷特智能",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "300901.SZ",
+      "con_name": "中胤时尚",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "300945.SZ",
+      "con_name": "曼卡龙",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "300952.SZ",
+      "con_name": "恒辉安防",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "301088.SZ",
+      "con_name": "戎美股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "301177.SZ",
+      "con_name": "迪阿股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "301276.SZ",
+      "con_name": "嘉曼服饰",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "600107.SH",
+      "con_name": "*ST尔雅",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "600137.SH",
+      "con_name": "浪莎股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "600177.SH",
+      "con_name": "雅戈尔",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "600398.SH",
+      "con_name": "海澜之家",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "600400.SH",
+      "con_name": "红豆股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "600439.SH",
+      "con_name": "ST瑞贝卡",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "600612.SH",
+      "con_name": "老凤祥",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "600630.SH",
+      "con_name": "龙头股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "600735.SH",
+      "con_name": "ST新华锦",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "600916.SH",
+      "con_name": "中国黄金",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "601566.SH",
+      "con_name": "九牧王",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "601718.SH",
+      "con_name": "ST际华",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "603001.SH",
+      "con_name": "奥康国际",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "603116.SH",
+      "con_name": "红蜻蜓",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "603196.SH",
+      "con_name": "璞源材料",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "603307.SH",
+      "con_name": "扬州金泉",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "603365.SH",
+      "con_name": "水星家纺",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "603511.SH",
+      "con_name": "爱慕股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "603518.SH",
+      "con_name": "锦泓集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "603557.SH",
+      "con_name": "*ST起步",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "603558.SH",
+      "con_name": "健盛集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "603587.SH",
+      "con_name": "地素时尚",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "603608.SH",
+      "con_name": "天创时尚",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "603665.SH",
+      "con_name": "康隆达",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "603808.SH",
+      "con_name": "歌力思",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "603839.SH",
+      "con_name": "安正时尚",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "603877.SH",
+      "con_name": "太平鸟",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "603900.SH",
+      "con_name": "莱绅通灵",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "603908.SH",
+      "con_name": "牧高笛",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "603958.SH",
+      "con_name": "哈森股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "605003.SH",
+      "con_name": "众望布艺",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "605138.SH",
+      "con_name": "盛泰集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "605599.SH",
+      "con_name": "菜百股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881136.TI",
+      "con_code": "920262.BJ",
+      "con_name": "太湖雪",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

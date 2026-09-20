@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231212,船舶制造,3.41,803.54,3.9735368,7.03,3.29298656,0.68055024,2,512660,军工ETF
 20231212,酿酒行业,0.95,56085.9,3.3020448,2.57,-1.32185136,4.62389616,3,512690,白酒ETF
 20231212,汽车整车,1.09,1360.27,0.71888768,0.43,4.24640208,-3.5275144,9,515030,新能源车ETF

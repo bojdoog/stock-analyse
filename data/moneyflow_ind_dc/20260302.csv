@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260302,通信设备,-0.39,23402.89,32.0556032,1.91,23.82121984,8.23438336,3,515880,通信ETF
 20260302,银行,0.71,4083.37,8.73613568,2.93,5.95209728,2.7840384,15,512800,银行ETF
 20260302,贵金属,10.43,3608.09,3.85058304,0.54,-12.21350656,16.0640896,28,512400,有色ETF

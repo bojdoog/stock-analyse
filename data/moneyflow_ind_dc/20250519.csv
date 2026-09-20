@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250519,半导体,0.59,1408.08,4.92480608,1.15,-1.56161184,6.48641792,4,512480,半导体ETF
 20250519,航天航空,0.87,45919.93,4.9117904,2.34,-0.96763616,5.87942656,5,512660,军工ETF
 20250519,食品饮料,2.44,28857.85,3.08944816,1.39,2.06312624,1.02632192,8,510150,消费ETF

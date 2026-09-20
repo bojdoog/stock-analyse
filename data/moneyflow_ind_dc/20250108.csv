@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250108,家电行业,1.99,19493.27,4.21880032,1.51,4.97889248,-0.76009216,2,510150,消费ETF
 20250108,石油行业,-0.32,5188.31,1.54122368,2.38,0.33043696,1.21078672,6,510300,沪深300ETF
 20250108,光伏设备,-0.14,1040.22,0.52504832,0.29,1.67083904,-1.14579072,11,516290,光伏ETF

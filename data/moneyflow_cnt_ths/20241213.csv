@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241213,885874.TI,云游戏,佳创视讯,7.98,0.05,1297.7,25,0.05,103.0,105.0,-2.0,159869,游戏ETF
 20241213,885497.TI,旅游概念,锋尚文化,36.22,1.65,2747.85,105,1.65,217.0,221.0,-4.0,510150,消费ETF
 20241213,885947.TI,DRG/DIP,东华软件,8.27,-2.88,1005.94,21,-2.88,22.0,27.0,-5.0,159929,医药ETF

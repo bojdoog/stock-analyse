@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250829,886032.TI,固态电池,先导智能,35.51,2.13,1186.92,228,20.01,780.0,672.0,107.0,516160,新能源ETF
 20250829,885928.TI,钠离子电池,先导智能,35.51,2.42,1146.73,122,20.01,500.0,402.0,98.0,516160,新能源ETF
 20250829,885530.TI,黄金概念,迪阿股份,35.12,1.48,2926.64,72,19.99,210.0,167.0,43.0,512400,有色ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231031,煤炭行业,1.18,9840.24,2.16027856,3.48,1.21962704,0.94065152,1,515220,煤炭ETF
 20231031,游戏,0.68,1042.25,1.79157408,1.58,0.73180816,1.05976592,2,159869,游戏ETF
 20231031,工程建设,0.12,19976.92,0.30630224,0.29,3.49571488,-3.18941264,6,510300,沪深300ETF

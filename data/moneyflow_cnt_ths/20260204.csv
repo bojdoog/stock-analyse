@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260204,885936.TI,绿色电力,亚玛顿,28.46,1.43,1268.85,371,10.01,703.0,624.0,79.0,516160,新能源ETF
 20260204,886006.TI,钙钛矿电池,晶科能源,8.4,3.4,1274.94,79,20.0,448.0,397.0,51.0,516290,光伏ETF
 20260204,885914.TI,煤炭概念,恒源煤电,7.21,4.22,2384.07,85,10.08,229.0,179.0,49.0,515220,煤炭ETF

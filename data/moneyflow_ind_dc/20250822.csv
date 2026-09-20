@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250822,半导体,4.48,1824.22,126.595392,5.28,138.05808896,-11.46269696,1,512480,半导体ETF
 20250822,互联网服务,1.87,32493.14,54.72721408,3.69,53.4609664,1.26624768,2,515230,软件ETF
 20250822,证券,2.85,170910.43,53.05119232,6.73,51.6355072,1.41568512,3,512880,证券ETF

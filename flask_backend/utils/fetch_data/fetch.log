@@ -1,0 +1,3 @@
+2026-08-20 05:56:09,377 [INFO] fetch_kline.py:158 从 C:\_allCode\stock_analyse\flask_backend\utils\fetch_data\stocklist.csv 读取到 5062 只股票（排除板块：bj,gem,star）
+2026-08-20 05:56:09,378 [INFO] fetch_kline.py:245 开始抓取 5062 支股票 | 数据源:Tushare(日线,qfq) | 日期:20251222 → 20260820 | 排除:bj,gem,star
+2026-08-20 06:13:00,421 [INFO] fetch_kline.py:259 全部任务完成，数据已保存至 C:\_allCode\stock_analyse\data\stock

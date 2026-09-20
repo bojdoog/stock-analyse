@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250808,885641.TI,风电,飞沃科技,42.1,0.92,1146.49,368,20.01,563.0,502.0,61.0,516160,新能源ETF
 20250808,885494.TI,一带一路,酉立智能,83.22,0.67,2235.72,728,246.9,921.0,875.0,45.0,510300,沪深300ETF
 20250808,885823.TI,氢能源,科威尔,43.2,0.54,2322.9,343,20.0,452.0,427.0,24.0,516160,新能源ETF

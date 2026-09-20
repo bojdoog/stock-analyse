@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240327,贵金属,-0.09,951.23,2.30023232,4.3,0.80513616,1.49509616,1,512400,有色ETF
 20240327,电力行业,-1.83,14497.43,1.17666032,0.89,0.29397056,0.88268976,3,561380,电网设备ETF
 20240327,中药,-0.08,1407.88,1.03587888,1.01,0.93588944,0.09998944,4,159929,医药ETF

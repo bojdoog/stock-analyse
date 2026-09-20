@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20230928,汽车整车,1.84,1259.89,16.85526384,11.61,16.6541672,0.20109664,1,515030,新能源车ETF
 20230928,半导体,1.6,1184.31,6.94835568,2.3,4.034684,2.91367168,3,512480,半导体ETF
 20230928,通信设备,2.68,11399.99,4.93469824,1.25,4.6119488,0.32274944,5,515880,通信ETF

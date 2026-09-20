@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250813,885556.TI,5G,广东建科,43.6,2.0,5046.92,422,28.2,1417.0,1249.0,167.0,515880,通信ETF
 20250813,885431.TI,新能源汽车,罗博特科,205.07,1.39,4176.94,940,20.0,1790.0,1638.0,152.0,515030,新能源车ETF
 20250813,885806.TI,华为概念,罗博特科,205.07,0.95,3159.45,984,20.0,1998.0,1886.0,111.0,515230,软件ETF

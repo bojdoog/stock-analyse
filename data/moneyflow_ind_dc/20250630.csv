@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250630,航天航空,4.97,52368.69,17.33913344,4.69,10.58913024,6.7500032,1,512660,军工ETF
 20250630,小金属,2.45,2350.91,15.78905744,5.78,8.46152592,7.32753152,2,512400,有色ETF
 20250630,光伏设备,2.97,1049.21,13.6762376,5.46,11.07259728,2.60364032,3,516290,光伏ETF

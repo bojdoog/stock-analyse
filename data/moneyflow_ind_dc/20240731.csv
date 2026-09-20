@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240731,证券,5.73,113906.66,43.5822944,12.09,37.64790464,5.93438976,1,512880,证券ETF
 20240731,半导体,3.97,995.37,14.27112448,2.44,7.57942784,6.69169664,2,512480,半导体ETF
 20240731,酿酒行业,3.33,44415.55,14.09218768,7.65,10.59975376,3.49243392,3,512690,白酒ETF

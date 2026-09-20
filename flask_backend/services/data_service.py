@@ -1,265 +1,127 @@
-import os
-import json
-import functools
-from typing import List, Dict, Any, Optional
-
-from utils.csv_parser import (
-    parse_kline_csv,
-    parse_moneyflow_csv,
-    get_data_list,
-    get_file_content,
-)
+﻿"""Database-backed market queries; data/ is only an export/backup directory."""
+from flask import current_app, has_app_context
+from market_store import (FLOW_TABLES, PRICE_FIELDS, connect, database_path, date_string,
+                          decode, file_content, list_files)
 
 
 class DataService:
-    """数据服务层 - 处理所有数据访问逻辑"""
-    
-    def __init__(self, data_dir: str):
+    def __init__(self, data_dir=None, db_path=None):
         self.data_dir = data_dir
-        # 内存缓存
-        self._cache: Dict[str, Any] = {}
-    
-    def _cached(self, key: str, loader):
-        """带缓存的加载器"""
-        if key not in self._cache:
-            self._cache[key] = loader()
-        return self._cache[key]
-    
-    def get_kline_data(self, category: str, code: str) -> List[Dict[str, Any]]:
-        """获取 K 线数据
-        
-        Args:
-            category: 数据分类 (stock, etf, index)
-            code: 股票/ETF/指数代码
-            
-        Returns:
-            K 线数据列表
-        """
-        file_path = self._resolve_path(category, code)
-        if not file_path:
+        self.db_path = db_path
+
+    @property
+    def database(self):
+        if self.db_path:
+            return self.db_path
+        return current_app.config['DATABASE_PATH'] if has_app_context() else database_path()
+
+    def _series(self, table, condition, args, start_date=None, end_date=None, limit=None):
+        if start_date:
+            condition += ' AND date>=?'
+            args.append(date_string(start_date))
+        if end_date:
+            condition += ' AND date<=?'
+            args.append(date_string(end_date))
+        sql = f"SELECT date,{','.join(PRICE_FIELDS)} FROM {table} WHERE {condition} ORDER BY date"
+        if limit and limit > 0:
+            sql += ' DESC LIMIT ?'
+            args.append(limit)
+        with connect(self.database) as db:
+            rows = [dict(row) for row in db.execute(sql, args)]
+        return list(reversed(rows)) if limit and limit > 0 else rows
+
+    def get_kline_data(self, category, code, start_date=None, end_date=None, limit=None):
+        if category not in ('stock', 'etf', 'index'):
             return []
-        return parse_kline_csv(file_path)
-    
-    def get_kline_raw(self, category: str, code: str) -> Optional[str]:
-        """获取原始 CSV 内容"""
-        file_path = self._resolve_path(category, code)
-        if not file_path:
-            return None
-        return get_file_content(self.data_dir, os.path.relpath(file_path, self.data_dir))
-    
-    def get_data_list(self, category: str) -> List[Dict[str, str]]:
-        """获取指定分类下的文件列表"""
-        valid_categories = ['stock', 'etf', 'index']
-        if category not in valid_categories:
+        return self._series('daily_bars', 'category=? AND code=?', [category, code], start_date, end_date, limit)
+
+    def get_indicator_data(self, indicator_id, start_date=None, end_date=None, limit=None):
+        return self._series('indicator_daily', 'indicator_id=?', [indicator_id], start_date, end_date, limit)
+
+    def get_amv_data(self, start_date=None, end_date=None, limit=None):
+        with connect(self.database) as db:
+            row = db.execute("SELECT id FROM indicators WHERE code='0AMV'").fetchone()
+        return self.get_indicator_data(row[0], start_date, end_date, limit) if row else []
+
+    def get_data_list(self, category):
+        if category not in ('stock', 'etf', 'index'):
             return []
-        return get_data_list(self.data_dir, category)
-    
-    def get_all_data_list(self) -> Dict[str, List[Dict[str, str]]]:
-        """获取所有分类的数据列表"""
-        categories = ['stock', 'etf', 'index']
+        with connect(self.database) as db:
+            return [dict(row) for row in db.execute(
+                'SELECT code,name,source_path AS file FROM instruments WHERE category=? ORDER BY source_path', (category,))]
+
+    def get_all_data_list(self):
+        return {category: self.get_data_list(category) for category in ('stock', 'etf', 'index')}
+
+    def get_file_bytes(self, relative_path):
+        return file_content(relative_path, self.database)
+
+    def get_kline_raw(self, category, code):
+        with connect(self.database) as db:
+            row = db.execute('SELECT source_path FROM instruments WHERE category=? AND code=?', (category, code)).fetchone()
+        content = self.get_file_bytes(row[0]) if row else None
+        return decode(content) if content is not None else None
+
+    def get_all_sector_data(self):
         result = {}
-        for cat in categories:
-            result[cat] = get_data_list(self.data_dir, cat)
+        for category in ('etf', 'index'):
+            result[category + '_data'] = [
+                {'name': item['name'], 'id': ('sh' if category == 'index' else '') + item['code'],
+                 'data': self.get_kline_data(category, item['code'])} for item in self.get_data_list(category)]
         return result
-    
-    def get_moneyflow_data(self, flow_type: str) -> List[Dict[str, Any]]:
-        """获取资金流向数据（带缓存）
-        
-        Args:
-            flow_type: 资金流向类型
-                - ind_dc: 东财行业资金流向
-                - cnt_ths: 同花顺概念资金流向
-                - ind_ths: 同花顺行业资金流向
-        """
-        return self._cached(f'moneyflow_{flow_type}', lambda: self._load_moneyflow(flow_type))
-    
-    def get_moneyflow_batch(self, types: List[str]) -> Dict[str, List[Dict[str, Any]]]:
-        """批量获取资金流向数据
-        
-        Args:
-            types: 资金流向类型列表，如 ['ind_dc', 'cnt_ths']
-            
-        Returns:
-            { type: data, ... }
-        """
-        result = {}
-        for t in types:
-            result[t] = self.get_moneyflow_data(t)
-        return result
-    
-    def get_all_sector_data(self) -> Dict[str, List[Dict[str, Any]]]:
-        """获取所有 ETF 和 Index 板块数据
-        
-        Returns:
-            {
-                'etf_data': [{ 'name': str, 'id': str, 'data': [...] }, ...],
-                'index_data': [{ 'name': str, 'id': str, 'data': [...] }, ...]
-            }
-        """
-        return self._cached('sector_data', self._load_all_sector_data)
-    
-    def _load_moneyflow(self, flow_type: str) -> List[Dict[str, Any]]:
-        """实际加载资金流向数据"""
-        type_map = {
-            'ind_dc': 'moneyflow_ind_dc',
-            'cnt_ths': 'moneyflow_cnt_ths',
-            'ind_ths': 'moneyflow_ind_ths',
-        }
-        
-        dir_name = type_map.get(flow_type)
-        if not dir_name:
+
+    def get_moneyflow_data(self, flow_type, start_date=None, end_date=None, industry=None, limit=None, filename=None):
+        table = FLOW_TABLES.get(flow_type)
+        if not table:
             return []
-        
-        dir_path = os.path.join(self.data_dir, dir_name)
-        if not os.path.isdir(dir_path):
-            return []
-        
-        all_data = []
-        for filename in sorted(os.listdir(dir_path)):
-            if filename.endswith('.csv'):
-                file_path = os.path.join(dir_path, filename)
-                data = parse_moneyflow_csv(file_path)
-                all_data.extend(data)
-        
-        return all_data
-    
-    def _load_all_sector_data(self) -> Dict[str, List[Dict[str, Any]]]:
-        """实际加载所有 ETF 和 Index 数据"""
-        # ETF 数据
-        etf_data = []
-        etf_dir = os.path.join(self.data_dir, 'etf')
-        if os.path.isdir(etf_dir):
-            for filename in sorted(os.listdir(etf_dir)):
-                if not filename.endswith('.csv'):
-                    continue
-                # 文件名格式: 510050_上证50ETF.csv
-                parts = filename.replace('.csv', '').split('_', 1)
-                code = parts[0]
-                name = parts[1] if len(parts) > 1 else code
-                file_path = os.path.join(etf_dir, filename)
-                data = parse_kline_csv(file_path)
-                etf_data.append({
-                    'name': name,
-                    'id': code,
-                    'data': data,
-                })
-        
-        # Index 数据
-        index_data = []
-        index_dir = os.path.join(self.data_dir, 'index')
-        if os.path.isdir(index_dir):
-            for filename in sorted(os.listdir(index_dir)):
-                if not filename.endswith('.csv'):
-                    continue
-                parts = filename.replace('.csv', '').split('_', 1)
-                code = parts[0]
-                name = parts[1] if len(parts) > 1 else code
-                file_path = os.path.join(index_dir, filename)
-                data = parse_kline_csv(file_path)
-                index_data.append({
-                    'name': name,
-                    'id': f'sh{code}',
-                    'data': data,
-                })
-        
-        return {
-            'etf_data': etf_data,
-            'index_data': index_data,
-        }
-    
-    def get_moneyflow_file_list(self, flow_type: str) -> List[str]:
-        """获取资金流向数据文件列表"""
-        type_map = {
-            'ind_dc': 'moneyflow_ind_dc',
-            'cnt_ths': 'moneyflow_cnt_ths',
-            'ind_ths': 'moneyflow_ind_ths',
-        }
-        
-        dir_name = type_map.get(flow_type)
-        if not dir_name:
-            return []
-        
-        dir_path = os.path.join(self.data_dir, dir_name)
-        if not os.path.isdir(dir_path):
-            return []
-        
-        return [f for f in sorted(os.listdir(dir_path)) if f.endswith('.csv')]
-    
-    def get_moneyflow_by_file(self, flow_type: str, filename: str) -> List[Dict[str, Any]]:
-        """获取指定资金流向文件的数据"""
-        type_map = {
-            'ind_dc': 'moneyflow_ind_dc',
-            'cnt_ths': 'moneyflow_cnt_ths',
-            'ind_ths': 'moneyflow_ind_ths',
-        }
-        
-        dir_name = type_map.get(flow_type)
-        if not dir_name:
-            return []
-        
-        file_path = os.path.join(self.data_dir, dir_name, filename)
-        if not os.path.exists(file_path):
-            return []
-        
-        return parse_moneyflow_csv(file_path)
-    
-    def get_amv_data(self) -> List[Dict[str, Any]]:
-        """获取活跃市值数据 (0AMV)"""
-        file_path = os.path.join(self.data_dir, '0AMV-2013-2026.csv')
-        if not os.path.exists(file_path):
-            return []
-        return parse_kline_csv(file_path)
-    
-    def get_data_categories(self) -> List[Dict[str, Any]]:
-        """获取所有可用的数据分类"""
-        categories = []
-        cat_info = {
-            'stock': {'name': '个股', 'description': 'A股个股日K数据'},
-            'etf': {'name': 'ETF', 'description': 'ETF基金日K数据'},
-            'index': {'name': '指数', 'description': '主要指数日K数据'},
-            'moneyflow_ind_dc': {'name': '东财行业资金流向', 'description': '东方财富行业资金流向数据'},
-            'moneyflow_cnt_ths': {'name': '同花顺概念资金流向', 'description': '同花顺概念板块资金流向'},
-            'moneyflow_ind_ths': {'name': '同花顺行业资金流向', 'description': '同花顺行业资金流向'},
-        }
-        
-        for cat, info in cat_info.items():
-            cat_path = os.path.join(self.data_dir, cat)
-            count = 0
-            if os.path.isdir(cat_path):
-                count = len([f for f in os.listdir(cat_path) if f.endswith('.csv')])
-            categories.append({
-                'key': cat,
-                'name': info['name'],
-                'description': info['description'],
-                'fileCount': count,
-            })
-        
-        return categories
-    
-    def _resolve_path(self, category: str, code: str) -> Optional[str]:
-        """解析文件路径"""
-        # 处理 etf 目录下的特殊命名格式
-        if category == 'etf':
-            # ETF 文件名可能包含中文，如 510050_上证50ETF.csv
-            etf_dir = os.path.join(self.data_dir, 'etf')
-            if os.path.isdir(etf_dir):
-                for filename in os.listdir(etf_dir):
-                    if filename.startswith(code) and filename.endswith('.csv'):
-                        return os.path.join(etf_dir, filename)
-            return None
-        
-        # 处理 index 目录
-        if category == 'index':
-            index_dir = os.path.join(self.data_dir, 'index')
-            if os.path.isdir(index_dir):
-                for filename in os.listdir(index_dir):
-                    if filename.startswith(code) and filename.endswith('.csv'):
-                        return os.path.join(index_dir, filename)
-            return None
-        
-        # 处理 stock 目录
-        file_path = os.path.join(self.data_dir, category, f'{code}.csv')
-        if os.path.exists(file_path):
-            return file_path
-        
-        return None
+        filters, values = ['1=1'], []
+        if start_date:
+            filters.append('date>=?')
+            values.append(date_string(start_date))
+        if end_date:
+            filters.append('date<=?')
+            values.append(date_string(end_date))
+        if industry:
+            filters.append('instr(industry_name,?)>0')
+            values.append(industry)
+        if filename:
+            filters.append('source_path=?')
+            values.append(f'{table}/{filename}')
+        sql = f"SELECT * FROM {table} WHERE {' AND '.join(filters)} ORDER BY source_path,`row_number`"
+        if limit and limit > 0:
+            sql = f"SELECT * FROM {table} WHERE {' AND '.join(filters)} ORDER BY source_path DESC,`row_number` DESC LIMIT ?"
+            values.append(limit)
+        with connect(self.database) as db:
+            rows = [dict(row) for row in db.execute(sql, values)]
+        if limit and limit > 0:
+            rows.reverse()
+        for row in rows:
+            for key in ('sector_key', 'occurrence', 'source_path', 'row_number'):
+                row.pop(key)
+            row['date'] = row['date'].replace('-', '')
+            if flow_type != 'ind_dc':
+                row['close'] = row['close_price']
+            # Preserve existing API compatibility; SQL retains NULL/source fields.
+            for key in ('pct_change', 'close', 'net_amount_rate', 'super_large_inflow', 'large_inflow', 'rank'):
+                if row[key] is None:
+                    row[key] = 0
+        return rows
+
+    def get_moneyflow_batch(self, types):
+        return {kind: self.get_moneyflow_data(kind) for kind in types}
+
+    def get_moneyflow_file_list(self, flow_type):
+        return list_files(FLOW_TABLES[flow_type], self.database) if flow_type in FLOW_TABLES else []
+
+    def get_moneyflow_by_file(self, flow_type, filename):
+        return self.get_moneyflow_data(flow_type, filename=filename)
+
+    def get_data_categories(self):
+        names = {'stock': '个股', 'etf': 'ETF', 'index': '指数', 'core_index': '核心指标',
+                 'moneyflow_ind_dc': '东财行业资金流向', 'moneyflow_cnt_ths': '同花顺概念资金流向',
+                 'moneyflow_ind_ths': '同花顺行业资金流向'}
+        with connect(self.database) as db:
+            counts = {row[0]: row[1] for row in db.execute(
+                "SELECT category,COUNT(*) FROM source_files WHERE path LIKE '%.csv' GROUP BY category")}
+        return [{'key': key, 'name': name, 'description': name, 'fileCount': counts.get(key, 0)}
+                for key, name in names.items()]

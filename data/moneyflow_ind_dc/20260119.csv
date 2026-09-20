@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260119,电网设备,5.28,41675.42,68.42645248,4.84,78.34052096,-9.91406848,1.0,561380,电网设备ETF
 20260119,航天航空,4.03,69547.84,22.18801152,3.55,20.73721088,1.45080064,2.0,512660,军工ETF
 20260119,贵金属,5.39,2494.59,15.49191888,7.86,6.14798544,9.34393344,3.0,512400,有色ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250226,885531.TI,光伏概念,慈星股份,10.2,1.83,3194.24,564,1.83,740.0,680.0,60.0,516290,光伏ETF
 20250226,885921.TI,储能,慈星股份,10.2,1.63,1929.25,536,1.63,956.0,926.0,30.0,516160,新能源ETF
 20250226,885823.TI,氢能源,盛德鑫泰,35.91,1.65,1951.5,327,1.65,484.0,461.0,23.0,516160,新能源ETF

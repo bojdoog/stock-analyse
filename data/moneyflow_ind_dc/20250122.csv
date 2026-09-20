@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250122,通信设备,0.14,12815.46,9.27488512,1.28,7.2864512,1.98843392,1,515880,通信ETF
 20250122,贵金属,1.96,1101.94,2.59962128,3.71,1.42088832,1.17873296,4,512400,有色ETF
 20250122,医疗器械,-1.22,751.04,2.1093904,2.14,0.41875024,1.69064016,5,159929,医药ETF

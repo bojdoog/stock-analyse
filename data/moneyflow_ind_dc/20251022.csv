@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251022,风电设备,2.4,1514.26,5.77129712,2.97,3.75961328,2.01168384,2.0,516160,新能源ETF
 20251022,家电行业,0.24,25019.51,4.09570064,1.38,7.03251216,-2.93681152,4.0,510150,消费ETF
 20251022,游戏,0.61,1577.15,2.51753728,2.13,0.8684472,1.64909008,7.0,159869,游戏ETF

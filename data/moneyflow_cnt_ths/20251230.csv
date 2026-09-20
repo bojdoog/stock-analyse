@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251230,886069.TI,人形机器人,步科股份,145.99,1.94,2541.05,396,20.0,1117.0,987.0,130.0,562500,机器人ETF
 20251230,885517.TI,机器人概念,天铭科技,19.76,0.78,4053.22,1145,30.0,2020.0,1941.0,79.0,562500,机器人ETF
 20251230,885997.TI,比亚迪概念,昊志机电,63.8,0.57,1923.66,649,18.59,1283.0,1209.0,74.0,515030,新能源车ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250731,银行,-1.07,4276.74,17.29673472,4.65,10.76996864,6.52676608,1,512800,银行ETF
 20250731,互联网服务,0.61,29420.56,11.92922112,1.39,14.57533696,-2.64611584,2,515230,软件ETF
 20250731,软件开发,0.61,1249.6,11.2980352,1.08,23.00644352,-11.70840832,3,515230,软件ETF

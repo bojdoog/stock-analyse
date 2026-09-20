@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240415,工程建设,-1.7,17503.35,7.3144032,3.32,6.45448384,0.85991936,1,510300,沪深300ETF
 20240415,酿酒行业,-0.23,49107.95,2.98255024,1.51,-1.84719952,4.82974976,4,512690,白酒ETF
 20240415,船舶制造,0.96,723.37,2.25214512,4.05,1.7185752,0.53356992,6,512660,军工ETF

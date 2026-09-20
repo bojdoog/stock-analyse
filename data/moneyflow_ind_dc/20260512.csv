@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260512,电网设备,1.48,45713.29,40.60351744,4.13,41.1741312,-0.57061376,1,561380,电网设备ETF
 20260512,公用事业,0.75,10752.33,9.68602624,0.96,8.0418048,1.64422144,6,561380,电网设备ETF
 20260512,医药商业,-0.93,1192.32,-0.1042776,-0.2,0.59691552,-0.70119312,50,159929,医药ETF

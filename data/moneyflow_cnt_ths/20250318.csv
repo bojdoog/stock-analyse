@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250318,885530.TI,黄金概念,明牌珠宝,8.67,1.8,2402.07,73,1.8,171.0,141.0,29.0,512400,有色ETF
 20250318,885930.TI,工业母机,鼎泰高科,33.98,2.15,1436.85,98,2.15,158.0,147.0,10.0,159638,高端装备ETF
 20250318,886004.TI,虚拟电厂,金冠股份,5.04,1.58,1301.4,101,1.58,159.0,150.0,9.0,561380,电网设备ETF

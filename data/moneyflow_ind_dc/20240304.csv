@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240304,家电行业,1.14,15209.96,7.49407392,3.82,11.14143056,-3.64735664,1,510150,消费ETF
 20240304,医疗服务,3.32,1011.89,7.20093024,3.73,7.35854944,-0.1576192,2,510660,创新药ETF
 20240304,电力行业,0.8,14157.58,4.86156896,3.12,3.1684376,1.69313136,3,561380,电网设备ETF

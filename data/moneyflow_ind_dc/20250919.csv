@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250919,能源金属,3.23,625.13,26.40959072,10.97,25.86767968,0.54191104,1.0,512400,有色ETF
 20250919,文化传媒,0.43,10914.17,8.31474704,2.33,7.3225704,0.99217664,3.0,512980,传媒ETF
 20250919,煤炭行业,1.84,11321.63,5.17325792,4.36,4.27599792,0.89726,5.0,515220,煤炭ETF

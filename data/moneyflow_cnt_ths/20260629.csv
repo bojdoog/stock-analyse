@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260629,886015.TI,创新药,新赣江,21.19,6.08,1187.64,276,30.0,370.0,287.0,82.0,510660,创新药ETF
 20260629,886042.TI,存储芯片,广钢气体,46.49,1.75,3433.71,199,20.0,2658.0,2598.0,59.0,512480,半导体ETF
 20260629,886051.TI,减肥药,万邦医药,28.26,7.44,1291.02,62,20.0,117.0,84.0,32.0,510660,创新药ETF

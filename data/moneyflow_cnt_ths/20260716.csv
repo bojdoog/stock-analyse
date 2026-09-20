@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260716,886013.TI,信创,雷神科技,29.98,0.34,1836.64,302,12.96,553.0,525.0,27.0,515230,软件ETF
 20260716,886031.TI,ChatGPT概念,智度股份,6.22,1.1,1634.41,139,10.09,303.0,276.0,27.0,159381,创业板人工智能ETF
 20260716,886019.TI,AIGC概念,电声股份,8.83,1.09,1878.38,292,19.97,536.0,513.0,23.0,159381,创业板人工智能ETF

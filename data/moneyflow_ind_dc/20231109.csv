@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231109,光伏设备,2.21,1396.03,25.69863584,8.34,18.958696,6.73993984,1,516290,光伏ETF
 20231109,煤炭行业,2.77,9992.03,3.06687088,2.76,2.37943696,0.68743392,2,515220,煤炭ETF
 20231109,银行,0.29,2830.49,2.70677344,2.36,4.603416,-1.89664256,3,512800,银行ETF

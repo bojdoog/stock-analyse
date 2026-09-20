@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260605,机器人,5.94,10477.26,14.04102656,6.93,12.05906944,1.98195712,5,562500,机器人ETF
 20260605,银行,1.13,4074.42,10.61623808,4.13,-2.58629376,13.20253184,8,512800,银行ETF
 20260605,汽车零部件,0.96,48707.14,0.81267456,0.1,1.80262656,-0.989952,31,515030,新能源车ETF

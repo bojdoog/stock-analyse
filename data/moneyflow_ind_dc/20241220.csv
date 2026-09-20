@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241220,半导体,3.99,1464.78,83.8095616,5.21,81.60296704,2.20659456,1,512480,半导体ETF
 20241220,汽车零部件,1.31,34996.88,4.69439616,1.17,3.7171648,0.97723136,5,515030,新能源车ETF
 20241220,软件开发,1.55,1104.4,2.72082432,0.3,5.73532928,-3.01450496,8,515230,软件ETF

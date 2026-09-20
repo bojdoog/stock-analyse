@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231228,光伏设备,9.85,1378.81,50.88603136,11.98,43.45105152,7.43497984,1,516290,光伏ETF
 20231228,酿酒行业,3.09,55392.69,19.65653408,7.92,10.81385888,8.8426752,2,512690,白酒ETF
 20231228,通信设备,1.94,10978.08,12.0541664,4.32,4.5899872,7.4641792,3,515880,通信ETF

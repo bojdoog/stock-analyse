@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240220,证券,1.71,116266.9,9.16406304,3.62,8.5669456,0.59711744,1,512880,证券ETF
 20240220,化学制药,2.43,23669.08,5.4721464,2.91,5.72406768,-0.25192128,2,159929,医药ETF
 20240220,文化传媒,3.46,7772.98,4.3054968,1.24,9.88993456,-5.58443776,3,512980,传媒ETF

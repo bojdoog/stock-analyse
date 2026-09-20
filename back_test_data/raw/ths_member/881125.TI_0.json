@@ -1,0 +1,237 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "881125.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:44:55.481418+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"881125.TI\", \"con_code\": \"000550.SZ\", \"con_name\": \"江铃汽车\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881125.TI\", \"con_code\": \"000572.SZ\", \"con_name\": \"海马汽车\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881125.TI\", \"con_code\": \"000625.SZ\", \"con_name\": \"长安汽车\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881125.TI\", \"con_code\": \"000800.SZ\", \"con_name\": \"一汽解放\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881125.TI\", \"con_code\": \"000868.SZ\", \"con_name\": \"安凯客车\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881125.TI\", \"con_code\": \"000951.SZ\", \"con_name\": \"中国重汽\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881125.TI\", \"con_code\": \"000957.SZ\", \"con_name\": \"中通客车\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881125.TI\", \"con_code\": \"000980.SZ\", \"con_name\": \"众泰汽车\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881125.TI\", \"con_code\": \"002594.SZ\", \"con_name\": \"比亚迪\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881125.TI\", \"con_code\": \"301039.SZ\", \"con_name\": \"中集车辆\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881125.TI\", \"con_code\": \"600006.SH\", \"con_name\": \"东风股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881125.TI\", \"con_code\": \"600066.SH\", \"con_name\": \"宇通客车\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881125.TI\", \"con_code\": \"600104.SH\", \"con_name\": \"上汽集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881125.TI\", \"con_code\": \"600166.SH\", \"con_name\": \"福田汽车\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881125.TI\", \"con_code\": \"600303.SH\", \"con_name\": \"曙光股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881125.TI\", \"con_code\": \"600375.SH\", \"con_name\": \"汉马科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881125.TI\", \"con_code\": \"600418.SH\", \"con_name\": \"江淮汽车\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881125.TI\", \"con_code\": \"600686.SH\", \"con_name\": \"金龙汽车\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881125.TI\", \"con_code\": \"600733.SH\", \"con_name\": \"北汽蓝谷\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881125.TI\", \"con_code\": \"601127.SH\", \"con_name\": \"赛力斯\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881125.TI\", \"con_code\": \"601238.SH\", \"con_name\": \"广汽集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881125.TI\", \"con_code\": \"601633.SH\", \"con_name\": \"长城汽车\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881125.TI\", \"con_code\": \"601777.SH\", \"con_name\": \"千里科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "881125.TI",
+      "con_code": "000550.SZ",
+      "con_name": "江铃汽车",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881125.TI",
+      "con_code": "000572.SZ",
+      "con_name": "海马汽车",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881125.TI",
+      "con_code": "000625.SZ",
+      "con_name": "长安汽车",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881125.TI",
+      "con_code": "000800.SZ",
+      "con_name": "一汽解放",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881125.TI",
+      "con_code": "000868.SZ",
+      "con_name": "安凯客车",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881125.TI",
+      "con_code": "000951.SZ",
+      "con_name": "中国重汽",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881125.TI",
+      "con_code": "000957.SZ",
+      "con_name": "中通客车",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881125.TI",
+      "con_code": "000980.SZ",
+      "con_name": "众泰汽车",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881125.TI",
+      "con_code": "002594.SZ",
+      "con_name": "比亚迪",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881125.TI",
+      "con_code": "301039.SZ",
+      "con_name": "中集车辆",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881125.TI",
+      "con_code": "600006.SH",
+      "con_name": "东风股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881125.TI",
+      "con_code": "600066.SH",
+      "con_name": "宇通客车",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881125.TI",
+      "con_code": "600104.SH",
+      "con_name": "上汽集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881125.TI",
+      "con_code": "600166.SH",
+      "con_name": "福田汽车",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881125.TI",
+      "con_code": "600303.SH",
+      "con_name": "曙光股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881125.TI",
+      "con_code": "600375.SH",
+      "con_name": "汉马科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881125.TI",
+      "con_code": "600418.SH",
+      "con_name": "江淮汽车",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881125.TI",
+      "con_code": "600686.SH",
+      "con_name": "金龙汽车",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881125.TI",
+      "con_code": "600733.SH",
+      "con_name": "北汽蓝谷",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881125.TI",
+      "con_code": "601127.SH",
+      "con_name": "赛力斯",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881125.TI",
+      "con_code": "601238.SH",
+      "con_name": "广汽集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881125.TI",
+      "con_code": "601633.SH",
+      "con_name": "长城汽车",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881125.TI",
+      "con_code": "601777.SH",
+      "con_name": "千里科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

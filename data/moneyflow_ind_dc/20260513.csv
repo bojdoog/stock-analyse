@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260513,半导体,2.69,2866.83,37.1449856,0.93,42.25081344,-5.10582784,7,512480,半导体ETF
 20260513,公用事业,2.46,11017.24,35.35140352,3.22,45.16176128,-9.81035776,8,561380,电网设备ETF
 20260513,小金属,1.59,4428.42,9.37259008,1.63,4.55369472,4.81889536,28,512400,有色ETF

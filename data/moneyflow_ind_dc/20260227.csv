@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260227,有色金属,3.31,33110.26,98.33747456,4.36,83.39285504,14.94461952,1,512400,有色ETF
 20260227,小金属,7.84,4740.14,40.64791808,5.72,40.61120512,0.03671296,3,512400,有色ETF
 20260227,软件开发,1.9,1377.15,35.39737344,6.17,32.86096128,2.53641216,6,515230,软件ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240105,银行,1.56,2794.58,20.84203776,8.22,17.66116608,3.18087168,1,512800,银行ETF
 20240105,家电行业,-0.45,16328.04,3.48915872,2.23,3.64566752,-0.1565088,2,510150,消费ETF
 20240105,工程建设,-1.32,20157.27,0.82582624,0.76,1.13489808,-0.30907184,6,510300,沪深300ETF

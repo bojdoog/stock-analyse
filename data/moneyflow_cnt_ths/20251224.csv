@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251224,885806.TI,华为概念,瑞华泰,23.24,1.75,3357.33,994,19.98,1795.0,1575.0,220.0,515230,软件ETF
 20251224,885517.TI,机器人概念,英唐智控,14.82,1.69,3956.93,1140,20.0,1586.0,1375.0,210.0,562500,机器人ETF
 20251224,886078.TI,商业航天,新劲刚,22.66,3.6,2145.44,374,20.02,1206.0,1005.0,201.0,159206,卫星ETF

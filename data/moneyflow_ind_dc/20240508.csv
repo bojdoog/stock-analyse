@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240508,煤炭行业,1.4,11393.89,5.61088656,4.39,2.24019568,3.37069088,1,515220,煤炭ETF
 20240508,农牧饲渔,1.12,11914.82,4.93224688,3.74,3.98253664,0.94971024,2,510150,消费ETF
 20240508,医疗器械,0.66,786.44,4.2545904,2.54,4.89252336,-0.63793296,3,159929,医药ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260113,885530.TI,黄金概念,上海建工,3.04,0.95,3751.51,78,10.14,387.0,368.0,19.0,512400,有色ETF
 20260113,885603.TI,网络游戏,掌趣科技,6.86,-0.46,1952.6,66,14.91,514.0,507.0,6.0,159869,游戏ETF
 20260113,885874.TI,云游戏,东方明珠,15.39,-0.85,1802.59,27,5.05,199.0,196.0,3.0,159869,游戏ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251106,881121.TI,半导体,长光华芯,11769.7,2.51,164,20.0,80.27,716.0,607.0,109.0,512480,半导体ETF
 20251106,881129.TI,通信设备,仕佳光子,7258.78,1.0,88,12.1,74.1,348.0,301.0,46.0,515880,通信ETF
 20251106,881168.TI,工业金属,中国铝业,4088.37,3.51,58,10.03,10.86,219.0,175.0,44.0,512400,有色ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250121,885709.TI,虚拟现实,金奥博,49.08,0.81,744.46,275,0.81,550.0,490.0,60.0,159869,游戏ETF
 20250121,885517.TI,机器人概念,浩淼科技,13.12,1.25,2810.12,723,1.25,1060.0,1001.0,59.0,562500,机器人ETF
 20250121,886069.TI,人形机器人,肇民科技,37.79,3.68,1620.95,108,3.68,362.0,304.0,58.0,562500,机器人ETF

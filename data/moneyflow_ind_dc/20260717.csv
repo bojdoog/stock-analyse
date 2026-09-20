@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260717,公用事业,0.59,8897.96,4.66998016,0.69,12.674304,-8.00432384,4,561380,电网设备ETF
 20260717,锂电池,-4.82,16588.56,1.99153152,0.45,-4.33129472,6.32282624,8,516160,新能源ETF
 20260717,医药商业,-4.41,1067.65,-5.11556062,-7.53,-1.83655374,-3.27900688,10,159929,医药ETF

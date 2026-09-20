@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251111,885462.TI,乳业,欢乐家,26.23,2.37,2331.83,34,19.99,36.0,31.0,4.0,510150,消费ETF
 20251111,885780.TI,啤酒概念,皇氏集团,3.94,1.0,1606.81,30,4.23,24.0,21.0,2.0,512690,白酒ETF
 20251111,886038.TI,超导概念,阿石创,40.99,1.18,2200.01,26,11.39,60.0,59.0,1.0,561380,电网设备ETF

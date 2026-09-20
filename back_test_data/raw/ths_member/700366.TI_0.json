@@ -1,0 +1,381 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "700366.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:43:15.459459+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"700366.TI\", \"con_code\": \"000488.SZ\", \"con_name\": \"ST晨鸣\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"000592.SZ\", \"con_name\": \"平潭发展\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"000663.SZ\", \"con_name\": \"永安林业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"000815.SZ\", \"con_name\": \"美利云\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"000910.SZ\", \"con_name\": \"大亚圣象\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"002012.SZ\", \"con_name\": \"凯恩股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"002043.SZ\", \"con_name\": \"兔宝宝\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"002067.SZ\", \"con_name\": \"景兴纸业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"002078.SZ\", \"con_name\": \"太阳纸业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"002235.SZ\", \"con_name\": \"安妮股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"002521.SZ\", \"con_name\": \"齐峰新材\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"002631.SZ\", \"con_name\": \"德尔未来\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"002679.SZ\", \"con_name\": \"福建金森\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"300606.SZ\", \"con_name\": \"金太阳\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"301227.SZ\", \"con_name\": \"森鹰窗业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"301469.SZ\", \"con_name\": \"恒达新材\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"600076.SH\", \"con_name\": \"康欣新材\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"600103.SH\", \"con_name\": \"青山纸业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"600235.SH\", \"con_name\": \"民丰特纸\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"600265.SH\", \"con_name\": \"*ST景谷\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"600308.SH\", \"con_name\": \"华泰股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"600356.SH\", \"con_name\": \"恒丰纸业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"600433.SH\", \"con_name\": \"冠豪高新\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"600567.SH\", \"con_name\": \"山鹰国际\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"600793.SH\", \"con_name\": \"宜宾纸业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"600963.SH\", \"con_name\": \"岳阳林纸\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"600966.SH\", \"con_name\": \"博汇纸业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"601996.SH\", \"con_name\": \"丰林集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"603091.SH\", \"con_name\": \"众鑫股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"603165.SH\", \"con_name\": \"荣晟环保\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"603284.SH\", \"con_name\": \"林平发展\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"603607.SH\", \"con_name\": \"京华激光\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"603733.SH\", \"con_name\": \"仙鹤股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"603863.SH\", \"con_name\": \"松炀资源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"605007.SH\", \"con_name\": \"五洲特纸\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"605377.SH\", \"con_name\": \"华旺科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"605500.SH\", \"con_name\": \"森林包装\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"920394.BJ\", \"con_name\": \"民士达\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700366.TI\", \"con_code\": \"920445.BJ\", \"con_name\": \"龙竹科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "700366.TI",
+      "con_code": "000488.SZ",
+      "con_name": "ST晨鸣",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "000592.SZ",
+      "con_name": "平潭发展",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "000663.SZ",
+      "con_name": "永安林业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "000815.SZ",
+      "con_name": "美利云",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "000910.SZ",
+      "con_name": "大亚圣象",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "002012.SZ",
+      "con_name": "凯恩股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "002043.SZ",
+      "con_name": "兔宝宝",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "002067.SZ",
+      "con_name": "景兴纸业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "002078.SZ",
+      "con_name": "太阳纸业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "002235.SZ",
+      "con_name": "安妮股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "002521.SZ",
+      "con_name": "齐峰新材",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "002631.SZ",
+      "con_name": "德尔未来",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "002679.SZ",
+      "con_name": "福建金森",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "300606.SZ",
+      "con_name": "金太阳",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "301227.SZ",
+      "con_name": "森鹰窗业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "301469.SZ",
+      "con_name": "恒达新材",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "600076.SH",
+      "con_name": "康欣新材",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "600103.SH",
+      "con_name": "青山纸业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "600235.SH",
+      "con_name": "民丰特纸",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "600265.SH",
+      "con_name": "*ST景谷",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "600308.SH",
+      "con_name": "华泰股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "600356.SH",
+      "con_name": "恒丰纸业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "600433.SH",
+      "con_name": "冠豪高新",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "600567.SH",
+      "con_name": "山鹰国际",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "600793.SH",
+      "con_name": "宜宾纸业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "600963.SH",
+      "con_name": "岳阳林纸",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "600966.SH",
+      "con_name": "博汇纸业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "601996.SH",
+      "con_name": "丰林集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "603091.SH",
+      "con_name": "众鑫股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "603165.SH",
+      "con_name": "荣晟环保",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "603284.SH",
+      "con_name": "林平发展",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "603607.SH",
+      "con_name": "京华激光",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "603733.SH",
+      "con_name": "仙鹤股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "603863.SH",
+      "con_name": "松炀资源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "605007.SH",
+      "con_name": "五洲特纸",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "605377.SH",
+      "con_name": "华旺科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "605500.SH",
+      "con_name": "森林包装",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "920394.BJ",
+      "con_name": "民士达",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700366.TI",
+      "con_code": "920445.BJ",
+      "con_name": "龙竹科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

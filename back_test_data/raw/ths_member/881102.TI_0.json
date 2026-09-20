@@ -1,0 +1,354 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "881102.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:44:49.466177+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"881102.TI\", \"con_code\": \"000048.SZ\", \"con_name\": \"京基智农\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"000735.SZ\", \"con_name\": \"罗牛山\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"000798.SZ\", \"con_name\": \"中水渔业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"001201.SZ\", \"con_name\": \"东瑞股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"002069.SZ\", \"con_name\": \"獐子岛\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"002124.SZ\", \"con_name\": \"天邦食品\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"002157.SZ\", \"con_name\": \"正邦科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"002234.SZ\", \"con_name\": \"民和股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"002299.SZ\", \"con_name\": \"圣农发展\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"002321.SZ\", \"con_name\": \"华英农业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"002458.SZ\", \"con_name\": \"益生股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"002688.SZ\", \"con_name\": \"金河生物\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"002714.SZ\", \"con_name\": \"牧原股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"002746.SZ\", \"con_name\": \"仙坛股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"002868.SZ\", \"con_name\": \"绿康生化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"002982.SZ\", \"con_name\": \"湘佳股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"300094.SZ\", \"con_name\": \"国联水产\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"300119.SZ\", \"con_name\": \"瑞普生物\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"300313.SZ\", \"con_name\": \"天山生物\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"300498.SZ\", \"con_name\": \"温氏股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"300761.SZ\", \"con_name\": \"立华股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"300871.SZ\", \"con_name\": \"回盛生物\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"300967.SZ\", \"con_name\": \"晓鸣股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"600097.SH\", \"con_name\": \"开创国际\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"600195.SH\", \"con_name\": \"中牧股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"600201.SH\", \"con_name\": \"生物股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"600467.SH\", \"con_name\": \"好当家\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"600965.SH\", \"con_name\": \"*ST福成\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"600975.SH\", \"con_name\": \"新五丰\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"603477.SH\", \"con_name\": \"巨星农牧\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"603566.SH\", \"con_name\": \"普莱柯\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"603717.SH\", \"con_name\": \"天域生物\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"605296.SH\", \"con_name\": \"神农集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"688098.SH\", \"con_name\": \"申联生物\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"688526.SH\", \"con_name\": \"科前生物\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881102.TI\", \"con_code\": \"920729.BJ\", \"con_name\": \"永顺生物\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "881102.TI",
+      "con_code": "000048.SZ",
+      "con_name": "京基智农",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "000735.SZ",
+      "con_name": "罗牛山",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "000798.SZ",
+      "con_name": "中水渔业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "001201.SZ",
+      "con_name": "东瑞股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "002069.SZ",
+      "con_name": "獐子岛",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "002124.SZ",
+      "con_name": "天邦食品",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "002157.SZ",
+      "con_name": "正邦科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "002234.SZ",
+      "con_name": "民和股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "002299.SZ",
+      "con_name": "圣农发展",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "002321.SZ",
+      "con_name": "华英农业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "002458.SZ",
+      "con_name": "益生股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "002688.SZ",
+      "con_name": "金河生物",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "002714.SZ",
+      "con_name": "牧原股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "002746.SZ",
+      "con_name": "仙坛股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "002868.SZ",
+      "con_name": "绿康生化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "002982.SZ",
+      "con_name": "湘佳股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "300094.SZ",
+      "con_name": "国联水产",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "300119.SZ",
+      "con_name": "瑞普生物",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "300313.SZ",
+      "con_name": "天山生物",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "300498.SZ",
+      "con_name": "温氏股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "300761.SZ",
+      "con_name": "立华股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "300871.SZ",
+      "con_name": "回盛生物",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "300967.SZ",
+      "con_name": "晓鸣股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "600097.SH",
+      "con_name": "开创国际",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "600195.SH",
+      "con_name": "中牧股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "600201.SH",
+      "con_name": "生物股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "600467.SH",
+      "con_name": "好当家",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "600965.SH",
+      "con_name": "*ST福成",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "600975.SH",
+      "con_name": "新五丰",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "603477.SH",
+      "con_name": "巨星农牧",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "603566.SH",
+      "con_name": "普莱柯",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "603717.SH",
+      "con_name": "天域生物",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "605296.SH",
+      "con_name": "神农集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "688098.SH",
+      "con_name": "申联生物",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "688526.SH",
+      "con_name": "科前生物",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881102.TI",
+      "con_code": "920729.BJ",
+      "con_name": "永顺生物",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

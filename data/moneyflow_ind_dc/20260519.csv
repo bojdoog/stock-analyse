@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260519,公用事业,2.78,11071.7,47.97267456,4.52,41.6259584,6.34671616,2,561380,电网设备ETF
 20260519,半导体,2.96,2959.32,15.67793152,0.38,29.59224832,-13.9143168,9,512480,半导体ETF
 20260519,软件开发,2.34,1249.82,10.3734656,2.0,6.06917632,4.30428928,17,515230,软件ETF

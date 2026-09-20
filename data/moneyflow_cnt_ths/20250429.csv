@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250429,885517.TI,机器人概念,博创科技,44.5,1.36,2997.45,870,20.01,707.0,646.0,61.0,562500,机器人ETF
 20250429,885728.TI,人工智能,亿田智能,45.43,0.8,1065.45,823,14.72,696.0,644.0,51.0,159381,创业板人工智能ETF
 20250429,885806.TI,华为概念,博创科技,44.5,0.9,2493.39,972,20.01,830.0,789.0,40.0,515230,软件ETF

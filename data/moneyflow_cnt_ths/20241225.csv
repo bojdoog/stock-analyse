@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241225,886000.TI,一体化压铸,万丰奥威,21.01,-1.98,968.18,48,-1.98,50.0,47.0,2.0,515030,新能源车ETF
 20241225,885780.TI,啤酒概念,品渥食品,35.65,-1.37,1435.23,23,-1.37,8.0,10.0,-2.0,512690,白酒ETF
 20241225,885947.TI,DRG/DIP,塞力医疗,8.14,-2.73,882.94,22,-2.73,8.0,12.0,-3.0,159929,医药ETF

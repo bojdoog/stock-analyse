@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260624,半导体,3.82,3438.64,212.52685824,3.85,229.25996032,-16.73310208,2,512480,半导体ETF
 20260624,能源金属,5.97,1087.25,30.91631712,10.63,25.08389728,5.83241984,9,512400,有色ETF
 20260624,医疗服务,0.39,1189.35,23.81528832,7.44,17.50825472,6.3070336,11,510660,创新药ETF

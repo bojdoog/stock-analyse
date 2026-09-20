@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241204,885914.TI,煤炭概念,宝泰隆,3.05,-0.43,1847.82,78,-0.43,89.0,84.0,4.0,515220,煤炭ETF
 20241204,885780.TI,啤酒概念,皇氏集团,4.49,-1.21,1472.53,18,-1.21,9.0,12.0,-2.0,512690,白酒ETF
 20241204,885462.TI,乳业,一鸣食品,19.7,-1.06,1954.99,33,-1.06,22.0,25.0,-2.0,510150,消费ETF

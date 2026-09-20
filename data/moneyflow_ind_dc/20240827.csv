@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240827,游戏,0.1,770.05,6.10602128,8.25,4.96426656,1.14175472,1,159869,游戏ETF
 20240827,石油行业,-0.48,4398.75,3.43326768,5.92,2.0134896,1.41977808,2,510300,沪深300ETF
 20240827,化学制药,0.83,22827.67,3.26029808,2.5,2.52073104,0.73956704,3,159929,医药ETF

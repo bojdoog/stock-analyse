@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250313,煤炭行业,3.6,10538.36,14.54720528,8.28,9.64607168,4.9011336,1,515220,煤炭ETF
 20250313,船舶制造,3.2,860.44,6.9919976,9.68,5.15151776,1.84047984,3,512660,军工ETF
 20250313,石油行业,0.47,5563.2,6.26822544,9.24,3.38374176,2.88448368,4,510300,沪深300ETF

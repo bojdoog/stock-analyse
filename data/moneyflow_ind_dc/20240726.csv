@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240726,家电行业,4.71,14367.57,9.31583344,4.98,8.07283056,1.24300288,1,510150,消费ETF
 20240726,汽车整车,4.49,1368.77,6.42473216,2.42,4.95034624,1.47438592,2,515030,新能源车ETF
 20240726,航天航空,5.08,33811.33,5.56790416,4.72,3.38523152,2.18267264,3,512660,军工ETF

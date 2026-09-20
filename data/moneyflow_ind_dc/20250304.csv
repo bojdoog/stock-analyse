@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250304,半导体,4.31,1549.67,29.06566656,2.25,24.17149696,4.8941696,1,512480,半导体ETF
 20250304,汽车零部件,2.25,39160.5,21.80916992,3.45,24.35566848,-2.54649856,2,515030,新能源车ETF
 20250304,航天航空,4.8,44530.8,16.40146976,8.79,12.2098768,4.19159296,3,512660,军工ETF

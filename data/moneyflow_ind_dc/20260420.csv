@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260420,电网设备,2.05,44137.93,24.67202304,3.07,26.50870784,-1.8366848,9,561380,电网设备ETF
 20260420,光伏设备,1.29,1581.23,18.45279232,3.07,13.781056,4.67173632,10,516290,光伏ETF
 20260420,小金属,3.0,4173.46,13.7727104,2.52,8.9340032,4.8387072,16,512400,有色ETF

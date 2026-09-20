@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240130,贵金属,-1.56,817.18,0.17490352,0.52,0.3940656,-0.21916208,2,512400,有色ETF
 20240130,电力行业,-1.03,14126.38,-0.02964288,-0.02,0.092164,-0.12180688,4,561380,电网设备ETF
 20240130,公用事业,-0.89,7127.57,-0.04371169,-0.2,0.77279455,-0.81650624,5,561380,电网设备ETF

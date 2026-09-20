@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250612,文化传媒,1.81,10456.86,11.18679744,2.88,9.0306144,2.15618304,1,512980,传媒ETF
 20250612,通信设备,0.76,14488.37,9.11148288,1.44,8.670848,0.44063488,2,515880,通信ETF
 20250612,化学制药,1.16,34552.82,7.69739008,1.55,1.97955584,5.71783424,3,159929,医药ETF

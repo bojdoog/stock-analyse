@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250410,食品饮料,4.38,27632.82,20.75994672,4.94,17.79207216,2.96787456,1,510150,消费ETF
 20250410,商业百货,5.05,17250.48,15.7318376,4.6,19.1079912,-3.3761536,2,510150,消费ETF
 20250410,银行,0.57,3698.18,9.58339584,3.58,6.59342336,2.98997248,5,512800,银行ETF

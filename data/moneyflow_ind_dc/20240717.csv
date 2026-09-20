@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240717,酿酒行业,1.23,44689.45,6.08993776,3.76,4.13621952,1.95371824,2,512690,白酒ETF
 20240717,医疗服务,1.56,786.5,4.22874704,5.49,2.85563984,1.3731072,3,510660,创新药ETF
 20240717,旅游酒店,0.03,12014.43,3.05198304,5.48,1.2037448,1.84823824,4,510150,消费ETF

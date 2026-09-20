@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240813,证券,1.64,110763.51,2.82352992,2.22,2.3539752,0.46955472,1,512880,证券ETF
 20240813,贵金属,1.17,1000.94,2.69986032,4.36,0.33741808,2.36244224,2,512400,有色ETF
 20240813,电池,1.56,634.02,2.6613024,3.03,1.50354976,1.15775264,3,516160,新能源ETF

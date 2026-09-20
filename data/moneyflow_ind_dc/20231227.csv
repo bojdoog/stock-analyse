@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231227,半导体,1.92,1171.61,5.78501632,2.17,2.75711488,3.02790144,1,512480,半导体ETF
 20231227,软件开发,1.24,839.8,4.6640408,1.56,1.19071472,3.47332608,2,515230,软件ETF
 20231227,食品饮料,2.2,23939.72,4.494456,3.35,2.67906832,1.81538768,3,510150,消费ETF

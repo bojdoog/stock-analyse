@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250213,885874.TI,云游戏,首都在线,26.26,1.33,1298.56,26,1.33,138.0,121.0,16.0,159869,游戏ETF
 20250213,885497.TI,旅游概念,宏景科技,37.92,0.84,2432.28,109,0.84,144.0,131.0,12.0,510150,消费ETF
 20250213,885876.TI,网红经济,华谊兄弟,3.5,0.6,1377.14,103,0.6,201.0,191.0,10.0,512980,传媒ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241128,商业百货,2.85,15734.21,5.2390552,2.55,8.50943472,-3.27037952,2,510150,消费ETF
 20241128,光伏设备,0.61,1248.75,4.49416928,1.83,2.61728224,1.87688704,3,516290,光伏ETF
 20241128,食品饮料,1.62,25470.88,2.08739504,1.01,2.47024048,-0.38284544,7,510150,消费ETF

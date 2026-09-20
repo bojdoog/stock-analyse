@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240729,银行,1.49,3233.18,4.20139984,2.55,2.45253072,1.74886912,1,512800,银行ETF
 20240729,石油行业,0.26,4382.23,3.76858224,9.13,3.88822432,-0.11964208,3,510300,沪深300ETF
 20240729,家电行业,-0.2,14339.5,2.82627792,1.88,0.69855136,2.12772656,4,510150,消费ETF

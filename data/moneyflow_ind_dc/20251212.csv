@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251212,电网设备,3.28,35265.16,45.28662528,6.86,39.59365632,5.69296896,1.0,561380,电网设备ETF
 20251212,电力行业,1.31,17984.47,15.65593712,5.96,9.46590576,6.19003136,3.0,561380,电网设备ETF
 20251212,有色金属,1.86,24735.01,14.32653056,2.82,14.06365184,0.26287872,5.0,512400,有色ETF

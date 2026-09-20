@@ -17,6 +17,11 @@ import sys
 import time
 from pathlib import Path
 
+try:
+    from .storage_sqlite import save_dataframe, refresh_index, list_files, initialize, read_frame, has_file
+except ImportError:
+    from storage_sqlite import save_dataframe, refresh_index, list_files, initialize, read_frame, has_file
+
 import pandas as pd
 import tushare as ts
 
@@ -66,10 +71,10 @@ def fetch_index_kline(ts_code: str, start: str, end: str) -> pd.DataFrame:
         if df is None or df.empty:
             return pd.DataFrame()
         df = df.rename(columns={"trade_date": "date", "vol": "volume"})[
-            ["date", "open", "close", "high", "low", "volume"]
+            ["date", "open", "close", "high", "low", "volume", "amount"]
         ].copy()
         df["date"] = pd.to_datetime(df["date"])
-        for c in ["open", "close", "high", "low", "volume"]:
+        for c in ["open", "close", "high", "low", "volume", "amount"]:
             df[c] = pd.to_numeric(df[c], errors="coerce")
         return df.sort_values("date").reset_index(drop=True)
     except Exception as e:
@@ -121,7 +126,7 @@ def main():
         # 保存，统一文件名: {code}_{名称}.csv
         filename = f"{code}_{name}.csv"
         out_path = DATA_DIR / filename
-        df.to_csv(out_path, index=False)
+        save_dataframe(df, out_path, category='index')
 
         cnt = len(df)
         total += cnt

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240715,银行,0.74,3286.81,2.00997696,1.11,3.5676192,-1.55764224,1,512800,银行ETF
 20240715,石油行业,-0.83,4480.77,1.88504448,3.89,2.16450976,-0.27946528,2,510300,沪深300ETF
 20240715,电力行业,-0.99,14874.55,1.77044768,1.21,3.64468736,-1.87423968,3,561380,电网设备ETF

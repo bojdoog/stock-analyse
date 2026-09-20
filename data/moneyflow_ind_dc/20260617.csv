@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260617,半导体,4.13,3187.41,154.01074688,3.23,131.16215296,22.84859392,2,512480,半导体ETF
 20260617,贵金属,0.68,2303.63,1.8061072,1.23,1.413756,0.3923512,11,512400,有色ETF
 20260617,医疗器械,-0.46,889.47,0.54289728,0.28,0.02833728,0.51456,35,159929,医药ETF

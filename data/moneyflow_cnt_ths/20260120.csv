@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260120,885914.TI,煤炭概念,大有能源,7.34,0.73,2300.62,85,10.04,235.0,214.0,20.0,515220,煤炭ETF
 20260120,885780.TI,啤酒概念,红棉股份,4.24,1.52,1799.25,30,10.13,40.0,33.0,7.0,512690,白酒ETF
 20260120,885951.TI,预制菜,中华企业,3.04,0.44,1236.73,100,10.14,96.0,93.0,3.0,510150,消费ETF

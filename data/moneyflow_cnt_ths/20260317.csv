@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260317,886051.TI,减肥药,信立泰,58.58,-0.92,1368.97,61,5.84,53.0,53.0,0.0,510660,创新药ETF
 20260317,885947.TI,DRG/DIP,浪潮软件,18.16,-1.62,1118.12,22,4.85,11.0,14.0,-2.0,159929,医药ETF
 20260317,885927.TI,CRO概念,美诺华,26.36,-1.86,874.55,71,4.89,50.0,53.0,-3.0,510660,创新药ETF

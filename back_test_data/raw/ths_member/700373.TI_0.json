@@ -1,0 +1,489 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "700373.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:43:18.135436+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"700373.TI\", \"con_code\": \"000019.SZ\", \"con_name\": \"深粮控股\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"000032.SZ\", \"con_name\": \"深桑达A\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"000045.SZ\", \"con_name\": \"深纺织A\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"000065.SZ\", \"con_name\": \"北方国际\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"000068.SZ\", \"con_name\": \"华控赛格\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"000151.SZ\", \"con_name\": \"中成股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"000626.SZ\", \"con_name\": \"远大控股\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"000632.SZ\", \"con_name\": \"ST三木\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"000638.SZ\", \"con_name\": \"*ST万方\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"000652.SZ\", \"con_name\": \"泰达股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"000701.SZ\", \"con_name\": \"厦门信达\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"001316.SZ\", \"con_name\": \"润贝航科\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"002072.SZ\", \"con_name\": \"凯瑞德\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"002091.SZ\", \"con_name\": \"江苏国泰\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"002102.SZ\", \"con_name\": \"ST能特\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"002183.SZ\", \"con_name\": \"怡亚通\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"002441.SZ\", \"con_name\": \"众业达\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"002575.SZ\", \"con_name\": \"群兴玩具\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"002758.SZ\", \"con_name\": \"浙农股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"002999.SZ\", \"con_name\": \"天禾股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"300022.SZ\", \"con_name\": \"吉峰科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"300475.SZ\", \"con_name\": \"香农芯创\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"300538.SZ\", \"con_name\": \"同益股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"600051.SH\", \"con_name\": \"宁波联合\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"600058.SH\", \"con_name\": \"五矿发展\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"600128.SH\", \"con_name\": \"苏豪弘业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"600153.SH\", \"con_name\": \"建发股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"600156.SH\", \"con_name\": \"华升股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"600173.SH\", \"con_name\": \"卧龙新能\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"600278.SH\", \"con_name\": \"东方创业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"600281.SH\", \"con_name\": \"华阳新材\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"600313.SH\", \"con_name\": \"农发种业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"600335.SH\", \"con_name\": \"国机汽车\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"600382.SH\", \"con_name\": \"广东明珠\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"600551.SH\", \"con_name\": \"时代出版\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"600575.SH\", \"con_name\": \"淮河能源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"600608.SH\", \"con_name\": \"退市沪科\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"600648.SH\", \"con_name\": \"外高桥\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"600689.SH\", \"con_name\": \"上海三毛\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"600704.SH\", \"con_name\": \"物产中大\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"600710.SH\", \"con_name\": \"苏美达\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"600725.SH\", \"con_name\": \"云维股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"600739.SH\", \"con_name\": \"辽宁成大\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"600755.SH\", \"con_name\": \"厦门国贸\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"600787.SH\", \"con_name\": \"中储股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"600822.SH\", \"con_name\": \"上海物贸\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"600981.SH\", \"con_name\": \"苏豪汇鸿\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"601061.SH\", \"con_name\": \"中信金属\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"603933.SH\", \"con_name\": \"睿能科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"603970.SH\", \"con_name\": \"中农立华\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700373.TI\", \"con_code\": \"920961.BJ\", \"con_name\": \"创远信科\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "700373.TI",
+      "con_code": "000019.SZ",
+      "con_name": "深粮控股",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "000032.SZ",
+      "con_name": "深桑达A",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "000045.SZ",
+      "con_name": "深纺织A",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "000065.SZ",
+      "con_name": "北方国际",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "000068.SZ",
+      "con_name": "华控赛格",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "000151.SZ",
+      "con_name": "中成股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "000626.SZ",
+      "con_name": "远大控股",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "000632.SZ",
+      "con_name": "ST三木",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "000638.SZ",
+      "con_name": "*ST万方",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "000652.SZ",
+      "con_name": "泰达股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "000701.SZ",
+      "con_name": "厦门信达",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "001316.SZ",
+      "con_name": "润贝航科",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "002072.SZ",
+      "con_name": "凯瑞德",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "002091.SZ",
+      "con_name": "江苏国泰",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "002102.SZ",
+      "con_name": "ST能特",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "002183.SZ",
+      "con_name": "怡亚通",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "002441.SZ",
+      "con_name": "众业达",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "002575.SZ",
+      "con_name": "群兴玩具",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "002758.SZ",
+      "con_name": "浙农股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "002999.SZ",
+      "con_name": "天禾股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "300022.SZ",
+      "con_name": "吉峰科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "300475.SZ",
+      "con_name": "香农芯创",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "300538.SZ",
+      "con_name": "同益股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "600051.SH",
+      "con_name": "宁波联合",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "600058.SH",
+      "con_name": "五矿发展",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "600128.SH",
+      "con_name": "苏豪弘业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "600153.SH",
+      "con_name": "建发股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "600156.SH",
+      "con_name": "华升股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "600173.SH",
+      "con_name": "卧龙新能",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "600278.SH",
+      "con_name": "东方创业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "600281.SH",
+      "con_name": "华阳新材",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "600313.SH",
+      "con_name": "农发种业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "600335.SH",
+      "con_name": "国机汽车",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "600382.SH",
+      "con_name": "广东明珠",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "600551.SH",
+      "con_name": "时代出版",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "600575.SH",
+      "con_name": "淮河能源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "600608.SH",
+      "con_name": "退市沪科",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "600648.SH",
+      "con_name": "外高桥",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "600689.SH",
+      "con_name": "上海三毛",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "600704.SH",
+      "con_name": "物产中大",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "600710.SH",
+      "con_name": "苏美达",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "600725.SH",
+      "con_name": "云维股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "600739.SH",
+      "con_name": "辽宁成大",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "600755.SH",
+      "con_name": "厦门国贸",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "600787.SH",
+      "con_name": "中储股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "600822.SH",
+      "con_name": "上海物贸",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "600981.SH",
+      "con_name": "苏豪汇鸿",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "601061.SH",
+      "con_name": "中信金属",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "603933.SH",
+      "con_name": "睿能科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "603970.SH",
+      "con_name": "中农立华",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700373.TI",
+      "con_code": "920961.BJ",
+      "con_name": "创远信科",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

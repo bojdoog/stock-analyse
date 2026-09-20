@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260716,软件开发,0.39,1001.22,7.28032,1.69,4.50694912,2.77337088,6,515230,软件ETF
 20260716,房地产,0.51,1854.37,5.71260016,3.15,6.4524752,-0.73987504,12,510300,沪深300ETF
 20260716,食品饮料,0.84,25239.85,2.76712848,0.76,1.2878888,1.47923968,23,510150,消费ETF

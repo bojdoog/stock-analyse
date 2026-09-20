@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250526,885709.TI,虚拟现实,星宸科技,63.97,2.0,791.33,277,20.0,291.0,248.0,42.0,159869,游戏ETF
 20250526,885556.TI,5G,会畅通讯,21.13,1.65,3966.39,419,19.99,358.0,320.0,38.0,515880,通信ETF
 20250526,885806.TI,华为概念,中邮科技,55.2,1.5,2614.22,975,20.0,747.0,710.0,37.0,515230,软件ETF

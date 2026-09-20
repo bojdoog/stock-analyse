@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240109,光伏设备,1.4,1329.21,12.66190336,3.95,10.09044224,2.57146112,1,516290,光伏ETF
 20240109,旅游酒店,4.08,14388.29,7.6007152,6.94,7.20109456,0.39962064,2,510150,消费ETF
 20240109,有色金属,0.95,13964.21,2.495628,2.79,0.84749792,1.64813008,4,512400,有色ETF

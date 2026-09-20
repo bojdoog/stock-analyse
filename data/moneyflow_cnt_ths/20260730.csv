@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260730,885928.TI,钠离子电池,中国宝安,7.15,-2.02,1152.46,143,10.0,286.0,273.0,12.0,516160,新能源ETF
 20260730,885951.TI,预制菜,海欣食品,4.94,0.31,967.96,101,10.02,65.0,58.0,6.0,510150,消费ETF
 20260730,885462.TI,乳业,均瑶健康,6.12,-0.5,1858.24,35,10.07,29.0,25.0,4.0,510150,消费ETF

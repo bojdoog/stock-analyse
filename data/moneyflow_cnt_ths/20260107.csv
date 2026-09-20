@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260107,885908.TI,第三代半导体,观想科技,82.86,2.1,2051.84,157,20.0,573.0,537.0,36.0,512480,半导体ETF
 20260107,886054.TI,光刻机,先锋精科,73.5,3.3,2059.44,48,13.83,202.0,168.0,34.0,588710,科创半导体设备ETF
 20260107,885864.TI,光刻胶,佳先股份,20.8,6.05,4331.07,73,25.68,280.0,246.0,34.0,588710,科创半导体设备ETF

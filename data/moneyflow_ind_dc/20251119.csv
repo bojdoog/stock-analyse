@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251119,船舶制造,9.71,1224.42,28.35884784,16.36,26.5325464,1.82630144,1.0,512660,军工ETF
 20251119,通信设备,-0.77,17818.14,16.2723328,2.05,13.66800384,2.60432896,2.0,515880,通信ETF
 20251119,银行,0.63,4241.33,11.688128,4.22,8.6717824,3.0163456,,512800,银行ETF

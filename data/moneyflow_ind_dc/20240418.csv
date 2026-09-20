@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240418,小金属,0.58,1498.78,6.3781456,5.25,4.5963056,1.78184,1,512400,有色ETF
 20240418,证券,0.95,112275.5,4.26204944,1.85,5.03873552,-0.77668608,2,512880,证券ETF
 20240418,电网设备,0.51,19072.39,3.21082352,1.56,6.82144176,-3.61061824,3,561380,电网设备ETF

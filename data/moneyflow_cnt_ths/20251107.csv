@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251107,886032.TI,固态电池,华盛锂电,77.5,1.26,1367.0,269,19.16,909.0,814.0,94.0,516160,新能源ETF
 20251107,885928.TI,钠离子电池,华盛锂电,77.5,1.91,1347.67,133,19.16,505.0,436.0,68.0,516160,新能源ETF
 20251107,885530.TI,黄金概念,海南矿业,10.59,0.56,3330.5,77,9.97,212.0,198.0,13.0,512400,有色ETF

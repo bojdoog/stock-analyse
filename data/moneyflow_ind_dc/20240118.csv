@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240118,光伏设备,3.11,1384.26,38.3579136,8.7,32.57654784,5.78136576,1,516290,光伏ETF
 20240118,通信设备,0.86,10012.04,5.24501856,1.9,7.4095216,-2.16450304,2,515880,通信ETF
 20240118,游戏,0.94,979.57,2.22761328,2.65,1.64967632,0.57793696,3,159869,游戏ETF

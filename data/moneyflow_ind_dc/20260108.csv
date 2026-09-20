@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260108,航天航空,4.9,68378.63,46.52936192,6.03,43.88537344,2.64398848,1.0,512660,军工ETF
 20260108,船舶制造,7.36,1384.63,23.55212448,11.56,24.12173472,-0.56961024,2.0,512660,军工ETF
 20260108,互联网服务,2.25,33288.46,14.78685184,1.08,28.46126336,-13.67441152,3.0,515230,软件ETF

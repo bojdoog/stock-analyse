@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240506,酿酒行业,2.87,52809.19,20.30547712,5.96,17.30646016,2.99901696,1,512690,白酒ETF
 20240506,医疗服务,3.62,956.04,6.81323056,4.24,4.22982304,2.58340752,3,510660,创新药ETF
 20240506,家电行业,3.31,17013.27,4.6085824,1.66,4.5561664,0.052416,6,510150,消费ETF

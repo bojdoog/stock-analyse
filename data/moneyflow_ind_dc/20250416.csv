@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250416,旅游酒店,1.58,15988.13,2.16947792,1.32,2.05493648,0.11454144,2,510150,消费ETF
 20250416,食品饮料,0.84,28294.33,1.15057104,0.33,5.19335376,-4.04278272,3,510150,消费ETF
 20250416,文化传媒,-0.74,9354.64,0.38392288,0.18,0.0477232,0.33619968,9,512980,传媒ETF

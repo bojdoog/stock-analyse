@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260409,886044.TI,液冷服务器,胜蓝股份,69.61,0.61,2091.26,191,14.43,810.0,788.0,21.0,515230,软件ETF
 20260409,886037.TI,6G概念,沃格光电,39.22,0.12,2426.12,94,10.01,480.0,464.0,16.0,515880,通信ETF
 20260409,885945.TI,汽车芯片,锴威特,78.5,-0.46,1233.9,139,17.3,435.0,420.0,14.0,512480,半导体ETF

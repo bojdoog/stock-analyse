@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260723,886021.TI,国企改革,金冠股份,3.66,2.03,1311.94,2936,20.0,2088.0,1996.0,92.0,510300,沪深300ETF
 20260723,886032.TI,固态电池,中瑞股份,21.58,2.85,1290.52,295,20.02,631.0,542.0,89.0,516160,新能源ETF
 20260723,885494.TI,一带一路,益坤电气,28.6,2.57,2132.76,786,30.0,941.0,862.0,78.0,510300,沪深300ETF

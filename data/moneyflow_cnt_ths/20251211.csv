@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251211,885927.TI,CRO概念,ST诺泰,39.69,-0.71,827.53,72,4.39,58.0,55.0,2.0,510660,创新药ETF
 20251211,886000.TI,一体化压铸,三祥新材,35.0,-1.24,1288.58,56,3.92,54.0,58.0,-3.0,515030,新能源车ETF
 20251211,886051.TI,减肥药,重药控股,6.45,-0.12,1378.32,58,10.07,43.0,48.0,-4.0,510660,创新药ETF

@@ -1,0 +1,354 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "881268.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:45:17.928758+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"881268.TI\", \"con_code\": \"000157.SZ\", \"con_name\": \"中联重科\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"000425.SZ\", \"con_name\": \"徐工机械\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"000528.SZ\", \"con_name\": \"柳工\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"000680.SZ\", \"con_name\": \"山推股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"001226.SZ\", \"con_name\": \"拓山重工\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"001239.SZ\", \"con_name\": \"永达股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"002097.SZ\", \"con_name\": \"山河智能\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"002685.SZ\", \"con_name\": \"华东重机\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"300201.SZ\", \"con_name\": \"海伦哲\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"301079.SZ\", \"con_name\": \"邵阳液压\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"301161.SZ\", \"con_name\": \"唯万密封\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"301279.SZ\", \"con_name\": \"金道科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"301446.SZ\", \"con_name\": \"福事特\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"600031.SH\", \"con_name\": \"三一重工\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"600761.SH\", \"con_name\": \"安徽合力\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"600815.SH\", \"con_name\": \"厦工股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"600984.SH\", \"con_name\": \"建设机械\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"601100.SH\", \"con_name\": \"恒立液压\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"603194.SH\", \"con_name\": \"中力股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"603273.SH\", \"con_name\": \"天元智能\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"603280.SH\", \"con_name\": \"南方路机\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"603298.SH\", \"con_name\": \"杭叉集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"603338.SH\", \"con_name\": \"浙江鼎力\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"603611.SH\", \"con_name\": \"诺力股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"603638.SH\", \"con_name\": \"艾迪精密\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"605305.SH\", \"con_name\": \"中际联合\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"605389.SH\", \"con_name\": \"长龄液压\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"688425.SH\", \"con_name\": \"铁建重工\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"920002.BJ\", \"con_name\": \"万达轴承\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"920101.BJ\", \"con_name\": \"志高机械\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"920174.BJ\", \"con_name\": \"五新智能\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"920245.BJ\", \"con_name\": \"威博液压\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"920599.BJ\", \"con_name\": \"同力股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"920706.BJ\", \"con_name\": \"铁拓机械\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"920839.BJ\", \"con_name\": \"万通液压\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881268.TI\", \"con_code\": \"920942.BJ\", \"con_name\": \"恒立钻具\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "881268.TI",
+      "con_code": "000157.SZ",
+      "con_name": "中联重科",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "000425.SZ",
+      "con_name": "徐工机械",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "000528.SZ",
+      "con_name": "柳工",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "000680.SZ",
+      "con_name": "山推股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "001226.SZ",
+      "con_name": "拓山重工",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "001239.SZ",
+      "con_name": "永达股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "002097.SZ",
+      "con_name": "山河智能",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "002685.SZ",
+      "con_name": "华东重机",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "300201.SZ",
+      "con_name": "海伦哲",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "301079.SZ",
+      "con_name": "邵阳液压",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "301161.SZ",
+      "con_name": "唯万密封",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "301279.SZ",
+      "con_name": "金道科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "301446.SZ",
+      "con_name": "福事特",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "600031.SH",
+      "con_name": "三一重工",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "600761.SH",
+      "con_name": "安徽合力",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "600815.SH",
+      "con_name": "厦工股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "600984.SH",
+      "con_name": "建设机械",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "601100.SH",
+      "con_name": "恒立液压",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "603194.SH",
+      "con_name": "中力股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "603273.SH",
+      "con_name": "天元智能",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "603280.SH",
+      "con_name": "南方路机",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "603298.SH",
+      "con_name": "杭叉集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "603338.SH",
+      "con_name": "浙江鼎力",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "603611.SH",
+      "con_name": "诺力股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "603638.SH",
+      "con_name": "艾迪精密",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "605305.SH",
+      "con_name": "中际联合",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "605389.SH",
+      "con_name": "长龄液压",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "688425.SH",
+      "con_name": "铁建重工",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "920002.BJ",
+      "con_name": "万达轴承",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "920101.BJ",
+      "con_name": "志高机械",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "920174.BJ",
+      "con_name": "五新智能",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "920245.BJ",
+      "con_name": "威博液压",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "920599.BJ",
+      "con_name": "同力股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "920706.BJ",
+      "con_name": "铁拓机械",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "920839.BJ",
+      "con_name": "万通液压",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881268.TI",
+      "con_code": "920942.BJ",
+      "con_name": "恒立钻具",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

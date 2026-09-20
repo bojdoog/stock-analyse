@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250122,886044.TI,液冷服务器,欧陆通,135.98,1.52,1160.66,70,1.52,299.0,281.0,17.0,515230,软件ETF
 20250122,885556.TI,5G,德科立,108.13,-0.25,3769.68,404,-0.25,703.0,693.0,9.0,515880,通信ETF
 20250122,886050.TI,算力租赁,电光科技,25.04,-0.89,966.61,112,-0.89,208.0,204.0,4.0,515230,软件ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250922,半导体,2.54,1912.32,44.35257088,2.01,46.27543808,-1.9228672,2.0,512480,半导体ETF
 20250922,汽车零部件,1.05,52051.74,16.5606912,1.75,16.03254784,0.52814336,4.0,515030,新能源车ETF
 20250922,贵金属,6.18,1879.16,15.26514576,9.42,11.01792816,4.2472176,5.0,512400,有色ETF

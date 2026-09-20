@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250828,半导体,4.09,1888.57,73.57901056,2.73,80.8508032,-7.27179264,1,512480,半导体ETF
 20250828,通信设备,3.69,19423.12,46.88896,2.45,53.01413888,-6.12517888,2,515880,通信ETF
 20250828,银行,0.39,4222.95,6.64466432,1.77,9.8390784,-3.19441408,6,512800,银行ETF

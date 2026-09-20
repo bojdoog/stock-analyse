@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240822,电池,0.16,623.88,4.1535056,2.86,5.25049072,-1.09698512,1,516160,新能源ETF
 20240822,电力行业,-0.17,13842.71,1.05005744,0.92,1.6258848,-0.57582736,4,561380,电网设备ETF
 20240822,煤炭行业,-0.62,9253.45,0.55732006,1.45,0.1128175,0.44450256,7,515220,煤炭ETF

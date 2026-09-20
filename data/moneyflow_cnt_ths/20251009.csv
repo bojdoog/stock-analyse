@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251009,886021.TI,国企改革,西部超导,78.11,1.09,1432.87,2868,20.0,2696.0,2553.0,143.0,510300,沪深300ETF
 20251009,885936.TI,绿色电力,金力永磁,39.49,1.81,1148.79,336,15.16,676.0,568.0,107.0,516160,新能源ETF
 20251009,885343.TI,稀土永磁,九菱科技,57.25,5.05,3460.63,58,18.97,394.0,292.0,101.0,512400,有色ETF

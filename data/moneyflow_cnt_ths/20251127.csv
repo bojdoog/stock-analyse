@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251127,885928.TI,钠离子电池,联得装备,33.83,1.99,1286.8,134,20.01,302.0,292.0,9.0,516160,新能源ETF
 20251127,885780.TI,啤酒概念,珠海中富,2.9,0.11,1545.61,30,5.07,12.0,12.0,0.0,512690,白酒ETF
 20251127,885945.TI,汽车芯片,东芯股份,134.02,0.73,1106.78,134,12.81,421.0,421.0,0.0,512480,半导体ETF

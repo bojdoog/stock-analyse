@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231213,化学制药,1.54,31007.2,8.372908,3.04,8.896428,-0.52352,1,159929,医药ETF
 20231213,中药,1.5,1631.39,2.6479776,1.61,0.5334968,2.1144808,3,159929,医药ETF
 20231213,医药商业,1.15,1097.03,1.77276049,5.06,1.59564001,0.17712048,4,159929,医药ETF

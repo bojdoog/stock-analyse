@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250605,885806.TI,华为概念,恒实科技,9.4,1.73,2686.53,978,20.05,1234.0,1050.0,183.0,515230,软件ETF
 20250605,885556.TI,5G,恒实科技,9.4,2.13,4104.36,419,20.05,667.0,524.0,143.0,515880,通信ETF
 20250605,885517.TI,机器人概念,路桥信息,57.74,1.25,3223.55,924,29.99,950.0,822.0,128.0,562500,机器人ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240430,化学制药,1.86,26115.37,2.0881448,0.87,1.090372,0.9977728,1,159929,医药ETF
 20240430,生物制品,1.11,794.63,1.98008688,1.83,1.43271488,0.547372,2,510660,创新药ETF
 20240430,食品饮料,0.81,21908.56,1.08693632,0.64,1.58221648,-0.49528016,4,510150,消费ETF

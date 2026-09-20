@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260602,通信设备,2.53,25647.63,155.2313344,6.73,156.45507072,-1.22373632,2,515880,通信ETF
 20260602,有色金属,1.96,29975.51,80.58878464,4.95,64.9904,15.59838464,4,512400,有色ETF
 20260602,小金属,2.98,4135.72,19.95635712,4.38,20.78434048,-0.82798336,13,512400,有色ETF

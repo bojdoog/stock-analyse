@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240110,光伏设备,2.16,1357.9,9.53664736,2.8,6.40758752,3.12905984,1,516290,光伏ETF
 20240110,食品饮料,1.95,23927.42,6.80330912,5.11,3.37138416,3.43192496,2,510150,消费ETF
 20240110,家电行业,-0.04,16206.95,4.56817104,3.53,5.25714976,-0.68897872,3,510150,消费ETF

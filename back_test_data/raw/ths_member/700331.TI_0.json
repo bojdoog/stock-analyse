@@ -1,0 +1,318 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "700331.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:43:07.669795+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"700331.TI\", \"con_code\": \"001206.SZ\", \"con_name\": \"依依股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"001218.SZ\", \"con_name\": \"丽臣实业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"001223.SZ\", \"con_name\": \"欧克科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"001328.SZ\", \"con_name\": \"登康口腔\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"002094.SZ\", \"con_name\": \"青岛金王\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"002511.SZ\", \"con_name\": \"中顺洁柔\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"002919.SZ\", \"con_name\": \"名臣健康\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"003006.SZ\", \"con_name\": \"百亚股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"300132.SZ\", \"con_name\": \"诺斯贝尔\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"300658.SZ\", \"con_name\": \"延江股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"300740.SZ\", \"con_name\": \"水羊股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"300888.SZ\", \"con_name\": \"稳健医疗\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"300955.SZ\", \"con_name\": \"嘉亨家化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"300957.SZ\", \"con_name\": \"贝泰妮\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"301009.SZ\", \"con_name\": \"可靠股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"301059.SZ\", \"con_name\": \"金三江\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"301101.SZ\", \"con_name\": \"明月镜片\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"301108.SZ\", \"con_name\": \"洁雅股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"301371.SZ\", \"con_name\": \"敷尔佳\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"600223.SH\", \"con_name\": \"福瑞达\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"600249.SH\", \"con_name\": \"两面针\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"600315.SH\", \"con_name\": \"上海家化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"600439.SH\", \"con_name\": \"瑞贝卡\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"600735.SH\", \"con_name\": \"ST新华锦\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"603059.SH\", \"con_name\": \"倍加洁\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"603193.SH\", \"con_name\": \"润本股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"603605.SH\", \"con_name\": \"珀莱雅\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"603630.SH\", \"con_name\": \"拉芳家化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"603983.SH\", \"con_name\": \"丸美生物\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"605009.SH\", \"con_name\": \"豪悦护理\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"920123.BJ\", \"con_name\": \"芭薇股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700331.TI\", \"con_code\": \"920176.BJ\", \"con_name\": \"维琪科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "700331.TI",
+      "con_code": "001206.SZ",
+      "con_name": "依依股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "001218.SZ",
+      "con_name": "丽臣实业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "001223.SZ",
+      "con_name": "欧克科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "001328.SZ",
+      "con_name": "登康口腔",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "002094.SZ",
+      "con_name": "青岛金王",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "002511.SZ",
+      "con_name": "中顺洁柔",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "002919.SZ",
+      "con_name": "名臣健康",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "003006.SZ",
+      "con_name": "百亚股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "300132.SZ",
+      "con_name": "诺斯贝尔",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "300658.SZ",
+      "con_name": "延江股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "300740.SZ",
+      "con_name": "水羊股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "300888.SZ",
+      "con_name": "稳健医疗",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "300955.SZ",
+      "con_name": "嘉亨家化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "300957.SZ",
+      "con_name": "贝泰妮",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "301009.SZ",
+      "con_name": "可靠股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "301059.SZ",
+      "con_name": "金三江",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "301101.SZ",
+      "con_name": "明月镜片",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "301108.SZ",
+      "con_name": "洁雅股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "301371.SZ",
+      "con_name": "敷尔佳",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "600223.SH",
+      "con_name": "福瑞达",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "600249.SH",
+      "con_name": "两面针",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "600315.SH",
+      "con_name": "上海家化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "600439.SH",
+      "con_name": "瑞贝卡",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "600735.SH",
+      "con_name": "ST新华锦",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "603059.SH",
+      "con_name": "倍加洁",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "603193.SH",
+      "con_name": "润本股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "603605.SH",
+      "con_name": "珀莱雅",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "603630.SH",
+      "con_name": "拉芳家化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "603983.SH",
+      "con_name": "丸美生物",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "605009.SH",
+      "con_name": "豪悦护理",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "920123.BJ",
+      "con_name": "芭薇股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700331.TI",
+      "con_code": "920176.BJ",
+      "con_name": "维琪科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

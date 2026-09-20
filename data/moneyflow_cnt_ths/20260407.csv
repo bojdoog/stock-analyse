@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260407,886021.TI,国企改革,江天化学,30.49,1.37,1469.13,2920,19.99,1444.0,1369.0,75.0,510300,沪深300ETF
 20260407,885914.TI,煤炭概念,赤天化,3.82,2.6,2401.44,86,10.09,133.0,103.0,30.0,515220,煤炭ETF
 20260407,885343.TI,稀土永磁,中稀有色,86.96,2.1,3392.51,63,10.01,121.0,92.0,29.0,512400,有色ETF

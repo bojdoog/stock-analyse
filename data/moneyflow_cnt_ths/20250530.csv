@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250530,886015.TI,创新药,睿智医药,10.27,1.56,1137.55,194,19.98,244.0,231.0,13.0,510660,创新药ETF
 20250530,886051.TI,减肥药,皓元医药,44.1,0.89,1179.79,50,15.26,72.0,68.0,3.0,510660,创新药ETF
 20250530,885927.TI,CRO概念,睿智医药,10.27,0.92,691.17,63,19.98,74.0,76.0,-1.0,510660,创新药ETF

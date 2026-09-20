@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250814,885866.TI,数字货币,四方精创,45.7,0.74,2520.43,97,15.29,381.0,365.0,16.0,515230,软件ETF
 20250814,885780.TI,啤酒概念,莱茵生物,8.63,-1.39,1533.48,30,1.29,16.0,23.0,-6.0,512690,白酒ETF
 20250814,885947.TI,DRG/DIP,数字认证,39.87,-1.65,1149.29,23,5.62,35.0,44.0,-8.0,159929,医药ETF

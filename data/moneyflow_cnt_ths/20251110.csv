@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251110,885951.TI,预制菜,惠发食品,14.08,2.65,1204.5,103,10.0,119.0,87.0,32.0,510150,消费ETF
 20251110,885876.TI,网红经济,欢乐家,21.86,1.69,1573.99,114,19.98,140.0,112.0,27.0,512980,传媒ETF
 20251110,886015.TI,创新药,北大医药,6.48,1.41,1392.78,267,10.02,259.0,237.0,21.0,510660,创新药ETF

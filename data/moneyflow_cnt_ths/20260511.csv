@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260511,886042.TI,存储芯片,中科仪,109.99,4.96,2624.47,181,25.05,1697.0,1511.0,186.0,512480,半导体ETF
 20260511,885945.TI,汽车芯片,聚辰股份,151.53,3.08,1485.45,140,15.98,1002.0,846.0,156.0,512480,半导体ETF
 20260511,885908.TI,第三代半导体,中科仪,109.99,3.66,2667.41,163,25.05,920.0,822.0,97.0,512480,半导体ETF

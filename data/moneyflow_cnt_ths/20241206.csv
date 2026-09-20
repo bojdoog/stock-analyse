@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241206,886021.TI,国企改革,节能铁汉,3.18,1.38,1267.16,2802,1.38,1723.0,1634.0,88.0,510300,沪深300ETF
 20241206,886015.TI,创新药,广生堂,31.63,1.85,1056.45,174,1.85,150.0,113.0,36.0,510660,创新药ETF
 20241206,885936.TI,绿色电力,梅雁吉祥,3.03,1.34,963.88,205,1.34,204.0,174.0,30.0,516160,新能源ETF

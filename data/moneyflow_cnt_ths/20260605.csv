@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260605,885564.TI,无人机,东土科技,21.94,1.05,3261.02,458,20.02,1182.0,1127.0,54.0,512660,军工ETF
 20260605,886067.TI,低空经济,创远信科,21.95,0.96,2218.21,492,29.96,1221.0,1177.0,44.0,515030,新能源车ETF
 20260605,885574.TI,卫星导航,创远信科,21.95,1.23,5042.92,276,29.96,1105.0,1063.0,42.0,515880,通信ETF

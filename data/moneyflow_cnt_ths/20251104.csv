@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251104,885947.TI,DRG/DIP,浪潮软件,17.69,-0.15,1181.65,23,4.61,26.0,25.0,1.0,159929,医药ETF
 20251104,885780.TI,啤酒概念,亚盛集团,3.19,-0.31,1548.94,30,2.24,8.0,12.0,-3.0,512690,白酒ETF
 20251104,885462.TI,乳业,福成股份,5.24,-0.33,2175.14,34,2.34,11.0,17.0,-6.0,510150,消费ETF

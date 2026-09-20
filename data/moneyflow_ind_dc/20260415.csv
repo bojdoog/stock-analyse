@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260415,电网设备,1.62,42591.34,39.5938688,4.74,27.61235712,11.98151168,2,561380,电网设备ETF
 20260415,化学制药,2.29,39532.66,21.32545792,3.17,12.1263616,9.19909632,4,159929,医药ETF
 20260415,食品饮料,0.18,27957.31,9.7051792,3.73,7.25993888,2.44524032,7,510150,消费ETF

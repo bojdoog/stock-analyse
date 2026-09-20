@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260303,银行,0.43,4100.96,23.11865856,5.18,20.96349184,2.15516672,1,512800,银行ETF
 20260303,锂电池,-2.24,17934.67,6.99099904,1.8,3.25939968,3.73159936,13,516160,新能源ETF
 20260303,储能,7.77,783.76,-1.2721704,-3.09,-0.35145552,-0.92071488,17,516160,新能源ETF

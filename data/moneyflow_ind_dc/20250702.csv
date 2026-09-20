@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250702,光伏设备,3.71,1081.49,44.91150544,12.03,32.55717328,12.35433216,1,516290,光伏ETF
 20250702,食品饮料,0.54,28847.04,9.02754928,5.09,6.90300912,2.12454016,3,510150,消费ETF
 20250702,能源金属,1.37,486.8,7.4910344,8.75,3.62090864,3.87012576,4,512400,有色ETF

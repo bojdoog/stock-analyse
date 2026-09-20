@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251010,电网设备,1.53,33661.36,9.03747072,1.38,7.41066752,1.6268032,1.0,561380,电网设备ETF
 20251010,证券,0.63,165778.95,7.72203008,1.24,4.67209472,3.04993536,2.0,512880,证券ETF
 20251010,水泥建材,2.76,30371.66,4.68677504,4.56,4.84400432,-0.15722928,4.0,510300,沪深300ETF

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { init, connect, ECharts } from 'echarts';
+import { isCloseOnlySeries } from '../utils/indicatorDisplay';
 
 interface KLineData {
   date: string;
@@ -27,7 +28,24 @@ interface ChartZones {
   bear: ZoneRange[];
 }
 
+export interface ZoneParams {
+  bullStartSingleDay: number;
+  bullStartTwoDay: number;
+  bullEndSingleDay: number;
+  bullEndUseMA10: boolean;
+  bullStartUseMA10: boolean;
+}
+
+const DEFAULT_ZONE_PARAMS: ZoneParams = {
+  bullStartSingleDay: 4,
+  bullStartTwoDay: 4,
+  bullEndSingleDay: -2.3,
+  bullEndUseMA10: true,
+  bullStartUseMA10: false,
+};
+
 interface KLineChartProps {
+  dateWindowRef?: React.MutableRefObject<{ start: string; end: string } | null>;
   data: KLineData[];
   highlightThreshold?: number;
   showBullZoneBg?: boolean;
@@ -46,6 +64,7 @@ interface KLineChartProps {
   baseDates?: string[];
   zones?: ChartZones;
   onZonesChange?: (zones: ChartZones) => void;
+  zoneParams?: ZoneParams;
   seriesType?: 'candlestick' | 'line';
 }
 
@@ -67,6 +86,7 @@ const alignDataToDates = (source: KLineData[], dates: string[]): KLineData[] => 
 };
 
 const KLineChart: React.FC<KLineChartProps> = ({
+  dateWindowRef,
   data,
   highlightThreshold = 4,
   showBullZoneBg = false,
@@ -75,8 +95,8 @@ const KLineChart: React.FC<KLineChartProps> = ({
   allETFSeries = [],
   syncGroup,
   dataLabel = '活跃市值',
-  mainSeriesName = '日K',
-  showVolume = true,
+  mainSeriesName: requestedSeriesName = '日K',
+  showVolume: requestedShowVolume = true,
   showRanking = true,
   showZones = true,
   chartHeight = 900,
@@ -85,11 +105,17 @@ const KLineChart: React.FC<KLineChartProps> = ({
   baseDates,
   zones: externalZones,
   onZonesChange,
-  seriesType = 'candlestick'
+  zoneParams = DEFAULT_ZONE_PARAMS,
+  seriesType: requestedSeriesType = 'candlestick'
 }) => {
+  const closeOnly = isCloseOnlySeries(data);
+  const seriesType = closeOnly ? 'line' : requestedSeriesType;
+  const mainSeriesName = closeOnly && requestedSeriesName === '日K' ? '收盘估算值' : requestedSeriesName;
+  const showVolume = requestedShowVolume && !closeOnly;
   const chartRef = useRef<HTMLDivElement>(null);
   const chartInstance = useRef<ECharts | null>(null);
-  const zoomRange = useRef<{ start: number; end: number } | null>(null);
+  const localDateWindow = useRef<{ start: string; end: string } | null>(null);
+  const zoomRange = dateWindowRef ?? localDateWindow;
 
   const calculateMA = (dayCount: number, data: KLineData[]) => {
     const result: (number | string)[] = [];
@@ -126,8 +152,6 @@ const KLineChart: React.FC<KLineChartProps> = ({
       chartInstance.current.dispose();
     }
 
-    chartInstance.current = init(chartRef.current);
-
     // 按 baseDates / maxDate 对齐并截断主数据和叠加序列，确保上方副图与主图 x 轴一致
     const alignedBaseDates = baseDates
       ? (maxDate ? baseDates.filter(d => d <= maxDate) : baseDates)
@@ -144,9 +168,21 @@ const KLineChart: React.FC<KLineChartProps> = ({
 
     const dates = filteredData.map(item => item.date);
 
-    // 如果有保存的 zoom 范围，应用它；否则使用默认初始范围
-    const initialStart = zoomRange.current?.start ?? 90;
-    const initialEnd = zoomRange.current?.end ?? 100;
+    if (dates.length === 0) return;
+    chartInstance.current = init(chartRef.current);
+    // 按日期恢复窗口，避免不同指标的数据长度改变缩放比例。
+    const savedWindow = zoomRange.current;
+    const firstAtOrAfter = (date: string) => {
+      const index = dates.findIndex(value => value >= date);
+      return index < 0 ? dates.length - 1 : index;
+    };
+    const initialStart = savedWindow
+      ? firstAtOrAfter(savedWindow.start)
+      : Math.round((dates.length - 1) * 0.9);
+    const afterEnd = savedWindow ? dates.findIndex(value => value > savedWindow.end) : -1;
+    const initialEnd = Math.max(initialStart, afterEnd < 0 ? dates.length - 1 : Math.max(0, afterEnd - 1));
+    // 首次展示也记录窗口；恢复时不覆盖原窗口，以便切回历史更长的指标。
+    if (!savedWindow) zoomRange.current = { start: dates[initialStart], end: dates[initialEnd] };
 
     const ma10 = calculateMA(10, filteredData);
 
@@ -183,17 +219,25 @@ const KLineChart: React.FC<KLineChartProps> = ({
           let bullStart = false;
           let twoDayBull = false;
 
-          if (change > 4) {
+          if (change > zoneParams.bullStartSingleDay) {
             bullStart = true;
           } else if (change > 0 && i > 0) {
             const prevItem = filteredData[i - 1];
             const prevPrevItem = filteredData[i - 2];
             if (prevPrevItem) {
               const prevChange = (prevItem.close - prevPrevItem.close) / prevPrevItem.close * 100;
-              if (prevChange > 0 && change + prevChange > 4) {
+              if (prevChange > 0 && change + prevChange > zoneParams.bullStartTwoDay) {
                 bullStart = true;
                 twoDayBull = true;
               }
+            }
+          }
+
+          // 启动日收盘价须站上 MA10（受策略参数控制）
+          if (bullStart && zoneParams.bullStartUseMA10) {
+            const startMA10 = parseFloat(ma10[i] as string);
+            if (isNaN(startMA10) || item.close <= startMA10) {
+              bullStart = false;
             }
           }
 
@@ -210,9 +254,9 @@ const KLineChart: React.FC<KLineChartProps> = ({
 
           if (isBullZone) {
             const ma10Value = parseFloat(ma10[i] as string);
-            const breakMA10 = !isNaN(ma10Value) && item.close < ma10Value;
+            const breakMA10 = zoneParams.bullEndUseMA10 && !isNaN(ma10Value) && item.close < ma10Value;
 
-            if (change < -2.3 || breakMA10) {
+            if (change < zoneParams.bullEndSingleDay || breakMA10) {
               specialMarks.push({ index: i, type: 'bear' });
               isBullZone = false;
               bullZones.push({ start: currentBullStart, end: i });
@@ -258,7 +302,7 @@ const KLineChart: React.FC<KLineChartProps> = ({
           const startChange0AMV = zone.start > 0
             ? (filteredData[zone.start].close - filteredData[zone.start - 1].close) / filteredData[zone.start - 1].close * 100
             : 0;
-          const isSingleDayStart = startChange0AMV > 4;
+          const isSingleDayStart = startChange0AMV > zoneParams.bullStartSingleDay;
 
           const startGains: { name: string; gain: number; series: ExtraSeries }[] = [];
           const zoneGains: { name: string; gain: number }[] = [];
@@ -665,16 +709,18 @@ const KLineChart: React.FC<KLineChartProps> = ({
         {
           type: 'inside',
           xAxisIndex: showVolume ? [0, 1] : [0],
-          start: initialStart,
-          end: initialEnd
+          startValue: initialStart,
+          endValue: initialEnd,
+          rangeMode: ['value', 'value']
         },
         ...(showDataZoom ? [{
           show: true,
           xAxisIndex: showVolume ? [0, 1] : [0],
           type: 'slider',
           top: '92%',
-          start: initialStart,
-          end: initialEnd,
+          startValue: initialStart,
+          endValue: initialEnd,
+          rangeMode: ['value', 'value'],
           textStyle: { color: '#666' },
           borderColor: '#ddd',
           fillerColor: 'rgba(100,100,100,0.1)',
@@ -689,6 +735,7 @@ const KLineChart: React.FC<KLineChartProps> = ({
           smooth: false,
           symbol: 'none',
           lineStyle: { color: '#333', width: 1.5 },
+          itemStyle: { color: '#333' },
           markArea: (showZones && (showBullZoneBg || showBearZoneBg)) ? {
             data: [
               ...(showBullZoneBg ? bullZones.map(zone => [
@@ -724,6 +771,7 @@ const KLineChart: React.FC<KLineChartProps> = ({
           data: ma5,
           smooth: true,
           lineStyle: { opacity: 0.8, width: 1, color: '#f5d742' },
+          itemStyle: { color: '#f5d742' },
           symbol: 'none'
         },
         {
@@ -732,6 +780,7 @@ const KLineChart: React.FC<KLineChartProps> = ({
           data: ma10,
           smooth: true,
           lineStyle: { opacity: 0.8, width: 1, color: '#4287f5' },
+          itemStyle: { color: '#4287f5' },
           symbol: 'none'
         },
         {
@@ -740,6 +789,7 @@ const KLineChart: React.FC<KLineChartProps> = ({
           data: ma20,
           smooth: true,
           lineStyle: { opacity: 0.8, width: 1, color: '#f542e3' },
+          itemStyle: { color: '#f542e3' },
           symbol: 'none'
         },
         {
@@ -748,6 +798,7 @@ const KLineChart: React.FC<KLineChartProps> = ({
           data: ma60,
           smooth: true,
           lineStyle: { opacity: 0.8, width: 1, color: '#ff8c00' },
+          itemStyle: { color: '#ff8c00' },
           symbol: 'none'
         },
         ...extraSeriesData,
@@ -771,12 +822,18 @@ const KLineChart: React.FC<KLineChartProps> = ({
 
     // 监听缩放事件，保存当前范围
     chartInstance.current.on('dataZoom', () => {
-      const opt = chartInstance.current?.getOption() as { dataZoom?: Array<{ start?: number; end?: number }> } | undefined;
+      const opt = chartInstance.current?.getOption() as { dataZoom?: Array<{ start?: number; end?: number; startValue?: number | string; endValue?: number | string }> } | undefined;
       if (opt?.dataZoom && opt.dataZoom.length > 0) {
         const dz = opt.dataZoom[0];
-        if (typeof dz.start === 'number' && typeof dz.end === 'number') {
-          zoomRange.current = { start: dz.start, end: dz.end };
-        }
+        const resolveDate = (value: number | string | undefined, percent: number | undefined) => {
+          if (typeof value === 'string' && dates.includes(value)) return value;
+          const index = typeof value === 'number' ? value
+            : typeof percent === 'number' ? (dates.length - 1) * percent / 100 : NaN;
+          return Number.isFinite(index) ? dates[Math.max(0, Math.min(dates.length - 1, Math.round(index)))] : undefined;
+        };
+        const start = resolveDate(dz.startValue, dz.start);
+        const end = resolveDate(dz.endValue, dz.end);
+        if (start && end) zoomRange.current = { start, end };
       }
     });
 
@@ -799,7 +856,7 @@ const KLineChart: React.FC<KLineChartProps> = ({
       }
       chartInstance.current?.dispose();
     };
-  }, [data, highlightThreshold, showBullZoneBg, showBearZoneBg, extraSeries, allETFSeries, syncGroup, dataLabel, mainSeriesName, showVolume, showRanking, showZones, maxDate, showDataZoom, baseDates]);
+  }, [data, highlightThreshold, showBullZoneBg, showBearZoneBg, extraSeries, allETFSeries, syncGroup, dataLabel, mainSeriesName, seriesType, showVolume, showRanking, showZones, maxDate, showDataZoom, baseDates, zoneParams, zoomRange]);
 
   return (
     <div

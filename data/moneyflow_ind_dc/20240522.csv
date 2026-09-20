@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240522,光伏设备,7.78,1129.38,58.74563344,13.25,44.60270864,14.1429248,1,516290,光伏ETF
 20240522,电池,2.31,806.84,6.21722304,3.22,2.09895872,4.11826432,2,516160,新能源ETF
 20240522,工程建设,1.32,18529.38,1.24748112,0.83,3.02241968,-1.77493856,7,510300,沪深300ETF

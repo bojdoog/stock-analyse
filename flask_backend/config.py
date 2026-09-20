@@ -16,6 +16,9 @@ class Config:
     # 数据目录
     DATA_DIR = DATA_DIR
     FRONTEND_DIR = FRONTEND_DIR
+    DATABASE_PATH = os.environ.get(
+        'DATABASE_PATH', 'auto'
+    )
     
     # 允许的 CORS 来源
     CORS_ORIGINS = os.environ.get('CORS_ORIGINS', '*')

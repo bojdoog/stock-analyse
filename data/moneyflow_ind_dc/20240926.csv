@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240926,酿酒行业,7.96,46332.54,39.26340352,9.05,33.48513792,5.7782656,1,512690,白酒ETF
 20240926,证券,5.65,124966.48,16.9073664,2.93,19.78153728,-2.87417088,3,512880,证券ETF
 20240926,互联网服务,2.48,15885.7,14.15053824,2.88,13.66731776,0.48322048,4,515230,软件ETF

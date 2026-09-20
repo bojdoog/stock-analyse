@@ -1,0 +1,147 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "881267.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:45:17.530618+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"881267.TI\", \"con_code\": \"000762.SZ\", \"con_name\": \"西藏矿业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881267.TI\", \"con_code\": \"002192.SZ\", \"con_name\": \"融捷股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881267.TI\", \"con_code\": \"002240.SZ\", \"con_name\": \"盛新锂能\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881267.TI\", \"con_code\": \"002460.SZ\", \"con_name\": \"赣锋锂业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881267.TI\", \"con_code\": \"002466.SZ\", \"con_name\": \"天齐锂业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881267.TI\", \"con_code\": \"002667.SZ\", \"con_name\": \"*ST威领\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881267.TI\", \"con_code\": \"002756.SZ\", \"con_name\": \"永兴材料\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881267.TI\", \"con_code\": \"300618.SZ\", \"con_name\": \"寒锐钴业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881267.TI\", \"con_code\": \"301219.SZ\", \"con_name\": \"腾远钴业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881267.TI\", \"con_code\": \"603399.SH\", \"con_name\": \"永杉锂业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881267.TI\", \"con_code\": \"603799.SH\", \"con_name\": \"华友钴业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881267.TI\", \"con_code\": \"605376.SH\", \"con_name\": \"博迁新材\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881267.TI\", \"con_code\": \"920914.BJ\", \"con_name\": \"远航精密\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "881267.TI",
+      "con_code": "000762.SZ",
+      "con_name": "西藏矿业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881267.TI",
+      "con_code": "002192.SZ",
+      "con_name": "融捷股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881267.TI",
+      "con_code": "002240.SZ",
+      "con_name": "盛新锂能",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881267.TI",
+      "con_code": "002460.SZ",
+      "con_name": "赣锋锂业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881267.TI",
+      "con_code": "002466.SZ",
+      "con_name": "天齐锂业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881267.TI",
+      "con_code": "002667.SZ",
+      "con_name": "*ST威领",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881267.TI",
+      "con_code": "002756.SZ",
+      "con_name": "永兴材料",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881267.TI",
+      "con_code": "300618.SZ",
+      "con_name": "寒锐钴业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881267.TI",
+      "con_code": "301219.SZ",
+      "con_name": "腾远钴业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881267.TI",
+      "con_code": "603399.SH",
+      "con_name": "永杉锂业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881267.TI",
+      "con_code": "603799.SH",
+      "con_name": "华友钴业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881267.TI",
+      "con_code": "605376.SH",
+      "con_name": "博迁新材",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881267.TI",
+      "con_code": "920914.BJ",
+      "con_name": "远航精密",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

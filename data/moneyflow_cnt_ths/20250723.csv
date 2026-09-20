@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250723,886042.TI,存储芯片,兴森科技,15.72,-0.23,1227.38,108,7.3,187.0,176.0,11.0,512480,半导体ETF
 20250723,886054.TI,光刻机,海立股份,15.32,0.25,1334.33,37,9.98,52.0,50.0,2.0,588710,科创半导体设备ETF
 20250723,885927.TI,CRO概念,美迪西,64.59,0.43,809.98,67,8.83,113.0,111.0,2.0,510660,创新药ETF

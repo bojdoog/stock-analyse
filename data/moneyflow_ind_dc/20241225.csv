@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241225,汽车零部件,-1.88,33147.93,5.90342464,1.37,14.0144032,-8.11097856,1,515030,新能源车ETF
 20241225,商业百货,0.51,16999.99,0.97303072,0.35,0.73969952,0.2333312,3,510150,消费ETF
 20241225,石油行业,-1.85,5348.03,-0.32820416,-0.46,-1.29522576,0.9670216,5,510300,沪深300ETF

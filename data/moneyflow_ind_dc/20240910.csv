@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240910,通信设备,1.98,8667.99,6.71198528,3.24,4.2201248,2.49186048,1,515880,通信ETF
 20240910,银行,0.67,3054.66,4.50239104,2.73,-0.49408944,4.99648048,2,512800,银行ETF
 20240910,软件开发,2.13,596.33,3.1163328,1.27,2.60773248,0.50860032,3,515230,软件ETF

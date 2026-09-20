@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260130,885556.TI,5G,致尚科技,198.37,0.13,6106.7,444,20.0,1605.0,1494.0,111.0,515880,通信ETF
 20260130,886042.TI,存储芯片,炬光科技,251.98,0.81,2115.33,171,16.77,951.0,899.0,52.0,512480,半导体ETF
 20260130,886044.TI,液冷服务器,科创新源,69.92,0.55,2014.11,177,19.99,799.0,762.0,36.0,515230,软件ETF

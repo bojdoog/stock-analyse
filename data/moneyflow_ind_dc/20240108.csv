@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240108,光伏设备,-0.02,1310.9,3.22788528,1.59,5.38056112,-2.15267584,1,516290,光伏ETF
 20240108,能源金属,-1.52,450.51,0.60863248,1.04,-0.23845824,0.84709072,3,512400,有色ETF
 20240108,装修装饰,-1.0,474.69,0.47106081,1.69,0.37714833,0.09391248,4,510300,沪深300ETF

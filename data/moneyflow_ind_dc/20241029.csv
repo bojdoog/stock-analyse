@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241029,贵金属,1.36,1134.08,1.29185712,1.19,1.40639792,-0.1145408,4,512400,有色ETF
 20241029,燃气,-1.73,1440.85,-0.70389248,-1.96,0.55096624,-1.25485872,6,561380,电网设备ETF
 20241029,公用事业,-1.63,7989.01,-2.49774128,-6.25,-0.5796456,-1.91809568,13,561380,电网设备ETF

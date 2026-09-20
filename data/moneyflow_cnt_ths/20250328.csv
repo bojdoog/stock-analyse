@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250328,886051.TI,减肥药,一品红,25.72,0.26,1036.31,48,10.81,61.0,53.0,8.0,510660,创新药ETF
 20250328,886015.TI,创新药,冠昊生物,14.8,0.26,1034.08,183,11.87,169.0,163.0,6.0,510660,创新药ETF
 20250328,885927.TI,CRO概念,河化股份,6.16,-0.19,661.45,61,10.0,51.0,52.0,0.0,510660,创新药ETF

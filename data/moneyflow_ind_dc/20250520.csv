@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250520,汽车整车,1.36,1656.44,15.20327888,8.41,10.7731144,4.43016448,2,515030,新能源车ETF
 20250520,食品饮料,2.19,29490.46,11.74886736,3.57,10.67013456,1.0787328,3,510150,消费ETF
 20250520,文化传媒,2.05,9900.72,11.68425984,5.35,11.33273856,0.35152128,4,512980,传媒ETF

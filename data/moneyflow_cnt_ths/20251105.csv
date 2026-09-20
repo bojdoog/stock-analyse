@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251105,885921.TI,储能,亿能电力,17.95,1.91,2455.77,724,20.79,1626.0,1404.0,221.0,516160,新能源ETF
 20251105,885431.TI,新能源汽车,双杰电气,9.89,0.97,4552.37,974,20.02,1779.0,1648.0,131.0,515030,新能源车ETF
 20251105,885531.TI,光伏概念,亿能电力,17.95,1.96,4040.82,542,20.79,1077.0,949.0,128.0,516290,光伏ETF

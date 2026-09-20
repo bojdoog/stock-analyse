@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250806,885517.TI,机器人概念,华密新材,30.84,1.87,3721.12,967,29.96,1687.0,1499.0,188.0,562500,机器人ETF
 20250806,886069.TI,人形机器人,华密新材,30.84,3.31,2235.7,270,29.96,803.0,639.0,163.0,562500,机器人ETF
 20250806,885700.TI,军工,华密新材,30.84,2.19,2165.34,572,29.96,1201.0,1045.0,156.0,512660,军工ETF

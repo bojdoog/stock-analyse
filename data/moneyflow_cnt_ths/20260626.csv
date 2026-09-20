@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260626,886076.TI,军工信息化,上海瀚讯,45.25,-1.92,1649.05,111,11.89,161.0,145.0,16.0,512660,军工ETF
 20260626,885947.TI,DRG/DIP,麦迪科技,20.89,-3.44,875.89,22,0.19,8.0,10.0,-1.0,159929,医药ETF
 20260626,885982.TI,华为欧拉,软通动力,41.69,-3.89,1346.55,47,12.1,65.0,67.0,-2.0,515230,软件ETF

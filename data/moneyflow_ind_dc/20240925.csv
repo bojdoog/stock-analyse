@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240925,互联网服务,1.94,15500.94,7.9707264,1.53,6.83310848,1.13761792,2,515230,软件ETF
 20240925,文化传媒,3.14,7328.98,2.57664384,1.0,5.21925248,-2.64260864,3,512980,传媒ETF
 20240925,医疗器械,1.27,638.3,2.11644176,1.52,0.04641872,2.07002304,4,159929,医药ETF

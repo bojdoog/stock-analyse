@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260205,食品饮料,0.99,31100.16,13.81760896,5.41,11.29052288,2.52708608,1.0,510150,消费ETF
 20260205,银行,2.1,4144.22,11.04599552,2.92,13.4816,-2.43560448,,512800,银行ETF
 20260205,银行,2.1,4144.22,11.04599552,2.92,13.4816,-2.43560448,2.0,512800,银行ETF

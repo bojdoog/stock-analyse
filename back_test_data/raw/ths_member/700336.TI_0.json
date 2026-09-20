@@ -1,0 +1,75 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "700336.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:43:09.581406+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"700336.TI\", \"con_code\": \"601318.SH\", \"con_name\": \"中国平安\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700336.TI\", \"con_code\": \"601319.SH\", \"con_name\": \"中国人保\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700336.TI\", \"con_code\": \"601336.SH\", \"con_name\": \"新华保险\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700336.TI\", \"con_code\": \"601601.SH\", \"con_name\": \"中国太保\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700336.TI\", \"con_code\": \"601628.SH\", \"con_name\": \"中国人寿\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "700336.TI",
+      "con_code": "601318.SH",
+      "con_name": "中国平安",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700336.TI",
+      "con_code": "601319.SH",
+      "con_name": "中国人保",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700336.TI",
+      "con_code": "601336.SH",
+      "con_name": "新华保险",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700336.TI",
+      "con_code": "601601.SH",
+      "con_name": "中国太保",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700336.TI",
+      "con_code": "601628.SH",
+      "con_name": "中国人寿",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

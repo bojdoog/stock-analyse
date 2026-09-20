@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240521,游戏,1.31,910.08,1.09278832,1.18,0.36050432,0.732284,2,159869,游戏ETF
 20240521,农牧饲渔,-0.41,12211.72,0.35567664,0.31,1.52600256,-1.17032592,4,510150,消费ETF
 20240521,医药商业,-0.47,1016.68,-0.24819379,-1.01,0.04877469,-0.29696848,7,159929,医药ETF

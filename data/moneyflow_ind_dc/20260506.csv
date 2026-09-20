@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260506,有色金属,3.25,31593.15,91.62000896,4.09,60.703488,30.91652096,1,512400,有色ETF
 20260506,公用事业,2.31,10403.03,43.22745344,5.48,41.79306496,1.43438848,5,561380,电网设备ETF
 20260506,电池,3.46,1793.73,39.14803712,2.27,18.82178816,20.32624896,6,516160,新能源ETF

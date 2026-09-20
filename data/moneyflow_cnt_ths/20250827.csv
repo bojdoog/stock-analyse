@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250827,885343.TI,稀土永磁,大地熊,40.25,0.1,3348.92,60,10.37,457.0,411.0,46.0,512400,有色ETF
 20250827,886038.TI,超导概念,永鼎股份,10.77,-2.22,1897.98,25,7.49,75.0,81.0,-6.0,561380,电网设备ETF
 20250827,885874.TI,云游戏,新媒股份,47.68,-1.69,1543.81,27,10.76,137.0,147.0,-9.0,159869,游戏ETF

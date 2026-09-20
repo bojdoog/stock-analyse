@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240603,通信设备,-0.67,9684.6,3.09995664,0.92,1.97993104,1.1200256,1,515880,通信ETF
 20240603,文化传媒,-0.62,7648.52,1.79851552,1.24,2.88629552,-1.08778,3,512980,传媒ETF
 20240603,农牧饲渔,-0.97,11554.38,1.18405184,1.14,1.7196096,-0.53555776,4,510150,消费ETF

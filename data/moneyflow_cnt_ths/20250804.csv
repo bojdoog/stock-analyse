@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250804,885700.TI,军工,爱乐达,30.12,2.77,2098.31,569,20.0,867.0,711.0,156.0,512660,军工ETF
 20250804,885517.TI,机器人概念,东杰智能,16.99,1.88,3606.63,965,19.99,1151.0,999.0,151.0,562500,机器人ETF
 20250804,885997.TI,比亚迪概念,东杰智能,16.99,1.95,1602.46,622,19.99,661.0,559.0,101.0,515030,新能源车ETF

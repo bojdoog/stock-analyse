@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250220,885566.TI,大飞机,航天电器,49.48,1.74,2746.43,125,1.74,182.0,164.0,17.0,512660,军工ETF
 20250220,886015.TI,创新药,诺思格,62.79,1.45,987.54,177,1.45,135.0,120.0,15.0,510660,创新药ETF
 20250220,886078.TI,商业航天,索辰科技,87.41,1.94,1441.14,208,1.94,235.0,219.0,15.0,159206,卫星ETF

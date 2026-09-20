@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260428,医疗服务,0.43,1353.91,23.50223872,9.07,21.56967936,1.93255936,2,510660,创新药ETF
 20260428,生物制品,-0.93,1052.22,2.52854592,1.8,0.30463584,2.22391008,35,510660,创新药ETF
 20260428,医药商业,-0.2,1189.01,-0.26806864,-0.58,0.62783088,-0.89589952,33,159929,医药ETF

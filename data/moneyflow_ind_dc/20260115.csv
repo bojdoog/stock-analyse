@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260115,半导体,1.67,2218.02,49.24799488,2.33,43.88658176,5.36141312,1.0,512480,半导体ETF
 20260115,电池,2.57,1544.46,30.81724672,4.27,24.08098048,6.73626624,2.0,516160,新能源ETF
 20260115,能源金属,2.26,947.38,15.81642752,4.17,11.49029376,4.32613376,7.0,512400,有色ETF

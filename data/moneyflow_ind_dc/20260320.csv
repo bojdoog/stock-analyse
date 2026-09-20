@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260320,光伏设备,3.72,1650.48,72.81198336,5.98,69.89997824,2.91200512,1,516290,光伏ETF
 20260320,通信设备,-1.52,21713.82,54.38640384,3.24,42.96768,11.41872384,3,515880,通信ETF
 20260320,电池,0.98,1466.58,40.91166976,3.63,50.91728128,-10.00561152,4,516160,新能源ETF

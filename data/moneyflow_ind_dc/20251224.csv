@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251224,通信设备,2.51,20628.4,17.83355392,1.2,21.7011712,-3.86761728,4.0,515880,通信ETF
 20251224,半导体,1.85,1978.62,15.8992128,1.05,16.87274752,-0.97353472,5.0,512480,半导体ETF
 20251224,航天航空,3.53,58743.71,14.57730304,3.75,15.06340608,-0.48610304,7.0,512660,军工ETF

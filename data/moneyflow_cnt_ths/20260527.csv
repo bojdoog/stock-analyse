@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260527,885819.TI,电力物联网,天正电气,8.01,-1.28,2308.04,86,10.03,170.0,172.0,-2.0,561380,电网设备ETF
 20260527,886051.TI,减肥药,纳微科技,41.47,-0.61,1316.61,62,13.96,70.0,73.0,-2.0,510660,创新药ETF
 20260527,885947.TI,DRG/DIP,佳缘科技,27.64,-2.55,1002.05,22,0.95,9.0,13.0,-3.0,159929,医药ETF

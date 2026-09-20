@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250127,885462.TI,乳业,维维股份,3.29,-0.38,1727.49,33,-0.38,10.0,11.0,0.0,510150,消费ETF
 20250127,885780.TI,啤酒概念,重庆啤酒,55.24,-0.16,1329.17,23,-0.16,7.0,7.0,0.0,512690,白酒ETF
 20250127,885914.TI,煤炭概念,辽宁能源,3.61,0.49,1734.16,80,0.49,49.0,49.0,0.0,515220,煤炭ETF

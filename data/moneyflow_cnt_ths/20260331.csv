@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260331,885462.TI,乳业,怡亚通,5.74,-1.18,2115.34,35,3.61,16.0,17.0,0.0,510150,消费ETF
 20260331,885947.TI,DRG/DIP,塞力医疗,23.65,-1.32,1063.18,22,3.96,10.0,12.0,-2.0,159929,医药ETF
 20260331,885876.TI,网红经济,*ST金比,7.22,-0.88,1505.83,118,3.29,78.0,81.0,-3.0,512980,传媒ETF

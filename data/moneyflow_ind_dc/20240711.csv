@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240711,酿酒行业,3.71,44160.63,11.5180456,6.71,6.05593344,5.46211216,1,512690,白酒ETF
 20240711,有色金属,4.36,13543.8,7.43396304,4.21,6.08593712,1.34802592,2,512400,有色ETF
 20240711,光伏设备,3.95,874.6,6.58246496,3.37,3.1079608,3.47450416,4,516290,光伏ETF

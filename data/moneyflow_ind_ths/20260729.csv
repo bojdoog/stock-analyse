@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260729,881121.TI,半导体,长鑫科技,14993.9,-0.82,183,12.66,52.95,1770.0,1607.0,163.0,512480,半导体ETF
 20260729,881129.TI,通信设备,联特科技,7932.53,-0.45,91,5.76,229.51,658.0,608.0,50.0,515880,通信ETF
 20260729,881157.TI,证券,华林证券,1461.8,2.3,50,10.03,14.37,142.0,96.0,46.0,512880,证券ETF

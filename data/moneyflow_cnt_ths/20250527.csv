@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250527,886015.TI,创新药,三生国健,58.9,1.72,1086.12,193,15.31,150.0,134.0,16.0,510660,创新药ETF
 20250527,885928.TI,钠离子电池,江苏新能,13.88,0.82,899.4,120,9.98,147.0,140.0,6.0,516160,新能源ETF
 20250527,885876.TI,网红经济,锦泓集团,9.08,1.37,1404.48,113,10.06,85.0,80.0,5.0,512980,传媒ETF

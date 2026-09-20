@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260330,通信设备,1.2,21908.11,32.69622016,3.06,32.3698176,0.32640256,1,515880,通信ETF
 20260330,贵金属,3.63,2774.04,17.22019456,8.04,7.85532544,9.36486912,7,512400,有色ETF
 20260330,有色金属,2.11,28217.02,11.22706944,0.72,7.53118976,3.69587968,11,512400,有色ETF

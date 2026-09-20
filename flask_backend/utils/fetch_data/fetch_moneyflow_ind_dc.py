@@ -18,6 +18,11 @@ import logging
 import sys
 import time
 from pathlib import Path
+
+try:
+    from .storage_sqlite import save_dataframe, refresh_index, list_files, initialize, read_frame, has_file
+except ImportError:
+    from storage_sqlite import save_dataframe, refresh_index, list_files, initialize, read_frame, has_file
 from typing import Optional
 
 import pandas as pd
@@ -225,7 +230,7 @@ def save_moneyflow_by_date(df: pd.DataFrame, out_dir: Path) -> None:
     # 按日期分组保存
     for date, group in df.groupby("date"):
         csv_path = out_dir / f"{date}.csv"
-        group.to_csv(csv_path, index=False)
+        save_dataframe(group, csv_path, category='moneyflow_ind_dc')
         logger.debug(f"已保存 {date} 资金流向数据: {len(group)} 个板块")
 
 
@@ -287,26 +292,25 @@ def get_all_dates_between(start_date: str, end_date: str) -> list[str]:
 def check_missing_dates(out_dir: Path, start_date: str, end_date: str) -> list[str]:
     """检查指定范围内缺失的日期"""
     all_dates = get_all_dates_between(start_date, end_date)
+    initialize()
+    available = set(list_files('moneyflow_ind_dc'))
     missing = []
     for date_str in all_dates:
         csv_path = out_dir / f"{date_str}.csv"
-        if not csv_path.exists():
+        if csv_path.name not in available:
             missing.append(date_str)
     return missing
 
 
 def update_index_json(out_dir: Path) -> None:
     """重建 index.json，供前端按文件列表加载"""
-    files = sorted(p.name for p in out_dir.glob("*.csv"))
-    index_path = out_dir / "index.json"
-    index_path.write_text(
-        json.dumps(files, ensure_ascii=False),
-        encoding="utf-8",
-    )
-    logger.info(f"已更新 {index_path}（{len(files)} 个文件）")
+    initialize()
+    files = refresh_index(out_dir, category='moneyflow_ind_dc')
+    logger.info(f'Database file index updated: {len(files)} files')
 
 
 def main():
+    initialize()
     parser = argparse.ArgumentParser(
         description="拉取东方财富板块资金流向数据 (需要 Tushare 6000 积分)"
     )
@@ -358,7 +362,7 @@ def main():
                 curr += dt.timedelta(days=1)
 
             # 检查该月缺失的日期
-            missing_in_month = [d for d in month_dates if not (out_dir / f"{d}.csv").exists()]
+            missing_in_month = [d for d in month_dates if not has_file(out_dir / f'{d}.csv', category='moneyflow_ind_dc')]
 
             if missing_in_month:
                 total_missing += len(missing_in_month)

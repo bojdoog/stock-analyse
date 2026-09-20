@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240305,航天航空,1.91,33030.71,3.17551872,3.42,1.4832944,1.69222432,1,512660,军工ETF
 20240305,装修装饰,-1.14,382.95,0.82336992,2.51,0.6469952,0.17637472,3,510300,沪深300ETF
 20240305,工程建设,-1.28,17746.89,0.31225616,0.18,1.1995104,-0.88725424,6,510300,沪深300ETF

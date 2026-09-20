@@ -1,8 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { Select, Modal, Collapse, Tooltip } from 'antd';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { Alert, Button, Empty, Select, Modal, Collapse, Spin, Tooltip } from 'antd';
 import { DeleteTwoTone } from '@ant-design/icons';
+import { Indicator, queryIndicators } from '@/services/indicators';
 import KLineChart from './components/KLineChart';
 import BacktestChart from './components/BacktestChart';
+import NavOverviewChart from './components/NavOverviewChart';
+import { isCloseOnlySeries } from './utils/indicatorDisplay';
 import { runBacktest, BacktestResult, BacktestTrade, StrategyParams, DEFAULT_STRATEGY_PARAMS, calculateOptimalWeights, OptimalMethod, MoneyflowData, RankingMethod, BenchmarkReturn } from './utils/backtest';
 
 interface KLineData {
@@ -53,9 +56,34 @@ const ETF_OPTIONS = [
     { value: 'sh000300', label: '沪深300', file: 'index/000300_沪深300.csv' },
 ];
 
+// 基于净值序列计算最大回撤与平均回撤（回撤取正值，平均只统计发生回撤的点）
+const calcDrawdowns = (navs: number[]) => {
+    if (navs.length === 0) return { maxDD: 0, avgDD: 0 };
+    let peak = navs[0];
+    let maxDD = 0;
+    let sumDD = 0;
+    let countDD = 0;
+    for (const nav of navs) {
+        if (nav > peak) peak = nav;
+        const dd = (peak - nav) / peak;
+        if (dd > maxDD) maxDD = dd;
+        if (dd > 0) { sumDD += dd; countDD++; }
+    }
+    return { maxDD, avgDD: countDD > 0 ? sumDD / countDD : 0 };
+};
+
 const ActiveMarket: React.FC = () => {
+    const dateWindowRef = useRef<{ start: string; end: string } | null>(null);
     const [data, setData] = useState<KLineData[]>([]);
     const [loading, setLoading] = useState(true);
+    const [indicators, setIndicators] = useState<Indicator[]>([]);
+    const [indicatorsLoading, setIndicatorsLoading] = useState(true);
+    const [indicatorListError, setIndicatorListError] = useState('');
+    const [dataError, setDataError] = useState('');
+    const closeOnly = isCloseOnlySeries(data);
+    const [selectedIndicatorId, setSelectedIndicatorId] = useState<number>();
+    const [reloadKey, setReloadKey] = useState(0);
+    const selectedIndicator = indicators.find(item => item.id === selectedIndicatorId);
     const [showBullZoneBg, setShowBullZoneBg] = useState(false);
     const [showBearZoneBg, setShowBearZoneBg] = useState(false);
     const [selectedETFs, setSelectedETFs] = useState<string[]>([]);
@@ -86,21 +114,58 @@ const ActiveMarket: React.FC = () => {
     }, []);
 
     useEffect(() => {
-        fetch('/api/amv')
-            .then(res => res.json())
-            .then(json => {
-                if (json.code === 0) {
-                    setData(json.data);
-                } else {
-                    console.error('加载活跃市值失败:', json.message);
+        let cancelled = false;
+        setIndicatorsLoading(true);
+        setIndicatorListError('');
+        const loadIndicators = async () => {
+            const items: Indicator[] = [];
+            for (let current = 1; ; current++) {
+                const result = await queryIndicators({ current, pageSize: 100 });
+                if (cancelled) return;
+                items.push(...result.data);
+                if (items.length >= result.total || result.data.length === 0) break;
+            }
+            setIndicators(items);
+            setSelectedIndicatorId(previous => items.some(item => item.id === previous)
+                ? previous
+                : (items.find(item => item.code === '0AMV') || items.find(item => item.is_default) || items[0])?.id);
+        };
+        loadIndicators().catch(error => {
+            if (!cancelled) setIndicatorListError(error.message || '指标列表加载失败');
+        }).finally(() => {
+            if (!cancelled) setIndicatorsLoading(false);
+        });
+        return () => { cancelled = true; };
+    }, [reloadKey]);
+
+    useEffect(() => {
+        const controller = new AbortController();
+        setData([]);
+        setDataError('');
+        setBacktestResult(null);
+        setChartZones(undefined);
+        setLoading(selectedIndicatorId !== undefined);
+        if (selectedIndicatorId === undefined) return;
+        fetch(`/api/indicators/${selectedIndicatorId}/data`, { signal: controller.signal })
+            .then(async response => {
+                const json = await response.json();
+                if (!response.ok || json.code !== 0) throw new Error(json.message || '指标数据加载失败');
+                if (!controller.signal.aborted) {
+                    // Missing OHLC/volume stays missing; ECharts uses the close line for such indicators.
+                    setData(json.data.map((row: KLineData) => ({ ...row,
+                        open: row.open ?? NaN, high: row.high ?? NaN, low: row.low ?? NaN,
+                        volume: row.volume ?? NaN, amount: row.amount ?? NaN,
+                    })));
                 }
-                setLoading(false);
             })
-            .catch(err => {
-                console.error('加载数据失败:', err);
-                setLoading(false);
+            .catch(error => {
+                if (!controller.signal.aborted) setDataError(error.message || '指标数据加载失败');
+            })
+            .finally(() => {
+                if (!controller.signal.aborted) setLoading(false);
             });
-    }, []);
+        return () => controller.abort();
+    }, [selectedIndicatorId, reloadKey]);
 
     // 加载所有板块 ETF + Index 数据（通过后端 API，27+2 → 1 个请求）
     useEffect(() => {
@@ -143,40 +208,40 @@ const ActiveMarket: React.FC = () => {
         if (data.length > 0 && allETFSeries.length > 0) {
             const result = runBacktest(data, allETFSeries, strategyParams, moneyflowData, conceptMoneyflowData, indMoneyflowData);
             setBacktestResult(result);
+        } else {
+            setBacktestResult(null);
         }
     }, [data, allETFSeries, strategyParams, moneyflowData, conceptMoneyflowData, indMoneyflowData]);
 
-    if (loading) {
-        return (
-            <div style={{
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: 'center',
-                height: '100vh',
-                backgroundColor: '#f5f5f5',
-                gap: 20,
-            }}>
-                <div style={{
-                    width: 48,
-                    height: 48,
-                    border: '4px solid #e0e0e0',
-                    borderTop: '4px solid #1890ff',
-                    borderRadius: '50%',
-                    animation: 'spin 1s linear infinite',
-                }} />
-                <div style={{ color: '#666', fontSize: 14 }}>数据加载中，请稍候...</div>
-                <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
-            </div>
-        );
-    }
+    // 传给 K 线图的多空区间参数，与策略设置联动
+    const zoneParams = useMemo(() => ({
+        bullStartSingleDay: strategyParams.bullStartSingleDay,
+        bullStartTwoDay: strategyParams.bullStartTwoDay,
+        bullEndSingleDay: strategyParams.bullEndSingleDay,
+        bullEndUseMA10: strategyParams.bullEndUseMA10,
+        bullStartUseMA10: strategyParams.bullStartUseMA10,
+    }), [strategyParams.bullStartSingleDay, strategyParams.bullStartTwoDay, strategyParams.bullEndSingleDay, strategyParams.bullEndUseMA10, strategyParams.bullStartUseMA10]);
 
     const activeMarketLastDate = data.length > 0 ? data[data.length - 1].date : undefined;
     const activeMarketDates = data.map(d => d.date);
 
+    // 回测弹窗：各年与整体的最大/平均回撤
+    const overallDD = backtestResult ? calcDrawdowns(backtestResult.navSeries.map(p => p.nav)) : null;
+    const yearDDMap = new Map<number, { maxDD: number; avgDD: number }>();
+    if (backtestResult) {
+        for (const r of backtestResult.yearResults) {
+            const navs = backtestResult.navSeries
+                .filter(p => p.date >= `${r.year}-01-01` && p.date <= `${r.year}-12-31`)
+                .map(p => p.nav);
+            yearDDMap.set(r.year, calcDrawdowns(navs));
+        }
+    }
+
     return (
         <div style={{ padding: 20, backgroundColor: '#f5f5f5', height: 'calc(100vh - 80px)', display: 'flex', flexDirection: 'column', boxSizing: 'border-box' }}>
-            <h1 style={{ color: '#333', marginBottom: 20, flexShrink: 0 }}>活跃市值 (0AMV)</h1>
+            <h1 style={{ color: '#333', marginBottom: 20, flexShrink: 0 }}>
+                {selectedIndicator ? `${selectedIndicator.name} (${selectedIndicator.code})` : '活跃市值'}
+            </h1>
             <div style={{ marginBottom: 10, display: 'flex', alignItems: 'center', gap: 15, flexShrink: 0 }}>
                 <label style={{ display: 'flex', alignItems: 'center', gap: 8, cursor: 'pointer' }}>
                     <input
@@ -370,6 +435,18 @@ const ActiveMarket: React.FC = () => {
                         <label style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: '#666', cursor: 'pointer' }}>
                             <input
                                 type="checkbox"
+                                checked={strategyParams.bullStartUseMA10}
+                                onChange={e => {
+                                    setActivePreset('custom');
+                                    setStrategyParams(p => ({ ...p, bullStartUseMA10: e.target.checked }));
+                                }}
+                                style={{ width: 14, height: 14 }}
+                            />
+                            启动日收盘价站上 MA10 才启动多头
+                        </label>
+                        <label style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: '#666', cursor: 'pointer' }}>
+                            <input
+                                type="checkbox"
                                 checked={strategyParams.bullEndUseMA10}
                                 onChange={e => {
                                     setActivePreset('custom');
@@ -534,9 +611,15 @@ const ActiveMarket: React.FC = () => {
                         </button>
                         {backtestResult && (
                             <>
-                                <span style={{ fontSize: 14, color: backtestResult.totalReturn >= 0 ? '#c41e3a' : '#006400', fontWeight: 500 }}>
-                                    总收益率：{backtestResult.totalReturn >= 0 ? '+' : ''}{(backtestResult.totalReturn * 100).toFixed(2)}%
-                                </span>
+                                <div style={{ fontSize: 14, fontWeight: 500 }}>
+                                    <span style={{ color: backtestResult.totalReturn >= 0 ? '#c41e3a' : '#006400' }}>
+                                        总收益率：{backtestResult.totalReturn >= 0 ? '+' : ''}{(backtestResult.totalReturn * 100).toFixed(2)}%
+                                    </span>
+                                    <div style={{ fontSize: 11, color: '#666', fontWeight: 400, marginTop: 2 }}>
+                                        最大回撤 <span style={{ color: '#006400', fontWeight: 500 }}>{((overallDD?.maxDD ?? 0) * 100).toFixed(2)}%</span>
+                                        <span style={{ marginLeft: 8 }}>平均回撤 <span style={{ color: '#006400', fontWeight: 500 }}>{((overallDD?.avgDD ?? 0) * 100).toFixed(2)}%</span></span>
+                                    </div>
+                                </div>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
                                     {backtestResult.yearResults.map(r => (
                                         <div key={r.year} style={{ textAlign: 'center', minWidth: 48 }}>
@@ -572,6 +655,7 @@ const ActiveMarket: React.FC = () => {
                         </div>
                         <div style={{ flex: 1, minHeight: 0 }}>
                             <KLineChart
+                                dateWindowRef={dateWindowRef}
                                 data={allETFSeries.find(s => s.id === upperETFId)?.data || []}
                                 dataLabel={ETF_OPTIONS.find(o => o.value === upperETFId)?.label || ''}
                                 mainSeriesName={ETF_OPTIONS.find(o => o.value === upperETFId)?.label || '日K'}
@@ -592,9 +676,55 @@ const ActiveMarket: React.FC = () => {
                         </div>
                     </div>
                 )}
-                <div style={{ flex: 1, minHeight: 0 }}>
-                    <KLineChart
+                <div style={{ flex: 1, minHeight: 0, display: 'flex', flexDirection: 'column', backgroundColor: '#fff' }}>
+                    <div style={{ padding: '8px 16px', display: 'flex', alignItems: 'center', gap: 8, flexShrink: 0 }}>
+                        <label htmlFor="active-market-indicator">选择指标：</label>
+                        <Select
+                            id="active-market-indicator"
+                            aria-label="选择指标"
+                            style={{ width: 220, maxWidth: '100%' }}
+                            placeholder="请选择指标"
+                            value={selectedIndicatorId}
+                            loading={indicatorsLoading}
+                            disabled={indicatorsLoading}
+                            showSearch
+                            optionFilterProp="label"
+                            options={indicators.map(item => ({ value: item.id, label: item.name }))}
+                            onChange={value => {
+                                setData([]);
+                                setBacktestResult(null);
+                                setChartZones(undefined);
+                                setShowBacktestModal(false);
+                                setSelectedYear(null);
+                                setSelectedIndicatorId(value);
+                            }}
+                        />
+                        {closeOnly && <span style={{ color: '#888', fontSize: 12 }}>仅有每日收盘估算值，使用折线显示</span>}
+                        {!closeOnly && selectedIndicator?.code === 'AMV_EMA20' && (
+                            <Tooltip title="开盘值取前一交易日收盘值；最高/最低取开收盘极值，不代表真实盘中高低价；成交量和成交额使用同日上证指数。">
+                                <span style={{ color: '#888', fontSize: 12 }}>合成K线 · 成交量：上证指数</span>
+                            </Tooltip>
+                        )}
+                    </div>
+                    <div style={{ flex: 1, minHeight: 0 }}>
+                    {indicatorListError || dataError ? (
+                        <Alert type="error" showIcon message={indicatorListError || dataError}
+                            action={<Button size="small" onClick={() => setReloadKey(key => key + 1)}>重试</Button>}
+                            style={{ margin: 16 }} />
+                    ) : loading || indicatorsLoading ? (
+                        <div style={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                            <Spin tip="指标数据加载中…"><div style={{ width: 180, height: 80 }} /></Spin>
+                        </div>
+                    ) : data.length === 0 ? (
+                        <Empty description={indicators.length ? '该指标暂无数据' : '暂无可选指标'} />
+                    ) : <KLineChart
+                        dateWindowRef={dateWindowRef}
+                        key={selectedIndicatorId}
                         data={data}
+                        dataLabel={selectedIndicator?.name}
+                        seriesType={closeOnly ? 'line' : 'candlestick'}
+                        mainSeriesName={closeOnly ? '收盘估算值' : '日K'}
+                        showVolume={!closeOnly}
                         highlightThreshold={4}
                         showBullZoneBg={showBullZoneBg}
                         showBearZoneBg={showBearZoneBg}
@@ -603,7 +733,9 @@ const ActiveMarket: React.FC = () => {
                         syncGroup="active-market-sync"
                         chartHeight="100%"
                         onZonesChange={setChartZones}
-                    />
+                        zoneParams={zoneParams}
+                    />}
+                    </div>
                 </div>
             </div>
 
@@ -612,51 +744,76 @@ const ActiveMarket: React.FC = () => {
                 open={showBacktestModal}
                 onCancel={() => setShowBacktestModal(false)}
                 footer={null}
-                width={760}
-                bodyStyle={{ padding: '28px 36px' }}
+                width={1200}
+                bodyStyle={{ padding: '24px 32px' }}
             >
                 {backtestResult && (
                     <>
-                        <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 15 }}>
-                            <thead>
-                                <tr style={{ backgroundColor: '#f5f5f5' }}>
-                                    <th style={{ padding: '14px 18px', textAlign: 'left', borderBottom: '1px solid #ddd' }}>年份</th>
-                                    <th style={{ padding: '14px 18px', textAlign: 'right', borderBottom: '1px solid #ddd' }}>年初净值</th>
-                                    <th style={{ padding: '14px 18px', textAlign: 'right', borderBottom: '1px solid #ddd' }}>年末净值</th>
-                                    <th style={{ padding: '14px 18px', textAlign: 'right', borderBottom: '1px solid #ddd' }}>年收益率</th>
-                                    <th style={{ padding: '14px 18px', textAlign: 'left', borderBottom: '1px solid #ddd' }}>操作</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {backtestResult.yearResults.map(r => (
-                                    <tr key={r.year}>
-                                        <td style={{ padding: '14px 18px', borderBottom: '1px solid #eee' }}>{r.year}</td>
-                                        <td style={{ padding: '14px 18px', textAlign: 'right', borderBottom: '1px solid #eee' }}>{r.start_nav.toFixed(4)}</td>
-                                        <td style={{ padding: '14px 18px', textAlign: 'right', borderBottom: '1px solid #eee' }}>{r.end_nav.toFixed(4)}</td>
-                                        <td style={{ padding: '14px 18px', textAlign: 'right', borderBottom: '1px solid #eee', color: r.annual_return >= 0 ? '#c41e3a' : '#006400', fontWeight: 500 }}>
+                        <NavOverviewChart navSeries={backtestResult.navSeries} height={260} />
+                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12, marginTop: 16 }}>
+                            {backtestResult.yearResults.map(r => (
+                                <div
+                                    key={r.year}
+                                    onClick={() => { setSelectedYear(r.year); }}
+                                    style={{
+                                        border: '1px solid #eee',
+                                        borderRadius: 8,
+                                        padding: '12px 16px',
+                                        cursor: 'pointer',
+                                        background: '#fff',
+                                        boxShadow: '0 1px 3px rgba(0,0,0,0.04)',
+                                        transition: 'all 0.2s',
+                                    }}
+                                    onMouseEnter={e => { e.currentTarget.style.borderColor = '#c41e3a'; e.currentTarget.style.boxShadow = '0 2px 8px rgba(196,30,58,0.12)'; }}
+                                    onMouseLeave={e => { e.currentTarget.style.borderColor = '#eee'; e.currentTarget.style.boxShadow = '0 1px 3px rgba(0,0,0,0.04)'; }}
+                                >
+                                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                                        <span style={{ fontSize: 16, fontWeight: 600 }}>{r.year}</span>
+                                        <span style={{ fontSize: 16, fontWeight: 600, color: r.annual_return >= 0 ? '#c41e3a' : '#006400' }}>
                                             {r.annual_return >= 0 ? '+' : ''}{r.annual_return.toFixed(2)}%
-                                        </td>
-                                        <td style={{ padding: '14px 18px', borderBottom: '1px solid #eee' }}>
-                                            <a
-                                                onClick={() => { setSelectedYear(r.year); }}
-                                                style={{ color: '#1890ff', cursor: 'pointer' }}
-                                            >
-                                                查看交易明细
-                                            </a>
-                                        </td>
-                                    </tr>
-                                ))}
-                                <tr style={{ fontWeight: 'bold', backgroundColor: '#fafafa' }}>
-                                    <td style={{ padding: '14px 18px' }}>累计</td>
-                                    <td style={{ padding: '14px 18px', textAlign: 'right' }}>1.0000</td>
-                                    <td style={{ padding: '14px 18px', textAlign: 'right' }}>{backtestResult.finalNav.toFixed(4)}</td>
-                                    <td style={{ padding: '14px 18px', textAlign: 'right', color: backtestResult.totalReturn >= 0 ? '#c41e3a' : '#006400' }}>
-                                        {backtestResult.totalReturn >= 0 ? '+' : ''}{(backtestResult.totalReturn * 100).toFixed(2)}%
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div style={{ marginTop: 16, display: 'flex', gap: 24, flexWrap: 'wrap', fontSize: 14 }}>
+                                        </span>
+                                    </div>
+                                    <div style={{ marginTop: 8, fontSize: 12, color: '#999', display: 'flex', justifyContent: 'space-between' }}>
+                                        <span>年初 {r.start_nav.toFixed(4)}</span>
+                                        <span>年末 {r.end_nav.toFixed(4)}</span>
+                                    </div>
+                                    <div style={{ marginTop: 4, fontSize: 12, color: '#999', display: 'flex', justifyContent: 'space-between' }}>
+                                        <span>最大回撤 <span style={{ color: '#006400' }}>{((yearDDMap.get(r.year)?.maxDD ?? 0) * 100).toFixed(2)}%</span></span>
+                                        <span>平均回撤 <span style={{ color: '#006400' }}>{((yearDDMap.get(r.year)?.avgDD ?? 0) * 100).toFixed(2)}%</span></span>
+                                    </div>
+                                    <div style={{ marginTop: 8, fontSize: 13, color: '#1890ff' }}>查看交易明细</div>
+                                </div>
+                            ))}
+                        </div>
+                        <div style={{
+                            marginTop: 12,
+                            border: '1px solid #f0d0d8',
+                            borderRadius: 8,
+                            padding: '14px 20px',
+                            background: '#fff7f8',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'space-between',
+                            flexWrap: 'wrap',
+                            gap: 12,
+                        }}>
+                            <span style={{ fontSize: 16, fontWeight: 600 }}>累计</span>
+                            <span style={{ fontSize: 13, color: '#666' }}>起点 1.0000</span>
+                            <span style={{ fontSize: 13, color: '#666' }}>终点 {backtestResult.finalNav.toFixed(4)}</span>
+                            <span style={{ fontSize: 13, color: '#666' }}>
+                                最大回撤 <span style={{ color: '#006400', fontWeight: 600 }}>{((overallDD?.maxDD ?? 0) * 100).toFixed(2)}%</span>
+                            </span>
+                            <span style={{ fontSize: 13, color: '#666' }}>
+                                平均回撤 <span style={{ color: '#006400', fontWeight: 600 }}>{((overallDD?.avgDD ?? 0) * 100).toFixed(2)}%</span>
+                            </span>
+                            <span style={{ fontSize: 13, color: '#666' }}>
+                                买入100万 → <span style={{ color: '#c41e3a', fontWeight: 600 }}>{(backtestResult.finalNav * 100).toFixed(1)}万</span>
+                            </span>
+                            <span style={{ fontSize: 18, fontWeight: 700, color: backtestResult.totalReturn >= 0 ? '#c41e3a' : '#006400' }}>
+                                {backtestResult.totalReturn >= 0 ? '+' : ''}{(backtestResult.totalReturn * 100).toFixed(2)}%
+                            </span>
+                        </div>
+                        <div style={{ marginTop: 16, display: 'flex', gap: 20, flexWrap: 'wrap', fontSize: 13 }}>
                             <div style={{ fontWeight: 500, color: '#666' }}>基准对比（多头）：</div>
                             {backtestResult.benchmarkReturns.map(b => (
                                 <div key={b.name} style={{ color: b.totalReturn >= 0 ? '#c41e3a' : '#006400' }}>
@@ -664,8 +821,8 @@ const ActiveMarket: React.FC = () => {
                                 </div>
                             ))}
                         </div>
-                        <div style={{ marginTop: 16, fontSize: 13, color: '#999', lineHeight: 1.8 }}>
-                            规则：多头区间启动日买入涨幅前{strategyParams.weights.length} ETF（{strategyParams.weights.map(w => `${w.toFixed(0)}%`).join('/')}），区间结束卖出；单日涨幅&gt;{strategyParams.bullStartSingleDay}%或两日累计&gt;{strategyParams.bullStartTwoDay}%启动多头；单日跌幅&lt;{strategyParams.bullEndSingleDay}%{strategyParams.bullEndUseMA10 ? '或跌破MA10' : ''}结束多头；{strategyParams.bearStartYear}年起空头区间持有银行 ETF；跨年收益计入开始年份。点击年份可查看当年每个波段的交易明细。
+                        <div style={{ marginTop: 10, fontSize: 12, color: '#999', lineHeight: 1.7 }}>
+                            规则：多头区间启动日买入涨幅前{strategyParams.weights.length} ETF（{strategyParams.weights.map(w => `${w.toFixed(0)}%`).join('/')}），区间结束卖出；单日涨幅&gt;{strategyParams.bullStartSingleDay}%或两日累计&gt;{strategyParams.bullStartTwoDay}%{strategyParams.bullStartUseMA10 ? '且收盘价站上MA10' : ''}启动多头；单日跌幅&lt;{strategyParams.bullEndSingleDay}%{strategyParams.bullEndUseMA10 ? '或跌破MA10' : ''}结束多头；{strategyParams.bearStartYear}年起空头区间持有银行 ETF；跨年收益计入开始年份。点击年份可查看当年每个波段的交易明细。
                         </div>
                     </>
                 )}

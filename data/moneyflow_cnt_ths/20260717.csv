@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260717,886006.TI,钙钛矿电池,太阳能,4.42,-5.66,1006.68,91,1.38,259.0,253.0,5.0,516290,光伏ETF
 20260717,885930.TI,工业母机,华新精科,34.08,-5.79,1754.42,113,3.87,193.0,190.0,2.0,159638,高端装备ETF
 20260717,886004.TI,虚拟电厂,珈伟新能,4.13,-2.5,1374.55,156,16.01,265.0,265.0,0.0,561380,电网设备ETF

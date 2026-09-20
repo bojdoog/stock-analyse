@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241111,881281.TI,电池,纳科诺尔,13518.2,6.15,102,30.0,53.82,313.0,258.0,54.0,516160,新能源ETF
 20241111,881125.TI,汽车整车,东风股份,3236.57,3.26,23,10.02,7.58,225.0,178.0,47.0,515030,新能源车ETF
 20241111,881121.TI,半导体,晶合集成,9294.38,7.15,158,20.02,25.48,855.0,812.0,42.0,512480,半导体ETF

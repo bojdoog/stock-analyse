@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240524,电力行业,3.51,16086.64,32.86761696,10.91,31.66502112,1.20259584,1,561380,电网设备ETF
 20240524,电网设备,2.16,20520.56,8.72382928,4.09,7.07460048,1.6492288,2,561380,电网设备ETF
 20240524,农牧饲渔,1.21,12226.93,6.90038688,5.51,4.04743024,2.85295664,3,510150,消费ETF

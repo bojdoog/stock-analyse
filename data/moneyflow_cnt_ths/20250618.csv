@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250618,885556.TI,5G,科翔股份,10.63,1.06,4148.96,419,19.98,596.0,516.0,79.0,515880,通信ETF
 20250618,886042.TI,存储芯片,科翔股份,10.63,2.14,1144.11,99,19.98,143.0,112.0,31.0,512480,半导体ETF
 20250618,885431.TI,新能源汽车,科翔股份,10.63,0.27,3497.19,918,19.98,719.0,695.0,23.0,515030,新能源车ETF

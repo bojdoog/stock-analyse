@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240318,半导体,2.9,1075.8,16.15047936,3.3,11.52945152,4.62102784,1,512480,半导体ETF
 20240318,证券,2.22,122671.23,12.9942144,3.88,11.19593984,1.79827456,2,512880,证券ETF
 20240318,文化传媒,2.96,9108.07,12.59708176,3.36,8.4787944,4.11828736,3,512980,传媒ETF

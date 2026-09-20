@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260224,885641.TI,风电,国际复材,15.19,2.66,1449.66,413,19.98,936.0,789.0,146.0,516160,新能源ETF
 20260224,886021.TI,国企改革,国际复材,15.19,1.74,1588.66,2902,19.98,2260.0,2115.0,144.0,510300,沪深300ETF
 20260224,885921.TI,储能,新锦动力,6.76,1.92,2700.6,809,20.07,1485.0,1374.0,110.0,516160,新能源ETF

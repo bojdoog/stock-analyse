@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231024,证券,3.86,124863.5,21.95374576,6.29,19.64926448,2.30448128,1,512880,证券ETF
 20231024,文化传媒,3.87,7931.96,6.60384848,3.72,6.5217792,0.08206928,2,512980,传媒ETF
 20231024,能源金属,2.82,469.23,3.79708768,5.52,2.87809456,0.91899312,5,512400,有色ETF

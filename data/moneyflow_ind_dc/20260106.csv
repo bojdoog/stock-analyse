@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260106,证券,3.61,162656.08,39.7281792,5.61,30.58024704,9.14793216,1.0,512880,证券ETF
 20260106,小金属,3.36,3396.93,25.91482368,5.15,20.79577856,5.11904512,3.0,512400,有色ETF
 20260106,能源金属,3.69,921.43,22.76282624,6.31,13.68672512,9.07610112,4.0,512400,有色ETF

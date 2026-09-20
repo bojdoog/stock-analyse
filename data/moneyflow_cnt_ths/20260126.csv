@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260126,885914.TI,煤炭概念,速达股份,46.31,0.68,2352.08,85,10.0,229.0,209.0,20.0,515220,煤炭ETF
 20260126,886015.TI,创新药,凯普生物,7.25,0.84,1438.53,269,20.03,358.0,347.0,10.0,510660,创新药ETF
 20260126,885530.TI,黄金概念,晓程科技,52.9,5.02,4385.93,79,20.01,708.0,701.0,6.0,512400,有色ETF

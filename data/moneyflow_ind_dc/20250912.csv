@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250912,小金属,1.62,3143.48,13.01410816,2.23,12.8701568,0.14395136,2.0,512400,有色ETF
 20250912,有色金属,2.68,22525.09,7.48098048,1.11,13.75646208,-6.2754816,3.0,512400,有色ETF
 20250912,工程建设,1.13,27170.17,7.20778672,2.78,6.78826928,0.41951744,4.0,510300,沪深300ETF

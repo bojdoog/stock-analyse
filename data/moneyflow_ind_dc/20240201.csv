@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240201,光伏设备,1.27,1109.66,10.95749664,4.09,8.84226592,2.11523072,1,516290,光伏ETF
 20240201,软件开发,-1.22,652.32,4.65459488,1.53,6.32309536,-1.66850048,2,515230,软件ETF
 20240201,通信设备,-0.28,8498.14,4.34949088,1.68,5.82736096,-1.47787008,3,515880,通信ETF

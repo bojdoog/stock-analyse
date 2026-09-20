@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260106,886021.TI,国企改革,陕西旅游,132.0,1.55,1506.97,2896,64.1,2980.0,2714.0,265.0,510300,沪深300ETF
 20260106,885456.TI,互联网金融,汉鑫科技,48.89,2.14,7030.09,215,29.99,622.0,491.0,130.0,512880,证券ETF
 20260106,885531.TI,光伏概念,苏大维格,39.78,1.72,4167.05,561,20.0,1290.0,1194.0,96.0,516290,光伏ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250424,886015.TI,创新药,舒泰神,11.94,0.58,1025.95,187,10.45,121.0,118.0,3.0,510660,创新药ETF
 20250424,886051.TI,减肥药,金凯生科,31.48,0.6,1056.08,50,20.02,36.0,37.0,0.0,510660,创新药ETF
 20250424,885462.TI,乳业,科拓生物,16.0,-0.15,2047.69,33,11.58,33.0,34.0,-1.0,510150,消费ETF

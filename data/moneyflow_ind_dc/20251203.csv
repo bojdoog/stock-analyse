@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251203,小金属,0.31,2965.01,47.6212952,12.98,27.56129648,20.05999872,1.0,512400,有色ETF
 20251203,有色金属,0.81,24245.12,8.0145792,1.68,3.44710144,4.56747776,3.0,512400,有色ETF
 20251203,煤炭行业,1.79,12624.03,3.14468016,2.77,3.96984896,-0.8251688,5.0,515220,煤炭ETF

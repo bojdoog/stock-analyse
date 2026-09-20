@@ -1,6 +1,7 @@
-from flask import Blueprint, jsonify, request, send_file
+from flask import Blueprint, current_app, jsonify, request
 from services.data_service import DataService
 from config import Config
+from database import get_db
 import os
 
 api_bp = Blueprint('api', __name__, url_prefix='/api')
@@ -15,7 +16,19 @@ def health_check():
         'status': 'ok',
         'service': 'stock-analyse-api',
         'dataDir': Config.DATA_DIR,
+        'storage': 'mysql' if getattr(get_db(), 'dialect', None) == 'mysql' else 'sqlite',
+        'database': database_name(),
     })
+
+
+def database_name():
+    if getattr(get_db(), 'dialect', None) == 'mysql':
+        from mysql_backend import settings
+        return settings()['database']
+    if current_app.config['DATABASE_PATH'] == 'auto':
+        from resilient_store import sqlite_path
+        return str(sqlite_path())
+    return current_app.config['DATABASE_PATH']
 
 
 @api_bp.route('/categories', methods=['GET'])
@@ -92,21 +105,10 @@ def get_kline_data(category, code):
         end_date: 结束日期 (可选, 格式: YYYY-MM-DD)
         limit: 限制返回条数 (可选)
     """
-    data = data_service.get_kline_data(category, code)
-    
-    # 日期过滤
     start_date = request.args.get('start_date')
     end_date = request.args.get('end_date')
-    
-    if start_date:
-        data = [d for d in data if d['date'] >= start_date]
-    if end_date:
-        data = [d for d in data if d['date'] <= end_date]
-    
-    # 限制数量
     limit = request.args.get('limit', type=int)
-    if limit and limit > 0:
-        data = data[-limit:]
+    data = data_service.get_kline_data(category, code, start_date, end_date, limit)
     
     if not data:
         return jsonify({
@@ -159,18 +161,11 @@ def get_amv_data():
         end_date: 结束日期 (可选)
         limit: 限制返回条数 (可选)
     """
-    data = data_service.get_amv_data()
-    
     start_date = request.args.get('start_date')
     end_date = request.args.get('end_date')
     limit = request.args.get('limit', type=int)
     
-    if start_date:
-        data = [d for d in data if d['date'] >= start_date]
-    if end_date:
-        data = [d for d in data if d['date'] <= end_date]
-    if limit and limit > 0:
-        data = data[-limit:]
+    data = data_service.get_amv_data(start_date, end_date, limit)
     
     return jsonify({
         'code': 0,
@@ -204,21 +199,12 @@ def get_moneyflow_data(flow_type):
             'message': f'无效的资金流向类型: {flow_type}，支持: {", ".join(valid_types)}',
         }), 400
     
-    data = data_service.get_moneyflow_data(flow_type)
-    
     start_date = request.args.get('start_date')
     end_date = request.args.get('end_date')
     industry = request.args.get('industry')
     limit = request.args.get('limit', type=int)
     
-    if start_date:
-        data = [d for d in data if d['date'] >= start_date]
-    if end_date:
-        data = [d for d in data if d['date'] <= end_date]
-    if industry:
-        data = [d for d in data if industry in d.get('industry_name', '')]
-    if limit and limit > 0:
-        data = data[-limit:]
+    data = data_service.get_moneyflow_data(flow_type, start_date, end_date, industry, limit)
     
     return jsonify({
         'code': 0,

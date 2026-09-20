@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250710,885343.TI,稀土永磁,京运通,3.84,1.95,2668.54,61,10.03,163.0,121.0,42.0,512400,有色ETF
 20250710,885914.TI,煤炭概念,美丽生态,3.62,1.54,1934.94,79,10.03,105.0,90.0,14.0,515220,煤炭ETF
 20250710,886021.TI,国企改革,国义招标,19.11,0.58,1319.01,2854,30.0,1417.0,1404.0,12.0,510300,沪深300ETF

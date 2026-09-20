@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251225,881166.TI,军工装备,广联航空,2517.26,3.14,81,19.99,31.21,297.0,260.0,37.0,512660,军工ETF
 20251225,881126.TI,汽车零部件,超捷股份,6975.76,1.92,261,20.0,134.93,298.0,262.0,36.0,515030,新能源车ETF
 20251225,881117.TI,通用设备,昊志机电,9065.13,1.97,249,20.01,43.42,259.0,234.0,25.0,159638,高端装备ETF

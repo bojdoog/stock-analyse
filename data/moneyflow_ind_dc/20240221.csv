@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240221,银行,2.2,3050.6,28.9996544,8.26,32.2872704,-3.287616,1,512800,银行ETF
 20240221,酿酒行业,4.2,49177.97,23.66644736,7.92,16.96535808,6.70108928,2,512690,白酒ETF
 20240221,证券,0.52,116874.93,12.48849584,3.61,14.67452336,-2.18602752,3,512880,证券ETF

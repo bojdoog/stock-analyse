@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231018,汽车整车,1.77,1329.41,19.90376704,6.33,24.2191744,-4.31540736,1,515030,新能源车ETF
 20231018,汽车零部件,0.25,29630.12,5.86136864,1.9,4.40269088,1.45867776,2,515030,新能源车ETF
 20231018,农牧饲渔,-0.17,12850.16,5.08943744,4.75,7.23706768,-2.14763024,3,510150,消费ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250318,电网设备,1.54,28075.45,6.95865136,1.88,8.60313392,-1.64448256,2,561380,电网设备ETF
 20250318,医疗服务,1.48,1104.22,5.09746,2.5,4.50656336,0.59089664,3,510660,创新药ETF
 20250318,贵金属,3.67,1247.27,4.94442832,4.19,1.5054864,3.43894192,4,512400,有色ETF

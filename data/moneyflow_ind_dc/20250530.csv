@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250530,银行,1.1,4111.86,7.56484608,2.64,8.4877696,-0.92292352,1,512800,银行ETF
 20250530,农牧饲渔,0.45,14276.85,5.54768992,3.0,5.73920096,-0.19151104,2,510150,消费ETF
 20250530,航天航空,1.03,45985.0,2.72127712,1.39,1.11367392,1.6076032,4,512660,军工ETF

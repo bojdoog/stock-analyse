@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241227,885456.TI,互联网金融,威士顿,65.82,1.13,5547.32,187,1.13,434.0,406.0,27.0,512880,证券ETF
 20241227,885936.TI,绿色电力,新特电气,10.34,1.29,937.21,207,1.29,199.0,190.0,9.0,516160,新能源ETF
 20241227,886015.TI,创新药,百利天恒,194.97,0.72,994.42,174,0.72,77.0,74.0,2.0,510660,创新药ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20230913,工程建设,0.12,20436.64,3.16063952,3.52,4.030848,-0.87020848,2,510300,沪深300ETF
 20230913,煤炭行业,0.76,9991.44,2.29696528,2.84,0.45154896,1.84541632,3,515220,煤炭ETF
 20230913,石油行业,0.55,5048.88,1.51922368,3.88,0.21704352,1.30218016,4,510300,沪深300ETF

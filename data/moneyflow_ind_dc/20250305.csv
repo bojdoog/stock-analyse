@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250305,银行,1.44,3737.66,25.97719296,9.2,21.2480384,4.72915456,1,512800,银行ETF
 20250305,通信设备,2.04,14112.81,13.9600896,2.44,13.15583488,0.80425472,2,515880,通信ETF
 20250305,汽车整车,0.43,1667.8,7.9335168,4.22,5.82991616,2.10360064,4,515030,新能源车ETF

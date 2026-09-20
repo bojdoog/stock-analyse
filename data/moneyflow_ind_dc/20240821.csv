@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240821,电池,2.44,622.91,4.52373168,4.04,2.26833104,2.25540064,3,516160,新能源ETF
 20240821,贵金属,1.17,991.18,3.38600288,5.29,1.483664,1.90233888,4,512400,有色ETF
 20240821,能源金属,2.72,357.32,2.0584376,3.57,0.98021504,1.07822256,5,512400,有色ETF

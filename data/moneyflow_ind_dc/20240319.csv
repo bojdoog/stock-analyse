@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240319,酿酒行业,0.41,52593.99,9.87468928,4.92,6.34502016,3.52966912,1,512690,白酒ETF
 20240319,农牧饲渔,1.55,12026.31,3.5764384,2.65,3.29262848,0.28380992,3,510150,消费ETF
 20240319,煤炭行业,0.98,11087.92,1.57740304,1.11,1.29816432,0.27923872,4,515220,煤炭ETF

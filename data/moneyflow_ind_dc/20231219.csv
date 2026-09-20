@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231219,旅游酒店,2.73,13740.52,4.60368203,7.92,4.73654027,-0.13285824,1,510150,消费ETF
 20231219,游戏,1.28,1229.28,4.19190272,3.26,2.38081616,1.81108656,2,159869,游戏ETF
 20231219,光伏设备,1.35,1202.03,3.97516848,2.92,2.58885968,1.3863088,3,516290,光伏ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250408,商业百货,5.39,15814.11,23.50363712,11.98,26.93918208,-3.43554496,1,510150,消费ETF
 20250408,食品饮料,6.46,25920.98,9.5998256,2.78,10.93457376,-1.33474816,2,510150,消费ETF
 20250408,农牧饲渔,8.89,14477.74,9.56885504,1.61,10.11294976,-0.54409472,3,510150,消费ETF

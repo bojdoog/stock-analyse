@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251016,汽车整车,0.15,1906.76,10.30700288,3.27,12.92752896,-2.62052608,1.0,515030,新能源车ETF
 20251016,银行,1.3,4193.64,9.3288192,2.21,13.28858624,-3.95976704,,512800,银行ETF
 20251016,银行,1.3,4193.64,9.3288192,2.21,13.28858624,-3.95976704,2.0,512800,银行ETF

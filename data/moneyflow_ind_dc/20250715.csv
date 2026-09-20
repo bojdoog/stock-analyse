@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250715,互联网服务,1.26,28943.09,29.32412672,3.04,26.9613056,2.36282112,1,515230,软件ETF
 20250715,汽车整车,0.32,1659.33,5.85546112,3.28,4.6347072,1.22075392,3,515030,新能源车ETF
 20250715,通信设备,0.48,15560.53,3.62083072,0.41,17.00060416,-13.37977344,5,515880,通信ETF

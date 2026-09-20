@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250626,885980.TI,华为鲲鹏,中达安,13.24,1.17,1414.03,167,20.04,382.0,360.0,21.0,515230,软件ETF
 20250626,885362.TI,云计算,*ST云创,12.56,0.52,3781.01,202,14.08,416.0,398.0,18.0,515230,软件ETF
 20250626,885866.TI,数字货币,信安世纪,13.19,1.91,2448.15,94,20.02,488.0,470.0,17.0,515230,软件ETF

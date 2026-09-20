@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241021,光伏设备,4.23,1113.1,21.50467584,4.14,19.47260928,2.03206656,1,516290,光伏ETF
 20241021,小金属,3.07,1631.93,8.58114304,5.36,6.68493376,1.89620928,2,512400,有色ETF
 20241021,航天航空,6.18,44065.71,5.15314144,1.48,10.34368736,-5.19054592,4,512660,军工ETF

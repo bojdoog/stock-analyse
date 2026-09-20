@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250311,酿酒行业,2.04,50949.34,20.2066272,8.37,11.03484608,9.17178112,1,512690,白酒ETF
 20250311,互联网服务,0.62,28993.55,16.19543296,1.52,31.80751872,-15.61208576,2,515230,软件ETF
 20250311,小金属,1.75,2148.0,11.6677744,3.86,10.85834592,0.80942848,3,512400,有色ETF

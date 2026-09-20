@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240123,软件开发,1.67,733.73,13.3860008,3.83,14.971396,-1.5853952,1,515230,软件ETF
 20240123,通信设备,1.58,9501.19,11.11275616,4.17,9.36158048,1.75117568,2,515880,通信ETF
 20240123,游戏,4.14,975.19,10.98593152,8.23,6.35248256,4.63344896,3,159869,游戏ETF

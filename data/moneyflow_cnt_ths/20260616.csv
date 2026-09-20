@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260616,885928.TI,钠离子电池,ST南都,4.56,2.64,1454.46,142,20.0,603.0,556.0,46.0,516160,新能源ETF
 20260616,886032.TI,固态电池,ST南都,4.56,2.73,1674.9,295,20.0,1326.0,1290.0,35.0,516160,新能源ETF
 20260616,885531.TI,光伏概念,雅创电子,88.87,2.22,4865.11,597,20.0,2165.0,2133.0,32.0,516290,光伏ETF

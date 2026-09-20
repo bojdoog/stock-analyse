@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231121,文化传媒,2.42,9620.8,14.30937088,2.68,12.51333632,1.79603456,1,512980,传媒ETF
 20231121,酿酒行业,0.96,59096.81,7.05372736,3.94,6.26187328,0.79185408,3,512690,白酒ETF
 20231121,煤炭行业,0.6,10242.47,3.3095408,4.64,2.2538256,1.0557152,5,515220,煤炭ETF

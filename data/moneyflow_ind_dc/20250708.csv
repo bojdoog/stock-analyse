@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250708,光伏设备,5.55,1128.01,39.49333504,7.95,36.32059904,3.172736,1,516290,光伏ETF
 20250708,通信设备,1.95,15508.77,24.7782656,3.71,18.68307456,6.09519104,3,515880,通信ETF
 20250708,软件开发,1.57,1188.93,15.60879616,1.92,16.53737984,-0.92858368,5,515230,软件ETF

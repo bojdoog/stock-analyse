@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260729,886021.TI,国企改革,领湃科技,20.38,1.66,1326.38,2936,20.02,2029.0,1859.0,170.0,510300,沪深300ETF
 20260729,885921.TI,储能,领湃科技,20.38,1.51,2259.89,894,20.02,1430.0,1298.0,132.0,516160,新能源ETF
 20260729,885431.TI,新能源汽车,天晟新材,5.38,1.16,4133.59,1059,20.09,1731.0,1600.0,131.0,515030,新能源车ETF

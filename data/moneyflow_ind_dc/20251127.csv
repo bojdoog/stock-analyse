@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251127,半导体,0.89,1856.12,3.77055744,0.25,14.39984128,-10.62928384,4.0,512480,半导体ETF
 20251127,贵金属,0.86,1870.5,3.42170448,5.0,1.75447344,1.66723104,5.0,512400,有色ETF
 20251127,酿酒行业,-0.12,50279.04,2.20142768,2.29,0.95232368,1.249104,6.0,512690,白酒ETF

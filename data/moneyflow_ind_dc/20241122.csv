@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241122,贵金属,-0.42,1107.1,1.41671184,1.51,1.95670256,-0.53999072,3,512400,有色ETF
 20241122,小金属,-0.38,1929.9,1.03616464,0.31,5.65304016,-4.61687552,4,512400,有色ETF
 20241122,燃气,-1.11,1579.66,0.91540688,1.49,1.6688992,-0.75349232,5,561380,电网设备ETF

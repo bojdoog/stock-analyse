@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260108,885743.TI,军民融合,航天南湖,45.0,3.35,1887.66,243,20.0,1156.0,984.0,171.0,512660,军工ETF
 20260108,885700.TI,军工,邵阳液压,49.6,2.72,2614.44,595,20.01,2155.0,2004.0,151.0,512660,军工ETF
 20260108,886078.TI,商业航天,天润科技,28.36,3.56,2468.68,413,22.29,2143.0,1997.0,146.0,159206,卫星ETF

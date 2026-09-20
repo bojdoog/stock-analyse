@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250512,航天航空,4.63,48217.01,25.14260224,5.28,28.05599232,-2.91339008,1,512660,军工ETF
 20250512,通信设备,2.9,14152.34,21.9863296,3.66,16.38296832,5.60336128,2,515880,通信ETF
 20250512,互联网服务,2.28,26464.92,20.4521088,3.46,18.05521152,2.39689728,4,515230,软件ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231010,软件开发,1.28,826.35,9.37963888,2.08,9.8343512,-0.45471232,1,515230,软件ETF
 20231010,能源金属,1.99,482.61,7.62588896,10.08,6.08027504,1.54561392,2,512400,有色ETF
 20231010,互联网服务,1.45,20178.34,2.0941952,0.5,8.54035712,-6.44616192,4,515230,软件ETF

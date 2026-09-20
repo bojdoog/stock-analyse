@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240301,软件开发,2.72,752.46,25.31057664,4.3,22.46869248,2.84188416,2,515230,软件ETF
 20240301,通信设备,2.54,10123.94,13.63235328,2.53,12.30363648,1.3287168,3,515880,通信ETF
 20240301,互联网服务,2.72,17873.49,4.74564608,0.83,7.51325184,-2.76760576,7,515230,软件ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240111,互联网服务,3.32,19061.64,13.319,4.84,11.56169568,1.75730432,1,515230,软件ETF
 20240111,能源金属,4.95,478.32,13.033756,9.92,10.2735792,2.7601768,2,512400,有色ETF
 20240111,软件开发,3.47,820.83,11.64136416,3.52,11.03919328,0.60217088,3,515230,软件ETF

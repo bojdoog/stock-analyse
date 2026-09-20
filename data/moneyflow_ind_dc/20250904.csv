@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250904,银行,0.39,4213.93,26.94606848,5.5,29.37957376,-2.43350528,,512800,银行ETF
 20250904,银行,0.39,4213.93,26.94606848,5.5,29.37957376,-2.43350528,1.0,512800,银行ETF
 20250904,商业百货,3.59,19297.77,18.23830512,6.03,21.84203504,-3.60372992,2.0,510150,消费ETF

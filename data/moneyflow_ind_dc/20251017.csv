@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251017,贵金属,1.33,2124.59,8.10104032,3.84,4.7893424,3.31169792,1.0,512400,有色ETF
 20251017,燃气,1.04,1867.52,0.15203824,0.17,1.59509888,-1.44306064,4.0,561380,电网设备ETF
 20251017,公用事业,-0.51,8873.24,-0.85025308,-3.18,-0.52664524,-0.32360784,10.0,561380,电网设备ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260720,886021.TI,国企改革,陇神戎发,12.04,-0.21,1284.02,2934,20.04,2322.0,2182.0,140.0,510300,沪深300ETF
 20260720,886042.TI,存储芯片,有研硅,42.27,-7.42,2325.41,201,8.72,1762.0,1672.0,89.0,512480,半导体ETF
 20260720,885641.TI,风电,汇金股份,9.41,-1.09,1143.53,438,20.03,823.0,734.0,88.0,516160,新能源ETF

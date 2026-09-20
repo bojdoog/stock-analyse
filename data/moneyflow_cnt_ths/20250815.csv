@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250815,885456.TI,互联网金融,国源科技,27.05,2.62,6917.36,212,22.29,927.0,725.0,201.0,512880,证券ETF
 20250815,885431.TI,新能源汽车,横河精密,30.46,2.6,4193.71,938,20.02,1829.0,1635.0,193.0,515030,新能源车ETF
 20250815,885806.TI,华为概念,横河精密,30.46,2.24,3176.86,984,20.02,2130.0,1960.0,170.0,515230,软件ETF

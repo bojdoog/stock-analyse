@@ -1,0 +1,92 @@
+{
+  "request": {
+    "tool": "fund_adj",
+    "arguments": {
+      "ts_code": "512800.SH",
+      "start_date": "20260901",
+      "end_date": "20260918"
+    }
+  },
+  "retrieved_at": "2026-09-20T15:52:14.562677+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"512800.SH\", \"trade_date\": \"20260918\", \"adj_factor\": 1.9989}, {\"ts_code\": \"512800.SH\", \"trade_date\": \"20260917\", \"adj_factor\": 1.9989}, {\"ts_code\": \"512800.SH\", \"trade_date\": \"20260916\", \"adj_factor\": 1.9989}, {\"ts_code\": \"512800.SH\", \"trade_date\": \"20260915\", \"adj_factor\": 1.9989}, {\"ts_code\": \"512800.SH\", \"trade_date\": \"20260914\", \"adj_factor\": 1.9989}, {\"ts_code\": \"512800.SH\", \"trade_date\": \"20260911\", \"adj_factor\": 1.9989}, {\"ts_code\": \"512800.SH\", \"trade_date\": \"20260910\", \"adj_factor\": 1.9989}, {\"ts_code\": \"512800.SH\", \"trade_date\": \"20260909\", \"adj_factor\": 1.9989}, {\"ts_code\": \"512800.SH\", \"trade_date\": \"20260908\", \"adj_factor\": 1.9989}, {\"ts_code\": \"512800.SH\", \"trade_date\": \"20260907\", \"adj_factor\": 1.9989}, {\"ts_code\": \"512800.SH\", \"trade_date\": \"20260904\", \"adj_factor\": 1.9989}, {\"ts_code\": \"512800.SH\", \"trade_date\": \"20260903\", \"adj_factor\": 1.9989}, {\"ts_code\": \"512800.SH\", \"trade_date\": \"20260902\", \"adj_factor\": 1.9989}, {\"ts_code\": \"512800.SH\", \"trade_date\": \"20260901\", \"adj_factor\": 1.9989}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "512800.SH",
+      "trade_date": "20260918",
+      "adj_factor": 1.9989
+    },
+    {
+      "ts_code": "512800.SH",
+      "trade_date": "20260917",
+      "adj_factor": 1.9989
+    },
+    {
+      "ts_code": "512800.SH",
+      "trade_date": "20260916",
+      "adj_factor": 1.9989
+    },
+    {
+      "ts_code": "512800.SH",
+      "trade_date": "20260915",
+      "adj_factor": 1.9989
+    },
+    {
+      "ts_code": "512800.SH",
+      "trade_date": "20260914",
+      "adj_factor": 1.9989
+    },
+    {
+      "ts_code": "512800.SH",
+      "trade_date": "20260911",
+      "adj_factor": 1.9989
+    },
+    {
+      "ts_code": "512800.SH",
+      "trade_date": "20260910",
+      "adj_factor": 1.9989
+    },
+    {
+      "ts_code": "512800.SH",
+      "trade_date": "20260909",
+      "adj_factor": 1.9989
+    },
+    {
+      "ts_code": "512800.SH",
+      "trade_date": "20260908",
+      "adj_factor": 1.9989
+    },
+    {
+      "ts_code": "512800.SH",
+      "trade_date": "20260907",
+      "adj_factor": 1.9989
+    },
+    {
+      "ts_code": "512800.SH",
+      "trade_date": "20260904",
+      "adj_factor": 1.9989
+    },
+    {
+      "ts_code": "512800.SH",
+      "trade_date": "20260903",
+      "adj_factor": 1.9989
+    },
+    {
+      "ts_code": "512800.SH",
+      "trade_date": "20260902",
+      "adj_factor": 1.9989
+    },
+    {
+      "ts_code": "512800.SH",
+      "trade_date": "20260901",
+      "adj_factor": 1.9989
+    }
+  ]
+}

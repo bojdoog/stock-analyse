@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250102,商业百货,4.02,18394.0,18.3076224,4.74,23.30010368,-4.99248128,1,510150,消费ETF
 20250102,贵金属,0.94,1027.55,3.53938624,5.56,2.5312376,1.00814864,2,512400,有色ETF
 20250102,食品饮料,1.64,25694.4,2.92967632,1.11,4.70386896,-1.77419264,3,510150,消费ETF

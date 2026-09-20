@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260612,有色金属,3.69,29895.64,144.08579328,5.56,106.0975744,37.98821888,1,512400,有色ETF
 20260612,电池,2.64,1549.65,74.36727808,6.24,41.22541312,33.14186496,4,516160,新能源ETF
 20260612,锂电池,3.34,20001.87,41.70447872,7.3,25.20726528,16.49721344,8,516160,新能源ETF

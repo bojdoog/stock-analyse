@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240621,工程建设,1.61,16734.59,3.87771392,4.68,4.34570656,-0.46799264,1,510300,沪深300ETF
 20240621,农牧饲渔,0.43,10472.08,1.47102816,2.2,0.54829504,0.92273312,2,510150,消费ETF
 20240621,水泥建材,2.61,17760.52,0.52131122,1.85,0.80361058,-0.28229936,7,510300,沪深300ETF

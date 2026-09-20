@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231215,文化传媒,1.63,10387.07,9.3561728,1.82,12.02024192,-2.66406912,1,512980,传媒ETF
 20231215,光伏设备,0.83,1215.2,7.79935904,4.93,4.30522368,3.49413536,2,516290,光伏ETF
 20231215,游戏,1.1,1252.28,2.86343104,1.6,1.25917904,1.604252,5,159869,游戏ETF

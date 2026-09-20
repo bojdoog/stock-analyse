@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240208,汽车零部件,7.34,23265.85,10.2293888,3.54,3.61027072,6.61911808,1,515030,新能源车ETF
 20240208,软件开发,8.71,610.36,5.06842304,1.31,4.77568448,0.29273856,5,515230,软件ETF
 20240208,互联网服务,8.99,14187.95,4.57097952,1.34,1.40300256,3.16797696,6,515230,软件ETF

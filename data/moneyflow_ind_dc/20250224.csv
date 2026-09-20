@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250224,工程建设,1.91,22353.2,10.07557872,4.59,5.90054384,4.17503488,1,510300,沪深300ETF
 20250224,酿酒行业,1.07,49031.87,6.35690384,3.01,3.86295696,2.49394688,3,512690,白酒ETF
 20250224,汽车零部件,0.45,38765.76,1.93035008,0.24,22.99909376,-21.06874368,11,515030,新能源车ETF

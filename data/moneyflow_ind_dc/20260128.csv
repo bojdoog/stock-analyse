@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260128,有色金属,4.83,33442.21,54.23033344,3.39,65.25604352,-11.02571008,1.0,512400,有色ETF
 20260128,小金属,4.85,4152.58,35.09261824,3.72,40.73901312,-5.64639488,2.0,512400,有色ETF
 20260128,银行,-0.09,3986.94,14.37180928,3.14,-2.36503552,16.7368448,,512800,银行ETF

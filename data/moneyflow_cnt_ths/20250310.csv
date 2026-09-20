@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250310,885530.TI,黄金概念,东江环保,4.47,1.15,2257.05,72,1.15,131.0,108.0,22.0,512400,有色ETF
 20250310,886054.TI,光刻机,海立股份,13.86,1.03,1264.05,33,1.03,54.0,49.0,5.0,588710,科创半导体设备ETF
 20250310,885878.TI,HJT电池,海源复材,8.03,1.6,2261.31,60,1.6,57.0,54.0,3.0,516290,光伏ETF

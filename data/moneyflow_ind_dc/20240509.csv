@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240509,光伏设备,3.05,1111.98,13.4386808,5.35,8.39972528,5.03895552,1,516290,光伏ETF
 20240509,半导体,2.46,989.58,11.91278736,3.21,8.84280464,3.06998272,2,512480,半导体ETF
 20240509,航天航空,2.9,38213.97,7.68133168,4.0,7.29534768,0.385984,5,512660,军工ETF

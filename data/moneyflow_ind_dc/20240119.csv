@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240119,游戏,2.76,1006.6,7.93701728,5.26,7.99620464,-0.05918736,1,159869,游戏ETF
 20240119,文化传媒,0.48,8418.76,4.40764944,2.16,5.04177168,-0.63412224,2,512980,传媒ETF
 20240119,旅游酒店,2.1,14483.09,2.91054416,2.67,2.2917248,0.61881936,3,510150,消费ETF

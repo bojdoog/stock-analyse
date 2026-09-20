@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260520,886042.TI,存储芯片,联芸科技,88.6,3.08,2867.7,187,20.0,2289.0,2017.0,272.0,512480,半导体ETF
 20260520,885945.TI,汽车芯片,联芸科技,88.6,1.51,1543.14,140,20.0,1167.0,1039.0,128.0,512480,半导体ETF
 20260520,886032.TI,固态电池,瑞华泰,37.32,0.68,1679.45,291,20.0,1008.0,950.0,57.0,516160,新能源ETF

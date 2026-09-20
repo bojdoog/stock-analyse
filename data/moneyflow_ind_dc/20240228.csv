@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240228,电力行业,-1.84,13791.02,-0.20413472,-0.1,3.91385824,-4.11799296,3,561380,电网设备ETF
 20240228,装修装饰,-6.66,373.36,-0.31049104,-0.66,0.48544976,-0.7959408,5,510300,沪深300ETF
 20240228,燃气,-3.99,1219.26,-0.82136874,-3.49,-0.39460634,-0.4267624,9,561380,电网设备ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240312,酿酒行业,3.8,51975.65,23.5397248,6.97,7.48852224,16.05120256,1,512690,白酒ETF
 20240312,汽车零部件,2.83,28294.21,4.91068992,1.43,5.35516736,-0.44447744,3,515030,新能源车ETF
 20240312,旅游酒店,2.75,13500.58,3.25583232,3.51,3.71107168,-0.45523936,5,510150,消费ETF

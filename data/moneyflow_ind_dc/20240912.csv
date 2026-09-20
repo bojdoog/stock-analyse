@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240912,银行,0.67,3004.11,3.34032464,2.28,-0.23059216,3.5709168,2,512800,银行ETF
 20240912,软件开发,0.72,598.06,2.82090688,1.07,2.95859648,-0.1376896,3,515230,软件ETF
 20240912,医疗服务,-0.48,747.44,1.80168,2.56,1.2076776,0.5940024,4,510660,创新药ETF

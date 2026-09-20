@@ -1,0 +1,993 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "881281.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:45:22.900142+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"881281.TI\", \"con_code\": \"000009.SZ\", \"con_name\": \"中国宝安\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"000049.SZ\", \"con_name\": \"德赛电池\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"000695.SZ\", \"con_name\": \"滨海能源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"001283.SZ\", \"con_name\": \"豪鹏科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"001301.SZ\", \"con_name\": \"尚太科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"002058.SZ\", \"con_name\": \"威尔泰\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"002074.SZ\", \"con_name\": \"国轩高科\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"002125.SZ\", \"con_name\": \"湘潭电化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"002245.SZ\", \"con_name\": \"蔚蓝锂芯\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"002340.SZ\", \"con_name\": \"格林美\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"002580.SZ\", \"con_name\": \"圣阳股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"002709.SZ\", \"con_name\": \"天赐材料\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"002733.SZ\", \"con_name\": \"雄韬股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"002759.SZ\", \"con_name\": \"ST天际\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"002805.SZ\", \"con_name\": \"丰元股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"002812.SZ\", \"con_name\": \"恩捷股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"002850.SZ\", \"con_name\": \"科达利\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"300014.SZ\", \"con_name\": \"亿纬锂能\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"300035.SZ\", \"con_name\": \"中科电气\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"300037.SZ\", \"con_name\": \"新宙邦\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"300068.SZ\", \"con_name\": \"ST南都\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"300073.SZ\", \"con_name\": \"当升科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"300128.SZ\", \"con_name\": \"锦富技术\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"300173.SZ\", \"con_name\": \"ST福能\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"300207.SZ\", \"con_name\": \"欣旺达\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"300340.SZ\", \"con_name\": \"科恒股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"300390.SZ\", \"con_name\": \"天华新能\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"300409.SZ\", \"con_name\": \"道氏技术\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"300410.SZ\", \"con_name\": \"正业科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"300438.SZ\", \"con_name\": \"鹏辉能源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"300450.SZ\", \"con_name\": \"先导智能\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"300457.SZ\", \"con_name\": \"赢合科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"300530.SZ\", \"con_name\": \"领湃科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"300568.SZ\", \"con_name\": \"星源材质\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"300619.SZ\", \"con_name\": \"金银河\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"300648.SZ\", \"con_name\": \"星云股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"300750.SZ\", \"con_name\": \"宁德时代\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"300769.SZ\", \"con_name\": \"德方纳米\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"300890.SZ\", \"con_name\": \"翔丰华\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"300919.SZ\", \"con_name\": \"中伟新材\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"300953.SZ\", \"con_name\": \"震裕科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"301121.SZ\", \"con_name\": \"紫建电子\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"301150.SZ\", \"con_name\": \"中一科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"301152.SZ\", \"con_name\": \"天力锂能\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"301210.SZ\", \"con_name\": \"金杨精密\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"301217.SZ\", \"con_name\": \"铜冠铜箔\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"301222.SZ\", \"con_name\": \"浙江恒威\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"301238.SZ\", \"con_name\": \"瑞泰新材\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"301292.SZ\", \"con_name\": \"海科新源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"301325.SZ\", \"con_name\": \"曼恩斯特\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"301327.SZ\", \"con_name\": \"华宝新能\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"301349.SZ\", \"con_name\": \"信德新材\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"301358.SZ\", \"con_name\": \"湖南裕能\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"301487.SZ\", \"con_name\": \"盟固利\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"301511.SZ\", \"con_name\": \"德福科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"301513.SZ\", \"con_name\": \"尚水智能\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"301587.SZ\", \"con_name\": \"中瑞股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"301599.SZ\", \"con_name\": \"理奇智能\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"301662.SZ\", \"con_name\": \"宏工科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"600110.SH\", \"con_name\": \"诺德股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"600152.SH\", \"con_name\": \"维科技术\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"600241.SH\", \"con_name\": \"时代万恒\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"600478.SH\", \"con_name\": \"科力远\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"600847.SH\", \"con_name\": \"万里股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"600884.SH\", \"con_name\": \"杉杉股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"601311.SH\", \"con_name\": \"骆驼股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"603026.SH\", \"con_name\": \"石大胜华\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"603031.SH\", \"con_name\": \"安孚科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"603032.SH\", \"con_name\": \"德新科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"603659.SH\", \"con_name\": \"璞泰来\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"603906.SH\", \"con_name\": \"龙蟠科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"605378.SH\", \"con_name\": \"野马电池\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"688005.SH\", \"con_name\": \"容百科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"688006.SH\", \"con_name\": \"杭可科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"688063.SH\", \"con_name\": \"派能科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"688116.SH\", \"con_name\": \"天奈科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"688148.SH\", \"con_name\": \"芳源股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"688155.SH\", \"con_name\": \"先惠技术\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"688184.SH\", \"con_name\": \"ST帕瓦\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"688275.SH\", \"con_name\": \"万润新能\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"688339.SH\", \"con_name\": \"亿华通\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"688345.SH\", \"con_name\": \"博力威\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"688353.SH\", \"con_name\": \"华盛锂电\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"688388.SH\", \"con_name\": \"嘉元科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"688392.SH\", \"con_name\": \"骄成超声\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"688499.SH\", \"con_name\": \"利元亨\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"688567.SH\", \"con_name\": \"孚能科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"688573.SH\", \"con_name\": \"信宇人\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"688638.SH\", \"con_name\": \"誉辰智能\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"688707.SH\", \"con_name\": \"振华新材\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"688733.SH\", \"con_name\": \"壹石通\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"688772.SH\", \"con_name\": \"珠海冠宇\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"688778.SH\", \"con_name\": \"厦钨新能\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"688779.SH\", \"con_name\": \"五矿新能\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"688819.SH\", \"con_name\": \"天能股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"920117.BJ\", \"con_name\": \"龙鑫智能\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"920119.BJ\", \"con_name\": \"美德乐\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"920185.BJ\", \"con_name\": \"贝特瑞\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"920193.BJ\", \"con_name\": \"吉和昌\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"920237.BJ\", \"con_name\": \"力佳科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"920239.BJ\", \"con_name\": \"长虹能源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"920252.BJ\", \"con_name\": \"天宏锂电\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"920522.BJ\", \"con_name\": \"纳科诺尔\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"920523.BJ\", \"con_name\": \"德瑞锂电\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"920627.BJ\", \"con_name\": \"力王股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"920779.BJ\", \"con_name\": \"武汉蓝电\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881281.TI\", \"con_code\": \"920809.BJ\", \"con_name\": \"安达科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "881281.TI",
+      "con_code": "000009.SZ",
+      "con_name": "中国宝安",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "000049.SZ",
+      "con_name": "德赛电池",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "000695.SZ",
+      "con_name": "滨海能源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "001283.SZ",
+      "con_name": "豪鹏科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "001301.SZ",
+      "con_name": "尚太科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "002058.SZ",
+      "con_name": "威尔泰",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "002074.SZ",
+      "con_name": "国轩高科",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "002125.SZ",
+      "con_name": "湘潭电化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "002245.SZ",
+      "con_name": "蔚蓝锂芯",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "002340.SZ",
+      "con_name": "格林美",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "002580.SZ",
+      "con_name": "圣阳股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "002709.SZ",
+      "con_name": "天赐材料",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "002733.SZ",
+      "con_name": "雄韬股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "002759.SZ",
+      "con_name": "ST天际",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "002805.SZ",
+      "con_name": "丰元股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "002812.SZ",
+      "con_name": "恩捷股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "002850.SZ",
+      "con_name": "科达利",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "300014.SZ",
+      "con_name": "亿纬锂能",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "300035.SZ",
+      "con_name": "中科电气",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "300037.SZ",
+      "con_name": "新宙邦",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "300068.SZ",
+      "con_name": "ST南都",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "300073.SZ",
+      "con_name": "当升科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "300128.SZ",
+      "con_name": "锦富技术",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "300173.SZ",
+      "con_name": "ST福能",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "300207.SZ",
+      "con_name": "欣旺达",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "300340.SZ",
+      "con_name": "科恒股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "300390.SZ",
+      "con_name": "天华新能",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "300409.SZ",
+      "con_name": "道氏技术",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "300410.SZ",
+      "con_name": "正业科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "300438.SZ",
+      "con_name": "鹏辉能源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "300450.SZ",
+      "con_name": "先导智能",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "300457.SZ",
+      "con_name": "赢合科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "300530.SZ",
+      "con_name": "领湃科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "300568.SZ",
+      "con_name": "星源材质",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "300619.SZ",
+      "con_name": "金银河",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "300648.SZ",
+      "con_name": "星云股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "300750.SZ",
+      "con_name": "宁德时代",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "300769.SZ",
+      "con_name": "德方纳米",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "300890.SZ",
+      "con_name": "翔丰华",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "300919.SZ",
+      "con_name": "中伟新材",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "300953.SZ",
+      "con_name": "震裕科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "301121.SZ",
+      "con_name": "紫建电子",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "301150.SZ",
+      "con_name": "中一科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "301152.SZ",
+      "con_name": "天力锂能",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "301210.SZ",
+      "con_name": "金杨精密",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "301217.SZ",
+      "con_name": "铜冠铜箔",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "301222.SZ",
+      "con_name": "浙江恒威",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "301238.SZ",
+      "con_name": "瑞泰新材",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "301292.SZ",
+      "con_name": "海科新源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "301325.SZ",
+      "con_name": "曼恩斯特",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "301327.SZ",
+      "con_name": "华宝新能",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "301349.SZ",
+      "con_name": "信德新材",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "301358.SZ",
+      "con_name": "湖南裕能",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "301487.SZ",
+      "con_name": "盟固利",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "301511.SZ",
+      "con_name": "德福科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "301513.SZ",
+      "con_name": "尚水智能",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "301587.SZ",
+      "con_name": "中瑞股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "301599.SZ",
+      "con_name": "理奇智能",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "301662.SZ",
+      "con_name": "宏工科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "600110.SH",
+      "con_name": "诺德股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "600152.SH",
+      "con_name": "维科技术",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "600241.SH",
+      "con_name": "时代万恒",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "600478.SH",
+      "con_name": "科力远",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "600847.SH",
+      "con_name": "万里股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "600884.SH",
+      "con_name": "杉杉股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "601311.SH",
+      "con_name": "骆驼股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "603026.SH",
+      "con_name": "石大胜华",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "603031.SH",
+      "con_name": "安孚科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "603032.SH",
+      "con_name": "德新科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "603659.SH",
+      "con_name": "璞泰来",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "603906.SH",
+      "con_name": "龙蟠科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "605378.SH",
+      "con_name": "野马电池",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "688005.SH",
+      "con_name": "容百科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "688006.SH",
+      "con_name": "杭可科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "688063.SH",
+      "con_name": "派能科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "688116.SH",
+      "con_name": "天奈科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "688148.SH",
+      "con_name": "芳源股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "688155.SH",
+      "con_name": "先惠技术",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "688184.SH",
+      "con_name": "ST帕瓦",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "688275.SH",
+      "con_name": "万润新能",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "688339.SH",
+      "con_name": "亿华通",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "688345.SH",
+      "con_name": "博力威",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "688353.SH",
+      "con_name": "华盛锂电",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "688388.SH",
+      "con_name": "嘉元科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "688392.SH",
+      "con_name": "骄成超声",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "688499.SH",
+      "con_name": "利元亨",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "688567.SH",
+      "con_name": "孚能科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "688573.SH",
+      "con_name": "信宇人",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "688638.SH",
+      "con_name": "誉辰智能",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "688707.SH",
+      "con_name": "振华新材",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "688733.SH",
+      "con_name": "壹石通",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "688772.SH",
+      "con_name": "珠海冠宇",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "688778.SH",
+      "con_name": "厦钨新能",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "688779.SH",
+      "con_name": "五矿新能",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "688819.SH",
+      "con_name": "天能股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "920117.BJ",
+      "con_name": "龙鑫智能",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "920119.BJ",
+      "con_name": "美德乐",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "920185.BJ",
+      "con_name": "贝特瑞",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "920193.BJ",
+      "con_name": "吉和昌",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "920237.BJ",
+      "con_name": "力佳科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "920239.BJ",
+      "con_name": "长虹能源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "920252.BJ",
+      "con_name": "天宏锂电",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "920522.BJ",
+      "con_name": "纳科诺尔",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "920523.BJ",
+      "con_name": "德瑞锂电",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "920627.BJ",
+      "con_name": "力王股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "920779.BJ",
+      "con_name": "武汉蓝电",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881281.TI",
+      "con_code": "920809.BJ",
+      "con_name": "安达科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

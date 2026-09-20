@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240129,酿酒行业,-0.38,50514.78,6.05898672,3.22,2.23944112,3.8195456,1,512690,白酒ETF
 20240129,工程建设,-2.0,19444.45,4.11538352,1.47,7.15995312,-3.0445696,2,510300,沪深300ETF
 20240129,石油行业,-2.08,5100.23,2.69260528,2.44,3.0829976,-0.39039232,3,510300,沪深300ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241203,银行,1.59,3661.82,14.00598272,5.11,12.41252352,1.5934592,1,512800,银行ETF
 20241203,石油行业,0.14,5560.76,2.08955648,3.39,0.20733504,1.88222144,6,510300,沪深300ETF
 20241203,光伏设备,0.27,1285.2,0.85579808,0.31,-0.24630752,1.1021056,9,516290,光伏ETF

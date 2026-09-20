@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260210,文化传媒,5.98,13604.25,61.00369152,4.74,82.38843904,-21.38474752,1.0,512980,传媒ETF
 20260210,航天航空,-0.17,68306.92,21.63435264,5.31,16.18384128,5.45051136,2.0,512660,军工ETF
 20260210,游戏,3.56,1784.45,10.65369856,3.11,7.24466944,3.40902912,3.0,159869,游戏ETF

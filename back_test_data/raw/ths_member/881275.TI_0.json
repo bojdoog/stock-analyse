@@ -1,0 +1,246 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "881275.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:45:20.562017+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"881275.TI\", \"con_code\": \"002174.SZ\", \"con_name\": \"游族网络\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881275.TI\", \"con_code\": \"002425.SZ\", \"con_name\": \"凯撒文化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881275.TI\", \"con_code\": \"002517.SZ\", \"con_name\": \"恺英网络\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881275.TI\", \"con_code\": \"002555.SZ\", \"con_name\": \"三七互娱\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881275.TI\", \"con_code\": \"002558.SZ\", \"con_name\": \"巨人网络\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881275.TI\", \"con_code\": \"002602.SZ\", \"con_name\": \"世纪华通\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881275.TI\", \"con_code\": \"002605.SZ\", \"con_name\": \"姚记科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881275.TI\", \"con_code\": \"002624.SZ\", \"con_name\": \"完美世界\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881275.TI\", \"con_code\": \"002919.SZ\", \"con_name\": \"名臣健康\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881275.TI\", \"con_code\": \"300002.SZ\", \"con_name\": \"神州泰岳\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881275.TI\", \"con_code\": \"300031.SZ\", \"con_name\": \"宝通科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881275.TI\", \"con_code\": \"300043.SZ\", \"con_name\": \"星辉娱乐\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881275.TI\", \"con_code\": \"300052.SZ\", \"con_name\": \"中青宝\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881275.TI\", \"con_code\": \"300299.SZ\", \"con_name\": \"富春股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881275.TI\", \"con_code\": \"300315.SZ\", \"con_name\": \"掌趣科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881275.TI\", \"con_code\": \"300418.SZ\", \"con_name\": \"昆仑万维\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881275.TI\", \"con_code\": \"300459.SZ\", \"con_name\": \"汤姆猫\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881275.TI\", \"con_code\": \"300467.SZ\", \"con_name\": \"迅游科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881275.TI\", \"con_code\": \"300494.SZ\", \"con_name\": \"盛天网络\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881275.TI\", \"con_code\": \"300533.SZ\", \"con_name\": \"冰川网络\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881275.TI\", \"con_code\": \"600633.SH\", \"con_name\": \"浙数文化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881275.TI\", \"con_code\": \"600892.SH\", \"con_name\": \"大晟文化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881275.TI\", \"con_code\": \"603258.SH\", \"con_name\": \"电魂网络\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881275.TI\", \"con_code\": \"603444.SH\", \"con_name\": \"吉比特\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "881275.TI",
+      "con_code": "002174.SZ",
+      "con_name": "游族网络",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881275.TI",
+      "con_code": "002425.SZ",
+      "con_name": "凯撒文化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881275.TI",
+      "con_code": "002517.SZ",
+      "con_name": "恺英网络",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881275.TI",
+      "con_code": "002555.SZ",
+      "con_name": "三七互娱",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881275.TI",
+      "con_code": "002558.SZ",
+      "con_name": "巨人网络",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881275.TI",
+      "con_code": "002602.SZ",
+      "con_name": "世纪华通",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881275.TI",
+      "con_code": "002605.SZ",
+      "con_name": "姚记科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881275.TI",
+      "con_code": "002624.SZ",
+      "con_name": "完美世界",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881275.TI",
+      "con_code": "002919.SZ",
+      "con_name": "名臣健康",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881275.TI",
+      "con_code": "300002.SZ",
+      "con_name": "神州泰岳",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881275.TI",
+      "con_code": "300031.SZ",
+      "con_name": "宝通科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881275.TI",
+      "con_code": "300043.SZ",
+      "con_name": "星辉娱乐",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881275.TI",
+      "con_code": "300052.SZ",
+      "con_name": "中青宝",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881275.TI",
+      "con_code": "300299.SZ",
+      "con_name": "富春股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881275.TI",
+      "con_code": "300315.SZ",
+      "con_name": "掌趣科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881275.TI",
+      "con_code": "300418.SZ",
+      "con_name": "昆仑万维",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881275.TI",
+      "con_code": "300459.SZ",
+      "con_name": "汤姆猫",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881275.TI",
+      "con_code": "300467.SZ",
+      "con_name": "迅游科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881275.TI",
+      "con_code": "300494.SZ",
+      "con_name": "盛天网络",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881275.TI",
+      "con_code": "300533.SZ",
+      "con_name": "冰川网络",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881275.TI",
+      "con_code": "600633.SH",
+      "con_name": "浙数文化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881275.TI",
+      "con_code": "600892.SH",
+      "con_name": "大晟文化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881275.TI",
+      "con_code": "603258.SH",
+      "con_name": "电魂网络",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881275.TI",
+      "con_code": "603444.SH",
+      "con_name": "吉比特",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

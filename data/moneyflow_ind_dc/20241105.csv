@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241105,软件开发,6.91,1035.48,60.76028672,4.2,65.41515776,-4.65487104,1,515230,软件ETF
 20241105,半导体,5.11,1354.24,51.96625408,3.6,40.81521408,11.15104,2,512480,半导体ETF
 20241105,证券,4.55,156747.93,25.19222784,2.35,20.75873792,4.43348992,3,512880,证券ETF

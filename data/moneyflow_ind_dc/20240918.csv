@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240918,家电行业,0.29,13855.56,2.24330512,2.14,2.56132304,-0.31801792,4,510150,消费ETF
 20240918,石油行业,-0.76,4168.64,0.5012888,1.64,0.10795376,0.39333504,6,510300,沪深300ETF
 20240918,煤炭行业,1.89,9062.44,0.38753328,0.87,-0.1812488,0.56878208,7,515220,煤炭ETF

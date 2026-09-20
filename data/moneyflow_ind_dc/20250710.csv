@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250710,小金属,2.01,2357.44,22.98958528,6.6,20.61471168,2.3748736,1,512400,有色ETF
 20250710,光伏设备,1.33,1140.49,22.43575552,4.5,21.8799232,0.55583232,2,516290,光伏ETF
 20250710,银行,0.97,4597.09,18.72172288,3.9,23.13123584,-4.40951296,4,512800,银行ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250714,886008.TI,减速器,恒工精密,93.85,2.25,1744.47,115,14.76,144.0,126.0,17.0,562500,机器人ETF
 20250714,886069.TI,人形机器人,恒工精密,93.85,1.7,2004.67,254,14.76,384.0,367.0,16.0,562500,机器人ETF
 20250714,885999.TI,汽车热管理,长盛轴承,75.56,1.5,1736.03,121,11.13,116.0,102.0,13.0,515030,新能源车ETF

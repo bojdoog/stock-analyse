@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250409,半导体,4.38,1304.46,45.69371648,4.29,38.45366016,7.24005632,1,512480,半导体ETF
 20250409,软件开发,5.26,991.95,18.8808064,2.23,9.88311808,8.99768832,2,515230,软件ETF
 20250409,互联网服务,4.03,23076.13,14.8820224,2.04,16.68978944,-1.80776704,3,515230,软件ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250109,汽车零部件,1.2,32049.41,7.67062688,1.9,8.08687008,-0.4162432,2,515030,新能源车ETF
 20250109,小金属,2.02,1800.2,5.84140992,4.12,4.79530032,1.0461096,3,512400,有色ETF
 20250109,航天航空,2.65,40627.35,5.67057712,4.46,3.85065232,1.8199248,4,512660,军工ETF

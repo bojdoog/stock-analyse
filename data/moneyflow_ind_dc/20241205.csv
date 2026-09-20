@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241205,文化传媒,4.23,10339.68,44.48652288,7.97,42.27577344,2.21074944,1,512980,传媒ETF
 20241205,互联网服务,3.26,24468.91,38.06626304,3.73,49.5692288,-11.50296576,2,515230,软件ETF
 20241205,软件开发,2.79,1132.21,25.14193408,2.02,36.01990656,-10.87797248,3,515230,软件ETF

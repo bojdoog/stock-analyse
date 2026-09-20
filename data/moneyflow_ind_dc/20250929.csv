@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250929,证券,4.37,164447.69,81.51795456,8.76,68.10405888,13.41389568,1.0,512880,证券ETF
 20250929,互联网服务,0.99,31415.29,24.41535744,2.8,25.2000256,-0.78466816,2.0,515230,软件ETF
 20250929,汽车零部件,0.92,51935.76,17.34808576,2.04,21.59310592,-4.24502016,4.0,515030,新能源车ETF

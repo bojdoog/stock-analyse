@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241025,885531.TI,光伏概念,同享科技,33.59,3.77,2946.98,551,3.77,885.0,746.0,139.0,516290,光伏ETF
 20241025,884309.TI,锂电池,武汉蓝电,35.49,3.7,1181.41,446,3.7,826.0,716.0,109.0,516160,新能源ETF
 20241025,885921.TI,储能,天宏锂电,14.09,3.04,1661.72,468,3.04,804.0,727.0,76.0,516160,新能源ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250908,酿酒行业,1.19,54216.08,12.16402192,4.87,4.78035728,7.38366464,2.0,512690,白酒ETF
 20250908,汽车零部件,2.2,49978.68,10.26804224,1.22,11.0714112,-0.80336896,4.0,515030,新能源车ETF
 20250908,医疗器械,3.16,1050.46,7.26172336,2.08,2.50930608,4.75241728,6.0,159929,医药ETF

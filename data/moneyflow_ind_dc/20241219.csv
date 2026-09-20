@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241219,通信设备,2.38,13620.15,21.65474048,2.53,37.29828864,-15.64354816,2,515880,通信ETF
 20241219,半导体,1.05,1408.6,16.97746688,1.5,21.16478208,-4.1873152,3,512480,半导体ETF
 20241219,工程建设,0.89,22848.9,3.46191568,2.48,3.9304456,-0.46852992,11,510300,沪深300ETF

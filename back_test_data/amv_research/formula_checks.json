@@ -1,0 +1,6 @@
+{
+  "standalone_matches_research": true,
+  "future_append_does_not_change_past": true,
+  "constant_industry_index_rebasing_invariant": true,
+  "rows": 491
+}

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241010,885914.TI,煤炭概念,云煤能源,3.69,3.02,1744.38,78,3.02,130.0,109.0,21.0,515220,煤炭ETF
 20241010,885936.TI,绿色电力,天亿马,30.55,1.72,849.02,189,1.72,224.0,208.0,16.0,516160,新能源ETF
 20241010,885951.TI,预制菜,神农集团,30.69,1.23,873.59,105,1.23,91.0,79.0,11.0,510150,消费ETF

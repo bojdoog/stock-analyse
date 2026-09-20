@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250707,885494.TI,一带一路,恒鑫生活,67.18,0.88,2052.33,719,20.01,531.0,508.0,22.0,510300,沪深300ETF
 20250707,886004.TI,虚拟电厂,苏文电能,21.59,2.62,1320.69,111,20.01,114.0,96.0,18.0,561380,电网设备ETF
 20250707,885641.TI,风电,南网科技,35.46,1.5,1058.47,360,14.72,326.0,311.0,15.0,516160,新能源ETF

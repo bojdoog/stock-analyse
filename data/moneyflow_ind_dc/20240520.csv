@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240520,电力行业,2.16,16038.83,9.28505248,3.89,5.78111392,3.50393856,1,561380,电网设备ETF
 20240520,有色金属,4.11,15154.55,8.53783296,2.42,5.38941696,3.148416,2,512400,有色ETF
 20240520,贵金属,7.09,1214.45,6.26003856,3.77,4.87534704,1.38469152,3,512400,有色ETF

@@ -16,13 +16,18 @@ import sys
 import time
 from pathlib import Path
 
+try:
+    from .storage_sqlite import save_dataframe, refresh_index, list_files, initialize, read_frame, has_file
+except ImportError:
+    from storage_sqlite import save_dataframe, refresh_index, list_files, initialize, read_frame, has_file
+
 import pandas as pd
 import tushare as ts
 
 # ---------- 配置 ----------
 TOKEN = "eb0e5fcfd014dfb595b4ca773f42d29570a3fb06edcca84fe19830db"
 START_DEFAULT = "20130104"
-DATA_DIR = Path(__file__).resolve().parent.parent / "public" / "data" / "stock"
+DATA_DIR = Path(__file__).resolve().parents[2] / "data" / "stock"
 
 
 def to_ts_code(code: str) -> str:
@@ -74,7 +79,7 @@ def main():
     # 保存
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     out_path = DATA_DIR / f"{code}.csv"
-    df.to_csv(out_path, index=False)
+    save_dataframe(df, out_path, category='stock')
     print(f"  完成！共 {len(df)} 条记录")
     print(f"  日期范围: {df['date'].iloc[0].date()} ~ {df['date'].iloc[-1].date()}")
     print(f"  保存到: {out_path.resolve()}")

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240226,半导体,1.79,989.28,1.99666032,0.47,1.12744816,0.86921216,4,512480,半导体ETF
 20240226,汽车整车,2.35,1205.32,1.96539408,0.83,-2.20108784,4.16648192,6,515030,新能源车ETF
 20240226,汽车零部件,2.08,27017.61,1.87219536,0.56,2.06782288,-0.19562752,7,515030,新能源车ETF

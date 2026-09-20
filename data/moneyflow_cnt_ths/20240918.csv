@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20240918,885914.TI,煤炭概念,杭州热电,19.94,0.92,1423.22,78,0.92,2600000000.0,2100000000.0,500000000.0,515220,煤炭ETF
 20240918,885999.TI,汽车热管理,海立股份,5.93,-0.32,958.64,104,-0.32,2400000000.0,2100000000.0,200000000.0,515030,新能源车ETF
 20240918,885930.TI,工业母机,蓝英装备,16.02,-0.31,794.1,96,-0.31,2800000000.0,2700000000.0,100000000.0,159638,高端装备ETF

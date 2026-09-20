@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250522,航天航空,-0.52,45090.6,2.05275712,1.04,2.44399424,-0.39123712,4,512660,军工ETF
 20250522,游戏,0.03,1197.3,1.15996656,1.11,-0.2714864,1.43145296,7,159869,游戏ETF
 20250522,装修装饰,-0.97,557.69,-0.60042668,-1.78,-0.21529308,-0.3851336,15,510300,沪深300ETF

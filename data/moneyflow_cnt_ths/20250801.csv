@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250801,885947.TI,DRG/DIP,塞力医疗,31.88,1.87,1135.22,23,6.2,39.0,33.0,6.0,159929,医药ETF
 20250801,886004.TI,虚拟电厂,精艺股份,10.46,0.72,1339.69,113,5.76,95.0,90.0,4.0,561380,电网设备ETF
 20250801,885530.TI,黄金概念,ST盛屯,7.91,0.58,2663.84,72,5.05,64.0,62.0,2.0,512400,有色ETF

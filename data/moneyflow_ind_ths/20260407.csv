@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260407,881121.TI,半导体,盛科通信,12457.0,1.32,173,10.31,191.7,476.0,435.0,40.0,512480,半导体ETF
 20260407,881170.TI,小金属,中稀有色,8749.58,2.49,29,10.01,86.96,124.0,100.0,23.0,512400,有色ETF
 20260407,881108.TI,化学原料,江天化学,3567.63,5.39,59,19.99,30.49,74.0,53.0,21.0,510300,沪深300ETF

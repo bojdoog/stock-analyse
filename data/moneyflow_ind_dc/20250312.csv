@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250312,通信设备,1.49,14548.78,26.91956992,4.13,22.53298944,4.38658048,1,515880,通信ETF
 20250312,电网设备,2.16,27524.95,20.68822576,5.17,22.0213304,-1.33310464,2,561380,电网设备ETF
 20250312,证券,0.71,141830.75,15.39468544,4.92,11.3062528,4.08843264,3,512880,证券ETF

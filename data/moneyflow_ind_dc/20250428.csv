@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250428,风电设备,-1.22,1050.96,0.85990672,1.33,1.22042896,-0.36052224,4,516160,新能源ETF
 20250428,水泥建材,-0.81,23566.3,0.81261801,2.89,0.97726985,-0.16465184,5,510300,沪深300ETF
 20250428,石油行业,-0.87,5183.84,0.7670352,1.68,0.92589264,-0.15885744,6,510300,沪深300ETF

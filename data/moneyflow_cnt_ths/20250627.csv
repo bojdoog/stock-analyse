@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250627,885556.TI,5G,太龙股份,17.03,1.22,4330.3,419,20.01,794.0,715.0,78.0,515880,通信ETF
 20250627,885530.TI,黄金概念,金一文化,3.37,1.71,2563.12,72,10.13,133.0,103.0,29.0,512400,有色ETF
 20250627,886044.TI,液冷服务器,欧陆通,124.04,0.69,1301.05,88,5.85,170.0,154.0,16.0,515230,软件ETF

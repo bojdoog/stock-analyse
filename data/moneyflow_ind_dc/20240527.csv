@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240527,半导体,2.86,940.31,9.09909824,2.32,3.1670304,5.93206784,1,512480,半导体ETF
 20240527,银行,1.18,3346.89,8.34706528,4.19,7.514328,0.83273728,2,512800,银行ETF
 20240527,有色金属,1.24,14451.24,3.91854928,2.31,2.80185776,1.11669152,4,512400,有色ETF

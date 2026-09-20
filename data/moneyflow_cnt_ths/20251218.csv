@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251218,885574.TI,卫星导航,星辰科技,26.48,1.44,4476.15,240,30.0,661.0,619.0,41.0,515880,通信ETF
 20251218,885743.TI,军民融合,星辰科技,26.48,1.14,1634.26,240,30.0,533.0,502.0,30.0,512660,军工ETF
 20251218,886078.TI,商业航天,星辰科技,26.48,1.33,2069.03,361,30.0,973.0,943.0,29.0,159206,卫星ETF

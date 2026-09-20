@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20240924,886021.TI,国企改革,海新能科,2.5,3.5,931.62,2786,3.5,121500000000.0,94900000000.0,26600000000.0,510300,沪深300ETF
 20240924,885431.TI,新能源汽车,德方纳米,27.66,3.15,2199.84,804,3.15,57500000000.0,45700000000.0,11800000000.0,515030,新能源车ETF
 20240924,885806.TI,华为概念,银之杰,15.82,2.97,1713.34,897,2.97,77200000000.0,67800000000.0,9400000000.0,515230,软件ETF

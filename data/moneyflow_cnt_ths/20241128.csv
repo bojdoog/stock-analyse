@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241128,885462.TI,乳业,一鸣食品,13.45,2.12,1866.94,33,2.12,23.0,19.0,3.0,510150,消费ETF
 20241128,885780.TI,啤酒概念,皇氏集团,4.31,1.46,1448.95,18,1.46,11.0,9.0,1.0,512690,白酒ETF
 20241128,885878.TI,HJT电池,泉为科技,16.83,0.63,2370.79,56,0.63,57.0,57.0,0.0,516290,光伏ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250218,电池,1.25,958.22,10.97007024,2.58,7.32602544,3.6440448,1,516160,新能源ETF
 20250218,银行,1.12,3781.06,5.5778304,1.79,14.0307968,-8.4529664,2,512800,银行ETF
 20250218,水泥建材,-0.79,23156.28,1.33677696,3.56,2.03929216,-0.7025152,3,510300,沪深300ETF

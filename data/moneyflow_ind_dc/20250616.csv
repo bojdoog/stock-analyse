@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250616,互联网服务,2.7,27057.1,22.03788544,3.86,25.4583936,-3.42050816,1,515230,软件ETF
 20250616,文化传媒,2.1,10311.99,20.35962496,6.06,22.74728576,-2.3876608,2,512980,传媒ETF
 20250616,软件开发,2.93,1122.44,18.80726272,2.64,16.52366848,2.28359424,3,515230,软件ETF

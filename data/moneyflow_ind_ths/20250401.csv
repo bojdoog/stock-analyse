@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250401,881140.TI,化学制药,欧康医药,5334.77,4.61,159,29.96,24.38,183.0,138.0,44.0,159929,医药ETF
 20250401,881145.TI,电力,立新能源,1553.63,2.8,101,10.05,7.99,108.0,77.0,31.0,561380,电网设备ETF
 20250401,881144.TI,医疗器械,热景生物,10216.9,3.26,130,16.21,111.0,67.0,48.0,18.0,159929,医药ETF

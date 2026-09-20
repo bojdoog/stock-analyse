@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250527,881155.TI,银行,杭州银行,1291.49,0.89,84,2.82,16.02,91.0,68.0,23.0,512800,银行ETF
 20250527,881140.TI,化学制药,常山药业,5629.79,1.7,158,14.86,31.7,113.0,103.0,9.0,159929,医药ETF
 20250527,881142.TI,生物制品,三生国健,5641.65,1.75,54,15.31,58.9,28.0,23.0,5.0,510660,创新药ETF

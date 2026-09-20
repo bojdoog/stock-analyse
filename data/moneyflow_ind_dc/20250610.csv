@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250610,电力行业,0.55,16631.6,8.29308912,3.24,9.50247664,-1.20938752,2,561380,电网设备ETF
 20250610,银行,0.56,4215.42,6.0715776,1.84,8.85291264,-2.78133504,3,512800,银行ETF
 20250610,医药商业,0.46,1074.65,0.69605264,1.14,2.43833648,-1.74228384,5,159929,医药ETF

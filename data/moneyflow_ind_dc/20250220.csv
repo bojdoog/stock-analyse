@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250220,医疗服务,3.94,1107.27,13.8719432,4.43,13.3170632,0.55488,2,510660,创新药ETF
 20250220,商业百货,1.89,16743.97,5.82810432,3.08,7.11935296,-1.29124864,4,510150,消费ETF
 20250220,航天航空,1.98,43364.29,4.82938976,3.5,3.09897536,1.7304144,5,512660,军工ETF

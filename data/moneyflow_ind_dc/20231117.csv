@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231117,汽车零部件,2.09,32668.21,12.82949008,2.77,10.00180112,2.82768896,1,515030,新能源车ETF
 20231117,通信设备,1.13,12006.41,2.61531136,0.68,4.61560576,-2.0002944,3,515880,通信ETF
 20231117,贵金属,1.92,918.09,2.08056096,5.3,1.64085552,0.43970544,7,512400,有色ETF

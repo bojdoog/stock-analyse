@@ -1,0 +1,210 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "881273.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:45:19.773356+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"881273.TI\", \"con_code\": \"000568.SZ\", \"con_name\": \"泸州老窖\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881273.TI\", \"con_code\": \"000596.SZ\", \"con_name\": \"古井贡酒\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881273.TI\", \"con_code\": \"000799.SZ\", \"con_name\": \"酒鬼酒\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881273.TI\", \"con_code\": \"000858.SZ\", \"con_name\": \"五粮液\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881273.TI\", \"con_code\": \"000860.SZ\", \"con_name\": \"顺鑫农业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881273.TI\", \"con_code\": \"000995.SZ\", \"con_name\": \"皇台酒业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881273.TI\", \"con_code\": \"002304.SZ\", \"con_name\": \"洋河股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881273.TI\", \"con_code\": \"002646.SZ\", \"con_name\": \"天佑德酒\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881273.TI\", \"con_code\": \"600197.SH\", \"con_name\": \"伊力特\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881273.TI\", \"con_code\": \"600199.SH\", \"con_name\": \"金种子酒\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881273.TI\", \"con_code\": \"600519.SH\", \"con_name\": \"贵州茅台\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881273.TI\", \"con_code\": \"600559.SH\", \"con_name\": \"老白干酒\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881273.TI\", \"con_code\": \"600696.SH\", \"con_name\": \"退市岩石\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881273.TI\", \"con_code\": \"600702.SH\", \"con_name\": \"舍得酒业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881273.TI\", \"con_code\": \"600779.SH\", \"con_name\": \"水井坊\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881273.TI\", \"con_code\": \"600809.SH\", \"con_name\": \"山西汾酒\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881273.TI\", \"con_code\": \"603198.SH\", \"con_name\": \"迎驾贡酒\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881273.TI\", \"con_code\": \"603369.SH\", \"con_name\": \"今世缘\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881273.TI\", \"con_code\": \"603589.SH\", \"con_name\": \"口子窖\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881273.TI\", \"con_code\": \"603919.SH\", \"con_name\": \"金徽酒\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "881273.TI",
+      "con_code": "000568.SZ",
+      "con_name": "泸州老窖",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881273.TI",
+      "con_code": "000596.SZ",
+      "con_name": "古井贡酒",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881273.TI",
+      "con_code": "000799.SZ",
+      "con_name": "酒鬼酒",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881273.TI",
+      "con_code": "000858.SZ",
+      "con_name": "五粮液",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881273.TI",
+      "con_code": "000860.SZ",
+      "con_name": "顺鑫农业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881273.TI",
+      "con_code": "000995.SZ",
+      "con_name": "皇台酒业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881273.TI",
+      "con_code": "002304.SZ",
+      "con_name": "洋河股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881273.TI",
+      "con_code": "002646.SZ",
+      "con_name": "天佑德酒",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881273.TI",
+      "con_code": "600197.SH",
+      "con_name": "伊力特",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881273.TI",
+      "con_code": "600199.SH",
+      "con_name": "金种子酒",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881273.TI",
+      "con_code": "600519.SH",
+      "con_name": "贵州茅台",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881273.TI",
+      "con_code": "600559.SH",
+      "con_name": "老白干酒",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881273.TI",
+      "con_code": "600696.SH",
+      "con_name": "退市岩石",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881273.TI",
+      "con_code": "600702.SH",
+      "con_name": "舍得酒业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881273.TI",
+      "con_code": "600779.SH",
+      "con_name": "水井坊",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881273.TI",
+      "con_code": "600809.SH",
+      "con_name": "山西汾酒",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881273.TI",
+      "con_code": "603198.SH",
+      "con_name": "迎驾贡酒",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881273.TI",
+      "con_code": "603369.SH",
+      "con_name": "今世缘",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881273.TI",
+      "con_code": "603589.SH",
+      "con_name": "口子窖",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881273.TI",
+      "con_code": "603919.SH",
+      "con_name": "金徽酒",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

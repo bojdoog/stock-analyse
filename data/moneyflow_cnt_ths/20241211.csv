@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241211,886021.TI,国企改革,富士达,31.77,1.69,1286.22,2802,1.69,1722.0,1640.0,81.0,510300,沪深300ETF
 20241211,885709.TI,虚拟现实,天键股份,43.54,2.31,840.21,270,2.31,751.0,707.0,44.0,159869,游戏ETF
 20241211,885564.TI,无人机,申昊科技,29.34,1.31,2341.42,291,1.31,472.0,445.0,27.0,512660,军工ETF

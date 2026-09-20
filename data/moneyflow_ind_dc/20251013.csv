@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251013,小金属,5.9,3309.97,19.36444416,2.3,25.72636928,-6.36192512,1.0,512400,有色ETF
 20251013,银行,0.86,4027.35,11.62566912,2.62,12.9134592,-1.28779008,,512800,银行ETF
 20251013,银行,0.86,4027.35,11.62566912,2.62,12.9134592,-1.28779008,3.0,512800,银行ETF

@@ -1,0 +1,318 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "881149.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:45:04.005618+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"881149.TI\", \"con_code\": \"000429.SZ\", \"con_name\": \"粤高速A\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"000548.SZ\", \"con_name\": \"湖南投资\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"000557.SZ\", \"con_name\": \"西部创业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"000755.SZ\", \"con_name\": \"山西高速\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"000828.SZ\", \"con_name\": \"东莞控股\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"000886.SZ\", \"con_name\": \"海南高速\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"000900.SZ\", \"con_name\": \"现代投资\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"001213.SZ\", \"con_name\": \"中铁特货\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"001965.SZ\", \"con_name\": \"招商公路\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"002357.SZ\", \"con_name\": \"富临运业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"600012.SH\", \"con_name\": \"皖通高速\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"600020.SH\", \"con_name\": \"中原高速\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"600033.SH\", \"con_name\": \"福建高速\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"600035.SH\", \"con_name\": \"楚天高速\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"600106.SH\", \"con_name\": \"重庆路桥\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"600125.SH\", \"con_name\": \"铁龙物流\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"600269.SH\", \"con_name\": \"赣粤高速\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"600350.SH\", \"con_name\": \"山东高速\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"600368.SH\", \"con_name\": \"五洲交通\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"600377.SH\", \"con_name\": \"宁沪高速\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"600548.SH\", \"con_name\": \"深高速\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"600561.SH\", \"con_name\": \"江西长运\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"600611.SH\", \"con_name\": \"大众交通\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"600650.SH\", \"con_name\": \"锦江在线\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"600834.SH\", \"con_name\": \"申通地铁\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"601006.SH\", \"con_name\": \"大秦铁路\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"601107.SH\", \"con_name\": \"四川成渝\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"601188.SH\", \"con_name\": \"龙江交通\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"601333.SH\", \"con_name\": \"广深铁路\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"601518.SH\", \"con_name\": \"吉林高速\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"601816.SH\", \"con_name\": \"京沪高铁\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881149.TI\", \"con_code\": \"603069.SH\", \"con_name\": \"海汽集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "881149.TI",
+      "con_code": "000429.SZ",
+      "con_name": "粤高速A",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "000548.SZ",
+      "con_name": "湖南投资",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "000557.SZ",
+      "con_name": "西部创业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "000755.SZ",
+      "con_name": "山西高速",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "000828.SZ",
+      "con_name": "东莞控股",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "000886.SZ",
+      "con_name": "海南高速",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "000900.SZ",
+      "con_name": "现代投资",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "001213.SZ",
+      "con_name": "中铁特货",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "001965.SZ",
+      "con_name": "招商公路",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "002357.SZ",
+      "con_name": "富临运业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "600012.SH",
+      "con_name": "皖通高速",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "600020.SH",
+      "con_name": "中原高速",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "600033.SH",
+      "con_name": "福建高速",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "600035.SH",
+      "con_name": "楚天高速",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "600106.SH",
+      "con_name": "重庆路桥",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "600125.SH",
+      "con_name": "铁龙物流",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "600269.SH",
+      "con_name": "赣粤高速",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "600350.SH",
+      "con_name": "山东高速",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "600368.SH",
+      "con_name": "五洲交通",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "600377.SH",
+      "con_name": "宁沪高速",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "600548.SH",
+      "con_name": "深高速",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "600561.SH",
+      "con_name": "江西长运",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "600611.SH",
+      "con_name": "大众交通",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "600650.SH",
+      "con_name": "锦江在线",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "600834.SH",
+      "con_name": "申通地铁",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "601006.SH",
+      "con_name": "大秦铁路",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "601107.SH",
+      "con_name": "四川成渝",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "601188.SH",
+      "con_name": "龙江交通",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "601333.SH",
+      "con_name": "广深铁路",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "601518.SH",
+      "con_name": "吉林高速",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "601816.SH",
+      "con_name": "京沪高铁",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881149.TI",
+      "con_code": "603069.SH",
+      "con_name": "海汽集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

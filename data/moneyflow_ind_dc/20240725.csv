@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240725,光伏设备,3.34,898.96,11.9101624,5.47,5.94532144,5.96484096,1,516290,光伏ETF
 20240725,汽车整车,2.09,1309.92,6.22265072,3.25,6.5582232,-0.33557248,2,515030,新能源车ETF
 20240725,证券,1.69,105435.77,4.13294448,3.29,4.34884352,-0.21589904,3,512880,证券ETF

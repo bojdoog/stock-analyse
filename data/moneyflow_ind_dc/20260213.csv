@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260213,半导体,0.12,2330.53,16.51760896,1.03,13.35017984,3.16742912,3.0,512480,半导体ETF
 20260213,船舶制造,3.66,1478.84,7.97783712,4.14,8.46413472,-0.4862976,3.0,512660,军工ETF
 20260213,航天航空,2.21,68990.82,5.49709056,1.34,5.04254976,0.4545408,6.0,512660,军工ETF

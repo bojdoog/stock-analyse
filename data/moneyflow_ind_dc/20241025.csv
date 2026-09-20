@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241025,光伏设备,9.01,1259.72,93.47129856,12.44,85.95709696,7.5142016,1,516290,光伏ETF
 20241025,电池,6.33,917.99,24.99796992,4.33,20.53910272,4.4588672,2,516160,新能源ETF
 20241025,文化传媒,3.35,9122.35,15.55082624,4.01,14.71084416,0.83998208,3,512980,传媒ETF

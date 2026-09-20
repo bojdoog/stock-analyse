@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250623,885806.TI,华为概念,优博讯,21.14,1.96,2682.27,980,19.98,1009.0,873.0,136.0,515230,软件ETF
 20250623,885728.TI,人工智能,万里马,7.02,2.03,1143.69,851,20.0,795.0,700.0,94.0,159381,创业板人工智能ETF
 20250623,886021.TI,国企改革,海新能科,3.71,1.4,1242.05,2850,20.07,999.0,908.0,91.0,510300,沪深300ETF

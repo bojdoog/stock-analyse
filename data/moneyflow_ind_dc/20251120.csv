@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251120,银行,1.15,4290.05,21.6066048,5.08,20.80014848,0.80645632,,512800,银行ETF
 20251120,银行,1.15,4290.05,21.6066048,5.08,20.80014848,0.80645632,1.0,512800,银行ETF
 20251120,燃气,-0.43,1911.73,4.59726048,5.52,6.21308096,-1.61582048,2.0,561380,电网设备ETF

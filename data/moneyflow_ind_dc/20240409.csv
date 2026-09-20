@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240409,电池,6.73,905.19,14.97440416,4.58,12.72223136,2.2521728,1,516160,新能源ETF
 20240409,小金属,3.59,1660.93,6.6504888,2.97,3.63784752,3.01264128,3,512400,有色ETF
 20240409,能源金属,3.13,467.6,4.31906,3.62,3.41437344,0.90468656,4,512400,有色ETF

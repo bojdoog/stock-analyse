@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231214,贵金属,1.16,895.25,3.58926976,9.14,2.27929776,1.309972,2,512400,有色ETF
 20231214,煤炭行业,1.56,10929.35,3.5633976,5.11,2.79987584,0.76352176,3,515220,煤炭ETF
 20231214,公用事业,2.36,7724.09,1.42449096,4.73,1.88746696,-0.462976,4,561380,电网设备ETF

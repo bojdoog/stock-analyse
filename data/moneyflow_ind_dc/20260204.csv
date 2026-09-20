@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260204,光伏设备,5.18,1700.84,76.41401088,6.12,62.015872,14.39813888,1.0,516290,光伏ETF
 20260204,煤炭行业,7.66,13145.67,28.35244208,10.3,26.84980144,1.50264064,2.0,515220,煤炭ETF
 20260204,酿酒行业,0.84,49360.44,24.01957632,6.12,19.4194304,4.60014592,3.0,512690,白酒ETF

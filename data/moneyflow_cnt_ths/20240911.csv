@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20240911,885921.TI,储能,金冠股份,4.62,0.32,1257.06,456,0.32,22700000000.0,18500000000.0,4100000000.0,516160,新能源ETF
 20240911,886032.TI,固态电池,联创股份,5.4,1.73,596.31,148,1.73,13700000000.0,10500000000.0,3200000000.0,516160,新能源ETF
 20240911,885928.TI,钠离子电池,联创股份,5.4,1.71,639.75,88,1.71,8500000000.0,6200000000.0,2200000000.0,516160,新能源ETF

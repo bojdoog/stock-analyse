@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250515,小金属,0.15,2099.1,9.25052944,3.69,7.02409744,2.226432,1,512400,有色ETF
 20250515,食品饮料,1.68,28228.48,8.18484912,3.67,4.05036464,4.13448448,2,510150,消费ETF
 20250515,化学制药,1.03,29577.54,7.98276176,3.04,4.57416016,3.4086016,3,159929,医药ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250811,酿酒行业,1.2,51351.54,22.05572752,10.65,12.577348,9.47837952,2,512690,白酒ETF
 20250811,互联网服务,1.68,30413.15,18.0014208,2.34,24.77635328,-6.77493248,3,515230,软件ETF
 20250811,电池,3.43,1176.89,14.61009408,3.31,11.65279744,2.95729664,5,516160,新能源ETF

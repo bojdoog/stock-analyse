@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250812,886044.TI,液冷服务器,申菱环境,56.02,1.46,1589.31,107,13.13,427.0,375.0,51.0,515230,软件ETF
 20250812,886050.TI,算力租赁,协创数据,85.66,0.76,1379.02,146,11.29,352.0,307.0,44.0,515230,软件ETF
 20250812,885362.TI,云计算,协创数据,85.66,0.45,4143.5,209,11.29,466.0,430.0,36.0,515230,软件ETF

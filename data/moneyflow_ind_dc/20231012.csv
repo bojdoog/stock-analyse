@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231012,汽车整车,3.4,1314.22,17.45999152,7.17,15.459884,2.00010752,1,515030,新能源车ETF
 20231012,能源金属,5.09,504.8,12.82081616,9.11,4.19747536,8.6233408,2,512400,有色ETF
 20231012,银行,1.38,2959.28,9.85282816,4.11,16.4216192,-6.56879104,3,512800,银行ETF

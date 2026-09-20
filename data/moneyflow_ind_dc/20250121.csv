@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250121,通信设备,0.87,12797.39,14.46493952,2.09,24.0925312,-9.62759168,3,515880,通信ETF
 20250121,汽车零部件,1.05,34210.04,10.98318848,2.28,10.67894016,0.30424832,4,515030,新能源车ETF
 20250121,半导体,2.16,1383.95,4.78053888,0.46,0.57488384,4.20565504,7,512480,半导体ETF

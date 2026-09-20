@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251113,886032.TI,固态电池,康鹏科技,11.45,3.86,1419.84,269,20.02,1181.0,911.0,270.0,516160,新能源ETF
 20251113,885431.TI,新能源汽车,海科新源,69.22,1.27,4586.8,979,20.01,2026.0,1781.0,245.0,515030,新能源车ETF
 20251113,885921.TI,储能,天宏锂电,38.34,1.78,2494.14,736,29.97,1704.0,1472.0,232.0,516160,新能源ETF

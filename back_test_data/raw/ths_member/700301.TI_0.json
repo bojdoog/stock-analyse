@@ -1,0 +1,1101 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "700301.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:42:58.755049+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"700301.TI\", \"con_code\": \"000059.SZ\", \"con_name\": \"华锦股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"000096.SZ\", \"con_name\": \"广聚能源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"000099.SZ\", \"con_name\": \"中信海直\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"000159.SZ\", \"con_name\": \"国际实业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"000301.SZ\", \"con_name\": \"东方盛虹\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"000552.SZ\", \"con_name\": \"甘肃能化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"000554.SZ\", \"con_name\": \"泰山石油\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"000571.SZ\", \"con_name\": \"新大洲A\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"000593.SZ\", \"con_name\": \"德龙汇能\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"000637.SZ\", \"con_name\": \"茂化实华\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"000669.SZ\", \"con_name\": \"ST金鸿\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"000698.SZ\", \"con_name\": \"ST沈化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"000723.SZ\", \"con_name\": \"美锦能源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"000819.SZ\", \"con_name\": \"岳阳兴长\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"000852.SZ\", \"con_name\": \"石化机械\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"000937.SZ\", \"con_name\": \"冀中能源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"000968.SZ\", \"con_name\": \"蓝焰控股\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"000983.SZ\", \"con_name\": \"山西焦煤\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"000985.SZ\", \"con_name\": \"大庆华科\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"001280.SZ\", \"con_name\": \"中国铀业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"001299.SZ\", \"con_name\": \"美能能源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"001316.SZ\", \"con_name\": \"润贝航科\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"001331.SZ\", \"con_name\": \"胜通能源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"001332.SZ\", \"con_name\": \"锡装股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"002207.SZ\", \"con_name\": \"*ST准油\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"002221.SZ\", \"con_name\": \"东华能源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"002267.SZ\", \"con_name\": \"陕天然气\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"002278.SZ\", \"con_name\": \"神开股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"002353.SZ\", \"con_name\": \"杰瑞股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"002377.SZ\", \"con_name\": \"国创高新\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"002408.SZ\", \"con_name\": \"齐翔腾达\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"002490.SZ\", \"con_name\": \"山东墨龙\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"002493.SZ\", \"con_name\": \"荣盛石化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"002554.SZ\", \"con_name\": \"惠博普\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"002629.SZ\", \"con_name\": \"仁智股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"002778.SZ\", \"con_name\": \"中晟高科\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"002828.SZ\", \"con_name\": \"贝肯能源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"002911.SZ\", \"con_name\": \"佛燃能源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"002986.SZ\", \"con_name\": \"宇新股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"300055.SZ\", \"con_name\": \"万邦达\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"300084.SZ\", \"con_name\": \"海默科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"300092.SZ\", \"con_name\": \"科新机电\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"300135.SZ\", \"con_name\": \"宝利国际\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"300157.SZ\", \"con_name\": \"新锦动力\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"300164.SZ\", \"con_name\": \"通源石油\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"300191.SZ\", \"con_name\": \"潜能恒信\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"300483.SZ\", \"con_name\": \"首华燃气\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"300540.SZ\", \"con_name\": \"蜀道装备\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"300839.SZ\", \"con_name\": \"博汇股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"301158.SZ\", \"con_name\": \"德石股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600028.SH\", \"con_name\": \"中国石化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600121.SH\", \"con_name\": \"郑州煤电\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600123.SH\", \"con_name\": \"兰花科创\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600180.SH\", \"con_name\": \"*ST瑞茂\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600188.SH\", \"con_name\": \"兖矿能源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600256.SH\", \"con_name\": \"广汇能源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600339.SH\", \"con_name\": \"中油工程\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600346.SH\", \"con_name\": \"恒力石化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600348.SH\", \"con_name\": \"华阳股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600395.SH\", \"con_name\": \"盘江股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600397.SH\", \"con_name\": \"江钨装备\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600403.SH\", \"con_name\": \"大有能源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600506.SH\", \"con_name\": \"统一股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600508.SH\", \"con_name\": \"上海能源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600546.SH\", \"con_name\": \"山煤国际\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600583.SH\", \"con_name\": \"海油工程\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600688.SH\", \"con_name\": \"上海石化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600714.SH\", \"con_name\": \"金瑞矿业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600740.SH\", \"con_name\": \"山西焦化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600753.SH\", \"con_name\": \"ST海钦\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600758.SH\", \"con_name\": \"辽宁能源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600759.SH\", \"con_name\": \"ST洲际\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600777.SH\", \"con_name\": \"新潮能源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600792.SH\", \"con_name\": \"云煤能源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600800.SH\", \"con_name\": \"渤海化学\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600871.SH\", \"con_name\": \"石化油服\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600925.SH\", \"con_name\": \"苏能股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600938.SH\", \"con_name\": \"中国海油\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600968.SH\", \"con_name\": \"海油发展\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600971.SH\", \"con_name\": \"恒源煤电\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600985.SH\", \"con_name\": \"淮北矿业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"600997.SH\", \"con_name\": \"开滦股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"601001.SH\", \"con_name\": \"晋控煤业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"601011.SH\", \"con_name\": \"宝泰隆\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"601015.SH\", \"con_name\": \"陕西黑猫\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"601088.SH\", \"con_name\": \"中国神华\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"601101.SH\", \"con_name\": \"昊华能源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"601225.SH\", \"con_name\": \"陕西煤业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"601666.SH\", \"con_name\": \"平煤股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"601699.SH\", \"con_name\": \"潞安环能\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"601798.SH\", \"con_name\": \"蓝科高新\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"601808.SH\", \"con_name\": \"中海油服\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"601857.SH\", \"con_name\": \"中国石油\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"601898.SH\", \"con_name\": \"中煤能源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"601918.SH\", \"con_name\": \"新集能源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"603036.SH\", \"con_name\": \"如通股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"603071.SH\", \"con_name\": \"物产环能\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"603113.SH\", \"con_name\": \"金能科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"603169.SH\", \"con_name\": \"兰石重装\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"603223.SH\", \"con_name\": \"恒通股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"603308.SH\", \"con_name\": \"应流股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"603318.SH\", \"con_name\": \"水发燃气\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"603351.SH\", \"con_name\": \"威尔药业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"603353.SH\", \"con_name\": \"和顺石油\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"603393.SH\", \"con_name\": \"新天然气\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"603619.SH\", \"con_name\": \"中曼石油\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"603689.SH\", \"con_name\": \"皖天然气\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"603698.SH\", \"con_name\": \"航天工程\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"603727.SH\", \"con_name\": \"博迈科\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"603798.SH\", \"con_name\": \"康普顿\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"605090.SH\", \"con_name\": \"九丰能源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"688121.SH\", \"con_name\": \"*ST卓然\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"688377.SH\", \"con_name\": \"迪威尔\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"920010.BJ\", \"con_name\": \"凯添燃气\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"920014.BJ\", \"con_name\": \"特瑞斯\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"920088.BJ\", \"con_name\": \"科力股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"920099.BJ\", \"con_name\": \"瑞华技术\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"920158.BJ\", \"con_name\": \"长江能科\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700301.TI\", \"con_code\": \"920675.BJ\", \"con_name\": \"秉扬科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "700301.TI",
+      "con_code": "000059.SZ",
+      "con_name": "华锦股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "000096.SZ",
+      "con_name": "广聚能源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "000099.SZ",
+      "con_name": "中信海直",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "000159.SZ",
+      "con_name": "国际实业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "000301.SZ",
+      "con_name": "东方盛虹",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "000552.SZ",
+      "con_name": "甘肃能化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "000554.SZ",
+      "con_name": "泰山石油",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "000571.SZ",
+      "con_name": "新大洲A",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "000593.SZ",
+      "con_name": "德龙汇能",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "000637.SZ",
+      "con_name": "茂化实华",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "000669.SZ",
+      "con_name": "ST金鸿",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "000698.SZ",
+      "con_name": "ST沈化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "000723.SZ",
+      "con_name": "美锦能源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "000819.SZ",
+      "con_name": "岳阳兴长",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "000852.SZ",
+      "con_name": "石化机械",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "000937.SZ",
+      "con_name": "冀中能源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "000968.SZ",
+      "con_name": "蓝焰控股",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "000983.SZ",
+      "con_name": "山西焦煤",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "000985.SZ",
+      "con_name": "大庆华科",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "001280.SZ",
+      "con_name": "中国铀业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "001299.SZ",
+      "con_name": "美能能源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "001316.SZ",
+      "con_name": "润贝航科",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "001331.SZ",
+      "con_name": "胜通能源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "001332.SZ",
+      "con_name": "锡装股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "002207.SZ",
+      "con_name": "*ST准油",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "002221.SZ",
+      "con_name": "东华能源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "002267.SZ",
+      "con_name": "陕天然气",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "002278.SZ",
+      "con_name": "神开股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "002353.SZ",
+      "con_name": "杰瑞股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "002377.SZ",
+      "con_name": "国创高新",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "002408.SZ",
+      "con_name": "齐翔腾达",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "002490.SZ",
+      "con_name": "山东墨龙",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "002493.SZ",
+      "con_name": "荣盛石化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "002554.SZ",
+      "con_name": "惠博普",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "002629.SZ",
+      "con_name": "仁智股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "002778.SZ",
+      "con_name": "中晟高科",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "002828.SZ",
+      "con_name": "贝肯能源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "002911.SZ",
+      "con_name": "佛燃能源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "002986.SZ",
+      "con_name": "宇新股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "300055.SZ",
+      "con_name": "万邦达",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "300084.SZ",
+      "con_name": "海默科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "300092.SZ",
+      "con_name": "科新机电",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "300135.SZ",
+      "con_name": "宝利国际",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "300157.SZ",
+      "con_name": "新锦动力",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "300164.SZ",
+      "con_name": "通源石油",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "300191.SZ",
+      "con_name": "潜能恒信",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "300483.SZ",
+      "con_name": "首华燃气",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "300540.SZ",
+      "con_name": "蜀道装备",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "300839.SZ",
+      "con_name": "博汇股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "301158.SZ",
+      "con_name": "德石股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600028.SH",
+      "con_name": "中国石化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600121.SH",
+      "con_name": "郑州煤电",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600123.SH",
+      "con_name": "兰花科创",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600180.SH",
+      "con_name": "*ST瑞茂",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600188.SH",
+      "con_name": "兖矿能源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600256.SH",
+      "con_name": "广汇能源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600339.SH",
+      "con_name": "中油工程",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600346.SH",
+      "con_name": "恒力石化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600348.SH",
+      "con_name": "华阳股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600395.SH",
+      "con_name": "盘江股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600397.SH",
+      "con_name": "江钨装备",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600403.SH",
+      "con_name": "大有能源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600506.SH",
+      "con_name": "统一股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600508.SH",
+      "con_name": "上海能源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600546.SH",
+      "con_name": "山煤国际",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600583.SH",
+      "con_name": "海油工程",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600688.SH",
+      "con_name": "上海石化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600714.SH",
+      "con_name": "金瑞矿业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600740.SH",
+      "con_name": "山西焦化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600753.SH",
+      "con_name": "ST海钦",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600758.SH",
+      "con_name": "辽宁能源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600759.SH",
+      "con_name": "ST洲际",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600777.SH",
+      "con_name": "新潮能源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600792.SH",
+      "con_name": "云煤能源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600800.SH",
+      "con_name": "渤海化学",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600871.SH",
+      "con_name": "石化油服",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600925.SH",
+      "con_name": "苏能股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600938.SH",
+      "con_name": "中国海油",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600968.SH",
+      "con_name": "海油发展",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600971.SH",
+      "con_name": "恒源煤电",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600985.SH",
+      "con_name": "淮北矿业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "600997.SH",
+      "con_name": "开滦股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "601001.SH",
+      "con_name": "晋控煤业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "601011.SH",
+      "con_name": "宝泰隆",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "601015.SH",
+      "con_name": "陕西黑猫",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "601088.SH",
+      "con_name": "中国神华",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "601101.SH",
+      "con_name": "昊华能源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "601225.SH",
+      "con_name": "陕西煤业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "601666.SH",
+      "con_name": "平煤股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "601699.SH",
+      "con_name": "潞安环能",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "601798.SH",
+      "con_name": "蓝科高新",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "601808.SH",
+      "con_name": "中海油服",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "601857.SH",
+      "con_name": "中国石油",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "601898.SH",
+      "con_name": "中煤能源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "601918.SH",
+      "con_name": "新集能源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "603036.SH",
+      "con_name": "如通股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "603071.SH",
+      "con_name": "物产环能",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "603113.SH",
+      "con_name": "金能科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "603169.SH",
+      "con_name": "兰石重装",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "603223.SH",
+      "con_name": "恒通股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "603308.SH",
+      "con_name": "应流股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "603318.SH",
+      "con_name": "水发燃气",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "603351.SH",
+      "con_name": "威尔药业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "603353.SH",
+      "con_name": "和顺石油",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "603393.SH",
+      "con_name": "新天然气",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "603619.SH",
+      "con_name": "中曼石油",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "603689.SH",
+      "con_name": "皖天然气",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "603698.SH",
+      "con_name": "航天工程",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "603727.SH",
+      "con_name": "博迈科",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "603798.SH",
+      "con_name": "康普顿",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "605090.SH",
+      "con_name": "九丰能源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "688121.SH",
+      "con_name": "*ST卓然",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "688377.SH",
+      "con_name": "迪威尔",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "920010.BJ",
+      "con_name": "凯添燃气",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "920014.BJ",
+      "con_name": "特瑞斯",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "920088.BJ",
+      "con_name": "科力股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "920099.BJ",
+      "con_name": "瑞华技术",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "920158.BJ",
+      "con_name": "长江能科",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700301.TI",
+      "con_code": "920675.BJ",
+      "con_name": "秉扬科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

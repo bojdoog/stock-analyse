@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250116,通信设备,1.24,12506.48,17.29664256,2.5,13.5552384,3.74140416,1,515880,通信ETF
 20250116,家电行业,2.33,19829.49,6.70613056,2.01,7.5432864,-0.83715584,2,510150,消费ETF
 20250116,有色金属,2.23,15743.69,4.85826096,1.94,4.78149168,0.07676928,3,512400,有色ETF

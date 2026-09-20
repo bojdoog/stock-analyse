@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260305,电网设备,3.73,45016.0,49.64585728,3.91,57.14829056,-7.50243328,4,561380,电网设备ETF
 20260305,通信设备,1.78,22795.19,48.98354176,3.2,58.1727104,-9.18916864,5,515880,通信ETF
 20260305,半导体,2.04,2235.66,21.97441792,1.19,5.9130624,16.06135552,14,512480,半导体ETF

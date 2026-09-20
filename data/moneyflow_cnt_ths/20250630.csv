@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250630,885700.TI,军工,博亚精工,21.52,2.68,1971.51,557,20.02,814.0,741.0,72.0,512660,军工ETF
 20250630,885743.TI,军民融合,博亚精工,21.52,3.6,1420.86,226,20.02,427.0,378.0,49.0,512660,军工ETF
 20250630,886067.TI,低空经济,唯特偶,36.0,1.93,1877.57,376,14.65,505.0,463.0,41.0,515030,新能源车ETF

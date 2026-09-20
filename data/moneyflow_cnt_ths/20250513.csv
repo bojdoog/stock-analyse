@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250513,885530.TI,黄金概念,恒星科技,3.4,0.54,2352.24,72,4.62,73.0,69.0,3.0,512400,有色ETF
 20250513,885914.TI,煤炭概念,合锻智能,11.9,0.36,1776.76,81,5.87,58.0,57.0,1.0,515220,煤炭ETF
 20250513,885947.TI,DRG/DIP,迪安诊断,15.71,0.86,987.8,23,8.27,20.0,20.0,0.0,159929,医药ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250617,电池,2.12,1004.3,10.20235744,3.9,7.0988848,3.10347264,1,516160,新能源ETF
 20250617,医疗器械,0.79,860.52,5.6140248,3.25,3.21790112,2.39612368,4,159929,医药ETF
 20250617,半导体,0.45,1383.17,3.34911744,0.8,0.37293824,2.9761792,6,512480,半导体ETF

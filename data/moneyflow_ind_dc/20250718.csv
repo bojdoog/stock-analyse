@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250718,小金属,2.72,2509.25,33.28293376,6.66,31.0456704,2.23726336,1,512400,有色ETF
 20250718,酿酒行业,0.46,50280.02,11.93424144,5.81,5.68358672,6.25065472,2,512690,白酒ETF
 20250718,电池,0.9,1102.49,10.18610176,2.78,1.13075968,9.05534208,3,516160,新能源ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251121,886054.TI,光刻机,赛微电子,33.49,-3.05,1662.1,47,11.82,92.0,89.0,2.0,588710,科创半导体设备ETF
 20251121,885876.TI,网红经济,新华都,8.11,-2.6,1535.94,115,10.04,153.0,155.0,-1.0,512980,传媒ETF
 20251121,886000.TI,一体化压铸,兰石重装,10.61,-3.38,1262.49,55,1.63,62.0,65.0,-2.0,515030,新能源车ETF

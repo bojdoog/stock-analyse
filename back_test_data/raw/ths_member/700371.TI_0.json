@@ -1,0 +1,174 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "700371.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:43:17.271005+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"700371.TI\", \"con_code\": \"000009.SZ\", \"con_name\": \"中国宝安\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700371.TI\", \"con_code\": \"002053.SZ\", \"con_name\": \"云南能投\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700371.TI\", \"con_code\": \"002057.SZ\", \"con_name\": \"中钢天源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700371.TI\", \"con_code\": \"002080.SZ\", \"con_name\": \"中材科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700371.TI\", \"con_code\": \"002529.SZ\", \"con_name\": \"海源复材\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700371.TI\", \"con_code\": \"300198.SZ\", \"con_name\": \"*ST纳川\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700371.TI\", \"con_code\": \"300211.SZ\", \"con_name\": \"*ST亿通\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700371.TI\", \"con_code\": \"600089.SH\", \"con_name\": \"特变电工\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700371.TI\", \"con_code\": \"600212.SH\", \"con_name\": \"绿能慧充\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700371.TI\", \"con_code\": \"600295.SH\", \"con_name\": \"鄂尔多斯\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700371.TI\", \"con_code\": \"600543.SH\", \"con_name\": \"*ST莫高\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700371.TI\", \"con_code\": \"600668.SH\", \"con_name\": \"尖峰集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700371.TI\", \"con_code\": \"600673.SH\", \"con_name\": \"东阳光\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700371.TI\", \"con_code\": \"600805.SH\", \"con_name\": \"悦达投资\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700371.TI\", \"con_code\": \"601969.SH\", \"con_name\": \"海南矿业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700371.TI\", \"con_code\": \"603033.SH\", \"con_name\": \"三维股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "700371.TI",
+      "con_code": "000009.SZ",
+      "con_name": "中国宝安",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700371.TI",
+      "con_code": "002053.SZ",
+      "con_name": "云南能投",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700371.TI",
+      "con_code": "002057.SZ",
+      "con_name": "中钢天源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700371.TI",
+      "con_code": "002080.SZ",
+      "con_name": "中材科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700371.TI",
+      "con_code": "002529.SZ",
+      "con_name": "海源复材",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700371.TI",
+      "con_code": "300198.SZ",
+      "con_name": "*ST纳川",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700371.TI",
+      "con_code": "300211.SZ",
+      "con_name": "*ST亿通",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700371.TI",
+      "con_code": "600089.SH",
+      "con_name": "特变电工",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700371.TI",
+      "con_code": "600212.SH",
+      "con_name": "绿能慧充",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700371.TI",
+      "con_code": "600295.SH",
+      "con_name": "鄂尔多斯",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700371.TI",
+      "con_code": "600543.SH",
+      "con_name": "*ST莫高",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700371.TI",
+      "con_code": "600668.SH",
+      "con_name": "尖峰集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700371.TI",
+      "con_code": "600673.SH",
+      "con_name": "东阳光",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700371.TI",
+      "con_code": "600805.SH",
+      "con_name": "悦达投资",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700371.TI",
+      "con_code": "601969.SH",
+      "con_name": "海南矿业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700371.TI",
+      "con_code": "603033.SH",
+      "con_name": "三维股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

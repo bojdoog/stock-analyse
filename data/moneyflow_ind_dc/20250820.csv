@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250820,半导体,2.74,1770.9,51.56397824,3.19,45.80845824,5.75552,1,512480,半导体ETF
 20250820,酿酒行业,3.22,53857.84,20.29468928,5.54,14.72206336,5.57262592,3,512690,白酒ETF
 20250820,通信设备,0.6,18436.07,17.9125888,1.45,9.0349568,8.877632,4,515880,通信ETF

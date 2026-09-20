@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231030,半导体,4.73,1234.84,23.91637504,3.73,15.30422016,8.61215488,1,512480,半导体ETF
 20231030,互联网服务,2.68,19872.18,15.35929408,3.46,11.94318144,3.41611264,3,515230,软件ETF
 20231030,酿酒行业,0.98,58826.77,9.47152448,4.96,2.18874416,7.28278032,5,512690,白酒ETF

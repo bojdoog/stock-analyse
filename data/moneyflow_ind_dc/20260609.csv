@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260609,半导体,6.23,2813.39,127.38225664,3.99,126.9821184,0.40013824,2,512480,半导体ETF
 20260609,通信设备,3.37,26155.87,90.42276352,3.53,74.7393024,15.68346112,3,515880,通信ETF
 20260609,有色金属,2.27,28791.64,25.50294272,1.71,21.9184,3.58454272,15,512400,有色ETF

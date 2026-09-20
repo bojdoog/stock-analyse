@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251217,通信设备,1.43,19547.69,45.69131776,2.96,44.47124992,1.22006784,1.0,515880,通信ETF
 20251217,能源金属,5.98,814.3,20.83477184,7.88,13.62549952,7.20927232,3.0,512400,有色ETF
 20251217,证券,1.32,155459.43,15.44618752,4.35,12.66927104,2.77691648,5.0,512880,证券ETF

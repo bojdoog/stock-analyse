@@ -1,0 +1,147 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "881151.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:45:04.361378+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"881151.TI\", \"con_code\": \"000089.SZ\", \"con_name\": \"深圳机场\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881151.TI\", \"con_code\": \"000099.SZ\", \"con_name\": \"中信海直\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881151.TI\", \"con_code\": \"002928.SZ\", \"con_name\": \"华夏航空\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881151.TI\", \"con_code\": \"600004.SH\", \"con_name\": \"白云机场\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881151.TI\", \"con_code\": \"600009.SH\", \"con_name\": \"上海机场\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881151.TI\", \"con_code\": \"600029.SH\", \"con_name\": \"南方航空\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881151.TI\", \"con_code\": \"600115.SH\", \"con_name\": \"中国东航\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881151.TI\", \"con_code\": \"600221.SH\", \"con_name\": \"海航控股\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881151.TI\", \"con_code\": \"600515.SH\", \"con_name\": \"海南机场\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881151.TI\", \"con_code\": \"600897.SH\", \"con_name\": \"厦门空港\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881151.TI\", \"con_code\": \"601021.SH\", \"con_name\": \"春秋航空\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881151.TI\", \"con_code\": \"601111.SH\", \"con_name\": \"中国国航\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881151.TI\", \"con_code\": \"603885.SH\", \"con_name\": \"吉祥航空\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "881151.TI",
+      "con_code": "000089.SZ",
+      "con_name": "深圳机场",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881151.TI",
+      "con_code": "000099.SZ",
+      "con_name": "中信海直",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881151.TI",
+      "con_code": "002928.SZ",
+      "con_name": "华夏航空",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881151.TI",
+      "con_code": "600004.SH",
+      "con_name": "白云机场",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881151.TI",
+      "con_code": "600009.SH",
+      "con_name": "上海机场",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881151.TI",
+      "con_code": "600029.SH",
+      "con_name": "南方航空",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881151.TI",
+      "con_code": "600115.SH",
+      "con_name": "中国东航",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881151.TI",
+      "con_code": "600221.SH",
+      "con_name": "海航控股",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881151.TI",
+      "con_code": "600515.SH",
+      "con_name": "海南机场",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881151.TI",
+      "con_code": "600897.SH",
+      "con_name": "厦门空港",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881151.TI",
+      "con_code": "601021.SH",
+      "con_name": "春秋航空",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881151.TI",
+      "con_code": "601111.SH",
+      "con_name": "中国国航",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881151.TI",
+      "con_code": "603885.SH",
+      "con_name": "吉祥航空",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

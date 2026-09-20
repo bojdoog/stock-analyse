@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260701,软件开发,2.98,1048.31,33.88375808,5.41,20.76407296,13.11968512,4,515230,软件ETF
 20260701,公用事业,2.52,9266.33,21.99770624,4.01,18.14060032,3.85710592,8,561380,电网设备ETF
 20260701,化学制药,5.57,34732.59,17.16988672,2.64,9.73872384,7.43116288,13,159929,医药ETF

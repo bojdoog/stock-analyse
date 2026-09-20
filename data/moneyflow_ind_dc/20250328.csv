@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250328,文化传媒,1.04,9916.52,10.3646,3.94,6.60999136,3.75460864,1,512980,传媒ETF
 20250328,贵金属,3.43,1264.08,6.41482496,6.83,3.78778496,2.62704,2,512400,有色ETF
 20250328,汽车整车,0.35,1664.77,2.538512,1.51,2.67395632,-0.13544432,4,515030,新能源车ETF

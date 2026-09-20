@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240704,贵金属,0.08,973.54,0.32778672,0.37,0.96696976,-0.63918304,1,512400,有色ETF
 20240704,家电行业,-1.64,14212.65,0.27777456,0.24,1.4682256,-1.19045104,2,510150,消费ETF
 20240704,船舶制造,-1.77,675.36,0.15150289,0.7,0.49015281,-0.33864992,3,512660,军工ETF

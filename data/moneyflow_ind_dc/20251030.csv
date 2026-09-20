@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251030,能源金属,4.72,765.15,28.28824832,5.74,26.48690944,1.80133888,1.0,512400,有色ETF
 20251030,储能,-4.14,633.23,0.21432358,0.92,0.18974909,0.02457449,,516160,新能源ETF
 20251030,石油行业,-1.27,6185.07,-0.0495288,-0.08,1.02577888,-1.07530768,7.0,510300,沪深300ETF

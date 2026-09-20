@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240124,证券,4.56,118321.79,20.83546608,5.84,19.17491184,1.66055424,1,512880,证券ETF
 20240124,工程建设,3.39,18808.87,10.38176944,6.73,8.49099296,1.89077648,2,510300,沪深300ETF
 20240124,有色金属,1.77,12583.97,2.1750472,2.57,1.38576912,0.78927808,9,512400,有色ETF

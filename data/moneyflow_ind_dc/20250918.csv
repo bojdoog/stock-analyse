@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250918,旅游酒店,2.08,18160.95,6.44265584,2.69,4.46727024,1.9753856,1.0,510150,消费ETF
 20250918,医药商业,0.72,1151.84,6.04724544,6.4,7.12700848,-1.07976304,3.0,159929,医药ETF
 20250918,生物制品,-0.52,1173.54,6.0283848,2.18,3.2400968,2.788288,4.0,510660,创新药ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241217,通信设备,-2.62,13085.68,12.9025536,1.69,23.78675712,-10.88420352,1,515880,通信ETF
 20241217,酿酒行业,-1.27,55060.77,11.57864528,5.14,17.73593168,-6.1572864,2,512690,白酒ETF
 20241217,船舶制造,-1.17,837.72,2.21928944,3.32,2.63476768,-0.41547824,3,512660,军工ETF

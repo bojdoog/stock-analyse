@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240117,公用事业,-1.66,7276.46,-0.28590134,-2.37,-0.20110192,-0.08479942,8,561380,电网设备ETF
 20240117,水泥建材,-2.57,23543.95,-0.54534859,-3.11,-0.47142779,-0.0739208,10,510300,沪深300ETF
 20240117,装修装饰,-1.87,463.71,-0.56184572,-1.79,0.21480692,-0.77665264,11,510300,沪深300ETF

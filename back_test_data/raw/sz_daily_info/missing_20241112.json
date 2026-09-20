@@ -1,0 +1,19 @@
+{
+  "request": {
+    "tool": "sz_daily_info",
+    "arguments": {
+      "trade_date": "20241112"
+    }
+  },
+  "retrieved_at": "2026-09-19T14:44:48.209282+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": []
+}

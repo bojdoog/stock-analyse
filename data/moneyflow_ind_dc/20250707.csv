@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250707,电网设备,2.83,28710.33,13.63828336,4.49,8.79754864,4.84073472,1,561380,电网设备ETF
 20250707,银行,0.64,4529.5,7.0340096,2.37,-1.01317376,8.04718336,4,512800,银行ETF
 20250707,电力行业,3.82,17726.51,4.83125504,1.17,3.70598912,1.12526592,6,561380,电网设备ETF

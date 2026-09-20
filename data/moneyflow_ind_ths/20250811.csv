@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250811,881272.TI,软件开发,*ST汇科,2353.34,1.91,139,7.8,12.58,250.0,199.0,50.0,515230,软件ETF
 20250811,881273.TI,白酒,古井贡酒,2995.65,2.25,20,6.21,146.74,97.0,49.0,47.0,512690,白酒ETF
 20250811,881281.TI,电池,万润新能,15575.1,3.34,101,15.59,48.33,206.0,161.0,44.0,516160,新能源ETF

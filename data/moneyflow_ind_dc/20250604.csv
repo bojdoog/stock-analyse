@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250604,互联网服务,1.06,26209.96,12.49076544,2.75,9.77442624,2.7163392,2,515230,软件ETF
 20250604,小金属,2.69,2118.24,10.19454192,5.25,8.05280752,2.1417344,3,512400,有色ETF
 20250604,证券,1.38,135974.23,7.30668864,3.68,6.18609472,1.12059392,6,512880,证券ETF

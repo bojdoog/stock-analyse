@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250210,886041.TI,数据要素,云创数据,34.73,4.83,1159.83,328,4.83,908.0,877.0,30.0,515230,软件ETF
 20250210,885603.TI,网络游戏,德力股份,4.68,3.18,1484.6,65,3.18,194.0,173.0,20.0,159869,游戏ETF
 20250210,885923.TI,鸿蒙概念,云从科技,16.67,4.46,1832.65,227,4.46,764.0,744.0,19.0,515230,软件ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260417,885556.TI,5G,优迅股份,363.19,1.49,6495.02,446,20.0,2062.0,1844.0,217.0,515880,通信ETF
 20260417,886037.TI,6G概念,戈碧迦,48.16,2.19,2588.31,94,11.64,527.0,456.0,70.0,515880,通信ETF
 20260417,886078.TI,商业航天,天马新材,29.95,1.36,2444.88,487,16.67,1255.0,1202.0,52.0,159206,卫星ETF

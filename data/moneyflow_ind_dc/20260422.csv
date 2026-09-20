@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260422,通信设备,3.12,25747.82,103.61255936,4.92,98.01722368,5.59533568,3,515880,通信ETF
 20260422,半导体,2.93,2408.82,62.18755328,2.65,50.29219584,11.89535744,4,512480,半导体ETF
 20260422,医疗器械,0.97,1020.5,4.95042992,2.36,2.52617392,2.424256,40,159929,医药ETF

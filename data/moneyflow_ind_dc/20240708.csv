@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240708,半导体,-0.91,915.72,0.92146608,0.25,1.86964912,-0.94818304,2,512480,半导体ETF
 20240708,燃气,-1.6,1239.5,-0.08649528,-0.75,-0.1971245,0.11062922,6,561380,电网设备ETF
 20240708,船舶制造,-1.61,667.14,-0.11915376,-0.44,0.136936,-0.25608976,7,512660,军工ETF

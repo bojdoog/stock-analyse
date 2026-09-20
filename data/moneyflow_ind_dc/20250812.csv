@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250812,半导体,1.82,1647.78,61.39799552,4.69,55.75159552,5.6464,1,512480,半导体ETF
 20250812,通信设备,0.43,17416.63,11.83823104,1.28,13.97430272,-2.13607168,3,515880,通信ETF
 20250812,银行,0.3,4349.81,3.9255424,1.5,0.57491712,3.35062528,6,512800,银行ETF

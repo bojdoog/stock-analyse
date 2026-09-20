@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251218,航天航空,2.08,57226.92,11.19632128,2.67,10.79563776,0.40068352,1.0,512660,军工ETF
 20251218,医药商业,5.73,1306.94,8.68785712,6.25,8.58151376,0.10634336,2.0,159929,医药ETF
 20251218,银行,1.81,4189.87,8.14143744,3.05,8.585536,-0.44409856,,512800,银行ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250117,885945.TI,汽车芯片,圣邦股份,91.8,2.18,829.82,111,2.18,261.0,240.0,20.0,512480,半导体ETF
 20250117,886067.TI,低空经济,铂力特,41.99,0.11,1568.86,309,0.11,314.0,299.0,15.0,515030,新能源车ETF
 20250117,885556.TI,5G,中富电路,37.97,0.38,3712.28,404,0.38,601.0,587.0,13.0,515880,通信ETF

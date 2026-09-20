@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250402,通信设备,0.75,13531.48,10.69216304,3.21,8.83426352,1.85789952,1,515880,通信ETF
 20250402,汽车零部件,0.83,39521.99,5.06693664,1.14,5.8141904,-0.74725376,3,515030,新能源车ETF
 20250402,互联网服务,0.34,26341.5,4.5800832,0.98,11.30560256,-6.72551936,4,515230,软件ETF

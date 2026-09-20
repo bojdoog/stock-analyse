@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240227,通信设备,5.4,10203.45,33.71193088,6.13,33.61390848,0.0980224,1,515880,通信ETF
 20240227,半导体,4.68,1035.55,26.6355592,5.28,16.30652496,10.32903424,2,512480,半导体ETF
 20240227,软件开发,4.51,759.3,21.02228224,3.69,17.90633216,3.11595008,3,515230,软件ETF

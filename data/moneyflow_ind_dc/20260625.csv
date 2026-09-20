@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260625,半导体,2.27,3516.85,58.96495104,0.98,75.9281664,-16.96321536,5,512480,半导体ETF
 20260625,食品饮料,-0.87,24355.21,11.5727104,3.23,12.2658304,-0.69312,17,510150,消费ETF
 20260625,医药商业,-1.99,994.22,-1.04263933,-3.25,-0.33898973,-0.7036496,13,159929,医药ETF

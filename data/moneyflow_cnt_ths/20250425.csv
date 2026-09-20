@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250425,885806.TI,华为概念,致尚科技,57.96,0.56,2497.21,970,20.0,920.0,850.0,69.0,515230,软件ETF
 20250425,885556.TI,5G,致尚科技,57.96,0.44,3749.44,417,20.0,450.0,411.0,38.0,515880,通信ETF
 20250425,886050.TI,算力租赁,鸿博股份,11.94,0.86,1124.14,133,10.05,193.0,159.0,34.0,515230,软件ETF

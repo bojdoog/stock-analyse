@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260430,半导体,3.4,2507.92,69.30509824,2.06,113.70774528,-44.40264704,1,512480,半导体ETF
 20260430,风电设备,0.97,1759.07,16.24253968,6.45,12.26571024,3.97682944,8,516160,新能源ETF
 20260430,能源金属,3.8,1316.77,12.86939648,2.83,16.03517696,-3.16578048,13,512400,有色ETF

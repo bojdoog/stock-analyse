@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240313,游戏,4.52,1069.83,18.47945152,7.71,15.37838784,3.10106368,1,159869,游戏ETF
 20240313,文化传媒,2.96,9019.15,15.28694528,3.35,15.69188864,-0.40494336,2,512980,传媒ETF
 20240313,软件开发,1.16,771.43,2.66034944,0.48,3.24588288,-0.58553344,3,515230,软件ETF

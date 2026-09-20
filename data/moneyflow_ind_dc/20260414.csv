@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260414,半导体,2.48,2291.07,36.41014784,1.69,43.07191296,-6.66176512,2,512480,半导体ETF
 20260414,电池,3.01,1618.88,18.94662656,1.56,18.7321856,0.21444096,6,516160,新能源ETF
 20260414,房地产,2.14,2140.08,17.161044,8.33,11.8954952,5.2655488,10,510300,沪深300ETF

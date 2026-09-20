@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240809,石油行业,0.93,4551.08,2.43415776,5.85,1.08180624,1.35235152,4,510300,沪深300ETF
 20240809,汽车整车,0.07,1307.51,1.97468864,1.11,5.31502992,-3.34034128,5,515030,新能源车ETF
 20240809,贵金属,0.13,989.08,1.332388,2.39,0.31172896,1.02065904,8,512400,有色ETF

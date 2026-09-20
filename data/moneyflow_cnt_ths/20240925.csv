@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20240925,885921.TI,储能,易成新能,3.85,1.08,1299.2,463,1.08,35600000000.0,35200000000.0,400000000.0,516160,新能源ETF
 20240925,885951.TI,预制菜,岭南股份,2.07,1.21,773.36,105,1.21,4900000000.0,4600000000.0,300000000.0,510150,消费ETF
 20240925,885876.TI,网红经济,因赛集团,48.99,2.21,904.92,94,2.21,6300000000.0,6100000000.0,200000000.0,512980,传媒ETF

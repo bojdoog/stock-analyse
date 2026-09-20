@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251112,886015.TI,创新药,三元基因,33.15,0.87,1412.38,267,12.45,284.0,269.0,15.0,510660,创新药ETF
 20251112,886051.TI,减肥药,众生药业,23.38,0.63,1422.67,58,10.02,69.0,64.0,4.0,510660,创新药ETF
 20251112,885927.TI,CRO概念,诚达药业,35.9,0.48,882.42,71,6.34,63.0,61.0,1.0,510660,创新药ETF

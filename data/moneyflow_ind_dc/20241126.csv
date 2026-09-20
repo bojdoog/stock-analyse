@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241126,酿酒行业,0.8,52769.84,5.72490768,3.61,3.38249424,2.34241344,3,512690,白酒ETF
 20241126,食品饮料,2.25,24709.49,5.47013536,3.06,5.09984848,0.37028688,4,510150,消费ETF
 20241126,中药,0.92,1456.24,1.77441696,1.52,2.31556656,-0.5411496,5,159929,医药ETF

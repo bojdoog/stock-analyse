@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250911,通信设备,4.11,18507.81,88.77517568,5.72,96.5704704,-7.79529472,1.0,515880,通信ETF
 20250911,半导体,4.58,1788.63,64.5009536,3.35,85.77482752,-21.27387392,3.0,512480,半导体ETF
 20250911,软件开发,2.75,1331.39,35.32719872,3.31,28.47883776,6.84836096,5.0,515230,软件ETF

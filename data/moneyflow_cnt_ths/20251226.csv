@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251226,885530.TI,黄金概念,晓程科技,34.8,2.03,3526.59,77,10.83,313.0,213.0,100.0,512400,有色ETF
 20251226,885928.TI,钠离子电池,宏源药业,26.88,1.65,1323.79,134,20.0,457.0,386.0,70.0,516160,新能源ETF
 20251226,886032.TI,固态电池,宏源药业,26.88,0.97,1367.14,275,20.0,705.0,649.0,55.0,516160,新能源ETF

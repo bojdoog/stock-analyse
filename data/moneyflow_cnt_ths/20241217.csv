@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241217,886044.TI,液冷服务器,佳力图,8.6,-2.65,1064.09,69,-2.65,238.0,221.0,16.0,515230,软件ETF
 20241217,886038.TI,超导概念,西部材料,16.47,-1.64,1352.8,20,-1.64,40.0,39.0,1.0,561380,电网设备ETF
 20241217,885780.TI,啤酒概念,奥瑞金,6.12,-2.73,1501.43,18,-2.73,9.0,11.0,-1.0,512690,白酒ETF

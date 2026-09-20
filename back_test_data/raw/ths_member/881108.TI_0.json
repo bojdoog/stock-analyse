@@ -1,0 +1,561 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "881108.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:44:51.011687+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"881108.TI\", \"con_code\": \"000510.SZ\", \"con_name\": \"新金路\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"000545.SZ\", \"con_name\": \"金浦钛业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"000635.SZ\", \"con_name\": \"英力特\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"000683.SZ\", \"con_name\": \"博源化工\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"000691.SZ\", \"con_name\": \"亚太实业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"000707.SZ\", \"con_name\": \"双环科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"000818.SZ\", \"con_name\": \"航锦科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"000822.SZ\", \"con_name\": \"山东海化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"000830.SZ\", \"con_name\": \"鲁西化工\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"000990.SZ\", \"con_name\": \"诚志股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"001217.SZ\", \"con_name\": \"华尔泰\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"002092.SZ\", \"con_name\": \"中泰化学\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"002109.SZ\", \"con_name\": \"ST兴化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"002136.SZ\", \"con_name\": \"安纳达\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"002145.SZ\", \"con_name\": \"钛能化学\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"002274.SZ\", \"con_name\": \"华昌化工\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"002386.SZ\", \"con_name\": \"天原股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"002469.SZ\", \"con_name\": \"三维化学\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"002601.SZ\", \"con_name\": \"龙佰集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"002748.SZ\", \"con_name\": \"世龙实业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"003017.SZ\", \"con_name\": \"大洋生物\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"300082.SZ\", \"con_name\": \"奥克股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"300891.SZ\", \"con_name\": \"惠云钛业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"300927.SZ\", \"con_name\": \"江天化学\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"301069.SZ\", \"con_name\": \"凯盛新材\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"301118.SZ\", \"con_name\": \"恒光股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"301190.SZ\", \"con_name\": \"善水科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"301256.SZ\", \"con_name\": \"华融化学\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"600075.SH\", \"con_name\": \"新疆天业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"600319.SH\", \"con_name\": \"亚星化学\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"600328.SH\", \"con_name\": \"中盐化工\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"600367.SH\", \"con_name\": \"红星发展\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"600409.SH\", \"con_name\": \"三友化工\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"600423.SH\", \"con_name\": \"*ST柳化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"600586.SH\", \"con_name\": \"金晶科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"600610.SH\", \"con_name\": \"中毅达\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"600618.SH\", \"con_name\": \"氯碱化工\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"600623.SH\", \"con_name\": \"华谊集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"600714.SH\", \"con_name\": \"金瑞矿业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"600722.SH\", \"con_name\": \"金牛化工\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"600746.SH\", \"con_name\": \"江苏索普\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"600784.SH\", \"con_name\": \"鲁银投资\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"600844.SH\", \"con_name\": \"金煤科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"600929.SH\", \"con_name\": \"雪天盐业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"600935.SH\", \"con_name\": \"华塑股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"600955.SH\", \"con_name\": \"维远股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"600989.SH\", \"con_name\": \"宝丰能源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"601065.SH\", \"con_name\": \"江盐集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"601216.SH\", \"con_name\": \"君正集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"601568.SH\", \"con_name\": \"北元化工\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"601678.SH\", \"con_name\": \"滨化股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"603067.SH\", \"con_name\": \"振华股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"603113.SH\", \"con_name\": \"金能科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"603213.SH\", \"con_name\": \"镇洋发展\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"603276.SH\", \"con_name\": \"恒兴新材\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"603299.SH\", \"con_name\": \"苏盐井神\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"603938.SH\", \"con_name\": \"三孚股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"920304.BJ\", \"con_name\": \"迪尔化工\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881108.TI\", \"con_code\": \"920489.BJ\", \"con_name\": \"佳先股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "881108.TI",
+      "con_code": "000510.SZ",
+      "con_name": "新金路",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "000545.SZ",
+      "con_name": "金浦钛业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "000635.SZ",
+      "con_name": "英力特",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "000683.SZ",
+      "con_name": "博源化工",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "000691.SZ",
+      "con_name": "亚太实业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "000707.SZ",
+      "con_name": "双环科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "000818.SZ",
+      "con_name": "航锦科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "000822.SZ",
+      "con_name": "山东海化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "000830.SZ",
+      "con_name": "鲁西化工",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "000990.SZ",
+      "con_name": "诚志股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "001217.SZ",
+      "con_name": "华尔泰",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "002092.SZ",
+      "con_name": "中泰化学",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "002109.SZ",
+      "con_name": "ST兴化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "002136.SZ",
+      "con_name": "安纳达",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "002145.SZ",
+      "con_name": "钛能化学",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "002274.SZ",
+      "con_name": "华昌化工",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "002386.SZ",
+      "con_name": "天原股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "002469.SZ",
+      "con_name": "三维化学",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "002601.SZ",
+      "con_name": "龙佰集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "002748.SZ",
+      "con_name": "世龙实业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "003017.SZ",
+      "con_name": "大洋生物",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "300082.SZ",
+      "con_name": "奥克股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "300891.SZ",
+      "con_name": "惠云钛业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "300927.SZ",
+      "con_name": "江天化学",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "301069.SZ",
+      "con_name": "凯盛新材",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "301118.SZ",
+      "con_name": "恒光股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "301190.SZ",
+      "con_name": "善水科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "301256.SZ",
+      "con_name": "华融化学",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "600075.SH",
+      "con_name": "新疆天业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "600319.SH",
+      "con_name": "亚星化学",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "600328.SH",
+      "con_name": "中盐化工",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "600367.SH",
+      "con_name": "红星发展",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "600409.SH",
+      "con_name": "三友化工",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "600423.SH",
+      "con_name": "*ST柳化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "600586.SH",
+      "con_name": "金晶科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "600610.SH",
+      "con_name": "中毅达",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "600618.SH",
+      "con_name": "氯碱化工",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "600623.SH",
+      "con_name": "华谊集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "600714.SH",
+      "con_name": "金瑞矿业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "600722.SH",
+      "con_name": "金牛化工",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "600746.SH",
+      "con_name": "江苏索普",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "600784.SH",
+      "con_name": "鲁银投资",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "600844.SH",
+      "con_name": "金煤科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "600929.SH",
+      "con_name": "雪天盐业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "600935.SH",
+      "con_name": "华塑股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "600955.SH",
+      "con_name": "维远股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "600989.SH",
+      "con_name": "宝丰能源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "601065.SH",
+      "con_name": "江盐集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "601216.SH",
+      "con_name": "君正集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "601568.SH",
+      "con_name": "北元化工",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "601678.SH",
+      "con_name": "滨化股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "603067.SH",
+      "con_name": "振华股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "603113.SH",
+      "con_name": "金能科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "603213.SH",
+      "con_name": "镇洋发展",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "603276.SH",
+      "con_name": "恒兴新材",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "603299.SH",
+      "con_name": "苏盐井神",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "603938.SH",
+      "con_name": "三孚股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "920304.BJ",
+      "con_name": "迪尔化工",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881108.TI",
+      "con_code": "920489.BJ",
+      "con_name": "佳先股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

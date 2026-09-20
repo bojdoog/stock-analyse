@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241121,885982.TI,华为欧拉,四川长虹,13.41,0.65,1497.21,41,0.65,177.0,165.0,12.0,515230,软件ETF
 20241121,885874.TI,云游戏,汤姆猫,6.51,0.95,1173.96,25,0.95,119.0,107.0,11.0,159869,游戏ETF
 20241121,885603.TI,网络游戏,汤姆猫,6.51,0.69,1344.9,65,0.69,167.0,161.0,5.0,159869,游戏ETF

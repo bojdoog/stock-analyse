@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241030,885982.TI,华为欧拉,创意信息,12.66,3.59,1484.49,39,3.59,326.0,261.0,65.0,515230,软件ETF
 20241030,886058.TI,华为昇腾,润和软件,77.52,1.94,1303.8,47,1.94,298.0,236.0,61.0,515230,软件ETF
 20241030,885980.TI,华为鲲鹏,润和软件,77.52,1.7,1252.05,145,1.7,511.0,455.0,55.0,515230,软件ETF

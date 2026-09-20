@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260202,电网设备,1.98,40040.54,56.46088192,6.12,57.0578176,-0.59693568,1.0,561380,电网设备ETF
 20260202,酿酒行业,1.23,48951.83,14.12643584,3.48,10.6593664,3.46706944,2.0,512690,白酒ETF
 20260202,银行,-0.26,4032.41,11.54064896,2.77,9.7516928,1.78895616,,512800,银行ETF

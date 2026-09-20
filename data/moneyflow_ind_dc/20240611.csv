@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240611,半导体,5.27,997.15,21.90465024,3.38,16.48103168,5.42361856,1,512480,半导体ETF
 20240611,汽车零部件,0.39,25609.89,2.15987728,1.22,0.22497008,1.9349072,5,515030,新能源车ETF
 20240611,汽车整车,-0.74,1213.41,1.21201152,0.96,1.69848192,-0.4864704,6,515030,新能源车ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250708,885806.TI,华为概念,国际复材,5.04,1.62,2864.98,982,20.0,1366.0,1135.0,230.0,515230,软件ETF
 20250708,885556.TI,5G,国际复材,5.04,2.28,4448.31,419,20.0,818.0,629.0,188.0,515880,通信ETF
 20250708,885431.TI,新能源汽车,奕东电子,27.25,1.67,3714.88,927,19.99,1103.0,927.0,176.0,515030,新能源车ETF

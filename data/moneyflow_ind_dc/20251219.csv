@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251219,汽车零部件,2.33,50275.76,33.42699008,4.75,28.67288064,4.75410944,1.0,515030,新能源车ETF
 20251219,能源金属,2.02,819.92,21.47662736,8.12,15.02679952,6.44982784,2.0,512400,有色ETF
 20251219,商业百货,3.16,21226.51,13.11880704,2.71,12.92927488,0.18953216,4.0,510150,消费ETF

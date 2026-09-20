@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260703,汽车零部件,4.17,46734.43,68.93382656,7.34,52.06255104,16.87127552,2,515030,新能源车ETF
 20260703,贵金属,6.74,2154.5,27.44684624,11.15,18.89827664,8.5485696,12,512400,有色ETF
 20260703,机器人,9.12,11884.84,19.90612224,6.18,21.59007232,-1.68395008,18,562500,机器人ETF

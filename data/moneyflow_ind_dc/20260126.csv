@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260126,证券,0.43,156686.81,39.07126016,8.29,26.15365888,12.91760128,1.0,512880,证券ETF
 20260126,银行,0.22,3999.34,22.76858368,5.11,11.68452096,11.08406272,,512800,银行ETF
 20260126,银行,0.22,3999.34,22.76858368,5.11,11.68452096,11.08406272,2.0,512800,银行ETF

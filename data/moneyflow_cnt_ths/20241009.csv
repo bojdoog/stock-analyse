@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241009,885780.TI,啤酒概念,ST西发,6.36,-9.19,1272.82,18,-9.19,13.0,17.0,-4.0,512690,白酒ETF
 20241009,886038.TI,超导概念,沃尔核材,15.59,-7.42,1163.64,20,-7.42,40.0,44.0,-4.0,561380,电网设备ETF
 20241009,885947.TI,DRG/DIP,国新健康,11.04,-7.73,858.91,21,-7.73,50.0,56.0,-6.0,159929,医药ETF

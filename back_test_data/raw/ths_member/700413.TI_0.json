@@ -1,0 +1,147 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "700413.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:43:33.906861+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"700413.TI\", \"con_code\": \"000839.SZ\", \"con_name\": \"国安股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700413.TI\", \"con_code\": \"002123.SZ\", \"con_name\": \"梦网科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700413.TI\", \"con_code\": \"002467.SZ\", \"con_name\": \"二六三\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700413.TI\", \"con_code\": \"300292.SZ\", \"con_name\": \"吴通控股\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700413.TI\", \"con_code\": \"300578.SZ\", \"con_name\": \"会畅科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700413.TI\", \"con_code\": \"300959.SZ\", \"con_name\": \"线上线下\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700413.TI\", \"con_code\": \"301380.SZ\", \"con_name\": \"挖金客\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700413.TI\", \"con_code\": \"301382.SZ\", \"con_name\": \"蜂助手\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700413.TI\", \"con_code\": \"301428.SZ\", \"con_name\": \"世纪恒通\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700413.TI\", \"con_code\": \"600050.SH\", \"con_name\": \"中国联通\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700413.TI\", \"con_code\": \"600941.SH\", \"con_name\": \"中国移动\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700413.TI\", \"con_code\": \"601698.SH\", \"con_name\": \"中国卫通\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700413.TI\", \"con_code\": \"601728.SH\", \"con_name\": \"中国电信\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "700413.TI",
+      "con_code": "000839.SZ",
+      "con_name": "国安股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700413.TI",
+      "con_code": "002123.SZ",
+      "con_name": "梦网科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700413.TI",
+      "con_code": "002467.SZ",
+      "con_name": "二六三",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700413.TI",
+      "con_code": "300292.SZ",
+      "con_name": "吴通控股",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700413.TI",
+      "con_code": "300578.SZ",
+      "con_name": "会畅科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700413.TI",
+      "con_code": "300959.SZ",
+      "con_name": "线上线下",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700413.TI",
+      "con_code": "301380.SZ",
+      "con_name": "挖金客",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700413.TI",
+      "con_code": "301382.SZ",
+      "con_name": "蜂助手",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700413.TI",
+      "con_code": "301428.SZ",
+      "con_name": "世纪恒通",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700413.TI",
+      "con_code": "600050.SH",
+      "con_name": "中国联通",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700413.TI",
+      "con_code": "600941.SH",
+      "con_name": "中国移动",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700413.TI",
+      "con_code": "601698.SH",
+      "con_name": "中国卫通",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700413.TI",
+      "con_code": "601728.SH",
+      "con_name": "中国电信",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

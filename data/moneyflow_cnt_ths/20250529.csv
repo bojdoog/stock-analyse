@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250529,885806.TI,华为概念,天晟新材,8.26,2.68,2656.28,977,20.06,1067.0,844.0,223.0,515230,软件ETF
 20250529,885728.TI,人工智能,路桥信息,38.38,2.91,1149.32,833,29.97,958.0,743.0,215.0,159381,创业板人工智能ETF
 20250529,885757.TI,区块链,拉卡拉,23.75,3.8,1435.42,243,20.01,450.0,309.0,140.0,515230,软件ETF

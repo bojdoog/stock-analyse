@@ -1,0 +1,10 @@
+
+> dev
+> max dev
+
+info  - [你知道吗？] 如果你需要使用 Prettier, max g prettier 就可以一键完成配置，详见 https://umijs.org/docs/guides/generator#prettier-配置生成器
+
+  utoo pack v1.4.22 ready in 13381ms
+
+  ➜  Local:   http://localhost:8000
+  ➜  Network: http://26.181.72.104:8000

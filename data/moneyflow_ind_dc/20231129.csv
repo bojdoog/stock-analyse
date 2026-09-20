@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231129,贵金属,2.35,928.01,2.52528928,3.6,2.17420816,0.35108112,1,512400,有色ETF
 20231129,酿酒行业,-0.32,57743.64,-0.21777456,-0.21,-2.1946512,1.97687664,10,512690,白酒ETF
 20231129,水泥建材,-1.21,24767.73,-0.28536908,-1.17,-0.02908972,-0.25627936,11,510300,沪深300ETF

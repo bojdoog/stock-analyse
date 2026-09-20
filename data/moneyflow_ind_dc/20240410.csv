@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240410,电力行业,0.65,15457.94,7.8700448,3.6,5.187344,2.6827008,1,561380,电网设备ETF
 20240410,燃气,0.73,1350.12,0.9886464,3.69,0.73194896,0.25669744,5,561380,电网设备ETF
 20240410,石油行业,-1.38,5137.22,0.40209408,0.71,1.11234,-0.71024592,7,510300,沪深300ETF

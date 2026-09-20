@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260306,软件开发,2.24,1299.48,32.37490176,6.32,30.08069888,2.29420288,2,515230,软件ETF
 20260306,汽车零部件,1.69,53464.94,23.9294592,4.13,12.5718016,11.3576576,5,515030,新能源车ETF
 20260306,光伏设备,0.85,1587.85,22.347904,4.59,25.17481472,-2.82691072,8,516290,光伏ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251121,文化传媒,-0.57,10789.3,6.57189376,1.32,9.41586176,-2.843968,1.0,512980,传媒ETF
 20251121,船舶制造,2.98,1232.27,1.91606368,1.01,1.8012272,0.11483648,2.0,512660,军工ETF
 20251121,储能,-4.69,555.74,-1.11070703,-10.79,-0.35865234,-0.75205469,,516160,新能源ETF

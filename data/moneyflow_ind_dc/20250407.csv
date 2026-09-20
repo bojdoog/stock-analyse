@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250407,农牧饲渔,-0.68,13295.53,0.2173824,0.05,7.32520192,-7.10781952,1,510150,消费ETF
 20250407,装修装饰,-10.65,467.74,-1.05980208,-3.7,0.1072904,-1.16709248,3,510300,沪深300ETF
 20250407,公用事业,-8.99,7589.02,-2.14598614,-6.2,-0.5411911,-1.60479504,7,561380,电网设备ETF

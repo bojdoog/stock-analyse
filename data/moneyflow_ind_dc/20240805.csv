@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240805,游戏,1.68,779.02,5.64190016,6.82,3.3115592,2.33034096,1,159869,游戏ETF
 20240805,酿酒行业,0.37,43857.84,4.87437808,2.8,0.66770672,4.20667136,2,512690,白酒ETF
 20240805,旅游酒店,0.87,12271.23,2.20288608,2.91,1.09059712,1.11228896,4,510150,消费ETF

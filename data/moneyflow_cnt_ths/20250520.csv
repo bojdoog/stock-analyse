@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250520,885709.TI,虚拟现实,慧博云通,34.8,1.46,802.96,277,20.0,306.0,275.0,31.0,159869,游戏ETF
 20250520,885934.TI,元宇宙,曼卡龙,20.16,1.74,1653.3,175,20.0,224.0,199.0,24.0,159869,游戏ETF
 20250520,886015.TI,创新药,一品红,47.53,2.4,1065.52,191,20.0,163.0,143.0,20.0,510660,创新药ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250319,885936.TI,绿色电力,韶能股份,4.8,0.5,956.94,210,0.5,196.0,184.0,12.0,516160,新能源ETF
 20250319,886051.TI,减肥药,科兴制药,24.49,-0.07,1032.05,47,-0.07,30.0,31.0,0.0,510660,创新药ETF
 20250319,886015.TI,创新药,荣昌生物,35.87,0.04,1033.57,183,0.04,116.0,117.0,-1.0,510660,创新药ETF

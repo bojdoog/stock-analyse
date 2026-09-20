@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250717,软件开发,1.18,1229.41,30.28711424,3.01,31.85328384,-1.5661696,2,515230,软件ETF
 20250717,通信设备,2.09,15945.28,25.56697344,2.95,26.82550016,-1.25852672,3,515880,通信ETF
 20250717,航天航空,3.47,52198.25,16.85204288,6.36,13.17438784,3.67765504,6,512660,军工ETF

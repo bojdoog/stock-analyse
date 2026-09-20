@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250509,885780.TI,啤酒概念,奥瑞金,5.49,-0.13,1460.16,24,3.2,10.0,11.0,0.0,512690,白酒ETF
 20250509,886051.TI,减肥药,泰恩康,22.79,-0.53,1079.08,50,7.2,40.0,45.0,-4.0,510660,创新药ETF
 20250509,885462.TI,乳业,欢乐家,14.97,-0.51,2022.38,33,5.79,15.0,20.0,-5.0,510150,消费ETF

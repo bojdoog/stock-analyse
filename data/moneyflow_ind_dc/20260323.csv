@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260323,机器人,-5.05,8062.05,-1.79013561,-4.5,-0.77161577,-1.01851984,49,562500,机器人ETF
 20260323,医药商业,-5.16,1112.33,-2.24435072,-5.18,-0.96396416,-1.28038656,16,159929,医药ETF
 20260323,小金属,-5.22,3525.86,-6.02729504,-1.96,-3.27486496,-2.75243008,11,512400,有色ETF

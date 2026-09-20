@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250311,886021.TI,国企改革,星图测控,126.2,0.79,1228.95,2822,0.79,1435.0,1309.0,125.0,510300,沪深300ETF
 20250311,885700.TI,军工,成电光信,50.97,1.32,1844.43,534,1.32,768.0,729.0,39.0,512660,军工ETF
 20250311,885343.TI,稀土永磁,中国稀土,33.42,1.49,2337.01,60,1.49,118.0,87.0,31.0,512400,有色ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231201,互联网服务,3.59,21436.08,27.92760496,5.87,25.06434224,2.86326272,1,515230,软件ETF
 20231201,通信设备,1.86,11754.79,27.64429568,7.21,22.08543232,5.55886336,2,515880,通信ETF
 20231201,游戏,7.59,1174.82,25.91324592,14.08,15.26749952,10.6457464,3,159869,游戏ETF

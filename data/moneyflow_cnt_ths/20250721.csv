@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250721,886021.TI,国企改革,久量股份,35.94,1.69,1352.44,2858,20.0,1943.0,1811.0,132.0,510300,沪深300ETF
 20250721,885641.TI,风电,基康技术,27.18,2.52,1112.85,365,29.99,584.0,504.0,80.0,516160,新能源ETF
 20250721,885531.TI,光伏概念,安靠智电,36.73,1.74,3474.63,577,19.99,715.0,647.0,68.0,516290,光伏ETF

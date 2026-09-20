@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260317,银行,0.68,4217.23,14.49834496,5.05,11.140608,3.35773696,6,512800,银行ETF
 20260317,汽车零部件,-1.29,51594.43,3.56659456,0.63,10.1540992,-6.58750464,16,515030,新能源车ETF
 20260317,房地产,0.6,2209.82,3.49160704,1.6,2.8101248,0.68148224,18,510300,沪深300ETF

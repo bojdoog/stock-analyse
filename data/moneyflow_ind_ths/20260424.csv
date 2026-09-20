@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260424,881281.TI,电池,天华新能,22668.7,1.29,104,13.65,91.0,466.0,392.0,74.0,516160,新能源ETF
 20260424,881121.TI,半导体,富瀚微,14396.9,1.08,178,20.01,56.08,1016.0,946.0,70.0,512480,半导体ETF
 20260424,881267.TI,能源金属,盛新锂能,42193.3,6.29,12,10.0,50.93,159.0,105.0,54.0,512400,有色ETF

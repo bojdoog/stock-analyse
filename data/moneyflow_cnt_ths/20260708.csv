@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260708,885362.TI,云计算,绿盟科技,6.48,1.86,3572.53,218,20.0,502.0,451.0,50.0,515230,软件ETF
 20260708,885757.TI,区块链,绿盟科技,6.48,1.0,1369.18,260,20.0,499.0,453.0,46.0,515230,软件ETF
 20260708,885459.TI,网络安全,绿盟科技,6.48,2.06,5090.07,195,20.0,503.0,456.0,46.0,515230,软件ETF

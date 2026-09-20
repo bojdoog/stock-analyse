@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240826,电池,4.45,634.08,4.7716768,3.02,4.39365984,0.37801696,1,516160,新能源ETF
 20240826,汽车零部件,1.03,23501.3,2.24614944,1.66,3.50071056,-1.25456112,2,515030,新能源车ETF
 20240826,农牧饲渔,2.08,9778.93,1.75459549,3.09,2.00311229,-0.2485168,3,510150,消费ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260612,886021.TI,国企改革,金天钛业,18.39,1.46,1409.38,2926,13.52,3083.0,3007.0,75.0,510300,沪深300ETF
 20260612,885928.TI,钠离子电池,珠海冠宇,18.85,2.02,1377.5,142,15.93,568.0,520.0,48.0,516160,新能源ETF
 20260612,885456.TI,互联网金融,赢时胜,14.88,2.05,5677.64,216,20.0,302.0,259.0,42.0,512880,证券ETF

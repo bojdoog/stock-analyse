@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250422,银行,0.91,3836.6,3.30909184,1.53,4.26180608,-0.95271424,4,512800,银行ETF
 20250422,汽车整车,0.7,1592.85,3.04801952,2.55,2.64714,0.40087952,6,515030,新能源车ETF
 20250422,水泥建材,1.43,23967.82,0.785946,2.71,0.15372744,0.63221856,15,510300,沪深300ETF

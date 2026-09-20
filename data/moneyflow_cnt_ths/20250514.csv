@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250514,886021.TI,国企改革,吉林碳谷,14.95,0.56,1228.55,2854,21.64,1323.0,1194.0,128.0,510300,沪深300ETF
 20250514,885456.TI,互联网金融,志晟信息,34.68,2.17,5777.47,191,24.97,471.0,362.0,108.0,512880,证券ETF
 20250514,885757.TI,区块链,立昂技术,12.59,0.94,1429.54,242,15.19,476.0,405.0,70.0,515230,软件ETF

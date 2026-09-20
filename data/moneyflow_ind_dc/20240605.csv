@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240605,医药商业,-1.92,935.42,-0.25413373,-1.21,-0.11503725,-0.13909648,6,159929,医药ETF
 20240605,装修装饰,-2.82,338.52,-0.36013857,-2.27,-0.16237469,-0.19776388,8,510300,沪深300ETF
 20240605,半导体,-0.12,962.95,-0.42262896,-0.09,4.80564624,-5.2282752,10,512480,半导体ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241107,证券,6.06,165757.46,61.06902272,4.39,66.70258176,-5.63355904,1,512880,证券ETF
 20241107,酿酒行业,7.46,57069.23,53.24061696,9.57,45.2392704,8.00134656,2,512690,白酒ETF
 20241107,食品饮料,5.95,26022.24,26.93223376,7.1,18.67915472,8.25307904,3,510150,消费ETF

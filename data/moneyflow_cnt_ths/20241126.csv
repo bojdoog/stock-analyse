@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241126,885462.TI,乳业,贝因美,5.28,2.26,1805.18,33,2.26,17.0,15.0,2.0,510150,消费ETF
 20241126,885951.TI,预制菜,一致魔芋,27.45,1.59,1018.55,105,1.59,68.0,67.0,1.0,510150,消费ETF
 20241126,885780.TI,啤酒概念,品渥食品,40.12,-0.26,1405.04,18,-0.26,5.0,6.0,0.0,512690,白酒ETF

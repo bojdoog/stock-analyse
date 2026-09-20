@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260529,公用事业,1.66,11015.54,53.54527488,3.92,42.22979328,11.3154816,3,561380,电网设备ETF
 20260529,食品饮料,1.7,27412.95,26.68126464,5.25,22.2606336,4.42063104,5,510150,消费ETF
 20260529,银行,1.6,4047.23,24.48591104,7.05,14.15119104,10.33472,6,512800,银行ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260623,886015.TI,创新药,新赣江,19.3,3.04,1184.56,275,27.9,285.0,280.0,4.0,510660,创新药ETF
 20260623,885927.TI,CRO概念,亨迪药业,11.29,3.19,832.62,73,19.98,113.0,112.0,0.0,510660,创新药ETF
 20260623,885947.TI,DRG/DIP,塞力医疗,16.58,-0.19,957.15,22,6.62,10.0,12.0,-1.0,159929,医药ETF

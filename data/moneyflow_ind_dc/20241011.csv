@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241011,石油行业,-1.95,4795.96,1.36802288,1.66,0.48106544,0.88695744,1,510300,沪深300ETF
 20241011,医药商业,-2.42,920.99,-0.55924062,-1.13,-0.75377998,0.19453936,6,159929,医药ETF
 20241011,公用事业,-3.01,7392.41,-0.81491938,-3.11,-0.63749378,-0.1774256,8,561380,电网设备ETF

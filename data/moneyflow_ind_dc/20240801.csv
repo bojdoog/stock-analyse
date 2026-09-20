@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240801,银行,-0.12,3232.89,5.1492896,2.85,1.28041536,3.86887424,1,512800,银行ETF
 20240801,工程建设,0.65,16508.38,3.54311808,3.32,3.73586096,-0.19274288,2,510300,沪深300ETF
 20240801,航天航空,2.02,36035.48,1.7367584,1.2,0.65977328,1.07698512,4,512660,军工ETF

@@ -1,0 +1,300 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "881269.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:45:18.305566+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"881269.TI\", \"con_code\": \"000008.SZ\", \"con_name\": \"神州高铁\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"000925.SZ\", \"con_name\": \"众合科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"001324.SZ\", \"con_name\": \"长青科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"002972.SZ\", \"con_name\": \"科安达\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"300011.SZ\", \"con_name\": \"鼎汉技术\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"300351.SZ\", \"con_name\": \"永贵电器\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"300594.SZ\", \"con_name\": \"ST朗进\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"300851.SZ\", \"con_name\": \"交大思诺\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"300906.SZ\", \"con_name\": \"日月明\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"300923.SZ\", \"con_name\": \"研奥股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"300960.SZ\", \"con_name\": \"通业科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"301016.SZ\", \"con_name\": \"雷尔伟\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"301048.SZ\", \"con_name\": \"金鹰重工\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"600495.SH\", \"con_name\": \"晋西车轴\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"600528.SH\", \"con_name\": \"中铁工业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"601766.SH\", \"con_name\": \"中国中车\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"603111.SH\", \"con_name\": \"康尼机电\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"603500.SH\", \"con_name\": \"祥和实业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"603680.SH\", \"con_name\": \"今创集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"605001.SH\", \"con_name\": \"威奥股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"605298.SH\", \"con_name\": \"必得科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"688009.SH\", \"con_name\": \"中国通号\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"688015.SH\", \"con_name\": \"交控科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"688187.SH\", \"con_name\": \"时代电气\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"688285.SH\", \"con_name\": \"高铁电气\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"688367.SH\", \"con_name\": \"工大高科\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"688459.SH\", \"con_name\": \"哈铁科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"688569.SH\", \"con_name\": \"铁科轨道\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"920027.BJ\", \"con_name\": \"交大铁发\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881269.TI\", \"con_code\": \"920541.BJ\", \"con_name\": \"铁大科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "881269.TI",
+      "con_code": "000008.SZ",
+      "con_name": "神州高铁",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "000925.SZ",
+      "con_name": "众合科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "001324.SZ",
+      "con_name": "长青科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "002972.SZ",
+      "con_name": "科安达",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "300011.SZ",
+      "con_name": "鼎汉技术",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "300351.SZ",
+      "con_name": "永贵电器",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "300594.SZ",
+      "con_name": "ST朗进",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "300851.SZ",
+      "con_name": "交大思诺",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "300906.SZ",
+      "con_name": "日月明",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "300923.SZ",
+      "con_name": "研奥股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "300960.SZ",
+      "con_name": "通业科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "301016.SZ",
+      "con_name": "雷尔伟",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "301048.SZ",
+      "con_name": "金鹰重工",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "600495.SH",
+      "con_name": "晋西车轴",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "600528.SH",
+      "con_name": "中铁工业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "601766.SH",
+      "con_name": "中国中车",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "603111.SH",
+      "con_name": "康尼机电",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "603500.SH",
+      "con_name": "祥和实业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "603680.SH",
+      "con_name": "今创集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "605001.SH",
+      "con_name": "威奥股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "605298.SH",
+      "con_name": "必得科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "688009.SH",
+      "con_name": "中国通号",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "688015.SH",
+      "con_name": "交控科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "688187.SH",
+      "con_name": "时代电气",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "688285.SH",
+      "con_name": "高铁电气",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "688367.SH",
+      "con_name": "工大高科",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "688459.SH",
+      "con_name": "哈铁科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "688569.SH",
+      "con_name": "铁科轨道",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "920027.BJ",
+      "con_name": "交大铁发",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881269.TI",
+      "con_code": "920541.BJ",
+      "con_name": "铁大科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

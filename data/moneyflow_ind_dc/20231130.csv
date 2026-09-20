@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231130,船舶制造,1.54,790.74,2.13802288,3.91,1.06948352,1.06853936,1,512660,军工ETF
 20231130,商业百货,0.78,15142.03,1.52258112,2.01,1.79167584,-0.26909472,2,510150,消费ETF
 20231130,生物制品,1.19,960.35,1.46504496,0.98,0.8466512,0.61839376,3,510660,创新药ETF

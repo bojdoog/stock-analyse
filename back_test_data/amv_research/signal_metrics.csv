@@ -1,0 +1,17 @@
+﻿model,period,state_agreement_pct,actual_entries,predicted_entries,same_day_entries,entry_precision,entry_recall,actual_exits,predicted_exits,same_day_exits
+revalued_turnover_ema_20,validation,99.20634920634922,0,0,0,,,1,1,0
+revalued_turnover_ema_20,test,85.79881656804734,5,4,3,0.75,0.6,5,4,2
+amount_ema_20,validation,97.61904761904762,0,0,0,,,1,1,0
+amount_ema_20,test,70.41420118343196,5,3,0,0.0,0.0,5,3,0
+turnover_value_ema_15,validation,92.85714285714286,0,1,0,0.0,,1,2,0
+turnover_value_ema_15,test,70.41420118343196,5,4,0,0.0,0.0,5,4,0
+saturation_20_0.25,validation,90.47619047619048,0,0,0,,,1,1,0
+saturation_20_0.25,test,85.20710059171599,5,4,2,0.5,0.4,5,4,3
+recurrence_0.08,validation,91.26984126984127,0,1,0,0.0,,1,2,0
+recurrence_0.08,test,86.98224852071006,5,4,3,0.75,0.6,5,4,3
+power_activity_20,validation,100.0,0,0,0,,,1,1,1
+power_activity_20,test,86.3905325443787,5,4,2,0.5,0.4,5,4,3
+market_amount,validation,62.698412698412696,0,23,0,0.0,,1,23,0
+market_amount,test,62.721893491124256,5,32,4,0.125,0.8,5,31,0
+market_cap,validation,62.698412698412696,0,0,0,,,1,0,0
+market_cap,test,59.171597633136095,5,0,0,,0.0,5,0,0

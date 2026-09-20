@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250314,证券,3.11,145428.11,55.59600896,9.48,43.87566336,11.7203456,1,512880,证券ETF
 20250314,酿酒行业,3.73,52528.43,53.18191616,11.09,32.19008,20.99183616,2,512690,白酒ETF
 20250314,软件开发,2.58,1244.16,40.37859072,3.43,27.32306944,13.05552128,3,515230,软件ETF

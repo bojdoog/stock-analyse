@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240815,游戏,5.36,829.55,3.79852944,3.9,2.48510944,1.31342,3,159869,游戏ETF
 20240815,证券,1.12,111416.42,3.05267648,1.76,3.38688544,-0.33420896,4,512880,证券ETF
 20240815,酿酒行业,0.24,44536.79,1.92407904,1.92,0.16277328,1.76130576,7,512690,白酒ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260122,886078.TI,商业航天,腾景科技,215.02,2.65,2539.75,445,20.0,1780.0,1579.0,200.0,159206,卫星ETF
 20260122,885574.TI,卫星导航,腾景科技,215.02,2.11,5338.15,263,20.0,1054.0,931.0,122.0,515880,通信ETF
 20260122,885700.TI,军工,三角防务,39.49,1.82,2694.12,594,19.99,1589.0,1473.0,115.0,512660,军工ETF

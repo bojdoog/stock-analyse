@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240626,文化传媒,6.11,7224.85,14.33994064,7.92,12.29391856,2.04602208,1,512980,传媒ETF
 20240626,互联网服务,5.24,14803.06,7.7796784,3.14,5.39736288,2.38231552,2,515230,软件ETF
 20240626,软件开发,4.82,642.8,7.08350656,2.14,4.10779584,2.97571072,3,515230,软件ETF

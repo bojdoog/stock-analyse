@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260703,886069.TI,人形机器人,丰光精密,32.76,3.46,2735.64,456,30.0,2112.0,1886.0,226.0,562500,机器人ETF
 20260703,885517.TI,机器人概念,丰光精密,32.76,2.38,4189.81,1204,30.0,3447.0,3263.0,183.0,562500,机器人ETF
 20260703,885556.TI,5G,科达自控,14.22,0.69,6974.0,455,14.12,2607.0,2485.0,121.0,515880,通信ETF

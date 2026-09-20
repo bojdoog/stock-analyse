@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260610,能源金属,-0.69,982.97,10.8680544,4.42,0.82318272,10.04487168,7,512400,有色ETF
 20260610,银行,1.91,4194.1,5.87610368,1.68,5.2680704,0.60803328,16,512800,银行ETF
 20260610,食品饮料,0.12,25835.38,-0.93867488,-0.31,1.19203872,-2.1307136,18,510150,消费ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251014,885951.TI,预制菜,国光连锁,19.0,0.53,1146.36,104,10.02,90.0,86.0,3.0,510150,消费ETF
 20251014,885914.TI,煤炭概念,宝泰隆,3.96,1.17,2160.71,84,10.0,193.0,190.0,2.0,515220,煤炭ETF
 20251014,885462.TI,乳业,妙可蓝多,26.04,0.34,2159.26,34,4.54,20.0,21.0,0.0,510150,消费ETF

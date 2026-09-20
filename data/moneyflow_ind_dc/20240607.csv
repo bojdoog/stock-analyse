@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240607,电力行业,1.59,15691.4,4.67871968,2.09,3.25461728,1.4241024,3,561380,电网设备ETF
 20240607,银行,0.97,3213.54,3.40941568,1.77,2.31973888,1.0896768,4,512800,银行ETF
 20240607,家电行业,1.19,15272.89,2.28133216,1.62,0.95973616,1.321596,5,510150,消费ETF

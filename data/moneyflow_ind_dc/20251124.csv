@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251124,文化传媒,3.2,11134.35,28.39201024,4.38,28.12710144,0.2649088,1.0,512980,传媒ETF
 20251124,航天航空,4.94,54490.63,19.30081472,7.61,12.96517824,6.33563648,2.0,512660,军工ETF
 20251124,船舶制造,7.3,1322.17,7.63241088,3.41,9.457312,-1.82490112,3.0,512660,军工ETF

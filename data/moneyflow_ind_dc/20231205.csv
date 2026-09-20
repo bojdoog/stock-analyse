@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231205,能源金属,0.57,461.06,8.10366048,8.6,6.62867776,1.47498272,1,512400,有色ETF
 20231205,食品饮料,2.59,25340.73,5.89027056,2.72,6.1383704,-0.24809984,2,510150,消费ETF
 20231205,化学制药,0.14,30734.45,2.898732,1.07,5.52801328,-2.62928128,3,159929,医药ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251230,汽车零部件,1.41,52700.51,42.62112256,4.37,41.34255616,1.2785664,1.0,515030,新能源车ETF
 20251230,家电行业,-0.11,24989.68,18.31624448,5.47,31.97368576,-13.65744128,2.0,510150,消费ETF
 20251230,文化传媒,0.7,10489.11,15.15052704,4.23,14.29595808,0.85456896,4.0,512980,传媒ETF

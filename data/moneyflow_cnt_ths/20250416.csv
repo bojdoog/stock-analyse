@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250416,885780.TI,啤酒概念,品渥食品,39.82,-0.1,1452.64,24,10.09,13.0,14.0,0.0,512690,白酒ETF
 20250416,885462.TI,乳业,品渥食品,39.82,1.26,2143.11,33,10.09,44.0,43.0,0.0,510150,消费ETF
 20250416,886037.TI,6G概念,海能达,10.99,-1.72,1289.14,64,3.0,65.0,67.0,-2.0,515880,通信ETF

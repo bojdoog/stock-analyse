@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250806,汽车零部件,1.95,46799.49,31.03493376,3.88,28.05544192,2.97949184,2,515030,新能源车ETF
 20250806,船舶制造,6.7,1170.6,16.03874096,6.58,17.5819704,-1.54322944,4,512660,军工ETF
 20250806,航天航空,2.27,56547.33,15.32638496,4.18,11.1759184,4.15046656,5,512660,军工ETF

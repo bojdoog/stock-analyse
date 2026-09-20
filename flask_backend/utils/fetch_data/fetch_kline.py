@@ -19,6 +19,11 @@ import time
 import warnings
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
+
+try:
+    from .storage_sqlite import save_dataframe, refresh_index, list_files, initialize, read_frame, has_file
+except ImportError:
+    from storage_sqlite import save_dataframe, refresh_index, list_files, initialize, read_frame, has_file
 from typing import List, Optional
 import os
 
@@ -176,7 +181,7 @@ def fetch_one(
                 logger.debug("%s 无数据，生成空表。", code)
                 new_df = pd.DataFrame(columns=["date", "open", "close", "high", "low", "volume"])
             new_df = validate(new_df)
-            new_df.to_csv(csv_path, index=False)  # 直接覆盖保存
+            save_dataframe(new_df, csv_path, category='stock')  # 直接覆盖保存
             break
         except Exception as e:
             if _looks_like_ip_ban(e):
@@ -200,7 +205,7 @@ def main():
     parser.add_argument(
         "--stocklist",
         type=Path,
-        default=Path(__file__).resolve().parent.parent.parent.parent / "stocklist.csv",
+        default=Path(__file__).resolve().parent / "stocklist.csv",
         help="股票清单CSV路径（需含 ts_code 或 symbol）",
     )
     parser.add_argument(

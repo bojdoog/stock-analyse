@@ -1,0 +1,345 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "881182.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:45:15.610123+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"881182.TI\", \"con_code\": \"000615.SZ\", \"con_name\": \"*ST美谷\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"001206.SZ\", \"con_name\": \"依依股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"001328.SZ\", \"con_name\": \"登康口腔\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"002243.SZ\", \"con_name\": \"力合科创\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"002511.SZ\", \"con_name\": \"中顺洁柔\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"002612.SZ\", \"con_name\": \"朗姿股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"003006.SZ\", \"con_name\": \"百亚股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"300132.SZ\", \"con_name\": \"诺斯贝尔\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"300658.SZ\", \"con_name\": \"延江股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"300740.SZ\", \"con_name\": \"水羊股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"300849.SZ\", \"con_name\": \"锦盛新材\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"300856.SZ\", \"con_name\": \"科思股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"300886.SZ\", \"con_name\": \"华业香料\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"300888.SZ\", \"con_name\": \"稳健医疗\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"300896.SZ\", \"con_name\": \"爱美客\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"300955.SZ\", \"con_name\": \"嘉亨家化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"300957.SZ\", \"con_name\": \"贝泰妮\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"301009.SZ\", \"con_name\": \"可靠股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"301059.SZ\", \"con_name\": \"金三江\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"301108.SZ\", \"con_name\": \"洁雅股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"301371.SZ\", \"con_name\": \"敷尔佳\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"600223.SH\", \"con_name\": \"福瑞达\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"600249.SH\", \"con_name\": \"两面针\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"600315.SH\", \"con_name\": \"上海家化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"603059.SH\", \"con_name\": \"倍加洁\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"603193.SH\", \"con_name\": \"润本股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"603605.SH\", \"con_name\": \"珀莱雅\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"603630.SH\", \"con_name\": \"拉芳家化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"603983.SH\", \"con_name\": \"丸美生物\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"605009.SH\", \"con_name\": \"豪悦护理\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"688363.SH\", \"con_name\": \"华熙生物\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"920123.BJ\", \"con_name\": \"芭薇股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"920165.BJ\", \"con_name\": \"珈凯生物\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"920176.BJ\", \"con_name\": \"维琪科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881182.TI\", \"con_code\": \"920982.BJ\", \"con_name\": \"锦波生物\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "881182.TI",
+      "con_code": "000615.SZ",
+      "con_name": "*ST美谷",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "001206.SZ",
+      "con_name": "依依股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "001328.SZ",
+      "con_name": "登康口腔",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "002243.SZ",
+      "con_name": "力合科创",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "002511.SZ",
+      "con_name": "中顺洁柔",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "002612.SZ",
+      "con_name": "朗姿股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "003006.SZ",
+      "con_name": "百亚股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "300132.SZ",
+      "con_name": "诺斯贝尔",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "300658.SZ",
+      "con_name": "延江股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "300740.SZ",
+      "con_name": "水羊股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "300849.SZ",
+      "con_name": "锦盛新材",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "300856.SZ",
+      "con_name": "科思股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "300886.SZ",
+      "con_name": "华业香料",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "300888.SZ",
+      "con_name": "稳健医疗",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "300896.SZ",
+      "con_name": "爱美客",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "300955.SZ",
+      "con_name": "嘉亨家化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "300957.SZ",
+      "con_name": "贝泰妮",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "301009.SZ",
+      "con_name": "可靠股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "301059.SZ",
+      "con_name": "金三江",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "301108.SZ",
+      "con_name": "洁雅股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "301371.SZ",
+      "con_name": "敷尔佳",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "600223.SH",
+      "con_name": "福瑞达",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "600249.SH",
+      "con_name": "两面针",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "600315.SH",
+      "con_name": "上海家化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "603059.SH",
+      "con_name": "倍加洁",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "603193.SH",
+      "con_name": "润本股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "603605.SH",
+      "con_name": "珀莱雅",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "603630.SH",
+      "con_name": "拉芳家化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "603983.SH",
+      "con_name": "丸美生物",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "605009.SH",
+      "con_name": "豪悦护理",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "688363.SH",
+      "con_name": "华熙生物",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "920123.BJ",
+      "con_name": "芭薇股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "920165.BJ",
+      "con_name": "珈凯生物",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "920176.BJ",
+      "con_name": "维琪科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881182.TI",
+      "con_code": "920982.BJ",
+      "con_name": "锦波生物",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

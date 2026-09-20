@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240307,小金属,2.36,1419.74,12.69768752,8.82,10.63138128,2.06630624,1,512400,有色ETF
 20240307,有色金属,1.96,12627.1,11.40566768,6.06,7.95675376,3.44891392,2,512400,有色ETF
 20240307,贵金属,3.94,963.75,5.90821232,6.0,4.02986432,1.878348,3,512400,有色ETF

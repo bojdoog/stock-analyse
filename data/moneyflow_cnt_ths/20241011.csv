@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241011,886058.TI,华为昇腾,科蓝软件,22.46,-4.25,1102.53,41,-4.25,202.0,189.0,13.0,515230,软件ETF
 20241011,885982.TI,华为欧拉,艾融软件,27.34,-0.77,1188.81,36,-0.77,202.0,193.0,9.0,515230,软件ETF
 20241011,885819.TI,电力物联网,润和软件,50.38,-3.88,1421.82,72,-3.88,111.0,107.0,3.0,561380,电网设备ETF

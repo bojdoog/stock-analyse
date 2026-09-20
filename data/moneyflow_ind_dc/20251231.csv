@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251231,航天航空,2.72,63392.04,41.01227008,7.06,51.78516224,-10.77289216,1.0,512660,军工ETF
 20251231,文化传媒,1.54,10650.67,37.97777152,8.07,38.58098688,-0.60321536,2.0,512980,传媒ETF
 20251231,互联网服务,1.73,31507.15,32.15817216,4.24,39.14802176,-6.9898496,3.0,515230,软件ETF

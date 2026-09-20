@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251110,酿酒行业,3.46,52587.87,29.8136064,9.45,23.76767488,6.04593152,1.0,512690,白酒ETF
 20251110,文化传媒,1.25,11089.74,20.79706368,4.93,19.22775808,1.5693056,2.0,512980,传媒ETF
 20251110,食品饮料,3.09,30789.9,15.95789472,5.84,11.10508704,4.85280768,3.0,510150,消费ETF

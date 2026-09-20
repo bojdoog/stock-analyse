@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250701,886015.TI,创新药,前沿生物,12.05,3.01,1213.91,213,20.02,263.0,215.0,48.0,510660,创新药ETF
 20250701,885936.TI,绿色电力,华电辽能,3.25,0.7,995.02,309,10.17,257.0,243.0,13.0,516160,新能源ETF
 20250701,885530.TI,黄金概念,能特科技,3.48,1.27,2616.12,72,10.13,110.0,96.0,13.0,512400,有色ETF

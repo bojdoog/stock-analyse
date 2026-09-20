@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241216,885936.TI,绿色电力,中环环保,7.83,0.18,969.83,207,0.18,206.0,196.0,10.0,516160,新能源ETF
 20241216,885914.TI,煤炭概念,亚泰集团,2.89,0.45,1893.0,78,0.45,90.0,86.0,3.0,515220,煤炭ETF
 20241216,886038.TI,超导概念,沃尔核材,22.67,0.1,1375.32,20,0.1,33.0,32.0,1.0,561380,电网设备ETF

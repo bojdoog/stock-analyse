@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241129,软件开发,3.3,1095.41,59.30019584,4.15,65.22588928,-5.92569344,1,515230,软件ETF
 20241129,互联网服务,3.11,23638.18,33.69894912,2.99,33.17884928,0.52009984,2,515230,软件ETF
 20241129,证券,2.41,150516.9,25.96910336,4.01,27.75704576,-1.7879424,3,512880,证券ETF

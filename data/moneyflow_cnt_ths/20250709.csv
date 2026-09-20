@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250709,886051.TI,减肥药,普蕊斯,38.79,0.55,1281.47,54,17.55,95.0,83.0,12.0,510660,创新药ETF
 20250709,885876.TI,网红经济,跨境通,5.45,0.41,1462.74,112,10.1,112.0,103.0,8.0,512980,传媒ETF
 20250709,885462.TI,乳业,欢乐家,17.46,-0.24,2130.23,33,3.01,15.0,16.0,0.0,510150,消费ETF

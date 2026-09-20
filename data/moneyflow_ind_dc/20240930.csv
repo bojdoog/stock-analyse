@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240930,证券,10.01,148783.58,47.4118016,4.52,71.7090048,-24.2972032,1,512880,证券ETF
 20240930,电池,15.4,844.52,14.66994176,2.19,-1.51051264,16.1804544,3,516160,新能源ETF
 20240930,软件开发,16.66,841.52,12.88301824,1.14,30.99563776,-18.11261952,4,515230,软件ETF

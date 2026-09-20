@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240902,银行,0.31,3149.99,10.50263808,3.96,6.48223232,4.02040576,1,512800,银行ETF
 20240902,医药商业,-2.9,790.81,-0.15560769,-0.42,-0.72090193,0.56529424,6,159929,医药ETF
 20240902,公用事业,-0.84,6613.64,-0.20958679,-0.93,-0.63654135,0.42695456,7,561380,电网设备ETF

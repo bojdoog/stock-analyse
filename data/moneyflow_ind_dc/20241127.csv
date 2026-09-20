@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241127,游戏,5.46,1185.43,19.20658352,6.98,20.75700656,-1.55042304,1,159869,游戏ETF
 20241127,软件开发,3.54,1067.42,18.8228352,1.82,21.21927168,-2.39643648,2,515230,软件ETF
 20241127,互联网服务,2.81,22969.64,14.3051008,1.65,19.53383168,-5.22873088,3,515230,软件ETF

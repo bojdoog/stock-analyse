@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240903,软件开发,1.89,596.89,6.80854336,2.78,6.07405376,0.7344896,1,515230,软件ETF
 20240903,家电行业,1.6,14337.31,6.40560896,4.96,7.14466192,-0.73905296,2,510150,消费ETF
 20240903,电池,2.96,652.81,5.00072592,2.78,3.75636352,1.2443624,3,516160,新能源ETF

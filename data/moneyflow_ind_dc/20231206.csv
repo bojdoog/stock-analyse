@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231206,能源金属,5.47,486.28,28.6662024,14.81,24.99773776,3.66846464,1,512400,有色ETF
 20231206,电池,4.81,964.48,13.38692688,6.44,7.53503824,5.85188864,2,516160,新能源ETF
 20231206,游戏,4.65,1196.85,12.2460648,5.69,10.47978512,1.76627968,3,159869,游戏ETF

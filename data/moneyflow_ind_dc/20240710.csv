@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240710,能源金属,3.87,364.29,6.89038608,10.44,6.7266232,0.16376288,1,512400,有色ETF
 20240710,光伏设备,-0.23,841.35,4.74840944,2.71,4.09426368,0.65414576,2,516290,光伏ETF
 20240710,汽车零部件,0.92,24935.99,1.92055456,0.78,3.95517088,-2.03461632,3,515030,新能源车ETF

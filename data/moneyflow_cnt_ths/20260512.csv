@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260512,886051.TI,减肥药,重药控股,6.81,-1.03,1412.44,62,10.02,126.0,125.0,1.0,510660,创新药ETF
 20260512,885530.TI,黄金概念,宝鼎科技,33.46,-0.78,4142.22,81,9.99,321.0,324.0,-3.0,512400,有色ETF
 20260512,886054.TI,光刻机,广立微,107.5,0.52,2686.31,49,10.72,201.0,204.0,-3.0,588710,科创半导体设备ETF

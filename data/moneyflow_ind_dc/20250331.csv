@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250331,电力行业,0.57,15809.13,4.35907136,1.7,3.30211648,1.05695488,1,561380,电网设备ETF
 20250331,贵金属,3.17,1304.15,3.20040576,2.62,1.5820536,1.61835216,2,512400,有色ETF
 20250331,石油行业,-0.5,5527.84,1.91260528,3.52,1.33266848,0.5799368,6,510300,沪深300ETF

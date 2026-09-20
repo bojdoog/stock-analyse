@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250303,886032.TI,固态电池,武汉蓝电,65.78,4.39,973.96,176,4.39,525.0,471.0,53.0,516160,新能源ETF
 20250303,885928.TI,钠离子电池,长虹能源,58.15,3.64,968.15,109,3.64,309.0,271.0,37.0,516160,新能源ETF
 20250303,886015.TI,创新药,*ST吉药,1.28,0.92,997.53,180,0.92,116.0,102.0,13.0,510660,创新药ETF

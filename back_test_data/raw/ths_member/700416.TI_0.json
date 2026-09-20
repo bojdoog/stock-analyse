@@ -1,0 +1,489 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "700416.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:43:35.294383+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"700416.TI\", \"con_code\": \"000802.SZ\", \"con_name\": \"北京文化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"000892.SZ\", \"con_name\": \"欢瑞世纪\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"001330.SZ\", \"con_name\": \"博纳影业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"002174.SZ\", \"con_name\": \"游族网络\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"002343.SZ\", \"con_name\": \"慈文传媒\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"002354.SZ\", \"con_name\": \"天娱数科\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"002425.SZ\", \"con_name\": \"凯撒文化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"002517.SZ\", \"con_name\": \"恺英网络\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"002555.SZ\", \"con_name\": \"三七互娱\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"002558.SZ\", \"con_name\": \"巨人网络\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"002602.SZ\", \"con_name\": \"世纪华通\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"002605.SZ\", \"con_name\": \"姚记科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"002624.SZ\", \"con_name\": \"完美世界\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"002739.SZ\", \"con_name\": \"儒意电影\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"002858.SZ\", \"con_name\": \"力盛体育\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"002905.SZ\", \"con_name\": \"金逸影视\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"002919.SZ\", \"con_name\": \"名臣健康\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"300002.SZ\", \"con_name\": \"神州泰岳\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"300027.SZ\", \"con_name\": \"ST华谊\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"300031.SZ\", \"con_name\": \"宝通科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"300043.SZ\", \"con_name\": \"星辉娱乐\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"300052.SZ\", \"con_name\": \"中青宝\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"300133.SZ\", \"con_name\": \"华策影视\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"300182.SZ\", \"con_name\": \"捷成股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"300235.SZ\", \"con_name\": \"方直科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"300251.SZ\", \"con_name\": \"光线传媒\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"300291.SZ\", \"con_name\": \"百纳千成\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"300299.SZ\", \"con_name\": \"富春股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"300315.SZ\", \"con_name\": \"掌趣科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"300426.SZ\", \"con_name\": \"华智数媒\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"300494.SZ\", \"con_name\": \"盛天网络\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"300528.SZ\", \"con_name\": \"幸福蓝海\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"300533.SZ\", \"con_name\": \"冰川网络\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"300571.SZ\", \"con_name\": \"平治信息\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"300860.SZ\", \"con_name\": \"锋尚文化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"600052.SH\", \"con_name\": \"东望时代\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"600088.SH\", \"con_name\": \"中视传媒\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"600136.SH\", \"con_name\": \"ST明诚\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"600158.SH\", \"con_name\": \"中体产业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"600576.SH\", \"con_name\": \"祥源文旅\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"600633.SH\", \"con_name\": \"浙数文化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"600715.SH\", \"con_name\": \"文投控股\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"600880.SH\", \"con_name\": \"博瑞传播\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"600892.SH\", \"con_name\": \"大晟文化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"600977.SH\", \"con_name\": \"中国电影\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"601595.SH\", \"con_name\": \"上海电影\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"603103.SH\", \"con_name\": \"横店影视\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"603258.SH\", \"con_name\": \"电魂网络\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"603444.SH\", \"con_name\": \"吉比特\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"603533.SH\", \"con_name\": \"掌阅科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700416.TI\", \"con_code\": \"603721.SH\", \"con_name\": \"中广天择\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "700416.TI",
+      "con_code": "000802.SZ",
+      "con_name": "北京文化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "000892.SZ",
+      "con_name": "欢瑞世纪",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "001330.SZ",
+      "con_name": "博纳影业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "002174.SZ",
+      "con_name": "游族网络",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "002343.SZ",
+      "con_name": "慈文传媒",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "002354.SZ",
+      "con_name": "天娱数科",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "002425.SZ",
+      "con_name": "凯撒文化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "002517.SZ",
+      "con_name": "恺英网络",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "002555.SZ",
+      "con_name": "三七互娱",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "002558.SZ",
+      "con_name": "巨人网络",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "002602.SZ",
+      "con_name": "世纪华通",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "002605.SZ",
+      "con_name": "姚记科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "002624.SZ",
+      "con_name": "完美世界",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "002739.SZ",
+      "con_name": "儒意电影",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "002858.SZ",
+      "con_name": "力盛体育",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "002905.SZ",
+      "con_name": "金逸影视",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "002919.SZ",
+      "con_name": "名臣健康",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "300002.SZ",
+      "con_name": "神州泰岳",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "300027.SZ",
+      "con_name": "ST华谊",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "300031.SZ",
+      "con_name": "宝通科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "300043.SZ",
+      "con_name": "星辉娱乐",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "300052.SZ",
+      "con_name": "中青宝",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "300133.SZ",
+      "con_name": "华策影视",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "300182.SZ",
+      "con_name": "捷成股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "300235.SZ",
+      "con_name": "方直科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "300251.SZ",
+      "con_name": "光线传媒",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "300291.SZ",
+      "con_name": "百纳千成",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "300299.SZ",
+      "con_name": "富春股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "300315.SZ",
+      "con_name": "掌趣科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "300426.SZ",
+      "con_name": "华智数媒",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "300494.SZ",
+      "con_name": "盛天网络",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "300528.SZ",
+      "con_name": "幸福蓝海",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "300533.SZ",
+      "con_name": "冰川网络",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "300571.SZ",
+      "con_name": "平治信息",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "300860.SZ",
+      "con_name": "锋尚文化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "600052.SH",
+      "con_name": "东望时代",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "600088.SH",
+      "con_name": "中视传媒",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "600136.SH",
+      "con_name": "ST明诚",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "600158.SH",
+      "con_name": "中体产业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "600576.SH",
+      "con_name": "祥源文旅",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "600633.SH",
+      "con_name": "浙数文化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "600715.SH",
+      "con_name": "文投控股",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "600880.SH",
+      "con_name": "博瑞传播",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "600892.SH",
+      "con_name": "大晟文化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "600977.SH",
+      "con_name": "中国电影",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "601595.SH",
+      "con_name": "上海电影",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "603103.SH",
+      "con_name": "横店影视",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "603258.SH",
+      "con_name": "电魂网络",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "603444.SH",
+      "con_name": "吉比特",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "603533.SH",
+      "con_name": "掌阅科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700416.TI",
+      "con_code": "603721.SH",
+      "con_name": "中广天择",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

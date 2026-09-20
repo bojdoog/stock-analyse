@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241202,汽车整车,4.48,1673.42,23.04167168,6.81,22.79282176,0.24884992,1,515030,新能源车ETF
 20241202,汽车零部件,2.95,35016.68,9.76500224,1.85,9.09348864,0.6715136,3,515030,新能源车ETF
 20241202,船舶制造,4.28,860.72,5.80431216,10.14,4.04546192,1.75885024,6,512660,军工ETF

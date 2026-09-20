@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241219,886044.TI,液冷服务器,曙光数创,67.38,5.4,1134.89,69,5.4,454.0,328.0,125.0,515230,软件ETF
 20241219,885556.TI,5G,锐捷网络,67.87,1.73,4001.6,404,1.73,855.0,767.0,87.0,515880,通信ETF
 20241219,886050.TI,算力租赁,创业黑马,40.9,3.68,1078.63,110,3.68,372.0,300.0,71.0,515230,软件ETF

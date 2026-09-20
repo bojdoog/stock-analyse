@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250603,银行,2.17,4201.24,9.59696128,2.48,7.37898496,2.21797632,1,512800,银行ETF
 20250603,化学制药,3.37,33209.18,9.25203712,1.76,7.44744704,1.80459008,2,159929,医药ETF
 20250603,小金属,1.92,2062.84,8.3424432,6.36,4.55734304,3.78510016,3,512400,有色ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251017,885462.TI,乳业,阳光乳业,14.22,-0.78,2136.08,34,2.6,12.0,15.0,-2.0,510150,消费ETF
 20251017,885780.TI,啤酒概念,嘉美包装,3.63,-1.27,1529.73,30,0.55,12.0,16.0,-3.0,512690,白酒ETF
 20251017,885947.TI,DRG/DIP,ST易联众,8.5,-1.81,1123.16,23,3.41,14.0,21.0,-7.0,159929,医药ETF

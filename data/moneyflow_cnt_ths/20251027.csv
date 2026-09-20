@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251027,885556.TI,5G,新雷能,23.8,1.43,5459.58,433,17.65,1687.0,1581.0,106.0,515880,通信ETF
 20251027,886021.TI,国企改革,海峡创新,7.66,0.56,1459.89,2866,20.06,2366.0,2294.0,71.0,510300,沪深300ETF
 20251027,886042.TI,存储芯片,江波龙,266.0,3.49,1771.91,135,19.82,873.0,822.0,51.0,512480,半导体ETF

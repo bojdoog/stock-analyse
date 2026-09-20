@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250402,886069.TI,人形机器人,肇民科技,44.98,1.39,1944.24,166,12.9,249.0,223.0,25.0,562500,机器人ETF
 20250402,885556.TI,5G,东土科技,23.28,0.32,4046.98,411,15.82,348.0,338.0,9.0,515880,通信ETF
 20250402,885456.TI,互联网金融,信雅达,18.24,0.32,5595.19,189,10.01,166.0,156.0,9.0,512880,证券ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241119,能源金属,8.72,530.78,14.34217808,9.69,12.60560736,1.73657072,1,512400,有色ETF
 20241119,通信设备,2.69,12692.16,8.17543424,1.49,11.2971776,-3.12174336,2,515880,通信ETF
 20241119,贵金属,2.26,1074.49,6.99590544,6.8,4.41544496,2.58046048,5,512400,有色ETF

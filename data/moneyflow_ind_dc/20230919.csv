@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20230919,石油行业,0.73,5126.69,2.51375968,4.45,1.61831104,0.89544864,1,510300,沪深300ETF
 20230919,医疗器械,-0.29,849.08,1.86860048,2.01,1.08806464,0.78053584,2,159929,医药ETF
 20230919,水泥建材,0.97,25575.88,1.14609872,3.92,0.8264208,0.31967792,3,510300,沪深300ETF

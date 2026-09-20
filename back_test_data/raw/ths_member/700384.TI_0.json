@@ -1,0 +1,309 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "700384.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:43:22.628199+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"700384.TI\", \"con_code\": \"001222.SZ\", \"con_name\": \"源飞宠物\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"001238.SZ\", \"con_name\": \"浙江正特\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"001300.SZ\", \"con_name\": \"三柏硕\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"001368.SZ\", \"con_name\": \"通达创智\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"002105.SZ\", \"con_name\": \"信隆健康\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"002292.SZ\", \"con_name\": \"奥飞娱乐\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"002348.SZ\", \"con_name\": \"高乐股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"002678.SZ\", \"con_name\": \"珠江钢琴\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"002862.SZ\", \"con_name\": \"实丰文化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"002899.SZ\", \"con_name\": \"英派斯\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"300043.SZ\", \"con_name\": \"星辉娱乐\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"300329.SZ\", \"con_name\": \"海伦钢琴\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"300651.SZ\", \"con_name\": \"金陵体育\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"300994.SZ\", \"con_name\": \"久祺股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"301011.SZ\", \"con_name\": \"华立科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"301287.SZ\", \"con_name\": \"康力源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"301322.SZ\", \"con_name\": \"绿通科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"301335.SZ\", \"con_name\": \"天元宠物\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"600135.SH\", \"con_name\": \"乐凯胶片\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"600599.SH\", \"con_name\": \"退市熊猫\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"600679.SH\", \"con_name\": \"上海凤凰\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"600818.SH\", \"con_name\": \"ST中路\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"603307.SH\", \"con_name\": \"扬州金泉\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"603529.SH\", \"con_name\": \"爱玛科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"603579.SH\", \"con_name\": \"荣泰健康\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"603776.SH\", \"con_name\": \"永安行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"603908.SH\", \"con_name\": \"牧高笛\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"605080.SH\", \"con_name\": \"浙江自然\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"605099.SH\", \"con_name\": \"共创草坪\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"605299.SH\", \"con_name\": \"舒华体育\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700384.TI\", \"con_code\": \"920132.BJ\", \"con_name\": \"泰鹏智能\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "700384.TI",
+      "con_code": "001222.SZ",
+      "con_name": "源飞宠物",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "001238.SZ",
+      "con_name": "浙江正特",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "001300.SZ",
+      "con_name": "三柏硕",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "001368.SZ",
+      "con_name": "通达创智",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "002105.SZ",
+      "con_name": "信隆健康",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "002292.SZ",
+      "con_name": "奥飞娱乐",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "002348.SZ",
+      "con_name": "高乐股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "002678.SZ",
+      "con_name": "珠江钢琴",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "002862.SZ",
+      "con_name": "实丰文化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "002899.SZ",
+      "con_name": "英派斯",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "300043.SZ",
+      "con_name": "星辉娱乐",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "300329.SZ",
+      "con_name": "海伦钢琴",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "300651.SZ",
+      "con_name": "金陵体育",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "300994.SZ",
+      "con_name": "久祺股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "301011.SZ",
+      "con_name": "华立科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "301287.SZ",
+      "con_name": "康力源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "301322.SZ",
+      "con_name": "绿通科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "301335.SZ",
+      "con_name": "天元宠物",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "600135.SH",
+      "con_name": "乐凯胶片",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "600599.SH",
+      "con_name": "退市熊猫",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "600679.SH",
+      "con_name": "上海凤凰",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "600818.SH",
+      "con_name": "ST中路",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "603307.SH",
+      "con_name": "扬州金泉",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "603529.SH",
+      "con_name": "爱玛科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "603579.SH",
+      "con_name": "荣泰健康",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "603776.SH",
+      "con_name": "永安行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "603908.SH",
+      "con_name": "牧高笛",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "605080.SH",
+      "con_name": "浙江自然",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "605099.SH",
+      "con_name": "共创草坪",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "605299.SH",
+      "con_name": "舒华体育",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700384.TI",
+      "con_code": "920132.BJ",
+      "con_name": "泰鹏智能",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

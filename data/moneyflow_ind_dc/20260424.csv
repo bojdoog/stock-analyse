@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260424,电池,1.38,1663.02,61.51021568,4.84,36.4260608,25.08415488,1,516160,新能源ETF
 20260424,半导体,1.11,2386.72,47.1742976,1.75,37.70549248,9.46880512,2,512480,半导体ETF
 20260424,能源金属,7.07,1189.05,44.103232,11.2,32.05498624,12.04824576,4,512400,有色ETF

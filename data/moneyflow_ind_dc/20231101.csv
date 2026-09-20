@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231101,酿酒行业,0.66,59369.68,11.64787712,2.9,23.3784576,-11.73058048,1,512690,白酒ETF
 20231101,汽车零部件,1.42,30187.11,9.50291552,2.75,4.490008,5.01290752,2,515030,新能源车ETF
 20231101,游戏,1.33,1056.15,6.58236528,4.77,4.20994352,2.37242176,3,159869,游戏ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240806,光伏设备,4.89,923.73,13.34592672,5.61,9.33814944,4.00777728,1,516290,光伏ETF
 20240806,航天航空,2.37,35311.46,3.69850288,3.13,4.5491064,-0.85060352,2,512660,军工ETF
 20240806,游戏,3.76,808.34,3.58075104,3.92,0.98621376,2.59453728,3,159869,游戏ETF

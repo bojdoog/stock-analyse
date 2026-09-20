@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250901,886015.TI,创新药,迈威生物,57.6,2.58,1474.28,254,20.0,521.0,450.0,70.0,510660,创新药ETF
 20250901,885530.TI,黄金概念,晓程科技,22.38,4.39,3055.18,72,13.43,309.0,252.0,57.0,512400,有色ETF
 20250901,886051.TI,减肥药,一品红,73.63,2.99,1515.75,55,10.9,151.0,121.0,29.0,510660,创新药ETF

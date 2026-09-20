@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260304,电网设备,3.79,43395.57,29.03911168,2.98,32.85237504,-3.81326336,1,561380,电网设备ETF
 20260304,风电设备,0.68,1654.99,1.88669312,1.21,0.60466624,1.28202688,29,516160,新能源ETF
 20260304,储能,-0.67,778.52,-0.7789528,-2.8,0.74746528,-1.52641808,20,516160,新能源ETF

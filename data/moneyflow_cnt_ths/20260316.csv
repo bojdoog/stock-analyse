@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260316,886042.TI,存储芯片,金太阳,40.73,2.49,2091.4,171,20.01,783.0,688.0,95.0,512480,半导体ETF
 20260316,885556.TI,5G,*ST新元,8.23,0.64,6276.78,445,12.89,1319.0,1271.0,48.0,515880,通信ETF
 20260316,885736.TI,无人驾驶,雅创电子,50.94,0.41,3065.32,397,20.0,798.0,753.0,45.0,515030,新能源车ETF

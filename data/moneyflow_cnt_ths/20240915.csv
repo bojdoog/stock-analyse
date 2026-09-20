@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20240915,885530.TI,黄金概念,鹏欣资源,2.35,0.37,1671.37,73,0.37,5300000000.0,4800000000.0,400000000.0,512400,有色ETF
 20240915,886038.TI,超导概念,国缆检测,36.6,-1.04,930.74,20,-1.04,700000000.0,800000000.0,0.0,561380,电网设备ETF
 20240915,885951.TI,预制菜,岭南股份,1.49,-0.52,725.21,105,-0.52,1900000000.0,1900000000.0,0.0,510150,消费ETF

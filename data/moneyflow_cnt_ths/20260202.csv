@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260202,885530.TI,黄金概念,特变电工,28.35,-6.79,4121.24,81,4.23,429.0,375.0,53.0,512400,有色ETF
 20260202,885425.TI,特高压,通光线缆,15.66,0.61,4932.63,119,20.0,398.0,380.0,17.0,561380,电网设备ETF
 20260202,885311.TI,智能电网,亿能电力,29.15,-0.11,4058.27,263,21.97,636.0,631.0,4.0,561380,电网设备ETF

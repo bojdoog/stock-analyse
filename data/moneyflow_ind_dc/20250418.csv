@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250418,通信设备,2.6,12567.87,31.53619552,9.99,22.61082208,8.92537344,1,515880,通信ETF
 20250418,游戏,0.76,1087.05,2.57305936,4.65,2.09576704,0.47729232,5,159869,游戏ETF
 20250418,能源金属,0.81,432.38,2.40626964,6.68,1.14050564,1.265764,6,512400,有色ETF

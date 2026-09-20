@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250217,半导体,1.11,1464.44,10.00523008,0.89,7.11434496,2.89088512,3,512480,半导体ETF
 20250217,工程建设,1.56,22044.62,5.7200976,3.73,5.9203512,-0.2002536,6,510300,沪深300ETF
 20250217,电力行业,1.48,15513.71,5.54307408,2.56,7.543412,-2.00033792,7,561380,电网设备ETF

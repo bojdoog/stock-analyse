@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250915,885603.TI,网络游戏,星辉娱乐,6.66,1.55,1759.64,64,20.0,224.0,200.0,24.0,159869,游戏ETF
 20250915,885927.TI,CRO概念,德展健康,4.72,1.44,901.64,70,10.02,126.0,113.0,12.0,510660,创新药ETF
 20250915,885874.TI,云游戏,星辉娱乐,6.66,2.63,1630.26,27,20.0,112.0,99.0,12.0,159869,游戏ETF

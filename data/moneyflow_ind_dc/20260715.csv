@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260715,化学制药,3.77,37178.28,49.381952,5.45,39.53688832,9.84506368,2,159929,医药ETF
 20260715,医疗服务,5.44,1347.37,35.05589504,6.34,22.760448,12.29544704,4,510660,创新药ETF
 20260715,食品饮料,2.81,25029.44,17.41311232,3.93,8.59500544,8.81810688,12,510150,消费ETF

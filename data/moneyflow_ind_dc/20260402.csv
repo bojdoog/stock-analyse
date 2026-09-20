@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260402,银行,0.37,4170.86,7.38089216,3.09,7.57566208,-0.19476992,7,512800,银行ETF
 20260402,化学制药,1.04,39899.57,7.30635008,1.02,4.30110208,3.005248,9,159929,医药ETF
 20260402,能源金属,1.24,991.68,6.7504136,2.77,5.64622928,1.10418432,10,512400,有色ETF

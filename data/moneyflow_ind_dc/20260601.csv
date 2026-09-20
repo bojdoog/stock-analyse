@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260601,软件开发,3.41,1151.92,31.162816,5.13,21.96997888,9.19283712,4,515230,软件ETF
 20260601,银行,1.66,4114.24,27.8523392,8.99,15.45143808,12.40090112,6,512800,银行ETF
 20260601,电池,0.66,1638.66,10.77765888,1.03,2.80692736,7.97073152,16,516160,新能源ETF

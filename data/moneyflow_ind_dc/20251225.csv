@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251225,航天航空,3.93,61051.53,28.69718272,5.37,36.64000512,-7.9428224,1.0,512660,军工ETF
 20251225,汽车零部件,2.05,51821.78,27.93417728,3.39,29.69256448,-1.7583872,2.0,515030,新能源车ETF
 20251225,酿酒行业,1.14,48662.8,9.14001392,7.69,5.89705744,3.24295648,5.0,512690,白酒ETF

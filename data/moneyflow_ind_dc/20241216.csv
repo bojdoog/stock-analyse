@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241216,通信设备,-0.16,13437.18,21.5921792,3.69,26.29163264,-4.69945344,1,515880,通信ETF
 20241216,银行,0.68,3706.45,8.30308352,2.83,9.75199232,-1.4489088,3,512800,银行ETF
 20241216,电力行业,1.06,16780.74,2.60411904,0.93,2.60999168,-0.00587264,4,561380,电网设备ETF

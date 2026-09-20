@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251103,电网设备,1.82,34371.75,29.61597952,5.15,26.72195072,2.8940288,1.0,561380,电网设备ETF
 20251103,光伏设备,2.29,1347.52,19.5152896,2.86,21.10809344,-1.59280384,2.0,516290,光伏ETF
 20251103,银行,1.13,4192.74,17.85734144,4.95,17.3826432,0.47469824,,512800,银行ETF

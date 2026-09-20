@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250401,化学制药,4.47,29938.03,16.21715968,3.38,14.52612608,1.6910336,1,159929,医药ETF
 20250401,电力行业,2.91,16269.26,12.2681208,4.48,8.62400176,3.64411904,2,561380,电网设备ETF
 20250401,生物制品,4.82,889.87,8.84533392,4.5,5.45737616,3.38795776,3,510660,创新药ETF

@@ -1,0 +1,642 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "881141.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:45:01.341278+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"881141.TI\", \"con_code\": \"000423.SZ\", \"con_name\": \"东阿阿胶\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"000538.SZ\", \"con_name\": \"云南白药\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"000590.SZ\", \"con_name\": \"古汉医药\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"000623.SZ\", \"con_name\": \"吉林敖东\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"000650.SZ\", \"con_name\": \"仁和药业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"000790.SZ\", \"con_name\": \"华神科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"000989.SZ\", \"con_name\": \"九芝堂\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"000999.SZ\", \"con_name\": \"华润三九\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"002082.SZ\", \"con_name\": \"ST万邦\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"002107.SZ\", \"con_name\": \"沃华医药\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"002198.SZ\", \"con_name\": \"ST嘉应\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"002275.SZ\", \"con_name\": \"桂林三金\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"002287.SZ\", \"con_name\": \"奇正藏药\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"002317.SZ\", \"con_name\": \"众生药业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"002349.SZ\", \"con_name\": \"精华制药\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"002390.SZ\", \"con_name\": \"信邦制药\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"002412.SZ\", \"con_name\": \"汉森制药\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"002424.SZ\", \"con_name\": \"ST百灵\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"002566.SZ\", \"con_name\": \"益盛药业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"002603.SZ\", \"con_name\": \"以岭药业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"002644.SZ\", \"con_name\": \"佛慈制药\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"002728.SZ\", \"con_name\": \"特一药业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"002737.SZ\", \"con_name\": \"葵花药业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"002864.SZ\", \"con_name\": \"盘龙药业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"002873.SZ\", \"con_name\": \"新天药业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"002907.SZ\", \"con_name\": \"华森制药\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"300026.SZ\", \"con_name\": \"红日药业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"300039.SZ\", \"con_name\": \"上海凯宝\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"300147.SZ\", \"con_name\": \"*ST香雪\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"300158.SZ\", \"con_name\": \"振东制药\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"300181.SZ\", \"con_name\": \"佐力药业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"300519.SZ\", \"con_name\": \"新光药业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"300534.SZ\", \"con_name\": \"陇神戎发\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"300878.SZ\", \"con_name\": \"维康药业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"301111.SZ\", \"con_name\": \"粤万年青\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"301331.SZ\", \"con_name\": \"恩威医药\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"600080.SH\", \"con_name\": \"ST金花\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"600085.SH\", \"con_name\": \"同仁堂\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"600129.SH\", \"con_name\": \"太极集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"600222.SH\", \"con_name\": \"太龙药业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"600252.SH\", \"con_name\": \"中恒集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"600285.SH\", \"con_name\": \"羚锐制药\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"600329.SH\", \"con_name\": \"达仁堂\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"600332.SH\", \"con_name\": \"白云山\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"600351.SH\", \"con_name\": \"亚宝药业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"600422.SH\", \"con_name\": \"昆药集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"600436.SH\", \"con_name\": \"片仔癀\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"600479.SH\", \"con_name\": \"千金药业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"600518.SH\", \"con_name\": \"康美药业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"600535.SH\", \"con_name\": \"天士力\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"600557.SH\", \"con_name\": \"康缘药业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"600566.SH\", \"con_name\": \"济川药业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"600572.SH\", \"con_name\": \"康恩贝\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"600594.SH\", \"con_name\": \"益佰制药\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"600671.SH\", \"con_name\": \"天目药业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"600750.SH\", \"con_name\": \"华润江中\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"600771.SH\", \"con_name\": \"广誉远\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"600976.SH\", \"con_name\": \"健民集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"600993.SH\", \"con_name\": \"马应龙\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"603139.SH\", \"con_name\": \"康惠股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"603439.SH\", \"con_name\": \"三力制药\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"603567.SH\", \"con_name\": \"珍宝岛\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"603858.SH\", \"con_name\": \"步长制药\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"603896.SH\", \"con_name\": \"寿仙谷\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"603998.SH\", \"con_name\": \"方盛制药\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"605199.SH\", \"con_name\": \"ST葫芦娃\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"920266.BJ\", \"con_name\": \"生物谷\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881141.TI\", \"con_code\": \"920433.BJ\", \"con_name\": \"大唐药业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "881141.TI",
+      "con_code": "000423.SZ",
+      "con_name": "东阿阿胶",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "000538.SZ",
+      "con_name": "云南白药",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "000590.SZ",
+      "con_name": "古汉医药",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "000623.SZ",
+      "con_name": "吉林敖东",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "000650.SZ",
+      "con_name": "仁和药业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "000790.SZ",
+      "con_name": "华神科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "000989.SZ",
+      "con_name": "九芝堂",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "000999.SZ",
+      "con_name": "华润三九",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "002082.SZ",
+      "con_name": "ST万邦",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "002107.SZ",
+      "con_name": "沃华医药",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "002198.SZ",
+      "con_name": "ST嘉应",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "002275.SZ",
+      "con_name": "桂林三金",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "002287.SZ",
+      "con_name": "奇正藏药",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "002317.SZ",
+      "con_name": "众生药业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "002349.SZ",
+      "con_name": "精华制药",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "002390.SZ",
+      "con_name": "信邦制药",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "002412.SZ",
+      "con_name": "汉森制药",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "002424.SZ",
+      "con_name": "ST百灵",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "002566.SZ",
+      "con_name": "益盛药业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "002603.SZ",
+      "con_name": "以岭药业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "002644.SZ",
+      "con_name": "佛慈制药",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "002728.SZ",
+      "con_name": "特一药业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "002737.SZ",
+      "con_name": "葵花药业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "002864.SZ",
+      "con_name": "盘龙药业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "002873.SZ",
+      "con_name": "新天药业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "002907.SZ",
+      "con_name": "华森制药",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "300026.SZ",
+      "con_name": "红日药业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "300039.SZ",
+      "con_name": "上海凯宝",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "300147.SZ",
+      "con_name": "*ST香雪",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "300158.SZ",
+      "con_name": "振东制药",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "300181.SZ",
+      "con_name": "佐力药业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "300519.SZ",
+      "con_name": "新光药业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "300534.SZ",
+      "con_name": "陇神戎发",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "300878.SZ",
+      "con_name": "维康药业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "301111.SZ",
+      "con_name": "粤万年青",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "301331.SZ",
+      "con_name": "恩威医药",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "600080.SH",
+      "con_name": "ST金花",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "600085.SH",
+      "con_name": "同仁堂",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "600129.SH",
+      "con_name": "太极集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "600222.SH",
+      "con_name": "太龙药业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "600252.SH",
+      "con_name": "中恒集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "600285.SH",
+      "con_name": "羚锐制药",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "600329.SH",
+      "con_name": "达仁堂",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "600332.SH",
+      "con_name": "白云山",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "600351.SH",
+      "con_name": "亚宝药业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "600422.SH",
+      "con_name": "昆药集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "600436.SH",
+      "con_name": "片仔癀",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "600479.SH",
+      "con_name": "千金药业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "600518.SH",
+      "con_name": "康美药业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "600535.SH",
+      "con_name": "天士力",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "600557.SH",
+      "con_name": "康缘药业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "600566.SH",
+      "con_name": "济川药业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "600572.SH",
+      "con_name": "康恩贝",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "600594.SH",
+      "con_name": "益佰制药",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "600671.SH",
+      "con_name": "天目药业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "600750.SH",
+      "con_name": "华润江中",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "600771.SH",
+      "con_name": "广誉远",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "600976.SH",
+      "con_name": "健民集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "600993.SH",
+      "con_name": "马应龙",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "603139.SH",
+      "con_name": "康惠股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "603439.SH",
+      "con_name": "三力制药",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "603567.SH",
+      "con_name": "珍宝岛",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "603858.SH",
+      "con_name": "步长制药",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "603896.SH",
+      "con_name": "寿仙谷",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "603998.SH",
+      "con_name": "方盛制药",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "605199.SH",
+      "con_name": "ST葫芦娃",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "920266.BJ",
+      "con_name": "生物谷",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881141.TI",
+      "con_code": "920433.BJ",
+      "con_name": "大唐药业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

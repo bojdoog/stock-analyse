@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241018,半导体,10.33,1286.06,118.5436288,6.44,107.16250368,11.38112512,1,512480,半导体ETF
 20241018,证券,5.09,144033.96,60.43951104,5.42,67.63447296,-7.19496192,2,512880,证券ETF
 20241018,互联网服务,3.33,20264.4,32.69720576,2.42,39.1463424,-6.44913664,3,515230,软件ETF

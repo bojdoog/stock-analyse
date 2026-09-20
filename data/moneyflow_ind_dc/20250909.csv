@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250909,贵金属,8.13,1918.05,15.65654016,5.78,20.65980928,-5.00326912,1.0,512400,有色ETF
 20250909,有色金属,0.01,21633.41,5.62254336,1.18,5.15452416,0.4680192,2.0,512400,有色ETF
 20250909,商业百货,0.64,19282.09,2.19011952,1.02,3.42759792,-1.2374784,6.0,510150,消费ETF

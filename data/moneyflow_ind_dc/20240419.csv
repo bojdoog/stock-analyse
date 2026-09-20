@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240419,石油行业,3.21,5056.56,8.35372128,6.75,6.89905936,1.45466192,1,510300,沪深300ETF
 20240419,航天航空,3.42,34630.23,4.95606,3.34,0.96396224,3.99209776,5,512660,军工ETF
 20240419,农牧饲渔,0.07,10955.11,1.01282576,1.36,0.99228208,0.02054368,11,510150,消费ETF

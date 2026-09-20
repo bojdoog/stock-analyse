@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251023,885914.TI,煤炭概念,陕西黑猫,4.57,1.97,2254.48,85,10.12,154.0,140.0,14.0,515220,煤炭ETF
 20251023,885982.TI,华为欧拉,绿盟科技,8.1,0.89,1634.1,47,8.29,56.0,50.0,5.0,515230,软件ETF
 20251023,885928.TI,钠离子电池,雄韬股份,22.02,0.58,1218.81,130,9.99,226.0,221.0,4.0,516160,新能源ETF

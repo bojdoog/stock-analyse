@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260514,886054.TI,光刻机,中船特气,141.12,0.29,2758.9,49,20.0,234.0,230.0,4.0,588710,科创半导体设备ETF
 20260514,885462.TI,乳业,万辰集团,232.89,-0.47,2141.84,35,2.6,23.0,23.0,0.0,510150,消费ETF
 20260514,885780.TI,啤酒概念,凯美特气,19.91,-0.34,1724.6,29,5.68,28.0,29.0,0.0,512690,白酒ETF

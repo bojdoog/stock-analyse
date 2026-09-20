@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260413,885936.TI,绿色电力,国际复材,14.83,0.73,1267.97,408,16.04,579.0,553.0,26.0,516160,新能源ETF
 20260413,886050.TI,算力租赁,康盛股份,6.26,0.57,1492.45,170,10.02,454.0,429.0,25.0,515230,软件ETF
 20260413,885921.TI,储能,纳百川,108.52,0.62,2652.36,836,20.0,1714.0,1692.0,22.0,516160,新能源ETF

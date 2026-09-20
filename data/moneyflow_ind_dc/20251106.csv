@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251106,半导体,2.45,1934.34,63.0914048,3.74,78.68838912,-15.59698432,1.0,512480,半导体ETF
 20251106,汽车零部件,1.32,51837.91,37.43713024,5.31,37.7255936,-0.28846336,3.0,515030,新能源车ETF
 20251106,有色金属,3.3,24742.78,33.03442176,5.69,29.05878272,3.97563904,4.0,512400,有色ETF

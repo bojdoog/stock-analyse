@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250924,半导体,4.39,2018.63,154.20776448,5.16,138.38733312,15.82043136,1.0,512480,半导体ETF
 20250924,光伏设备,3.09,1272.13,29.58717952,4.96,23.01361408,6.57356544,2.0,516290,光伏ETF
 20250924,电池,2.69,1465.71,27.10022144,2.85,18.64123648,8.45898496,3.0,516160,新能源ETF

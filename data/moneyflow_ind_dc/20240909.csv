@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240909,医疗服务,3.42,757.07,7.02840832,8.54,4.05903152,2.9693768,1,510660,创新药ETF
 20240909,医疗器械,0.96,636.1,1.84134656,2.14,1.58929568,0.25205088,2,159929,医药ETF
 20240909,公用事业,0.05,6487.51,1.17474774,10.59,1.20586214,-0.0311144,3,561380,电网设备ETF

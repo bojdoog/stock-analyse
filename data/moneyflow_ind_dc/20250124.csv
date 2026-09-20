@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250124,互联网服务,4.12,23027.69,43.39719936,4.84,41.75353088,1.64366848,1,515230,软件ETF
 20250124,软件开发,4.01,995.13,26.68464896,3.31,22.11996672,4.56468224,3,515230,软件ETF
 20250124,通信设备,2.08,13001.47,17.84229632,2.67,27.7213568,-9.87906048,4,515880,通信ETF

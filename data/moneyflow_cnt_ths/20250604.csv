@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250604,885556.TI,5G,太辰光,78.23,1.24,4018.93,419,14.88,460.0,407.0,53.0,515880,通信ETF
 20250604,885709.TI,虚拟现实,奥雅股份,46.68,1.21,799.88,278,20.0,289.0,259.0,30.0,159869,游戏ETF
 20250604,885343.TI,稀土永磁,科恒股份,11.75,2.45,2351.02,61,20.02,81.0,58.0,23.0,512400,有色ETF

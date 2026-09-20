@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251128,886021.TI,国企改革,海峡创新,16.05,1.17,1448.19,2878,16.47,1379.0,1287.0,92.0,510300,沪深300ETF
 20251128,885921.TI,储能,万润新能,91.55,1.38,2366.74,762,16.88,958.0,866.0,92.0,516160,新能源ETF
 20251128,885517.TI,机器人概念,路桥信息,54.99,1.24,3873.5,1115,16.26,1269.0,1181.0,87.0,562500,机器人ETF

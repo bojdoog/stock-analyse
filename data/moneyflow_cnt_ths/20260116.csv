@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260116,886042.TI,存储芯片,金太阳,31.02,4.08,2090.56,166,20.0,1369.0,1134.0,234.0,512480,半导体ETF
 20260116,885945.TI,汽车芯片,佰维存储,184.0,2.69,1305.35,138,17.19,862.0,725.0,136.0,512480,半导体ETF
 20260116,886069.TI,人形机器人,恒辉安防,49.85,1.81,2696.41,413,20.0,1435.0,1309.0,125.0,562500,机器人ETF

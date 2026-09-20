@@ -19,6 +19,11 @@ import time
 import warnings
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
+
+try:
+    from .storage_sqlite import save_dataframe, refresh_index, list_files, initialize, read_frame, has_file
+except ImportError:
+    from storage_sqlite import save_dataframe, refresh_index, list_files, initialize, read_frame, has_file
 from typing import List, Optional
 import os
 
@@ -176,7 +181,7 @@ def fetch_one(
                 logger.debug("%s 无数据，生成空表。", code)
                 new_df = pd.DataFrame(columns=["date", "open", "close", "high", "low", "volume"])
             new_df = validate(new_df)
-            new_df.to_csv(csv_path, index=False)  # 直接覆盖保存
+            save_dataframe(new_df, csv_path, category='stock')  # 直接覆盖保存
             break
         except Exception as e:
             if _looks_like_ip_ban(e):
@@ -211,7 +216,7 @@ def main():
     )
     parser.add_argument(
         "--out",
-        default=Path(__file__).resolve().parent.parent / "public" / "data" / "stock",
+        default=Path(__file__).resolve().parents[2] / "data" / "stock",
         help="输出目录",
     )
     parser.add_argument("--workers", type=int, default=6, help="并发线程数")

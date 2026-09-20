@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260407,小金属,2.7,3728.72,13.51317328,4.54,6.05567312,7.45750016,6,512400,有色ETF
 20260407,半导体,1.4,2060.86,12.5031424,0.97,27.75643136,-15.25328896,7,512480,半导体ETF
 20260407,电池,2.14,1443.41,8.01820928,1.33,15.37664512,-7.35843584,9,516160,新能源ETF

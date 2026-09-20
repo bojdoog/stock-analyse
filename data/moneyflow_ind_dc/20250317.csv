@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250317,汽车零部件,1.77,42453.84,11.60879616,1.6,10.68685312,0.92194304,1,515030,新能源车ETF
 20250317,家电行业,1.2,22576.93,10.65725216,3.17,11.2598864,-0.60263424,2,510150,消费ETF
 20250317,农牧饲渔,0.96,13496.35,1.30192576,0.73,4.68329792,-3.38137216,8,510150,消费ETF

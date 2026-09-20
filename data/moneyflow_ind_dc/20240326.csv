@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240326,电池,4.18,842.87,15.13850256,6.68,6.79570832,8.34279424,1,516160,新能源ETF
 20240326,银行,1.21,3020.0,8.4788928,4.26,8.496992,-0.0180992,2,512800,银行ETF
 20240326,酿酒行业,1.44,51175.5,5.72394608,3.93,1.57820768,4.1457384,3,512690,白酒ETF

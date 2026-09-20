@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260226,885556.TI,5G,聚飞光电,9.3,1.91,6528.41,445,20.0,1892.0,1654.0,238.0,515880,通信ETF
 20260226,886044.TI,液冷服务器,高澜股份,38.15,2.73,2188.33,185,20.01,927.0,816.0,110.0,515230,软件ETF
 20260226,885311.TI,智能电网,海联讯,25.0,1.63,4381.71,266,16.88,726.0,650.0,75.0,561380,电网设备ETF

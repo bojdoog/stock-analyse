@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240102,煤炭行业,3.54,10879.06,2.50921968,1.9,3.04786784,-0.53864816,2,515220,煤炭ETF
 20240102,电力行业,1.86,14747.11,2.23179008,1.47,2.83216368,-0.6003736,4,561380,电网设备ETF
 20240102,中药,1.58,1573.83,1.43441568,1.38,1.5731576,-0.13874192,5,159929,医药ETF

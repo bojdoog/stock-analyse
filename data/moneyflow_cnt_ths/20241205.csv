@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241205,886019.TI,AIGC概念,星环科技,61.66,3.99,1835.34,198,3.99,725.0,590.0,135.0,159381,创业板人工智能ETF
 20241205,885728.TI,人工智能,华如科技,26.14,2.56,1104.62,721,2.56,1537.0,1405.0,132.0,159381,创业板人工智能ETF
 20241205,886031.TI,ChatGPT概念,万兴科技,72.61,4.35,1740.75,129,4.35,531.0,433.0,97.0,159381,创业板人工智能ETF

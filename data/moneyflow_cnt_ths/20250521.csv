@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250521,886032.TI,固态电池,宁新新材,17.29,1.86,919.39,189,30.0,305.0,252.0,53.0,516160,新能源ETF
 20250521,885530.TI,黄金概念,晓程科技,19.5,2.06,2439.97,72,11.68,127.0,88.0,38.0,512400,有色ETF
 20250521,885928.TI,钠离子电池,宁新新材,17.29,1.56,920.79,119,30.0,237.0,199.0,37.0,516160,新能源ETF

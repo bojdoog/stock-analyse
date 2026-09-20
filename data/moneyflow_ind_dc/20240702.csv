@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240702,酿酒行业,1.14,44786.28,14.52445296,7.46,11.4442456,3.08020736,1,512690,白酒ETF
 20240702,贵金属,0.03,975.78,1.66024144,3.2,0.68410128,0.97614016,3,512400,有色ETF
 20240702,中药,0.28,1215.72,1.1575752,1.96,0.22391056,0.93366464,4,159929,医药ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241111,汽车整车,2.97,1718.85,35.8060288,6.99,34.00382208,1.80220672,1,515030,新能源车ETF
 20241111,半导体,6.87,1531.29,31.54139392,1.47,32.20473088,-0.66333696,2,512480,半导体ETF
 20241111,文化传媒,3.82,9954.07,21.80425984,4.33,20.39450368,1.40975616,3,512980,传媒ETF

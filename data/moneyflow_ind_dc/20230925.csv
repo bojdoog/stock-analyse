@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20230925,医疗服务,1.33,1199.11,3.77250608,3.37,1.99416128,1.7783448,1,510660,创新药ETF
 20230925,光伏设备,-0.47,1377.32,2.61687584,1.8,0.80064944,1.8162264,2,516290,光伏ETF
 20230925,中药,1.24,1513.9,1.78849632,1.47,2.17450912,-0.3860128,3,159929,医药ETF

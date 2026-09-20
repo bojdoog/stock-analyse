@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250411,885431.TI,新能源汽车,唯捷创芯,37.37,1.6,3100.04,886,20.01,856.0,784.0,71.0,515030,新能源车ETF
 20250411,885806.TI,华为概念,唯捷创芯,37.37,1.61,2441.33,967,20.01,1072.0,1014.0,58.0,515230,软件ETF
 20250411,885556.TI,5G,唯捷创芯,37.37,2.0,3667.9,410,20.01,540.0,494.0,46.0,515880,通信ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240620,贵金属,0.56,1002.77,1.78900096,2.56,1.09725872,0.69174224,3,512400,有色ETF
 20240620,煤炭行业,0.2,10881.34,0.19482208,0.28,0.07193408,0.122888,5,515220,煤炭ETF
 20240620,银行,-0.86,3125.02,0.15922912,0.12,-0.93870192,1.09793104,6,512800,银行ETF

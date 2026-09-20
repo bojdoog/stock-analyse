@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250826,885934.TI,元宇宙,正元智慧,23.86,1.28,2043.42,178,20.02,697.0,684.0,12.0,159869,游戏ETF
 20250826,885819.TI,电力物联网,中电鑫龙,11.94,0.91,2125.38,80,10.05,156.0,150.0,6.0,561380,电网设备ETF
 20250826,885928.TI,钠离子电池,德创环保,10.89,0.29,1140.38,123,10.0,280.0,277.0,3.0,516160,新能源ETF

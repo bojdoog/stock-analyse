@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260709,886042.TI,存储芯片,艾森股份,105.6,6.1,3370.93,200,20.0,2672.0,2296.0,376.0,512480,半导体ETF
 20260709,885556.TI,5G,甬矽电子,114.6,2.44,6722.02,455,16.94,2764.0,2408.0,356.0,515880,通信ETF
 20260709,885806.TI,华为概念,深科达,102.02,1.63,3475.01,1003,20.0,3106.0,2829.0,277.0,515230,软件ETF

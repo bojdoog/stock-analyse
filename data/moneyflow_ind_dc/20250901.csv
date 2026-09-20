@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250901,医疗服务,2.67,1360.23,15.29024256,4.38,11.86362112,3.42662144,1,510660,创新药ETF
 20250901,生物制品,3.01,1222.27,11.79838976,3.55,8.15689728,3.64149248,2,510660,创新药ETF
 20250901,化学制药,2.5,41202.75,11.27460864,1.63,10.27038208,1.00422656,3,159929,医药ETF

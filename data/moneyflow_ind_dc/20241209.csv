@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241209,汽车整车,1.26,1687.42,6.9326592,2.5,6.31264256,0.62001664,2,515030,新能源车ETF
 20241209,贵金属,1.43,1107.5,3.03540816,3.5,1.94263776,1.0927704,3,512400,有色ETF
 20241209,银行,0.2,3712.03,2.66391296,1.16,0.2302208,2.43369216,4,512800,银行ETF

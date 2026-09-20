@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240401,汽车整车,3.49,1368.27,15.06056512,6.14,12.61594176,2.44462336,2,515030,新能源车ETF
 20240401,酿酒行业,2.77,51922.4,11.43420944,6.16,4.1924936,7.24171584,4,512690,白酒ETF
 20240401,能源金属,7.61,443.98,10.09210624,10.96,7.18732032,2.90478592,5,512400,有色ETF

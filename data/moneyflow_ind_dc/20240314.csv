@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240314,煤炭行业,1.05,11065.0,2.7070424,2.52,3.21187152,-0.50482912,2,515220,煤炭ETF
 20240314,工程建设,-0.05,18476.25,2.69492432,1.63,3.5606424,-0.86571808,3,510300,沪深300ETF
 20240314,生物制品,1.71,825.66,1.9292472,1.28,0.4587816,1.4704656,5,510660,创新药ETF

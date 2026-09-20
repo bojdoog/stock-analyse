@@ -1,0 +1,165 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "700398.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:43:28.014066+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"700398.TI\", \"con_code\": \"000503.SZ\", \"con_name\": \"国新健康\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700398.TI\", \"con_code\": \"002777.SZ\", \"con_name\": \"久远银海\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700398.TI\", \"con_code\": \"002967.SZ\", \"con_name\": \"广电计量\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700398.TI\", \"con_code\": \"300096.SZ\", \"con_name\": \"ST易联众\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700398.TI\", \"con_code\": \"300168.SZ\", \"con_name\": \"万达信息\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700398.TI\", \"con_code\": \"300253.SZ\", \"con_name\": \"卫宁健康\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700398.TI\", \"con_code\": \"300288.SZ\", \"con_name\": \"朗玛信息\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700398.TI\", \"con_code\": \"300290.SZ\", \"con_name\": \"ST荣科\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700398.TI\", \"con_code\": \"300451.SZ\", \"con_name\": \"创业慧康\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700398.TI\", \"con_code\": \"300550.SZ\", \"con_name\": \"和仁科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700398.TI\", \"con_code\": \"301337.SZ\", \"con_name\": \"亚华电子\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700398.TI\", \"con_code\": \"603122.SH\", \"con_name\": \"合富中国\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700398.TI\", \"con_code\": \"603990.SH\", \"con_name\": \"麦迪科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700398.TI\", \"con_code\": \"688246.SH\", \"con_name\": \"嘉和美康\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700398.TI\", \"con_code\": \"920670.BJ\", \"con_name\": \"数字人\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "700398.TI",
+      "con_code": "000503.SZ",
+      "con_name": "国新健康",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700398.TI",
+      "con_code": "002777.SZ",
+      "con_name": "久远银海",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700398.TI",
+      "con_code": "002967.SZ",
+      "con_name": "广电计量",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700398.TI",
+      "con_code": "300096.SZ",
+      "con_name": "ST易联众",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700398.TI",
+      "con_code": "300168.SZ",
+      "con_name": "万达信息",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700398.TI",
+      "con_code": "300253.SZ",
+      "con_name": "卫宁健康",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700398.TI",
+      "con_code": "300288.SZ",
+      "con_name": "朗玛信息",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700398.TI",
+      "con_code": "300290.SZ",
+      "con_name": "ST荣科",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700398.TI",
+      "con_code": "300451.SZ",
+      "con_name": "创业慧康",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700398.TI",
+      "con_code": "300550.SZ",
+      "con_name": "和仁科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700398.TI",
+      "con_code": "301337.SZ",
+      "con_name": "亚华电子",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700398.TI",
+      "con_code": "603122.SH",
+      "con_name": "合富中国",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700398.TI",
+      "con_code": "603990.SH",
+      "con_name": "麦迪科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700398.TI",
+      "con_code": "688246.SH",
+      "con_name": "嘉和美康",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700398.TI",
+      "con_code": "920670.BJ",
+      "con_name": "数字人",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

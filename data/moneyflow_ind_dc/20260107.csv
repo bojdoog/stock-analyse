@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260107,煤炭行业,3.86,12369.83,21.41502656,11.47,12.84932064,8.56570592,1.0,515220,煤炭ETF
 20260107,小金属,2.12,3468.78,20.8151552,2.94,14.29464064,6.52051456,2.0,512400,有色ETF
 20260107,半导体,2.29,2135.98,11.18544384,0.44,14.33133568,-3.14589184,4.0,512480,半导体ETF

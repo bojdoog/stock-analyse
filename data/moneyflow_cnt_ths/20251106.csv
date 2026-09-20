@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251106,885431.TI,新能源汽车,大明电子,64.45,1.2,4606.98,975,413.55,2105.0,1890.0,215.0,515030,新能源车ETF
 20251106,885517.TI,机器人概念,汉宇集团,16.33,0.79,4031.28,1100,17.4,1846.0,1694.0,152.0,562500,机器人ETF
 20251106,886069.TI,人形机器人,汉宇集团,16.33,1.7,2487.64,366,17.4,949.0,799.0,150.0,562500,机器人ETF

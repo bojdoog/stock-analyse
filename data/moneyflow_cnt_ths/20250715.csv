@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250715,885362.TI,云计算,*ST云创,15.92,1.22,3888.87,205,13.71,496.0,399.0,97.0,515230,软件ETF
 20250715,885556.TI,5G,新易盛,157.08,0.47,4458.82,420,20.0,898.0,806.0,91.0,515880,通信ETF
 20250715,886044.TI,液冷服务器,博汇股份,13.82,1.9,1360.9,92,19.96,334.0,250.0,84.0,515230,软件ETF

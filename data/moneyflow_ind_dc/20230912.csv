@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20230912,家电行业,0.45,16313.19,6.34813664,5.56,5.18616416,1.16197248,1,510150,消费ETF
 20230912,能源金属,1.72,501.83,4.33206032,5.87,3.47902736,0.85303296,2,512400,有色ETF
 20230912,通信设备,0.45,11353.19,1.56982528,0.43,2.95839488,-1.3885696,4,515880,通信ETF

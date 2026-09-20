@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20230915,半导体,1.25,1223.99,8.2352104,2.03,8.81866512,-0.58345472,1,512480,半导体ETF
 20230915,医疗器械,2.14,841.98,4.73368,3.56,2.3968416,2.3368384,3,159929,医药ETF
 20230915,化学制药,2.11,27953.01,3.94132704,1.57,4.18996704,-0.24864,4,159929,医药ETF

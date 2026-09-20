@@ -58,6 +58,32 @@ python app.py
 
 ## API 接口
 
+### 指标管理
+
+默认优先使用本机 MySQL 的 `stock_analyse` 数据库，连接或登录失败时自动使用 SQLite。
+每次抓取同步更新 SQLite、CSV 和 MySQL；离线期间的更新会在恢复连接后补写。默认指标为
+`0AMV / 活跃市值(默认)`。连接配置放在被 Git 忽略的 `instance/mysql.json`，
+也可通过 `MYSQL_*` 环境变量设置。首次运行先按 [MySQL 存储说明](MYSQL_STORAGE.md)
+配置连接并执行迁移。指标定义、指标日值、个股/ETF/指数行情和三类资金流向均存于 MySQL；
+`data/` 的 CSV/JSON 和 SQLite 文件均持续更新，详见上述自动同步说明。
+
+`GET /api/indicators` 返回数据库中的指标列表，支持：
+
+- `current`：页码，默认 1。
+- `pageSize`：每页数量，默认 10，范围 1–100。
+- `name`、`code`：名称、代码的包含匹配，可组合查询。
+
+响应包含 `code`、`success`、`data`、`total`、`current`、`pageSize`；
+`data` 中包含指标 ID、代码、名称、来源、说明、默认标识及创建/更新时间。
+前端菜单“指标管理”使用 ProTable 请求此接口，支持搜索、分页和刷新。
+
+`GET /api/indicators/<id>/data` 按指标返回日值，支持 `start_date`、`end_date`、`limit`。
+`meta.close_only=true` 表示仅有收盘值，前端绘制折线，其他 OHLC/成交量字段为 `null`。
+导入候选公式后，列表包含 `AMV_EMA20 / 活跃市值(反推EMA20)`。
+
+运行接口与持久化验证：在项目根目录执行
+`python -m unittest discover -s flask_backend/tests -v`。
+
 ### 基础接口
 
 | 接口 | 方法 | 说明 |
@@ -103,7 +129,8 @@ python app.py
 GET /data/stock/000001.csv
 GET /data/etf/510050_上证50ETF.csv
 GET /data/index/000001_上证指数.csv
-GET /data/0AMV-2013-2026.csv
+GET /data/core_index/0AMV-2013-2026.csv
+GET /data/core_index/candidate_amv_close.csv
 ```
 
 ## 生产部署

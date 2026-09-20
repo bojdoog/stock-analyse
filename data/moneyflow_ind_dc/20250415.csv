@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250415,电池,1.52,891.71,8.00436144,3.88,3.7028728,4.30148864,1,516160,新能源ETF
 20250415,银行,1.42,3769.1,5.25760512,2.02,3.00510208,2.25250304,2,512800,银行ETF
 20250415,游戏,1.38,1097.19,4.74856832,5.44,2.11451008,2.63405824,3,159869,游戏ETF

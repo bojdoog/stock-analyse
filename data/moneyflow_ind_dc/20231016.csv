@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231016,石油行业,3.1,5126.59,4.6375384,6.37,4.68701616,-0.04947776,1,510300,沪深300ETF
 20231016,贵金属,3.08,964.26,4.446256,7.68,2.40834992,2.03790608,2,512400,有色ETF
 20231016,煤炭行业,1.49,10044.89,2.47832592,3.64,1.6233424,0.85498352,5,515220,煤炭ETF

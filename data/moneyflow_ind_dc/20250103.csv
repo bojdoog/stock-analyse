@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250103,小金属,-1.92,1708.55,8.6879944,6.09,3.24493568,5.44305872,1,512400,有色ETF
 20250103,有色金属,-1.99,14794.57,5.8715976,2.46,4.37660368,1.49499392,2,512400,有色ETF
 20250103,贵金属,1.86,1046.62,3.33049312,4.0,0.07599728,3.25449584,4,512400,有色ETF

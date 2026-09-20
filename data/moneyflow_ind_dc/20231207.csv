@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231207,文化传媒,2.62,10069.51,17.10575616,3.35,20.91544064,-3.80968448,1,512980,传媒ETF
 20231207,软件开发,2.9,906.92,16.68452944,3.57,9.39358032,7.29094912,2,515230,软件ETF
 20231207,互联网服务,2.21,21448.58,8.81535344,2.07,5.8142168,3.00113664,3,515230,软件ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20230914,煤炭行业,3.47,10338.46,14.0762328,8.01,6.22693504,7.84929776,1,515220,煤炭ETF
 20230914,中药,0.8,1481.08,3.22993392,3.93,2.69610896,0.53382496,2,159929,医药ETF
 20230914,汽车整车,-0.45,1258.84,2.84699584,2.34,6.8032504,-3.95625456,3,515030,新能源车ETF

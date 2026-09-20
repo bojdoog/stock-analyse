@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231120,互联网服务,1.22,21730.16,6.07887616,1.14,8.6038912,-2.52501504,2,515230,软件ETF
 20231120,医疗服务,1.39,1280.88,3.90811616,3.72,2.62404656,1.2840696,4,510660,创新药ETF
 20231120,酿酒行业,0.71,58533.07,2.7320664,2.34,-0.27483616,3.00690256,5,512690,白酒ETF

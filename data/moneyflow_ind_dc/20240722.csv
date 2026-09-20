@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240722,汽车整车,1.64,1331.21,7.28159488,2.75,7.17974016,0.10185472,1,515030,新能源车ETF
 20240722,软件开发,3.15,621.84,4.62711584,1.46,4.30435616,0.32275968,2,515230,软件ETF
 20240722,风电设备,4.58,786.79,3.57825019,8.84,2.90858875,0.66966144,3,516160,新能源ETF

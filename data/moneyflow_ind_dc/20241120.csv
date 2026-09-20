@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241120,文化传媒,3.88,9714.84,14.90191648,3.21,18.76294944,-3.86103296,3,512980,传媒ETF
 20241120,游戏,4.38,1108.61,11.01806288,6.57,9.0533552,1.96470768,6,159869,游戏ETF
 20241120,化学制药,2.74,29734.78,8.4935272,2.71,6.71875344,1.77477376,8,159929,医药ETF

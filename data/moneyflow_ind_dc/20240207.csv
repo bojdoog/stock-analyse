@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240207,汽车整车,1.68,1038.81,2.87781216,1.56,7.90733088,-5.02951872,3,515030,新能源车ETF
 20240207,汽车零部件,-2.5,21674.93,2.84453616,1.03,4.22790384,-1.38336768,4,515030,新能源车ETF
 20240207,装修装饰,-4.54,312.09,2.56465733,7.51,1.99906421,0.56559312,6,510300,沪深300ETF

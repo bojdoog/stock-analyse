@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240523,船舶制造,2.38,724.74,1.83114976,3.47,1.0994016,0.73174816,1,512660,军工ETF
 20240523,煤炭行业,-2.41,11389.78,-0.76596784,-1.04,-0.62378064,-0.1421872,8,515220,煤炭ETF
 20240523,燃气,-1.86,1329.06,-0.95213703,-6.09,-0.25833146,-0.69380557,10,561380,电网设备ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260330,885574.TI,卫星导航,广联航空,38.16,1.09,4721.19,273,20.0,502.0,454.0,47.0,515880,通信ETF
 20260330,885700.TI,军工,广联航空,38.16,0.73,2445.86,598,20.0,835.0,793.0,41.0,512660,军工ETF
 20260330,886037.TI,6G概念,亨通光电,53.85,0.88,2284.96,94,10.01,298.0,270.0,27.0,515880,通信ETF

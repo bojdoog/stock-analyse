@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250725,886013.TI,信创,远望谷,8.09,1.16,2088.26,297,10.07,547.0,496.0,51.0,515230,软件ETF
 20250725,886019.TI,AIGC概念,因赛集团,44.95,1.55,2079.0,245,20.0,508.0,457.0,51.0,159381,创业板人工智能ETF
 20250725,886031.TI,ChatGPT概念,因赛集团,44.95,1.76,1933.29,138,20.0,347.0,302.0,45.0,159381,创业板人工智能ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240913,证券,0.23,107637.82,4.97399024,3.57,6.7187048,-1.74471456,1,512880,证券ETF
 20240913,通信设备,-1.32,8488.44,3.50915424,1.62,0.69134688,2.81780736,2,515880,通信ETF
 20240913,贵金属,1.86,907.81,3.38252384,3.73,2.3500536,1.03247024,3,512400,有色ETF

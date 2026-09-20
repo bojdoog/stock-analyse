@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231113,通信设备,2.63,11780.52,15.29618944,3.47,13.2370816,2.05910784,1,515880,通信ETF
 20231113,软件开发,2.82,856.55,11.25305088,2.14,9.1412608,2.11179008,2,515230,软件ETF
 20231113,互联网服务,2.43,20865.57,8.28284688,1.78,7.26529296,1.01755392,3,515230,软件ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260508,汽车零部件,2.21,53936.67,45.27821312,4.48,29.20131328,16.07689984,2,515030,新能源车ETF
 20260508,通信设备,2.05,26604.09,21.09060096,1.09,21.29338368,-0.20278272,6,515880,通信ETF
 20260508,贵金属,2.08,2950.19,13.6575448,5.12,6.57703024,7.08051456,18,512400,有色ETF

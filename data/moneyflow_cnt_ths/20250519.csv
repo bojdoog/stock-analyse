@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250519,885951.TI,预制菜,巴比食品,19.69,2.3,1095.23,106,10.0,66.0,51.0,14.0,510150,消费ETF
 20250519,886042.TI,存储芯片,东方中科,37.05,1.22,1129.41,96,10.01,108.0,99.0,9.0,512480,半导体ETF
 20250519,885497.TI,旅游概念,棕榈股份,2.18,1.83,2514.79,121,10.1,70.0,63.0,7.0,510150,消费ETF

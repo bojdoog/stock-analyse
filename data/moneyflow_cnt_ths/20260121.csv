@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260121,885431.TI,新能源汽车,中熔电气,143.4,1.36,5027.51,1006,20.0,2159.0,1987.0,171.0,515030,新能源车ETF
 20260121,885997.TI,比亚迪概念,致尚科技,163.2,1.56,2079.91,652,20.0,1364.0,1221.0,143.0,515030,新能源车ETF
 20260121,885556.TI,5G,致尚科技,163.2,1.47,6150.75,442,20.0,1482.0,1352.0,130.0,515880,通信ETF

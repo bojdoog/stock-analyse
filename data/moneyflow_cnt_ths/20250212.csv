@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250212,885806.TI,华为概念,雅达股份,11.63,1.99,2728.11,949,1.99,2167.0,2069.0,98.0,515230,软件ETF
 20250212,885921.TI,储能,雅达股份,11.63,1.79,1818.11,525,1.79,712.0,646.0,66.0,516160,新能源ETF
 20250212,885431.TI,新能源汽车,通合科技,20.02,1.39,3299.99,840,1.39,1247.0,1184.0,63.0,515030,新能源车ETF

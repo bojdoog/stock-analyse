@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250819,885876.TI,网红经济,梦洁股份,3.96,1.2,1553.6,114,10.0,155.0,146.0,9.0,512980,传媒ETF
 20250819,885982.TI,华为欧拉,诚迈科技,55.39,1.82,1772.19,45,20.0,250.0,241.0,9.0,515230,软件ETF
 20250819,885930.TI,工业母机,禾川科技,54.02,1.38,1645.92,102,14.5,211.0,205.0,5.0,159638,高端装备ETF

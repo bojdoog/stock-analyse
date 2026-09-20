@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260508,885743.TI,军民融合,恒锋工具,41.56,2.09,1856.15,245,20.01,594.0,552.0,41.0,512660,军工ETF
 20260508,886008.TI,减速器,恒锋工具,41.56,3.06,2197.82,133,20.01,285.0,247.0,38.0,562500,机器人ETF
 20260508,885736.TI,无人驾驶,戈碧迦,70.1,1.43,3249.83,400,22.55,1185.0,1157.0,28.0,515030,新能源车ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250414,汽车整车,3.5,1604.48,18.53243648,8.32,15.27101952,3.26141696,1,515030,新能源车ETF
 20250414,银行,0.63,3716.45,14.62005248,6.34,8.72124672,5.89880576,2,512800,银行ETF
 20250414,有色金属,2.67,16075.52,10.87147072,4.19,10.3238944,0.54757632,3,512400,有色ETF

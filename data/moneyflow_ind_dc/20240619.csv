@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240619,贵金属,1.91,997.22,3.5960336,4.4,3.93680576,-0.34077216,1,512400,有色ETF
 20240619,银行,0.72,3152.17,2.43295504,1.52,3.65381648,-1.22086144,4,512800,银行ETF
 20240619,酿酒行业,0.29,46956.15,2.29563248,1.52,5.35993296,-3.06430048,5,512690,白酒ETF

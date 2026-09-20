@@ -1,0 +1,19 @@
+{
+  "request": {
+    "tool": "moneyflow_ind_ths",
+    "arguments": {
+      "trade_date": "20250120"
+    }
+  },
+  "retrieved_at": "2026-09-19T14:44:47.660924+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": []
+}

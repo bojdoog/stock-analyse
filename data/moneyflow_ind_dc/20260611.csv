@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260611,有色金属,1.67,28833.02,100.42258688,5.66,88.68597504,11.73661184,1,512400,有色ETF
 20260611,小金属,4.81,4183.43,64.11385088,10.56,60.08868608,4.0251648,2,512400,有色ETF
 20260611,能源金属,3.93,1021.63,33.40754064,10.67,19.9523752,13.45516544,3,512400,有色ETF

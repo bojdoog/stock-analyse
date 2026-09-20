@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241125,文化传媒,2.01,9673.45,13.86296064,3.13,16.65780736,-2.79484672,1,512980,传媒ETF
 20241125,电池,3.93,1023.13,13.36821808,3.19,6.46827568,6.8999424,2,516160,新能源ETF
 20241125,能源金属,2.36,520.55,4.77385376,4.0,2.97907184,1.79478192,4,512400,有色ETF

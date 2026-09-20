@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231107,通信设备,2.38,11582.49,6.45738752,1.36,7.54989824,-1.09251072,2,515880,通信ETF
 20231107,风电设备,0.57,1153.35,1.74087328,4.1,2.12033952,-0.37946624,3,516160,新能源ETF
 20231107,石油行业,0.84,5158.14,1.20172832,2.96,0.74755152,0.4541768,4,510300,沪深300ETF

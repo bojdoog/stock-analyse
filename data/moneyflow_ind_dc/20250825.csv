@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250825,小金属,4.94,3134.53,22.98151168,2.6,34.01004032,-11.02852864,1,512400,有色ETF
 20250825,酿酒行业,2.93,55201.18,22.76322304,5.74,12.22796288,10.53526016,2,512690,白酒ETF
 20250825,商业百货,1.28,19003.46,8.51685008,3.63,11.42811792,-2.91126784,5,510150,消费ETF

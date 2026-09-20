@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260319,公用事业,1.26,10371.54,10.23817728,1.09,18.01764864,-7.77947136,3,561380,电网设备ETF
 20260319,机器人,-3.01,8714.52,-2.62374354,-10.04,-1.35149474,-1.2722488,44,562500,机器人ETF
 20260319,银行,-0.51,4169.56,-2.686464,-0.96,0.84655872,-3.53302272,45,512800,银行ETF

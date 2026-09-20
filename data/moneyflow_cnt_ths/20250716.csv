@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250716,886015.TI,创新药,广生堂,74.87,1.71,1292.97,225,16.55,304.0,259.0,45.0,510660,创新药ETF
 20250716,886008.TI,减速器,金道科技,24.63,1.89,1761.58,115,11.7,152.0,130.0,21.0,562500,机器人ETF
 20250716,885999.TI,汽车热管理,浙江荣泰,49.7,1.39,1758.59,121,10.0,161.0,141.0,20.0,515030,新能源车ETF

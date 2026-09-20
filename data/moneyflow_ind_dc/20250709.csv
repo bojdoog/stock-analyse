@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250709,文化传媒,1.38,10446.4,8.5388896,2.65,13.08498112,-4.54609152,1,512980,传媒ETF
 20250709,中药,0.17,1426.3,5.4812656,4.76,7.09596336,-1.61469776,2,159929,医药ETF
 20250709,酿酒行业,0.35,49917.42,3.09572544,1.9,1.09254848,2.00317696,4,512690,白酒ETF

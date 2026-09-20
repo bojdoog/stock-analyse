@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240411,汽车整车,2.08,1333.41,14.98792032,7.19,11.03996768,3.94795264,1,515030,新能源车ETF
 20240411,电网设备,1.74,19875.56,4.1805688,2.26,4.1761472,0.0044216,3,561380,电网设备ETF
 20240411,文化传媒,2.56,8515.51,3.91405936,1.61,3.27133808,0.64272128,4,512980,传媒ETF

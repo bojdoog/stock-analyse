@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260408,有色金属,5.31,29023.86,114.6820736,6.71,78.1854976,36.496576,2,512400,有色ETF
 20260408,半导体,6.59,2196.63,81.95144704,3.89,85.90044672,-3.94899968,4,512480,半导体ETF
 20260408,通信设备,5.44,23301.39,75.74456576,4.2,87.53939456,-11.7948288,7,515880,通信ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240627,银行,0.89,3163.63,0.63021776,0.32,-1.4754232,2.10564096,3,512800,银行ETF
 20240627,船舶制造,-0.58,667.3,0.61509232,2.48,0.11058512,0.5045072,4,512660,军工ETF
 20240627,医疗器械,-2.17,660.18,0.0212254,0.03,-0.25315364,0.27437904,7,159929,医药ETF

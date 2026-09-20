@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240507,航天航空,5.29,37641.34,11.25946848,6.12,9.61568992,1.64377856,1,512660,军工ETF
 20240507,光伏设备,0.64,1095.28,3.38384768,2.02,1.664288,1.71955968,4,516290,光伏ETF
 20240507,船舶制造,1.95,754.21,2.35721232,4.77,1.32156224,1.03565008,6,512660,军工ETF

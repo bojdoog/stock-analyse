@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241114,885874.TI,云游戏,*ST鹏博,2.23,-2.44,1163.72,25,-2.44,98.0,92.0,6.0,159869,游戏ETF
 20241114,885982.TI,华为欧拉,拓维信息,26.39,-2.97,1555.89,41,-2.97,221.0,219.0,2.0,515230,软件ETF
 20241114,886058.TI,华为昇腾,拓维信息,26.39,-3.01,1386.65,51,-3.01,214.0,215.0,0.0,515230,软件ETF

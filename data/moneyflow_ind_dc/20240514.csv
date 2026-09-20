@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240514,游戏,5.48,915.82,11.39389456,8.97,9.52031232,1.87358224,1,159869,游戏ETF
 20240514,汽车整车,3.12,1345.42,10.617564,6.27,6.88322144,3.73434256,2,515030,新能源车ETF
 20240514,中药,1.61,1448.99,3.35865424,2.15,4.7664648,-1.40781056,4,159929,医药ETF

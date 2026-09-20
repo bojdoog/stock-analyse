@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260630,885556.TI,5G,*ST赛为,5.14,3.82,7147.36,454,20.09,3152.0,2702.0,450.0,515880,通信ETF
 20260630,885517.TI,机器人概念,*ST赛为,5.14,2.9,4071.02,1204,20.09,3514.0,3081.0,433.0,562500,机器人ETF
 20260630,885806.TI,华为概念,联建光电,5.51,2.89,3624.78,1003,20.04,3709.0,3294.0,415.0,515230,软件ETF

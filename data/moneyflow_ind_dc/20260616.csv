@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260616,电池,4.0,1664.35,44.36057088,3.15,31.71347712,12.64709376,2,516160,新能源ETF
 20260616,通信设备,3.31,26859.0,25.10647552,0.99,56.05347072,-30.9469952,5,515880,通信ETF
 20260616,光伏设备,1.8,1400.77,19.21946112,3.58,10.780864,8.43859712,13,516290,光伏ETF

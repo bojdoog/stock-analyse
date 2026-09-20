@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250902,885780.TI,啤酒概念,金徽酒,22.36,-0.65,1566.65,30,2.1,23.0,24.0,-1.0,512690,白酒ETF
 20250902,885462.TI,乳业,阳光乳业,15.35,-0.29,2253.03,33,2.06,21.0,24.0,-3.0,510150,消费ETF
 20250902,885999.TI,汽车热管理,拓普集团,67.66,-0.56,2071.09,126,10.0,374.0,384.0,-10.0,515030,新能源车ETF

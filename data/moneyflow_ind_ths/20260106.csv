@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260106,881157.TI,证券,华林证券,1704.59,3.65,50,9.99,17.84,435.0,290.0,145.0,512880,证券ETF
 20260106,881272.TI,软件开发,星环科技,2382.43,1.54,138,20.0,126.32,341.0,280.0,60.0,515230,软件ETF
 20260106,881122.TI,光学光电子,联建光电,5105.89,2.17,108,20.06,8.2,239.0,182.0,57.0,512480,半导体ETF

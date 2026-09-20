@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250729,886015.TI,创新药,三元基因,34.84,2.79,1415.79,233,20.76,512.0,460.0,51.0,510660,创新药ETF
 20250729,885945.TI,汽车芯片,东芯股份,46.0,1.33,988.24,123,20.01,267.0,226.0,41.0,512480,半导体ETF
 20250729,885927.TI,CRO概念,睿智医药,13.61,4.0,874.62,67,20.02,187.0,157.0,30.0,510660,创新药ETF

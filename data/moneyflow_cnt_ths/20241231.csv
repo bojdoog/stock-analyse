@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241231,885780.TI,啤酒概念,青岛啤酒,80.92,-1.14,1428.0,23,-1.14,14.0,15.0,-1.0,512690,白酒ETF
 20241231,885462.TI,乳业,庄园牧场,7.53,-1.95,1813.35,33,-1.95,15.0,17.0,-2.0,510150,消费ETF
 20241231,886051.TI,减肥药,普利制药,6.81,-2.18,964.64,47,-2.18,21.0,29.0,-7.0,510660,创新药ETF

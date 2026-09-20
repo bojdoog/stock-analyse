@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260622,有色金属,3.88,32511.88,112.1023104,3.94,94.8024448,17.2998656,2,512400,有色ETF
 20260622,小金属,6.99,5034.48,40.72449792,4.37,46.0865792,-5.36208128,7,512400,有色ETF
 20260622,电网设备,1.72,40019.06,34.80871424,4.75,28.54525696,6.26345728,10,561380,电网设备ETF

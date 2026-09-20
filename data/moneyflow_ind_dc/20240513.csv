@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240513,工程建设,-0.45,17828.4,2.78597632,1.82,3.88951408,-1.10353776,1,510300,沪深300ETF
 20240513,中药,-0.58,1426.05,2.2222368,1.74,2.5791304,-0.3568936,3,159929,医药ETF
 20240513,风电设备,-0.39,932.28,2.0588445,4.31,1.03937298,1.01947152,4,516160,新能源ETF

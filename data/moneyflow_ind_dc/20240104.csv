@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240104,医疗器械,0.38,891.29,3.04239568,3.0,2.93375008,0.1086456,1,159929,医药ETF
 20240104,贵金属,-0.06,905.56,1.155828,4.06,0.69914944,0.45667856,3,512400,有色ETF
 20240104,银行,0.11,2751.69,0.56726224,0.39,2.045816,-1.47855376,6,512800,银行ETF

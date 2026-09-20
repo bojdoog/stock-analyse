@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250513,光伏设备,2.26,1031.45,16.28595568,4.59,11.8581464,4.42780928,1,516290,光伏ETF
 20250513,银行,1.64,4016.19,5.7430528,1.93,6.33206272,-0.58900992,3,512800,银行ETF
 20250513,贵金属,1.26,1354.89,4.07831232,5.04,1.74014432,2.338168,5,512400,有色ETF

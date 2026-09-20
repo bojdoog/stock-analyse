@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241111,885806.TI,华为概念,蓝色光标,9.47,3.79,2660.56,924,3.79,2787.0,2632.0,155.0,515230,软件ETF
 20241111,885431.TI,新能源汽车,大地电气,18.39,3.17,3239.09,809,3.17,1779.0,1635.0,143.0,515030,新能源车ETF
 20241111,886032.TI,固态电池,纳科诺尔,53.82,5.14,920.81,152,5.14,587.0,479.0,107.0,516160,新能源ETF

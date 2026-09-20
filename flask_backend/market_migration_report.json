@@ -1,0 +1,46 @@
+{
+  "database": "C:\\_allCode\\stock_analyse\\flask_backend\\instance\\stock_analyse.sqlite3",
+  "files": 6807,
+  "changed_files": 6807,
+  "verified_rows": 977473,
+  "categories": {
+    "core_index": {
+      "files": 2,
+      "rows": 8692
+    },
+    "etf": {
+      "files": 28,
+      "rows": 52251
+    },
+    "index": {
+      "files": 2,
+      "rows": 6654
+    },
+    "moneyflow_cnt_ths": {
+      "files": 500,
+      "rows": 40344
+    },
+    "moneyflow_ind_dc": {
+      "files": 728,
+      "rows": 27281
+    },
+    "moneyflow_ind_ths": {
+      "files": 485,
+      "rows": 35816
+    },
+    "stock": {
+      "files": 5062,
+      "rows": 806435
+    }
+  },
+  "table_rows": {
+    "daily_bars": 865340,
+    "indicator_daily": 8692,
+    "moneyflow_ind_dc": 27281,
+    "moneyflow_ind_ths": 35816,
+    "moneyflow_cnt_ths": 40344
+  },
+  "preserved_dc_duplicate_occurrences": 110,
+  "verification": "All archived bytes, row counts, dates and typed values match; integrity and foreign keys OK",
+  "csv_backups_retained": true
+}

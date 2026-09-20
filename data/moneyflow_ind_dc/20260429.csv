@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260429,有色金属,3.3,30434.35,120.95700224,6.9,109.464896,11.49210624,1,512400,有色ETF
 20260429,电池,4.79,1748.44,74.2658816,4.44,64.01545472,10.25042688,3,516160,新能源ETF
 20260429,小金属,4.61,4053.23,61.6615936,12.65,66.96107264,-5.29947904,4,512400,有色ETF

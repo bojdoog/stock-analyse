@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241204,石油行业,0.63,5595.95,11.00274064,11.03,7.72603936,3.27670128,2,510300,沪深300ETF
 20241204,汽车零部件,-0.01,35180.13,9.17972992,1.7,15.2130816,-6.03335168,3,515030,新能源车ETF
 20241204,煤炭行业,0.74,11290.84,4.6119768,3.95,3.5169584,1.0950184,4,515220,煤炭ETF

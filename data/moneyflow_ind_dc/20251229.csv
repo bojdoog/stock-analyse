@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251229,银行,0.53,4159.09,11.14050816,4.19,8.15462912,2.98587904,,512800,银行ETF
 20251229,银行,0.53,4159.09,11.14050816,4.19,8.15462912,2.98587904,1.0,512800,银行ETF
 20251229,石油行业,2.14,6396.42,8.88459696,10.17,5.64257616,3.2420208,2.0,510300,沪深300ETF

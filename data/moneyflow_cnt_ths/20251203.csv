@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251203,885343.TI,稀土永磁,中国铀业,67.99,-0.65,3192.03,62,280.05,143.0,118.0,25.0,512400,有色ETF
 20251203,886038.TI,超导概念,中孚实业,7.44,0.35,2047.38,26,6.74,46.0,44.0,2.0,561380,电网设备ETF
 20251203,886006.TI,钙钛矿电池,微导纳米,67.99,-1.11,943.87,65,7.41,103.0,102.0,1.0,516290,光伏ETF

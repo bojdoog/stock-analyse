@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250528,商业百货,0.99,17688.42,9.43792496,6.43,9.9876656,-0.54974064,1,510150,消费ETF
 20250528,通信设备,0.3,13675.44,2.45817024,0.61,0.05728704,2.4008832,2,515880,通信ETF
 20250528,水泥建材,-0.29,24465.35,1.55602891,6.46,2.01051003,-0.45448112,8,510300,沪深300ETF

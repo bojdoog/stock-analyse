@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260520,半导体,3.16,3052.84,160.8398848,3.36,157.0318336,3.8080512,1,512480,半导体ETF
 20260520,电池,1.55,1729.37,40.14501888,3.59,16.26389504,23.88112384,4,516160,新能源ETF
 20260520,光伏设备,0.74,1621.74,14.78246656,1.96,6.75346944,8.02899712,10,516290,光伏ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260227,885343.TI,稀土永磁,祥明智能,41.82,3.09,4084.97,63,20.0,391.0,276.0,114.0,512400,有色ETF
 20260227,885728.TI,人工智能,普元信息,35.5,1.03,1540.04,1053,20.01,2150.0,2043.0,107.0,159381,创业板人工智能ETF
 20260227,886021.TI,国企改革,珈伟新能,5.36,0.95,1623.44,2900,19.91,2619.0,2516.0,103.0,510300,沪深300ETF

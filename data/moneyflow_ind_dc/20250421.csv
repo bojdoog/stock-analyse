@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250421,互联网服务,3.57,24966.43,34.43533152,6.59,25.51645536,8.91887616,1,515230,软件ETF
 20250421,软件开发,2.86,1055.64,18.8714696,3.31,13.22140368,5.65006592,2,515230,软件ETF
 20250421,有色金属,2.59,16299.97,14.55657824,5.98,11.18508384,3.3714944,3,512400,有色ETF

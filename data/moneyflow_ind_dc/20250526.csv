@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250526,文化传媒,2.03,9698.15,6.72340592,3.86,8.30474272,-1.5813368,2,512980,传媒ETF
 20250526,食品饮料,1.74,28674.87,5.28938064,3.0,1.11388432,4.17549632,3,510150,消费ETF
 20250526,电网设备,2.08,26619.53,4.656044,1.78,6.43887408,-1.78283008,4,561380,电网设备ETF

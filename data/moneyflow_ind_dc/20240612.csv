@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240612,医疗服务,2.33,854.66,10.36370528,8.3,6.73330752,3.63039776,1,510660,创新药ETF
 20240612,文化传媒,3.99,7550.08,6.338872,3.75,3.53512624,2.80374576,2,512980,传媒ETF
 20240612,石油行业,1.8,4650.44,5.10291632,7.8,4.37939984,0.72351648,3,510300,沪深300ETF

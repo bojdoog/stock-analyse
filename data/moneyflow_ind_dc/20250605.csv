@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250605,互联网服务,2.07,26751.7,23.31855104,3.44,19.85777408,3.46077696,1,515230,软件ETF
 20250605,通信设备,2.04,14300.55,23.06454272,3.86,19.46499328,3.59954944,2,515880,通信ETF
 20250605,半导体,1.96,1411.76,22.27507456,4.4,9.94178304,12.33329152,3,512480,半导体ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240625,家电行业,0.87,14713.97,3.15047232,2.93,0.76695456,2.38351776,2,510150,消费ETF
 20240625,汽车零部件,1.58,25141.86,1.86653824,0.93,2.66746976,-0.80093152,5,515030,新能源车ETF
 20240625,化学制药,0.31,22607.23,0.98713792,0.74,2.78644192,-1.799304,8,159929,医药ETF

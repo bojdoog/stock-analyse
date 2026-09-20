@@ -1,0 +1,624 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "881134.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:44:58.753401+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"881134.TI\", \"con_code\": \"000529.SZ\", \"con_name\": \"广弘控股\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"000639.SZ\", \"con_name\": \"ST西王\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"000716.SZ\", \"con_name\": \"黑芝麻\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"000895.SZ\", \"con_name\": \"双汇发展\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"001215.SZ\", \"con_name\": \"千味央厨\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"001219.SZ\", \"con_name\": \"青岛食品\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"002216.SZ\", \"con_name\": \"三全食品\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"002330.SZ\", \"con_name\": \"得利斯\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"002495.SZ\", \"con_name\": \"佳隆股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"002507.SZ\", \"con_name\": \"涪陵榨菜\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"002515.SZ\", \"con_name\": \"金字火腿\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"002557.SZ\", \"con_name\": \"洽洽食品\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"002582.SZ\", \"con_name\": \"好想你\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"002626.SZ\", \"con_name\": \"金达威\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"002650.SZ\", \"con_name\": \"ST加加\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"002661.SZ\", \"con_name\": \"克明食品\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"002695.SZ\", \"con_name\": \"煌上煌\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"002702.SZ\", \"con_name\": \"海欣食品\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"002719.SZ\", \"con_name\": \"ST麦趣\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"002726.SZ\", \"con_name\": \"ST龙大\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"002820.SZ\", \"con_name\": \"桂发祥\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"002840.SZ\", \"con_name\": \"华统股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"002847.SZ\", \"con_name\": \"盐津铺子\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"002956.SZ\", \"con_name\": \"西麦食品\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"002991.SZ\", \"con_name\": \"甘源食品\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"003000.SZ\", \"con_name\": \"劲仔食品\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"300146.SZ\", \"con_name\": \"汤臣倍健\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"300783.SZ\", \"con_name\": \"三只松鼠\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"300791.SZ\", \"con_name\": \"仙乐健康\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"300908.SZ\", \"con_name\": \"仲景食品\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"300973.SZ\", \"con_name\": \"立高食品\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"301116.SZ\", \"con_name\": \"益客食品\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"600073.SH\", \"con_name\": \"光明肉业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"600186.SH\", \"con_name\": \"莲花控股\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"600298.SH\", \"con_name\": \"安琪酵母\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"600305.SH\", \"con_name\": \"恒顺醋业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"600381.SH\", \"con_name\": \"*ST春天\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"600530.SH\", \"con_name\": \"ST交昂\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"600872.SH\", \"con_name\": \"中炬高新\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"603027.SH\", \"con_name\": \"千禾味业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"603043.SH\", \"con_name\": \"广州酒家\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"603057.SH\", \"con_name\": \"紫燕食品\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"603102.SH\", \"con_name\": \"百合股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"603170.SH\", \"con_name\": \"宝立食品\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"603237.SH\", \"con_name\": \"五芳斋\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"603262.SH\", \"con_name\": \"技源集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"603288.SH\", \"con_name\": \"海天味业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"603317.SH\", \"con_name\": \"天味食品\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"603345.SH\", \"con_name\": \"安井食品\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"603517.SH\", \"con_name\": \"ST绝味\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"603536.SH\", \"con_name\": \"惠发食品\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"603696.SH\", \"con_name\": \"安记食品\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"603697.SH\", \"con_name\": \"有友食品\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"603719.SH\", \"con_name\": \"良品铺子\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"603755.SH\", \"con_name\": \"日辰股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"603777.SH\", \"con_name\": \"来伊份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"603866.SH\", \"con_name\": \"桃李面包\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"603886.SH\", \"con_name\": \"元祖股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"605089.SH\", \"con_name\": \"味知香\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"605338.SH\", \"con_name\": \"巴比食品\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"605339.SH\", \"con_name\": \"南侨食品\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"605567.SH\", \"con_name\": \"春雪食品\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"920273.BJ\", \"con_name\": \"一致魔芋\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"920429.BJ\", \"con_name\": \"康比特\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"920726.BJ\", \"con_name\": \"朱老六\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881134.TI\", \"con_code\": \"920826.BJ\", \"con_name\": \"盖世食品\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "881134.TI",
+      "con_code": "000529.SZ",
+      "con_name": "广弘控股",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "000639.SZ",
+      "con_name": "ST西王",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "000716.SZ",
+      "con_name": "黑芝麻",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "000895.SZ",
+      "con_name": "双汇发展",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "001215.SZ",
+      "con_name": "千味央厨",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "001219.SZ",
+      "con_name": "青岛食品",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "002216.SZ",
+      "con_name": "三全食品",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "002330.SZ",
+      "con_name": "得利斯",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "002495.SZ",
+      "con_name": "佳隆股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "002507.SZ",
+      "con_name": "涪陵榨菜",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "002515.SZ",
+      "con_name": "金字火腿",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "002557.SZ",
+      "con_name": "洽洽食品",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "002582.SZ",
+      "con_name": "好想你",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "002626.SZ",
+      "con_name": "金达威",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "002650.SZ",
+      "con_name": "ST加加",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "002661.SZ",
+      "con_name": "克明食品",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "002695.SZ",
+      "con_name": "煌上煌",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "002702.SZ",
+      "con_name": "海欣食品",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "002719.SZ",
+      "con_name": "ST麦趣",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "002726.SZ",
+      "con_name": "ST龙大",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "002820.SZ",
+      "con_name": "桂发祥",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "002840.SZ",
+      "con_name": "华统股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "002847.SZ",
+      "con_name": "盐津铺子",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "002956.SZ",
+      "con_name": "西麦食品",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "002991.SZ",
+      "con_name": "甘源食品",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "003000.SZ",
+      "con_name": "劲仔食品",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "300146.SZ",
+      "con_name": "汤臣倍健",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "300783.SZ",
+      "con_name": "三只松鼠",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "300791.SZ",
+      "con_name": "仙乐健康",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "300908.SZ",
+      "con_name": "仲景食品",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "300973.SZ",
+      "con_name": "立高食品",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "301116.SZ",
+      "con_name": "益客食品",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "600073.SH",
+      "con_name": "光明肉业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "600186.SH",
+      "con_name": "莲花控股",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "600298.SH",
+      "con_name": "安琪酵母",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "600305.SH",
+      "con_name": "恒顺醋业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "600381.SH",
+      "con_name": "*ST春天",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "600530.SH",
+      "con_name": "ST交昂",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "600872.SH",
+      "con_name": "中炬高新",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "603027.SH",
+      "con_name": "千禾味业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "603043.SH",
+      "con_name": "广州酒家",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "603057.SH",
+      "con_name": "紫燕食品",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "603102.SH",
+      "con_name": "百合股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "603170.SH",
+      "con_name": "宝立食品",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "603237.SH",
+      "con_name": "五芳斋",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "603262.SH",
+      "con_name": "技源集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "603288.SH",
+      "con_name": "海天味业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "603317.SH",
+      "con_name": "天味食品",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "603345.SH",
+      "con_name": "安井食品",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "603517.SH",
+      "con_name": "ST绝味",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "603536.SH",
+      "con_name": "惠发食品",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "603696.SH",
+      "con_name": "安记食品",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "603697.SH",
+      "con_name": "有友食品",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "603719.SH",
+      "con_name": "良品铺子",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "603755.SH",
+      "con_name": "日辰股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "603777.SH",
+      "con_name": "来伊份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "603866.SH",
+      "con_name": "桃李面包",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "603886.SH",
+      "con_name": "元祖股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "605089.SH",
+      "con_name": "味知香",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "605338.SH",
+      "con_name": "巴比食品",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "605339.SH",
+      "con_name": "南侨食品",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "605567.SH",
+      "con_name": "春雪食品",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "920273.BJ",
+      "con_name": "一致魔芋",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "920429.BJ",
+      "con_name": "康比特",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "920726.BJ",
+      "con_name": "朱老六",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881134.TI",
+      "con_code": "920826.BJ",
+      "con_name": "盖世食品",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

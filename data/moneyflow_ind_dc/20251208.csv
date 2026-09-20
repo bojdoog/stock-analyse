@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251208,半导体,2.49,1949.31,43.15403776,2.67,39.59778816,3.5562496,1.0,512480,半导体ETF
 20251208,证券,1.26,156830.47,13.28053248,2.33,23.7751296,-10.49459712,3.0,512880,证券ETF
 20251208,电池,1.99,1465.99,8.94830848,1.93,2.86428928,6.0840192,5.0,516160,新能源ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231025,汽车整车,3.6,1323.96,17.59072,6.76,14.36841984,3.22230016,1,515030,新能源车ETF
 20231025,酿酒行业,2.19,56868.19,12.73550096,5.97,13.18564112,-0.45014016,2,512690,白酒ETF
 20231025,汽车零部件,2.65,29662.82,8.56160368,2.48,8.39638896,0.16521472,3,515030,新能源车ETF

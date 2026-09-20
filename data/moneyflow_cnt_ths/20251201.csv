@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251201,886069.TI,人形机器人,广和通,32.38,1.46,2392.47,376,20.02,845.0,732.0,113.0,562500,机器人ETF
 20251201,885517.TI,机器人概念,广和通,32.38,1.1,3916.14,1117,20.02,1594.0,1485.0,108.0,562500,机器人ETF
 20251201,885709.TI,虚拟现实,贝隆精密,55.63,1.48,1016.95,284,20.0,729.0,637.0,91.0,159869,游戏ETF

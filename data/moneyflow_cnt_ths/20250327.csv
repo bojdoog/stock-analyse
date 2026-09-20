@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250327,886015.TI,创新药,迈威生物,19.29,2.31,1031.43,183,11.05,178.0,125.0,53.0,510660,创新药ETF
 20250327,885864.TI,光刻胶,华融化学,10.91,4.67,2921.67,65,20.02,117.0,92.0,24.0,588710,科创半导体设备ETF
 20250327,886051.TI,减肥药,德源药业,44.25,2.43,1033.67,48,10.13,64.0,41.0,22.0,510660,创新药ETF

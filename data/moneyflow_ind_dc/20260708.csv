@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260708,通信设备,-0.08,23699.82,15.7735424,0.9,13.83554304,1.93799936,8,515880,通信ETF
 20260708,软件开发,1.61,1005.38,14.95789568,3.06,8.99932672,5.95856896,11,515230,软件ETF
 20260708,贵金属,1.13,2019.33,4.36148496,2.83,3.03944656,1.3220384,20,512400,有色ETF

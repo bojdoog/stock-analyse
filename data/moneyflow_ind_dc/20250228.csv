@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250228,酿酒行业,0.08,49553.72,8.06668624,2.87,6.64501072,1.42167552,1,512690,白酒ETF
 20250228,小金属,-0.91,1957.37,7.29572,3.37,11.27582368,-3.98010368,2,512400,有色ETF
 20250228,工程建设,-1.16,21930.4,4.1054264,2.53,6.3625432,-2.2571168,3,510300,沪深300ETF

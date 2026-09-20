@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240510,电力行业,2.56,15878.53,12.29765152,4.88,10.01034272,2.2873088,2,561380,电网设备ETF
 20240510,银行,0.99,3184.65,8.56592896,3.89,10.98057472,-2.41464576,3,512800,银行ETF
 20240510,贵金属,2.33,1173.31,8.28549696,6.48,8.22859024,0.05690672,4,512400,有色ETF

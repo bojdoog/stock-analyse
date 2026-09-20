@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250821,软件开发,0.78,1362.61,24.0015232,1.55,39.11450112,-15.11297792,1,515230,软件ETF
 20250821,电力行业,1.09,17669.67,6.9677496,2.26,6.73159728,0.23615232,3,561380,电网设备ETF
 20250821,工程建设,0.42,26522.76,0.93192432,0.42,0.62128368,0.31064064,10,510300,沪深300ETF

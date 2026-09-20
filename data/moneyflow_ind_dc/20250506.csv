@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250506,软件开发,3.67,1088.99,31.81155584,3.93,17.82966784,13.981888,1,515230,软件ETF
 20250506,互联网服务,3.6,26226.46,28.84769536,3.84,24.31792384,4.52977152,2,515230,软件ETF
 20250506,小金属,5.43,2043.14,12.80294144,5.76,13.9135104,-1.11056896,5,512400,有色ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250225,汽车整车,1.6,1666.64,8.35523584,3.05,7.96262656,0.39260928,1,515030,新能源车ETF
 20250225,煤炭行业,-0.47,9955.4,1.72303024,2.05,-0.01540928,1.73843952,6,515220,煤炭ETF
 20250225,光伏设备,0.7,1105.05,1.22971744,0.43,2.74045024,-1.5107328,9,516290,光伏ETF

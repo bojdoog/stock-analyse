@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250619,881121.TI,半导体,炬芯科技,8486.6,-0.35,163,13.8,57.9,181.0,177.0,3.0,512480,半导体ETF
 20250619,881180.TI,石油加工贸易,宝莫股份,3132.31,2.09,28,10.11,5.23,34.0,30.0,3.0,510300,沪深300ETF
 20250619,881277.TI,电机,江苏雷利,2938.17,-0.64,23,11.76,40.2,24.0,21.0,2.0,561380,电网设备ETF

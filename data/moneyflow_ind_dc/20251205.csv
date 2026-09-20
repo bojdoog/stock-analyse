@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251205,证券,2.27,154883.6,26.53084928,7.52,16.46962176,10.06122752,1.0,512880,证券ETF
 20251205,软件开发,2.18,1249.65,20.16534272,3.26,17.28845056,2.87689216,3.0,515230,软件ETF
 20251205,小金属,3.36,3031.0,17.89274624,4.89,11.87982336,6.01292288,4.0,512400,有色ETF

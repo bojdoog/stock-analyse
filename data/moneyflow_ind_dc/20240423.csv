@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240423,酿酒行业,1.11,49130.89,7.42131776,4.79,3.2653432,4.15597456,1,512690,白酒ETF
 20240423,文化传媒,1.74,7828.49,2.59713712,1.39,0.88212912,1.715008,2,512980,传媒ETF
 20240423,化学制药,1.53,23949.1,1.67159616,0.99,1.0686848,0.60291136,3,159929,医药ETF

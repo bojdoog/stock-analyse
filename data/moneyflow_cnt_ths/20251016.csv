@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251016,886042.TI,存储芯片,云汉芯城,152.68,0.38,1641.01,123,20.0,551.0,536.0,15.0,512480,半导体ETF
 20251016,885878.TI,HJT电池,国晟科技,4.33,-1.0,2682.99,61,9.9,114.0,111.0,3.0,516290,光伏ETF
 20251016,886006.TI,钙钛矿电池,国晟科技,4.33,-1.28,934.68,59,9.9,134.0,132.0,1.0,516290,光伏ETF

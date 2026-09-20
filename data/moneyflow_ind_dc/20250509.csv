@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250509,汽车整车,-1.12,1616.08,2.31571792,1.79,0.07401888,2.24169904,1,515030,新能源车ETF
 20250509,能源金属,-0.24,443.35,1.36586658,3.82,0.84525474,0.52061184,3,512400,有色ETF
 20250509,煤炭行业,-0.54,9889.22,0.458328,1.06,0.32116672,0.13716128,6,515220,煤炭ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251112,银行,0.28,4299.77,19.91715328,5.78,12.72837632,7.18877696,,512800,银行ETF
 20251112,银行,0.28,4299.77,19.91715328,5.78,12.72837632,7.18877696,1.0,512800,银行ETF
 20251112,生物制品,0.84,1147.83,9.74661312,4.47,5.25393088,4.49268224,2.0,510660,创新药ETF

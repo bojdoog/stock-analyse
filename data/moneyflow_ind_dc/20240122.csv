@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240122,公用事业,-5.33,6703.78,-0.31811239,-1.94,-0.25977831,-0.05833408,1,561380,电网设备ETF
 20240122,贵金属,-4.06,788.96,-0.42657648,-1.03,-0.55714576,0.13056928,4,512400,有色ETF
 20240122,燃气,-5.15,1263.42,-0.86842031,-4.58,-0.25927855,-0.60914176,8,561380,电网设备ETF

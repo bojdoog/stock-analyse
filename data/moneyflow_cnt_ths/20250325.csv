@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250325,885914.TI,煤炭概念,华阳股份,7.44,1.53,1880.12,81,10.06,111.0,95.0,16.0,515220,煤炭ETF
 20250325,885936.TI,绿色电力,江苏新能,13.28,0.31,950.99,224,10.03,208.0,198.0,10.0,516160,新能源ETF
 20250325,885425.TI,特高压,太阳电缆,7.66,0.38,3274.98,105,10.06,100.0,93.0,6.0,561380,电网设备ETF

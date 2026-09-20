@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250627,通信设备,1.36,15404.38,12.79817472,1.56,1.37612288,11.42205184,2,515880,通信ETF
 20250627,证券,0.1,145120.46,9.03079168,1.44,5.5922688,3.43852288,4,512880,证券ETF
 20250627,小金属,1.9,2294.69,5.46599792,2.11,2.00431728,3.46168064,5,512400,有色ETF

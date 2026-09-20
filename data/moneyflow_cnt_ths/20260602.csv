@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260602,885556.TI,5G,达利凯普,37.3,1.01,6921.7,454,20.01,2918.0,2527.0,391.0,515880,通信ETF
 20260602,885431.TI,新能源汽车,胜业电气,33.28,0.23,5030.88,1040,30.0,2881.0,2667.0,214.0,515030,新能源车ETF
 20260602,886044.TI,液冷服务器,阿莱德,44.88,1.2,2382.26,210,20.0,1423.0,1232.0,191.0,515230,软件ETF

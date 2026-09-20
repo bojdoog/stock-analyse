@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241022,885936.TI,绿色电力,长药控股,5.99,2.13,861.14,189,2.13,197.0,150.0,46.0,516160,新能源ETF
 20241022,886006.TI,钙钛矿电池,天合光能,25.3,2.33,711.71,47,2.33,131.0,108.0,23.0,516290,光伏ETF
 20241022,885951.TI,预制菜,东方海洋,2.16,2.64,890.91,105,2.64,79.0,64.0,15.0,510150,消费ETF

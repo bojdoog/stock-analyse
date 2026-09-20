@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240528,电力行业,2.4,16691.09,12.68934048,3.65,9.87976352,2.80957696,1,561380,电网设备ETF
 20240528,半导体,0.85,948.26,2.860512,0.6,1.74002048,1.12049152,2,512480,半导体ETF
 20240528,有色金属,0.95,14588.11,1.54769232,0.71,1.58810192,-0.0404096,5,512400,有色ETF

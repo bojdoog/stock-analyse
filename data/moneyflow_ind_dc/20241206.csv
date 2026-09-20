@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241206,文化传媒,4.35,10789.39,16.10682368,2.23,22.7993472,-6.69252352,1,512980,传媒ETF
 20241206,酿酒行业,0.59,54597.87,11.203236,6.44,4.53604368,6.66719232,2,512690,白酒ETF
 20241206,医疗服务,2.92,1070.44,9.95070768,5.16,8.0246072,1.92610048,3,510660,创新药ETF

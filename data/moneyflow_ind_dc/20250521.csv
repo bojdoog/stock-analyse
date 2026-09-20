@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250521,电池,2.14,985.28,30.1900416,6.88,28.54924288,1.64079872,1,516160,新能源ETF
 20250521,汽车整车,1.06,1673.94,17.460352,6.62,21.59749632,-4.13714432,2,515030,新能源车ETF
 20250521,化学制药,0.89,30894.79,7.21560352,2.07,6.72658464,0.48901888,3,159929,医药ETF

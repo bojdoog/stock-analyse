@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250822,885728.TI,人工智能,科德教育,21.59,1.45,1404.32,903,20.01,2734.0,2286.0,447.0,159381,创业板人工智能ETF
 20250822,885806.TI,华为概念,三川智慧,8.44,1.52,3334.65,988,20.06,2748.0,2390.0,357.0,515230,软件ETF
 20250822,885517.TI,机器人概念,成都华微,47.04,1.12,3961.89,985,20.0,2257.0,2023.0,234.0,562500,机器人ETF

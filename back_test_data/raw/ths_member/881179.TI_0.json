@@ -1,0 +1,408 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "881179.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:45:14.217497+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"881179.TI\", \"con_code\": \"001396.SZ\", \"con_name\": \"誉帆科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"002057.SZ\", \"con_name\": \"中钢天源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"002858.SZ\", \"con_name\": \"力盛体育\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"002967.SZ\", \"con_name\": \"广电计量\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"003008.SZ\", \"con_name\": \"开普检测\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"300012.SZ\", \"con_name\": \"华测检测\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"300215.SZ\", \"con_name\": \"电科院\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"300416.SZ\", \"con_name\": \"苏试试验\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"300662.SZ\", \"con_name\": \"科锐国际\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"300668.SZ\", \"con_name\": \"杰恩股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"300795.SZ\", \"con_name\": \"米奥会展\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"300797.SZ\", \"con_name\": \"钢研纳克\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"300860.SZ\", \"con_name\": \"锋尚文化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"300887.SZ\", \"con_name\": \"谱尼测试\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"300938.SZ\", \"con_name\": \"信测标准\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"300962.SZ\", \"con_name\": \"中金辐照\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"301115.SZ\", \"con_name\": \"联检科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"301169.SZ\", \"con_name\": \"零点有数\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"301228.SZ\", \"con_name\": \"实朴检测\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"301289.SZ\", \"con_name\": \"国缆检测\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"301306.SZ\", \"con_name\": \"西测测试\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"301449.SZ\", \"con_name\": \"天溯计量\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"301508.SZ\", \"con_name\": \"中机认检\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"301632.SZ\", \"con_name\": \"广东建科\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"600158.SH\", \"con_name\": \"中体产业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"600654.SH\", \"con_name\": \"中安科\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"600662.SH\", \"con_name\": \"外服控股\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"600676.SH\", \"con_name\": \"久事动娱\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"600826.SH\", \"con_name\": \"兰生股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"600861.SH\", \"con_name\": \"北京人力\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"601588.SH\", \"con_name\": \"北辰实业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"601965.SH\", \"con_name\": \"中国汽研\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"603060.SH\", \"con_name\": \"国检集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"603183.SH\", \"con_name\": \"建研院\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"603373.SH\", \"con_name\": \"安邦护卫\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"688334.SH\", \"con_name\": \"西高院\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"688757.SH\", \"con_name\": \"胜科纳米\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"920039.BJ\", \"con_name\": \"国义招标\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"920122.BJ\", \"con_name\": \"中纺标\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"920160.BJ\", \"con_name\": \"北矿检测\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"920208.BJ\", \"con_name\": \"青矩技术\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881179.TI\", \"con_code\": \"920753.BJ\", \"con_name\": \"天纺标\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "881179.TI",
+      "con_code": "001396.SZ",
+      "con_name": "誉帆科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "002057.SZ",
+      "con_name": "中钢天源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "002858.SZ",
+      "con_name": "力盛体育",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "002967.SZ",
+      "con_name": "广电计量",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "003008.SZ",
+      "con_name": "开普检测",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "300012.SZ",
+      "con_name": "华测检测",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "300215.SZ",
+      "con_name": "电科院",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "300416.SZ",
+      "con_name": "苏试试验",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "300662.SZ",
+      "con_name": "科锐国际",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "300668.SZ",
+      "con_name": "杰恩股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "300795.SZ",
+      "con_name": "米奥会展",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "300797.SZ",
+      "con_name": "钢研纳克",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "300860.SZ",
+      "con_name": "锋尚文化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "300887.SZ",
+      "con_name": "谱尼测试",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "300938.SZ",
+      "con_name": "信测标准",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "300962.SZ",
+      "con_name": "中金辐照",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "301115.SZ",
+      "con_name": "联检科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "301169.SZ",
+      "con_name": "零点有数",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "301228.SZ",
+      "con_name": "实朴检测",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "301289.SZ",
+      "con_name": "国缆检测",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "301306.SZ",
+      "con_name": "西测测试",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "301449.SZ",
+      "con_name": "天溯计量",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "301508.SZ",
+      "con_name": "中机认检",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "301632.SZ",
+      "con_name": "广东建科",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "600158.SH",
+      "con_name": "中体产业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "600654.SH",
+      "con_name": "中安科",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "600662.SH",
+      "con_name": "外服控股",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "600676.SH",
+      "con_name": "久事动娱",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "600826.SH",
+      "con_name": "兰生股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "600861.SH",
+      "con_name": "北京人力",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "601588.SH",
+      "con_name": "北辰实业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "601965.SH",
+      "con_name": "中国汽研",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "603060.SH",
+      "con_name": "国检集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "603183.SH",
+      "con_name": "建研院",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "603373.SH",
+      "con_name": "安邦护卫",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "688334.SH",
+      "con_name": "西高院",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "688757.SH",
+      "con_name": "胜科纳米",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "920039.BJ",
+      "con_name": "国义招标",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "920122.BJ",
+      "con_name": "中纺标",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "920160.BJ",
+      "con_name": "北矿检测",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "920208.BJ",
+      "con_name": "青矩技术",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881179.TI",
+      "con_code": "920753.BJ",
+      "con_name": "天纺标",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

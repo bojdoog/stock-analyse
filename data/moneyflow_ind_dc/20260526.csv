@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260526,有色金属,0.83,31021.57,52.27113728,2.74,38.17015296,14.10098432,2,512400,有色ETF
 20260526,贵金属,3.85,2563.94,11.09547184,5.41,7.36937904,3.7260928,7,512400,有色ETF
 20260526,锂电池,0.09,21202.32,5.61234688,1.17,5.62068224,-0.00833536,11,516160,新能源ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250403,商业百货,1.65,16399.16,12.90373824,10.51,13.20650592,-0.30276768,1,510150,消费ETF
 20250403,农牧饲渔,2.39,13386.23,7.87527264,4.7,4.817532,3.05774064,2,510150,消费ETF
 20250403,电力行业,1.83,16424.52,5.0971752,1.62,7.1431528,-2.0459776,4,561380,电网设备ETF

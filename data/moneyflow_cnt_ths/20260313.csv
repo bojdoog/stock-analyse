@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260313,885928.TI,钠离子电池,中科电气,22.89,-0.12,1439.77,135,13.32,449.0,426.0,22.0,516160,新能源ETF
 20260313,886032.TI,固态电池,中科电气,22.89,-0.53,1502.88,286,13.32,759.0,742.0,16.0,516160,新能源ETF
 20260313,885864.TI,光刻胶,华特气体,78.8,-0.83,4436.35,73,7.49,109.0,106.0,2.0,588710,科创半导体设备ETF

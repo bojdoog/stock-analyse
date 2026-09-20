@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251111,银行,0.27,4287.56,8.27853056,3.55,5.03596288,3.24256768,,512800,银行ETF
 20251111,银行,0.27,4287.56,8.27853056,3.55,5.03596288,3.24256768,1.0,512800,银行ETF
 20251111,食品饮料,1.82,31350.98,4.0565608,1.46,4.35894288,-0.30238208,3.0,510150,消费ETF

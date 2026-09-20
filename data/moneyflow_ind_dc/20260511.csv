@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260511,半导体,5.01,2785.76,91.23258368,2.03,78.11072,13.12186368,2,512480,半导体ETF
 20260511,小金属,1.84,4413.17,15.27524864,2.4,6.60284416,8.67240448,14,512400,有色ETF
 20260511,光伏设备,1.75,1640.7,7.75412224,1.11,7.57320448,0.18091776,29,516290,光伏ETF

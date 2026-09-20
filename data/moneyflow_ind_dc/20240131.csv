@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240131,电池,-3.79,749.21,7.01380736,3.69,5.9536832,1.06012416,1,516160,新能源ETF
 20240131,文化传媒,-1.99,7857.29,0.86077584,0.35,2.49205136,-1.63127552,2,512980,传媒ETF
 20240131,煤炭行业,-1.36,10485.44,0.11673216,0.12,-0.67357696,0.79030912,4,515220,煤炭ETF

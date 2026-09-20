@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240802,化学制药,1.63,23727.62,4.12092656,1.95,4.75692016,-0.6359936,1,159929,医药ETF
 20240802,生物制品,1.52,703.88,2.20530688,2.7,1.25545216,0.94985472,3,510660,创新药ETF
 20240802,农牧饲渔,0.51,10309.85,1.81561504,2.16,2.13735568,-0.32174064,4,510150,消费ETF

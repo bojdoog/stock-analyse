@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250123,银行,2.43,3713.53,13.93398528,4.32,15.4327936,-1.49880832,1,512800,银行ETF
 20250123,电池,-0.59,866.78,2.47426656,1.16,3.17545312,-0.70118656,7,516160,新能源ETF
 20250123,食品饮料,-0.34,24514.45,2.41575488,1.46,4.65578,-2.24002512,8,510150,消费ETF

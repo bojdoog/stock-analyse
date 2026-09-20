@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241101,小金属,8.15,1893.97,42.3397504,11.69,44.96761856,-2.62786816,1,512400,有色ETF
 20241101,有色金属,1.04,15719.02,18.82851584,4.74,11.00290304,7.8256128,2,512400,有色ETF
 20241101,能源金属,3.62,488.21,16.92415632,8.89,10.8977704,6.02638592,3,512400,有色ETF

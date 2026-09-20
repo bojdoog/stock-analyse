@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240222,互联网服务,4.84,16416.58,7.62151232,1.86,7.81246272,-0.1909504,2,515230,软件ETF
 20240222,煤炭行业,5.19,11375.11,6.33315696,3.89,5.5664296,0.76672736,3,515220,煤炭ETF
 20240222,半导体,2.53,948.88,5.79891008,1.54,4.56153664,1.23737344,4,512480,半导体ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250918,886042.TI,存储芯片,汇成股份,15.48,0.18,1554.0,113,14.16,813.0,773.0,39.0,512480,半导体ETF
 20250918,886044.TI,液冷服务器,利和兴,29.23,0.6,1889.5,149,19.99,1172.0,1165.0,7.0,515230,软件ETF
 20250918,885864.TI,光刻胶,芯碁微装,156.0,-0.44,3652.91,73,7.59,167.0,163.0,3.0,588710,科创半导体设备ETF

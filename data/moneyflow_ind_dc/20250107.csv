@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250107,半导体,4.12,1284.78,38.06294016,4.86,29.15614464,8.90679552,1,512480,半导体ETF
 20250107,互联网服务,3.62,21156.94,12.29846528,2.29,11.74203904,0.55642624,3,515230,软件ETF
 20250107,通信设备,3.93,12214.71,11.4805888,2.02,12.04921344,-0.56862464,5,515880,通信ETF

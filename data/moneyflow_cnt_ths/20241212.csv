@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241212,885866.TI,数字货币,高伟达,18.82,2.08,2124.76,82,2.08,233.0,221.0,12.0,515230,软件ETF
 20241212,886015.TI,创新药,亚泰集团,2.61,1.3,1075.44,174,1.3,141.0,134.0,7.0,510660,创新药ETF
 20241212,885951.TI,预制菜,中央商场,5.14,3.65,1203.26,105,3.65,175.0,169.0,6.0,510150,消费ETF

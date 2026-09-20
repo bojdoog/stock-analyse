@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241121,软件开发,1.24,1087.29,15.53903616,1.25,26.44336128,-10.90432512,1,515230,软件ETF
 20241121,家电行业,0.83,19805.62,10.23791152,3.09,19.76623152,-9.52832,2,510150,消费ETF
 20241121,贵金属,2.42,1111.82,5.92320992,6.4,3.881204,2.04200592,3,512400,有色ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241106,游戏,3.81,1099.34,12.69723312,5.21,10.55129008,2.14594304,1,159869,游戏ETF
 20241106,农牧饲渔,3.42,13457.47,12.07703664,4.02,7.649212,4.42782464,2,510150,消费ETF
 20241106,工程建设,1.54,22665.3,6.16331008,1.99,6.89928448,-0.7359744,3,510300,沪深300ETF

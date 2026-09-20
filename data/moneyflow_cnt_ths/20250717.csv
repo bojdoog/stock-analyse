@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250717,885806.TI,华为概念,金现代,11.52,1.25,2925.82,983,20.0,1608.0,1406.0,201.0,515230,软件ETF
 20250717,885517.TI,机器人概念,满坤科技,39.88,1.25,3474.78,948,20.01,1319.0,1150.0,168.0,562500,机器人ETF
 20250717,885556.TI,5G,满坤科技,39.88,1.88,4545.97,420,20.01,937.0,775.0,162.0,515880,通信ETF

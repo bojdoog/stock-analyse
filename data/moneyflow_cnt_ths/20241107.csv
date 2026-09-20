@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241107,886021.TI,国企改革,碧水源,6.36,2.77,1254.0,2800,2.77,3190.0,2942.0,248.0,510300,沪深300ETF
 20241107,885456.TI,互联网金融,华信永道,89.05,4.58,5599.48,181,4.58,1035.0,902.0,133.0,512880,证券ETF
 20241107,886041.TI,数据要素,国子软件,42.61,3.34,1078.89,314,3.34,922.0,803.0,118.0,515230,软件ETF

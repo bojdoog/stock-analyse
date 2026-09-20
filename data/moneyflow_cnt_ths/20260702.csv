@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260702,885343.TI,稀土永磁,争光股份,58.91,1.01,3958.46,65,20.0,308.0,281.0,27.0,512400,有色ETF
 20260702,885530.TI,黄金概念,鹏欣资源,6.44,0.88,3587.68,81,10.09,303.0,295.0,8.0,512400,有色ETF
 20260702,885876.TI,网红经济,水羊股份,22.27,0.83,1328.34,118,19.99,122.0,116.0,5.0,512980,传媒ETF

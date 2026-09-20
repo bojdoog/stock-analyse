@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260325,通信设备,3.71,21972.93,71.25960704,5.02,56.00703232,15.25257472,3,515880,通信ETF
 20260325,有色金属,2.5,27153.94,70.29372672,4.45,57.66857472,12.625152,4,512400,有色ETF
 20260325,半导体,2.16,2116.51,41.64002304,2.55,26.08210176,15.55792128,8,512480,半导体ETF

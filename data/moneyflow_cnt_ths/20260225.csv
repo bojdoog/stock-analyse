@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260225,885700.TI,军工,电科蓝天,61.5,1.15,2710.7,596,11.41,1352.0,1238.0,113.0,512660,军工ETF
 20260225,885343.TI,稀土永磁,包钢股份,2.93,4.04,3974.36,63,10.15,379.0,274.0,105.0,512400,有色ETF
 20260225,885431.TI,新能源汽车,明阳电路,29.3,0.97,5117.53,1014,17.06,2066.0,1963.0,103.0,515030,新能源车ETF

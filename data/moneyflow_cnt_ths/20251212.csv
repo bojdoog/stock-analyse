@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251212,885806.TI,华为概念,侨源股份,44.92,0.5,3295.85,990,16.89,1824.0,1668.0,155.0,515230,软件ETF
 20251212,885517.TI,机器人概念,中能电气,10.78,0.59,3892.91,1133,20.05,1864.0,1709.0,155.0,562500,机器人ETF
 20251212,885641.TI,风电,通光线缆,14.41,1.54,1247.42,402,19.98,756.0,646.0,110.0,516160,新能源ETF

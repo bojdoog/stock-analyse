@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240701,通信设备,-0.1,9137.52,10.44544784,3.97,4.42204176,6.02340608,1,515880,通信ETF
 20240701,贵金属,1.47,975.51,3.50845184,4.93,1.27858592,2.22986592,3,512400,有色ETF
 20240701,汽车整车,1.67,1232.98,3.25497952,1.83,2.43158624,0.82339328,4,515030,新能源车ETF

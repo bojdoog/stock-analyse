@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241209,885927.TI,CRO概念,睿智医药,8.5,1.86,723.04,57,1.86,86.0,83.0,2.0,510660,创新药ETF
 20241209,885530.TI,黄金概念,晓程科技,17.7,-0.15,2187.42,72,-0.15,86.0,86.0,0.0,512400,有色ETF
 20241209,885780.TI,啤酒概念,品渥食品,41.09,-0.84,1479.26,18,-0.84,6.0,8.0,-2.0,512690,白酒ETF

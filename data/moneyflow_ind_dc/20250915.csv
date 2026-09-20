@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250915,汽车零部件,1.19,50617.86,18.65287168,2.04,27.03452672,-8.38165504,1.0,515030,新能源车ETF
 20250915,游戏,3.49,1688.6,18.19116912,7.07,15.241212,2.94995712,2.0,159869,游戏ETF
 20250915,汽车整车,1.25,1850.72,17.35811584,4.95,17.00435456,0.35376128,3.0,515030,新能源车ETF

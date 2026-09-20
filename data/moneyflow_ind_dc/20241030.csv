@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241030,汽车整车,1.52,1551.44,6.33669632,1.9,8.67296256,-2.33626624,4,515030,新能源车ETF
 20241030,软件开发,0.52,1007.97,5.18031616,0.36,25.19566336,-20.0153472,6,515230,软件ETF
 20241030,汽车零部件,0.86,31574.8,0.9656576,0.21,8.28353024,-7.31787264,9,515030,新能源车ETF

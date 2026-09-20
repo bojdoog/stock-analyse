@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250324,有色金属,0.57,17636.15,12.15953408,3.22,8.94735616,3.21217792,1,512400,有色ETF
 20250324,旅游酒店,2.85,15566.85,4.88219424,3.36,4.25616928,0.62602496,3,510150,消费ETF
 20250324,银行,0.83,3803.07,3.99081472,1.73,3.1307136,0.86010112,4,512800,银行ETF

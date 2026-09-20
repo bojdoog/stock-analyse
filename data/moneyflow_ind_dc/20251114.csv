@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251114,化学制药,1.19,41051.48,6.65024,1.28,6.06176512,0.58847488,1.0,159929,医药ETF
 20251114,中药,1.14,1581.21,5.94551184,2.78,10.62684304,-4.6813312,2.0,159929,医药ETF
 20251114,燃气,3.45,2018.67,5.08598096,4.6,4.75776656,0.3282144,3.0,561380,电网设备ETF

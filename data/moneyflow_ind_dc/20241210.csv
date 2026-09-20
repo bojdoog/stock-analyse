@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241210,食品饮料,3.65,27494.44,8.14228736,2.0,15.1910528,-7.04876544,1,510150,消费ETF
 20241210,商业百货,2.54,16966.41,8.04568736,3.48,14.1865232,-6.14083584,2,510150,消费ETF
 20241210,酿酒行业,1.03,54771.35,7.87655168,1.97,10.19442432,-2.31787264,3,512690,白酒ETF

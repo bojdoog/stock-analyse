@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240830,半导体,3.17,897.77,20.9439008,5.18,9.89223744,11.05166336,1,512480,半导体ETF
 20240830,汽车整车,2.83,1250.24,15.955076,7.45,15.6296488,0.3254272,2,515030,新能源车ETF
 20240830,酿酒行业,2.28,42622.83,14.92440624,7.26,8.42086192,6.50354432,3,512690,白酒ETF

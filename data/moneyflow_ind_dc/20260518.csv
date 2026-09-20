@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260518,汽车零部件,-0.43,53131.84,11.26065152,1.19,1.24063232,10.0200192,11,515030,新能源车ETF
 20260518,机器人,0.88,10779.74,1.7385624,1.0,1.66712816,0.07143424,5,562500,机器人ETF
 20260518,风电设备,1.05,1771.9,0.4461536,0.23,0.17016512,0.27598848,43,516160,新能源ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241104,汽车整车,4.13,1585.73,37.44250368,9.3,34.24704256,3.19546112,1,515030,新能源车ETF
 20241104,互联网服务,2.31,20659.59,22.94161664,2.93,26.16498688,-3.22337024,2,515230,软件ETF
 20241104,证券,3.3,149932.65,15.85222144,2.28,4.51267584,11.3395456,5,512880,证券ETF

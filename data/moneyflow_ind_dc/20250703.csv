@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250703,电池,1.9,1112.07,22.31053584,5.32,12.5671016,9.74343424,3,516160,新能源ETF
 20250703,通信设备,1.19,15502.66,16.47387136,2.76,13.79321344,2.68065792,4,515880,通信ETF
 20250703,化学制药,2.47,34843.92,9.65677856,2.17,8.6095056,1.04727296,5,159929,医药ETF

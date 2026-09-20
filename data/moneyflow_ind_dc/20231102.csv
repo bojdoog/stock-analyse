@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231102,文化传媒,2.42,8504.05,21.4873096,6.84,16.60518224,4.88212736,1,512980,传媒ETF
 20231102,游戏,3.16,1089.48,10.277544,5.18,2.67510688,7.60243712,2,159869,游戏ETF
 20231102,医疗服务,-0.84,1213.48,1.02827072,0.98,1.00046624,0.02780448,3,510660,创新药ETF

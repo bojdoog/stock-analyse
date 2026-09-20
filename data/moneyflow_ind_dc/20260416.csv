@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260416,通信设备,2.82,24304.04,60.51400704,3.72,67.0817792,-6.56777216,3,515880,通信ETF
 20260416,有色金属,2.51,29988.01,59.96985856,3.78,50.52768256,9.442176,4,512400,有色ETF
 20260416,能源金属,5.22,1144.59,24.13990144,6.5,18.21752064,5.9223808,10,512400,有色ETF

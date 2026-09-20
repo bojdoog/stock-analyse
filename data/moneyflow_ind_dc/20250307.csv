@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250307,汽车零部件,1.49,41145.64,13.91958528,1.62,19.98497024,-6.06538496,1,515030,新能源车ETF
 20250307,酿酒行业,0.76,49698.64,13.2401008,6.29,8.81884256,4.42125824,2,512690,白酒ETF
 20250307,有色金属,2.17,17304.25,8.798732,2.75,9.5565944,-0.7578624,3,512400,有色ETF

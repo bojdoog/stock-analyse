@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240808,酿酒行业,1.74,45364.01,7.11437888,4.52,5.7623424,1.35203648,1,512690,白酒ETF
 20240808,化学制药,2.19,24375.26,4.78248912,2.07,8.03188432,-3.2493952,3,159929,医药ETF
 20240808,农牧饲渔,3.06,10540.51,4.13451744,4.8,1.9845112,2.15000624,4,510150,消费ETF

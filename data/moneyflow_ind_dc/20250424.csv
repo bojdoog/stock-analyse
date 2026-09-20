@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250424,电力行业,2.3,16419.03,11.83005296,4.01,14.99354224,-3.16348928,1,561380,电网设备ETF
 20250424,风电设备,0.7,1054.04,2.32653632,3.44,-0.045092,2.37162832,2,516160,新能源ETF
 20250424,化学制药,1.07,29404.17,2.2333776,0.72,0.61017888,1.62319872,3,159929,医药ETF

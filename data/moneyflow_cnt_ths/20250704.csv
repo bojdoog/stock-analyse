@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250704,885456.TI,互联网金融,南凌科技,26.12,0.33,6250.75,207,19.98,517.0,477.0,40.0,512880,证券ETF
 20250704,885866.TI,数字货币,长亮科技,18.13,1.34,2391.57,94,13.31,323.0,284.0,38.0,515230,软件ETF
 20250704,885980.TI,华为鲲鹏,长亮科技,18.13,-0.1,1386.46,167,13.31,240.0,221.0,18.0,515230,软件ETF

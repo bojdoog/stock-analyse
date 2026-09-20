@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250701,化学制药,3.3,34285.24,15.93393984,3.44,10.64176704,5.2921728,1,159929,医药ETF
 20250701,电力行业,2.01,16769.79,10.35175344,3.91,9.01333168,1.33842176,2,561380,电网设备ETF
 20250701,银行,1.84,4396.94,8.51486976,2.9,3.77050368,4.74436608,3,512800,银行ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250210,软件开发,5.63,1170.35,16.27696384,0.98,14.3833344,1.89362944,1,515230,软件ETF
 20250210,互联网服务,5.32,26684.71,15.88831744,1.06,26.94184448,-11.05352704,2,515230,软件ETF
 20250210,医疗服务,4.55,1012.44,12.74399024,7.42,9.94710016,2.79689008,3,510660,创新药ETF

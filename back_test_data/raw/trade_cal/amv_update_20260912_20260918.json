@@ -1,0 +1,64 @@
+{
+  "request": {
+    "tool": "trade_cal",
+    "arguments": {
+      "exchange": "SSE",
+      "start_date": "20260912",
+      "end_date": "20260918"
+    }
+  },
+  "retrieved_at": "2026-09-20T15:43:00.370253+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"exchange\": \"SSE\", \"cal_date\": \"20260918\", \"is_open\": 1, \"pretrade_date\": \"20260917\"}, {\"exchange\": \"SSE\", \"cal_date\": \"20260917\", \"is_open\": 1, \"pretrade_date\": \"20260916\"}, {\"exchange\": \"SSE\", \"cal_date\": \"20260916\", \"is_open\": 1, \"pretrade_date\": \"20260915\"}, {\"exchange\": \"SSE\", \"cal_date\": \"20260915\", \"is_open\": 1, \"pretrade_date\": \"20260914\"}, {\"exchange\": \"SSE\", \"cal_date\": \"20260914\", \"is_open\": 1, \"pretrade_date\": \"20260911\"}, {\"exchange\": \"SSE\", \"cal_date\": \"20260913\", \"is_open\": 0, \"pretrade_date\": \"20260911\"}, {\"exchange\": \"SSE\", \"cal_date\": \"20260912\", \"is_open\": 0, \"pretrade_date\": \"20260911\"}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "exchange": "SSE",
+      "cal_date": "20260918",
+      "is_open": 1,
+      "pretrade_date": "20260917"
+    },
+    {
+      "exchange": "SSE",
+      "cal_date": "20260917",
+      "is_open": 1,
+      "pretrade_date": "20260916"
+    },
+    {
+      "exchange": "SSE",
+      "cal_date": "20260916",
+      "is_open": 1,
+      "pretrade_date": "20260915"
+    },
+    {
+      "exchange": "SSE",
+      "cal_date": "20260915",
+      "is_open": 1,
+      "pretrade_date": "20260914"
+    },
+    {
+      "exchange": "SSE",
+      "cal_date": "20260914",
+      "is_open": 1,
+      "pretrade_date": "20260911"
+    },
+    {
+      "exchange": "SSE",
+      "cal_date": "20260913",
+      "is_open": 0,
+      "pretrade_date": "20260911"
+    },
+    {
+      "exchange": "SSE",
+      "cal_date": "20260912",
+      "is_open": 0,
+      "pretrade_date": "20260911"
+    }
+  ]
+}

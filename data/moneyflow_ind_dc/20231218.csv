@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231218,石油行业,-1.3,5178.51,0.85147328,2.95,0.31957344,0.53189984,3,510300,沪深300ETF
 20231218,农牧饲渔,-0.74,13482.36,0.62800704,0.83,0.76584368,-0.13783664,4,510150,消费ETF
 20231218,银行,-0.17,2717.81,0.52767936,0.47,4.05033088,-3.52265152,5,512800,银行ETF

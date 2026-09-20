@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250211,有色金属,0.23,16346.23,4.75715856,1.82,4.74619408,0.01096448,1,512400,有色ETF
 20250211,银行,1.01,3743.39,1.8764032,0.77,6.20208128,-4.32567808,4,512800,银行ETF
 20250211,装修装饰,0.15,499.25,-0.26396594,-0.98,-0.1152821,-0.14868384,8,510300,沪深300ETF

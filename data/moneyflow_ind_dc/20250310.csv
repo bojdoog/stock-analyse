@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250310,小金属,1.05,2111.06,7.84987776,2.9,6.26712192,1.58275584,1,512400,有色ETF
 20250310,医药商业,4.08,1022.48,5.84421984,9.8,4.344092,1.50012784,4,159929,医药ETF
 20250310,煤炭行业,1.68,10170.89,4.36426656,5.89,3.70437712,0.65988944,5,515220,煤炭ETF

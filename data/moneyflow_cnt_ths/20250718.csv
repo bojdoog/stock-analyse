@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250718,886021.TI,国企改革,电气风电,10.12,0.46,1329.98,2858,20.05,1634.0,1547.0,87.0,510300,沪深300ETF
 20250718,885343.TI,稀土永磁,久吾高科,33.65,3.15,2881.38,61,20.01,261.0,212.0,48.0,512400,有色ETF
 20250718,885530.TI,黄金概念,浩通科技,28.82,0.88,2672.66,72,9.58,110.0,90.0,20.0,512400,有色ETF

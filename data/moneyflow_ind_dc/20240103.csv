@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240103,游戏,1.48,1096.79,6.0240136,4.14,3.27889392,2.74511968,1,159869,游戏ETF
 20240103,中药,1.68,1600.27,3.46752416,2.66,2.23079072,1.23673344,2,159929,医药ETF
 20240103,煤炭行业,1.75,11069.28,3.40416208,2.88,1.046388,2.35777408,3,515220,煤炭ETF

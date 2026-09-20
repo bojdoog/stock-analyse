@@ -1,0 +1,165 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "881159.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:45:07.684345+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"881159.TI\", \"con_code\": \"000151.SZ\", \"con_name\": \"中成股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881159.TI\", \"con_code\": \"000626.SZ\", \"con_name\": \"远大控股\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881159.TI\", \"con_code\": \"000701.SZ\", \"con_name\": \"厦门信达\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881159.TI\", \"con_code\": \"002072.SZ\", \"con_name\": \"凯瑞德\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881159.TI\", \"con_code\": \"002091.SZ\", \"con_name\": \"江苏国泰\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881159.TI\", \"con_code\": \"002183.SZ\", \"con_name\": \"怡亚通\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881159.TI\", \"con_code\": \"600058.SH\", \"con_name\": \"五矿发展\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881159.TI\", \"con_code\": \"600128.SH\", \"con_name\": \"苏豪弘业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881159.TI\", \"con_code\": \"600278.SH\", \"con_name\": \"东方创业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881159.TI\", \"con_code\": \"600287.SH\", \"con_name\": \"苏豪时尚\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881159.TI\", \"con_code\": \"600608.SH\", \"con_name\": \"退市沪科\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881159.TI\", \"con_code\": \"600710.SH\", \"con_name\": \"苏美达\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881159.TI\", \"con_code\": \"600725.SH\", \"con_name\": \"云维股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881159.TI\", \"con_code\": \"600981.SH\", \"con_name\": \"苏豪汇鸿\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881159.TI\", \"con_code\": \"601061.SH\", \"con_name\": \"中信金属\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "881159.TI",
+      "con_code": "000151.SZ",
+      "con_name": "中成股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881159.TI",
+      "con_code": "000626.SZ",
+      "con_name": "远大控股",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881159.TI",
+      "con_code": "000701.SZ",
+      "con_name": "厦门信达",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881159.TI",
+      "con_code": "002072.SZ",
+      "con_name": "凯瑞德",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881159.TI",
+      "con_code": "002091.SZ",
+      "con_name": "江苏国泰",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881159.TI",
+      "con_code": "002183.SZ",
+      "con_name": "怡亚通",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881159.TI",
+      "con_code": "600058.SH",
+      "con_name": "五矿发展",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881159.TI",
+      "con_code": "600128.SH",
+      "con_name": "苏豪弘业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881159.TI",
+      "con_code": "600278.SH",
+      "con_name": "东方创业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881159.TI",
+      "con_code": "600287.SH",
+      "con_name": "苏豪时尚",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881159.TI",
+      "con_code": "600608.SH",
+      "con_name": "退市沪科",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881159.TI",
+      "con_code": "600710.SH",
+      "con_name": "苏美达",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881159.TI",
+      "con_code": "600725.SH",
+      "con_name": "云维股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881159.TI",
+      "con_code": "600981.SH",
+      "con_name": "苏豪汇鸿",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881159.TI",
+      "con_code": "601061.SH",
+      "con_name": "中信金属",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

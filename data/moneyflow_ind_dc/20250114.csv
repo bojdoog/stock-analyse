@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250114,软件开发,7.0,968.95,44.57339136,5.13,31.3413888,13.23200256,1,515230,软件ETF
 20250114,互联网服务,6.58,22066.44,40.4081024,5.16,27.20402176,13.20408064,2,515230,软件ETF
 20250114,半导体,5.29,1334.93,37.78692352,3.72,24.68849408,13.09842944,3,512480,半导体ETF

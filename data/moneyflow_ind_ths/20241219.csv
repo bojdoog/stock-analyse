@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241219,881129.TI,通信设备,锐捷网络,5149.38,3.21,89,20.0,67.87,322.0,283.0,39.0,515880,通信ETF
 20241219,881121.TI,半导体,星宸科技,8531.43,1.0,161,19.99,70.46,434.0,401.0,33.0,512480,半导体ETF
 20241219,881130.TI,计算机设备,曙光数创,3359.57,1.9,81,29.38,67.38,167.0,135.0,31.0,515230,软件ETF

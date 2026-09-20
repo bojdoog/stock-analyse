@@ -1,4 +1,5 @@
 export interface BacktestZone {
+  is_open?: boolean;
   start_idx: number;
   end_idx: number;
   start_date: string;
@@ -15,6 +16,8 @@ export interface BacktestHolding {
 }
 
 export interface BacktestTrade {
+  is_open?: boolean;
+  valuation_date?: string;
   type: 'bull' | 'bear';
   start_date: string;
   end_date: string;
@@ -184,6 +187,8 @@ export interface StrategyParams {
   bullStartTwoDay: number;
   bullEndSingleDay: number;
   bullEndUseMA10: boolean;
+  /** 多头启动日收盘价须站上 MA10 */
+  bullStartUseMA10: boolean;
   /** 买入比例，单位为百分比，如 30 表示 30% */
   weights: number[];
   bearStartYear: number;
@@ -198,6 +203,7 @@ export const DEFAULT_STRATEGY_PARAMS: StrategyParams = {
   bullStartTwoDay: 4,
   bullEndSingleDay: -2.3,
   bullEndUseMA10: true,
+  bullStartUseMA10: true,
   weights: [30, 30, 20, 10, 10],
   bearStartYear: 2024,
   startYear: 2019,
@@ -359,6 +365,14 @@ export function identifyZones(
       }
     }
 
+    // 启动日收盘价必须站上 MA10，否则不启动多头
+    if (bullStart && params.bullStartUseMA10) {
+      const startMA10 = ma10[i];
+      if (startMA10 === null || item.close <= startMA10) {
+        bullStart = false;
+      }
+    }
+
     if (bullStart && !isBullZone) {
       if (twoDayBull && i - 1 > lastBullMarkIndex) {
         lastBullMarkIndex = i - 1;
@@ -385,23 +399,19 @@ export function identifyZones(
     bullZones.push({ start: currentBullStart, end: data.length - 1 });
   }
 
+  // 空头区间 = 持有银行的时段：从上一个多头结束确认日（含）到下一个多头启动确认日（含）。
+  // 边界日与相邻多头区间共享收盘价：多头结束日收盘卖科技买银行，多头启动日收盘卖银行买科技，
+  // 避免启动确认日的收益两边都不统计。
   const bearZones: { start: number; end: number }[] = [];
-  let currentBearStart = -1;
-  for (let i = 0; i < data.length; i++) {
-    const inBull = bullZones.some((z) => i >= z.start && i <= z.end);
-    if (!inBull) {
-      if (currentBearStart === -1) {
-        currentBearStart = i;
-      }
-    } else {
-      if (currentBearStart !== -1) {
-        bearZones.push({ start: currentBearStart, end: i - 1 });
-        currentBearStart = -1;
-      }
+  let bearCursor = 0;
+  bullZones.forEach((z) => {
+    if (z.start > bearCursor) {
+      bearZones.push({ start: bearCursor, end: z.start });
     }
-  }
-  if (currentBearStart !== -1) {
-    bearZones.push({ start: currentBearStart, end: data.length - 1 });
+    bearCursor = z.end;
+  });
+  if (data.length > 0 && bearCursor < data.length - 1) {
+    bearZones.push({ start: bearCursor, end: data.length - 1 });
   }
 
   const zones: BacktestZone[] = [];
@@ -412,6 +422,7 @@ export function identifyZones(
       start_date: data[z.start].date,
       end_date: data[z.end].date,
       type: 'bull',
+      is_open: isBullZone && z.end === data.length - 1,
     });
   });
   bearZones.forEach((z) => {
@@ -421,6 +432,7 @@ export function identifyZones(
       start_date: data[z.start].date,
       end_date: data[z.end].date,
       type: 'bear',
+      is_open: !isBullZone && z.end === data.length - 1,
     });
   });
 
@@ -431,6 +443,18 @@ export function identifyZones(
 function getClose(df: KLineData[], date: string): number | null {
   const item = df.find((d) => d.date === date);
   return item ? item.close : null;
+}
+
+// Price history is chronological. Never use a quote after the valuation date.
+function getQuoteAsOf(data: KLineData[], date: string): KLineData | undefined {
+  let low = 0;
+  let high = data.length - 1;
+  while (low <= high) {
+    const mid = (low + high) >>> 1;
+    if (data[mid].date <= date) low = mid + 1;
+    else high = mid - 1;
+  }
+  return high >= 0 ? data[high] : undefined;
 }
 
 function getPrevDate(amv: KLineData[], date: string): string | null {
@@ -947,7 +971,8 @@ export function runBacktest(
       const data = etfMap.get(BANK_ETF_NAME);
       if (!data) return;
       const startClose = getClose(data, startDate);
-      const endClose = getClose(data, endDate);
+      const endQuote = zone.is_open ? getQuoteAsOf(data, endDate) : data.find(d => d.date === endDate);
+      const endClose = endQuote?.close ?? null;
       if (startClose === null || endClose === null || startClose === 0) return;
       const holdingReturn = endClose / startClose - 1;
 
@@ -960,6 +985,8 @@ export function runBacktest(
 
       trades.push({
         type: 'bear',
+        is_open: zone.is_open,
+        valuation_date: endQuote?.date,
         start_date: startDate,
         end_date: endDate,
         year: zoneStartYear,
@@ -1064,17 +1091,8 @@ export function runBacktest(
     holdingDataMap.set(`${t.start_date}_${t.end_date}`, holdingMap);
   });
 
-  // 找到所有 ETF 和 AMV 的最晚日期，以及最后一个区间的结束日期，取最大者
-  let lastDate = filteredAMV[filteredAMV.length - 1]?.date || '';
-  zones.forEach((z) => {
-    if (z.end_date > lastDate) lastDate = z.end_date;
-  });
-  etfData.forEach((s) => {
-    if (s.data.length > 0) {
-      const d = s.data[s.data.length - 1].date;
-      if (d > lastDate) lastDate = d;
-    }
-  });
+  // Only value dates covered by the selected indicator and backtest period.
+  const lastDate = filteredAMV[filteredAMV.length - 1]?.date || '';
 
   // 生成从 filteredAMV 第一天到最后日期的所有日期序列
   const allDates: string[] = [];
@@ -1101,17 +1119,28 @@ export function runBacktest(
     const trade = dateToTrade.get(date);
     const prevTrade = dateToTrade.get(prevDate);
 
+    // 边界日（区间确认日）持仓仍属于上一区间，当日收益计入上一区间的持仓
+    let activeTrade: BacktestTrade | null = null;
     if (trade && trade === prevTrade) {
+      activeTrade = trade;
+    } else if (prevTrade && date === prevTrade.end_date) {
+      activeTrade = prevTrade;
+    }
+
+    if (activeTrade) {
       const holdingMap = holdingDataMap.get(
-        `${trade.start_date}_${trade.end_date}`,
+        `${activeTrade.start_date}_${activeTrade.end_date}`,
       );
       if (holdingMap) {
         let dailyReturn = 0;
-        trade.holdings.forEach((h) => {
+        activeTrade.holdings.forEach((h) => {
           const dateMap = holdingMap.get(h.name);
           if (!dateMap) return;
-          const prevClose = dateMap.get(prevDate)?.close;
-          const curClose = dateMap.get(date)?.close;
+          const prices = etfMap.get(h.name) ?? [];
+          const prevClose = activeTrade.is_open
+            ? getQuoteAsOf(prices, prevDate)?.close : dateMap.get(prevDate)?.close;
+          const curClose = activeTrade.is_open
+            ? getQuoteAsOf(prices, date)?.close : dateMap.get(date)?.close;
           if (prevClose && curClose && prevClose !== 0) {
             dailyReturn += h.weight * (curClose / prevClose - 1);
           }

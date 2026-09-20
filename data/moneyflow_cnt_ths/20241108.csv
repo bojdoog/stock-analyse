@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241108,886078.TI,商业航天,七丰精工,22.54,2.73,1481.69,195,2.73,434.0,402.0,32.0,159206,卫星ETF
 20241108,886076.TI,军工信息化,创远信科,25.93,3.67,1506.87,94,3.67,273.0,247.0,26.0,512660,军工ETF
 20241108,885574.TI,卫星导航,创远信科,25.93,2.94,3333.17,180,2.94,496.0,472.0,24.0,515880,通信ETF

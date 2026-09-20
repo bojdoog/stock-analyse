@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241226,通信设备,3.34,13513.5,33.05084416,4.1,37.39581184,-4.34496768,1,515880,通信ETF
 20241226,半导体,2.93,1456.36,26.61981184,2.27,29.07875328,-2.45894144,2,512480,半导体ETF
 20241226,汽车整车,2.32,1651.07,13.28843376,6.02,7.19772016,6.0907136,5,515030,新能源车ETF

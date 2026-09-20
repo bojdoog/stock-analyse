@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260707,885945.TI,汽车芯片,华天科技,21.93,-0.92,1567.88,143,9.98,1086.0,1046.0,39.0,512480,半导体ETF
 20260707,885908.TI,第三代半导体,东微半导,99.08,-0.79,3032.83,178,16.33,1047.0,1009.0,38.0,512480,半导体ETF
 20260707,886042.TI,存储芯片,有研硅,46.14,-1.13,3246.0,199,20.0,2022.0,1988.0,33.0,512480,半导体ETF

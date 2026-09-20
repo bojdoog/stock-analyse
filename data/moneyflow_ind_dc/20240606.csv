@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240606,石油行业,-2.13,4517.21,2.69167712,3.97,2.87597232,-0.1842952,2,510300,沪深300ETF
 20240606,贵金属,1.83,1042.79,1.13471136,1.12,1.10791504,0.02679632,4,512400,有色ETF
 20240606,有色金属,-1.8,13369.73,-0.20990928,-0.13,0.51895632,-0.7288656,10,512400,有色ETF

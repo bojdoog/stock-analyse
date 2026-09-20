@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240426,证券,6.44,118082.73,48.15382272,10.6,40.43324928,7.72057344,1,512880,证券ETF
 20240426,汽车整车,3.02,1328.46,20.51012624,7.91,14.93546,5.57466624,2,515030,新能源车ETF
 20240426,通信设备,3.37,10188.63,17.812864,3.32,16.8401792,0.9726848,4,515880,通信ETF

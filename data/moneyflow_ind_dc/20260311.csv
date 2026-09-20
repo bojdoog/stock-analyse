@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260311,电池,2.98,1552.05,75.6906496,6.35,56.32764672,19.36300288,1,516160,新能源ETF
 20260311,锂电池,3.54,19011.07,41.60902656,6.9,32.01530368,9.59372288,3,516160,新能源ETF
 20260311,光伏设备,1.63,1661.19,26.2274816,2.66,17.64776448,8.57971712,4,516290,光伏ETF

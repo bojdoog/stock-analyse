@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240828,小金属,2.14,1331.07,2.15731072,3.52,3.17723632,-1.0199256,1,512400,有色ETF
 20240828,公用事业,-0.33,6674.9,1.46983817,5.96,2.13801977,-0.6681816,2,561380,电网设备ETF
 20240828,文化传媒,1.52,6673.09,0.89910128,0.93,1.5866712,-0.68756992,5,512980,传媒ETF

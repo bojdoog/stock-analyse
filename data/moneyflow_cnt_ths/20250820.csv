@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250820,885945.TI,汽车芯片,艾为电子,94.3,2.39,1097.02,123,15.85,470.0,389.0,80.0,512480,半导体ETF
 20250820,885736.TI,无人驾驶,万通液压,51.74,0.95,2829.51,351,30.0,913.0,878.0,35.0,515030,新能源车ETF
 20250820,885709.TI,虚拟现实,智动力,13.37,1.39,988.66,280,20.02,838.0,807.0,30.0,159869,游戏ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240705,汽车整车,0.84,1205.08,3.83169056,2.31,4.864904,-1.03321344,1,515030,新能源车ETF
 20240705,文化传媒,2.18,7120.83,3.3173032,2.78,1.55793552,1.75936768,2,512980,传媒ETF
 20240705,贵金属,4.45,1016.88,3.16102272,2.99,3.84501792,-0.6839952,3,512400,有色ETF

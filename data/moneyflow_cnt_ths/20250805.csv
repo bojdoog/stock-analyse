@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250805,885997.TI,比亚迪概念,东杰智能,20.39,1.36,1624.19,622,20.01,722.0,702.0,19.0,515030,新能源车ETF
 20250805,886037.TI,6G概念,思特奇,13.98,1.22,1615.53,69,8.62,162.0,147.0,15.0,515880,通信ETF
 20250805,885999.TI,汽车热管理,春晖智控,18.62,1.89,1859.23,125,19.97,171.0,156.0,14.0,515030,新能源车ETF

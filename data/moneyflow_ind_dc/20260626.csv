@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260626,光伏设备,-0.7,1300.56,25.04937728,3.95,24.16144384,0.88793344,3,516290,光伏ETF
 20260626,风电设备,-0.61,1351.88,12.21115344,6.79,8.91099472,3.30015872,7,516160,新能源ETF
 20260626,房地产,-1.38,1816.46,10.54987728,4.97,9.90799056,0.64188672,8,510300,沪深300ETF

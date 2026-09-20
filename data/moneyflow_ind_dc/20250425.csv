@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250425,软件开发,0.57,1035.97,20.14556928,3.32,25.04404736,-4.89847808,1,515230,软件ETF
 20250425,电力行业,3.24,16951.03,16.3862784,4.09,17.37732352,-0.99104512,2,561380,电网设备ETF
 20250425,通信设备,0.69,12780.49,15.10932736,3.4,9.44713984,5.66218752,3,515880,通信ETF

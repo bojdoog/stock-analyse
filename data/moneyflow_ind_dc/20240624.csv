@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240624,石油行业,-2.4,4451.54,-0.08265968,-0.16,-0.90951808,0.8268584,3,510300,沪深300ETF
 20240624,装修装饰,-3.19,313.33,-0.19358578,-1.49,-0.07218612,-0.12139966,4,510300,沪深300ETF
 20240624,公用事业,-2.61,6917.5,-0.69110103,-4.56,0.03286274,-0.72396377,9,561380,电网设备ETF

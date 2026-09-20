@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260326,886032.TI,固态电池,海科新源,80.24,-0.29,1404.73,287,16.27,631.0,612.0,19.0,516160,新能源ETF
 20260326,885928.TI,钠离子电池,海科新源,80.24,0.28,1358.99,135,16.27,401.0,391.0,9.0,516160,新能源ETF
 20260326,885462.TI,乳业,怡亚通,5.66,-0.85,2062.69,35,3.1,13.0,14.0,-1.0,510150,消费ETF

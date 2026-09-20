@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260424,886032.TI,固态电池,温州宏丰,11.75,0.62,1578.8,288,20.02,968.0,838.0,129.0,516160,新能源ETF
 20260424,885928.TI,钠离子电池,万顺新材,7.9,0.56,1476.86,137,10.03,523.0,448.0,74.0,516160,新能源ETF
 20260424,886042.TI,存储芯片,华特气体,176.8,0.28,2216.64,177,20.0,974.0,925.0,49.0,512480,半导体ETF

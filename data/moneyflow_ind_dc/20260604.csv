@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260604,半导体,1.37,2856.64,25.6688128,0.67,35.27630848,-9.60749568,7,512480,半导体ETF
 20260604,机器人,0.19,9890.13,5.07294608,4.27,2.6395056,2.43344048,32,562500,机器人ETF
 20260604,汽车零部件,-0.52,48244.76,-0.47027968,-0.07,1.46903296,-1.93931264,21,515030,新能源车ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231023,风电设备,-1.24,1084.43,0.93928832,1.52,1.04506256,-0.10577424,1,516160,新能源ETF
 20231023,燃气,-2.64,1294.04,-0.20403503,-1.11,0.38945937,-0.5934944,5,561380,电网设备ETF
 20231023,公用事业,-2.61,7022.08,-0.59201774,-7.78,-0.17719687,-0.41482087,10,561380,电网设备ETF

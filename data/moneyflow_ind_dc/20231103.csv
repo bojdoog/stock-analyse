@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231103,半导体,4.36,1252.58,16.19449456,3.28,15.16454256,1.029952,2,512480,半导体ETF
 20231103,通信设备,2.42,11031.02,12.61076608,3.75,12.05301632,0.55774976,3,515880,通信ETF
 20231103,酿酒行业,1.05,59034.3,6.91838496,4.37,4.89323744,2.02514752,4,512690,白酒ETF

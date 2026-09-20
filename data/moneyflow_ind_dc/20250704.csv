@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250704,软件开发,0.13,1163.06,22.81708288,2.6,14.21098496,8.60609792,1,515230,软件ETF
 20250704,互联网服务,-0.08,27696.83,10.57492992,1.46,8.61160704,1.96332288,2,515230,软件ETF
 20250704,游戏,1.52,1401.64,10.40980096,5.07,5.81868928,4.59111168,3,159869,游戏ETF

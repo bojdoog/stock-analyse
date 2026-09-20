@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250227,商业百货,3.53,17381.63,17.44400896,6.55,12.5388416,4.90516736,1,510150,消费ETF
 20250227,酿酒行业,1.74,49512.42,14.09195184,5.29,5.57692592,8.51502592,2,512690,白酒ETF
 20250227,食品饮料,3.14,26112.39,14.03935984,5.02,7.59043568,6.44892416,3,510150,消费ETF

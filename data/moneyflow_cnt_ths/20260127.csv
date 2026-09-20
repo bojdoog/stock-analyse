@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260127,886042.TI,存储芯片,东芯股份,153.23,2.63,2157.76,169,20.0,1073.0,917.0,155.0,512480,半导体ETF
 20260127,885556.TI,5G,东芯股份,153.23,0.88,6256.89,443,20.0,1681.0,1537.0,144.0,515880,通信ETF
 20260127,885945.TI,汽车芯片,东芯股份,153.23,3.26,1363.65,138,20.0,798.0,658.0,140.0,512480,半导体ETF

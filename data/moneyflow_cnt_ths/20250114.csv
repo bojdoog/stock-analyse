@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250114,885806.TI,华为概念,海达尔,48.29,5.81,2383.33,948,5.81,1442.0,1080.0,362.0,515230,软件ETF
 20250114,886021.TI,国企改革,埃夫特,36.38,3.92,1137.72,2822,3.92,1318.0,1010.0,307.0,510300,沪深300ETF
 20250114,885431.TI,新能源汽车,骏创科技,36.68,5.68,3023.09,835,5.68,1138.0,831.0,306.0,515030,新能源车ETF

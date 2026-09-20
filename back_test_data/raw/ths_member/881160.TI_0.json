@@ -1,0 +1,345 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "881160.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:45:08.170515+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"881160.TI\", \"con_code\": \"000069.SZ\", \"con_name\": \"华侨城A\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"000428.SZ\", \"con_name\": \"华天酒店\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"000430.SZ\", \"con_name\": \"张家界\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"000524.SZ\", \"con_name\": \"岭南控股\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"000558.SZ\", \"con_name\": \"天府文旅\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"000610.SZ\", \"con_name\": \"*ST西旅\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"000721.SZ\", \"con_name\": \"西安饮食\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"000796.SZ\", \"con_name\": \"凯撒旅业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"000888.SZ\", \"con_name\": \"峨眉山A\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"000978.SZ\", \"con_name\": \"桂林旅游\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"002033.SZ\", \"con_name\": \"丽江股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"002059.SZ\", \"con_name\": \"云南旅游\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"002159.SZ\", \"con_name\": \"三特索道\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"002186.SZ\", \"con_name\": \"全聚德\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"002306.SZ\", \"con_name\": \"ST云网\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"002627.SZ\", \"con_name\": \"三峡旅游\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"002707.SZ\", \"con_name\": \"众信旅游\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"300144.SZ\", \"con_name\": \"宋城演艺\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"300859.SZ\", \"con_name\": \"西域旅游\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"301073.SZ\", \"con_name\": \"君亭酒店\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"600054.SH\", \"con_name\": \"黄山旅游\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"600138.SH\", \"con_name\": \"中青旅\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"600250.SH\", \"con_name\": \"南京商旅\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"600258.SH\", \"con_name\": \"首旅酒店\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"600576.SH\", \"con_name\": \"祥源文旅\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"600593.SH\", \"con_name\": \"大连圣亚\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"600706.SH\", \"con_name\": \"曲江文旅\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"600749.SH\", \"con_name\": \"西藏旅游\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"600754.SH\", \"con_name\": \"锦江酒店\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"601007.SH\", \"con_name\": \"金陵饭店\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"603099.SH\", \"con_name\": \"长白山\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"603136.SH\", \"con_name\": \"天目湖\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"603199.SH\", \"con_name\": \"九华旅游\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"603402.SH\", \"con_name\": \"陕西旅游\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881160.TI\", \"con_code\": \"605108.SH\", \"con_name\": \"同庆楼\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "881160.TI",
+      "con_code": "000069.SZ",
+      "con_name": "华侨城A",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "000428.SZ",
+      "con_name": "华天酒店",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "000430.SZ",
+      "con_name": "张家界",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "000524.SZ",
+      "con_name": "岭南控股",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "000558.SZ",
+      "con_name": "天府文旅",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "000610.SZ",
+      "con_name": "*ST西旅",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "000721.SZ",
+      "con_name": "西安饮食",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "000796.SZ",
+      "con_name": "凯撒旅业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "000888.SZ",
+      "con_name": "峨眉山A",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "000978.SZ",
+      "con_name": "桂林旅游",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "002033.SZ",
+      "con_name": "丽江股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "002059.SZ",
+      "con_name": "云南旅游",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "002159.SZ",
+      "con_name": "三特索道",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "002186.SZ",
+      "con_name": "全聚德",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "002306.SZ",
+      "con_name": "ST云网",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "002627.SZ",
+      "con_name": "三峡旅游",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "002707.SZ",
+      "con_name": "众信旅游",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "300144.SZ",
+      "con_name": "宋城演艺",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "300859.SZ",
+      "con_name": "西域旅游",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "301073.SZ",
+      "con_name": "君亭酒店",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "600054.SH",
+      "con_name": "黄山旅游",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "600138.SH",
+      "con_name": "中青旅",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "600250.SH",
+      "con_name": "南京商旅",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "600258.SH",
+      "con_name": "首旅酒店",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "600576.SH",
+      "con_name": "祥源文旅",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "600593.SH",
+      "con_name": "大连圣亚",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "600706.SH",
+      "con_name": "曲江文旅",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "600749.SH",
+      "con_name": "西藏旅游",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "600754.SH",
+      "con_name": "锦江酒店",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "601007.SH",
+      "con_name": "金陵饭店",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "603099.SH",
+      "con_name": "长白山",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "603136.SH",
+      "con_name": "天目湖",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "603199.SH",
+      "con_name": "九华旅游",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "603402.SH",
+      "con_name": "陕西旅游",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881160.TI",
+      "con_code": "605108.SH",
+      "con_name": "同庆楼",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

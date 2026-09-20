@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260327,有色金属,3.05,27634.78,92.45237248,6.64,80.991424,11.46094848,1,512400,有色ETF
 20260327,能源金属,7.36,1020.82,39.4863488,11.47,37.17653248,2.30981632,4,512400,有色ETF
 20260327,电池,2.88,1533.14,38.61576192,3.57,31.05206784,7.56369408,5,516160,新能源ETF

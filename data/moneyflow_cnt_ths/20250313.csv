@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250313,885914.TI,煤炭概念,大有能源,3.36,1.8,1814.76,80,1.8,137.0,93.0,43.0,515220,煤炭ETF
 20250313,885936.TI,绿色电力,宁波能源,4.84,0.1,927.41,207,0.1,200.0,189.0,11.0,516160,新能源ETF
 20250313,885530.TI,黄金概念,明牌珠宝,6.51,0.88,2320.2,72,0.88,128.0,117.0,11.0,512400,有色ETF

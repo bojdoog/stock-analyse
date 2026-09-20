@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241113,文化传媒,2.8,9971.54,19.8004864,3.91,18.83681536,0.96367104,2,512980,传媒ETF
 20241113,船舶制造,1.73,903.29,12.09587968,10.46,9.4716608,2.62421888,3,512660,军工ETF
 20241113,银行,1.06,3580.47,5.4056704,2.44,3.32178432,2.08388608,4,512800,银行ETF

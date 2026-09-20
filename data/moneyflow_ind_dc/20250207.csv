@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250207,软件开发,3.2,1107.98,37.55376384,2.11,43.76188928,-6.20812544,1,515230,软件ETF
 20250207,光伏设备,4.26,1101.76,18.48258608,4.8,15.6185784,2.86400768,2,516290,光伏ETF
 20250207,证券,2.34,141765.75,11.7406336,2.94,11.22298112,0.51765248,4,512880,证券ETF

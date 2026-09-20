@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250819,家电行业,1.22,25589.41,18.6611712,3.8,26.14445056,-7.48327936,1,510150,消费ETF
 20250819,酿酒行业,1.99,52177.16,16.50514944,5.47,12.91098112,3.59416832,2,512690,白酒ETF
 20250819,银行,-0.19,4257.72,10.91492352,3.74,7.66520064,3.24972288,3,512800,银行ETF

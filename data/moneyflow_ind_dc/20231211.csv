@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231211,文化传媒,3.32,10211.76,9.82682624,1.9,12.27121152,-2.44438528,1,512980,传媒ETF
 20231211,游戏,3.68,1258.41,3.86848896,1.71,2.46248576,1.4060032,3,159869,游戏ETF
 20231211,汽车整车,1.17,1345.58,3.10449968,1.58,6.0235192,-2.91901952,4,515030,新能源车ETF

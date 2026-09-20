@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240322,文化传媒,3.4,9968.53,24.33537792,3.26,22.73664512,1.5987328,1,512980,传媒ETF
 20240322,公用事业,-0.75,6879.71,0.27597048,1.85,0.42417421,-0.14820373,5,561380,电网设备ETF
 20240322,煤炭行业,-0.64,10990.39,-0.33998704,-0.32,-1.50323632,1.16324928,8,515220,煤炭ETF

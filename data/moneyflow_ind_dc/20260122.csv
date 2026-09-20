@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260122,通信设备,1.49,22515.51,69.94513664,4.58,67.9878656,1.95727104,1.0,515880,通信ETF
 20260122,航天航空,4.58,71020.35,24.71652096,3.38,29.29742336,-4.5809024,3.0,512660,军工ETF
 20260122,互联网服务,1.69,35554.42,16.88947712,1.81,9.3782144,7.51126272,5.0,515230,软件ETF

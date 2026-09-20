@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251217,885556.TI,5G,联特科技,174.0,1.46,5439.49,441,20.0,1424.0,1175.0,248.0,515880,通信ETF
 20251217,885431.TI,新能源汽车,奕东电子,52.78,1.2,4401.46,996,20.01,1607.0,1407.0,199.0,515030,新能源车ETF
 20251217,885921.TI,储能,奕东电子,52.78,1.15,2333.62,780,20.01,1159.0,1011.0,148.0,516160,新能源ETF

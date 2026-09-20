@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241021,885564.TI,无人机,汉鑫科技,54.14,4.5,2059.66,244,4.5,585.0,548.0,36.0,512660,军工ETF
 20241021,885743.TI,军民融合,方盛股份,18.14,4.49,1108.3,179,4.49,383.0,354.0,28.0,512660,军工ETF
 20241021,885574.TI,卫星导航,创远信科,17.25,5.6,3006.23,177,5.6,451.0,429.0,22.0,515880,通信ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260715,886015.TI,创新药,博瑞医药,35.44,3.65,1317.86,277,20.01,654.0,583.0,70.0,510660,创新药ETF
 20260715,886051.TI,减肥药,博瑞医药,35.44,4.37,1462.88,64,20.01,240.0,195.0,45.0,510660,创新药ETF
 20260715,886019.TI,AIGC概念,巨人网络,29.56,1.0,1858.15,292,10.01,513.0,470.0,43.0,159381,创业板人工智能ETF

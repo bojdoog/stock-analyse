@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260625,885556.TI,5G,利尔达,11.14,-0.13,7243.19,454,29.99,3540.0,3389.0,150.0,515880,通信ETF
 20260625,885806.TI,华为概念,利尔达,11.14,-0.83,3667.04,1003,29.99,4010.0,3915.0,94.0,515230,软件ETF
 20260625,886037.TI,6G概念,信维通信,116.73,-0.02,2900.47,96,13.2,811.0,743.0,68.0,515880,通信ETF

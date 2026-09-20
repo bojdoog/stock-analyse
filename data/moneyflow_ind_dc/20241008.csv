@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241008,燃气,4.53,1491.24,-3.6653688,-4.83,-1.1497968,-2.515572,8,561380,电网设备ETF
 20241008,装修装饰,5.58,423.73,-3.76997328,-5.83,-0.9666696,-2.80330368,9,510300,沪深300ETF
 20241008,公用事业,3.08,8067.16,-3.84176976,-5.0,-2.09906032,-1.74270944,10,561380,电网设备ETF

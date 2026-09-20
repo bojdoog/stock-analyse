@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251119,881166.TI,军工装备,江龙船艇,2298.94,1.86,81,20.02,19.18,184.0,142.0,41.0,512660,军工ETF
 20251119,881155.TI,银行,中国银行,1346.69,0.63,84,3.81,6.0,124.0,85.0,39.0,512800,银行ETF
 20251119,881267.TI,能源金属,融捷股份,31575.8,2.62,13,10.0,63.26,157.0,134.0,23.0,512400,有色ETF

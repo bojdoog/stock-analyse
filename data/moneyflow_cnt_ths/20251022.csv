@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251022,885603.TI,网络游戏,ST华通,19.1,0.09,1681.87,64,5.0,75.0,77.0,-1.0,159869,游戏ETF
 20251022,885780.TI,啤酒概念,合百集团,7.8,0.12,1553.97,30,4.14,12.0,13.0,-1.0,512690,白酒ETF
 20251022,886054.TI,光刻机,海立股份,23.65,0.35,1765.34,47,10.0,68.0,69.0,-1.0,588710,科创半导体设备ETF

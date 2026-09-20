@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260409,汽车零部件,-0.38,49979.85,1.8569216,0.34,6.3346944,-4.4777728,22,515030,新能源车ETF
 20260409,医药商业,-2.56,1220.6,-0.08450688,-0.08,4.01671184,-4.10121872,46,159929,医药ETF
 20260409,小金属,-0.69,3892.18,-1.00198144,-0.3,-2.81673216,1.81475072,48,512400,有色ETF

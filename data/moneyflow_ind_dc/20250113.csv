@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250113,有色金属,1.65,15112.61,10.19040992,5.01,9.26878944,0.92162048,1,512400,有色ETF
 20250113,能源金属,2.15,442.6,2.43892144,4.88,1.468608,0.97031344,2,512400,有色ETF
 20250113,石油行业,0.67,5038.56,1.97694352,3.47,-0.41785264,2.39479616,3,510300,沪深300ETF

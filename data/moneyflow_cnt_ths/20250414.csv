@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250414,885914.TI,煤炭概念,合锻智能,11.08,2.44,1735.17,81,10.03,64.0,49.0,15.0,515220,煤炭ETF
 20250414,885936.TI,绿色电力,韶能股份,5.58,2.15,902.45,241,10.06,190.0,178.0,12.0,516160,新能源ETF
 20250414,885530.TI,黄金概念,华钰矿业,19.76,2.72,2309.42,73,10.02,151.0,140.0,11.0,512400,有色ETF

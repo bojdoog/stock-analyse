@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250326,885878.TI,HJT电池,ST聆达,8.62,2.23,2264.74,60,16.49,64.0,45.0,18.0,516290,光伏ETF
 20250326,886069.TI,人形机器人,力星股份,18.89,1.72,2022.82,158,20.01,339.0,324.0,14.0,562500,机器人ETF
 20250326,886067.TI,低空经济,华峰超纤,7.63,0.96,1772.79,334,15.61,320.0,306.0,13.0,515030,新能源车ETF

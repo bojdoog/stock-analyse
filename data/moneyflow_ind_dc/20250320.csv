@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250320,汽车零部件,1.28,43538.93,8.9328896,1.02,10.55438336,-1.62149376,1,515030,新能源车ETF
 20250320,航天航空,1.18,46149.26,7.28617952,4.37,2.47536016,4.81081936,3,512660,军工ETF
 20250320,风电设备,3.17,1146.16,4.8521496,4.77,1.96749872,2.88465088,4,516160,新能源ETF

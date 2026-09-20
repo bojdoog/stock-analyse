@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20230920,石油行业,0.08,5130.83,1.62752416,3.54,0.49114896,1.1363752,1,510300,沪深300ETF
 20230920,食品饮料,-0.07,23637.34,1.12771056,1.2,-0.27412048,1.40183104,2,510150,消费ETF
 20230920,通信设备,-0.5,10662.72,0.9619048,0.36,1.8668136,-0.9049088,3,515880,通信ETF

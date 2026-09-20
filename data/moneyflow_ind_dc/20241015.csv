@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241015,游戏,1.29,949.36,2.62175632,1.84,1.72783072,0.8939256,2,159869,游戏ETF
 20241015,装修装饰,1.06,402.77,0.9373896,2.17,1.66421904,-0.72682944,6,510300,沪深300ETF
 20241015,燃气,-1.68,1362.71,-0.51474216,-2.33,-0.17754264,-0.33719952,15,561380,电网设备ETF

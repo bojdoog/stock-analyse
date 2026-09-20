@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241016,886021.TI,国企改革,长虹能源,39.0,0.91,1076.67,2794,0.91,1520.0,1472.0,48.0,510300,沪深300ETF
 20241016,885530.TI,黄金概念,晓程科技,20.61,1.63,1994.96,72,1.63,93.0,70.0,23.0,512400,有色ETF
 20241016,885874.TI,云游戏,中青宝,19.01,2.13,964.29,25,2.13,63.0,45.0,17.0,159869,游戏ETF

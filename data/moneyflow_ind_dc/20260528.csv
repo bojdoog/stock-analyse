@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260528,通信设备,3.07,26355.23,101.29772288,4.74,107.45903104,-6.16130816,1,515880,通信ETF
 20260528,小金属,3.44,4227.93,43.29712896,8.9,39.96120832,3.33592064,4,512400,有色ETF
 20260528,电网设备,1.5,43839.16,6.09383424,0.94,-1.8850816,7.97891584,31,561380,电网设备ETF

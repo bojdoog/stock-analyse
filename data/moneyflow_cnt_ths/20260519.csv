@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260519,885728.TI,人工智能,思特奇,18.46,1.67,1486.72,1060,20.03,2378.0,2196.0,182.0,159381,创业板人工智能ETF
 20260519,885806.TI,华为概念,思特奇,18.46,1.68,3969.8,1001,20.03,3204.0,3034.0,169.0,515230,软件ETF
 20260519,885945.TI,汽车芯片,芯原股份,299.91,2.2,1520.21,140,15.57,1044.0,929.0,115.0,512480,半导体ETF

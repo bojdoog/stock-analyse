@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240723,银行,0.68,3251.03,6.3959168,2.91,6.28210432,0.11381248,1,512800,银行ETF
 20240723,医药商业,-0.1,830.89,1.21816253,4.37,0.21022189,1.00794064,2,159929,医药ETF
 20240723,燃气,-0.4,1252.94,0.15588703,0.93,0.28473881,-0.12885178,6,561380,电网设备ETF

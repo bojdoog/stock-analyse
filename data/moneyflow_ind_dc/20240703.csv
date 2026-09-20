@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240703,半导体,1.19,951.99,11.88016928,3.05,5.22711072,6.65305856,1,512480,半导体ETF
 20240703,旅游酒店,1.44,12436.87,6.3102896,7.74,4.24462368,2.06566592,2,510150,消费ETF
 20240703,商业百货,3.25,11001.18,4.69531504,8.33,4.34942912,0.34588592,3,510150,消费ETF

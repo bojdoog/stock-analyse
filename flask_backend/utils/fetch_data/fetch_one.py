@@ -16,6 +16,11 @@ import sys
 import time
 from pathlib import Path
 
+try:
+    from .storage_sqlite import save_dataframe, refresh_index, list_files, initialize, read_frame, has_file
+except ImportError:
+    from storage_sqlite import save_dataframe, refresh_index, list_files, initialize, read_frame, has_file
+
 import pandas as pd
 import tushare as ts
 
@@ -74,7 +79,7 @@ def main():
     # 保存
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     out_path = DATA_DIR / f"{code}.csv"
-    df.to_csv(out_path, index=False)
+    save_dataframe(df, out_path, category='stock')
     print(f"  完成！共 {len(df)} 条记录")
     print(f"  日期范围: {df['date'].iloc[0].date()} ~ {df['date'].iloc[-1].date()}")
     print(f"  保存到: {out_path.resolve()}")

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251211,风电设备,1.01,1497.3,12.98574144,9.48,11.50988528,1.47585616,1.0,516160,新能源ETF
 20251211,电网设备,-0.11,34145.99,4.95783168,1.08,12.17797376,-7.22014208,2.0,561380,电网设备ETF
 20251211,医疗服务,-1.23,1224.03,4.5155888,3.28,1.44131424,3.07427456,3.0,510660,创新药ETF

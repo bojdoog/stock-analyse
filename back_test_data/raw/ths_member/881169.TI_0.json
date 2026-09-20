@@ -1,0 +1,156 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "881169.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:45:10.866136+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"881169.TI\", \"con_code\": \"000426.SZ\", \"con_name\": \"兴业银锡\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881169.TI\", \"con_code\": \"000506.SZ\", \"con_name\": \"招金黄金\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881169.TI\", \"con_code\": \"000975.SZ\", \"con_name\": \"山金国际\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881169.TI\", \"con_code\": \"001337.SZ\", \"con_name\": \"四川黄金\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881169.TI\", \"con_code\": \"002155.SZ\", \"con_name\": \"湖南黄金\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881169.TI\", \"con_code\": \"002237.SZ\", \"con_name\": \"恒邦股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881169.TI\", \"con_code\": \"002716.SZ\", \"con_name\": \"湖南白银\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881169.TI\", \"con_code\": \"300139.SZ\", \"con_name\": \"晓程科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881169.TI\", \"con_code\": \"600489.SH\", \"con_name\": \"中金黄金\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881169.TI\", \"con_code\": \"600547.SH\", \"con_name\": \"山东黄金\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881169.TI\", \"con_code\": \"600961.SH\", \"con_name\": \"株冶集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881169.TI\", \"con_code\": \"600988.SH\", \"con_name\": \"赤峰黄金\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881169.TI\", \"con_code\": \"601069.SH\", \"con_name\": \"西部黄金\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881169.TI\", \"con_code\": \"601899.SH\", \"con_name\": \"紫金矿业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "881169.TI",
+      "con_code": "000426.SZ",
+      "con_name": "兴业银锡",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881169.TI",
+      "con_code": "000506.SZ",
+      "con_name": "招金黄金",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881169.TI",
+      "con_code": "000975.SZ",
+      "con_name": "山金国际",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881169.TI",
+      "con_code": "001337.SZ",
+      "con_name": "四川黄金",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881169.TI",
+      "con_code": "002155.SZ",
+      "con_name": "湖南黄金",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881169.TI",
+      "con_code": "002237.SZ",
+      "con_name": "恒邦股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881169.TI",
+      "con_code": "002716.SZ",
+      "con_name": "湖南白银",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881169.TI",
+      "con_code": "300139.SZ",
+      "con_name": "晓程科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881169.TI",
+      "con_code": "600489.SH",
+      "con_name": "中金黄金",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881169.TI",
+      "con_code": "600547.SH",
+      "con_name": "山东黄金",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881169.TI",
+      "con_code": "600961.SH",
+      "con_name": "株冶集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881169.TI",
+      "con_code": "600988.SH",
+      "con_name": "赤峰黄金",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881169.TI",
+      "con_code": "601069.SH",
+      "con_name": "西部黄金",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881169.TI",
+      "con_code": "601899.SH",
+      "con_name": "紫金矿业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

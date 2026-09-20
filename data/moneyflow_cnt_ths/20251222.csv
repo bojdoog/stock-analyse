@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251222,885556.TI,5G,鼎通科技,118.92,1.67,5559.15,441,20.0,1495.0,1262.0,232.0,515880,通信ETF
 20251222,885431.TI,新能源汽车,鼎通科技,118.92,1.27,4512.32,999,20.0,1692.0,1563.0,129.0,515030,新能源车ETF
 20251222,886044.TI,液冷服务器,鼎通科技,118.92,1.76,1825.79,168,20.0,651.0,531.0,120.0,515230,软件ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250528,885866.TI,数字货币,新国都,24.62,0.29,1945.08,84,16.3,91.0,84.0,7.0,515230,软件ETF
 20250528,886038.TI,超导概念,永鼎股份,8.83,0.52,1580.96,24,7.03,39.0,35.0,4.0,561380,电网设备ETF
 20250528,885462.TI,乳业,欢乐家,20.87,2.02,2178.49,33,20.01,30.0,27.0,2.0,510150,消费ETF

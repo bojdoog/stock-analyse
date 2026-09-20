@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240820,公用事业,-1.26,6920.47,1.37596832,6.46,1.67681712,-0.3008488,1,561380,电网设备ETF
 20240820,能源金属,0.7,347.87,0.61258064,1.06,-0.27862544,0.89120608,2,512400,有色ETF
 20240820,文化传媒,0.34,7087.5,0.5767928,0.38,4.09434608,-3.51755328,3,512980,传媒ETF

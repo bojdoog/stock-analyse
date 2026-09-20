@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241014,半导体,4.91,1198.59,26.40400384,2.12,19.86096384,6.54304,1,512480,半导体ETF
 20241014,银行,3.74,3646.66,24.998144,4.59,25.91681792,-0.91867392,2,512800,银行ETF
 20241014,光伏设备,2.88,1072.48,12.45104368,4.31,4.63349488,7.8175488,4,516290,光伏ETF

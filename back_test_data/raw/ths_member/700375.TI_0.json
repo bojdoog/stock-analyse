@@ -1,0 +1,714 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "700375.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:43:18.886394+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"700375.TI\", \"con_code\": \"002315.SZ\", \"con_name\": \"焦点科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"002354.SZ\", \"con_name\": \"天娱数科\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"002642.SZ\", \"con_name\": \"荣联科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"002649.SZ\", \"con_name\": \"博彦科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"002883.SZ\", \"con_name\": \"*ST中设\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"002967.SZ\", \"con_name\": \"广电计量\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"002987.SZ\", \"con_name\": \"京北方\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"003008.SZ\", \"con_name\": \"开普检测\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"300012.SZ\", \"con_name\": \"华测检测\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"300215.SZ\", \"con_name\": \"电科院\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"300284.SZ\", \"con_name\": \"苏交科\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"300290.SZ\", \"con_name\": \"ST荣科\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"300384.SZ\", \"con_name\": \"三联虹普\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"300416.SZ\", \"con_name\": \"苏试试验\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"300442.SZ\", \"con_name\": \"润泽科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"300500.SZ\", \"con_name\": \"启迪设计\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"300609.SZ\", \"con_name\": \"汇纳科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"300612.SZ\", \"con_name\": \"宣亚国际\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"300635.SZ\", \"con_name\": \"中达安\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"300662.SZ\", \"con_name\": \"科锐国际\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"300674.SZ\", \"con_name\": \"宇信科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"300712.SZ\", \"con_name\": \"永福股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"300732.SZ\", \"con_name\": \"设研院\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"300746.SZ\", \"con_name\": \"汉嘉数智\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"300766.SZ\", \"con_name\": \"每日互动\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"300778.SZ\", \"con_name\": \"新城市\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"300797.SZ\", \"con_name\": \"钢研纳克\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"300826.SZ\", \"con_name\": \"测绘股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"300887.SZ\", \"con_name\": \"谱尼测试\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"300925.SZ\", \"con_name\": \"法本信息\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"300938.SZ\", \"con_name\": \"信测标准\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"300949.SZ\", \"con_name\": \"奥雅股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"300983.SZ\", \"con_name\": \"尤安设计\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"300989.SZ\", \"con_name\": \"蕾奥规划\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"301024.SZ\", \"con_name\": \"霍普股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"301038.SZ\", \"con_name\": \"深水规院\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"301115.SZ\", \"con_name\": \"联检科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"301136.SZ\", \"con_name\": \"招标股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"301167.SZ\", \"con_name\": \"建研设计\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"301169.SZ\", \"con_name\": \"零点有数\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"301215.SZ\", \"con_name\": \"中汽股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"301289.SZ\", \"con_name\": \"国缆检测\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"301299.SZ\", \"con_name\": \"卓创资讯\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"301306.SZ\", \"con_name\": \"西测测试\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"301449.SZ\", \"con_name\": \"天溯计量\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"301508.SZ\", \"con_name\": \"中机认检\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"301632.SZ\", \"con_name\": \"广东建科\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"600288.SH\", \"con_name\": \"大恒科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"600629.SH\", \"con_name\": \"华建集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"600662.SH\", \"con_name\": \"外服控股\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"600734.SH\", \"con_name\": \"*ST实达\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"600861.SH\", \"con_name\": \"北京人力\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"603018.SH\", \"con_name\": \"华设集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"603060.SH\", \"con_name\": \"国检集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"603153.SH\", \"con_name\": \"上海建科\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"603183.SH\", \"con_name\": \"建研院\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"603357.SH\", \"con_name\": \"设计总院\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"603458.SH\", \"con_name\": \"勘设股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"603637.SH\", \"con_name\": \"镇海股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"603860.SH\", \"con_name\": \"中公高科\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"603909.SH\", \"con_name\": \"建发合诚\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"688051.SH\", \"con_name\": \"佳华科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"688316.SH\", \"con_name\": \"青云科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"688334.SH\", \"con_name\": \"西高院\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"688500.SH\", \"con_name\": \"慧辰股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"688509.SH\", \"con_name\": \"正元地信\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"688757.SH\", \"con_name\": \"胜科纳米\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"688787.SH\", \"con_name\": \"海天瑞声\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"920003.BJ\", \"con_name\": \"中诚咨询\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"920122.BJ\", \"con_name\": \"中纺标\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"920160.BJ\", \"con_name\": \"北矿检测\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"920208.BJ\", \"con_name\": \"青矩技术\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"920305.BJ\", \"con_name\": \"云创退\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"920427.BJ\", \"con_name\": \"华维设计\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"920753.BJ\", \"con_name\": \"天纺标\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700375.TI\", \"con_code\": \"920892.BJ\", \"con_name\": \"广咨国际\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "700375.TI",
+      "con_code": "002315.SZ",
+      "con_name": "焦点科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "002354.SZ",
+      "con_name": "天娱数科",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "002642.SZ",
+      "con_name": "荣联科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "002649.SZ",
+      "con_name": "博彦科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "002883.SZ",
+      "con_name": "*ST中设",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "002967.SZ",
+      "con_name": "广电计量",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "002987.SZ",
+      "con_name": "京北方",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "003008.SZ",
+      "con_name": "开普检测",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "300012.SZ",
+      "con_name": "华测检测",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "300215.SZ",
+      "con_name": "电科院",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "300284.SZ",
+      "con_name": "苏交科",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "300290.SZ",
+      "con_name": "ST荣科",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "300384.SZ",
+      "con_name": "三联虹普",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "300416.SZ",
+      "con_name": "苏试试验",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "300442.SZ",
+      "con_name": "润泽科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "300500.SZ",
+      "con_name": "启迪设计",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "300609.SZ",
+      "con_name": "汇纳科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "300612.SZ",
+      "con_name": "宣亚国际",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "300635.SZ",
+      "con_name": "中达安",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "300662.SZ",
+      "con_name": "科锐国际",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "300674.SZ",
+      "con_name": "宇信科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "300712.SZ",
+      "con_name": "永福股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "300732.SZ",
+      "con_name": "设研院",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "300746.SZ",
+      "con_name": "汉嘉数智",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "300766.SZ",
+      "con_name": "每日互动",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "300778.SZ",
+      "con_name": "新城市",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "300797.SZ",
+      "con_name": "钢研纳克",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "300826.SZ",
+      "con_name": "测绘股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "300887.SZ",
+      "con_name": "谱尼测试",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "300925.SZ",
+      "con_name": "法本信息",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "300938.SZ",
+      "con_name": "信测标准",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "300949.SZ",
+      "con_name": "奥雅股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "300983.SZ",
+      "con_name": "尤安设计",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "300989.SZ",
+      "con_name": "蕾奥规划",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "301024.SZ",
+      "con_name": "霍普股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "301038.SZ",
+      "con_name": "深水规院",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "301115.SZ",
+      "con_name": "联检科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "301136.SZ",
+      "con_name": "招标股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "301167.SZ",
+      "con_name": "建研设计",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "301169.SZ",
+      "con_name": "零点有数",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "301215.SZ",
+      "con_name": "中汽股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "301289.SZ",
+      "con_name": "国缆检测",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "301299.SZ",
+      "con_name": "卓创资讯",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "301306.SZ",
+      "con_name": "西测测试",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "301449.SZ",
+      "con_name": "天溯计量",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "301508.SZ",
+      "con_name": "中机认检",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "301632.SZ",
+      "con_name": "广东建科",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "600288.SH",
+      "con_name": "大恒科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "600629.SH",
+      "con_name": "华建集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "600662.SH",
+      "con_name": "外服控股",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "600734.SH",
+      "con_name": "*ST实达",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "600861.SH",
+      "con_name": "北京人力",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "603018.SH",
+      "con_name": "华设集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "603060.SH",
+      "con_name": "国检集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "603153.SH",
+      "con_name": "上海建科",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "603183.SH",
+      "con_name": "建研院",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "603357.SH",
+      "con_name": "设计总院",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "603458.SH",
+      "con_name": "勘设股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "603637.SH",
+      "con_name": "镇海股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "603860.SH",
+      "con_name": "中公高科",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "603909.SH",
+      "con_name": "建发合诚",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "688051.SH",
+      "con_name": "佳华科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "688316.SH",
+      "con_name": "青云科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "688334.SH",
+      "con_name": "西高院",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "688500.SH",
+      "con_name": "慧辰股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "688509.SH",
+      "con_name": "正元地信",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "688757.SH",
+      "con_name": "胜科纳米",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "688787.SH",
+      "con_name": "海天瑞声",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "920003.BJ",
+      "con_name": "中诚咨询",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "920122.BJ",
+      "con_name": "中纺标",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "920160.BJ",
+      "con_name": "北矿检测",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "920208.BJ",
+      "con_name": "青矩技术",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "920305.BJ",
+      "con_name": "云创退",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "920427.BJ",
+      "con_name": "华维设计",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "920753.BJ",
+      "con_name": "天纺标",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700375.TI",
+      "con_code": "920892.BJ",
+      "con_name": "广咨国际",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

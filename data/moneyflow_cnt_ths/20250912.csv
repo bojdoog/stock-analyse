@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250912,886042.TI,存储芯片,精智达,134.05,2.76,1508.45,110,20.0,574.0,510.0,64.0,512480,半导体ETF
 20250912,885945.TI,汽车芯片,芯原股份,183.6,1.26,1126.47,125,20.0,623.0,587.0,35.0,512480,半导体ETF
 20250912,886050.TI,算力租赁,华孚时尚,5.58,0.75,1462.95,149,10.06,529.0,520.0,9.0,515230,软件ETF

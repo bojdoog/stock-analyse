@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231017,证券,1.49,121826.81,10.53258224,4.33,7.88185072,2.65073152,2,512880,证券ETF
 20231017,电池,0.69,922.78,8.34714864,5.08,5.9835232,2.36362544,3,516160,新能源ETF
 20231017,光伏设备,0.24,1372.9,3.538316,2.82,1.79155184,1.74676416,4,516290,光伏ETF

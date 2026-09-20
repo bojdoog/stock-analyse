@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260624,886042.TI,存储芯片,臻宝科技,585.0,4.04,3288.24,194,1212.84,2899.0,2509.0,390.0,512480,半导体ETF
 20260624,885806.TI,华为概念,聚辰股份,165.88,-0.59,3697.93,1003,20.0,3618.0,3465.0,152.0,515230,软件ETF
 20260624,885908.TI,第三代半导体,飞凯材料,54.7,2.18,3185.55,175,15.64,1523.0,1380.0,143.0,512480,半导体ETF

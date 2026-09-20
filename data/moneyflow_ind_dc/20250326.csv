@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250326,汽车整车,1.66,1661.99,10.3561728,6.38,9.16432496,1.19184784,2,515030,新能源车ETF
 20250326,光伏设备,2.23,1133.45,9.7306328,3.35,7.14668656,2.58394624,3,516290,光伏ETF
 20250326,农牧饲渔,2.15,13324.72,5.68078144,3.03,5.04820544,0.632576,5,510150,消费ETF

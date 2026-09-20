@@ -1,0 +1,120 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "700394.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:43:26.496048+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"700394.TI\", \"con_code\": \"001206.SZ\", \"con_name\": \"依依股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700394.TI\", \"con_code\": \"001218.SZ\", \"con_name\": \"丽臣实业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700394.TI\", \"con_code\": \"001223.SZ\", \"con_name\": \"欧克科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700394.TI\", \"con_code\": \"001328.SZ\", \"con_name\": \"登康口腔\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700394.TI\", \"con_code\": \"002094.SZ\", \"con_name\": \"青岛金王\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700394.TI\", \"con_code\": \"002511.SZ\", \"con_name\": \"中顺洁柔\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700394.TI\", \"con_code\": \"600249.SH\", \"con_name\": \"两面针\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700394.TI\", \"con_code\": \"603193.SH\", \"con_name\": \"润本股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700394.TI\", \"con_code\": \"603630.SH\", \"con_name\": \"拉芳家化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700394.TI\", \"con_code\": \"605009.SH\", \"con_name\": \"豪悦护理\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "700394.TI",
+      "con_code": "001206.SZ",
+      "con_name": "依依股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700394.TI",
+      "con_code": "001218.SZ",
+      "con_name": "丽臣实业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700394.TI",
+      "con_code": "001223.SZ",
+      "con_name": "欧克科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700394.TI",
+      "con_code": "001328.SZ",
+      "con_name": "登康口腔",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700394.TI",
+      "con_code": "002094.SZ",
+      "con_name": "青岛金王",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700394.TI",
+      "con_code": "002511.SZ",
+      "con_name": "中顺洁柔",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700394.TI",
+      "con_code": "600249.SH",
+      "con_name": "两面针",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700394.TI",
+      "con_code": "603193.SH",
+      "con_name": "润本股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700394.TI",
+      "con_code": "603630.SH",
+      "con_name": "拉芳家化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700394.TI",
+      "con_code": "605009.SH",
+      "con_name": "豪悦护理",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

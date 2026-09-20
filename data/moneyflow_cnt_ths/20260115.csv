@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260115,886042.TI,存储芯片,蓝箭电子,30.28,2.33,2008.71,166,20.02,907.0,781.0,126.0,512480,半导体ETF
 20260115,886032.TI,固态电池,科恒股份,14.29,1.35,1442.11,281,13.14,766.0,708.0,57.0,516160,新能源ETF
 20260115,885864.TI,光刻胶,七彩化学,20.22,2.83,4499.44,74,20.0,259.0,213.0,46.0,588710,科创半导体设备ETF

@@ -1,0 +1,1182 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "700307.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:43:01.137181+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"700307.TI\", \"con_code\": \"000001.SZ\", \"con_name\": \"平安银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"000166.SZ\", \"con_name\": \"申万宏源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"000415.SZ\", \"con_name\": \"渤海租赁\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"000532.SZ\", \"con_name\": \"华金资本\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"000563.SZ\", \"con_name\": \"陕国投A\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"000567.SZ\", \"con_name\": \"海德股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"000617.SZ\", \"con_name\": \"中油资本\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"000686.SZ\", \"con_name\": \"东北证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"000712.SZ\", \"con_name\": \"锦龙股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"000728.SZ\", \"con_name\": \"国元证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"000750.SZ\", \"con_name\": \"国海证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"000776.SZ\", \"con_name\": \"广发证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"000783.SZ\", \"con_name\": \"长江证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"000987.SZ\", \"con_name\": \"越秀资本\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"001227.SZ\", \"con_name\": \"兰州银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"001236.SZ\", \"con_name\": \"弘业期货\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"002142.SZ\", \"con_name\": \"宁波银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"002316.SZ\", \"con_name\": \"亚联发展\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"002423.SZ\", \"con_name\": \"中粮资本\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"002500.SZ\", \"con_name\": \"山西证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"002647.SZ\", \"con_name\": \"仁东控股\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"002670.SZ\", \"con_name\": \"国盛证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"002673.SZ\", \"con_name\": \"西部证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"002736.SZ\", \"con_name\": \"国信证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"002769.SZ\", \"con_name\": \"普路通\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"002797.SZ\", \"con_name\": \"第一创业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"002807.SZ\", \"con_name\": \"江阴银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"002839.SZ\", \"con_name\": \"张家港行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"002926.SZ\", \"con_name\": \"华西证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"002936.SZ\", \"con_name\": \"郑州银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"002939.SZ\", \"con_name\": \"长城证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"002945.SZ\", \"con_name\": \"华林证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"002948.SZ\", \"con_name\": \"青岛银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"002958.SZ\", \"con_name\": \"青农商行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"002961.SZ\", \"con_name\": \"瑞达期货\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"002966.SZ\", \"con_name\": \"苏州银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"300033.SZ\", \"con_name\": \"同花顺\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"300059.SZ\", \"con_name\": \"东方财富\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"300130.SZ\", \"con_name\": \"新国都\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"300773.SZ\", \"con_name\": \"拉卡拉\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"300803.SZ\", \"con_name\": \"指南针\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"300941.SZ\", \"con_name\": \"创识科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600000.SH\", \"con_name\": \"浦发银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600015.SH\", \"con_name\": \"华夏银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600016.SH\", \"con_name\": \"民生银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600030.SH\", \"con_name\": \"中信证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600036.SH\", \"con_name\": \"招商银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600053.SH\", \"con_name\": \"*ST九鼎\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600061.SH\", \"con_name\": \"国投资本\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600095.SH\", \"con_name\": \"湘财股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600109.SH\", \"con_name\": \"国金证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600120.SH\", \"con_name\": \"浙江东方\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600155.SH\", \"con_name\": \"华创云信\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600318.SH\", \"con_name\": \"新力金融\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600369.SH\", \"con_name\": \"西南证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600390.SH\", \"con_name\": \"五矿资本\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600621.SH\", \"con_name\": \"华鑫股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600643.SH\", \"con_name\": \"爱建集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600816.SH\", \"con_name\": \"建元信托\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600830.SH\", \"con_name\": \"香溢融通\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600864.SH\", \"con_name\": \"哈投股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600901.SH\", \"con_name\": \"江苏金租\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600906.SH\", \"con_name\": \"财达证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600908.SH\", \"con_name\": \"无锡银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600909.SH\", \"con_name\": \"华安证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600918.SH\", \"con_name\": \"中泰证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600919.SH\", \"con_name\": \"江苏银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600926.SH\", \"con_name\": \"杭州银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600927.SH\", \"con_name\": \"永安期货\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600928.SH\", \"con_name\": \"西安银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600958.SH\", \"con_name\": \"东方证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"600999.SH\", \"con_name\": \"招商证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601009.SH\", \"con_name\": \"南京银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601059.SH\", \"con_name\": \"信达证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601066.SH\", \"con_name\": \"中信建投\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601077.SH\", \"con_name\": \"渝农商行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601099.SH\", \"con_name\": \"太平洋\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601108.SH\", \"con_name\": \"财通证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601128.SH\", \"con_name\": \"常熟银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601136.SH\", \"con_name\": \"首创证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601162.SH\", \"con_name\": \"天风证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601166.SH\", \"con_name\": \"兴业银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601169.SH\", \"con_name\": \"北京银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601187.SH\", \"con_name\": \"厦门银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601198.SH\", \"con_name\": \"东兴证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601211.SH\", \"con_name\": \"国泰海通\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601229.SH\", \"con_name\": \"上海银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601236.SH\", \"con_name\": \"红塔证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601288.SH\", \"con_name\": \"农业银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601318.SH\", \"con_name\": \"中国平安\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601319.SH\", \"con_name\": \"中国人保\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601328.SH\", \"con_name\": \"交通银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601336.SH\", \"con_name\": \"新华保险\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601375.SH\", \"con_name\": \"中原证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601377.SH\", \"con_name\": \"兴业证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601398.SH\", \"con_name\": \"工商银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601456.SH\", \"con_name\": \"国联民生\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601519.SH\", \"con_name\": \"大智慧\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601528.SH\", \"con_name\": \"瑞丰银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601555.SH\", \"con_name\": \"东吴证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601577.SH\", \"con_name\": \"长沙银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601601.SH\", \"con_name\": \"中国太保\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601628.SH\", \"con_name\": \"中国人寿\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601658.SH\", \"con_name\": \"邮储银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601665.SH\", \"con_name\": \"齐鲁银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601688.SH\", \"con_name\": \"华泰证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601696.SH\", \"con_name\": \"中银证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601788.SH\", \"con_name\": \"光大证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601818.SH\", \"con_name\": \"光大银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601825.SH\", \"con_name\": \"沪农商行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601838.SH\", \"con_name\": \"成都银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601860.SH\", \"con_name\": \"紫金银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601878.SH\", \"con_name\": \"浙商证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601881.SH\", \"con_name\": \"中国银河\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601901.SH\", \"con_name\": \"方正证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601916.SH\", \"con_name\": \"浙商银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601939.SH\", \"con_name\": \"建设银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601963.SH\", \"con_name\": \"重庆银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601988.SH\", \"con_name\": \"中国银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601990.SH\", \"con_name\": \"南京证券\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601995.SH\", \"con_name\": \"中金公司\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601997.SH\", \"con_name\": \"贵阳银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"601998.SH\", \"con_name\": \"中信银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"603093.SH\", \"con_name\": \"南华期货\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"603123.SH\", \"con_name\": \"翠微股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"603300.SH\", \"con_name\": \"海南华铁\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"603323.SH\", \"con_name\": \"苏农银行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700307.TI\", \"con_code\": \"688318.SH\", \"con_name\": \"财富趋势\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "700307.TI",
+      "con_code": "000001.SZ",
+      "con_name": "平安银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "000166.SZ",
+      "con_name": "申万宏源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "000415.SZ",
+      "con_name": "渤海租赁",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "000532.SZ",
+      "con_name": "华金资本",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "000563.SZ",
+      "con_name": "陕国投A",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "000567.SZ",
+      "con_name": "海德股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "000617.SZ",
+      "con_name": "中油资本",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "000686.SZ",
+      "con_name": "东北证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "000712.SZ",
+      "con_name": "锦龙股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "000728.SZ",
+      "con_name": "国元证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "000750.SZ",
+      "con_name": "国海证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "000776.SZ",
+      "con_name": "广发证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "000783.SZ",
+      "con_name": "长江证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "000987.SZ",
+      "con_name": "越秀资本",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "001227.SZ",
+      "con_name": "兰州银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "001236.SZ",
+      "con_name": "弘业期货",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "002142.SZ",
+      "con_name": "宁波银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "002316.SZ",
+      "con_name": "亚联发展",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "002423.SZ",
+      "con_name": "中粮资本",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "002500.SZ",
+      "con_name": "山西证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "002647.SZ",
+      "con_name": "仁东控股",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "002670.SZ",
+      "con_name": "国盛证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "002673.SZ",
+      "con_name": "西部证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "002736.SZ",
+      "con_name": "国信证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "002769.SZ",
+      "con_name": "普路通",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "002797.SZ",
+      "con_name": "第一创业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "002807.SZ",
+      "con_name": "江阴银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "002839.SZ",
+      "con_name": "张家港行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "002926.SZ",
+      "con_name": "华西证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "002936.SZ",
+      "con_name": "郑州银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "002939.SZ",
+      "con_name": "长城证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "002945.SZ",
+      "con_name": "华林证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "002948.SZ",
+      "con_name": "青岛银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "002958.SZ",
+      "con_name": "青农商行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "002961.SZ",
+      "con_name": "瑞达期货",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "002966.SZ",
+      "con_name": "苏州银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "300033.SZ",
+      "con_name": "同花顺",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "300059.SZ",
+      "con_name": "东方财富",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "300130.SZ",
+      "con_name": "新国都",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "300773.SZ",
+      "con_name": "拉卡拉",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "300803.SZ",
+      "con_name": "指南针",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "300941.SZ",
+      "con_name": "创识科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600000.SH",
+      "con_name": "浦发银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600015.SH",
+      "con_name": "华夏银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600016.SH",
+      "con_name": "民生银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600030.SH",
+      "con_name": "中信证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600036.SH",
+      "con_name": "招商银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600053.SH",
+      "con_name": "*ST九鼎",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600061.SH",
+      "con_name": "国投资本",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600095.SH",
+      "con_name": "湘财股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600109.SH",
+      "con_name": "国金证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600120.SH",
+      "con_name": "浙江东方",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600155.SH",
+      "con_name": "华创云信",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600318.SH",
+      "con_name": "新力金融",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600369.SH",
+      "con_name": "西南证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600390.SH",
+      "con_name": "五矿资本",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600621.SH",
+      "con_name": "华鑫股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600643.SH",
+      "con_name": "爱建集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600816.SH",
+      "con_name": "建元信托",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600830.SH",
+      "con_name": "香溢融通",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600864.SH",
+      "con_name": "哈投股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600901.SH",
+      "con_name": "江苏金租",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600906.SH",
+      "con_name": "财达证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600908.SH",
+      "con_name": "无锡银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600909.SH",
+      "con_name": "华安证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600918.SH",
+      "con_name": "中泰证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600919.SH",
+      "con_name": "江苏银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600926.SH",
+      "con_name": "杭州银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600927.SH",
+      "con_name": "永安期货",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600928.SH",
+      "con_name": "西安银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600958.SH",
+      "con_name": "东方证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "600999.SH",
+      "con_name": "招商证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601009.SH",
+      "con_name": "南京银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601059.SH",
+      "con_name": "信达证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601066.SH",
+      "con_name": "中信建投",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601077.SH",
+      "con_name": "渝农商行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601099.SH",
+      "con_name": "太平洋",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601108.SH",
+      "con_name": "财通证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601128.SH",
+      "con_name": "常熟银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601136.SH",
+      "con_name": "首创证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601162.SH",
+      "con_name": "天风证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601166.SH",
+      "con_name": "兴业银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601169.SH",
+      "con_name": "北京银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601187.SH",
+      "con_name": "厦门银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601198.SH",
+      "con_name": "东兴证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601211.SH",
+      "con_name": "国泰海通",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601229.SH",
+      "con_name": "上海银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601236.SH",
+      "con_name": "红塔证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601288.SH",
+      "con_name": "农业银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601318.SH",
+      "con_name": "中国平安",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601319.SH",
+      "con_name": "中国人保",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601328.SH",
+      "con_name": "交通银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601336.SH",
+      "con_name": "新华保险",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601375.SH",
+      "con_name": "中原证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601377.SH",
+      "con_name": "兴业证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601398.SH",
+      "con_name": "工商银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601456.SH",
+      "con_name": "国联民生",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601519.SH",
+      "con_name": "大智慧",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601528.SH",
+      "con_name": "瑞丰银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601555.SH",
+      "con_name": "东吴证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601577.SH",
+      "con_name": "长沙银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601601.SH",
+      "con_name": "中国太保",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601628.SH",
+      "con_name": "中国人寿",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601658.SH",
+      "con_name": "邮储银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601665.SH",
+      "con_name": "齐鲁银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601688.SH",
+      "con_name": "华泰证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601696.SH",
+      "con_name": "中银证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601788.SH",
+      "con_name": "光大证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601818.SH",
+      "con_name": "光大银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601825.SH",
+      "con_name": "沪农商行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601838.SH",
+      "con_name": "成都银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601860.SH",
+      "con_name": "紫金银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601878.SH",
+      "con_name": "浙商证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601881.SH",
+      "con_name": "中国银河",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601901.SH",
+      "con_name": "方正证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601916.SH",
+      "con_name": "浙商银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601939.SH",
+      "con_name": "建设银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601963.SH",
+      "con_name": "重庆银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601988.SH",
+      "con_name": "中国银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601990.SH",
+      "con_name": "南京证券",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601995.SH",
+      "con_name": "中金公司",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601997.SH",
+      "con_name": "贵阳银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "601998.SH",
+      "con_name": "中信银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "603093.SH",
+      "con_name": "南华期货",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "603123.SH",
+      "con_name": "翠微股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "603300.SH",
+      "con_name": "海南华铁",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "603323.SH",
+      "con_name": "苏农银行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700307.TI",
+      "con_code": "688318.SH",
+      "con_name": "财富趋势",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

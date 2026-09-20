@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250619,石油行业,2.38,5875.27,3.81536592,3.39,2.34318464,1.47218128,1,510300,沪深300ETF
 20250619,文化传媒,0.2,10045.84,2.40323328,0.92,6.78200576,-4.37877248,3,512980,传媒ETF
 20250619,燃气,2.3,1651.69,1.97880112,3.06,2.283632,-0.30483088,4,561380,电网设备ETF

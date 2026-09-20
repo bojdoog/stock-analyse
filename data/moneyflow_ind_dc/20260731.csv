@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260731,半导体,4.21,2412.31,94.97214976,2.04,136.30169088,-41.32954112,3,512480,半导体ETF
 20260731,有色金属,2.32,25175.19,57.33975808,4.59,39.72672768,17.6130304,9,512400,有色ETF
 20260731,通信设备,3.85,19775.72,53.06722816,2.75,66.3173632,-13.25013504,11,515880,通信ETF

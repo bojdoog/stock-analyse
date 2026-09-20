@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260713,医疗服务,-1.43,1246.35,1.79588224,0.57,-1.43910528,3.23498752,12,510660,创新药ETF
 20260713,医药商业,0.77,1029.61,0.71244445,1.66,-0.27298899,0.98543344,26,159929,医药ETF
 20260713,生物制品,-1.48,946.66,-0.99420112,-0.64,-0.7277,-0.26650112,47,510660,创新药ETF

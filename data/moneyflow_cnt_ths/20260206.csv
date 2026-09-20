@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260206,885921.TI,储能,震裕科技,176.55,0.68,2605.7,805,13.39,1366.0,1205.0,160.0,516160,新能源ETF
 20260206,885431.TI,新能源汽车,凯龙高科,34.3,0.57,4895.04,1010,20.01,1641.0,1483.0,158.0,515030,新能源车ETF
 20260206,886032.TI,固态电池,万润新能,86.5,1.42,1441.82,284,10.26,606.0,477.0,129.0,516160,新能源ETF

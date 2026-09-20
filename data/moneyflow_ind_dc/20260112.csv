@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260112,软件开发,7.78,1479.43,108.87183104,5.05,120.99901952,-12.12718848,1.0,515230,软件ETF
 20260112,互联网服务,7.52,37322.55,64.20562176,3.08,91.17115392,-26.96553216,2.0,515230,软件ETF
 20260112,文化传媒,7.37,12514.14,37.17065216,3.6,51.2574464,-14.08679424,3.0,512980,传媒ETF

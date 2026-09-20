@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250507,航天航空,5.82,45175.73,23.88846,6.94,25.57885104,-1.69039104,1,512660,军工ETF
 20250507,农牧饲渔,2.15,14112.61,8.65799008,3.87,3.68793184,4.97005824,2,510150,消费ETF
 20250507,贵金属,0.88,1393.1,5.9834992,5.85,3.47005408,2.51344512,4,512400,有色ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240125,文化传媒,5.31,8567.52,16.90428048,6.87,14.09734544,2.80693504,1,512980,传媒ETF
 20240125,工程建设,4.87,19724.93,13.53681328,5.56,9.23190192,4.30491136,4,510300,沪深300ETF
 20240125,半导体,3.47,1024.46,12.02881424,3.84,5.06133392,6.96748032,5,512480,半导体ETF

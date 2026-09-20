@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250829,电池,4.36,1265.49,54.935744,6.03,49.93061888,5.00512512,1,516160,新能源ETF
 20250829,酿酒行业,1.92,54230.54,21.03844352,6.37,19.84447488,1.19396864,2,512690,白酒ETF
 20250829,医疗服务,1.79,1324.81,13.29492176,4.29,13.68568784,-0.39076608,3,510660,创新药ETF

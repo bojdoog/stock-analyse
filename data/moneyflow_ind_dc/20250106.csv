@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250106,中药,3.45,1375.79,3.29900176,1.85,3.08752944,0.21147232,2,159929,医药ETF
 20250106,小金属,1.81,1739.55,2.2408744,1.72,1.5592768,0.6815976,3,512400,有色ETF
 20250106,有色金属,0.74,14903.39,0.74888848,0.37,0.28218768,0.4667008,6,512400,有色ETF

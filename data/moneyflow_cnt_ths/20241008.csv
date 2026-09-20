@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241008,885928.TI,钠离子电池,长虹能源,32.98,10.96,893.42,88,10.96,462.0,416.0,46.0,516160,新能源ETF
 20241008,886038.TI,超导概念,辰光医疗,10.95,7.86,1256.89,20,7.86,54.0,57.0,-2.0,561380,电网设备ETF
 20241008,885947.TI,DRG/DIP,万达信息,8.74,14.72,930.88,21,14.72,46.0,53.0,-6.0,159929,医药ETF

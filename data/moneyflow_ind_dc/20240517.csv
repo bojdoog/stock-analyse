@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240517,酿酒行业,1.11,53150.21,7.22671904,4.13,1.97303776,5.25368128,4,512690,白酒ETF
 20240517,软件开发,2.1,692.5,7.04458288,2.44,6.15226416,0.89231872,6,515230,软件ETF
 20240517,汽车整车,0.2,1306.61,4.2903888,3.06,5.4015376,-1.1111488,8,515030,新能源车ETF

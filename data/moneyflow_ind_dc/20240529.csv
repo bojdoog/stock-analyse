@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240529,光伏设备,3.1,1097.26,27.49096512,7.1,23.44842816,4.04253696,1,516290,光伏ETF
 20240529,小金属,3.85,1555.84,5.28284,4.24,4.86834416,0.41449584,2,512400,有色ETF
 20240529,贵金属,2.65,1143.94,2.89849232,2.71,3.29783136,-0.39933904,4,512400,有色ETF

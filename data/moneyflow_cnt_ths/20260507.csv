@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260507,885556.TI,5G,申菱环境,136.68,2.84,6925.39,449,14.33,2479.0,2154.0,324.0,515880,通信ETF
 20260507,885806.TI,华为概念,中青宝,14.27,2.16,3877.15,1001,20.02,3094.0,2904.0,190.0,515230,软件ETF
 20260507,885517.TI,机器人概念,肇民科技,32.98,1.96,4381.15,1175,20.02,2706.0,2542.0,163.0,562500,机器人ETF

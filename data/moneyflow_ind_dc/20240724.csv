@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240724,石油行业,-0.87,4323.48,4.88135968,8.86,3.14073904,1.74062064,1,510300,沪深300ETF
 20240724,风电设备,2.86,805.18,1.75281744,3.09,0.61541296,1.13740448,3,516160,新能源ETF
 20240724,银行,0.04,3252.33,1.63498944,0.91,0.86098624,0.7740032,4,512800,银行ETF

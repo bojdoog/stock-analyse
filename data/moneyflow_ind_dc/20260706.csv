@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260706,化学制药,0.96,36056.08,20.64772608,2.52,18.83520512,1.81252096,2,159929,医药ETF
 20260706,银行,2.31,3970.72,14.74843392,5.14,9.77062912,4.9778048,6,512800,银行ETF
 20260706,生物制品,1.35,986.1,8.82738704,3.95,5.83613456,2.99125248,12,510660,创新药ETF

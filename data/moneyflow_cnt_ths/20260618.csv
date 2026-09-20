@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260618,885556.TI,5G,东方国信,18.7,0.94,7299.5,455,20.03,3254.0,3136.0,118.0,515880,通信ETF
 20260618,885945.TI,汽车芯片,裕太微,238.8,1.5,1568.05,143,20.0,1363.0,1267.0,96.0,512480,半导体ETF
 20260618,886044.TI,液冷服务器,五洋自控,7.49,1.41,2516.97,218,15.77,1589.0,1513.0,75.0,515230,软件ETF

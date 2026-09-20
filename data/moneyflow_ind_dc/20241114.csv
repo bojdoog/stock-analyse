@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241114,银行,-0.13,3575.98,1.15056896,0.45,-1.07301376,2.22358272,1,512800,银行ETF
 20241114,公用事业,-1.64,8256.89,-0.06519779,-0.23,0.14708829,-0.21228608,3,561380,电网设备ETF
 20241114,水泥建材,-1.61,24340.38,-1.6064296,-4.17,-0.75290848,-0.85352112,9,510300,沪深300ETF

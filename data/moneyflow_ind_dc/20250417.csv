@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250417,软件开发,0.19,1026.06,6.3034472,1.34,13.2918632,-6.988416,3,515230,软件ETF
 20250417,航天航空,1.23,42508.44,5.4427344,4.04,4.43266112,1.01007328,5,512660,军工ETF
 20250417,酿酒行业,0.98,49535.28,5.18447888,3.82,0.64464944,4.53982944,6,512690,白酒ETF

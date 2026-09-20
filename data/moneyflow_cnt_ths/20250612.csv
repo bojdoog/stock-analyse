@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250612,886015.TI,创新药,荣昌生物,71.0,1.44,1236.42,204,17.55,301.0,276.0,25.0,510660,创新药ETF
 20250612,885530.TI,黄金概念,恒邦股份,12.49,1.52,2595.86,71,10.04,114.0,97.0,17.0,512400,有色ETF
 20250612,885456.TI,互联网金融,兆日科技,16.49,0.47,5984.14,194,20.02,332.0,318.0,13.0,512880,证券ETF

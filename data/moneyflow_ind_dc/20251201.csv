@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251201,通信设备,1.86,18835.7,49.86663936,4.19,61.06345472,-11.19681536,1.0,515880,通信ETF
 20251201,半导体,1.74,1919.93,43.25852416,2.77,26.53070848,16.72781568,2.0,512480,半导体ETF
 20251201,有色金属,2.09,24310.4,24.49732352,4.18,25.8107008,-1.31337728,3.0,512400,有色ETF

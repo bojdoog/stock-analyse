@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240402,电池,2.9,882.53,7.24543536,2.62,3.51808816,3.7273472,1,516160,新能源ETF
 20240402,能源金属,4.0,461.72,5.50278864,3.91,2.9349704,2.56781824,3,512400,有色ETF
 20240402,小金属,2.39,1566.36,4.1708,3.57,3.62514288,0.54565712,5,512400,有色ETF

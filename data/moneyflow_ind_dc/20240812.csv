@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240812,中药,2.96,1296.89,4.50002496,2.9,4.51520912,-0.01518416,1,159929,医药ETF
 20240812,医疗器械,1.4,667.03,3.38474304,3.23,2.2848616,1.09988144,2,159929,医药ETF
 20240812,银行,-0.5,3150.34,2.13900656,1.98,1.19981136,0.9391952,3,512800,银行ETF

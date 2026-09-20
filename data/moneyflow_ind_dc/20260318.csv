@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260318,通信设备,3.14,22394.62,79.64921344,6.47,61.15086848,18.49834496,3,515880,通信ETF
 20260318,半导体,2.84,2243.65,65.3720832,3.85,52.40757248,12.96451072,5,512480,半导体ETF
 20260318,风电设备,-0.72,1856.55,7.60855552,2.08,15.85441024,-8.24585472,30,516160,新能源ETF

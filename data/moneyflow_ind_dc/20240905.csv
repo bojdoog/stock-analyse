@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240905,汽车整车,1.73,1251.95,7.5925192,5.15,4.56766752,3.02485168,2,515030,新能源车ETF
 20240905,互联网服务,2.2,14643.75,6.25391856,3.28,5.15715328,1.09676528,3,515230,软件ETF
 20240905,光伏设备,1.57,890.04,4.25210576,2.79,2.67574912,1.57635664,4,516290,光伏ETF

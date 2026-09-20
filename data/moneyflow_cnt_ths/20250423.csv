@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250423,885517.TI,机器人概念,利安科技,58.96,2.51,3035.23,861,20.01,980.0,830.0,149.0,562500,机器人ETF
 20250423,885431.TI,新能源汽车,肇民科技,47.93,2.58,3264.44,891,20.0,923.0,805.0,118.0,515030,新能源车ETF
 20250423,886069.TI,人形机器人,肇民科技,47.93,4.58,1850.53,186,20.0,450.0,350.0,100.0,562500,机器人ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240408,电力行业,2.56,15422.51,23.04464752,8.85,20.9413208,2.10332672,1,561380,电网设备ETF
 20240408,汽车整车,0.2,1334.5,7.7755592,3.95,7.2712392,0.50432,2,515030,新能源车ETF
 20240408,船舶制造,-1.06,743.94,1.93498752,4.11,2.3125576,-0.37757008,4,512660,军工ETF

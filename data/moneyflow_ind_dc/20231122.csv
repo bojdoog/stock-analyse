@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231122,中药,0.51,1598.21,2.12997424,1.81,0.43551216,1.69446208,1,159929,医药ETF
 20231122,旅游酒店,0.63,13736.31,1.62510784,3.22,0.6070448,1.01806304,2,510150,消费ETF
 20231122,商业百货,1.38,15097.5,1.48513152,1.53,1.13902496,0.34610656,3,510150,消费ETF

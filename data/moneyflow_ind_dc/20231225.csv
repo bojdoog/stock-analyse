@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231225,食品饮料,0.67,23620.22,3.09973264,3.09,1.28479104,1.8149416,1,510150,消费ETF
 20231225,石油行业,-1.0,5120.06,2.357624,7.84,2.29228688,0.06533712,2,510300,沪深300ETF
 20231225,酿酒行业,0.45,53919.39,2.06453904,2.08,2.00141152,0.06312752,3,512690,白酒ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250714,汽车零部件,1.46,43340.6,12.27543632,2.45,10.02808912,2.2473472,1,515030,新能源车ETF
 20250714,电网设备,1.8,29309.37,8.3958008,2.63,8.48010416,-0.08430336,3,561380,电网设备ETF
 20250714,电力行业,1.81,17859.24,4.3087968,1.3,4.44660416,-0.13780736,5,561380,电网设备ETF

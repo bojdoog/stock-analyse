@@ -42,12 +42,14 @@ const BacktestChart: React.FC<BacktestChartProps> = ({ result, year, amvData = [
 
   const bullTrades = yearTrades.filter(t => t.type === 'bull');
 
-  // 年份范围：起点为自然年1月1日，终点为归属该年的最后一个区间的结束日
+  // Include the latest available NAV even when the current zone is unfinished.
   const yearStart = `${year}-01-01`;
   const yearTradesList = result.trades.filter(t => t.year === year);
-  const yearEnd = yearTradesList.length > 0
+  const lastTradeDate = yearTradesList.length > 0
     ? yearTradesList.sort((a, b) => a.end_date.localeCompare(b.end_date))[yearTradesList.length - 1].end_date
-    : `${year}-12-31`;
+    : yearStart;
+  const latestNavDate = result.navSeries.filter(p => p.date >= yearStart && p.date <= `${year}-12-31`).slice(-1)[0]?.date ?? yearStart;
+  const yearEnd = lastTradeDate > latestNavDate ? lastTradeDate : latestNavDate;
 
   // 净值序列截取到该年份范围
   const yearNavData = result.navSeries.filter(p => p.date >= yearStart && p.date <= yearEnd);
@@ -61,6 +63,21 @@ const BacktestChart: React.FC<BacktestChartProps> = ({ result, year, amvData = [
   const zoneKey = (z: { start_date: string; end_date: string }) => `${z.start_date}_${z.end_date}`;
 
   const dates = yearNavData.map(p => p.date);
+
+  // 当年最大回撤区间：峰值日 -> 谷值日
+  const ddInfo = (() => {
+    let peak = -Infinity;
+    let peakDate = '';
+    let maxDD = 0;
+    let ddStart = '';
+    let ddEnd = '';
+    for (const p of yearNavData) {
+      if (p.nav > peak) { peak = p.nav; peakDate = p.date; }
+      const dd = peak > 0 ? (peak - p.nav) / peak : 0;
+      if (dd > maxDD) { maxDD = dd; ddStart = peakDate; ddEnd = p.date; }
+    }
+    return maxDD > 0 ? { maxDD, ddStart, ddEnd } : null;
+  })();
 
   const buildOption = (highlightKey: string | null) => {
     const navValues = yearNavData.map(p => p.nav);
@@ -96,7 +113,7 @@ const BacktestChart: React.FC<BacktestChartProps> = ({ result, year, amvData = [
             formatter: () => {
               if (trade) {
                 const ret = (trade.return * 100).toFixed(2);
-                return `银行 ${trade.return >= 0 ? '+' : ''}${ret}%`;
+                return `银行 ${trade.return >= 0 ? '+' : ''}${ret}%${zone.is_open ? '（进行中）' : ''}${trade.valuation_date && trade.valuation_date < zone.end_date ? `\n估值截至 ${trade.valuation_date}` : ''}`;
               }
               return '';
             },
@@ -113,6 +130,7 @@ const BacktestChart: React.FC<BacktestChartProps> = ({ result, year, amvData = [
       animation: false,
       tooltip: {
         trigger: 'axis',
+        confine: true,
         formatter: (params: any) => {
           const p = Array.isArray(params) ? params[0] : params;
           const date = p.axisValue;
@@ -148,7 +166,10 @@ const BacktestChart: React.FC<BacktestChartProps> = ({ result, year, amvData = [
               const retColor = trade.return >= 0 ? '#c41e3a' : '#006400';
               const amvRet = (trade.amv_return * 100).toFixed(2);
               const amvColor = trade.amv_return >= 0 ? '#c41e3a' : '#006400';
-              zoneInfo = `<br/><span style="color:${typeColor};font-weight:bold">${typeLabel}</span> ${zone.start_date} ~ ${zone.end_date}`;
+              zoneInfo = `<br/><span style="color:${typeColor};font-weight:bold">${typeLabel}${zone.is_open ? '（进行中）' : ''}</span> ${zone.start_date} ~ ${zone.end_date}`;
+              if (trade?.valuation_date && trade.valuation_date < zone.end_date) {
+                zoneInfo += `<br/>行情更新至 ${trade.valuation_date}，其后沿用该日估值`;
+              }
               zoneInfo += `<br/>策略收益：<span style="color:${retColor}">${trade.return >= 0 ? '+' : ''}${ret}%</span>`;
               zoneInfo += `<br/>活跃市值：<span style="color:${amvColor}">${trade.amv_return >= 0 ? '+' : ''}${amvRet}%</span>`;
             }
@@ -167,7 +188,7 @@ const BacktestChart: React.FC<BacktestChartProps> = ({ result, year, amvData = [
       grid: {
         left: 60,
         right: 30,
-        top: 30,
+        top: 48,
         bottom: 40,
       },
       xAxis: {
@@ -228,6 +249,24 @@ const BacktestChart: React.FC<BacktestChartProps> = ({ result, year, amvData = [
               fontSize: 11,
             },
           },
+          // 当年最大回撤区间：峰值日与谷值日两条虚线，标签水平置于图表上方
+          markLine: ddInfo ? {
+            silent: true,
+            symbol: 'none',
+            lineStyle: { color: '#1890ff', type: 'dashed', width: 1.5 },
+            label: {
+              show: true,
+              color: '#1890ff',
+              fontSize: 11,
+              rotate: 0,
+              position: 'end',
+              distance: 4,
+            },
+            data: [
+              { xAxis: ddInfo.ddStart, label: { formatter: `最大回撤 -${(ddInfo.maxDD * 100).toFixed(2)}%` } },
+              { xAxis: ddInfo.ddEnd, label: { formatter: '回撤谷底' } },
+            ],
+          } : undefined,
         },
       ],
     };
@@ -281,7 +320,7 @@ const BacktestChart: React.FC<BacktestChartProps> = ({ result, year, amvData = [
     <div>
       <div ref={chartRef} style={{ width: '100%', height: 350, marginBottom: 12 }} />
       {bullTrades.length > 0 && (
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 10 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 10 }}>
           {bullTrades.map((t, idx) => {
             const key = `${t.start_date}_${t.end_date}`;
             const isActive = activeKey === key;

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260610,886051.TI,减肥药,康鹏科技,7.5,0.16,1213.18,62,7.91,44.0,41.0,3.0,510660,创新药ETF
 20260610,885780.TI,啤酒概念,惠泉啤酒,13.01,1.02,1520.39,29,9.97,24.0,22.0,2.0,512690,白酒ETF
 20260610,885462.TI,乳业,妙可蓝多,18.95,-0.79,1864.53,35,4.81,14.0,14.0,0.0,510150,消费ETF

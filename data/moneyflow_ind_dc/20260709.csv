@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260709,半导体,6.53,3698.83,318.67711488,5.38,243.67570944,75.00140544,2,512480,半导体ETF
 20260709,通信设备,2.58,24310.28,109.19619584,4.63,97.53646592,11.65972992,4,515880,通信ETF
 20260709,房地产,0.38,1815.03,1.60969264,1.01,1.51577792,0.09391472,14,510300,沪深300ETF

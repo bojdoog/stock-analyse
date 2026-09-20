@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240205,电池,-7.21,649.09,2.60514064,1.46,-1.2505512,3.85569184,2,516160,新能源ETF
 20240205,医疗服务,-6.89,807.02,1.06633728,0.64,-3.040844,4.10718128,3,510660,创新药ETF
 20240205,装修装饰,-8.52,335.69,0.64084792,2.1,0.67953896,-0.03869104,4,510300,沪深300ETF

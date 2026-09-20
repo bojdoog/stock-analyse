@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240325,石油行业,-1.0,5053.32,3.61249632,5.27,0.95270384,2.65979248,2,510300,沪深300ETF
 20240325,有色金属,-1.15,13415.64,3.38643008,1.61,1.51802688,1.8684032,4,512400,有色ETF
 20240325,贵金属,0.51,965.44,1.93344432,3.28,2.8516952,-0.91825088,5,512400,有色ETF

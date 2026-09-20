@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240816,通信设备,0.35,8939.0,5.6550336,2.35,3.52336,2.1316736,2,515880,通信ETF
 20240816,有色金属,-0.61,12223.69,2.557956,2.9,2.17992176,0.37803424,4,512400,有色ETF
 20240816,医疗器械,1.89,670.2,1.72328112,1.6,2.10666896,-0.38338784,6,159929,医药ETF

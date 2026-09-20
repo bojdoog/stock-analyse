@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240716,电池,1.5,666.77,10.61671728,7.57,11.9142904,-1.29757312,1,516160,新能源ETF
 20240716,互联网服务,0.95,14256.18,6.73814544,3.7,8.59473856,-1.85659312,3,515230,软件ETF
 20240716,汽车整车,3.2,1326.72,5.36793472,1.96,5.78079872,-0.412864,5,515030,新能源车ETF

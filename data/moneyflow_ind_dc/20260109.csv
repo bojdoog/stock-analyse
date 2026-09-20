@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260109,文化传媒,4.26,11654.67,56.07944448,7.02,56.270912,-0.19146752,1.0,512980,传媒ETF
 20260109,互联网服务,4.28,34711.56,43.06383104,2.51,63.7860992,-20.72226816,2.0,515230,软件ETF
 20260109,小金属,4.11,3568.75,34.56120576,5.41,29.4911744,5.07003136,3.0,512400,有色ETF

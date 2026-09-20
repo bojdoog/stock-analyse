@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260210,886019.TI,AIGC概念,捷成股份,8.45,1.95,2554.78,282,20.03,1013.0,940.0,73.0,159381,创业板人工智能ETF
 20260210,886050.TI,算力租赁,亚康股份,77.82,1.56,1543.21,157,20.0,478.0,421.0,57.0,515230,软件ETF
 20260210,885362.TI,云计算,新华网,27.23,1.17,4648.82,220,10.02,616.0,563.0,52.0,515230,软件ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240823,家电行业,0.88,13987.92,7.49138416,5.54,5.19437088,2.29701328,1,510150,消费ETF
 20240823,软件开发,1.33,583.43,7.31452176,3.1,6.93139728,0.38312448,2,515230,软件ETF
 20240823,汽车整车,1.2,1257.16,3.91293456,2.9,5.64162896,-1.7286944,5,515030,新能源车ETF

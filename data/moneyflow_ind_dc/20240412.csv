@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240412,贵金属,5.67,1254.5,8.34102032,4.37,7.29998096,1.04103936,1,512400,有色ETF
 20240412,通信设备,0.29,9877.82,8.20554,2.5,3.09924368,5.10629632,2,515880,通信ETF
 20240412,家电行业,2.98,15881.02,6.7381384,4.51,5.17271376,1.56542464,3,510150,消费ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260318,885556.TI,5G,菲菱科思,127.94,2.67,6226.53,445,20.0,1464.0,1170.0,293.0,515880,通信ETF
 20260318,885806.TI,华为概念,深科达,50.15,2.11,3667.89,996,20.0,1945.0,1712.0,232.0,515230,软件ETF
 20260318,886044.TI,液冷服务器,强瑞技术,130.02,3.17,2097.11,189,20.0,726.0,547.0,178.0,515230,软件ETF

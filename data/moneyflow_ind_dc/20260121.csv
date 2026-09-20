@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260121,半导体,2.7,2367.77,120.68506112,4.06,135.62980864,-14.94474752,1.0,512480,半导体ETF
 20260121,有色金属,1.71,29777.91,29.67250688,3.41,24.92980992,4.74269696,3.0,512400,有色ETF
 20260121,能源金属,4.6,959.53,21.94519456,7.57,16.1394704,5.80572416,4.0,512400,有色ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250417,885945.TI,汽车芯片,芯朋微,59.1,0.82,883.21,115,12.96,210.0,193.0,16.0,512480,半导体ETF
 20250417,885982.TI,华为欧拉,卓易信息,42.64,-0.24,1332.81,45,12.21,67.0,58.0,8.0,515230,软件ETF
 20250417,886058.TI,华为昇腾,拓维信息,28.38,0.15,1269.13,68,10.0,72.0,65.0,6.0,515230,软件ETF

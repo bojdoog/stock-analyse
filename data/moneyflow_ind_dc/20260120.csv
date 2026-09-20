@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260120,银行,1.19,4044.21,13.88508928,4.46,13.49664,0.38844928,,512800,银行ETF
 20260120,银行,1.19,4044.21,13.88508928,4.46,13.49664,0.38844928,1.0,512800,银行ETF
 20260120,工程建设,1.09,28767.85,10.53356544,3.11,11.0884096,-0.55484416,2.0,510300,沪深300ETF

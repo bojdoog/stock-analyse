@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250428,881155.TI,银行,重庆银行,1240.49,0.98,84,4.68,10.74,94.0,65.0,28.0,512800,银行ETF
 20250428,881162.TI,通信服务,*ST信通,2607.29,-0.39,46,5.01,6.08,60.0,52.0,8.0,515880,通信ETF
 20250428,881275.TI,游戏,盛天网络,7437.77,1.35,24,9.47,11.68,37.0,33.0,4.0,159869,游戏ETF

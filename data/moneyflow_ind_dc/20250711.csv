@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250711,证券,2.78,151678.15,50.04196864,6.28,39.2203904,10.82157824,1,512880,证券ETF
 20250711,软件开发,2.35,1208.76,41.29528832,3.38,40.03940352,1.2558848,2,515230,软件ETF
 20250711,互联网服务,1.54,28642.09,26.96051712,2.77,23.82205696,3.13846016,3,515230,软件ETF

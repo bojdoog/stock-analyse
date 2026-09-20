@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240112,电力行业,1.25,14726.92,1.9903088,1.57,2.4847112,-0.4944024,1,561380,电网设备ETF
 20240112,光伏设备,0.43,1389.35,1.80609968,0.5,2.64719024,-0.84109056,2,516290,光伏ETF
 20240112,贵金属,1.11,870.45,1.43642832,5.1,0.40565936,1.03076896,4,512400,有色ETF

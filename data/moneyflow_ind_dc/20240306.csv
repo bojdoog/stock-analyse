@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240306,光伏设备,3.37,1230.21,13.5748008,4.36,7.48950928,6.08529152,1,516290,光伏ETF
 20240306,电网设备,3.62,19476.69,13.27720672,6.0,10.10214624,3.17506048,2,561380,电网设备ETF
 20240306,风电设备,6.35,899.32,7.20396176,9.14,4.04805392,3.15590784,4,516160,新能源ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241022,文化传媒,4.05,9033.79,43.96374016,7.65,48.31041792,-4.34667776,1,512980,传媒ETF
 20241022,酿酒行业,2.21,50651.43,9.10749104,3.59,7.21018032,1.89731072,2,512690,白酒ETF
 20241022,光伏设备,2.28,1138.44,9.06306304,1.85,4.42817792,4.63488512,3,516290,光伏ETF

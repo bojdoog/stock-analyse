@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250730,银行,0.52,4323.07,11.997952,3.53,4.69679616,7.30115584,1,512800,银行ETF
 20250730,游戏,0.6,1438.07,7.59249248,4.09,4.2207344,3.37175808,2,159869,游戏ETF
 20250730,食品饮料,1.25,29526.94,5.65964064,2.2,5.83099936,-0.17135872,4,510150,消费ETF

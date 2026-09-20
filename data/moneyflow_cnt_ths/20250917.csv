@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250917,885517.TI,机器人概念,波长光电,88.12,1.14,4080.5,1039,20.0,2567.0,2489.0,77.0,562500,机器人ETF
 20250917,885431.TI,新能源汽车,利和兴,24.36,1.11,4593.33,962,20.0,2551.0,2486.0,64.0,515030,新能源车ETF
 20250917,885921.TI,储能,利和兴,24.36,0.85,2393.7,678,20.0,1630.0,1567.0,63.0,516160,新能源ETF

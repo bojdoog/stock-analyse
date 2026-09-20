@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250110,小金属,-0.27,1795.27,3.51611888,2.21,2.86471328,0.6514056,1,512400,有色ETF
 20250110,贵金属,-0.63,1047.26,0.63217248,1.72,0.06725936,0.56491312,4,512400,有色ETF
 20250110,风电设备,-2.11,946.41,-0.1737128,-0.25,0.36418512,-0.53789792,7,516160,新能源ETF

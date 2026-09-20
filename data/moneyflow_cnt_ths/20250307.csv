@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250307,885530.TI,黄金概念,华钰矿业,22.55,0.88,2231.31,72,0.88,112.0,96.0,15.0,512400,有色ETF
 20250307,885780.TI,啤酒概念,泸州老窖,131.41,-0.15,1380.71,24,-0.15,21.0,15.0,6.0,512690,白酒ETF
 20250307,885343.TI,稀土永磁,宇晶股份,21.1,0.58,2287.99,60,0.58,106.0,102.0,4.0,512400,有色ETF

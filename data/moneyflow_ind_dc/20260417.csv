@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260417,通信设备,2.29,24859.74,25.287296,1.31,35.61478144,-10.32748544,4,515880,通信ETF
 20260417,风电设备,1.9,1776.39,13.37822336,6.06,7.9885504,5.38967296,9,516160,新能源ETF
 20260417,小金属,1.51,4051.86,8.03011072,1.57,9.0966272,-1.06651648,17,512400,有色ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260427,半导体,3.49,2469.91,116.94120192,3.81,89.2482688,27.69293312,2,512480,半导体ETF
 20260427,机器人,2.29,9217.76,2.38667264,4.58,2.08310544,0.3035672,48,562500,机器人ETF
 20260427,风电设备,0.75,1751.05,2.32621536,1.15,2.73364704,-0.40743168,1,516160,新能源ETF

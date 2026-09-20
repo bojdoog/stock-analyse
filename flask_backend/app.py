@@ -1,11 +1,10 @@
 import os
 import sys
-import threading
 import datetime
 import json
 import urllib.request
 
-from flask import Flask, send_from_directory, send_file, abort, jsonify, request
+from flask import Flask, Response, send_from_directory, abort, jsonify, request
 from flask_cors import CORS
 
 # 将当前目录加入 sys.path
@@ -13,6 +12,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from config import Config
 from routes.api import api_bp
+from routes.indicators import indicators_bp
+from database import init_db
 
 # ---------- 访问日志 ----------
 LOG_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'logs')
@@ -69,6 +70,7 @@ def create_app(config_class=Config):
     
     # 加载配置
     app.config.from_object(config_class)
+    init_db(app)
     
     # 启用 CORS（允许跨域访问）
     CORS(app, resources={
@@ -92,49 +94,25 @@ def create_app(config_class=Config):
     
     # 注册 API 蓝图
     app.register_blueprint(api_bp)
+    app.register_blueprint(indicators_bp)
     
     # 数据文件路由 - 直接提供 CSV 静态文件访问
     @app.route('/data/<path:filepath>')
     def serve_data_file(filepath):
-        """提供数据文件的直接访问，兼容前端 fetch('/data/...') 请求"""
-        data_dir = config_class.DATA_DIR
-        full_path = os.path.join(data_dir, filepath)
-        
-        # 安全检查：防止路径穿越
-        if not os.path.abspath(full_path).startswith(os.path.abspath(data_dir)):
-            abort(403)
-        
-        if not os.path.exists(full_path):
-            abort(404)
-        
-        # 如果是 CSV 文件，返回纯文本
-        if filepath.endswith('.csv'):
-            return send_file(
-                full_path,
-                mimetype='text/csv',
-                as_attachment=False,
-            )
-        
-        # 其他文件类型
-        return send_file(full_path)
+        """兼容旧下载地址，内容从数据库读取。"""
+        from services.data_service import DataService
+        content = DataService().get_file_bytes(filepath)
+        if content is None:
+            return jsonify(code=404, message='数据不存在'), 404
+        return Response(content, mimetype='text/csv' if filepath.endswith('.csv') else 'application/json')
     
     # 提供资金流向的 index.json 索引
     @app.route('/data/<path:dirpath>/index.json')
     def serve_index_json(dirpath):
         """为前端资金流向加载提供目录索引"""
-        import json
-        full_dir = os.path.join(config_class.DATA_DIR, dirpath)
-        
-        if not os.path.isdir(full_dir):
-            abort(404)
-        
-        files = [f for f in sorted(os.listdir(full_dir)) if f.endswith('.csv')]
-        
-        from flask import Response
-        return Response(
-            json.dumps(files),
-            mimetype='application/json'
-        )
+        from market_store import list_files
+        files = list_files(dirpath, config_class.DATABASE_PATH)
+        return jsonify(files)
     
     # 前端静态文件服务（生产模式）
     frontend_dir = config_class.FRONTEND_DIR
@@ -171,32 +149,23 @@ def create_app(config_class=Config):
             'code': 500,
             'message': '服务器内部错误',
         }), 500
+
+    @app.errorhandler(ValueError)
+    def invalid_parameter(error):
+        return jsonify(code=400, message='参数格式错误，请检查日期等查询条件'), 400
     
     return app
 
-
-# 启动时预热缓存
-def _warmup_cache():
-    """在后台线程中预热数据缓存"""
-    try:
-        from routes.api import data_service
-        import time
-        start = time.time()
-        # 预热 sector-data
-        data_service.get_all_sector_data()
-        # 预热资金流向
-        data_service.get_moneyflow_batch(['ind_dc', 'cnt_ths', 'ind_ths'])
-        elapsed = time.time() - start
-        print(f'[预热] 数据缓存完成，耗时 {elapsed:.2f}s')
-    except Exception as e:
-        print(f'[预热] 数据缓存失败: {e}')
 
 
 if __name__ == '__main__':
     app = create_app()
     
-    host = os.environ.get('FLASK_HOST', '0.0.0.0')
-    port = int(os.environ.get('FLASK_PORT', 5000))
+    # 默认绑定 127.0.0.1：避免 host=0.0.0.0 时 Werkzeug 枚举本机全部网卡(可能含异常虚拟网卡)导致 getaddrinfo failed
+    # 生产部署(基于 Nginx 反代)时通过环境变量覆盖：set FLASK_HOST=0.0.0.0
+    # strip() 去掉环境变量可能携带的尾随空白/换行，否则 socket.getaddrinfo 解析"带空格的IP"会抛 getaddrinfo failed
+    host = os.environ.get('FLASK_HOST', '127.0.0.1').strip()
+    port = int((os.environ.get('FLASK_PORT') or '5000').strip())
     debug = os.environ.get('FLASK_DEBUG', 'true').lower() == 'true'
     
     print(f'启动 Flask 服务器...')
@@ -204,9 +173,5 @@ if __name__ == '__main__':
     print(f'  调试模式: {debug}')
     print(f'  数据目录: {Config.DATA_DIR}')
     print(f'  前端目录: {Config.FRONTEND_DIR}')
-    
-    if not debug:
-        # 生产模式启动时预热缓存
-        threading.Thread(target=_warmup_cache, daemon=True).start()
     
     app.run(host=host, port=port, debug=debug)

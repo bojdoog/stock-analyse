@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250418,885556.TI,5G,创远信科,22.85,1.21,3688.21,411,29.98,324.0,286.0,38.0,515880,通信ETF
 20250418,886037.TI,6G概念,创远信科,22.85,3.18,1327.43,64,29.98,86.0,64.0,21.0,515880,通信ETF
 20250418,885709.TI,虚拟现实,硕贝德,13.92,0.39,735.58,278,20.0,225.0,208.0,17.0,159869,游戏ETF

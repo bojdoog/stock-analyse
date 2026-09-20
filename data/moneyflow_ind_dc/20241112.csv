@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241112,医药商业,5.17,1103.3,9.2989312,6.09,8.30920368,0.98972752,1,159929,医药ETF
 20241112,医疗服务,2.14,1109.82,5.77657856,1.79,2.88777472,2.88880384,3,510660,创新药ETF
 20241112,医疗器械,0.73,864.03,5.68715392,1.92,2.05090176,3.63625216,4,159929,医药ETF

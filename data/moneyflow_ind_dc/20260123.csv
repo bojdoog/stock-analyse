@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260123,光伏设备,9.14,1616.53,88.41901312,7.69,97.51786496,-9.09885184,1.0,516290,光伏ETF
 20260123,能源金属,5.21,1007.1,29.63495424,8.27,20.15635456,9.47859968,2.0,512400,有色ETF
 20260123,航天航空,1.32,71956.99,24.74655488,3.04,32.0983168,-7.35176192,4.0,512660,军工ETF

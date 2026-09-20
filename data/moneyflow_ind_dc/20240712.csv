@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240712,光伏设备,1.41,886.94,5.32742944,2.68,3.6630352,1.66439424,1,516290,光伏ETF
 20240712,银行,1.7,3262.62,2.61973248,1.22,-0.9716608,3.59139328,3,512800,银行ETF
 20240712,酿酒行业,0.94,44576.99,2.14040272,1.53,2.09806848,0.04233424,4,512690,白酒ETF

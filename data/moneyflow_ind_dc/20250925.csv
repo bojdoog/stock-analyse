@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250925,小金属,0.72,2967.94,18.6136576,5.1,17.38754048,1.22611712,3.0,512400,有色ETF
 20250925,锂电池,-0.67,18693.59,17.5733557,3.18,7.55410294,10.01925276,,516160,新能源ETF
 20250925,通信设备,0.21,18666.41,14.94233088,1.18,24.3262464,-9.38391552,4.0,515880,通信ETF

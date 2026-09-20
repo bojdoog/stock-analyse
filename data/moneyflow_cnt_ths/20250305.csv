@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250305,886078.TI,商业航天,星图测控,88.88,2.09,1505.61,209,2.09,266.0,248.0,18.0,159206,卫星ETF
 20250305,886037.TI,6G概念,本川智能,44.4,3.07,1500.11,63,3.07,151.0,136.0,15.0,515880,通信ETF
 20250305,885362.TI,云计算,辰安科技,25.85,1.75,3974.15,177,1.75,515.0,500.0,14.0,515230,软件ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240425,电池,1.22,776.85,3.26160096,1.68,1.53031648,1.73128448,2,516160,新能源ETF
 20240425,银行,1.4,3127.93,2.31817792,1.25,1.44697152,0.8712064,4,512800,银行ETF
 20240425,煤炭行业,1.57,10827.1,1.50074608,1.82,1.0001672,0.50057888,5,515220,煤炭ETF

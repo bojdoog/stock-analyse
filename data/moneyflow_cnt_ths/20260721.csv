@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260721,885806.TI,华为概念,深科达,78.94,3.17,3112.53,1003,20.01,2773.0,2524.0,248.0,515230,软件ETF
 20260721,885556.TI,5G,东芯股份,120.46,4.62,5716.75,455,20.0,2613.0,2365.0,248.0,515880,通信ETF
 20260721,885728.TI,人工智能,米奥会展,13.31,1.67,1166.82,1078,20.02,2234.0,2001.0,233.0,159381,创业板人工智能ETF

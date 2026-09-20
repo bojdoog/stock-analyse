@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231110,证券,0.25,127955.43,3.72434432,1.2,6.71219456,-2.98785024,2,512880,证券ETF
 20231110,医药商业,2.6,1106.86,2.55628416,4.18,1.66315232,0.89313184,3,159929,医药ETF
 20231110,燃气,3.07,1412.02,2.10286361,5.61,1.39975273,0.70311088,4,561380,电网设备ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20240923,885736.TI,无人驾驶,法本信息,16.73,0.98,1428.72,271,0.98,17200000000.0,16400000000.0,800000000.0,515030,新能源车ETF
 20240923,886032.TI,固态电池,德邦科技,29.1,0.28,571.13,150,0.28,8100000000.0,7400000000.0,600000000.0,516160,新能源ETF
 20240923,885494.TI,一带一路,岭南股份,1.84,0.42,1372.23,525,0.42,16200000000.0,15600000000.0,600000000.0,510300,沪深300ETF

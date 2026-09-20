@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241230,银行,1.32,3828.24,2.35785472,0.76,2.72419328,-0.36633856,3,512800,银行ETF
 20241230,石油行业,-0.81,5439.2,1.83117424,2.84,3.62700528,-1.79583104,4,510300,沪深300ETF
 20241230,能源金属,0.6,476.45,0.35484848,0.91,-0.32567856,0.68052704,8,512400,有色ETF

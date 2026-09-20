@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260225,有色金属,3.76,31997.51,134.99059456,5.93,139.33959168,-4.34899712,1,512400,有色ETF
 20260225,小金属,6.53,4350.69,72.37110272,10.97,91.49497856,-19.12387584,2,512400,有色ETF
 20260225,贵金属,1.03,3196.99,19.47089152,5.57,8.5688192,10.90207232,10,512400,有色ETF

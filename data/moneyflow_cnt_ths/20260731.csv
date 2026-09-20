@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260731,885728.TI,人工智能,立方控股,20.42,4.12,1209.61,1080,29.98,2122.0,1853.0,268.0,159381,创业板人工智能ETF
 20260731,886019.TI,AIGC概念,中文在线,24.83,5.84,1894.03,293,20.01,759.0,577.0,181.0,159381,创业板人工智能ETF
 20260731,886031.TI,ChatGPT概念,中文在线,24.83,6.53,1666.71,139,20.01,437.0,306.0,130.0,159381,创业板人工智能ETF

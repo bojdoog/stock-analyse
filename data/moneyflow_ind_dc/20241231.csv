@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241231,酿酒行业,0.49,51841.4,5.45634144,2.57,4.66563936,0.79070208,1,512690,白酒ETF
 20241231,燃气,2.49,1537.31,2.67420627,5.35,2.19076483,0.48344144,2,561380,电网设备ETF
 20241231,煤炭行业,-0.33,10835.04,0.36802704,0.4,1.56554992,-1.19752288,5,515220,煤炭ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260331,贵金属,0.28,2781.67,9.13520992,3.61,4.28263776,4.85257216,7,512400,有色ETF
 20260331,银行,0.47,4155.7,6.37628672,1.93,2.6586368,3.71764992,14,512800,银行ETF
 20260331,医疗服务,0.39,1341.51,5.75984672,2.29,6.36201504,-0.60216832,16,510660,创新药ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250826,游戏,2.36,1625.72,10.29831552,3.57,11.57160832,-1.2732928,2,159869,游戏ETF
 20250826,电网设备,0.69,32044.37,5.8735408,1.37,7.39532256,-1.52178176,3,561380,电网设备ETF
 20250826,农牧饲渔,1.49,16041.89,2.17715904,0.74,4.5366752,-2.35951616,5,510150,消费ETF

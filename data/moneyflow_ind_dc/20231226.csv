@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231226,生物制品,0.39,903.47,3.88136352,4.15,2.39236368,1.48899984,1,510660,创新药ETF
 20231226,公用事业,1.95,7457.09,1.60831079,7.12,1.07888567,0.52942512,3,561380,电网设备ETF
 20231226,石油行业,-0.47,5096.01,1.55564016,4.43,-0.23171536,1.78735552,4,510300,沪深300ETF

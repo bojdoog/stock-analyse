@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250117,半导体,2.93,1360.38,29.18299392,2.68,38.65201152,-9.4690176,1,512480,半导体ETF
 20250117,证券,0.35,136518.95,2.64806512,1.58,2.2586584,0.38940672,5,512880,证券ETF
 20250117,能源金属,0.89,461.75,1.03572768,2.23,0.61949392,0.41623376,11,512400,有色ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250321,风电设备,1.93,1168.25,6.74706544,4.59,4.23503776,2.51202768,1,516160,新能源ETF
 20250321,石油行业,-0.14,5635.12,3.50922176,4.49,1.29608832,2.21313344,2,510300,沪深300ETF
 20250321,中药,0.69,1393.74,1.84440976,1.05,-0.1394824,1.98389216,3,159929,医药ETF

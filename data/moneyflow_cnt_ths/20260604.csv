@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260604,886042.TI,存储芯片,华特气体,203.6,2.42,2783.6,191,15.51,1971.0,1809.0,161.0,512480,半导体ETF
 20260604,885945.TI,汽车芯片,朗科科技,67.43,0.54,1462.97,143,13.02,1047.0,981.0,66.0,512480,半导体ETF
 20260604,886006.TI,钙钛矿电池,奥来德,51.48,0.79,1267.66,91,20.0,434.0,371.0,63.0,516290,光伏ETF

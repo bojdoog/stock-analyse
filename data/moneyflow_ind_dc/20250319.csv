@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250319,电力行业,1.62,16001.08,17.8838536,6.9,13.90111056,3.98274304,1,561380,电网设备ETF
 20250319,银行,1.23,3810.04,5.36856064,2.09,4.44793344,0.9206272,2,512800,银行ETF
 20250319,汽车整车,0.18,1701.57,3.7678656,1.96,2.34019456,1.42767104,3,515030,新能源车ETF

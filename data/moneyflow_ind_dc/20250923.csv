@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250923,银行,1.28,4040.21,16.55296256,3.64,10.9254912,5.62747136,,512800,银行ETF
 20250923,银行,1.28,4040.21,16.55296256,3.64,10.9254912,5.62747136,1.0,512800,银行ETF
 20250923,工程建设,-0.19,26899.55,6.16850176,2.34,7.58702592,-1.41852416,2.0,510300,沪深300ETF

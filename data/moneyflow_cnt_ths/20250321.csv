@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250321,885426.TI,海工装备,克莱特,49.29,3.93,2817.8,92,19.93,317.0,295.0,22.0,159638,高端装备ETF
 20250321,886038.TI,超导概念,永鼎股份,6.18,-1.25,1539.59,24,4.57,52.0,49.0,2.0,561380,电网设备ETF
 20250321,885780.TI,啤酒概念,奥瑞金,5.02,-1.06,1435.42,24,1.01,16.0,15.0,1.0,512690,白酒ETF

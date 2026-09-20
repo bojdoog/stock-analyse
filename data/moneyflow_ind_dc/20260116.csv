@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260116,半导体,4.13,2309.55,142.7850112,4.62,140.1725824,2.6124288,1.0,512480,半导体ETF
 20260116,光伏设备,1.32,1471.34,27.82566656,3.8,14.7152768,13.11038976,4.0,516290,光伏ETF
 20260116,汽车零部件,1.61,55385.16,27.55128576,2.48,23.79188736,3.7593984,5.0,515030,新能源车ETF

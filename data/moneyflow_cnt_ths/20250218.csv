@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250218,885780.TI,啤酒概念,重庆啤酒,57.18,-2.25,1350.46,23,-2.25,9.0,13.0,-3.0,512690,白酒ETF
 20250218,885864.TI,光刻胶,华软科技,5.94,-1.87,2658.39,65,-1.87,54.0,59.0,-5.0,588710,科创半导体设备ETF
 20250218,885462.TI,乳业,新乳业,15.05,-3.4,1750.46,33,-3.4,11.0,18.0,-6.0,510150,消费ETF

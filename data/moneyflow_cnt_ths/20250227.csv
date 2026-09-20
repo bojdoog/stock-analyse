@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250227,885951.TI,预制菜,好想你,10.73,2.05,1046.61,107,2.05,109.0,89.0,20.0,510150,消费ETF
 20250227,885874.TI,云游戏,宝通科技,36.88,1.44,1394.95,26,1.44,140.0,132.0,7.0,159869,游戏ETF
 20250227,885780.TI,啤酒概念,泸州老窖,127.78,1.46,1399.49,23,1.46,27.0,19.0,7.0,512690,白酒ETF

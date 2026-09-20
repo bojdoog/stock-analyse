@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231123,汽车整车,2.56,1406.77,19.04205568,5.87,16.26624512,2.77581056,1,515030,新能源车ETF
 20231123,汽车零部件,2.57,33425.1,11.95070432,2.37,10.1614896,1.78921472,2,515030,新能源车ETF
 20231123,化学制药,2.37,30973.05,4.3477136,1.55,0.9077904,3.4399232,6,159929,医药ETF

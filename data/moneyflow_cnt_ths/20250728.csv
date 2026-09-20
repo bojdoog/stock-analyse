@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250728,885556.TI,5G,方邦股份,47.14,1.71,4669.04,421,20.01,958.0,871.0,87.0,515880,通信ETF
 20250728,885564.TI,无人机,硕贝德,18.9,1.45,2696.1,389,20.0,601.0,565.0,36.0,512660,军工ETF
 20250728,885866.TI,数字货币,*ST天喻,5.34,1.07,2479.64,95,10.1,247.0,213.0,34.0,515230,软件ETF

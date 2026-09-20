@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241220,886042.TI,存储芯片,灿芯股份,89.17,3.09,1153.75,86,3.09,331.0,284.0,47.0,512480,半导体ETF
 20241220,885945.TI,汽车芯片,泰凌微,33.81,2.92,895.08,111,2.92,393.0,347.0,45.0,512480,半导体ETF
 20241220,885806.TI,华为概念,电声股份,16.2,1.49,2645.08,945,1.49,1630.0,1596.0,33.0,515230,软件ETF

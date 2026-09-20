@@ -1,0 +1,111 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "881174.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:45:12.724302+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"881174.TI\", \"con_code\": \"002035.SZ\", \"con_name\": \"华帝股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881174.TI\", \"con_code\": \"002508.SZ\", \"con_name\": \"老板电器\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881174.TI\", \"con_code\": \"002543.SZ\", \"con_name\": \"万和电气\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881174.TI\", \"con_code\": \"002677.SZ\", \"con_name\": \"浙江美大\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881174.TI\", \"con_code\": \"300894.SZ\", \"con_name\": \"火星人\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881174.TI\", \"con_code\": \"300911.SZ\", \"con_name\": \"亿田智能\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881174.TI\", \"con_code\": \"603366.SH\", \"con_name\": \"日出东方\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881174.TI\", \"con_code\": \"603551.SH\", \"con_name\": \"奥普科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881174.TI\", \"con_code\": \"605336.SH\", \"con_name\": \"*ST帅电\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "881174.TI",
+      "con_code": "002035.SZ",
+      "con_name": "华帝股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881174.TI",
+      "con_code": "002508.SZ",
+      "con_name": "老板电器",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881174.TI",
+      "con_code": "002543.SZ",
+      "con_name": "万和电气",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881174.TI",
+      "con_code": "002677.SZ",
+      "con_name": "浙江美大",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881174.TI",
+      "con_code": "300894.SZ",
+      "con_name": "火星人",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881174.TI",
+      "con_code": "300911.SZ",
+      "con_name": "亿田智能",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881174.TI",
+      "con_code": "603366.SH",
+      "con_name": "日出东方",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881174.TI",
+      "con_code": "603551.SH",
+      "con_name": "奥普科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881174.TI",
+      "con_code": "605336.SH",
+      "con_name": "*ST帅电",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

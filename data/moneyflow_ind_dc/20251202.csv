@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20251202,医药商业,2.52,1252.21,5.8708792,5.99,4.33135808,1.53952112,2.0,159929,医药ETF
 20251202,船舶制造,2.42,1274.19,5.49819104,4.05,2.70404544,2.7941456,3.0,512660,军工ETF
 20251202,农牧饲渔,0.15,16323.66,5.40662144,2.66,7.21326976,-1.80664832,4.0,510150,消费ETF

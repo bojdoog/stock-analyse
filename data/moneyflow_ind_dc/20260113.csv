@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260113,电网设备,1.14,38651.95,19.56194048,1.75,33.43794432,-13.87600384,1.0,561380,电网设备ETF
 20260113,医疗器械,1.28,1099.25,13.32019456,2.73,11.30048256,2.019712,2.0,159929,医药ETF
 20260113,化学制药,1.23,40133.95,11.1561344,1.77,9.77987584,1.37625856,3.0,159929,医药ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250722,煤炭行业,5.78,11499.17,25.884056,9.43,20.69737056,5.18668544,1,515220,煤炭ETF
 20250722,酿酒行业,1.92,51484.26,20.14910768,7.81,12.27211312,7.87699456,2,512690,白酒ETF
 20250722,光伏设备,1.43,1141.87,17.95371392,5.15,14.37347456,3.58023936,3,516290,光伏ETF

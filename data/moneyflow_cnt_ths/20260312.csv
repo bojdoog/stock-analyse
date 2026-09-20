@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260312,885914.TI,煤炭概念,郑州煤电,5.14,2.29,2678.76,85,10.06,370.0,309.0,61.0,515220,煤炭ETF
 20260312,885866.TI,数字货币,优博讯,19.69,0.03,2411.34,92,10.56,145.0,133.0,12.0,515230,软件ETF
 20260312,885951.TI,预制菜,通威股份,19.55,-0.35,1176.25,100,5.0,60.0,54.0,5.0,510150,消费ETF

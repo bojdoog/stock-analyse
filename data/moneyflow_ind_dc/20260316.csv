@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260316,半导体,2.34,2251.59,63.73236992,3.52,41.16708864,22.56528128,2,512480,半导体ETF
 20260316,食品饮料,1.17,29290.02,15.94754816,5.05,10.6268416,5.32070656,12,510150,消费ETF
 20260316,通信设备,-0.36,22764.24,12.0097024,1.02,4.2363136,7.7733888,15,515880,通信ETF

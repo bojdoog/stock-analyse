@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240819,贵金属,4.61,1005.83,4.92887872,5.36,2.55578096,2.37309776,1,512400,有色ETF
 20240819,银行,2.18,3303.05,4.88990208,2.21,2.33199616,2.55790592,2,512800,银行ETF
 20240819,家电行业,0.12,14257.05,4.27586176,4.05,3.51499776,0.760864,3,510150,消费ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260114,886013.TI,信创,科大国创,52.72,3.18,2526.13,301,20.01,1545.0,1401.0,143.0,515230,软件ETF
 20260114,885456.TI,互联网金融,拉卡拉,32.08,2.29,7518.19,215,20.02,1015.0,914.0,101.0,512880,证券ETF
 20260114,886041.TI,数据要素,拉卡拉,32.08,3.14,1542.19,387,20.02,1934.0,1851.0,82.0,515230,软件ETF

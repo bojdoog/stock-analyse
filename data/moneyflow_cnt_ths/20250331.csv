@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250331,886050.TI,算力租赁,宏景科技,94.81,0.8,1230.85,131,20.0,260.0,237.0,22.0,515230,软件ETF
 20250331,885362.TI,云计算,宏景科技,94.81,0.11,3656.41,187,20.0,266.0,255.0,10.0,515230,软件ETF
 20250331,886058.TI,华为昇腾,赛意信息,32.65,0.04,1399.73,68,19.99,106.0,101.0,4.0,515230,软件ETF

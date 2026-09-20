@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240321,证券,0.5,121237.35,7.2364024,3.08,3.86233776,3.37406464,1,512880,证券ETF
 20240321,农牧饲渔,2.44,12436.73,4.64858016,2.92,3.95057664,0.69800352,2,510150,消费ETF
 20240321,航天航空,2.15,37481.01,2.40061952,2.28,0.37696032,2.0236592,4,512660,军工ETF

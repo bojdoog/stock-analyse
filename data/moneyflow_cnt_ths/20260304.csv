@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260304,885641.TI,风电,通光线缆,17.88,0.97,1447.51,418,20.0,1059.0,991.0,67.0,516160,新能源ETF
 20260304,885700.TI,军工,通光线缆,17.88,0.41,2623.27,598,20.0,1230.0,1174.0,56.0,512660,军工ETF
 20260304,885426.TI,海工装备,通光线缆,17.88,0.32,4128.85,263,20.0,766.0,716.0,50.0,159638,高端装备ETF

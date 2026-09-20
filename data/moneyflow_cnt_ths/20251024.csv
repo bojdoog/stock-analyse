@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251024,885556.TI,5G,科翔股份,14.76,2.3,5382.88,433,20.0,1448.0,1183.0,265.0,515880,通信ETF
 20251024,885431.TI,新能源汽车,通易航天,18.1,1.64,4490.83,969,21.97,1937.0,1677.0,259.0,515030,新能源车ETF
 20251024,885517.TI,机器人概念,锦富技术,7.36,1.59,3968.73,1086,20.07,1883.0,1637.0,246.0,562500,机器人ETF

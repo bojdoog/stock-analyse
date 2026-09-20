@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241112,885927.TI,CRO概念,英诺激光,31.2,0.18,744.59,57,0.18,97.0,97.0,0.0,510660,创新药ETF
 20241112,885780.TI,啤酒概念,ST西发,7.91,0.1,1480.08,18,0.1,13.0,14.0,-1.0,512690,白酒ETF
 20241112,885462.TI,乳业,熊猫乳品,24.22,-0.21,1862.87,33,-0.21,21.0,24.0,-3.0,510150,消费ETF

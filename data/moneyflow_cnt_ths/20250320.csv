@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250320,885426.TI,海工装备,天海防务,6.97,2.56,2711.31,85,2.56,171.0,148.0,23.0,159638,高端装备ETF
 20250320,885427.TI,高端装备,海默科技,7.99,0.99,2652.74,303,0.99,427.0,406.0,21.0,159638,高端装备ETF
 20250320,885566.TI,大飞机,广联航空,25.34,0.77,2926.81,125,0.77,168.0,154.0,13.0,512660,军工ETF

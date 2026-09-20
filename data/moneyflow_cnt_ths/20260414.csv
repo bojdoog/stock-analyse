@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260414,885564.TI,无人机,*ST观典,1.63,1.82,3285.45,455,19.85,888.0,815.0,72.0,512660,军工ETF
 20260414,886042.TI,存储芯片,协创数据,249.6,3.04,2140.72,174,20.0,931.0,864.0,67.0,512480,半导体ETF
 20260414,886078.TI,商业航天,*ST观典,1.63,1.97,2381.61,485,19.85,1274.0,1210.0,64.0,159206,卫星ETF

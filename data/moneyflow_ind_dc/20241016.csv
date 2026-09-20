@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241016,银行,2.87,3664.42,20.8209024,5.38,13.02809088,7.79281152,2,512800,银行ETF
 20241016,贵金属,5.13,1091.12,10.38649264,7.7,7.0474048,3.33908784,4,512400,有色ETF
 20241016,水泥建材,4.26,22417.85,3.50231568,4.31,2.91851584,0.58379984,5,510300,沪深300ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260421,电池,1.06,1668.64,45.34259456,3.48,31.7962624,13.54633216,1,516160,新能源ETF
 20260421,锂电池,1.84,20892.34,29.36819456,4.55,19.254144,10.11405056,3,516160,新能源ETF
 20260421,银行,0.67,4205.46,1.25441024,0.54,5.93327872,-4.67886848,46,512800,银行ETF

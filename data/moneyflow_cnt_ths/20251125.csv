@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251125,885556.TI,5G,光库科技,147.0,2.35,5300.66,437,20.0,1167.0,1071.0,96.0,515880,通信ETF
 20251125,885431.TI,新能源汽车,福赛科技,64.1,1.46,4340.86,987,13.61,1512.0,1427.0,84.0,515030,新能源车ETF
 20251125,885806.TI,华为概念,佳缘科技,48.17,1.71,3287.03,990,20.0,1794.0,1712.0,81.0,515230,软件ETF

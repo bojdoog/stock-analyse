@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20230921,通信设备,0.7,10736.95,3.9300096,1.41,1.86686208,2.06314752,2,515880,通信ETF
 20230921,船舶制造,0.42,770.46,0.52399118,2.17,0.00497342,0.51901776,7,512660,军工ETF
 20230921,家电行业,-0.5,15861.84,0.40182032,0.42,0.47781616,-0.07599584,8,510150,消费ETF

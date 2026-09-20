@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240927,互联网服务,6.28,16883.55,30.56382208,3.93,40.46835968,-9.9045376,1,515230,软件ETF
 20240927,证券,8.23,135249.8,28.75528704,4.64,27.7119104,1.04337664,2,512880,证券ETF
 20240927,软件开发,8.28,721.35,27.33378816,3.18,30.76125696,-3.4274688,3,515230,软件ETF

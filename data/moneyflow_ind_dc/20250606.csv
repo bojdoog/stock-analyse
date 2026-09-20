@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250606,有色金属,1.92,17699.01,6.20811552,2.72,7.33752352,-1.129408,1,512400,有色ETF
 20250606,工程建设,0.74,23310.99,5.60939824,4.53,5.9337128,-0.32431456,2,510300,沪深300ETF
 20250606,贵金属,2.66,1448.74,5.15127232,6.67,5.17762352,-0.0263512,4,512400,有色ETF

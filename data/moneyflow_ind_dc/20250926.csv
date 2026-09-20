@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250926,航天航空,0.66,52372.98,8.36654528,4.19,3.71238592,4.65415936,1.0,512660,军工ETF
 20250926,风电设备,3.04,1498.32,7.93117808,3.29,9.89460592,-1.96342784,2.0,516160,新能源ETF
 20250926,汽车整车,0.25,1818.61,7.19148032,1.8,17.24110336,-10.04962304,3.0,515030,新能源车ETF

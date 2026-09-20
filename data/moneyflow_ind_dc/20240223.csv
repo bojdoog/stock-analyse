@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240223,汽车整车,2.8,1177.59,9.44521648,4.84,12.14741424,-2.70219776,1,515030,新能源车ETF
 20240223,文化传媒,4.69,8428.11,6.77361312,1.55,8.7417616,-1.96814848,2,512980,传媒ETF
 20240223,汽车零部件,3.52,26467.51,4.73594992,1.66,6.2371928,-1.50124288,3,515030,新能源车ETF

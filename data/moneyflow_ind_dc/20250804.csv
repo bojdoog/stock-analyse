@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250804,银行,0.66,4312.54,19.49852672,6.01,17.38724352,2.1112832,1,512800,银行ETF
 20250804,汽车零部件,2.22,45053.03,16.87457264,3.36,14.77512944,2.0994432,3,515030,新能源车ETF
 20250804,航天航空,4.56,55038.17,16.78926608,6.25,15.88551184,0.90375424,4,512660,军工ETF

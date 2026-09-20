@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241017,文化传媒,0.23,8299.06,1.58617632,0.55,4.29184032,-2.705664,6,512980,传媒ETF
 20241017,游戏,0.42,973.87,0.57324112,0.37,-0.25393936,0.82718048,11,159869,游戏ETF
 20241017,燃气,-1.73,1364.86,-0.91225038,-3.91,-0.5504259,-0.36182448,26,561380,电网设备ETF

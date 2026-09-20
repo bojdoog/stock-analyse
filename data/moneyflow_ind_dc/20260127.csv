@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260127,半导体,3.95,2411.53,69.18152448,2.47,72.6722176,-3.49069312,1.0,512480,半导体ETF
 20260127,通信设备,1.27,22682.41,37.9494016,2.41,49.2332672,-11.2838656,2.0,515880,通信ETF
 20260127,银行,-0.22,3990.58,21.51026688,5.54,12.39269632,9.11757056,,512800,银行ETF

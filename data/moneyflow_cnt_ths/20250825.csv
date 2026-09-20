@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250825,885641.TI,风电,金力永磁,36.36,1.31,1214.36,370,20.0,776.0,714.0,62.0,516160,新能源ETF
 20250825,886015.TI,创新药,海特生物,59.41,2.02,1493.38,252,20.0,499.0,451.0,48.0,510660,创新药ETF
 20250825,885530.TI,黄金概念,北方铜业,12.5,2.84,2930.35,72,10.04,225.0,182.0,43.0,512400,有色ETF

@@ -1,0 +1,192 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "700387.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:43:23.726055+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"700387.TI\", \"con_code\": \"000526.SZ\", \"con_name\": \"学大教育\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700387.TI\", \"con_code\": \"000796.SZ\", \"con_name\": \"凯撒旅业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700387.TI\", \"con_code\": \"002607.SZ\", \"con_name\": \"中公教育\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700387.TI\", \"con_code\": \"002659.SZ\", \"con_name\": \"凯文教育\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700387.TI\", \"con_code\": \"003032.SZ\", \"con_name\": \"传智教育\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700387.TI\", \"con_code\": \"300010.SZ\", \"con_name\": \"ST豆神\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700387.TI\", \"con_code\": \"300192.SZ\", \"con_name\": \"科德教育\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700387.TI\", \"con_code\": \"300338.SZ\", \"con_name\": \"*ST开元\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700387.TI\", \"con_code\": \"300359.SZ\", \"con_name\": \"全通教育\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700387.TI\", \"con_code\": \"300492.SZ\", \"con_name\": \"华图山鼎\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700387.TI\", \"con_code\": \"300668.SZ\", \"con_name\": \"杰恩股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700387.TI\", \"con_code\": \"300736.SZ\", \"con_name\": \"百邦科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700387.TI\", \"con_code\": \"600455.SH\", \"con_name\": \"博通股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700387.TI\", \"con_code\": \"600636.SH\", \"con_name\": \"退市国化\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700387.TI\", \"con_code\": \"600661.SH\", \"con_name\": \"昂立教育\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700387.TI\", \"con_code\": \"600730.SH\", \"con_name\": \"*ST高科\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700387.TI\", \"con_code\": \"603377.SH\", \"con_name\": \"ST东时\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700387.TI\", \"con_code\": \"605098.SH\", \"con_name\": \"行动教育\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "700387.TI",
+      "con_code": "000526.SZ",
+      "con_name": "学大教育",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700387.TI",
+      "con_code": "000796.SZ",
+      "con_name": "凯撒旅业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700387.TI",
+      "con_code": "002607.SZ",
+      "con_name": "中公教育",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700387.TI",
+      "con_code": "002659.SZ",
+      "con_name": "凯文教育",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700387.TI",
+      "con_code": "003032.SZ",
+      "con_name": "传智教育",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700387.TI",
+      "con_code": "300010.SZ",
+      "con_name": "ST豆神",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700387.TI",
+      "con_code": "300192.SZ",
+      "con_name": "科德教育",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700387.TI",
+      "con_code": "300338.SZ",
+      "con_name": "*ST开元",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700387.TI",
+      "con_code": "300359.SZ",
+      "con_name": "全通教育",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700387.TI",
+      "con_code": "300492.SZ",
+      "con_name": "华图山鼎",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700387.TI",
+      "con_code": "300668.SZ",
+      "con_name": "杰恩股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700387.TI",
+      "con_code": "300736.SZ",
+      "con_name": "百邦科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700387.TI",
+      "con_code": "600455.SH",
+      "con_name": "博通股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700387.TI",
+      "con_code": "600636.SH",
+      "con_name": "退市国化",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700387.TI",
+      "con_code": "600661.SH",
+      "con_name": "昂立教育",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700387.TI",
+      "con_code": "600730.SH",
+      "con_name": "*ST高科",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700387.TI",
+      "con_code": "603377.SH",
+      "con_name": "ST东时",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700387.TI",
+      "con_code": "605098.SH",
+      "con_name": "行动教育",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

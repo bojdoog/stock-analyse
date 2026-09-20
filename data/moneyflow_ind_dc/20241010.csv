@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241010,银行,3.34,3564.32,36.34052608,6.32,29.67909888,6.6614272,1,512800,银行ETF
 20241010,工程建设,3.93,18867.26,32.38571776,8.84,38.86000896,-6.4742912,2,510300,沪深300ETF
 20241010,电力行业,1.49,15269.53,9.24312064,2.56,7.95389184,1.2892288,4,561380,电网设备ETF

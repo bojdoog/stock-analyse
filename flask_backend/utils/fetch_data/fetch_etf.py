@@ -17,6 +17,11 @@ import sys
 import time
 from pathlib import Path
 
+try:
+    from .storage_sqlite import save_dataframe, refresh_index, list_files, initialize, read_frame, has_file
+except ImportError:
+    from storage_sqlite import save_dataframe, refresh_index, list_files, initialize, read_frame, has_file
+
 import pandas as pd
 import tushare as ts
 
@@ -259,7 +264,7 @@ def main():
         short_name = f"{sector}ETF"
         filename = f"{best_code}_{short_name}.csv"
         out_path = DATA_DIR / filename
-        best_df.to_csv(out_path, index=False)
+        save_dataframe(best_df, out_path, category='etf')
         total += len(best_df)
         print(f"  → 保留日K最多: {best_ts_code} {best_name}，共 {len(best_df)} 条")
         print(f"    保存: {out_path}")

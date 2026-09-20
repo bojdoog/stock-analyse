@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250729,生物制品,2.49,1163.63,18.2212104,6.07,6.87504208,11.34616832,1,510660,创新药ETF
 20250729,化学制药,2.58,40116.56,13.393408,1.55,8.52751616,4.86589184,2,159929,医药ETF
 20250729,半导体,1.73,1571.56,9.88798208,1.0,7.06119168,2.8267904,3,512480,半导体ETF

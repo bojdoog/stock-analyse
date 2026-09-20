@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240730,半导体,2.13,957.39,7.98490032,1.93,6.71225776,1.27264256,1,512480,半导体ETF
 20240730,医疗服务,0.8,767.15,3.50213424,4.2,2.71297488,0.78915936,3,510660,创新药ETF
 20240730,燃气,0.86,1291.71,0.91273688,5.5,1.35816963,-0.44543275,9,561380,电网设备ETF

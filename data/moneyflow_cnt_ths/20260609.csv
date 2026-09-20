@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260609,885806.TI,华为概念,格灵深瞳,20.93,2.17,3663.78,1003,20.01,3093.0,2832.0,261.0,515230,软件ETF
 20260609,885556.TI,5G,利和兴,60.97,3.15,6901.45,454,20.0,2811.0,2553.0,258.0,515880,通信ETF
 20260609,885531.TI,光伏概念,宏微科技,35.69,2.59,4723.42,599,20.01,1910.0,1720.0,190.0,516290,光伏ETF

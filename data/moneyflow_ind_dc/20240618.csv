@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20240618,汽车整车,2.75,1270.56,9.01883648,4.17,10.97523712,-1.95640064,1,515030,新能源车ETF
 20240618,软件开发,2.73,654.98,7.01321088,2.31,6.96027264,0.05293824,2,515230,软件ETF
 20240618,通信设备,2.51,9726.22,5.53722384,1.57,4.02201872,1.51520512,3,515880,通信ETF

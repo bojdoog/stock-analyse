@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251028,885743.TI,军民融合,江龙船艇,15.07,1.01,1576.87,235,19.98,370.0,350.0,20.0,512660,军工ETF
 20251028,885362.TI,云计算,格尔软件,22.21,0.31,4217.82,216,10.01,448.0,433.0,15.0,515230,软件ETF
 20251028,885999.TI,汽车热管理,锦富技术,8.68,0.41,2184.29,130,20.05,313.0,311.0,2.0,515030,新能源车ETF

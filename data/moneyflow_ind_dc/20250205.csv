@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250205,软件开发,5.85,1037.84,43.80425216,4.14,47.07392,-3.26966784,1,515230,软件ETF
 20250205,互联网服务,5.09,24028.48,23.6136192,2.27,34.74396928,-11.13035008,2,515230,软件ETF
 20250205,游戏,3.57,1105.98,4.84957552,3.28,3.555488,1.29408752,3,159869,游戏ETF

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241108,通信设备,2.43,13367.77,17.0101248,1.76,19.97818368,-2.96805888,2,515880,通信ETF
 20241108,家电行业,0.81,19642.18,10.52784384,2.15,6.49449472,4.03334912,4,510150,消费ETF
 20241108,航天航空,2.24,49683.97,9.96886272,2.09,13.83644928,-3.86758656,5,512660,军工ETF

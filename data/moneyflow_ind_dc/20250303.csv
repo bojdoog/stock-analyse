@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250303,电池,6.16,1101.11,16.33619456,2.4,14.39832576,1.9378688,1,516160,新能源ETF
 20250303,能源金属,3.6,489.59,9.30234736,5.61,5.29605232,4.00629504,2,512400,有色ETF
 20250303,有色金属,1.74,16354.73,6.74952032,2.94,6.07225184,0.67726848,3,512400,有色ETF

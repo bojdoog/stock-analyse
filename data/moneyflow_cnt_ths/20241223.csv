@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241223,885530.TI,黄金概念,紫金矿业,15.51,-2.89,2082.75,73,-2.89,62.0,64.0,-1.0,512400,有色ETF
 20241223,885780.TI,啤酒概念,青岛啤酒,78.16,-4.32,1439.54,18,-4.32,5.0,8.0,-2.0,512690,白酒ETF
 20241223,886006.TI,钙钛矿电池,中国核电,10.33,-3.39,728.68,52,-3.39,70.0,73.0,-2.0,516290,光伏ETF

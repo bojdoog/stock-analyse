@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260507,通信设备,3.6,26069.93,89.54147072,4.13,85.97177344,3.56969728,1,515880,通信ETF
 20260507,汽车零部件,2.08,52771.35,18.30749952,2.16,12.14747392,6.1600256,12,515030,新能源车ETF
 20260507,风电设备,1.55,1819.63,7.51636448,3.16,6.13383136,1.38253312,33,516160,新能源ETF

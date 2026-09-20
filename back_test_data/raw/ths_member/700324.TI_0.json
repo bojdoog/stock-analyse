@@ -1,0 +1,1335 @@
+{
+  "request": {
+    "tool": "ths_member",
+    "arguments": {
+      "ts_code": "700324.TI",
+      "offset": 0,
+      "fields": [
+        "ts_code",
+        "con_code",
+        "con_name",
+        "is_new",
+        "weight",
+        "in_date",
+        "out_date"
+      ]
+    }
+  },
+  "retrieved_at": "2026-09-19T14:43:05.095511+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"ts_code\": \"700324.TI\", \"con_code\": \"000088.SZ\", \"con_name\": \"盐田港\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"000089.SZ\", \"con_name\": \"深圳机场\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"000099.SZ\", \"con_name\": \"中信海直\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"000421.SZ\", \"con_name\": \"南京公用\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"000429.SZ\", \"con_name\": \"粤高速A\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"000507.SZ\", \"con_name\": \"珠海港\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"000520.SZ\", \"con_name\": \"凤凰航运\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"000548.SZ\", \"con_name\": \"湖南投资\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"000557.SZ\", \"con_name\": \"西部创业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"000582.SZ\", \"con_name\": \"北部湾港\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"000755.SZ\", \"con_name\": \"山西高速\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"000828.SZ\", \"con_name\": \"东莞控股\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"000886.SZ\", \"con_name\": \"海南高速\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"000900.SZ\", \"con_name\": \"现代投资\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"000905.SZ\", \"con_name\": \"厦门港务\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"000906.SZ\", \"con_name\": \"浙商中拓\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"000927.SZ\", \"con_name\": \"中国铁物\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"001202.SZ\", \"con_name\": \"炬申股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"001205.SZ\", \"con_name\": \"盛航股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"001213.SZ\", \"con_name\": \"中铁特货\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"001220.SZ\", \"con_name\": \"世盟股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"001228.SZ\", \"con_name\": \"永泰运\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"001317.SZ\", \"con_name\": \"三羊马\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"001391.SZ\", \"con_name\": \"国货航\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"001872.SZ\", \"con_name\": \"招商港口\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"001965.SZ\", \"con_name\": \"招商公路\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"002010.SZ\", \"con_name\": \"传化智联\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"002040.SZ\", \"con_name\": \"南京港\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"002120.SZ\", \"con_name\": \"韵达股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"002183.SZ\", \"con_name\": \"怡亚通\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"002245.SZ\", \"con_name\": \"蔚蓝锂芯\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"002320.SZ\", \"con_name\": \"海峡股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"002352.SZ\", \"con_name\": \"顺丰控股\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"002357.SZ\", \"con_name\": \"富临运业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"002468.SZ\", \"con_name\": \"申通快递\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"002485.SZ\", \"con_name\": \"ST雪发\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"002492.SZ\", \"con_name\": \"恒基达鑫\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"002627.SZ\", \"con_name\": \"三峡旅游\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"002682.SZ\", \"con_name\": \"龙洲股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"002769.SZ\", \"con_name\": \"普路通\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"002800.SZ\", \"con_name\": \"天顺股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"002889.SZ\", \"con_name\": \"东方嘉盛\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"002928.SZ\", \"con_name\": \"华夏航空\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"002930.SZ\", \"con_name\": \"宏川智慧\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"300013.SZ\", \"con_name\": \"新宁物流\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"300240.SZ\", \"con_name\": \"飞力达\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"300350.SZ\", \"con_name\": \"华鹏飞\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"300532.SZ\", \"con_name\": \"今天国际\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"300873.SZ\", \"con_name\": \"海晨股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"300960.SZ\", \"con_name\": \"通业科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600004.SH\", \"con_name\": \"白云机场\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600009.SH\", \"con_name\": \"上海机场\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600012.SH\", \"con_name\": \"皖通高速\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600017.SH\", \"con_name\": \"日照港\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600018.SH\", \"con_name\": \"上港集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600020.SH\", \"con_name\": \"中原高速\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600026.SH\", \"con_name\": \"中远海能\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600029.SH\", \"con_name\": \"南方航空\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600033.SH\", \"con_name\": \"福建高速\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600035.SH\", \"con_name\": \"楚天高速\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600057.SH\", \"con_name\": \"厦门象屿\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600098.SH\", \"con_name\": \"广州发展\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600106.SH\", \"con_name\": \"重庆路桥\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600115.SH\", \"con_name\": \"中国东航\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600119.SH\", \"con_name\": \"*ST长投\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600125.SH\", \"con_name\": \"铁龙物流\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600153.SH\", \"con_name\": \"建发股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600179.SH\", \"con_name\": \"安通控股\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600180.SH\", \"con_name\": \"*ST瑞茂\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600221.SH\", \"con_name\": \"海航控股\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600233.SH\", \"con_name\": \"圆通速递\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600269.SH\", \"con_name\": \"赣粤高速\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600279.SH\", \"con_name\": \"重庆港\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600350.SH\", \"con_name\": \"山东高速\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600368.SH\", \"con_name\": \"五洲交通\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600377.SH\", \"con_name\": \"宁沪高速\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600428.SH\", \"con_name\": \"中远海特\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600515.SH\", \"con_name\": \"海南机场\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600548.SH\", \"con_name\": \"深高速\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600561.SH\", \"con_name\": \"江西长运\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600603.SH\", \"con_name\": \"广汇物流\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600611.SH\", \"con_name\": \"大众交通\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600650.SH\", \"con_name\": \"锦江在线\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600676.SH\", \"con_name\": \"久事动娱\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600704.SH\", \"con_name\": \"物产中大\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600717.SH\", \"con_name\": \"天津港\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600751.SH\", \"con_name\": \"海航科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600753.SH\", \"con_name\": \"ST海钦\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600755.SH\", \"con_name\": \"厦门国贸\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600787.SH\", \"con_name\": \"中储股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600794.SH\", \"con_name\": \"保税科技\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600798.SH\", \"con_name\": \"宁波海运\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600834.SH\", \"con_name\": \"申通地铁\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"600897.SH\", \"con_name\": \"厦门空港\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"601000.SH\", \"con_name\": \"唐山港\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"601006.SH\", \"con_name\": \"大秦铁路\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"601008.SH\", \"con_name\": \"连云港\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"601018.SH\", \"con_name\": \"宁波港\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"601021.SH\", \"con_name\": \"春秋航空\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"601022.SH\", \"con_name\": \"宁波远洋\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"601083.SH\", \"con_name\": \"锦江航运\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"601107.SH\", \"con_name\": \"四川成渝\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"601111.SH\", \"con_name\": \"中国国航\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"601156.SH\", \"con_name\": \"东航物流\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"601188.SH\", \"con_name\": \"龙江交通\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"601228.SH\", \"con_name\": \"广州港\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"601298.SH\", \"con_name\": \"青岛港\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"601326.SH\", \"con_name\": \"秦港股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"601333.SH\", \"con_name\": \"广深铁路\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"601518.SH\", \"con_name\": \"吉林高速\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"601598.SH\", \"con_name\": \"中国外运\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"601816.SH\", \"con_name\": \"京沪高铁\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"601866.SH\", \"con_name\": \"中远海发\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"601872.SH\", \"con_name\": \"招商轮船\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"601880.SH\", \"con_name\": \"辽港股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"601919.SH\", \"con_name\": \"中远海控\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"601975.SH\", \"con_name\": \"招商南油\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"603066.SH\", \"con_name\": \"音飞储存\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"603069.SH\", \"con_name\": \"海汽集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"603071.SH\", \"con_name\": \"物产环能\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"603111.SH\", \"con_name\": \"康尼机电\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"603117.SH\", \"con_name\": \"万林物流\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"603128.SH\", \"con_name\": \"华贸物流\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"603162.SH\", \"con_name\": \"海通发展\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"603167.SH\", \"con_name\": \"渤海轮渡\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"603209.SH\", \"con_name\": \"兴通股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"603223.SH\", \"con_name\": \"恒通股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"603329.SH\", \"con_name\": \"上海雅仕\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"603535.SH\", \"con_name\": \"嘉诚国际\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"603565.SH\", \"con_name\": \"中谷物流\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"603569.SH\", \"con_name\": \"长久物流\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"603648.SH\", \"con_name\": \"畅联股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"603713.SH\", \"con_name\": \"密尔克卫\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"603776.SH\", \"con_name\": \"永安行\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"603813.SH\", \"con_name\": \"原尚股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"603836.SH\", \"con_name\": \"海程邦达\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"603871.SH\", \"con_name\": \"嘉友国际\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"603885.SH\", \"con_name\": \"吉祥航空\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"603967.SH\", \"con_name\": \"中创物流\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"605050.SH\", \"con_name\": \"福然德\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"688009.SH\", \"con_name\": \"中国通号\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"688367.SH\", \"con_name\": \"工大高科\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"920027.BJ\", \"con_name\": \"交大铁发\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"920351.BJ\", \"con_name\": \"华光源海\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"700324.TI\", \"con_code\": \"920571.BJ\", \"con_name\": \"国航远洋\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "ts_code": "700324.TI",
+      "con_code": "000088.SZ",
+      "con_name": "盐田港",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "000089.SZ",
+      "con_name": "深圳机场",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "000099.SZ",
+      "con_name": "中信海直",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "000421.SZ",
+      "con_name": "南京公用",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "000429.SZ",
+      "con_name": "粤高速A",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "000507.SZ",
+      "con_name": "珠海港",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "000520.SZ",
+      "con_name": "凤凰航运",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "000548.SZ",
+      "con_name": "湖南投资",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "000557.SZ",
+      "con_name": "西部创业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "000582.SZ",
+      "con_name": "北部湾港",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "000755.SZ",
+      "con_name": "山西高速",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "000828.SZ",
+      "con_name": "东莞控股",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "000886.SZ",
+      "con_name": "海南高速",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "000900.SZ",
+      "con_name": "现代投资",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "000905.SZ",
+      "con_name": "厦门港务",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "000906.SZ",
+      "con_name": "浙商中拓",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "000927.SZ",
+      "con_name": "中国铁物",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "001202.SZ",
+      "con_name": "炬申股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "001205.SZ",
+      "con_name": "盛航股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "001213.SZ",
+      "con_name": "中铁特货",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "001220.SZ",
+      "con_name": "世盟股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "001228.SZ",
+      "con_name": "永泰运",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "001317.SZ",
+      "con_name": "三羊马",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "001391.SZ",
+      "con_name": "国货航",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "001872.SZ",
+      "con_name": "招商港口",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "001965.SZ",
+      "con_name": "招商公路",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "002010.SZ",
+      "con_name": "传化智联",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "002040.SZ",
+      "con_name": "南京港",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "002120.SZ",
+      "con_name": "韵达股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "002183.SZ",
+      "con_name": "怡亚通",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "002245.SZ",
+      "con_name": "蔚蓝锂芯",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "002320.SZ",
+      "con_name": "海峡股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "002352.SZ",
+      "con_name": "顺丰控股",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "002357.SZ",
+      "con_name": "富临运业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "002468.SZ",
+      "con_name": "申通快递",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "002485.SZ",
+      "con_name": "ST雪发",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "002492.SZ",
+      "con_name": "恒基达鑫",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "002627.SZ",
+      "con_name": "三峡旅游",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "002682.SZ",
+      "con_name": "龙洲股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "002769.SZ",
+      "con_name": "普路通",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "002800.SZ",
+      "con_name": "天顺股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "002889.SZ",
+      "con_name": "东方嘉盛",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "002928.SZ",
+      "con_name": "华夏航空",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "002930.SZ",
+      "con_name": "宏川智慧",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "300013.SZ",
+      "con_name": "新宁物流",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "300240.SZ",
+      "con_name": "飞力达",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "300350.SZ",
+      "con_name": "华鹏飞",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "300532.SZ",
+      "con_name": "今天国际",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "300873.SZ",
+      "con_name": "海晨股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "300960.SZ",
+      "con_name": "通业科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600004.SH",
+      "con_name": "白云机场",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600009.SH",
+      "con_name": "上海机场",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600012.SH",
+      "con_name": "皖通高速",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600017.SH",
+      "con_name": "日照港",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600018.SH",
+      "con_name": "上港集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600020.SH",
+      "con_name": "中原高速",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600026.SH",
+      "con_name": "中远海能",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600029.SH",
+      "con_name": "南方航空",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600033.SH",
+      "con_name": "福建高速",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600035.SH",
+      "con_name": "楚天高速",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600057.SH",
+      "con_name": "厦门象屿",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600098.SH",
+      "con_name": "广州发展",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600106.SH",
+      "con_name": "重庆路桥",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600115.SH",
+      "con_name": "中国东航",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600119.SH",
+      "con_name": "*ST长投",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600125.SH",
+      "con_name": "铁龙物流",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600153.SH",
+      "con_name": "建发股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600179.SH",
+      "con_name": "安通控股",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600180.SH",
+      "con_name": "*ST瑞茂",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600221.SH",
+      "con_name": "海航控股",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600233.SH",
+      "con_name": "圆通速递",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600269.SH",
+      "con_name": "赣粤高速",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600279.SH",
+      "con_name": "重庆港",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600350.SH",
+      "con_name": "山东高速",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600368.SH",
+      "con_name": "五洲交通",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600377.SH",
+      "con_name": "宁沪高速",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600428.SH",
+      "con_name": "中远海特",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600515.SH",
+      "con_name": "海南机场",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600548.SH",
+      "con_name": "深高速",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600561.SH",
+      "con_name": "江西长运",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600603.SH",
+      "con_name": "广汇物流",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600611.SH",
+      "con_name": "大众交通",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600650.SH",
+      "con_name": "锦江在线",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600676.SH",
+      "con_name": "久事动娱",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600704.SH",
+      "con_name": "物产中大",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600717.SH",
+      "con_name": "天津港",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600751.SH",
+      "con_name": "海航科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600753.SH",
+      "con_name": "ST海钦",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600755.SH",
+      "con_name": "厦门国贸",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600787.SH",
+      "con_name": "中储股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600794.SH",
+      "con_name": "保税科技",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600798.SH",
+      "con_name": "宁波海运",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600834.SH",
+      "con_name": "申通地铁",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "600897.SH",
+      "con_name": "厦门空港",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "601000.SH",
+      "con_name": "唐山港",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "601006.SH",
+      "con_name": "大秦铁路",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "601008.SH",
+      "con_name": "连云港",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "601018.SH",
+      "con_name": "宁波港",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "601021.SH",
+      "con_name": "春秋航空",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "601022.SH",
+      "con_name": "宁波远洋",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "601083.SH",
+      "con_name": "锦江航运",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "601107.SH",
+      "con_name": "四川成渝",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "601111.SH",
+      "con_name": "中国国航",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "601156.SH",
+      "con_name": "东航物流",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "601188.SH",
+      "con_name": "龙江交通",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "601228.SH",
+      "con_name": "广州港",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "601298.SH",
+      "con_name": "青岛港",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "601326.SH",
+      "con_name": "秦港股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "601333.SH",
+      "con_name": "广深铁路",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "601518.SH",
+      "con_name": "吉林高速",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "601598.SH",
+      "con_name": "中国外运",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "601816.SH",
+      "con_name": "京沪高铁",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "601866.SH",
+      "con_name": "中远海发",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "601872.SH",
+      "con_name": "招商轮船",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "601880.SH",
+      "con_name": "辽港股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "601919.SH",
+      "con_name": "中远海控",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "601975.SH",
+      "con_name": "招商南油",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "603066.SH",
+      "con_name": "音飞储存",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "603069.SH",
+      "con_name": "海汽集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "603071.SH",
+      "con_name": "物产环能",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "603111.SH",
+      "con_name": "康尼机电",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "603117.SH",
+      "con_name": "万林物流",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "603128.SH",
+      "con_name": "华贸物流",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "603162.SH",
+      "con_name": "海通发展",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "603167.SH",
+      "con_name": "渤海轮渡",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "603209.SH",
+      "con_name": "兴通股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "603223.SH",
+      "con_name": "恒通股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "603329.SH",
+      "con_name": "上海雅仕",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "603535.SH",
+      "con_name": "嘉诚国际",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "603565.SH",
+      "con_name": "中谷物流",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "603569.SH",
+      "con_name": "长久物流",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "603648.SH",
+      "con_name": "畅联股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "603713.SH",
+      "con_name": "密尔克卫",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "603776.SH",
+      "con_name": "永安行",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "603813.SH",
+      "con_name": "原尚股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "603836.SH",
+      "con_name": "海程邦达",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "603871.SH",
+      "con_name": "嘉友国际",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "603885.SH",
+      "con_name": "吉祥航空",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "603967.SH",
+      "con_name": "中创物流",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "605050.SH",
+      "con_name": "福然德",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "688009.SH",
+      "con_name": "中国通号",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "688367.SH",
+      "con_name": "工大高科",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "920027.BJ",
+      "con_name": "交大铁发",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "920351.BJ",
+      "con_name": "华光源海",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "700324.TI",
+      "con_code": "920571.BJ",
+      "con_name": "国航远洋",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260515,汽车零部件,1.17,53358.99,25.13047296,2.46,15.72616704,9.40430592,1,515030,新能源车ETF
 20260515,机器人,5.89,10685.18,18.45170192,10.52,16.03877648,2.41292544,5,562500,机器人ETF
 20260515,医疗服务,-0.46,1316.08,0.20255936,0.1,1.328176,-1.12561664,13,510660,创新药ETF

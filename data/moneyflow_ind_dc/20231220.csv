@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20231220,贵金属,0.95,886.73,2.14821664,5.57,2.70744112,-0.55922448,2,512400,有色ETF
 20231220,石油行业,-0.11,5170.72,2.04735264,6.56,0.70720016,1.34015248,3,510300,沪深300ETF
 20231220,医药商业,0.58,1059.25,2.01256075,7.65,2.16247099,-0.14991024,4,159929,医药ETF

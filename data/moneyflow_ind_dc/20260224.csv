@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260224,有色金属,3.28,30837.88,53.92516096,3.35,40.9163776,13.00878336,2,512400,有色ETF
 20260224,通信设备,1.87,23001.6,48.73210368,3.84,38.8146816,9.91742208,3,515880,通信ETF
 20260224,电网设备,3.59,42479.15,36.65960192,5.01,29.57627648,7.08332544,7,561380,电网设备ETF

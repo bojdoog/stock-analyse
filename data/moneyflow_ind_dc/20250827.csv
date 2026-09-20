@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250827,小金属,0.47,3084.16,26.7682816,2.99,39.33836032,-12.57007872,1,512400,有色ETF
 20250827,公用事业,-1.97,8670.68,-2.04613277,-6.88,-1.51291053,-0.53322224,3,561380,电网设备ETF
 20250827,燃气,-2.37,1718.2,-2.2199479,-4.96,-1.53511094,-0.68483696,4,561380,电网设备ETF

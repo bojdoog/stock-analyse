@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250411,半导体,6.73,1426.18,71.89937408,5.58,61.80860928,10.0907648,1,512480,半导体ETF
 20250411,银行,-0.13,3693.21,10.37791744,4.67,5.21447168,5.16344576,3,512800,银行ETF
 20250411,汽车整车,1.24,1550.27,8.61271952,5.13,6.00734352,2.605376,4,515030,新能源车ETF

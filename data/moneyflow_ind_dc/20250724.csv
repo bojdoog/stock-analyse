@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20250724,小金属,5.42,2715.87,49.81420032,7.23,51.4302464,-1.61604608,1,512400,有色ETF
 20250724,证券,2.95,157746.61,30.40225792,4.45,24.43757056,5.96468736,2,512880,证券ETF
 20250724,能源金属,7.44,560.68,25.19898208,9.86,26.32547168,-1.1264896,3,512400,有色ETF

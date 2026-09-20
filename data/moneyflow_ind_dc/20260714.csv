@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20260714,有色金属,3.48,26543.83,94.24480256,6.48,58.99872,35.24608256,3,512400,有色ETF
 20260714,通信设备,1.59,23165.61,91.51601664,4.17,82.35392,9.16209664,4,515880,通信ETF
 20260714,医疗服务,2.53,1277.87,21.7719128,6.04,9.34808944,12.42382336,12,510660,创新药ETF

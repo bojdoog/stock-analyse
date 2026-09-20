@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250207,885456.TI,互联网金融,志晟信息,23.55,2.88,5657.96,189,2.88,676.0,620.0,56.0,512880,证券ETF
 20250207,885982.TI,华为欧拉,青云科技,58.87,4.04,1496.77,43,4.04,264.0,224.0,39.0,515230,软件ETF
 20250207,885531.TI,光伏概念,艾能聚,21.29,1.89,2997.85,564,1.89,699.0,660.0,38.0,516290,光伏ETF

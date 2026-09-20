@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250512,885700.TI,军工,七丰精工,35.6,3.15,1840.01,545,29.97,892.0,766.0,126.0,512660,军工ETF
 20250512,885431.TI,新能源汽车,雷迪克,85.03,2.14,3514.21,896,13.98,1029.0,907.0,122.0,515030,新能源车ETF
 20250512,885517.TI,机器人概念,乐创技术,38.31,2.42,3264.0,885,22.28,1149.0,1027.0,122.0,562500,机器人ETF

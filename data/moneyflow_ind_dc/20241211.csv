@@ -1,4 +1,4 @@
-date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
+﻿date,industry_name,pct_change,close,net_inflow,net_amount_rate,super_large_inflow,large_inflow,rank,etf_code,etf_name
 20241211,通信设备,2.37,13704.17,23.64993792,4.17,16.0912128,7.55872512,1,515880,通信ETF
 20241211,有色金属,1.85,16928.57,12.34373008,4.22,11.56103824,0.78269184,4,512400,有色ETF
 20241211,文化传媒,2.22,11119.85,10.86391296,1.51,26.51186944,-15.64795648,5,512980,传媒ETF

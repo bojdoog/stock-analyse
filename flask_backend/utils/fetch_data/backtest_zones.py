@@ -17,11 +17,16 @@ import json
 from datetime import datetime
 from pathlib import Path
 
+try:
+    from .storage_sqlite import save_dataframe, refresh_index, list_files, initialize, read_frame, has_file
+except ImportError:
+    from storage_sqlite import save_dataframe, refresh_index, list_files, initialize, read_frame, has_file
+
 import pandas as pd
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent
 DATA_DIR = BASE_DIR / "data"
-AMV_FILE = BASE_DIR / "0AMV-2013-2026.csv"
+AMV_FILE = DATA_DIR / "core_index" / "0AMV-2013-2026.csv"
 
 # 板块 ETF 选项（排除指数）
 ETF_OPTIONS = [
@@ -57,7 +62,7 @@ BANK_ETF_NAME = "银行ETF"
 
 
 def load_csv(path: Path) -> pd.DataFrame:
-    df = pd.read_csv(path)
+    df = read_frame(path)
     df["date"] = pd.to_datetime(df["date"])
     return df.sort_values("date").reset_index(drop=True)
 
@@ -311,7 +316,7 @@ def main():
     etf_data = {}
     for code, name in ETF_OPTIONS:
         path = DATA_DIR / "etf" / f"{code}_{name}.csv"
-        if path.exists():
+        if has_file(path):
             etf_data[name] = load_csv(path)
         else:
             print(f"  [跳过] 文件不存在: {path}")

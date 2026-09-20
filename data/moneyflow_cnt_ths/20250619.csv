@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close_price,pct_change,industry_index,company_num,pct_change_stock,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250619,885874.TI,云游戏,旋极信息,16.55,-1.21,1267.23,26,6.02,49.0,52.0,-2.0,159869,游戏ETF
 20250619,885780.TI,啤酒概念,金种子酒,5.9,-1.96,1490.74,29,0.85,12.0,16.0,-3.0,512690,白酒ETF
 20250619,886054.TI,光刻机,芯碁微装,21.5,-1.24,1211.88,36,4.72,21.0,26.0,-4.0,588710,科创半导体设备ETF
