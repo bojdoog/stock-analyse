@@ -1,0 +1,925 @@
+X [ERROR] Could not resolve "C:\\_allCode\\stock_analyse\\stock-line\\src\\.umi\\umi.ts"
+
+error - [icons] build failed: Error: Build failed with 1 error:
+error: Could not resolve "C:\\_allCode\\stock_analyse\\stock-line\\src\\.umi\\umi.ts"
+X [ERROR] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\.umi' [plugin esbuildAliasPlugin]
+
+    node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17:
+      309 │       const error = new Error("Can't " + message);
+          ╵                     ^
+
+    at finishWithoutResolve (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:309:18)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:386:15
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:41:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+
+  This error came from the "onResolve" callback registered here:
+
+    node_modules/@umijs/preset-umi/dist/features/prepare/esbuildPlugins/esbuildAliasPlugin.js:78:14:
+      78 │         build.onResolve({ filter }, async (args) => {
+         ╵               ~~~~~~~~~
+
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:78:15
+    at Array.forEach (<anonymous>)
+    at setup (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:75:10)
+    at handlePlugins (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1150:21)
+    at buildOrContextImpl (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:873:5)
+    at Object.buildOrContext (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:699:5)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:68
+    at new Promise (<anonymous>)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:27)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1874:58)
+    at build (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\build.js:96:46)
+    at Hook.fn (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\prepare.js:77:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\core\dist\service\service.js:184:15
+
+  The plugin "esbuildAliasPlugin" was triggered by this import
+
+    src/.umi/umi.ts:10:33:
+      10 │ import { ApplyPluginsType } from 'umi';
+         ╵                                  ~~~~~
+
+X [ERROR] Could not resolve "C:/_allCode/stock_analyse/stock-line/src/.umi/plugin-access/runtime.tsx"
+
+    src/.umi/core/plugin.ts:6:26:
+      6 │ ...gin_2 from 'C:/_allCode/stock_analyse/stock-line/src/.umi/plugin...
+        ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "C:/_allCode/stock_analyse/stock-line/src/.umi/plugin-layout/Layout.tsx"
+
+    src/.umi/core/route.tsx:14:101:
+      14 │ ...Layout" */'C:/_allCode/stock_analyse/stock-line/src/.umi/plugin...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "C:/_allCode/stock_analyse/stock-line/src/.umi/plugin-initialState/runtime.tsx"
+
+    src/.umi/core/plugin.ts:7:26:
+      7 │ ...gin_3 from 'C:/_allCode/stock_analyse/stock-line/src/.umi/plugin...
+        ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\.umi\core' [plugin esbuildAliasPlugin]
+
+    node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17:
+      309 │       const error = new Error("Can't " + message);
+          ╵                     ^
+
+    at finishWithoutResolve (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:309:18)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:386:15
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:41:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+
+  This error came from the "onResolve" callback registered here:
+
+    node_modules/@umijs/preset-umi/dist/features/prepare/esbuildPlugins/esbuildAliasPlugin.js:78:14:
+      78 │         build.onResolve({ filter }, async (args) => {
+         ╵               ~~~~~~~~~
+
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:78:15
+    at Array.forEach (<anonymous>)
+    at setup (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:75:10)
+    at handlePlugins (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1150:21)
+    at buildOrContextImpl (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:873:5)
+    at Object.buildOrContext (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:699:5)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:68
+    at new Promise (<anonymous>)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:27)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1874:58)
+    at build (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\build.js:96:46)
+    at Hook.fn (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\prepare.js:77:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\core\dist\service\service.js:184:15
+
+  The plugin "esbuildAliasPlugin" was triggered by this import
+
+    src/.umi/core/EmptyRoute.tsx:5:41:
+      5 │ import { Outlet, useOutletContext } from 'umi';
+        ╵                                          ~~~~~
+
+X [ERROR] Could not resolve "C:/_allCode/stock_analyse/stock-line/src/.umi/plugin-layout/runtime.tsx"
+
+    src/.umi/core/plugin.ts:8:26:
+      8 │ ...gin_4 from 'C:/_allCode/stock_analyse/stock-line/src/.umi/plugin...
+        ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\services' [plugin esbuildAliasPlugin]
+
+    node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17:
+      309 │       const error = new Error("Can't " + message);
+          ╵                     ^
+
+    at finishWithoutResolve (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:309:18)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:386:15
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:41:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+
+  This error came from the "onResolve" callback registered here:
+
+    node_modules/@umijs/preset-umi/dist/features/prepare/esbuildPlugins/esbuildAliasPlugin.js:78:14:
+      78 │         build.onResolve({ filter }, async (args) => {
+         ╵               ~~~~~~~~~
+
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:78:15
+    at Array.forEach (<anonymous>)
+    at setup (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:75:10)
+    at handlePlugins (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1150:21)
+    at buildOrContextImpl (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:873:5)
+    at Object.buildOrContext (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:699:5)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:68
+    at new Promise (<anonymous>)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:27)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1874:58)
+    at build (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\build.js:96:46)
+    at Hook.fn (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\prepare.js:77:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\core\dist\service\service.js:184:15
+
+  The plugin "esbuildAliasPlugin" was triggered by this import
+
+    src/services/indicators.ts:1:24:
+      1 │ import { request } from '@umijs/max';
+        ╵                         ~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "C:/_allCode/stock_analyse/stock-line/src/.umi/plugin-model/runtime.tsx"
+
+    src/.umi/core/plugin.ts:9:26:
+      9 │ ...gin_5 from 'C:/_allCode/stock_analyse/stock-line/src/.umi/plugin...
+        ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\.umi\core' [plugin esbuildAliasPlugin]
+
+    node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17:
+      309 │       const error = new Error("Can't " + message);
+          ╵                     ^
+
+    at finishWithoutResolve (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:309:18)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:386:15
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:41:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+
+  This error came from the "onResolve" callback registered here:
+
+    node_modules/@umijs/preset-umi/dist/features/prepare/esbuildPlugins/esbuildAliasPlugin.js:78:14:
+      78 │         build.onResolve({ filter }, async (args) => {
+         ╵               ~~~~~~~~~
+
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:78:15
+    at Array.forEach (<anonymous>)
+    at setup (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:75:10)
+    at handlePlugins (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1150:21)
+    at buildOrContextImpl (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:873:5)
+    at Object.buildOrContext (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:699:5)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:68
+    at new Promise (<anonymous>)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:27)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1874:58)
+    at build (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\build.js:96:46)
+    at Hook.fn (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\prepare.js:77:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\core\dist\service\service.js:184:15
+
+  The plugin "esbuildAliasPlugin" was triggered by this import
+
+    src/.umi/core/plugin.ts:10:30:
+      10 │ import { PluginManager } from 'umi';
+         ╵                               ~~~~~
+
+error - [icons] build failed: Error: Build failed with 9 errors:
+node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17: ERROR: [plugin: esbuildAliasPlugin] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\.umi'
+node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17: ERROR: [plugin: esbuildAliasPlugin] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\.umi\core'
+node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17: ERROR: [plugin: esbuildAliasPlugin] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\.umi\core'
+node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17: ERROR: [plugin: esbuildAliasPlugin] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\services'
+src/.umi/core/plugin.ts:6:26: ERROR: Could not resolve "C:/_allCode/stock_analyse/stock-line/src/.umi/plugin-access/runtime.tsx"
+...
+X [ERROR] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\.umi' [plugin esbuildAliasPlugin]
+
+    node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17:
+      309 │       const error = new Error("Can't " + message);
+          ╵                     ^
+
+    at finishWithoutResolve (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:309:18)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:386:15
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:41:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+
+  This error came from the "onResolve" callback registered here:
+
+    node_modules/@umijs/preset-umi/dist/features/prepare/esbuildPlugins/esbuildAliasPlugin.js:78:14:
+      78 │         build.onResolve({ filter }, async (args) => {
+         ╵               ~~~~~~~~~
+
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:78:15
+    at Array.forEach (<anonymous>)
+    at setup (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:75:10)
+    at handlePlugins (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1150:21)
+    at buildOrContextImpl (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:873:5)
+    at Object.buildOrContext (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:699:5)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:68
+    at new Promise (<anonymous>)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:27)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1874:58)
+    at build (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\build.js:96:46)
+    at Hook.fn (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\prepare.js:77:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\core\dist\service\service.js:184:15
+
+  The plugin "esbuildAliasPlugin" was triggered by this import
+
+    src/.umi/umi.ts:10:33:
+      10 │ import { ApplyPluginsType } from 'umi';
+         ╵                                  ~~~~~
+
+X [ERROR] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\.umi\core' [plugin esbuildAliasPlugin]
+
+    node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17:
+      309 │       const error = new Error("Can't " + message);
+          ╵                     ^
+
+    at finishWithoutResolve (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:309:18)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:386:15
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:41:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+
+  This error came from the "onResolve" callback registered here:
+
+    node_modules/@umijs/preset-umi/dist/features/prepare/esbuildPlugins/esbuildAliasPlugin.js:78:14:
+      78 │         build.onResolve({ filter }, async (args) => {
+         ╵               ~~~~~~~~~
+
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:78:15
+    at Array.forEach (<anonymous>)
+    at setup (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:75:10)
+    at handlePlugins (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1150:21)
+    at buildOrContextImpl (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:873:5)
+    at Object.buildOrContext (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:699:5)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:68
+    at new Promise (<anonymous>)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:27)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1874:58)
+    at build (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\build.js:96:46)
+    at Hook.fn (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\prepare.js:77:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\core\dist\service\service.js:184:15
+
+  The plugin "esbuildAliasPlugin" was triggered by this import
+
+    src/.umi/core/EmptyRoute.tsx:5:41:
+      5 │ import { Outlet, useOutletContext } from 'umi';
+        ╵                                          ~~~~~
+
+X [ERROR] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\.umi\plugin-layout' [plugin esbuildAliasPlugin]
+
+    node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17:
+      309 │       const error = new Error("Can't " + message);
+          ╵                     ^
+
+    at finishWithoutResolve (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:309:18)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:386:15
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:41:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+
+  This error came from the "onResolve" callback registered here:
+
+    node_modules/@umijs/preset-umi/dist/features/prepare/esbuildPlugins/esbuildAliasPlugin.js:78:14:
+      78 │         build.onResolve({ filter }, async (args) => {
+         ╵               ~~~~~~~~~
+
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:78:15
+    at Array.forEach (<anonymous>)
+    at setup (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:75:10)
+    at handlePlugins (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1150:21)
+    at buildOrContextImpl (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:873:5)
+    at Object.buildOrContext (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:699:5)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:68
+    at new Promise (<anonymous>)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:27)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1874:58)
+    at build (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\build.js:96:46)
+    at Hook.fn (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\prepare.js:77:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\core\dist\service\service.js:184:15
+
+  The plugin "esbuildAliasPlugin" was triggered by this import
+
+    src/.umi/plugin-layout/Layout.tsx:10:7:
+      10 │ } from '@umijs/max';
+         ╵        ~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "C:/_allCode/stock_analyse/stock-line/src/.umi/plugin-model/runtime.tsx"
+
+    src/.umi/core/plugin.ts:9:26:
+      9 │ ...gin_5 from 'C:/_allCode/stock_analyse/stock-line/src/.umi/plugin...
+        ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\services' [plugin esbuildAliasPlugin]
+
+    node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17:
+      309 │       const error = new Error("Can't " + message);
+          ╵                     ^
+
+    at finishWithoutResolve (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:309:18)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:386:15
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:41:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+
+  This error came from the "onResolve" callback registered here:
+
+    node_modules/@umijs/preset-umi/dist/features/prepare/esbuildPlugins/esbuildAliasPlugin.js:78:14:
+      78 │         build.onResolve({ filter }, async (args) => {
+         ╵               ~~~~~~~~~
+
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:78:15
+    at Array.forEach (<anonymous>)
+    at setup (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:75:10)
+    at handlePlugins (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1150:21)
+    at buildOrContextImpl (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:873:5)
+    at Object.buildOrContext (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:699:5)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:68
+    at new Promise (<anonymous>)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:27)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1874:58)
+    at build (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\build.js:96:46)
+    at Hook.fn (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\prepare.js:77:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\core\dist\service\service.js:184:15
+
+  The plugin "esbuildAliasPlugin" was triggered by this import
+
+    src/services/indicators.ts:1:24:
+      1 │ import { request } from '@umijs/max';
+        ╵                         ~~~~~~~~~~~~
+
+X [ERROR] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\.umi\core' [plugin esbuildAliasPlugin]
+
+    node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17:
+      309 │       const error = new Error("Can't " + message);
+          ╵                     ^
+
+    at finishWithoutResolve (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:309:18)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:386:15
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:41:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+
+  This error came from the "onResolve" callback registered here:
+
+    node_modules/@umijs/preset-umi/dist/features/prepare/esbuildPlugins/esbuildAliasPlugin.js:78:14:
+      78 │         build.onResolve({ filter }, async (args) => {
+         ╵               ~~~~~~~~~
+
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:78:15
+    at Array.forEach (<anonymous>)
+    at setup (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:75:10)
+    at handlePlugins (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1150:21)
+    at buildOrContextImpl (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:873:5)
+    at Object.buildOrContext (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:699:5)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:68
+    at new Promise (<anonymous>)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:27)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1874:58)
+    at build (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\build.js:96:46)
+    at Hook.fn (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\prepare.js:77:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\core\dist\service\service.js:184:15
+
+  The plugin "esbuildAliasPlugin" was triggered by this import
+
+    src/.umi/core/plugin.ts:10:30:
+      10 │ import { PluginManager } from 'umi';
+         ╵                               ~~~~~
+
+X [ERROR] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\.umi\plugin-layout' [plugin esbuildAliasPlugin]
+
+    node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17:
+      309 │       const error = new Error("Can't " + message);
+          ╵                     ^
+
+    at finishWithoutResolve (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:309:18)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:386:15
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:41:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+
+  This error came from the "onResolve" callback registered here:
+
+    node_modules/@umijs/preset-umi/dist/features/prepare/esbuildPlugins/esbuildAliasPlugin.js:78:14:
+      78 │         build.onResolve({ filter }, async (args) => {
+         ╵               ~~~~~~~~~
+
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:78:15
+    at Array.forEach (<anonymous>)
+    at setup (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:75:10)
+    at handlePlugins (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1150:21)
+    at buildOrContextImpl (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:873:5)
+    at Object.buildOrContext (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:699:5)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:68
+    at new Promise (<anonymous>)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:27)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1874:58)
+    at build (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\build.js:96:46)
+    at Hook.fn (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\prepare.js:77:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\core\dist\service\service.js:184:15
+
+  The plugin "esbuildAliasPlugin" was triggered by this import
+
+    src/.umi/plugin-layout/Exception.tsx:5:37:
+      5 │ import { history, type IRoute } from '@umijs/max';
+        ╵                                      ~~~~~~~~~~~~
+
+error - [icons] build failed: Error: Build failed with 7 errors:
+node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17: ERROR: [plugin: esbuildAliasPlugin] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\.umi'
+node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17: ERROR: [plugin: esbuildAliasPlugin] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\.umi\core'
+node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17: ERROR: [plugin: esbuildAliasPlugin] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\.umi\core'
+node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17: ERROR: [plugin: esbuildAliasPlugin] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\.umi\plugin-layout'
+node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17: ERROR: [plugin: esbuildAliasPlugin] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\.umi\plugin-layout'
+...
+X [ERROR] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\.umi' [plugin esbuildAliasPlugin]
+
+    node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17:
+      309 │       const error = new Error("Can't " + message);
+          ╵                     ^
+
+    at finishWithoutResolve (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:309:18)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:386:15
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:41:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+
+  This error came from the "onResolve" callback registered here:
+
+    node_modules/@umijs/preset-umi/dist/features/prepare/esbuildPlugins/esbuildAliasPlugin.js:78:14:
+      78 │         build.onResolve({ filter }, async (args) => {
+         ╵               ~~~~~~~~~
+
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:78:15
+    at Array.forEach (<anonymous>)
+    at setup (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:75:10)
+    at handlePlugins (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1150:21)
+    at buildOrContextImpl (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:873:5)
+    at Object.buildOrContext (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:699:5)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:68
+    at new Promise (<anonymous>)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:27)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1874:58)
+    at build (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\build.js:96:46)
+    at Hook.fn (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\prepare.js:77:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\core\dist\service\service.js:184:15
+
+  The plugin "esbuildAliasPlugin" was triggered by this import
+
+    src/.umi/umi.ts:10:33:
+      10 │ import { ApplyPluginsType } from 'umi';
+         ╵                                  ~~~~~
+
+X [ERROR] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\.umi\plugin-layout' [plugin esbuildAliasPlugin]
+
+    node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17:
+      309 │       const error = new Error("Can't " + message);
+          ╵                     ^
+
+    at finishWithoutResolve (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:309:18)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:386:15
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:41:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+
+  This error came from the "onResolve" callback registered here:
+
+    node_modules/@umijs/preset-umi/dist/features/prepare/esbuildPlugins/esbuildAliasPlugin.js:78:14:
+      78 │         build.onResolve({ filter }, async (args) => {
+         ╵               ~~~~~~~~~
+
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:78:15
+    at Array.forEach (<anonymous>)
+    at setup (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:75:10)
+    at handlePlugins (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1150:21)
+    at buildOrContextImpl (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:873:5)
+    at Object.buildOrContext (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:699:5)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:68
+    at new Promise (<anonymous>)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:27)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1874:58)
+    at build (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\build.js:96:46)
+    at Hook.fn (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\prepare.js:77:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\core\dist\service\service.js:184:15
+
+  The plugin "esbuildAliasPlugin" was triggered by this import
+
+    src/.umi/plugin-layout/Layout.tsx:10:7:
+      10 │ } from '@umijs/max';
+         ╵        ~~~~~~~~~~~~
+
+X [ERROR] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\.umi\core' [plugin esbuildAliasPlugin]
+
+    node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17:
+      309 │       const error = new Error("Can't " + message);
+          ╵                     ^
+
+    at finishWithoutResolve (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:309:18)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:386:15
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:41:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+
+  This error came from the "onResolve" callback registered here:
+
+    node_modules/@umijs/preset-umi/dist/features/prepare/esbuildPlugins/esbuildAliasPlugin.js:78:14:
+      78 │         build.onResolve({ filter }, async (args) => {
+         ╵               ~~~~~~~~~
+
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:78:15
+    at Array.forEach (<anonymous>)
+    at setup (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:75:10)
+    at handlePlugins (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1150:21)
+    at buildOrContextImpl (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:873:5)
+    at Object.buildOrContext (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:699:5)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:68
+    at new Promise (<anonymous>)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:27)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1874:58)
+    at build (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\build.js:96:46)
+    at Hook.fn (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\prepare.js:77:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\core\dist\service\service.js:184:15
+
+  The plugin "esbuildAliasPlugin" was triggered by this import
+
+    src/.umi/core/plugin.ts:10:30:
+      10 │ import { PluginManager } from 'umi';
+         ╵                               ~~~~~
+
+X [ERROR] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\.umi\core' [plugin esbuildAliasPlugin]
+
+    node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17:
+      309 │       const error = new Error("Can't " + message);
+          ╵                     ^
+
+    at finishWithoutResolve (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:309:18)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:386:15
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:41:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+
+  This error came from the "onResolve" callback registered here:
+
+    node_modules/@umijs/preset-umi/dist/features/prepare/esbuildPlugins/esbuildAliasPlugin.js:78:14:
+      78 │         build.onResolve({ filter }, async (args) => {
+         ╵               ~~~~~~~~~
+
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:78:15
+    at Array.forEach (<anonymous>)
+    at setup (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:75:10)
+    at handlePlugins (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1150:21)
+    at buildOrContextImpl (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:873:5)
+    at Object.buildOrContext (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:699:5)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:68
+    at new Promise (<anonymous>)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:27)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1874:58)
+    at build (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\build.js:96:46)
+    at Hook.fn (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\prepare.js:77:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\core\dist\service\service.js:184:15
+
+  The plugin "esbuildAliasPlugin" was triggered by this import
+
+    src/.umi/core/EmptyRoute.tsx:5:41:
+      5 │ import { Outlet, useOutletContext } from 'umi';
+        ╵                                          ~~~~~
+
+X [ERROR] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\services' [plugin esbuildAliasPlugin]
+
+    node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17:
+      309 │       const error = new Error("Can't " + message);
+          ╵                     ^
+
+    at finishWithoutResolve (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:309:18)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:386:15
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:41:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+
+  This error came from the "onResolve" callback registered here:
+
+    node_modules/@umijs/preset-umi/dist/features/prepare/esbuildPlugins/esbuildAliasPlugin.js:78:14:
+      78 │         build.onResolve({ filter }, async (args) => {
+         ╵               ~~~~~~~~~
+
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:78:15
+    at Array.forEach (<anonymous>)
+    at setup (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:75:10)
+    at handlePlugins (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1150:21)
+    at buildOrContextImpl (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:873:5)
+    at Object.buildOrContext (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:699:5)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:68
+    at new Promise (<anonymous>)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:27)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1874:58)
+    at build (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\build.js:96:46)
+    at Hook.fn (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\prepare.js:77:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\core\dist\service\service.js:184:15
+
+  The plugin "esbuildAliasPlugin" was triggered by this import
+
+    src/services/indicators.ts:1:24:
+      1 │ import { request } from '@umijs/max';
+        ╵                         ~~~~~~~~~~~~
+
+X [ERROR] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\.umi\plugin-layout' [plugin esbuildAliasPlugin]
+
+    node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17:
+      309 │       const error = new Error("Can't " + message);
+          ╵                     ^
+
+    at finishWithoutResolve (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:309:18)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:386:15
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:87:43
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\Resolver.js:435:5
+    at eval (eval at create (C:\_allCode\stock_analyse\stock-line\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\node_modules\enhanced-resolve\lib\DirectoryExistsPlugin.js:41:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+
+  This error came from the "onResolve" callback registered here:
+
+    node_modules/@umijs/preset-umi/dist/features/prepare/esbuildPlugins/esbuildAliasPlugin.js:78:14:
+      78 │         build.onResolve({ filter }, async (args) => {
+         ╵               ~~~~~~~~~
+
+    at C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:78:15
+    at Array.forEach (<anonymous>)
+    at setup (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\esbuildPlugins\esbuildAliasPlugin.js:75:10)
+    at handlePlugins (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1150:21)
+    at buildOrContextImpl (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:873:5)
+    at Object.buildOrContext (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:699:5)
+    at C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:68
+    at new Promise (<anonymous>)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:2032:27)
+    at Object.context (C:\_allCode\stock_analyse\stock-line\node_modules\esbuild\lib\main.js:1874:58)
+    at build (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\build.js:96:46)
+    at Hook.fn (C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\preset-umi\dist\features\prepare\prepare.js:77:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async C:\_allCode\stock_analyse\stock-line\node_modules\@umijs\core\dist\service\service.js:184:15
+
+  The plugin "esbuildAliasPlugin" was triggered by this import
+
+    src/.umi/plugin-layout/Exception.tsx:5:37:
+      5 │ import { history, type IRoute } from '@umijs/max';
+        ╵                                      ~~~~~~~~~~~~
+
+error - [icons] build failed: Error: Build failed with 6 errors:
+node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17: ERROR: [plugin: esbuildAliasPlugin] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\.umi'
+node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17: ERROR: [plugin: esbuildAliasPlugin] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\.umi\core'
+node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17: ERROR: [plugin: esbuildAliasPlugin] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\.umi\core'
+node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17: ERROR: [plugin: esbuildAliasPlugin] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\.umi\plugin-layout'
+node_modules/@umijs/preset-umi/node_modules/enhanced-resolve/lib/Resolver.js:309:17: ERROR: [plugin: esbuildAliasPlugin] Can't resolve 'C:/_allCode/stock_analyse/stock-line/src/.umi/exports' in 'C:\_allCode\stock_analyse\stock-line\src\.umi\plugin-layout'
+...

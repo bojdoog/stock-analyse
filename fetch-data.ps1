@@ -20,7 +20,7 @@ if (-not (Test-Path -LiteralPath $Script)) {
 
 Write-Host '========================================'
 Write-Host '  Stock Analyse 统一数据拉取'
-Write-Host '  (ETF / 指数 / 股票 / 资金流向 / 活跃市值研究)'
+Write-Host '  (ETF / 指数 / 资金流向 / 活跃市值研究)'
 Write-Host '========================================'
 Write-Host ''
 Write-Host "使用 Python: $Py"
