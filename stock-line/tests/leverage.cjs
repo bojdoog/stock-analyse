@@ -11,6 +11,7 @@ for(const leverageMultiplier of [-1,-.01,Infinity,NaN]) assert.throws(()=>runBac
 assert.doesNotThrow(()=>runBacktest([],[],{...defaults,leverageMultiplier:1e6}));
 const input=JSON.parse(fs.readFileSync(path.join(__dirname,'../../back_test_data/strategy_failure_research/inputs.json'),'utf8'));
 const base=runBacktest(input.amv,input.etfs,{...defaults,endYear:2026});
+const protectedBase=runBacktest(input.amv,input.etfs,{...defaults,endYear:2026,profitProtectionEnabled:true});
 for(const leverageMultiplier of [0,.01,.1,.5,2]) {
  const result=runBacktest(input.amv,input.etfs,{...defaults,endYear:2026,leverageMultiplier});
  assert.equal(result.trades.length,base.trades.length);
@@ -21,6 +22,11 @@ for(const leverageMultiplier of [0,.01,.1,.5,2]) {
  const compound=result.trades.reduce((v,t)=>v*(1+t.return),1);
  assert.ok(Math.abs(result.navSeries.at(-1).nav-compound)<1e-6);
  const protectedResult=runBacktest(input.amv,input.etfs,{...defaults,endYear:2026,leverageMultiplier,profitProtectionEnabled:true});
+ protectedResult.trades.forEach((trade,i)=>{
+  const original=protectedBase.trades[i];
+  assert.ok(Math.abs(trade.return-original.return*leverageMultiplier)<1e-9);
+  if(leverageMultiplier>0) assert.deepEqual(trade.protection,original.protection);
+ });
  if (leverageMultiplier === 0) {
   for (const output of [result, protectedResult]) {
    assert.equal(output.totalReturn, 0);

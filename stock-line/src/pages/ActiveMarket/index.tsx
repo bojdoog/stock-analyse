@@ -636,7 +636,7 @@ const ActiveMarket: React.FC = () => {
                             }}>
                                 合计：{strategyParams.weights.reduce((a, b) => a + b, 0).toFixed(0)}%
                             </span>
-                            <Tooltip title="实际仓位＝配比×倍率；多头 ETF 和空头银行均适用。盈利保护按账户净值计算，暂不计融资利息及强平规则。">
+                            <Tooltip title="实际仓位＝配比×倍率；多头 ETF 和空头银行均适用。盈利保护的浮盈和回撤按加杠杆前的组合净值判断，实际收益按倍率计算，暂不计融资利息及强平规则。">
                                 <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 13, color: '#666' }}>
                                     <span id="leverage-multiplier-label">杠杆倍率</span>
                                     <InputNumber aria-labelledby="leverage-multiplier-label" min={0} step={0.1}
@@ -679,8 +679,8 @@ const ActiveMarket: React.FC = () => {
                                     setStrategyParams(p => ({ ...p, profitProtectionDrawdownPct: value }));
                                 }} />
                             <span>% 时，各持仓卖出一半</span>
-                            <Tooltip title="按整笔ETF组合的收盘净值判断，按触发日实际收盘价减半一次；卖出资金留现金，不回补，剩余持仓沿用原多头退出规则。">
-                                <span style={{ color: '#999', fontSize: 12, cursor: 'help' }}>每个多头区间仅一次 · 余仓按原规则退出</span>
+                            <Tooltip title="浮盈和回撤按加杠杆前、包含闲置现金的ETF组合收盘净值判断；按触发日实际收盘价减半一次，实际收益计入杠杆。卖出资金留现金，不回补，剩余持仓沿用原多头退出规则。">
+                                <span style={{ color: '#999', fontSize: 12, cursor: 'help' }}>按杠杆前净值判断 · 每个多头区间仅一次 · 余仓按原规则退出</span>
                             </Tooltip>
                         </> : <span style={{ color: '#999', fontSize: 12 }}>未开启，沿用原多头退出规则</span>}
                     </div>
@@ -935,7 +935,7 @@ const ActiveMarket: React.FC = () => {
                             {strategyParams.profitProtectionEnabled && <div style={{ color: '#916c24' }}>
                                 盈利保护：组合浮盈达到 {strategyParams.profitProtectionArmPct ?? 4}% 后启用，
                                 从最高收盘净值回撤达到 {strategyParams.profitProtectionDrawdownPct ?? 2}% 时按实际收盘价减半一次；
-                                卖出资金留现金，剩余持仓按下述原规则退出。
+                                浮盈和回撤均按加杠杆前的组合净值判断；卖出资金留现金，剩余持仓按下述原规则退出。
                             </div>}
                             规则：多头区间启动日买入涨幅前{strategyParams.weights.length} ETF（{strategyParams.weights.map(w => `${w.toFixed(0)}%`).join('/')}），区间结束卖出；单日涨幅&gt;{strategyParams.bullStartSingleDay}%或两日累计&gt;{strategyParams.bullStartTwoDay}%{strategyParams.bullStartUseMA10 ? '且收盘价站上MA10' : ''}启动多头；单日跌幅&lt;{strategyParams.bullEndSingleDay}%{strategyParams.bullEndUseMA10 ? '或跌破MA10' : ''}结束多头；{strategyParams.bearBuyBank ? `${strategyParams.bearStartYear}年起空头区间持有银行 ETF` : '空头区间持有现金'}；跨年收益计入开始年份。点击年份可查看当年每个波段的交易明细。
                         </div>

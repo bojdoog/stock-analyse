@@ -877,6 +877,7 @@ export function runBacktest(
 
       let totalReturn = 0;
       const holdings: BacktestHolding[] = [];
+      const unleveragedWeights: number[] = [];
       const protectionPrices = new Map<string, (date: string) => number | null>();
 
       const getSectorClose = (
@@ -946,6 +947,7 @@ export function runBacktest(
 
         const holdingReturn = endClose / startClose - 1;
         const weight = weightPct / 100 * leverage;
+        unleveragedWeights.push(weightPct / 100);
         totalReturn += weight * holdingReturn;
         holdings.push({
           name: item.name,
@@ -1035,13 +1037,14 @@ export function runBacktest(
       };
       if (params.profitProtectionEnabled || leverage !== 1) {
         const days = filteredAMV.slice(zone.start_idx, zone.end_idx + 1).map(row => row.date);
-        const managed = calculateProfitProtection(days, holdings.map(h => h.weight),
+        const managed = calculateProfitProtection(days, unleveragedWeights,
           days.map(date => holdings.map(h => protectionPrices.get(h.name)?.(date) ?? null)),
-          params.profitProtectionArmPct ?? 4, params.profitProtectionDrawdownPct ?? 2, zone.is_open, params.profitProtectionEnabled === true);
+          params.profitProtectionArmPct ?? 4, params.profitProtectionDrawdownPct ?? 2, zone.is_open, params.profitProtectionEnabled === true && leverage > 0);
         if (params.profitProtectionEnabled) bullTrade.protection = managed.status;
-        bullTrade.relative_nav = managed.curve;
+        bullTrade.relative_nav = leverage === 1 ? managed.curve
+          : managed.curve.map(point => ({ date: point.date, nav: 1 + (point.nav - 1) * leverage }));
         bullTrade.is_open = zone.is_open;
-        bullTrade.return = managed.curve[managed.curve.length - 1].nav - 1;
+        bullTrade.return = (managed.curve[managed.curve.length - 1].nav - 1) * leverage;
         holdings.forEach((holding, i) => { holding.holding_return = managed.holdingReturns[i]; });
       }
       trades.push(bullTrade);

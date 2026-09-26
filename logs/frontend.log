@@ -2,38 +2,9 @@
 > dev
 > max dev
 
-info  - [你知道吗？] 你知道可以通过 UMI_ENV 定义多个环境的配置吗，详见 https://umijs.org/docs/guides/env-variables#umi_env
+info  - [你知道吗？] 需要添加全局 React Context 吗？在 src/app.(ts|tsx) 运行时配置中轻松解决，详见 https://umijs.org/docs/api/runtime-config
 
-  utoo pack v1.4.22 ready in 15938ms
+  utoo pack v1.4.22 ready in 9886ms
 
   ➜  Local:   http://localhost:8000
   ➜  Network: http://26.181.72.104:8000
-Compiled in 543ms
-Compiled in 208ms
-Compiled in 131ms
-Compiled in 183ms
-Compiled in 99ms
-Compiled in 44ms
-Compiled in 37ms
-Compiled in 98ms
-Compiled in 56ms
-Compiled in 53ms
-Compiled in 45ms
-Compiled in 53ms
-Compiled in 37ms
-Compiled in 45ms
-Compiled in 37ms
-Compiled in 41ms
-Compiled in 47ms
-Compiled in 54ms
-Compiled in 60ms
-Compiled in 45ms
-Compiled in 49ms
-Compiled in 53ms
-Compiled in 42ms
-Compiled in 59ms
-Compiled in 45ms
-Compiled in 47ms
-Compiled in 51ms
-Compiled in 57ms
-Compiled in 51ms
