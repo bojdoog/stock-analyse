@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260814,881129.TI,通信设备,阿莱德,9345.63,2.33,91,20.0,37.62,746.0,629.0,117.0,515880,通信ETF
 20260814,881170.TI,小金属,中国稀土,9244.17,1.99,29,10.0,60.95,170.0,142.0,28.0,512400,有色ETF
 20260814,881162.TI,通信服务,数据港,2792.73,1.38,44,10.0,29.04,110.0,88.0,21.0,515880,通信ETF

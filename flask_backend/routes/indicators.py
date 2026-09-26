@@ -6,6 +6,36 @@ from services.data_service import DataService
 indicators_bp = Blueprint('indicators', __name__, url_prefix='/api/indicators')
 
 
+@indicators_bp.route('/<int:indicator_id>/intraday', methods=['GET'])
+def indicator_intraday(indicator_id):
+    from datetime import datetime
+    day = request.args.get('date', '')
+    try:
+        if datetime.strptime(day, '%Y-%m-%d').strftime('%Y-%m-%d') != day:
+            raise ValueError
+    except ValueError:
+        return jsonify(code=400, message='date 须为 YYYY-MM-DD 格式的有效日期'), 400
+    db = get_db()
+    indicator = db.execute('SELECT code,name FROM indicators WHERE id=?', (indicator_id,)).fetchone()
+    if indicator is None:
+        return jsonify(code=404, message='指标不存在'), 404
+    rows = db.execute('''SELECT time,amv FROM indicator_intraday
+        WHERE indicator_id=? AND date=? ORDER BY time''', (indicator_id, day)).fetchall()
+    previous = db.execute('''SELECT date,close FROM indicator_daily
+        WHERE indicator_id=? AND date<? ORDER BY date DESC LIMIT 1''', (indicator_id, day)).fetchone()
+    neighbors = {}
+    for key, comparison, order in [('previousDate', '<', 'DESC'), ('nextDate', '>', 'ASC')]:
+        row = db.execute(f'''SELECT date FROM indicator_intraday
+            WHERE indicator_id=? AND date{comparison}? ORDER BY date {order} LIMIT 1''',
+            (indicator_id, day)).fetchone()
+        neighbors[key] = row[0] if row else None
+    return jsonify(code=0, message='success', data=[dict(row) for row in rows], meta={
+        'date': day, 'code': indicator['code'], 'name': indicator['name'], 'count': len(rows),
+        'previousClose': previous['close'] if previous else None,
+        'previousCloseDate': previous['date'] if previous else None, **neighbors,
+    })
+
+
 @indicators_bp.route('/<int:indicator_id>/data', methods=['GET'])
 def indicator_data(indicator_id):
     indicator = get_db().execute(

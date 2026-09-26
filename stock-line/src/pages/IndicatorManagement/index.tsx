@@ -1,6 +1,6 @@
 import { queryIndicators } from '@/services/indicators';
 import type { Indicator, IndicatorQuery } from '@/services/indicators';
-import { PageContainer, ProTable } from '@ant-design/pro-components';
+import { ProTable } from '@ant-design/pro-components';
 import type { ActionType, ProColumns } from '@ant-design/pro-components';
 import { Alert, Button, Space, Tag } from 'antd';
 import React, { useRef, useState } from 'react';
@@ -16,7 +16,7 @@ const columns: ProColumns<Indicator>[] = [
     width: 110,
     hideInSearch: true,
     render: (_, record) => (
-      <Tag color={record.is_default ? 'blue' : 'default'}>
+      <Tag color={record.is_default ? 'cyan' : 'default'}>
         {record.is_default ? '默认指标' : '自定义指标'}
       </Tag>
     ),
@@ -45,7 +45,12 @@ const IndicatorManagement: React.FC = () => {
   }];
 
   return (
-    <PageContainer title="指标管理">
+    <div className="research-page indicator-page">
+      <header className="research-heading">
+        <div><div className="eyebrow">INDICATOR LIBRARY</div><h1>指标管理</h1>
+          <p>沉淀研究方法，让每一个市场判断都有据可循</p></div>
+        <span className="page-stamp">研究指标库</span>
+      </header>
       {loadError && (
         <Alert
           type="error"
@@ -58,7 +63,7 @@ const IndicatorManagement: React.FC = () => {
       <ProTable<Indicator, IndicatorQuery>
         actionRef={actionRef}
         rowKey="id"
-        headerTitle="指标列表"
+        headerTitle="全部指标"
         columns={tableColumns}
         tableLayout="fixed"
         search={{ labelWidth: 'auto' }}
@@ -72,7 +77,7 @@ const IndicatorManagement: React.FC = () => {
       />
       {selected && <IndicatorModal key={`${selected.indicator.id}-${selected.compare}`}
         {...selected} onClose={() => setSelected(undefined)} />}
-    </PageContainer>
+    </div>
   );
 };
 

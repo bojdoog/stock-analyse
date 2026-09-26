@@ -1,0 +1,148 @@
+{
+  "format": "2ACR: 20-byte header (<4s4I), 16-byte records (<Ifff)",
+  "limitations": [
+    "Intraday snapshots, not daily OHLC; may omit closing data.",
+    "Volume/amount field meanings and units are inferred, not verified.",
+    "CDE and locked VDAT files are not parsed by this script."
+  ],
+  "records": 4024,
+  "files": [
+    {
+      "source_file": "Z_SK0AMV20220714.fde",
+      "date": "2022-07-14",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20220802.fde",
+      "date": "2022-08-02",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20230830.fde",
+      "date": "2023-08-30",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20231025.fde",
+      "date": "2023-10-25",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20240205.fde",
+      "date": "2024-02-05",
+      "records": 200,
+      "header_end_time": 142000,
+      "first_time": "09:30:59",
+      "last_time": "14:19:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20240206.fde",
+      "date": "2024-02-06",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20240207.fde",
+      "date": "2024-02-07",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20240228.fde",
+      "date": "2024-02-28",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20240313.fde",
+      "date": "2024-03-13",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20240418.fde",
+      "date": "2024-04-18",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20240710.fde",
+      "date": "2024-07-10",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20240711.fde",
+      "date": "2024-07-11",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20240801.fde",
+      "date": "2024-08-01",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20241018.fde",
+      "date": "2024-10-18",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20260325.fde",
+      "date": "2026-03-25",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20260416.fde",
+      "date": "2026-04-16",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV__.fde",
+      "date": "2026-09-24",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    }
+  ],
+  "errors": []
+}

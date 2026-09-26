@@ -12,12 +12,16 @@ class UnifiedDownloadTests(unittest.TestCase):
     def test_all_datasets_are_scheduled(self):
         scripts = dict(runner.SCRIPTS)
         self.assertEqual(set(scripts), {
+            'fetch_compass_amv_daily.py',
+            'parse_compass_amv_cache.py',
             'fetch_etf.py', 'fetch_index.py',
             'fetch_moneyflow_cnt_ths.py', 'fetch_moneyflow_ind_dc.py',
             'fetch_moneyflow_ind_ths.py', 'download_amv_research.py',
         })
         self.assertEqual(scripts['download_amv_research.py'],
                          ['--start', '20240910', '--end', runner.today])
+        self.assertEqual(scripts['parse_compass_amv_cache.py'],
+                         ['--output', str(runner.TOOLS_DIR.parent / 'back_test_data' / 'compass_amv_cache')])
         self.assertNotIn('fetch_kline.py', scripts)
         self.assertNotIn('fetch_one.py', scripts)
 

@@ -19,8 +19,8 @@ const IndicatorModal: React.FC<Props> = ({ indicator, compare, onClose }) => {
   const [attempt, setAttempt] = useState(0);
   const [data, setData] = useState<KLineData[]>([]);
   const [baseline, setBaseline] = useState<{ indicator: Indicator; data: KLineData[] }>();
-  const [showBullZoneBg, setShowBullZoneBg] = useState(false);
-  const [showBearZoneBg, setShowBearZoneBg] = useState(false);
+  const [showBullZoneBg, setShowBullZoneBg] = useState(true);
+  const [showBearZoneBg, setShowBearZoneBg] = useState(true);
   const [zoneParams, setZoneParams] = useState<ZoneParams>(() => ({
     bullStartSingleDay: DEFAULT_STRATEGY_PARAMS.bullStartSingleDay,
     bullStartTwoDay: DEFAULT_STRATEGY_PARAMS.bullStartTwoDay,
@@ -52,17 +52,6 @@ const IndicatorModal: React.FC<Props> = ({ indicator, compare, onClose }) => {
           reference = { indicator: defaultIndicator, data: await queryIndicatorData(defaultIndicator.id) };
         }
         if (!cancelled) {
-          if (selected.length && (!compare || reference?.data.length)) {
-            const selectedEnd = selected.map(row => row.date).sort().slice(-1)[0];
-            const baselineEnd = reference?.data.map(row => row.date).sort().slice(-1)[0] ?? selectedEnd;
-            const end = selectedEnd < baselineEnd ? selectedEnd : baselineEnd;
-            const cutoff = new Date(`${end}T00:00:00Z`);
-            const month = cutoff.getUTCMonth();
-            cutoff.setUTCFullYear(cutoff.getUTCFullYear() - 1);
-            // Clamp February 29 to February 28 in a non-leap year.
-            if (cutoff.getUTCMonth() !== month) cutoff.setUTCDate(0);
-            dateWindow.current = { start: cutoff.toISOString().slice(0, 10), end };
-          }
           setData(selected);
           setBaseline(reference);
         }
@@ -86,6 +75,7 @@ const IndicatorModal: React.FC<Props> = ({ indicator, compare, onClose }) => {
       data={rows.filter(row => row.date >= start && row.date <= end)}
       baseDates={dates}
       dateWindowRef={dateWindow}
+      defaultWindowYears={1.5}
       syncGroup={compare ? syncGroup : undefined}
       dataLabel={name}
       showZones
@@ -110,7 +100,9 @@ const IndicatorModal: React.FC<Props> = ({ indicator, compare, onClose }) => {
         <Descriptions.Item label="类型">{indicator.is_default ? '默认指标' : '自定义指标'}</Descriptions.Item>
         <Descriptions.Item label="创建时间">{indicator.created_at}</Descriptions.Item>
         <Descriptions.Item label="更新时间">{indicator.updated_at}</Descriptions.Item>
-        <Descriptions.Item label="指标说明" span={2}>{indicator.description || '—'}</Descriptions.Item>
+        <Descriptions.Item label="指标说明" span={2}>
+          <div style={{ whiteSpace: 'pre-line', lineHeight: 1.8 }}>{indicator.description || '—'}</div>
+        </Descriptions.Item>
       </Descriptions>}
       {loading ? <div style={{ padding: 72, textAlign: 'center' }}><Spin tip="正在加载日 K 线" /></div>
         : error ? <Alert type="error" showIcon message={error}
@@ -122,7 +114,8 @@ const IndicatorModal: React.FC<Props> = ({ indicator, compare, onClose }) => {
                   <Checkbox checked={showBullZoneBg} onChange={event => setShowBullZoneBg(event.target.checked)}>显示多头区间背景</Checkbox>
                   <Checkbox checked={showBearZoneBg} onChange={event => setShowBearZoneBg(event.target.checked)}>显示空头区间背景</Checkbox>
                 </Space>
-                <div><Space wrap size={[20, 12]}>
+                <div role="group" aria-label="多头确认条件" style={{ marginBottom: 12 }}><Space wrap size={[20, 12]}>
+                  <Typography.Text strong>多头确认条件：</Typography.Text>
                   <Space size={6}>
                     <span>当日涨幅大于</span>
                     <InputNumber aria-label="当日涨幅大于" size="small" min={0} step={0.1} style={{ width: 76 }}
@@ -135,14 +128,17 @@ const IndicatorModal: React.FC<Props> = ({ indicator, compare, onClose }) => {
                       value={zoneParams.bullStartTwoDay} onChange={value => { if (value !== null) setZoneParams(params => ({ ...params, bullStartTwoDay: value })); }} />
                     <span>%</span>
                   </Space>
+                  <Checkbox checked={zoneParams.bullStartUseMA10}
+                    onChange={event => setZoneParams(params => ({ ...params, bullStartUseMA10: event.target.checked }))}>启动日收盘价站上 MA10 才启动多头</Checkbox>
+                </Space></div>
+                <div role="group" aria-label="空头确认条件"><Space wrap size={[20, 12]}>
+                  <Typography.Text strong>空头确认条件：</Typography.Text>
                   <Space size={6}>
                     <span>单日涨跌幅低于</span>
                     <InputNumber aria-label="结束多头的单日涨跌幅" size="small" max={0} min={-100} step={0.1} style={{ width: 76 }}
                       value={zoneParams.bullEndSingleDay} onChange={value => { if (value !== null) setZoneParams(params => ({ ...params, bullEndSingleDay: value })); }} />
                     <span>% 结束多头</span>
                   </Space>
-                  <Checkbox checked={zoneParams.bullStartUseMA10}
-                    onChange={event => setZoneParams(params => ({ ...params, bullStartUseMA10: event.target.checked }))}>启动日收盘价站上 MA10 才启动多头</Checkbox>
                   <Checkbox checked={zoneParams.bullEndUseMA10}
                     onChange={event => setZoneParams(params => ({ ...params, bullEndUseMA10: event.target.checked }))}>收盘价跌破 MA10 也结束多头</Checkbox>
                 </Space></div>
@@ -155,7 +151,10 @@ const IndicatorModal: React.FC<Props> = ({ indicator, compare, onClose }) => {
                 {renderChart(baseline.data, baseline.indicator.name)}
               </>}
               <Typography.Title level={5}>{indicator.name} · 日 K</Typography.Title>
-              {compare && indicator.description && <Typography.Paragraph type="secondary" style={{ marginBottom: 0 }}>
+              {compare && indicator.description && <Typography.Paragraph
+                type="secondary"
+                ellipsis={{ rows: 1, tooltip: indicator.description }}
+                style={{ marginBottom: 0 }}>
                 {indicator.description}
               </Typography.Paragraph>}
               {renderChart(data, indicator.name)}

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250411,881121.TI,半导体,凯德石英,8688.9,6.86,161,29.98,46.05,495.0,411.0,84.0,512480,半导体ETF
 20250411,881155.TI,银行,民生银行,1172.66,-0.14,84,2.31,3.98,88.0,72.0,16.0,512800,银行ETF
 20250411,881125.TI,汽车整车,比亚迪,2904.39,1.21,23,5.52,354.98,66.0,54.0,11.0,515030,新能源车ETF

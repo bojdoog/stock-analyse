@@ -1,0 +1,15 @@
+{
+  "databases": {
+    "C:\\_allCode\\stock_analyse\\flask_backend\\instance\\stock_analyse.sqlite3": {
+      "verified_files": 1878,
+      "verified_rows": 448840
+    },
+    "mysql": {
+      "verified_files": 1878,
+      "verified_rows": 448840
+    }
+  },
+  "first_date": "2018-12-28",
+  "last_date": "2026-09-24",
+  "table": "indicator_intraday"
+}

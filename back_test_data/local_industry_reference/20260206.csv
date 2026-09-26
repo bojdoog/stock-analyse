@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260206,881281.TI,电池,震裕科技,20294.7,2.12,103,13.39,176.55,282.0,200.0,81.0,516160,新能源ETF
 20260206,881109.TI,化学制品,沧州大化,7964.83,1.52,175,10.02,21.63,183.0,143.0,40.0,510300,沪深300ETF
 20260206,881170.TI,小金属,翔鹭钨业,8909.76,1.21,27,10.01,28.46,173.0,135.0,38.0,512400,有色ETF

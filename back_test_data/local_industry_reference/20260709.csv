@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260709,881121.TI,半导体,艾森股份,22183.0,6.52,181,20.0,105.6,2608.0,2211.0,396.0,512480,半导体ETF
 20260709,881129.TI,通信设备,信科移动,9645.83,2.72,91,14.17,20.63,1025.0,865.0,160.0,515880,通信ETF
 20260709,881124.TI,消费电子,鸿日达,12977.1,2.62,96,10.15,108.6,347.0,276.0,71.0,512480,半导体ETF

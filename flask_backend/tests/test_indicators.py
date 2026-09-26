@@ -37,6 +37,32 @@ class IndicatorApiTest(unittest.TestCase):
     def tearDown(self):
         self.temp.cleanup()
 
+    def test_intraday_dates_previous_close_and_empty_day(self):
+        with connect(self.config.DATABASE_PATH) as db:
+            indicator_id = db.execute("SELECT id FROM indicators WHERE code='0AMV'").fetchone()[0]
+            for day in ('2026-09-14', '2026-09-15'):
+                content = ('date,time,amv,volume_candidate,amount_candidate,source_file\n'
+                           f'{day},09:30:59,106,1,2,test.fde\n'
+                           f'{day},09:31:59,107,3,4,test.fde\n').encode()
+                import_content(db, f'core_index/0AMV-intraday/{day}.csv', content)
+        url = f'/api/indicators/{indicator_id}/intraday'
+        response = self.client.get(url + '?date=2026-09-14')
+        self.assertEqual(response.status_code, 200)
+        body = response.json
+        self.assertEqual(body['data'], [{'time': '09:30:59', 'amv': 106}, {'time': '09:31:59', 'amv': 107}])
+        self.assertEqual(body['meta']['previousClose'], 105)
+        self.assertEqual(body['meta']['previousCloseDate'], '2026-09-11')
+        self.assertIsNone(body['meta']['previousDate'])
+        self.assertEqual(body['meta']['nextDate'], '2026-09-15')
+        empty = self.client.get(url + '?date=2026-09-13').json
+        self.assertEqual(empty['data'], [])
+        self.assertEqual(empty['meta']['nextDate'], '2026-09-14')
+        early = self.client.get(url + '?date=2018-01-01').json
+        self.assertIsNone(early['meta']['previousClose'])
+        for day in ('', '2026-02-30', '2026-9-14', "2026-09-14' OR 1=1"):
+            self.assertEqual(self.client.get(url, query_string={'date': day}).status_code, 400)
+        self.assertEqual(self.client.get('/api/indicators/999999/intraday?date=2026-09-14').status_code, 404)
+
     def test_default_indicator_and_idempotent_restart(self):
         create_app(self.config)
         result = self.client.get('/api/indicators').get_json()

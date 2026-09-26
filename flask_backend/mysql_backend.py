@@ -134,4 +134,6 @@ def ensure_schema(db, flow_numbers, flow_text):
             FOREIGN KEY(source_path) REFERENCES source_files(path))''')
     for sql in statements:
         db.execute(sql + suffix)
+    from intraday_store import ensure_schema as intraday_schema
+    intraday_schema(db)
     db.commit()

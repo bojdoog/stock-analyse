@@ -5,3 +5,4 @@
 2026-09-21 01:24:09,218 [ERROR] fetch_moneyflow_ind_dc.py:185 获取 20260210~20260216 板块资金流向失败: HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.
 2026-09-21 01:24:09,218 [ERROR] fetch_moneyflow_ind_dc.py:417 20260210~20260216 拉取失败: HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.
 2026-09-21 01:24:30,252 [INFO] fetch_moneyflow_ind_dc.py:309 Database file index updated: 732 files
+2026-09-26 23:28:39,313 [INFO] fetch_moneyflow_ind_dc.py:309 Database file index updated: 736 files

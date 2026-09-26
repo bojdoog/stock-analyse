@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251120,881155.TI,银行,中国银行,1362.16,1.15,84,4.0,6.24,194.0,141.0,52.0,512800,银行ETF
 20251120,881162.TI,通信服务,宜通世纪,2902.92,0.12,45,5.99,6.37,57.0,50.0,7.0,515880,通信ETF
 20251120,881115.TI,建筑材料,国统股份,5600.54,0.68,72,10.03,17.22,44.0,36.0,7.0,510300,沪深300ETF

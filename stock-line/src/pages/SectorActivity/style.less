@@ -1,0 +1,43 @@
+.sector-date { display: flex; align-items: center; gap: 12px; color: #7a898f; font-size: 12px; }
+.sector-layout { display: grid; grid-template-columns: minmax(360px, .6fr) minmax(500px, 1.7fr); gap: 20px; align-items: start; }
+.sector-panel { padding: 20px; background: #fff; border: 1px solid #e2e8e9; border-radius: 12px; min-width: 0; }
+.sector-panel-title { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 18px; }
+.sector-panel-title strong { font-size: 16px; color: #23434c; }
+.sector-panel-title > span { font-size: 11px; color: #819097; }
+.sector-list .ant-input-search { margin-bottom: 18px; }
+.sector-list .ant-table { font-size: 12px; }
+.sector-list .sector-name { padding: 0; font-size: 12px; color: #344f57; }
+.sector-list .ant-table-thead > tr > th { background: #f5f8f8; color: #72858d; font-size: 11px; }
+.sector-list .sector-selected > td { background: #edf6f5 !important; }
+.sector-list .sector-selected .sector-name { color: #167d8d; font-weight: 600; }
+.sector-metrics { display: grid; grid-template-columns: repeat(3, 1fr); padding: 17px 0; border-block: 1px solid #edf1f2; gap: 12px; }
+.sector-metrics span { display: block; color: #819097; font-size: 11px; }
+.sector-metrics strong { display: block; font-size: 25px; margin-top: 8px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.sector-chart-controls { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+.sector-chart-controls > span { font-size: 11px; color: #819097; }
+.sector-decomposition { background: #f5f8f8; padding: 15px 18px; border-radius: 8px; font-size: 12px; }
+.sector-decomposition small { color: #819097; font-weight: 400; margin-left: 8px; }
+.sector-decomposition > div { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 12px; }
+.sector-decomposition b { font-size: 16px; font-variant-numeric: tabular-nums; }
+.sector-decomposition p { color: #819097; margin: 12px 0 0; }
+.sector-decomposition .sector-activity-summary { gap: 8px 20px; color: #819097; }
+.sector-activity-summary > span { display: inline-flex; align-items: center; gap: 8px; }
+.sector-activity-summary b { font-size: 14px; }
+.sector-formula { font-size: 12px; line-height: 1.9; color: #6c8088; max-width: 1050px; }
+.sector-no-data { padding: 100px 0; text-align: center; color: #819097; }
+.sector-signal-settings { margin-top: 16px; padding: 14px; background: #f8fafb; border: 1px solid #e3ebec; border-radius: 8px; font-size: 12px; color: #617780; }
+.sector-signal-row { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 12px; margin-bottom: 12px; }
+.sector-signal-row label { display: inline-flex; align-items: center; gap: 6px; }
+.sector-signal-row .ant-input-number { width: 70px; }
+.sector-signal-row .ant-checkbox-wrapper { font-size: 12px; }
+.sector-signal-settings p { margin: 0; color: #819097; font-size: 11px; line-height: 1.8; }
+.sector-backtest-summary { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; margin-left: auto; }
+.sector-backtest-muted { color: #819097; font-size: 12px; line-height: 1.8; }
+.sector-year-link { display: flex; flex-direction: column; gap: 4px; border: 0; background: transparent; cursor: pointer; font-size: 12px; padding: 0; }
+.sector-year-link > span { color: #819097; }
+.sector-backtest-years { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin: 16px 0; }
+.sector-year-card { padding: 18px; border: 1px solid #e8edef; border-radius: 10px; font-size: 13px; }
+.sector-year-card > div { display: flex; justify-content: space-between; gap: 12px; }
+.sector-backtest-total { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 14px; padding: 20px; border: 1px solid #f1c9d1; background: #fff8f9; border-radius: 10px; margin-bottom: 16px; }
+@media (max-width: 1250px) { .sector-layout { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .sector-panel { padding: 14px; } .sector-metrics strong { font-size: 20px; } }

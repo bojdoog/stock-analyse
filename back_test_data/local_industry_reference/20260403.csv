@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260403,881129.TI,通信设备,德科立,8688.67,0.74,89,20.0,247.21,569.0,468.0,101.0,515880,通信ETF
 20260403,881171.TI,自动化设备,劲拓股份,26080.2,-0.15,92,13.64,28.08,121.0,97.0,24.0,562500,机器人ETF
 20260403,881162.TI,通信服务,中贝通信,2930.95,-1.08,44,6.28,26.25,81.0,67.0,13.0,515880,通信ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260720,881155.TI,银行,厦门银行,1332.04,2.02,84,6.83,7.67,187.0,120.0,66.0,512800,银行ETF
 20260720,881121.TI,半导体,星宸科技,14973.6,-6.39,181,16.11,106.65,1743.0,1679.0,63.0,512480,半导体ETF
 20260720,881145.TI,电力,九洲集团,1917.17,4.8,110,18.17,6.83,276.0,212.0,63.0,561380,电网设备ETF

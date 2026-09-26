@@ -1,8 +1,9 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { Alert, Button, Empty, Select, Modal, Collapse, Spin, Tooltip } from 'antd';
+import { Alert, Button, Empty, Select, Modal, Collapse, Spin, Tooltip, Switch, InputNumber } from 'antd';
 import { DeleteTwoTone } from '@ant-design/icons';
 import { Indicator, queryIndicators } from '@/services/indicators';
 import KLineChart from './components/KLineChart';
+import IntradayModal from './components/IntradayModal';
 import BacktestChart from './components/BacktestChart';
 import NavOverviewChart from './components/NavOverviewChart';
 import { isCloseOnlySeries } from './utils/indicatorDisplay';
@@ -73,6 +74,7 @@ const calcDrawdowns = (navs: number[]) => {
 };
 
 const ActiveMarket: React.FC = () => {
+    const [intradayDate, setIntradayDate] = useState<string | null>(null);
     const dateWindowRef = useRef<{ start: string; end: string } | null>(null);
     const [data, setData] = useState<KLineData[]>([]);
     const [loading, setLoading] = useState(true);
@@ -84,8 +86,8 @@ const ActiveMarket: React.FC = () => {
     const [selectedIndicatorId, setSelectedIndicatorId] = useState<number>();
     const [reloadKey, setReloadKey] = useState(0);
     const selectedIndicator = indicators.find(item => item.id === selectedIndicatorId);
-    const [showBullZoneBg, setShowBullZoneBg] = useState(false);
-    const [showBearZoneBg, setShowBearZoneBg] = useState(false);
+    const [showBullZoneBg, setShowBullZoneBg] = useState(true);
+    const [showBearZoneBg, setShowBearZoneBg] = useState(true);
     const [selectedETFs, setSelectedETFs] = useState<string[]>([]);
     const [extraSeries, setExtraSeries] = useState<ExtraSeries[]>([]);
     const [allETFSeries, setAllETFSeries] = useState<ExtraSeries[]>([]);
@@ -152,7 +154,8 @@ const ActiveMarket: React.FC = () => {
                 if (!response.ok || json.code !== 0) throw new Error(json.message || '指标数据加载失败');
                 if (!controller.signal.aborted) {
                     // Missing OHLC/volume stays missing; ECharts uses the close line for such indicators.
-                    setData(json.data.map((row: KLineData) => ({ ...row,
+                    setData(json.data.map((row: KLineData) => ({
+                        ...row,
                         open: row.open ?? NaN, high: row.high ?? NaN, low: row.low ?? NaN,
                         volume: row.volume ?? NaN, amount: row.amount ?? NaN,
                     })));
@@ -225,6 +228,19 @@ const ActiveMarket: React.FC = () => {
     const activeMarketLastDate = data.length > 0 ? data[data.length - 1].date : undefined;
     const activeMarketDates = data.map(d => d.date);
 
+    const yearBullStats = useMemo(() => {
+        const stats = new Map<number, { count: number; wins: number; totalReturn: number }>();
+        backtestResult?.trades.forEach(trade => {
+            if (trade.type !== 'bull' || trade.is_open) return;
+            const yearly = stats.get(trade.year) ?? { count: 0, wins: 0, totalReturn: 0 };
+            yearly.count += 1;
+            yearly.wins += trade.return > 0 ? 1 : 0;
+            yearly.totalReturn += trade.return;
+            stats.set(trade.year, yearly);
+        });
+        return stats;
+    }, [backtestResult]);
+
     // 回测弹窗：各年与整体的最大/平均回撤
     const overallDD = backtestResult ? calcDrawdowns(backtestResult.navSeries.map(p => p.nav)) : null;
     const yearDDMap = new Map<number, { maxDD: number; avgDD: number }>();
@@ -238,11 +254,11 @@ const ActiveMarket: React.FC = () => {
     }
 
     return (
-        <div style={{ padding: 20, backgroundColor: '#f5f5f5', height: 'calc(100vh - 80px)', display: 'flex', flexDirection: 'column', boxSizing: 'border-box' }}>
-            <h1 style={{ color: '#333', marginBottom: 20, flexShrink: 0 }}>
-                {selectedIndicator ? `${selectedIndicator.name} (${selectedIndicator.code})` : '活跃市值'}
-            </h1>
-            <div style={{ marginBottom: 10, display: 'flex', alignItems: 'center', gap: 15, flexShrink: 0 }}>
+        <div className="research-page">
+            <header className="research-heading">
+                <h1 style={{ fontSize: 22 }}>{selectedIndicator?.name || '活跃市值'}</h1>
+            </header>
+            <div className="market-toolbar">
                 <label style={{ display: 'flex', alignItems: 'center', gap: 8, cursor: 'pointer' }}>
                     <input
                         type="checkbox"
@@ -286,8 +302,8 @@ const ActiveMarket: React.FC = () => {
                     size="middle"
                 />
             </div>
-            <Collapse style={{ marginBottom: 12, flexShrink: 0, backgroundColor: '#fff' }}>
-                <Collapse.Panel header="策略设置" key="strategy">
+            <Collapse className="strategy-panel" style={{ flexShrink: 0, backgroundColor: '#fff' }}>
+                <Collapse.Panel header="参数与回测" key="strategy">
                     <div style={{ marginBottom: 12, display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
                         <span style={{ color: '#333', fontSize: 14, fontWeight: 500 }}>策略预设：</span>
                         {[
@@ -389,7 +405,8 @@ const ActiveMarket: React.FC = () => {
                         </div>
                     </div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '12px 24px', marginBottom: 12 }}>
+                    <div role="group" aria-label="多头确认条件" style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '12px 24px', marginBottom: 12 }}>
+                        <span style={{ fontSize: 13, fontWeight: 600, color: '#333' }}>多头确认条件：</span>
                         <label style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: '#666' }}>
                             当日涨幅大于
                             <input
@@ -418,6 +435,21 @@ const ActiveMarket: React.FC = () => {
                             />
                             %
                         </label>
+                        <label style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: '#666', cursor: 'pointer' }}>
+                            <input
+                                type="checkbox"
+                                checked={strategyParams.bullStartUseMA10}
+                                onChange={e => {
+                                    setActivePreset('custom');
+                                    setStrategyParams(p => ({ ...p, bullStartUseMA10: e.target.checked }));
+                                }}
+                                style={{ width: 14, height: 14 }}
+                            />
+                            启动日收盘价站上 MA10 才启动多头
+                        </label>
+                    </div>
+                    <div role="group" aria-label="空头确认条件" style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '12px 24px', marginBottom: 12 }}>
+                        <span style={{ fontSize: 13, fontWeight: 600, color: '#333' }}>空头确认条件：</span>
                         <label style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: '#666' }}>
                             单日跌幅大于
                             <input
@@ -435,18 +467,6 @@ const ActiveMarket: React.FC = () => {
                         <label style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: '#666', cursor: 'pointer' }}>
                             <input
                                 type="checkbox"
-                                checked={strategyParams.bullStartUseMA10}
-                                onChange={e => {
-                                    setActivePreset('custom');
-                                    setStrategyParams(p => ({ ...p, bullStartUseMA10: e.target.checked }));
-                                }}
-                                style={{ width: 14, height: 14 }}
-                            />
-                            启动日收盘价站上 MA10 才启动多头
-                        </label>
-                        <label style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: '#666', cursor: 'pointer' }}>
-                            <input
-                                type="checkbox"
                                 checked={strategyParams.bullEndUseMA10}
                                 onChange={e => {
                                     setActivePreset('custom');
@@ -455,18 +475,6 @@ const ActiveMarket: React.FC = () => {
                                 style={{ width: 14, height: 14 }}
                             />
                             收盘价跌破 MA10 也结束多头
-                        </label>
-                        <label style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: '#666' }}>
-                            空头买银行起始年：
-                            <input
-                                type="number"
-                                value={strategyParams.bearStartYear}
-                                onChange={e => {
-                                    setActivePreset('custom');
-                                    setStrategyParams(p => ({ ...p, bearStartYear: parseInt(e.target.value, 10) || 0 }));
-                                }}
-                                style={{ width: 70, padding: '4px 8px', border: '1px solid #d9d9d9', borderRadius: 4 }}
-                            />
                         </label>
                     </div>
 
@@ -538,6 +546,34 @@ const ActiveMarket: React.FC = () => {
                                     </button>
                                 </Tooltip>
                             ))}
+                            <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: '#666' }}>
+                                <span id="bear-buy-bank-label">空头区间买银行</span>
+                                <Switch
+                                    aria-labelledby="bear-buy-bank-label"
+                                    checked={strategyParams.bearBuyBank}
+                                    onChange={checked => {
+                                        setActivePreset('custom');
+                                        setStrategyParams(p => ({ ...p, bearBuyBank: checked }));
+                                    }}
+                                />
+                                {strategyParams.bearBuyBank && <>
+                                    <label htmlFor="bear-start-year">起始年份：</label>
+                                    <InputNumber
+                                        id="bear-start-year"
+                                        min={1900}
+                                        max={9999}
+                                        precision={0}
+                                        step={1}
+                                        value={strategyParams.bearStartYear}
+                                        onChange={value => {
+                                            if (value === null) return;
+                                            setActivePreset('custom');
+                                            setStrategyParams(p => ({ ...p, bearStartYear: value }));
+                                        }}
+                                        style={{ width: 90 }}
+                                    />
+                                </>}
+                            </div>
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
                             {strategyParams.weights.map((w, idx) => {
@@ -647,7 +683,7 @@ const ActiveMarket: React.FC = () => {
                     </div>
                 </Collapse.Panel>
             </Collapse>
-            <div style={{ flex: 1, display: 'flex', flexDirection: 'column', minHeight: 0, gap: upperETFId ? 12 : 0 }}>
+            <div className="market-chart-stack">
                 {upperETFId && (
                     <div style={{ flex: '0 0 30%', minHeight: 220, display: 'flex', flexDirection: 'column', border: '1px solid #ddd', borderRadius: 4, padding: '8px 0', backgroundColor: '#fff' }}>
                         <div style={{ fontSize: 14, fontWeight: 'bold', color: '#333', marginBottom: 4, padding: '0 12px', flexShrink: 0 }}>
@@ -656,6 +692,7 @@ const ActiveMarket: React.FC = () => {
                         <div style={{ flex: 1, minHeight: 0 }}>
                             <KLineChart
                                 dateWindowRef={dateWindowRef}
+                                defaultWindowYears={1.5}
                                 data={allETFSeries.find(s => s.id === upperETFId)?.data || []}
                                 dataLabel={ETF_OPTIONS.find(o => o.value === upperETFId)?.label || ''}
                                 mainSeriesName={ETF_OPTIONS.find(o => o.value === upperETFId)?.label || '日K'}
@@ -676,9 +713,9 @@ const ActiveMarket: React.FC = () => {
                         </div>
                     </div>
                 )}
-                <div style={{ flex: 1, minHeight: 0, display: 'flex', flexDirection: 'column', backgroundColor: '#fff' }}>
-                    <div style={{ padding: '8px 16px', display: 'flex', alignItems: 'center', gap: 8, flexShrink: 0 }}>
-                        <label htmlFor="active-market-indicator">选择指标：</label>
+                <div className="chart-surface">
+                    <div className="chart-toolbar">
+                        <label htmlFor="active-market-indicator">行情走势</label>
                         <Select
                             id="active-market-indicator"
                             aria-label="选择指标"
@@ -691,6 +728,7 @@ const ActiveMarket: React.FC = () => {
                             optionFilterProp="label"
                             options={indicators.map(item => ({ value: item.id, label: item.name }))}
                             onChange={value => {
+                                setIntradayDate(null);
                                 setData([]);
                                 setBacktestResult(null);
                                 setChartZones(undefined);
@@ -699,6 +737,7 @@ const ActiveMarket: React.FC = () => {
                                 setSelectedIndicatorId(value);
                             }}
                         />
+                        {selectedIndicator?.code === '0AMV' && <span style={{ color: '#81929a', fontSize: 12 }}>双击主图任意位置，查看对应日期的日内走势</span>}
                         {closeOnly && <span style={{ color: '#888', fontSize: 12 }}>仅有每日收盘估算值，使用折线显示</span>}
                         {!closeOnly && selectedIndicator?.code === 'AMV_EMA20' && (
                             <Tooltip title="开盘值取前一交易日收盘值；最高/最低取开收盘极值，不代表真实盘中高低价；成交量和成交额使用同日上证指数。">
@@ -706,39 +745,43 @@ const ActiveMarket: React.FC = () => {
                             </Tooltip>
                         )}
                     </div>
-                    <div style={{ flex: 1, minHeight: 0 }}>
-                    {indicatorListError || dataError ? (
-                        <Alert type="error" showIcon message={indicatorListError || dataError}
-                            action={<Button size="small" onClick={() => setReloadKey(key => key + 1)}>重试</Button>}
-                            style={{ margin: 16 }} />
-                    ) : loading || indicatorsLoading ? (
-                        <div style={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            <Spin tip="指标数据加载中…"><div style={{ width: 180, height: 80 }} /></Spin>
-                        </div>
-                    ) : data.length === 0 ? (
-                        <Empty description={indicators.length ? '该指标暂无数据' : '暂无可选指标'} />
-                    ) : <KLineChart
-                        dateWindowRef={dateWindowRef}
-                        key={selectedIndicatorId}
-                        data={data}
-                        dataLabel={selectedIndicator?.name}
-                        seriesType={closeOnly ? 'line' : 'candlestick'}
-                        mainSeriesName={closeOnly ? '收盘估算值' : '日K'}
-                        showVolume={!closeOnly}
-                        highlightThreshold={4}
-                        showBullZoneBg={showBullZoneBg}
-                        showBearZoneBg={showBearZoneBg}
-                        extraSeries={extraSeries}
-                        allETFSeries={allETFSeries}
-                        syncGroup="active-market-sync"
-                        chartHeight="100%"
-                        onZonesChange={setChartZones}
-                        zoneParams={zoneParams}
-                    />}
+                    <div className="chart-canvas">
+                        {indicatorListError || dataError ? (
+                            <Alert type="error" showIcon message={indicatorListError || dataError}
+                                action={<Button size="small" onClick={() => setReloadKey(key => key + 1)}>重试</Button>}
+                                style={{ margin: 16 }} />
+                        ) : loading || indicatorsLoading ? (
+                            <div style={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                <Spin tip="指标数据加载中…"><div style={{ width: 180, height: 80 }} /></Spin>
+                            </div>
+                        ) : data.length === 0 ? (
+                            <Empty description={indicators.length ? '该指标暂无数据' : '暂无可选指标'} />
+                        ) : <KLineChart
+                            dateWindowRef={dateWindowRef}
+                            defaultWindowYears={1.5}
+                            onDayDoubleClick={selectedIndicator?.code === '0AMV' ? setIntradayDate : undefined}
+                            key={selectedIndicatorId}
+                            data={data}
+                            dataLabel={selectedIndicator?.name}
+                            seriesType={closeOnly ? 'line' : 'candlestick'}
+                            mainSeriesName={closeOnly ? '收盘估算值' : '日K'}
+                            showVolume={!closeOnly}
+                            highlightThreshold={4}
+                            showBullZoneBg={showBullZoneBg}
+                            showBearZoneBg={showBearZoneBg}
+                            extraSeries={extraSeries}
+                            allETFSeries={allETFSeries}
+                            syncGroup="active-market-sync"
+                            chartHeight="100%"
+                            onZonesChange={setChartZones}
+                            zoneParams={zoneParams}
+                        />}
                     </div>
                 </div>
             </div>
 
+            {selectedIndicatorId && <IntradayModal indicatorId={selectedIndicatorId} date={intradayDate}
+                onDateChange={setIntradayDate} onClose={() => setIntradayDate(null)} />}
             <Modal
                 title="多空区间策略回测"
                 open={showBacktestModal}
@@ -751,7 +794,10 @@ const ActiveMarket: React.FC = () => {
                     <>
                         <NavOverviewChart navSeries={backtestResult.navSeries} height={260} />
                         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12, marginTop: 16 }}>
-                            {backtestResult.yearResults.map(r => (
+                            {backtestResult.yearResults.map(r => {
+                                const bullStats = yearBullStats.get(r.year);
+                                const bullAverage = bullStats ? bullStats.totalReturn / bullStats.count * 100 : undefined;
+                                return (
                                 <div
                                     key={r.year}
                                     onClick={() => { setSelectedYear(r.year); }}
@@ -781,9 +827,16 @@ const ActiveMarket: React.FC = () => {
                                         <span>最大回撤 <span style={{ color: '#006400' }}>{((yearDDMap.get(r.year)?.maxDD ?? 0) * 100).toFixed(2)}%</span></span>
                                         <span>平均回撤 <span style={{ color: '#006400' }}>{((yearDDMap.get(r.year)?.avgDD ?? 0) * 100).toFixed(2)}%</span></span>
                                     </div>
+                                    <Tooltip title={`仅统计开始于当年的已结束多头区间，按 ETF 组合收益计算；收益大于 0 为成功，平均涨幅包含亏损区间。成功 ${bullStats?.wins ?? 0} / 共 ${bullStats?.count ?? 0} 个区间。`}>
+                                        <div style={{ marginTop: 4, fontSize: 12, color: '#999', display: 'flex', justifyContent: 'space-between', gap: 8, flexWrap: 'wrap' }}>
+                                            <span>多头区间成功率 <span style={{ color: '#333' }}>{bullStats ? `${(bullStats.wins / bullStats.count * 100).toFixed(2)}%` : '—'}</span></span>
+                                            <span>多头区间平均涨幅 <span style={{ color: bullAverage === undefined ? '#999' : bullAverage >= 0 ? '#c41e3a' : '#006400' }}>{bullAverage === undefined ? '—' : `${bullAverage >= 0 ? '+' : ''}${bullAverage.toFixed(2)}%`}</span></span>
+                                        </div>
+                                    </Tooltip>
                                     <div style={{ marginTop: 8, fontSize: 13, color: '#1890ff' }}>查看交易明细</div>
                                 </div>
-                            ))}
+                                );
+                            })}
                         </div>
                         <div style={{
                             marginTop: 12,
@@ -822,7 +875,7 @@ const ActiveMarket: React.FC = () => {
                             ))}
                         </div>
                         <div style={{ marginTop: 10, fontSize: 12, color: '#999', lineHeight: 1.7 }}>
-                            规则：多头区间启动日买入涨幅前{strategyParams.weights.length} ETF（{strategyParams.weights.map(w => `${w.toFixed(0)}%`).join('/')}），区间结束卖出；单日涨幅&gt;{strategyParams.bullStartSingleDay}%或两日累计&gt;{strategyParams.bullStartTwoDay}%{strategyParams.bullStartUseMA10 ? '且收盘价站上MA10' : ''}启动多头；单日跌幅&lt;{strategyParams.bullEndSingleDay}%{strategyParams.bullEndUseMA10 ? '或跌破MA10' : ''}结束多头；{strategyParams.bearStartYear}年起空头区间持有银行 ETF；跨年收益计入开始年份。点击年份可查看当年每个波段的交易明细。
+                            规则：多头区间启动日买入涨幅前{strategyParams.weights.length} ETF（{strategyParams.weights.map(w => `${w.toFixed(0)}%`).join('/')}），区间结束卖出；单日涨幅&gt;{strategyParams.bullStartSingleDay}%或两日累计&gt;{strategyParams.bullStartTwoDay}%{strategyParams.bullStartUseMA10 ? '且收盘价站上MA10' : ''}启动多头；单日跌幅&lt;{strategyParams.bullEndSingleDay}%{strategyParams.bullEndUseMA10 ? '或跌破MA10' : ''}结束多头；{strategyParams.bearBuyBank ? `${strategyParams.bearStartYear}年起空头区间持有银行 ETF` : '空头区间持有现金'}；跨年收益计入开始年份。点击年份可查看当年每个波段的交易明细。
                         </div>
                     </>
                 )}

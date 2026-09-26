@@ -13,6 +13,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from config import Config
 from routes.api import api_bp
 from routes.indicators import indicators_bp
+from routes.sector_activity import sector_activity_bp
 from database import init_db
 
 # ---------- 访问日志 ----------
@@ -95,6 +96,7 @@ def create_app(config_class=Config):
     # 注册 API 蓝图
     app.register_blueprint(api_bp)
     app.register_blueprint(indicators_bp)
+    app.register_blueprint(sector_activity_bp)
     
     # 数据文件路由 - 直接提供 CSV 静态文件访问
     @app.route('/data/<path:filepath>')

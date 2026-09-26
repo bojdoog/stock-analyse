@@ -15,12 +15,12 @@
       ]
     }
   },
-  "retrieved_at": "2026-09-19T14:44:51.754153+00:00",
+  "retrieved_at": "2026-09-26T15:31:28.550921+00:00",
   "result": {
     "content": [
       {
         "type": "text",
-        "text": "[{\"ts_code\": \"881112.TI\", \"con_code\": \"000629.SZ\", \"con_name\": \"钒钛股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"000655.SZ\", \"con_name\": \"金岭矿业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"000708.SZ\", \"con_name\": \"中信特钢\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"000709.SZ\", \"con_name\": \"河钢股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"000717.SZ\", \"con_name\": \"中南股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"000761.SZ\", \"con_name\": \"本钢板材\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"000762.SZ\", \"con_name\": \"西藏矿业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"000778.SZ\", \"con_name\": \"新兴铸管\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"000825.SZ\", \"con_name\": \"太钢不锈\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"000898.SZ\", \"con_name\": \"鞍钢股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"000923.SZ\", \"con_name\": \"河钢资源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"000932.SZ\", \"con_name\": \"华菱钢铁\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"000959.SZ\", \"con_name\": \"首钢股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"001203.SZ\", \"con_name\": \"大中矿业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"002075.SZ\", \"con_name\": \"沙钢股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"002110.SZ\", \"con_name\": \"三钢闽光\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"002318.SZ\", \"con_name\": \"久立特材\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"002443.SZ\", \"con_name\": \"金洲管道\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"002478.SZ\", \"con_name\": \"常宝股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"300881.SZ\", \"con_name\": \"盛德鑫泰\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600010.SH\", \"con_name\": \"包钢股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600019.SH\", \"con_name\": \"宝钢股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600022.SH\", \"con_name\": \"山东钢铁\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600117.SH\", \"con_name\": \"西宁特钢\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600126.SH\", \"con_name\": \"杭钢股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600231.SH\", \"con_name\": \"凌钢股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600282.SH\", \"con_name\": \"南钢股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600295.SH\", \"con_name\": \"鄂尔多斯\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600307.SH\", \"con_name\": \"酒钢宏兴\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600382.SH\", \"con_name\": \"广东明珠\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600399.SH\", \"con_name\": \"抚顺特钢\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600507.SH\", \"con_name\": \"方大特钢\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600516.SH\", \"con_name\": \"方大炭素\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600569.SH\", \"con_name\": \"安阳钢铁\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600581.SH\", \"con_name\": \"*ST八钢\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600782.SH\", \"con_name\": \"新钢股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600808.SH\", \"con_name\": \"马钢股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"601003.SH\", \"con_name\": \"柳钢股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"601005.SH\", \"con_name\": \"重庆钢铁\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"601121.SH\", \"con_name\": \"宝地矿业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"601686.SH\", \"con_name\": \"友发集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"601969.SH\", \"con_name\": \"海南矿业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"603878.SH\", \"con_name\": \"武进不锈\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"603995.SH\", \"con_name\": \"甬金股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
+        "text": "[{\"ts_code\": \"881112.TI\", \"con_code\": \"601123.SH\", \"con_name\": \"马矿股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"603995.SH\", \"con_name\": \"甬金股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"603878.SH\", \"con_name\": \"武进不锈\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"601969.SH\", \"con_name\": \"海南矿业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"601686.SH\", \"con_name\": \"友发集团\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"601121.SH\", \"con_name\": \"宝地矿业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"601005.SH\", \"con_name\": \"重庆钢铁\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"601003.SH\", \"con_name\": \"柳钢股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600808.SH\", \"con_name\": \"马钢股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600782.SH\", \"con_name\": \"新钢股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600581.SH\", \"con_name\": \"*ST八钢\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600569.SH\", \"con_name\": \"安阳钢铁\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600516.SH\", \"con_name\": \"方大炭素\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600507.SH\", \"con_name\": \"方大特钢\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600399.SH\", \"con_name\": \"抚顺特钢\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600382.SH\", \"con_name\": \"广东明珠\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600307.SH\", \"con_name\": \"酒钢宏兴\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600295.SH\", \"con_name\": \"鄂尔多斯\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600282.SH\", \"con_name\": \"南钢股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600231.SH\", \"con_name\": \"凌钢股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600126.SH\", \"con_name\": \"杭钢股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600117.SH\", \"con_name\": \"西宁特钢\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600022.SH\", \"con_name\": \"山东钢铁\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600019.SH\", \"con_name\": \"宝钢股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"600010.SH\", \"con_name\": \"包钢股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"300881.SZ\", \"con_name\": \"盛德鑫泰\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"002478.SZ\", \"con_name\": \"常宝股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"002443.SZ\", \"con_name\": \"金洲管道\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"002318.SZ\", \"con_name\": \"久立特材\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"002110.SZ\", \"con_name\": \"三钢闽光\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"002075.SZ\", \"con_name\": \"沙钢股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"001203.SZ\", \"con_name\": \"大中矿业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"000959.SZ\", \"con_name\": \"首钢股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"000932.SZ\", \"con_name\": \"华菱钢铁\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"000923.SZ\", \"con_name\": \"河钢资源\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"000898.SZ\", \"con_name\": \"鞍钢股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"000825.SZ\", \"con_name\": \"太钢不锈\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"000778.SZ\", \"con_name\": \"新兴铸管\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"000762.SZ\", \"con_name\": \"西藏矿业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"000761.SZ\", \"con_name\": \"本钢板材\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"000717.SZ\", \"con_name\": \"中南股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"000709.SZ\", \"con_name\": \"河钢股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"000708.SZ\", \"con_name\": \"中信特钢\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"000655.SZ\", \"con_name\": \"金岭矿业\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}, {\"ts_code\": \"881112.TI\", \"con_code\": \"000629.SZ\", \"con_name\": \"钒钛股份\", \"is_new\": \"Y\", \"weight\": null, \"in_date\": null, \"out_date\": null}]"
       }
     ],
     "isError": false
@@ -28,8 +28,8 @@
   "rows": [
     {
       "ts_code": "881112.TI",
-      "con_code": "000629.SZ",
-      "con_name": "钒钛股份",
+      "con_code": "601123.SH",
+      "con_name": "马矿股份",
       "is_new": "Y",
       "weight": null,
       "in_date": null,
@@ -37,368 +37,8 @@
     },
     {
       "ts_code": "881112.TI",
-      "con_code": "000655.SZ",
-      "con_name": "金岭矿业",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "000708.SZ",
-      "con_name": "中信特钢",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "000709.SZ",
-      "con_name": "河钢股份",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "000717.SZ",
-      "con_name": "中南股份",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "000761.SZ",
-      "con_name": "本钢板材",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "000762.SZ",
-      "con_name": "西藏矿业",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "000778.SZ",
-      "con_name": "新兴铸管",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "000825.SZ",
-      "con_name": "太钢不锈",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "000898.SZ",
-      "con_name": "鞍钢股份",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "000923.SZ",
-      "con_name": "河钢资源",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "000932.SZ",
-      "con_name": "华菱钢铁",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "000959.SZ",
-      "con_name": "首钢股份",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "001203.SZ",
-      "con_name": "大中矿业",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "002075.SZ",
-      "con_name": "沙钢股份",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "002110.SZ",
-      "con_name": "三钢闽光",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "002318.SZ",
-      "con_name": "久立特材",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "002443.SZ",
-      "con_name": "金洲管道",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "002478.SZ",
-      "con_name": "常宝股份",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "300881.SZ",
-      "con_name": "盛德鑫泰",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "600010.SH",
-      "con_name": "包钢股份",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "600019.SH",
-      "con_name": "宝钢股份",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "600022.SH",
-      "con_name": "山东钢铁",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "600117.SH",
-      "con_name": "西宁特钢",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "600126.SH",
-      "con_name": "杭钢股份",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "600231.SH",
-      "con_name": "凌钢股份",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "600282.SH",
-      "con_name": "南钢股份",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "600295.SH",
-      "con_name": "鄂尔多斯",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "600307.SH",
-      "con_name": "酒钢宏兴",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "600382.SH",
-      "con_name": "广东明珠",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "600399.SH",
-      "con_name": "抚顺特钢",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "600507.SH",
-      "con_name": "方大特钢",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "600516.SH",
-      "con_name": "方大炭素",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "600569.SH",
-      "con_name": "安阳钢铁",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "600581.SH",
-      "con_name": "*ST八钢",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "600782.SH",
-      "con_name": "新钢股份",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "600808.SH",
-      "con_name": "马钢股份",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "601003.SH",
-      "con_name": "柳钢股份",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "601005.SH",
-      "con_name": "重庆钢铁",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "601121.SH",
-      "con_name": "宝地矿业",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "601686.SH",
-      "con_name": "友发集团",
-      "is_new": "Y",
-      "weight": null,
-      "in_date": null,
-      "out_date": null
-    },
-    {
-      "ts_code": "881112.TI",
-      "con_code": "601969.SH",
-      "con_name": "海南矿业",
+      "con_code": "603995.SH",
+      "con_name": "甬金股份",
       "is_new": "Y",
       "weight": null,
       "in_date": null,
@@ -415,8 +55,377 @@
     },
     {
       "ts_code": "881112.TI",
-      "con_code": "603995.SH",
-      "con_name": "甬金股份",
+      "con_code": "601969.SH",
+      "con_name": "海南矿业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "601686.SH",
+      "con_name": "友发集团",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "601121.SH",
+      "con_name": "宝地矿业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "601005.SH",
+      "con_name": "重庆钢铁",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "601003.SH",
+      "con_name": "柳钢股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "600808.SH",
+      "con_name": "马钢股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "600782.SH",
+      "con_name": "新钢股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "600581.SH",
+      "con_name": "*ST八钢",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "600569.SH",
+      "con_name": "安阳钢铁",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "600516.SH",
+      "con_name": "方大炭素",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "600507.SH",
+      "con_name": "方大特钢",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "600399.SH",
+      "con_name": "抚顺特钢",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "600382.SH",
+      "con_name": "广东明珠",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "600307.SH",
+      "con_name": "酒钢宏兴",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "600295.SH",
+      "con_name": "鄂尔多斯",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "600282.SH",
+      "con_name": "南钢股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "600231.SH",
+      "con_name": "凌钢股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "600126.SH",
+      "con_name": "杭钢股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "600117.SH",
+      "con_name": "西宁特钢",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "600022.SH",
+      "con_name": "山东钢铁",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "600019.SH",
+      "con_name": "宝钢股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "600010.SH",
+      "con_name": "包钢股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "300881.SZ",
+      "con_name": "盛德鑫泰",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "002478.SZ",
+      "con_name": "常宝股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "002443.SZ",
+      "con_name": "金洲管道",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "002318.SZ",
+      "con_name": "久立特材",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "002110.SZ",
+      "con_name": "三钢闽光",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "002075.SZ",
+      "con_name": "沙钢股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "001203.SZ",
+      "con_name": "大中矿业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "000959.SZ",
+      "con_name": "首钢股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "000932.SZ",
+      "con_name": "华菱钢铁",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "000923.SZ",
+      "con_name": "河钢资源",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "000898.SZ",
+      "con_name": "鞍钢股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "000825.SZ",
+      "con_name": "太钢不锈",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "000778.SZ",
+      "con_name": "新兴铸管",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "000762.SZ",
+      "con_name": "西藏矿业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "000761.SZ",
+      "con_name": "本钢板材",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "000717.SZ",
+      "con_name": "中南股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "000709.SZ",
+      "con_name": "河钢股份",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "000708.SZ",
+      "con_name": "中信特钢",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "000655.SZ",
+      "con_name": "金岭矿业",
+      "is_new": "Y",
+      "weight": null,
+      "in_date": null,
+      "out_date": null
+    },
+    {
+      "ts_code": "881112.TI",
+      "con_code": "000629.SZ",
+      "con_name": "钒钛股份",
       "is_new": "Y",
       "weight": null,
       "in_date": null,

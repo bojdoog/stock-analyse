@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250508,881129.TI,通信设备,新易盛,5280.36,2.72,88,14.6,107.95,242.0,186.0,55.0,515880,通信ETF
 20250508,881155.TI,银行,青农商行,1238.88,1.19,84,3.76,3.31,117.0,83.0,33.0,512800,银行ETF
 20250508,881273.TI,白酒,皇台酒业,2991.04,0.64,20,4.31,13.54,61.0,39.0,22.0,512690,白酒ETF

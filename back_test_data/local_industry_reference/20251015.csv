@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251015,881124.TI,消费电子,长盈精密,11261.2,2.14,98,14.19,38.06,292.0,243.0,48.0,512480,半导体ETF
 20251015,881279.TI,光伏设备,国晟科技,7877.51,1.66,75,10.06,3.94,260.0,224.0,36.0,516290,光伏ETF
 20251015,881140.TI,化学制药,向日葵,6793.48,2.81,157,19.97,8.11,159.0,124.0,35.0,159929,医药ETF

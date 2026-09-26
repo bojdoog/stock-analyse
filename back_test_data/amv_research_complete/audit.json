@@ -1,0 +1,58 @@
+{
+  "requested_name": "活跃市值(反推EMA20-完整)",
+  "status": "research_only_independent_minute_inputs_not_yet_acquired",
+  "target": {
+    "days": 1878,
+    "rows": 448840,
+    "first_date": "2018-12-28",
+    "last_date": "2026-09-24",
+    "record_counts": {
+      "239": 1877,
+      "237": 1
+    },
+    "first_times": {
+      "09:30:59": 1878
+    },
+    "last_times": {
+      "14:58:59": 1878
+    }
+  },
+  "first_snapshot_vs_daily_open_pct": {
+    "count": 1878,
+    "mean": 0.048614949982551156,
+    "median": 0.030770448753636437,
+    "p95_absolute": 0.3702397438806415,
+    "max_absolute": 1.5008249218966485
+  },
+  "last_snapshot_vs_daily_close_pct": {
+    "count": 1878,
+    "mean": -0.02542989671687708,
+    "median": -0.020851076111655376,
+    "p95_absolute": 0.08698694820346574,
+    "max_absolute": 0.8708427215009862
+  },
+  "intraday_range_pct": {
+    "count": 1878,
+    "mean": 2.677582452828997,
+    "median": 2.4402977957979415,
+    "p95_absolute": 4.641752026189243,
+    "max_absolute": 21.324815924331038
+  },
+  "old_daily_estimate_error_pct": {
+    "count": 491,
+    "mean": -1.1653547999578024,
+    "median": -2.1368657911410183,
+    "p95_absolute": 12.099279470056828,
+    "max_absolute": 16.286689069324733
+  },
+  "volume_candidate_days_with_decrease": 0,
+  "amount_candidate_days_with_decrease": 0,
+  "snapshot_above_daily_high_days": 0,
+  "snapshot_below_daily_low_days": 0,
+  "interpretation": [
+    "Target snapshots are labels only, never production input.",
+    "Last snapshot is not the close; first snapshot is not the opening auction.",
+    "Monotonic candidate fields alone do not establish units or semantics.",
+    "2019-2024 targets predate the current industry feature history; no independent coverage claimed."
+  ]
+}

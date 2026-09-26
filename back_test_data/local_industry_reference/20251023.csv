@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251023,881157.TI,证券,哈投股份,1707.69,1.12,50,6.22,8.03,145.0,123.0,21.0,512880,证券ETF
 20251023,881145.TI,电力,深圳能源,1832.46,0.73,102,9.96,7.51,115.0,97.0,18.0,561380,电网设备ETF
 20251023,881155.TI,银行,邮储银行,1352.93,0.48,84,4.71,6.0,172.0,158.0,14.0,512800,银行ETF

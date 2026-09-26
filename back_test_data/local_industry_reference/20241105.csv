@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20241105,881157.TI,证券,东方财富,1644.33,4.69,50,10.37,27.35,677.0,590.0,86.0,512880,证券ETF
 20241105,881272.TI,软件开发,科达自控,1962.7,6.7,137,30.0,26.78,412.0,336.0,75.0,515230,软件ETF
 20241105,881121.TI,半导体,慧智微,8204.65,5.1,157,20.04,10.96,561.0,486.0,74.0,512480,半导体ETF

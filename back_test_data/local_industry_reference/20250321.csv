@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250321,881112.TI,钢铁,河钢资源,1460.62,0.54,46,5.03,15.46,48.0,43.0,5.0,510300,沪深300ETF
 20250321,881280.TI,风电设备,天能重工,3841.36,1.92,28,19.92,6.32,47.0,42.0,5.0,516160,新能源ETF
 20250321,881148.TI,港口航运,招商港口,1015.12,0.68,37,5.05,21.42,31.0,29.0,1.0,510300,沪深300ETF

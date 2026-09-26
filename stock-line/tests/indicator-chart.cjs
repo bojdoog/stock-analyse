@@ -28,7 +28,12 @@ const react = {
   useEffect: effect => effects.push(effect),
 };
 const handlers = {};
+const canvasHandlers = {};
+let convertedIndex = 30;
 const chart = { dispose() {}, on(name, handler) { handlers[name] = handler; }, resize() {},
+  getZr() { return { on(name, handler) { canvasHandlers[name] = handler; }, off() {} }; },
+  containPixel(finder, point) { assert.equal(finder.gridIndex, 0); return point[1] >= 0 && point[1] <= 500; },
+  convertFromPixel(finder) { assert.equal(finder.xAxisIndex, 0); return convertedIndex; },
   getOption() { return option; }, setOption(value) { option = value; } };
 const Component = loadTs('src/pages/ActiveMarket/components/KLineChart.tsx', {
   react,
@@ -95,3 +100,19 @@ handlers.dataZoom();
 assert.equal(dateWindowRef.current.start, dated[0].date);
 assert.equal(dateWindowRef.current.end, dated[99].date);
 console.log('PASS: date window survives remounts, different histories, clipping, linked charts and zoom events');
+const openedDates = [];
+render(dated, { onDayDoubleClick: day => openedDates.push(day), maxDate: dated[80].date });
+for (const offsetY of [1, 200, 499]) canvasHandlers.dblclick({ offsetX: 300, offsetY });
+assert.deepEqual(openedDates, [dated[30].date, dated[30].date, dated[30].date]);
+canvasHandlers.dblclick({ offsetX: 300, offsetY: 600 });
+convertedIndex = 99999;
+canvasHandlers.dblclick({ offsetX: 300, offsetY: 200 });
+convertedIndex = NaN;
+canvasHandlers.dblclick({ offsetX: 300, offsetY: 200 });
+assert.equal(openedDates.length, 3);
+convertedIndex = 60;
+canvasHandlers.dblclick({ offsetX: 300, offsetY: 200 });
+assert.equal(openedDates[3], dated[60].date);
+render(dated);
+assert.doesNotThrow(() => canvasHandlers.dblclick({ offsetX: 300, offsetY: 200 }));
+console.log('PASS: canvas double-click accepts all main-grid heights, maps the current axis date, and ignores outside/invalid coordinates');

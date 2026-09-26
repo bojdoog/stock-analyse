@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250512,881166.TI,军工装备,中航成飞,1904.94,4.26,81,20.0,95.86,299.0,234.0,65.0,512660,军工ETF
 20250512,881157.TI,证券,锦龙股份,1421.87,2.16,49,8.53,12.6,153.0,98.0,55.0,512880,证券ETF
 20250512,881124.TI,消费电子,安克创新,8769.37,3.16,95,12.64,101.71,160.0,124.0,35.0,512480,半导体ETF

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-统一拉取 ETF、指数、资金流向和活跃市值推导原始数据。
+统一拉取 ETF、指数、资金流向、指南针活跃市值缓存和推导原始数据。
 
 资金流向脚本默认拉取全量数据：
   - 东财板块: 2023-09-12 ~ 今天
@@ -24,6 +24,8 @@ MONEYFLOW_START = {
 today = dt.date.today().strftime("%Y%m%d")
 
 SCRIPTS: list[tuple[str, list[str]]] = [
+    ("fetch_compass_amv_daily.py", []),
+    ("parse_compass_amv_cache.py", ["--output", str(TOOLS_DIR.parent / "back_test_data" / "compass_amv_cache")]),
     ("fetch_etf.py", []),
     ("fetch_index.py", []),
     ("fetch_moneyflow_cnt_ths.py", ["--start", MONEYFLOW_START["fetch_moneyflow_cnt_ths.py"], "--end", today]),
@@ -44,7 +46,7 @@ def run_script(name: str, args: list[str]) -> bool:
     result = subprocess.run(cmd, capture_output=False)
 
     ok = result.returncode == 0
-    status = "✓ 完成" if ok else f"✗ 失败 (exit code {result.returncode})"
+    status = "[OK] 完成" if ok else f"[FAIL] 失败 (exit code {result.returncode})"
     print(f"{'=' * 60}")
     print(f"{name}: {status}")
     print(f"{'=' * 60}")

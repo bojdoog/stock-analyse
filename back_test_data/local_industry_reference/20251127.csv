@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20251127,881129.TI,通信设备,通宇通讯,7262.15,0.52,88,10.03,21.62,538.0,521.0,16.0,515880,通信ETF
 20251127,881155.TI,银行,农业银行,1346.68,0.49,84,2.02,8.1,101.0,90.0,10.0,512800,银行ETF
 20251127,881281.TI,电池,壹石通,20013.3,2.12,102,20.0,33.18,269.0,259.0,9.0,516160,新能源ETF

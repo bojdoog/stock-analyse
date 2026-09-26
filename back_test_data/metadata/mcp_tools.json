@@ -2,7 +2,7 @@
   "tools": [
     {
       "name": "stock_basic",
-      "description": "/数据接口/沪深股票/基础数据/股票列表-获取基础信息数据，包括股票代码、名称、上市日期、退市日期等",
+      "description": "/数据接口/沪深股票/基础数据/股票列表-获取基础信息数据，包括股票代码、名称、上市日期、退市日期等。单次最多返回 10000 条。更新：早9:10，晚18点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -85,7 +85,7 @@
     },
     {
       "name": "trade_cal",
-      "description": "/数据接口/沪深股票/基础数据/交易日历-获取各大交易所交易日历数据,默认提取的是上交所",
+      "description": "/数据接口/沪深股票/基础数据/交易日历-获取各大交易所交易日历数据,默认提取的是上交所。单次最多返回 120000 条。更新：每年年底国家披露次年假期后",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -157,7 +157,7 @@
     },
     {
       "name": "adj_factor",
-      "description": "/数据接口/沪深股票/行情数据/复权因子-本接口由Tushare自行生产，获取股票复权因子，可提取单只股票全部历史复权因子，也可以提取单日全部股票的复权因子。",
+      "description": "/数据接口/沪深股票/行情数据/复权因子-本接口由Tushare自行生产，获取股票复权因子，可提取单只股票全部历史复权因子，也可以提取单日全部股票的复权因子。单次最多返回 6000 条。更新：每日8:30~9:30之间",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -218,7 +218,7 @@
     },
     {
       "name": "daily",
-      "description": "/数据接口/沪深股票/行情数据/历史日线-获取股票行情数据，或通过[通用行情接口pro_bar]获取数据，包含了前后复权数据",
+      "description": "/数据接口/沪深股票/行情数据/历史日线-获取股票行情数据，或通过[通用行情接口pro_bar]获取数据，包含了前后复权数据。单次最多返回 6000 条。更新：每个交易日16~17点之间",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -279,7 +279,7 @@
     },
     {
       "name": "daily_basic",
-      "description": "/数据接口/沪深股票/行情数据/每日指标-获取全部股票每日重要的基本面指标，可用于选股分析、报表展示等。单次请求最大返回6000条数据，可按日线循环提取全部历史。",
+      "description": "/数据接口/沪深股票/行情数据/每日指标-获取全部股票每日重要的基本面指标，可用于选股分析、报表展示等。单次请求最大返回6000条数据，可按日线循环提取全部历史。单次最多返回 6000 条。更新：每日17~19点之间",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -340,7 +340,7 @@
     },
     {
       "name": "income",
-      "description": "/数据接口/沪深股票/财务数据/利润表-获取上市公司财务利润表数据",
+      "description": "/数据接口/沪深股票/财务数据/利润表-获取上市公司财务利润表数据。单次最多返回 500 条。更新：财报披露当日晚21点，最晚次日",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -451,7 +451,7 @@
     },
     {
       "name": "balancesheet",
-      "description": "/数据接口/沪深股票/财务数据/资产负债表-获取上市公司资产负债表",
+      "description": "/数据接口/沪深股票/财务数据/资产负债表-获取上市公司资产负债表。单次最多返回 100 条。更新：财报披露当晚21点~23点，最晚次日",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -558,7 +558,7 @@
     },
     {
       "name": "cashflow",
-      "description": "/数据接口/沪深股票/财务数据/现金流量表-获取上市公司现金流量表",
+      "description": "/数据接口/沪深股票/财务数据/现金流量表-获取上市公司现金流量表。单次最多返回 100 条。更新：财报披露当晚21~23点，最晚次日",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -669,7 +669,7 @@
     },
     {
       "name": "forecast",
-      "description": "/数据接口/沪深股票/财务数据/业绩预告-获取业绩预告数据",
+      "description": "/数据接口/沪深股票/财务数据/业绩预告-获取业绩预告数据。单次最多返回 3500 条。更新：每日20点~21点更新。参数约束：ann_date和ts_code至少输入一个参数",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -752,7 +752,7 @@
     },
     {
       "name": "express",
-      "description": "/数据接口/沪深股票/财务数据/业绩快报-获取上市公司业绩快报",
+      "description": "/数据接口/沪深股票/财务数据/业绩快报-获取上市公司业绩快报。单次最多返回 2000 条。更新：每日20点左右",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -824,7 +824,7 @@
     },
     {
       "name": "moneyflow_hsgt",
-      "description": "/数据接口/沪深股票/资金流向数据/个股资金流向-获取沪股通、深股通、港股通每日资金流向数据，每次最多返回300条记录，总量不限制。",
+      "description": "/数据接口/沪深股票/资金流向数据/个股资金流向-获取沪股通、深股通、港股通每日资金流向数据，每次最多返回300条记录，总量不限制。单次最多返回 300 条。更新：每日18~19点。参数约束：trade_date：当 start_date 为空时必填",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -874,7 +874,7 @@
     },
     {
       "name": "hsgt_top10",
-      "description": "/数据接口/沪深股票/行情数据/沪深股通十大成交股-获取沪股通、深股通每日前十大成交详细数据，每天18~20点之间完成当日更新",
+      "description": "/数据接口/沪深股票/行情数据/沪深股通十大成交股-获取沪股通、深股通每日前十大成交详细数据，每天18~20点之间完成当日更新。单次最多返回 300 条。更新：每日18:30~19:30之间",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -946,7 +946,7 @@
     },
     {
       "name": "ggt_top10",
-      "description": "-获取港股通每日成交数据，其中包括沪市、深市详细数据，每天18~20点之间完成当日更新",
+      "description": "获取港股通每日成交数据，其中包括沪市、深市详细数据，每天18~20点之间完成当日更新。单次最多返回 300 条。更新：每日18:30~19:30之间。参数约束：ts_code：当 trade_date 为空时必填",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -1018,7 +1018,7 @@
     },
     {
       "name": "margin",
-      "description": "/数据接口/沪深股票/两融及转融通/融资融券交易汇总-获取融资融券每日交易汇总数据",
+      "description": "/数据接口/沪深股票/两融及转融通/融资融券交易汇总-获取融资融券每日交易汇总数据。单次最多返回 4000 条。更新：每日早8:30更新上一日数据（交易所规则）",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -1079,7 +1079,7 @@
     },
     {
       "name": "margin_detail",
-      "description": "/数据接口/沪深股票/两融及转融通/融资融券交易明细-获取沪深两市每日融资融券明细",
+      "description": "/数据接口/沪深股票/两融及转融通/融资融券交易明细-获取沪深两市每日融资融券明细。单次最多返回 6000 条。更新：每日早8:30更新上一交易日数据（交易所规则）",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -1140,7 +1140,7 @@
     },
     {
       "name": "top10_holders",
-      "description": "/数据接口/沪深股票/市场参考数据/前十大股东-获取上市公司前十大股东数据，包括持有数量和比例等信息",
+      "description": "/数据接口/沪深股票/市场参考数据/前十大股东-获取上市公司前十大股东数据，包括持有数量和比例等信息。单次最多返回 6000 条。更新：随财报披露日期当晚，最晚T+1入库",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -1223,7 +1223,7 @@
     },
     {
       "name": "top10_floatholders",
-      "description": "/数据接口/沪深股票/参考数据/前十大流通股东-获取上市公司前十大流通股东数据",
+      "description": "/数据接口/沪深股票/参考数据/前十大流通股东-获取上市公司前十大流通股东数据。单次最多返回 6000 条。更新：随季报披露当日晚更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -1306,7 +1306,7 @@
     },
     {
       "name": "fina_indicator",
-      "description": "/数据接口/沪深股票/财务数据/财务指标数据-获取上市公司财务指标数据，为避免服务器压力，现阶段每次请求最多返回100条记录，可通过设置日期多次请求获取更多数据。",
+      "description": "/数据接口/沪深股票/财务数据/财务指标数据-获取上市公司财务指标数据，为避免服务器压力，现阶段每次请求最多返回100条记录，可通过设置日期多次请求获取更多数据。单次最多返回 100 条。更新：随财报披露T+1入库",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -1391,7 +1391,7 @@
     },
     {
       "name": "fina_audit",
-      "description": "/数据接口/沪深股票/财务数据/财务审计意见-获取上市公司定期财务审计意见数据",
+      "description": "/数据接口/沪深股票/财务数据/财务审计意见-获取上市公司定期财务审计意见数据。单次最多返回 100 条。更新：随财务报告披露时间T+1入库。参数约束：ts_code：当 end_date 为空时必填",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -1465,7 +1465,7 @@
     },
     {
       "name": "fina_mainbz",
-      "description": "/数据接口/沪深股票/财务数据/主营业务构成-获得上市公司主营业务构成，分地区/产品/行业等方式。",
+      "description": "/数据接口/沪深股票/财务数据/主营业务构成-获得上市公司主营业务构成，分地区/产品/行业等方式。单次最多返回 150 条。更新：随半年报和年报披露的日期T+1入库",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -1550,7 +1550,7 @@
     },
     {
       "name": "index_basic",
-      "description": "/数据接口/指数/指数基本信息-获取指数基础信息。",
+      "description": "/数据接口/指数/指数基本信息-获取指数基础信息。单次最多返回 8000 条。更新：每天18点更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -1633,7 +1633,7 @@
     },
     {
       "name": "index_daily",
-      "description": "/数据接口/指数专题/指数日线行情-获取指数每日行情，目前只支持按指数代码提取",
+      "description": "/数据接口/指数专题/指数日线行情-获取指数每日行情，目前只支持按指数代码提取。单次最多返回 10000 条。更新：每天19:00更新。参数约束：ts_code：当 trade_date 为空时必填",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -1694,7 +1694,7 @@
     },
     {
       "name": "index_weight",
-      "description": "/数据接口/指数专题/指数成分和权重-获取各类指数成分和权重，**月度数据** ，建议输入参数里开始日期和结束日分别输入当月第一天和最后一天的日期。",
+      "description": "/数据接口/指数专题/指数成分和权重-获取各类指数成分和权重，**月度数据** ，建议输入参数里开始日期和结束日分别输入当月第一天和最后一天的日期。单次最多返回 7000 条。更新：每月最后一天19:00。参数约束：index_code：当 trade_date 为空时必填",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -1766,7 +1766,7 @@
     },
     {
       "name": "namechange",
-      "description": "/数据接口/沪深股票/基础数据/股票曾用名-A股历史名称变更记录",
+      "description": "/数据接口/沪深股票/基础数据/股票曾用名-A股历史名称变更记录。单次最多返回 10000 条。更新：每日早晚9点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -1816,7 +1816,7 @@
     },
     {
       "name": "dividend",
-      "description": "/数据接口/沪深股票/财务数据/分红送股数据-分红送股数据",
+      "description": "/数据接口/沪深股票/财务数据/分红送股数据-分红送股数据。单次最多返回 2000 条。更新：每日20点~21点。参数约束：ts_code/ann_date/record_date/ex_date/imp_ann_date参数不能都为空。",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -1899,7 +1899,7 @@
     },
     {
       "name": "top_list",
-      "description": "/数据接口/沪深股票/打板专题数据/龙虎榜每日统计单-龙虎榜每日交易明细",
+      "description": "/数据接口/沪深股票/打板专题数据/龙虎榜每日统计单-龙虎榜每日交易明细。单次最多返回 10000 条。更新：每日20点左右",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -1940,7 +1940,7 @@
     },
     {
       "name": "top_inst",
-      "description": "/数据接口/沪深股票/打板专题数据/龙虎榜机构交易单-龙虎榜机构成交明细",
+      "description": "/数据接口/沪深股票/打板专题数据/龙虎榜机构交易单-龙虎榜机构成交明细。单次最多返回 10000 条。更新：每日20点左右",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -1981,7 +1981,7 @@
     },
     {
       "name": "pledge_stat",
-      "description": "/数据接口/沪深股票/参考数据/股权质押统计数据-获取股票质押统计数据",
+      "description": "/数据接口/沪深股票/参考数据/股权质押统计数据-获取股票质押统计数据。单次最多返回 3000 条。更新：每日早晚8点30左右更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -2020,7 +2020,7 @@
     },
     {
       "name": "pledge_detail",
-      "description": "/数据接口/沪深股票/市场参考数据/股权质押明细数据-获取股票质押明细数据",
+      "description": "/数据接口/沪深股票/市场参考数据/股权质押明细数据-获取股票质押明细数据。单次最多返回 1500 条。更新：每日早晚8点30分左右更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -2081,7 +2081,7 @@
     },
     {
       "name": "stock_company",
-      "description": "/数据接口/沪深股票/基础数据/上市公司基本信息-获取上市公司基础信息，单次提取7000条，可以根据交易所分批提取",
+      "description": "/数据接口/沪深股票/基础数据/上市公司基本信息-获取上市公司基础信息，单次提取7000条，可以根据交易所分批提取。单次最多返回 7000 条。更新：每日早晚8点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -2131,7 +2131,7 @@
     },
     {
       "name": "fund_basic",
-      "description": "/数据接口/公募基金/基金列表-获取公募基金数据列表，包括场内和场外基金",
+      "description": "/数据接口/公募基金/基金列表-获取公募基金数据列表，包括场内和场外基金。单次最多返回 15000 条。更新：不定期更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -2148,6 +2148,8 @@
           },
           "limit": {
             "type": "integer",
+            "default": 15000,
+            "maximum": 15000,
             "description": "获取条数"
           },
           "market": {
@@ -2163,6 +2165,8 @@
           },
           "offset": {
             "type": "integer",
+            "default": 0,
+            "maximum": 50000,
             "description": "跳过条数"
           },
           "status": {
@@ -2211,7 +2215,7 @@
     },
     {
       "name": "fund_company",
-      "description": "/数据接口/公募基金/基金管理人-获取公募基金管理人列表",
+      "description": "/数据接口/公募基金/基金管理人-获取公募基金管理人列表。单次最多返回 16000 条。更新：不定期更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -2239,12 +2243,14 @@
     },
     {
       "name": "fund_nav",
-      "description": "/数据接口/公募基金/基金净值-获取公募基金净值数据",
+      "description": "/数据接口/公募基金/基金净值-获取公募基金净值数据。单次最多返回 10500 条。更新：交易日9:00-10:00，20:00-21:00。参数约束：ts_code和nav_date至少填写一个",
       "inputSchema": {
         "type": "object",
         "properties": {
           "limit": {
             "type": "integer",
+            "default": 10500,
+            "maximum": 10500,
             "description": "获取条数"
           },
           "market": {
@@ -2260,6 +2266,8 @@
           },
           "offset": {
             "type": "integer",
+            "default": 0,
+            "maximum": 50000,
             "description": "跳过条数"
           },
           "ts_code": {
@@ -2319,7 +2327,7 @@
     },
     {
       "name": "fund_div",
-      "description": "/数据接口/公募基金/基金分红-获取公募基金分红数据",
+      "description": "/数据接口/公募基金/基金分红-获取公募基金分红数据。单次最多返回 1000 条。更新：交易日18:00-19:00。参数约束：ts_code,ex_date,pay_date,ann_date必选其一",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -2380,12 +2388,20 @@
     },
     {
       "name": "fund_portfolio",
-      "description": "/数据接口/公募基金/基金持仓-获取公募基金持仓数据，季度更新",
+      "description": "/数据接口/公募基金/基金持仓-获取公募基金持仓数据，季度更新。单次最多返回 8000 条。更新：季度更新。参数约束：ts_code,ann_date,period至少输入一个参数",
       "inputSchema": {
         "type": "object",
         "properties": {
+          "limit": {
+            "type": "integer",
+            "default": 8000,
+            "maximum": 8000,
+            "description": "获取条数"
+          },
           "offset": {
             "type": "integer",
+            "default": 0,
+            "maximum": 50000,
             "description": "跳过条数"
           },
           "period": {
@@ -2467,7 +2483,7 @@
     },
     {
       "name": "new_share",
-      "description": "/数据接口/沪深股票/基础数据/IPO新股上市-获取A股新股上市列表数据",
+      "description": "/数据接口/沪深股票/基础数据/IPO新股上市-获取A股新股上市列表数据。单次最多返回 2000 条。更新：每日早晚8:30更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -2506,7 +2522,7 @@
     },
     {
       "name": "repurchase",
-      "description": "/数据接口/沪深股票/市场参考数据/股票回购-获取上市公司回购股票数据",
+      "description": "/数据接口/沪深股票/市场参考数据/股票回购-获取上市公司回购股票数据。单次最多返回 2000 条。更新：每日早晚9点更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -2567,7 +2583,7 @@
     },
     {
       "name": "fund_daily",
-      "description": "/数据接口/ETF专题/ETF日线行情-获取ETF行情每日收盘后成交数据，历史超过10年",
+      "description": "/数据接口/ETF专题/ETF日线行情-获取ETF行情每日收盘后成交数据，历史超过10年。单次最多返回 5000 条。更新：每日18点左右。参数约束：ts_code和trade_date至少填写一个",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -2628,7 +2644,7 @@
     },
     {
       "name": "index_dailybasic",
-      "description": "/数据接口/指数专题/大盘指数每日指标-目前只提供上证综指，深证成指，上证50，中证500，中小板指，创业板指的每日指标数据",
+      "description": "/数据接口/指数专题/大盘指数每日指标-目前只提供上证综指，深证成指，上证50，中证500，中小板指，创业板指的每日指标数据。单次最多返回 3000 条。更新：交易日19:00。参数约束：trade_date,ts_code参数至少输入一个",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -2689,7 +2705,7 @@
     },
     {
       "name": "fut_basic",
-      "description": "/数据接口/期货数据/合约信息-获取期货合约列表数据",
+      "description": "/数据接口/期货数据/合约信息-获取期货合约列表数据。单次最多返回 10000 条。更新：每个交易日9点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -2761,7 +2777,7 @@
     },
     {
       "name": "fut_daily",
-      "description": "/数据接口/期货数据/期货日线行情-期货日线行情数据",
+      "description": "/数据接口/期货数据/期货日线行情-期货日线行情数据。单次最多返回 2000 条。更新：每个交易日17~18点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -2833,7 +2849,7 @@
     },
     {
       "name": "fut_holding",
-      "description": "/数据接口/期货/每日持仓排名-获取每日成交持仓排名数据",
+      "description": "/数据接口/期货/每日持仓排名-获取每日成交持仓排名数据。单次最多返回 4000 条。更新：交易日8点30、20点30。参数约束：trade_date,symbol参数不能都为空",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -2905,7 +2921,7 @@
     },
     {
       "name": "fut_wsr",
-      "description": "/数据接口/期货/仓单日报-获取仓单日报数据，了解各仓库/厂库的仓单变化",
+      "description": "/数据接口/期货/仓单日报-获取仓单日报数据，了解各仓库/厂库的仓单变化。单次最多返回 1500 条。更新：每个交易日21点。参数约束：trade_date,symbol参数不能都为空",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -2977,7 +2993,7 @@
     },
     {
       "name": "fut_settle",
-      "description": "/数据接口/期货数据/每日结算参数-获取每日结算参数数据，包括交易和交割费率等",
+      "description": "/数据接口/期货数据/每日结算参数-获取每日结算参数数据，包括交易和交割费率等。单次最多返回 1600 条。更新：交易日8点30。参数约束：trade_date,ts_code不能都为空",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -3049,7 +3065,7 @@
     },
     {
       "name": "news",
-      "description": "/数据接口/大模型语料专题数据/新闻快讯（短讯）-获取主流新闻网站的快讯新闻数据,提供超过6年以上历史新闻。",
+      "description": "/数据接口/大模型语料专题数据/新闻快讯（短讯）-获取主流新闻网站的快讯新闻数据,提供超过6年以上历史新闻。单次最多返回 1500 条。更新：每小时第50分钟",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -3099,7 +3115,7 @@
     },
     {
       "name": "weekly",
-      "description": "/数据接口/沪深股票/行情数据/周线行情-获取A股周线行情，本接口每周最后一个交易日更新，如需要使用每天更新的周线数据，请使用[日度更新的周线行情接口](https://tushare.pro/document/2?doc_id=336)。",
+      "description": "/数据接口/沪深股票/行情数据/周线行情-获取A股周线行情，本接口每周最后一个交易日更新，如需要使用每天更新的周线数据，请使用[日度更新的周线行情接口](https://tushare.pro/document/2?doc_id=336)。单次最多返回 6000 条。更新：每周最后一个交易日19点。参数约束：ts_code,trade_date至少输入一个参数",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -3160,7 +3176,7 @@
     },
     {
       "name": "monthly",
-      "description": "/数据接口/沪深股票/行情数据/月线行情-获取A股月线数据",
+      "description": "/数据接口/沪深股票/行情数据/月线行情-获取A股月线数据。单次最多返回 6000 条。更新：每月最后一个交易日19~20点。参数约束：ts_code,trade_date至少输入一个参数",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -3221,7 +3237,7 @@
     },
     {
       "name": "shibor",
-      "description": "/数据接口/宏观经济/国内宏观/利率数据/Shibor利率-shibor利率",
+      "description": "/数据接口/宏观经济/国内宏观/利率数据/Shibor利率-shibor利率。单次最多返回 2000 条。更新：每日14:00左右",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -3271,7 +3287,7 @@
     },
     {
       "name": "shibor_quote",
-      "description": "/数据接口/宏观经济/国内宏观/利率数据/Shibor报价数据-Shibor报价数据",
+      "description": "/数据接口/宏观经济/国内宏观/利率数据/Shibor报价数据-Shibor报价数据。单次最多返回 4000 条。更新：每日14:00左右",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -3332,7 +3348,7 @@
     },
     {
       "name": "shibor_lpr",
-      "description": "/数据接口/宏观经济/国内宏观/利率数据/LPR贷款基础利率-LPR贷款基础利率",
+      "description": "/数据接口/宏观经济/国内宏观/利率数据/LPR贷款基础利率-LPR贷款基础利率。单次最多返回 4000 条。更新：每月更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -3382,7 +3398,7 @@
     },
     {
       "name": "libor",
-      "description": "/数据接口/宏观经济/国内宏观/利率数据/Libor利率-Libor拆借利率",
+      "description": "/数据接口/宏观经济/国内宏观/利率数据/Libor利率-Libor拆借利率。单次最多返回 4000 条。更新：不定期更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -3443,7 +3459,7 @@
     },
     {
       "name": "hibor",
-      "description": "/数据接口/宏观经济/国内宏观/利率数据/Hibor利率-Hibor利率",
+      "description": "/数据接口/宏观经济/国内宏观/利率数据/Hibor利率-Hibor利率。单次最多返回 4000 条。更新：不定期更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -3493,7 +3509,7 @@
     },
     {
       "name": "cctv_news",
-      "description": "/数据接口/另类数据/新闻联播文字稿-获取新闻联播文字稿数据，数据开始于2017年。",
+      "description": "/数据接口/另类数据/新闻联播文字稿-获取新闻联播文字稿数据，数据开始于2017年。单次最多返回 100 条。更新：每天22点第30分钟",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -3521,7 +3537,7 @@
     },
     {
       "name": "opt_basic",
-      "description": "/数据接口/期权/期权合约信息-获取期权合约信息",
+      "description": "/数据接口/期权/期权合约信息-获取期权合约信息。单次最多返回 12000 条。更新：每日早晚8:30更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -3538,10 +3554,14 @@
           },
           "limit": {
             "type": "integer",
+            "default": 12000,
+            "maximum": 12000,
             "description": "获取条数"
           },
           "offset": {
             "type": "integer",
+            "default": 0,
+            "maximum": 50000,
             "description": "跳过条数"
           },
           "ts_code": {
@@ -3612,7 +3632,7 @@
     },
     {
       "name": "opt_daily",
-      "description": "/数据接口/期权数据/期权日线行情-获取期权日线行情",
+      "description": "/数据接口/期权数据/期权日线行情-获取期权日线行情。单次最多返回 15000 条。更新：每日18:30~19点更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -3684,7 +3704,7 @@
     },
     {
       "name": "share_float",
-      "description": "/数据接口/沪深股票/参考数据/限售股解禁-获取限售股解禁",
+      "description": "/数据接口/沪深股票/参考数据/限售股解禁-获取限售股解禁。单次最多返回 6000 条。更新：每日早晚9点更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -3756,7 +3776,7 @@
     },
     {
       "name": "block_trade",
-      "description": "/数据接口/沪深股票/市场参考数据/大宗交易-大宗交易",
+      "description": "/数据接口/沪深股票/市场参考数据/大宗交易-大宗交易。单次最多返回 1000 条。更新：每日早晚9点更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -3817,16 +3837,20 @@
     },
     {
       "name": "disclosure_date",
-      "description": "/数据接口/沪深股票/财务数据/财报披露日期表-获取财报披露计划日期",
+      "description": "/数据接口/沪深股票/财务数据/财报披露日期表-获取财报披露计划日期。单次最多返回 6000 条。更新：每日早晚8点30分更新",
       "inputSchema": {
         "type": "object",
         "properties": {
           "limit": {
             "type": "integer",
+            "default": 6000,
+            "maximum": 6000,
             "description": "获取条数"
           },
           "offset": {
             "type": "integer",
+            "default": 0,
+            "maximum": 50000,
             "description": "跳过条数"
           },
           "ts_code": {
@@ -3897,7 +3921,7 @@
     },
     {
       "name": "stk_account",
-      "description": "/数据接口/沪深股票/市场参考数据/股票开户数据（停）-获取股票账户开户数据，统计周期为一周",
+      "description": "/数据接口/沪深股票/市场参考数据/股票开户数据（停）-获取股票账户开户数据，统计周期为一周。单次最多返回 3000 条",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -3947,7 +3971,7 @@
     },
     {
       "name": "stk_holdernumber",
-      "description": "/数据接口/沪深股票/参考数据/股东人数-获取上市公司股东户数数据，数据不定期公布",
+      "description": "/数据接口/沪深股票/参考数据/股东人数-获取上市公司股东户数数据，数据不定期公布。单次最多返回 5500 条。更新：每日不定期更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -4019,7 +4043,7 @@
     },
     {
       "name": "moneyflow",
-      "description": "/数据接口/沪深股票/资金流向数据/个股资金流向-获取沪深A股票资金流向数据，分析大单小单成交情况，用于判别资金动向，数据开始于2010年。",
+      "description": "/数据接口/沪深股票/资金流向数据/个股资金流向-获取沪深A股票资金流向数据，分析大单小单成交情况，用于判别资金动向，数据开始于2010年。单次最多返回 6000 条。更新：每日18~19点。参数约束：ts_code：股票代码和日期至少输入一个参数",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -4080,7 +4104,7 @@
     },
     {
       "name": "index_weekly",
-      "description": "/数据接口/指数专题/指数周线行情-获取指数周线行情",
+      "description": "/数据接口/指数专题/指数周线行情-获取指数周线行情。单次最多返回 1000 条。更新：每周五19:00。参数约束：ts_code,trade_date至少输入一个参数",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -4141,7 +4165,7 @@
     },
     {
       "name": "index_monthly",
-      "description": "/数据接口/指数/指数月线行情-获取指数月线行情,每月更新一次",
+      "description": "/数据接口/指数/指数月线行情-获取指数月线行情,每月更新一次。单次最多返回 1000 条。更新：每月第一个工作日19:00更新上月数据。参数约束：ts_code,trade_date至少输入一个参数",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -4202,7 +4226,7 @@
     },
     {
       "name": "wz_index",
-      "description": "/数据接口/宏观经济/国内宏观/利率数据/温州民间借贷利率-温州民间借贷利率，即温州指数",
+      "description": "/数据接口/宏观经济/国内宏观/利率数据/温州民间借贷利率-温州民间借贷利率，即温州指数。单次最多返回 3000 条。更新：每日不定期更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -4252,7 +4276,7 @@
     },
     {
       "name": "gz_index",
-      "description": "/数据接口/宏观经济/国内宏观/利率数据/广州民间借贷利率-广州民间借贷利率",
+      "description": "/数据接口/宏观经济/国内宏观/利率数据/广州民间借贷利率-广州民间借贷利率。单次最多返回 2000 条。更新：每日不定期更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -4302,7 +4326,7 @@
     },
     {
       "name": "sw_daily",
-      "description": "/数据接口/指数专题/申万日线行情-获取申万行业日线行情（默认是申万2021版行情）",
+      "description": "/数据接口/指数专题/申万日线行情-获取申万行业日线行情（默认是申万2021版行情）。单次最多返回 4000 条。更新：交易日18:30",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -4363,7 +4387,7 @@
     },
     {
       "name": "stk_holdertrade",
-      "description": "/数据接口/沪深股票/市场参考数据/股东增减持-获取上市公司增减持数据，了解重要股东近期及历史上的股份增减变化",
+      "description": "/数据接口/沪深股票/市场参考数据/股东增减持-获取上市公司增减持数据，了解重要股东近期及历史上的股份增减变化。单次最多返回 3000 条。更新：每日早晚9点更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -4446,7 +4470,7 @@
     },
     {
       "name": "fx_obasic",
-      "description": "/数据接口/外汇/外汇基础信息（海外）-获取海外外汇基础信息，目前只有FXCM交易商的数据",
+      "description": "/数据接口/外汇/外汇基础信息（海外）-获取海外外汇基础信息，目前只有FXCM交易商的数据。单次最多返回 1000 条。更新：每日不定期更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -4496,7 +4520,7 @@
     },
     {
       "name": "fx_daily",
-      "description": "/数据接口/外汇数据/外汇日线行情-获取外汇日线行情",
+      "description": "/数据接口/外汇数据/外汇日线行情-获取外汇日线行情。单次最多返回 4000 条。更新：早8:30更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -4568,7 +4592,7 @@
     },
     {
       "name": "index_classify",
-      "description": "/数据接口/指数/申万行业分类-获取申万行业分类，可以获取申万2014年版本（28个一级分类，104个二级分类，227个三级分类）和2021年本版（31个一级分类，134个二级分类，346个三级分类）列表信息",
+      "description": "/数据接口/指数专题/申万行业分类-获取申万行业分类，可以获取申万2014年版本（28个一级分类，104个二级分类，227个三级分类）和2021年本版（31个一级分类，134个二级分类，346个三级分类）列表信息。单次最多返回 5000 条。更新：不定期更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -4629,7 +4653,7 @@
     },
     {
       "name": "index_member_all",
-      "description": "/数据接口/指数专题/申万行业成分（分级）-按三级分类提取申万行业成分，可提供某个分类的所有成分，也可按股票代码提取所属分类，参数灵活",
+      "description": "/数据接口/指数专题/申万行业成分（分级）-按三级分类提取申万行业成分，可提供某个分类的所有成分，也可按股票代码提取所属分类，参数灵活。单次最多返回 7000 条。更新：不定期更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -4712,7 +4736,7 @@
     },
     {
       "name": "stk_limit",
-      "description": "/数据接口/沪深股票/行情数据/每日涨跌停价格-获取全市场（包含A/B股和基金）每日涨跌停价格，包括涨停价格，跌停价格等，每个交易日8点40左右更新当日股票涨跌停价格。",
+      "description": "/数据接口/沪深股票/行情数据/每日涨跌停价格-获取全市场（包含A/B股和基金）每日涨跌停价格，包括涨停价格，跌停价格等，每个交易日8点40左右更新当日股票涨跌停价格。单次最多返回 7800 条。更新：每个交易日9点左右",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -4784,7 +4808,7 @@
     },
     {
       "name": "cb_basic",
-      "description": "/数据接口/债券专题/可转债基础信息-获取可转债基本信息",
+      "description": "/数据接口/债券专题/可转债基础信息-获取可转债基本信息。单次最多返回 2000 条。更新：每日早晚8:30左右",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -4834,7 +4858,7 @@
     },
     {
       "name": "cb_issue",
-      "description": "/数据接口/债券/可转债发行-获取可转债发行数据",
+      "description": "/数据接口/债券/可转债发行-获取可转债发行数据。单次最多返回 2000 条。更新：每日早晚8:30",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -4895,7 +4919,7 @@
     },
     {
       "name": "cb_daily",
-      "description": "/数据接口/债券/可转债行情-获取可转债行情",
+      "description": "/数据接口/债券/可转债行情-获取可转债行情。单次最多返回 2000 条。更新：每日18~19点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -4956,7 +4980,7 @@
     },
     {
       "name": "hk_hold",
-      "description": "-获取沪深港股通持股明细，数据来源港交所。",
+      "description": "获取沪深港股通持股明细，数据来源港交所。单次最多返回 4200 条。更新：南向资金每日9点更新昨日数据，北向资金季度更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -5039,7 +5063,7 @@
     },
     {
       "name": "fut_mapping",
-      "description": "/数据接口/期货/期货主力与连续合约-获取期货主力（或连续）合约与月合约映射数据",
+      "description": "/数据接口/期货/期货主力与连续合约-获取期货主力（或连续）合约与月合约映射数据。单次最多返回 5000 条。更新：交易日18点30",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -5100,11 +5124,18 @@
     },
     {
       "name": "stk_mins",
-      "description": "/数据接口/沪深股票/行情数据/历史分钟-获取A股分钟数据，支持1min/5min/15min/30min/60min行情，提供Python SDK和 http Restful API两种方式",
+      "description": "/数据接口/沪深股票/行情数据/历史分钟-获取A股分钟数据，支持1min/5min/15min/30min/60min行情，提供Python SDK和 http Restful API两种方式。单次最多返回 8000 条。更新：每日19~20点之间",
       "inputSchema": {
         "type": "object",
         "properties": {
           "freq": {
+            "enum": [
+              "1min",
+              "5min",
+              "15min",
+              "60min",
+              "30min"
+            ],
             "description": "分钟频度",
             "anyOf": [
               {
@@ -5164,7 +5195,7 @@
     },
     {
       "name": "hk_basic",
-      "description": "/数据接口/港股数据/港股基础信息-获取港股列表信息",
+      "description": "/数据接口/港股数据/港股基础信息-获取港股列表信息。单次最多返回 3000 条。更新：不定期更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -5203,7 +5234,7 @@
     },
     {
       "name": "hk_daily",
-      "description": "/数据接口/港股数据/港股日线行情-获取港股每日增量和历史行情，每日18点左右更新当日数据",
+      "description": "/数据接口/港股数据/港股日线行情-获取港股每日增量和历史行情，每日18点左右更新当日数据。单次最多返回 8000 条。更新：交易日18点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -5264,7 +5295,7 @@
     },
     {
       "name": "stk_managers",
-      "description": "/数据接口/沪深股票/基础数据/上市公司管理层-获取上市公司管理层信息",
+      "description": "/数据接口/沪深股票/基础数据/上市公司管理层-获取上市公司管理层信息。单次最多返回 4000 条。更新：每日早晚8点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -5325,7 +5356,7 @@
     },
     {
       "name": "stk_rewards",
-      "description": "/数据接口/沪深股票/基础数据/管理层薪酬和持股-获取A股上市公司管理层薪酬和持股",
+      "description": "/数据接口/沪深股票/基础数据/管理层薪酬和持股-获取A股上市公司管理层薪酬和持股。单次最多返回 4000 条。更新：随季报披露时间更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -5366,7 +5397,7 @@
     },
     {
       "name": "major_news",
-      "description": "/数据接口/大模型语料专题数据/新闻通讯（长篇）-获取长篇通讯信息，覆盖主要新闻资讯网站，提供超过8年历史新闻。",
+      "description": "/数据接口/大模型语料专题数据/新闻通讯（长篇）-获取长篇通讯信息，覆盖主要新闻资讯网站，提供超过8年历史新闻。单次最多返回 800 条。更新：每2小时第50分钟",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -5416,7 +5447,7 @@
     },
     {
       "name": "ggt_daily",
-      "description": "-获取港股通每日成交信息，数据从2014年开始",
+      "description": "获取港股通每日成交信息，数据从2014年开始。单次最多返回 1000 条。更新：每日18:30~19:30之间",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -5466,31 +5497,21 @@
     },
     {
       "name": "fund_adj",
-      "description": "/数据接口/ETF专题/ETF复权因子-获取基金复权因子，用于计算基金复权行情",
+      "description": "/数据接口/ETF专题/ETF复权因子-获取基金复权因子，用于计算基金复权行情。单次最多返回 2600 条。更新：每日早晚8点",
       "inputSchema": {
         "type": "object",
         "properties": {
           "limit": {
-            "description": "最大行数",
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "integer"
-              }
-            ]
+            "type": "integer",
+            "default": 2600,
+            "maximum": 2600,
+            "description": "获取条数"
           },
           "offset": {
-            "description": "开始行数",
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "integer"
-              }
-            ]
+            "type": "integer",
+            "default": 0,
+            "maximum": 50000,
+            "description": "跳过条数"
           },
           "ts_code": {
             "description": "TS基金代码",
@@ -5549,11 +5570,18 @@
     },
     {
       "name": "ft_mins",
-      "description": "/数据接口/期货数据/历史分钟行情-获取全市场期货合约分钟数据，支持1min/5min/15min/30min/60min行情，提供Python SDK和 http Restful API两种方式。",
+      "description": "/数据接口/期货数据/历史分钟行情-获取全市场期货合约分钟数据，支持1min/5min/15min/30min/60min行情，提供Python SDK和 http Restful API两种方式。单次最多返回 8000 条。更新：每个交易日20点左右",
       "inputSchema": {
         "type": "object",
         "properties": {
           "freq": {
+            "enum": [
+              "1min",
+              "5min",
+              "15min",
+              "60min",
+              "30min"
+            ],
             "description": "分钟频度",
             "anyOf": [
               {
@@ -5613,7 +5641,7 @@
     },
     {
       "name": "yc_cb",
-      "description": "/数据接口/债券/国债收益率曲线-获取中债收益率曲线，目前可获取中债国债收益率曲线即期和到期收益率曲线数据",
+      "description": "/数据接口/债券/国债收益率曲线-获取中债收益率曲线，目前可获取中债国债收益率曲线即期和到期收益率曲线数据。单次最多返回 2000 条。更新：每日晚8点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -5696,7 +5724,7 @@
     },
     {
       "name": "fund_share",
-      "description": "/数据接口/公募基金/基金规模-获取基金规模数据，包含上海和深圳ETF基金",
+      "description": "/数据接口/公募基金/基金规模-获取基金规模数据，包含上海和深圳ETF基金。单次最多返回 2000 条。更新：交易日9:00-10:00",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -5779,7 +5807,7 @@
     },
     {
       "name": "fund_manager",
-      "description": "/数据接口/公募基金/基金经理-获取公募基金经理数据，包括基金经理简历等数据",
+      "description": "/数据接口/公募基金/基金经理-获取公募基金经理数据，包括基金经理简历等数据。单次最多返回 5000 条。更新：不定期更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -5796,11 +5824,15 @@
           },
           "limit": {
             "type": "integer",
-            "description": "每页行数"
+            "default": 5000,
+            "maximum": 5000,
+            "description": "获取条数"
           },
           "offset": {
             "type": "integer",
-            "description": "开始行数"
+            "default": 0,
+            "maximum": 50000,
+            "description": "跳过条数"
           },
           "ts_code": {
             "description": "基金代码",
@@ -5837,7 +5869,7 @@
     },
     {
       "name": "index_global",
-      "description": "/数据接口/指数专题/国际主要指数-获取国际主要指数日线行情",
+      "description": "/数据接口/指数专题/国际主要指数-获取国际主要指数日线行情。单次最多返回 4000 条。更新：交易日9:00",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -5898,7 +5930,7 @@
     },
     {
       "name": "suspend_d",
-      "description": "/数据接口/沪深股票/行情数据/每日停复牌信息-按日期方式获取股票每日停复牌信息",
+      "description": "/数据接口/沪深股票/行情数据/每日停复牌信息-按日期方式获取股票每日停复牌信息。单次最多返回 5000 条。更新：每日早晚9点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -5970,7 +6002,7 @@
     },
     {
       "name": "daily_info",
-      "description": "/数据接口/指数专题/沪深市场每日交易统计-获取交易所股票交易统计，包括各板块明细",
+      "description": "/数据接口/指数专题/沪深市场每日交易统计-获取交易所股票交易统计，包括各板块明细。单次最多返回 4000 条。更新：交易日19:00",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -6042,7 +6074,7 @@
     },
     {
       "name": "fut_weekly_detail",
-      "description": "/数据接口/期货/期货主要品种交易周报-获取期货交易所主要品种每周交易统计信息，数据从2010年3月开始",
+      "description": "/数据接口/期货/期货主要品种交易周报-获取期货交易所主要品种每周交易统计信息，数据从2010年3月开始。单次最多返回 4000 条。更新：不定期更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -6070,10 +6102,14 @@
           },
           "limit": {
             "type": "integer",
+            "default": 4000,
+            "maximum": 4000,
             "description": "获取条数"
           },
           "offset": {
             "type": "integer",
+            "default": 0,
+            "maximum": 50000,
             "description": "跳过条数"
           },
           "end_week": {
@@ -6122,7 +6158,7 @@
     },
     {
       "name": "us_tycr",
-      "description": "/数据接口/宏观经济/国际宏观/美国利率/国债收益率曲线利率-获取美国每日国债收益率曲线利率",
+      "description": "/数据接口/宏观经济/国际宏观/美国利率/国债收益率曲线利率-获取美国每日国债收益率曲线利率。单次最多返回 2000 条",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -6172,7 +6208,7 @@
     },
     {
       "name": "us_trycr",
-      "description": "/数据接口/宏观经济/国际宏观/美国利率/国债实际收益率曲线利率-美国国债实际收益率曲线利率",
+      "description": "/数据接口/宏观经济/国际宏观/美国利率/国债实际收益率曲线利率-美国国债实际收益率曲线利率。单次最多返回 2000 条",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -6222,7 +6258,7 @@
     },
     {
       "name": "us_tbr",
-      "description": "/数据接口/宏观经济/国际宏观/美国利率/短期国债利率-获取美国短期国债利率数据",
+      "description": "/数据接口/宏观经济/国际宏观/美国利率/短期国债利率-获取美国短期国债利率数据。单次最多返回 2000 条",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -6272,7 +6308,7 @@
     },
     {
       "name": "us_tltr",
-      "description": "/数据接口/宏观经济/国际宏观/美国利率/国债长期利率-美国国债长期利率",
+      "description": "/数据接口/宏观经济/国际宏观/美国利率/国债长期利率-美国国债长期利率。单次最多返回 2000 条",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -6322,7 +6358,7 @@
     },
     {
       "name": "us_trltr",
-      "description": "/数据接口/宏观经济/国际宏观/美国利率/国债长期利率平均值-美国国债实际长期利率平均值",
+      "description": "/数据接口/宏观经济/国际宏观/美国利率/国债长期利率平均值-美国国债实际长期利率平均值。单次最多返回 2000 条",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -6372,7 +6408,7 @@
     },
     {
       "name": "cn_gdp",
-      "description": "/数据接口/宏观经济/国内宏观/国民经济/国内生产总值（GDP）-获取国民经济之GDP数据",
+      "description": "/数据接口/宏观经济/国内宏观/国民经济/国内生产总值（GDP）-获取国民经济之GDP数据。单次最多返回 10000 条。更新：每月更新一次",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -6422,7 +6458,7 @@
     },
     {
       "name": "cn_cpi",
-      "description": "/数据接口/宏观经济/国内宏观/价格指数/居民消费价格指数（CPI）-获取CPI居民消费价格数据，包括全国、城市和农村的数据",
+      "description": "/数据接口/宏观经济/国内宏观/价格指数/居民消费价格指数（CPI）-获取CPI居民消费价格数据，包括全国、城市和农村的数据。单次最多返回 5000 条。更新：每月更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -6472,7 +6508,7 @@
     },
     {
       "name": "eco_cal",
-      "description": "/数据接口/债券/全球财经事件-获取全球财经日历、包括经济事件数据更新",
+      "description": "/数据接口/债券/全球财经事件-获取全球财经日历、包括经济事件数据更新。单次最多返回 100 条。更新：每日不定期更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -6566,7 +6602,7 @@
     },
     {
       "name": "cn_m",
-      "description": "/数据接口/宏观经济/国内宏观/金融/货币供应量/货币供应量（月）-获取货币供应量之月度数据",
+      "description": "/数据接口/宏观经济/国内宏观/金融/货币供应量/货币供应量（月）-获取货币供应量之月度数据。单次最多返回 5000 条。更新：每月更新一次",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -6616,7 +6652,7 @@
     },
     {
       "name": "cn_ppi",
-      "description": "/数据接口/宏观经济/国内宏观/价格指数/工业生产者出厂价格指数（PPI）-获取PPI工业生产者出厂价格指数数据",
+      "description": "/数据接口/宏观经济/国内宏观/价格指数/工业生产者出厂价格指数（PPI）-获取PPI工业生产者出厂价格指数数据。单次最多返回 5000 条。更新：每月更新一次",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -6666,7 +6702,7 @@
     },
     {
       "name": "cb_price_chg",
-      "description": "/数据接口/债券/可转债转股价变动-获取可转债转股价变动",
+      "description": "/数据接口/债券/可转债转股价变动-获取可转债转股价变动。单次最多返回 2000 条。更新：每日19左右",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -6696,7 +6732,7 @@
     },
     {
       "name": "cb_share",
-      "description": "/数据接口/债券专题/可转债转股结果-获取可转债转股结果",
+      "description": "/数据接口/债券专题/可转债转股结果-获取可转债转股结果。单次最多返回 2000 条。更新：每日19~20点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -6757,17 +6793,21 @@
     },
     {
       "name": "us_daily",
-      "description": "/数据接口/美股/美股日线行情-获取美股行情（未复权），包括全部股票全历史行情，以及重要的市场和估值指标",
+      "description": "/数据接口/美股/美股日线行情-获取美股行情（未复权），包括全部股票全历史行情，以及重要的市场和估值指标。单次最多返回 8000 条。更新：交易日13点",
       "inputSchema": {
         "type": "object",
         "properties": {
           "limit": {
             "type": "integer",
-            "description": "每页行数行数"
+            "default": 8000,
+            "maximum": 8000,
+            "description": "获取条数"
           },
           "offset": {
             "type": "integer",
-            "description": "开始行数"
+            "default": 0,
+            "maximum": 50000,
+            "description": "跳过条数"
           },
           "ts_code": {
             "description": "股票代码（e.g. AAPL）",
@@ -6826,7 +6866,7 @@
     },
     {
       "name": "hk_tradecal",
-      "description": "/数据接口/港股数据/港股交易日历-获取港股交易日历",
+      "description": "/数据接口/港股数据/港股交易日历-获取港股交易日历。单次最多返回 2000 条。更新：每年12月更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -6887,31 +6927,21 @@
     },
     {
       "name": "us_basic",
-      "description": "/数据接口/美股数据/美股基础信息-获取美股列表信息",
+      "description": "/数据接口/美股数据/美股基础信息-获取美股列表信息。单次最多返回 6000 条。更新：不定期更新",
       "inputSchema": {
         "type": "object",
         "properties": {
           "limit": {
-            "description": "每页最大行数",
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "integer"
-              }
-            ]
+            "type": "integer",
+            "default": 6000,
+            "maximum": 6000,
+            "description": "获取条数"
           },
           "offset": {
-            "description": "开始行数",
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "integer"
-              }
-            ]
+            "type": "integer",
+            "default": 0,
+            "maximum": 50000,
+            "description": "跳过条数"
           },
           "ts_code": {
             "description": "股票代码（e.g. AAPL）",
@@ -6959,7 +6989,7 @@
     },
     {
       "name": "us_tradecal",
-      "description": "/数据接口/美股/美股交易日历-获取美股交易日历信息",
+      "description": "/数据接口/美股/美股交易日历-获取美股交易日历信息。单次最多返回 6000 条。更新：每年12月更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -7020,7 +7050,7 @@
     },
     {
       "name": "bak_daily",
-      "description": "/数据接口/沪深股票/行情数据/备用行情-获取备用行情，包括特定的行情指标(数据从2017年中左右开始，早期有几天数据缺失，近期正常)",
+      "description": "/数据接口/沪深股票/行情数据/备用行情-获取备用行情，包括特定的行情指标(数据从2017年中左右开始，早期有几天数据缺失，近期正常)。单次最多返回 7000 条。更新：每日18:30左右",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -7081,7 +7111,7 @@
     },
     {
       "name": "repo_daily",
-      "description": "/数据接口/债券/债券回购日行情-债券回购日行情",
+      "description": "/数据接口/债券/债券回购日行情-债券回购日行情。单次最多返回 2000 条。更新：每日18:30~19点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -7142,7 +7172,7 @@
     },
     {
       "name": "bak_basic",
-      "description": "/数据接口/沪深股票/基础数据/股票历史列表-获取备用基础列表，数据从2016年开始",
+      "description": "/数据接口/沪深股票/基础数据/股票历史列表-获取备用基础列表，数据从2016年开始。单次最多返回 7000 条。更新：每日19点左右更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -7181,7 +7211,7 @@
     },
     {
       "name": "ths_index",
-      "description": "/数据接口/沪深股票/打板专题数据/同花顺行业概念板块-获取同花顺板块指数，包括概念、行业、特色指数。",
+      "description": "/数据接口/沪深股票/打板专题数据/同花顺行业概念板块-获取同花顺板块指数，包括概念、行业、特色指数。单次最多返回 5000 条。更新：交易日9点30",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -7242,7 +7272,7 @@
     },
     {
       "name": "ths_daily",
-      "description": "/数据接口/沪深股票/打板专题数据/同花顺概念和行业指数行情-获取同花顺板块指数行情",
+      "description": "/数据接口/沪深股票/打板专题数据/同花顺概念和行业指数行情-获取同花顺板块指数行情。单次最多返回 3000 条。更新：交易日21点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -7303,20 +7333,21 @@
     },
     {
       "name": "ths_member",
-      "description": "/数据接口/沪深股票/打板专题数据/THS概念板块成分-获取同花顺概念板块成分列表",
+      "description": "/数据接口/沪深股票/打板专题数据/THS概念板块成分-获取同花顺概念板块成分列表。单次最多返回 6000 条。更新：交易日9点10",
       "inputSchema": {
         "type": "object",
         "properties": {
+          "limit": {
+            "type": "integer",
+            "default": 6000,
+            "maximum": 6000,
+            "description": "获取条数"
+          },
           "offset": {
-            "description": "跳过条数",
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "integer"
-              }
-            ]
+            "type": "integer",
+            "default": 0,
+            "maximum": 50000,
+            "description": "跳过条数"
           },
           "ts_code": {
             "description": "板块指数代码",
@@ -7353,7 +7384,7 @@
     },
     {
       "name": "broker_recommend",
-      "description": "/数据接口/沪深股票/特色数据/券商月度金股-获取券商月度金股，一般1日~3日内更新当月数据",
+      "description": "/数据接口/沪深股票/特色数据/券商月度金股-获取券商月度金股，一般1日~3日内更新当月数据。单次最多返回 1000 条。更新：每月15日左右更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -7383,11 +7414,18 @@
     },
     {
       "name": "opt_mins",
-      "description": "/数据接口/期权数据/期权分钟行情-获取全市场期权合约分钟数据，支持1min/5min/15min/30min/60min行情，提供Python SDK和 http Restful API两种方式。",
+      "description": "/数据接口/期权数据/期权分钟行情-获取全市场期权合约分钟数据，支持1min/5min/15min/30min/60min行情，提供Python SDK和 http Restful API两种方式。单次最多返回 8000 条。更新：每日19:30左右",
       "inputSchema": {
         "type": "object",
         "properties": {
           "freq": {
+            "enum": [
+              "1min",
+              "5min",
+              "15min",
+              "60min",
+              "30min"
+            ],
             "description": "分钟频度",
             "anyOf": [
               {
@@ -7447,7 +7485,7 @@
     },
     {
       "name": "sz_daily_info",
-      "description": "/数据接口/指数专题/深圳市场每日交易情况-获取深圳市场每日交易概况",
+      "description": "/数据接口/指数专题/深圳市场每日交易情况-获取深圳市场每日交易概况。单次最多返回 2000 条。更新：交易日18:00",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -7508,7 +7546,7 @@
     },
     {
       "name": "cb_call",
-      "description": "/数据接口/债券专题/可转债赎回信息-获取可转债到期赎回、强制赎回等信息。数据来源于公开披露渠道，供个人和机构研究使用，请不要用于数据商业目的。",
+      "description": "/数据接口/债券专题/可转债赎回信息-获取可转债到期赎回、强制赎回等信息。数据来源于公开披露渠道，供个人和机构研究使用，请不要用于数据商业目的。单次最多返回 2000 条。更新：每日18:30~19:30",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -7569,31 +7607,21 @@
     },
     {
       "name": "bond_blk",
-      "description": "/数据接口/债券/大宗交易-获取沪深交易所债券大宗交易数据",
+      "description": "/数据接口/债券/大宗交易-获取沪深交易所债券大宗交易数据。单次最多返回 1000 条。更新：每日18~19点之间",
       "inputSchema": {
         "type": "object",
         "properties": {
           "limit": {
-            "description": "获取条数",
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "integer"
-              }
-            ]
+            "type": "integer",
+            "default": 1000,
+            "maximum": 1000,
+            "description": "获取条数"
           },
           "offset": {
-            "description": "跳过条数",
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "integer"
-              }
-            ]
+            "type": "integer",
+            "default": 0,
+            "maximum": 50000,
+            "description": "跳过条数"
           },
           "ts_code": {
             "description": "债券代码",
@@ -7652,31 +7680,21 @@
     },
     {
       "name": "bond_blk_detail",
-      "description": "/数据接口/债券/大宗交易明细-获取沪深交易所债券大宗交易数据",
+      "description": "/数据接口/债券/大宗交易明细-获取沪深交易所债券大宗交易数据。单次最多返回 1000 条。更新：每日18~19点之间",
       "inputSchema": {
         "type": "object",
         "properties": {
           "limit": {
-            "description": "获取条数",
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "integer"
-              }
-            ]
+            "type": "integer",
+            "default": 1000,
+            "maximum": 1000,
+            "description": "获取条数"
           },
           "offset": {
-            "description": "跳过条数",
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "integer"
-              }
-            ]
+            "type": "integer",
+            "default": 0,
+            "maximum": 50000,
+            "description": "跳过条数"
           },
           "ts_code": {
             "description": "债券代码",
@@ -7735,7 +7753,7 @@
     },
     {
       "name": "stk_surv",
-      "description": "/数据接口/沪深股票/特色数据/机构调研数据-获取上市公司机构调研记录数据",
+      "description": "/数据接口/沪深股票/特色数据/机构调研数据-获取上市公司机构调研记录数据。单次最多返回 400 条。更新：每日早晚8点更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -7796,7 +7814,7 @@
     },
     {
       "name": "ccass_hold",
-      "description": "-获取中央结算系统持股汇总数据，覆盖全部历史数据，根据交易所披露时间，当日数据在下一交易日早上1点前完成入库",
+      "description": "获取中央结算系统持股汇总数据，覆盖全部历史数据，根据交易所披露时间，当日数据在下一交易日早上1点前完成入库。单次最多返回 5000 条。更新：每日13点更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -7879,31 +7897,21 @@
     },
     {
       "name": "ccass_hold_detail",
-      "description": "-获取中央结算系统机构席位持股明细，数据覆盖**全历史**，根据交易所披露时间，当日数据在下一交易日早上9点前完成",
+      "description": "获取中央结算系统机构席位持股明细，数据覆盖**全历史**，根据交易所披露时间，当日数据在下一交易日早上9点前完成。单次最多返回 7000 条。更新：每日9点左右。参数约束：ts_code,trade_date至少输入一个参数",
       "inputSchema": {
         "type": "object",
         "properties": {
           "limit": {
-            "description": "每页最大行数",
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "integer"
-              }
-            ]
+            "type": "integer",
+            "default": 7000,
+            "maximum": 7000,
+            "description": "获取条数"
           },
           "offset": {
-            "description": "开始行数",
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "integer"
-              }
-            ]
+            "type": "integer",
+            "default": 0,
+            "maximum": 50000,
+            "description": "跳过条数"
           },
           "hk_code": {
             "description": "港交所股份代码",
@@ -7973,7 +7981,7 @@
     },
     {
       "name": "sge_basic",
-      "description": "/数据接口/现货/上海黄金基础信息-获取上海黄金交易所现货合约基础信息",
+      "description": "/数据接口/现货/上海黄金基础信息-获取上海黄金交易所现货合约基础信息。单次最多返回 100 条。更新：每日早晚8点更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -8001,7 +8009,7 @@
     },
     {
       "name": "sge_daily",
-      "description": "/数据接口/现货数据/上海黄金现货日行情-获取上海黄金交易所现货合约日线行情",
+      "description": "/数据接口/现货数据/上海黄金现货日行情-获取上海黄金交易所现货合约日线行情。单次最多返回 2000 条。更新：每日18~19点更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -8062,11 +8070,18 @@
     },
     {
       "name": "rt_min",
-      "description": "/数据接口/沪深股票/行情数据/RT/实时分钟-获取全A股票实时分钟数据，包括1~60min",
+      "description": "/数据接口/沪深股票/行情数据/实时分钟-获取全A股票实时分钟数据，包括1~60min。单次最多返回 1000 条。更新：按1~60分钟频度实时更新",
       "inputSchema": {
         "type": "object",
         "properties": {
           "freq": {
+            "enum": [
+              "1MIN",
+              "5MIN",
+              "15MIN",
+              "30MIN",
+              "60MIN"
+            ],
             "description": "1MIN,5MIN,15MIN,30MIN,60MIN",
             "anyOf": [
               {
@@ -8078,6 +8093,12 @@
             ]
           },
           "topic": {
+            "enum": [
+              "HQ_STK_MIN",
+              "HQ_OPT_MIN",
+              "HQ_IDX_MIN",
+              "HQ_BND_MIN"
+            ],
             "description": "主题",
             "anyOf": [
               {
@@ -8089,6 +8110,7 @@
             ]
           },
           "ts_code": {
+            "pattern": "^(.+\\.SH|.+\\.SZ|.+\\.BJ)+$",
             "description": "股票代码",
             "anyOf": [
               {
@@ -8115,7 +8137,7 @@
     },
     {
       "name": "report_rc",
-      "description": "/数据接口/沪深股票/特色数据/券商盈利预测数据-获取券商（卖方）每天研报的盈利预测数据，数据从2010年开始，每晚19~22点更新当日数据",
+      "description": "/数据接口/沪深股票/特色数据/券商盈利预测数据-获取券商（卖方）每天研报的盈利预测数据，数据从2010年开始，每晚19~22点更新当日数据。单次最多返回 5000 条。更新：每日早晚9点更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -8176,7 +8198,7 @@
     },
     {
       "name": "cyq_perf",
-      "description": "/数据接口/沪深股票/特色数据/每日筹码及胜率-获取A股每日筹码平均成本和胜率情况，每天18~19点左右更新，数据从2018年开始",
+      "description": "/数据接口/沪深股票/特色数据/每日筹码及胜率-获取A股每日筹码平均成本和胜率情况，每天18~19点左右更新，数据从2018年开始。单次最多返回 6000 条。更新：每个交易日20~21点。参数约束：ts_code,trade_date至少输入一个参数",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -8237,7 +8259,7 @@
     },
     {
       "name": "cyq_chips",
-      "description": "/数据接口/沪深股票/特色数据/每日筹码分布-获取A股每日的筹码分布情况，提供各价位占比，数据从2018年开始，每天18~19点之间更新当日数据",
+      "description": "/数据接口/沪深股票/特色数据/每日筹码分布-获取A股每日的筹码分布情况，提供各价位占比，数据从2018年开始，每天18~19点之间更新当日数据。单次最多返回 6000 条。更新：每个交易日20~21点之间。参数约束：ts_code,trade_date至少输入一个参数",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -8300,7 +8322,7 @@
     },
     {
       "name": "stk_factor",
-      "description": "/数据接口/沪深股票/特色数据/股票技术面因子-股票技术因子，用于量化多因子策略",
+      "description": "/数据接口/沪深股票/特色数据/股票技术面因子-股票技术因子，用于量化多因子策略。单次最多返回 10000 条。更新：每日18~19点。参数约束：ts_code,trade_date至少输入一个参数",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -8361,7 +8383,7 @@
     },
     {
       "name": "limit_list_d",
-      "description": "/数据接口/沪深股票/打板专题数据/涨跌停和炸板数据-获取A股每日涨跌停、炸板数据情况，数据从2020年开始（不提供ST股票的统计）",
+      "description": "/数据接口/沪深股票/打板专题数据/涨跌停和炸板数据-获取A股每日涨跌停、炸板数据情况，数据从2020年开始（不提供ST股票的统计）。单次最多返回 6000 条。更新：每日18:30至19:30之间",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -8444,20 +8466,15 @@
     },
     {
       "name": "anns_d",
-      "description": "/数据接口/另类数据/上市公司公告-获取全量公告数据，提供pdf下载URL",
+      "description": "/数据接口/另类数据/上市公司公告-获取全量公告数据，提供pdf下载URL。单次最多返回 6000 条。更新：每两个小时",
       "inputSchema": {
         "type": "object",
         "properties": {
           "limit": {
-            "description": "获取条数",
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "integer"
-              }
-            ]
+            "type": "integer",
+            "default": 6000,
+            "maximum": 6000,
+            "description": "获取条数"
           },
           "title": {
             "description": "标题",
@@ -8471,15 +8488,10 @@
             ]
           },
           "offset": {
-            "description": "跳过条数",
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "integer"
-              }
-            ]
+            "type": "integer",
+            "default": 0,
+            "maximum": 50000,
+            "description": "跳过条数"
           },
           "ts_code": {
             "description": "股票代码",
@@ -8538,11 +8550,18 @@
     },
     {
       "name": "rt_idx_min",
-      "description": "/数据接口/指数专题/指数实时分钟-获取交易所指数实时分钟数据，包括1~60min",
+      "description": "/数据接口/指数专题/指数实时分钟-获取交易所指数实时分钟数据，包括1~60min。单次最多返回 3000 条。更新：交易日9:30",
       "inputSchema": {
         "type": "object",
         "properties": {
           "freq": {
+            "enum": [
+              "1MIN",
+              "5MIN",
+              "15MIN",
+              "30MIN",
+              "60MIN"
+            ],
             "description": "分钟类型，1MIN,5MIN,15MIN,30MIN,60MIN （大写）",
             "anyOf": [
               {
@@ -8554,6 +8573,9 @@
             ]
           },
           "topic": {
+            "enum": [
+              "HQ_IDX_MIN"
+            ],
             "description": "主题",
             "anyOf": [
               {
@@ -8565,6 +8587,7 @@
             ]
           },
           "ts_code": {
+            "pattern": "^((0.+\\.SH|3.+\\.SZ),?)+$",
             "description": "指数代码，支持单个和多个：000001.SH 或者 000001.SH,399300.SZ",
             "anyOf": [
               {
@@ -8591,11 +8614,19 @@
     },
     {
       "name": "hk_mins",
-      "description": "/数据接口/港股数据/港股分钟行情-港股分钟数据，支持1min/5min/15min/30min/60min行情，提供Python SDK和 http Restful API两种方式",
+      "description": "/数据接口/港股数据/港股分钟行情-港股分钟数据，支持1min/5min/15min/30min/60min行情，提供Python SDK和 http Restful API两种方式。单次最多返回 8000 条。更新：交易日20:30",
       "inputSchema": {
         "type": "object",
         "properties": {
           "freq": {
+            "enum": [
+              "1min",
+              "3min",
+              "5min",
+              "15min",
+              "60min",
+              "30min"
+            ],
             "description": "分钟频度",
             "anyOf": [
               {
@@ -8654,7 +8685,7 @@
     },
     {
       "name": "cb_rate",
-      "description": "/数据接口/债券/可转债票面利率-获取可转债票面利率",
+      "description": "/数据接口/债券/可转债票面利率-获取可转债票面利率。单次最多返回 2000 条。更新：每日早晚8点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -8682,11 +8713,18 @@
     },
     {
       "name": "rt_min_daily",
-      "description": "/数据接口/沪深股票/行情数据/RT/A股实时分钟-日累计-获取A股当日盘中历史分钟数据，可以提取单只股票当日开盘以来的所有分钟数据",
+      "description": "/数据接口/沪深股票/行情数据/A股实时分钟-日累计-获取A股当日盘中历史分钟数据，可以提取单只股票当日开盘以来的所有分钟数据。单次最多返回 2000 条。更新：盘中实时更新当日历史",
       "inputSchema": {
         "type": "object",
         "properties": {
           "freq": {
+            "enum": [
+              "1MIN",
+              "5MIN",
+              "15MIN",
+              "30MIN",
+              "60MIN"
+            ],
             "description": "1MIN,5MIN,15MIN,30MIN,60MIN",
             "anyOf": [
               {
@@ -8698,6 +8736,12 @@
             ]
           },
           "topic": {
+            "enum": [
+              "HQ_STK_MIN",
+              "HQ_OPT_MIN",
+              "HQ_IDX_MIN",
+              "HQ_BND_MIN"
+            ],
             "description": "主题",
             "anyOf": [
               {
@@ -8709,6 +8753,7 @@
             ]
           },
           "ts_code": {
+            "pattern": "^(\\d+\\.SH|\\d+\\.SZ|\\d+\\.BJ)+$",
             "description": "股票代码",
             "anyOf": [
               {
@@ -8746,7 +8791,7 @@
     },
     {
       "name": "ci_daily",
-      "description": "/数据接口/指数/中信行业指数日行情-获取中信行业指数日线行情",
+      "description": "/数据接口/指数/中信行业指数日行情-获取中信行业指数日线行情。单次最多返回 4000 条。更新：交易日19:00",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -8807,7 +8852,7 @@
     },
     {
       "name": "sf_month",
-      "description": "/数据接口/宏观经济/国内宏观/金融/社会融资/社融增量（月度）-获取月度社会融资数据",
+      "description": "/数据接口/宏观经济/国内宏观/金融/社会融资/社融增量（月度）-获取月度社会融资数据。单次最多返回 2000 条。更新：每月更新一次",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -8857,7 +8902,7 @@
     },
     {
       "name": "hm_list",
-      "description": "/数据接口/沪深股票/打板专题数据/市场游资最全名录-获取游资分类名录信息",
+      "description": "/数据接口/沪深股票/打板专题数据/市场游资最全名录-获取游资分类名录信息。单次最多返回 1000 条。更新：交易日15点30",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -8885,7 +8930,7 @@
     },
     {
       "name": "hm_detail",
-      "description": "/数据接口/沪深股票/打板专题数据/游资交易每日明细-获取每日游资交易明细，数据开始于2022年8。游资分类名录，请点击游资名录",
+      "description": "/数据接口/沪深股票/打板专题数据/游资交易每日明细-获取每日游资交易明细，数据开始于2022年8。游资分类名录，请点击游资名录。单次最多返回 2000 条。更新：交易日20点半",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -8957,11 +9002,18 @@
     },
     {
       "name": "rt_fut_min",
-      "description": "/数据接口/期货数据/实时分钟行情-获取全市场期货合约实时分钟数据，支持1min/5min/15min/30min/60min行情，提供Python SDK、 http Restful API和websocket三种方式。",
+      "description": "/数据接口/期货数据/实时分钟行情-获取全市场期货合约实时分钟数据，支持1min/5min/15min/30min/60min行情，提供Python SDK、 http Restful API和websocket三种方式。单次最多返回 1000 条。更新：实时",
       "inputSchema": {
         "type": "object",
         "properties": {
           "freq": {
+            "enum": [
+              "1MIN",
+              "5MIN",
+              "15MIN",
+              "30MIN",
+              "60MIN"
+            ],
             "description": "分钟类型",
             "anyOf": [
               {
@@ -8973,6 +9025,9 @@
             ]
           },
           "topic": {
+            "enum": [
+              "HQ_FUT_MIN"
+            ],
             "description": "主题",
             "anyOf": [
               {
@@ -9010,7 +9065,7 @@
     },
     {
       "name": "ths_hot",
-      "description": "/数据接口/沪深股票/打板专题数据/THS热榜-获取同花顺热榜数据，包括热股、概念板块、ETF、可转债、港美股等等，每日盘中提取4次，收盘后4次，最晚22点提取一次。",
+      "description": "/数据接口/沪深股票/打板专题数据/THS热榜-获取同花顺热榜数据，包括热股、概念板块、ETF、可转债、港美股等等，每日盘中提取4次，收盘后4次，最晚22点提取一次。单次最多返回 2000 条。更新：交易日8-21/2,21,22点第0、30分",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -9071,7 +9126,7 @@
     },
     {
       "name": "dc_hot",
-      "description": "/数据接口/沪深股票/打板专题数据/DC热榜-获取东方财富热榜数据，包括A股市场、ETF基金、港股市场、美股市场等等，每日盘中提取4次，收盘后4次，最晚22点提取一次。",
+      "description": "/数据接口/沪深股票/打板专题数据/DC热榜-获取东方财富热榜数据，包括A股市场、ETF基金、港股市场、美股市场等等，每日盘中提取4次，收盘后4次，最晚22点提取一次。单次最多返回 2000 条。更新：交易日8-21/2,21,22点第0、30分",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -9143,7 +9198,7 @@
     },
     {
       "name": "stk_premarket",
-      "description": "/数据接口/沪深股票/基础数据/每日股本（盘前）-每日开盘前获取当日股票的股本情况，包括总股本和流通股本，涨跌停价格等。",
+      "description": "/数据接口/沪深股票/基础数据/每日股本（盘前）-每日开盘前获取当日股票的股本情况，包括总股本和流通股本，涨跌停价格等。单次最多返回 8000 条。更新：每晚20点，次日9点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -9204,7 +9259,7 @@
     },
     {
       "name": "bc_otcqt",
-      "description": "/数据接口/债券/柜台流通式债券报价-柜台流通式债券报价",
+      "description": "/数据接口/债券/柜台流通式债券报价-柜台流通式债券报价。单次最多返回 2000 条。更新：每日早晚8点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -9276,7 +9331,7 @@
     },
     {
       "name": "bc_bestotcqt",
-      "description": "/数据接口/债券专题/柜台流通式债券最优报价-柜台流通式债券最优报价",
+      "description": "/数据接口/债券专题/柜台流通式债券最优报价-柜台流通式债券最优报价。单次最多返回 2000 条。更新：每日早晚8点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -9337,7 +9392,7 @@
     },
     {
       "name": "cn_pmi",
-      "description": "/数据接口/宏观经济/国内宏观/景气度/采购经理指数（PMI）-采购经理人指数",
+      "description": "/数据接口/宏观经济/国内宏观/景气度/采购经理指数（PMI）-采购经理人指数。单次最多返回 2000 条。更新：每月更新一次",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -9387,7 +9442,7 @@
     },
     {
       "name": "margin_secs",
-      "description": "/数据接口/沪深股票/两融及转融通/融资融券标的（盘前）-获取沪深京三大交易所融资融券标的（包括ETF），每天盘前更新",
+      "description": "/数据接口/沪深股票/两融及转融通/融资融券标的（盘前）-获取沪深京三大交易所融资融券标的（包括ETF），每天盘前更新。单次最多返回 6000 条。更新：每日8:30更新当日标的",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -9459,7 +9514,7 @@
     },
     {
       "name": "stk_factor_pro",
-      "description": "/数据接口/沪深股票/特色数据/股票技术面因子(专业版）-获取股票每日技术面因子数据，用于跟踪股票当前走势情况，数据由Tushare社区自产，覆盖全历史；输出参数_bfq表示不复权，_qfq表示前复权 _hfq表示后复权。",
+      "description": "/数据接口/沪深股票/特色数据/股票技术面因子(专业版）-获取股票每日技术面因子数据，用于跟踪股票当前走势情况，数据由Tushare社区自产，覆盖全历史；输出参数_bfq表示不复权，_qfq表示前复权 _hfq表示后复权。单次最多返回 10000 条。更新：每个交易日19~20点之间。参数约束：ts_code,trade_date至少输入一个参数",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -9520,7 +9575,7 @@
     },
     {
       "name": "slb_len",
-      "description": "/数据接口/沪深股票/两融及转融通/转融资交易汇总-转融通融资汇总",
+      "description": "/数据接口/沪深股票/两融及转融通/转融资交易汇总-转融通融资汇总。单次最多返回 5000 条。更新：历史数据，官方已停止披露",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -9570,7 +9625,7 @@
     },
     {
       "name": "slb_sec",
-      "description": "/数据接口/沪深股票/两融及转融通/转融券交易汇总(停）-转融通转融券交易汇总",
+      "description": "/数据接口/沪深股票/两融及转融通/转融券交易汇总(停）-转融通转融券交易汇总。单次最多返回 5000 条",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -9631,7 +9686,7 @@
     },
     {
       "name": "slb_sec_detail",
-      "description": "/数据接口/沪深股票/两融及转融通/转融券交易明细(停）-转融券交易明细",
+      "description": "/数据接口/沪深股票/两融及转融通/转融券交易明细(停）-转融券交易明细。单次最多返回 6000 条。更新：官方已停止披露",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -9692,7 +9747,7 @@
     },
     {
       "name": "slb_len_mm",
-      "description": "/数据接口/沪深股票/两融及转融通/做市借券交易汇总(停）-做市借券交易汇总",
+      "description": "/数据接口/沪深股票/两融及转融通/做市借券交易汇总(停）-做市借券交易汇总。单次最多返回 5000 条。更新：官方已停止披露",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -9753,7 +9808,7 @@
     },
     {
       "name": "stk_weekly_monthly",
-      "description": "/数据接口/沪深股票/行情数据/周/月线行情(每日更新)-获取每日更新的A股周/月线行情",
+      "description": "/数据接口/沪深股票/行情数据/周/月线行情(每日更新)-获取每日更新的A股周/月线行情。单次最多返回 6000 条。更新：每天19~20点之间",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -9827,7 +9882,7 @@
     },
     {
       "name": "fut_weekly_monthly",
-      "description": "/数据接口/期货数据/期货周/月线行情(每日更新)-期货周/月线行情(每日更新)",
+      "description": "/数据接口/期货数据/期货周/月线行情(每日更新)-期货周/月线行情(每日更新)。单次最多返回 6000 条。更新：每个交易日19点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -9912,17 +9967,21 @@
     },
     {
       "name": "us_daily_adj",
-      "description": "/数据接口/美股数据/美股复权行情-获取美股复权行情，支持美股全市场股票，提供股本、市值、复权因子和成交信息等多个数据指标",
+      "description": "/数据接口/美股数据/美股复权行情-获取美股复权行情，支持美股全市场股票，提供股本、市值、复权因子和成交信息等多个数据指标。单次最多返回 8000 条。更新：交易日13点",
       "inputSchema": {
         "type": "object",
         "properties": {
           "limit": {
             "type": "integer",
-            "description": "每页行数行数"
+            "default": 8000,
+            "maximum": 8000,
+            "description": "获取条数"
           },
           "offset": {
             "type": "integer",
-            "description": "开始行数"
+            "default": 0,
+            "maximum": 50000,
+            "description": "跳过条数"
           },
           "ts_code": {
             "description": "股票代码（e.g. AAPL）",
@@ -9992,17 +10051,21 @@
     },
     {
       "name": "hk_daily_adj",
-      "description": "/数据接口/港股数据/港股复权行情-获取港股复权行情，提供股票股本、市值和成交及换手多个数据指标",
+      "description": "/数据接口/港股数据/港股复权行情-获取港股复权行情，提供股票股本、市值和成交及换手多个数据指标。单次最多返回 8000 条。更新：交易日19点",
       "inputSchema": {
         "type": "object",
         "properties": {
           "limit": {
             "type": "integer",
-            "description": "每页行数行数"
+            "default": 8000,
+            "maximum": 8000,
+            "description": "获取条数"
           },
           "offset": {
             "type": "integer",
-            "description": "开始行数"
+            "default": 0,
+            "maximum": 50000,
+            "description": "跳过条数"
           },
           "symbol": {
             "description": "",
@@ -10072,7 +10135,7 @@
     },
     {
       "name": "kpl_list",
-      "description": "/数据接口/沪深股票/打板专题数据/榜单数据（KP）-获取开盘啦涨停、跌停、炸板等榜单数据",
+      "description": "/数据接口/沪深股票/打板专题数据/榜单数据（KP）-获取开盘啦涨停、跌停、炸板等榜单数据。单次最多返回 8000 条。更新：交易日8点更新前一个交易日",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -10144,7 +10207,7 @@
     },
     {
       "name": "moneyflow_ind_ths",
-      "description": "/数据接口/沪深股票/资金流向数据/行业资金流向（THS）-获取同花顺行业资金流向，每日盘后更新",
+      "description": "/数据接口/沪深股票/资金流向数据/行业资金流向（THS）-获取同花顺行业资金流向，每日盘后更新。单次最多返回 5000 条。更新：每日19点~20点之间",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -10205,7 +10268,7 @@
     },
     {
       "name": "moneyflow_ind_dc",
-      "description": "/数据接口/沪深股票/资金流向数据/板块资金流向（DC）-获取东方财富板块资金流向，每天盘后更新",
+      "description": "/数据接口/沪深股票/资金流向数据/板块资金流向（DC）-获取东方财富板块资金流向，每天盘后更新。单次最多返回 5000 条。更新：每日19点~20点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -10277,7 +10340,7 @@
     },
     {
       "name": "moneyflow_mkt_dc",
-      "description": "/数据接口/沪深股票/资金流向数据/大盘资金流向（DC）-获取东方财富大盘资金流向数据，每日盘后更新",
+      "description": "/数据接口/沪深股票/资金流向数据/大盘资金流向（DC）-获取东方财富大盘资金流向数据，每日盘后更新。单次最多返回 3000 条。更新：每日20点~21点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -10327,7 +10390,7 @@
     },
     {
       "name": "moneyflow_ths",
-      "description": "/数据接口/沪深股票/资金流向数据/个股资金流向（THS）-获取同花顺个股资金流向数据，每日盘后更新",
+      "description": "/数据接口/沪深股票/资金流向数据/个股资金流向（THS）-获取同花顺个股资金流向数据，每日盘后更新。单次最多返回 6000 条。更新：每日19~20点之间",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -10388,7 +10451,7 @@
     },
     {
       "name": "moneyflow_dc",
-      "description": "/数据接口/沪深股票/资金流向数据/个股资金流向（DC）-获取东方财富个股资金流向数据，每日盘后更新，数据开始于20230911",
+      "description": "/数据接口/沪深股票/资金流向数据/个股资金流向（DC）-获取东方财富个股资金流向数据，每日盘后更新，数据开始于20230911。单次最多返回 8000 条。更新：每日20点~21点之间",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -10449,7 +10512,7 @@
     },
     {
       "name": "kpl_concept_cons",
-      "description": "/数据接口/沪深股票/打板专题数据/题材成分（开盘啦）-获取开盘啦概念题材的成分股",
+      "description": "/数据接口/沪深股票/打板专题数据/题材成分（开盘啦）-获取开盘啦概念题材的成分股。单次最多返回 3000 条。更新：交易日18点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -10499,7 +10562,7 @@
     },
     {
       "name": "stk_auction_o",
-      "description": "/数据接口/沪深股票/特色数据/股票开盘集合竞价数据-股票开盘9:30集合竞价数据，每天盘后更新",
+      "description": "/数据接口/沪深股票/特色数据/股票开盘集合竞价数据-股票开盘9:30集合竞价数据，每天盘后更新。单次最多返回 10000 条。更新：每个交易日20点更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -10560,7 +10623,7 @@
     },
     {
       "name": "stk_auction_c",
-      "description": "/数据接口/沪深股票/特色数据/股票收盘集合竞价数据-股票收盘15:00集合竞价数据，每天盘后更新",
+      "description": "/数据接口/沪深股票/特色数据/股票收盘集合竞价数据-股票收盘15:00集合竞价数据，每天盘后更新。单次最多返回 10000 条。更新：每日20点更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -10621,7 +10684,7 @@
     },
     {
       "name": "limit_list_ths",
-      "description": "/数据接口/沪深股票/打板专题数据/THS涨跌停榜单-获取同花顺每日涨跌停榜单数据，历史数据从20231101开始提供，增量每天16点左右更新",
+      "description": "/数据接口/沪深股票/打板专题数据/THS涨跌停榜单-获取同花顺每日涨跌停榜单数据，历史数据从20231101开始提供，增量每天16点左右更新。单次最多返回 5000 条。更新：交易日16点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -10704,7 +10767,7 @@
     },
     {
       "name": "limit_step",
-      "description": "/数据接口/沪深股票/打板专题数据/涨停股票连板天梯-获取每天连板个数晋级的股票，可以分析出每天连续涨停进阶个数，判断强势热度",
+      "description": "/数据接口/沪深股票/打板专题数据/涨停股票连板天梯-获取每天连板个数晋级的股票，可以分析出每天连续涨停进阶个数，判断强势热度。单次最多返回 2000 条。更新：交易日16点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -10776,7 +10839,7 @@
     },
     {
       "name": "limit_cpt_list",
-      "description": "/数据接口/沪深股票/打板专题数据/涨停最强板块统计-获取每天涨停股票最多最强的概念板块，可以分析强势板块的轮动，判断资金动向",
+      "description": "/数据接口/沪深股票/打板专题数据/涨停最强板块统计-获取每天涨停股票最多最强的概念板块，可以分析强势板块的轮动，判断资金动向。单次最多返回 2000 条。更新：交易日16点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -10837,7 +10900,7 @@
     },
     {
       "name": "idx_factor_pro",
-      "description": "/数据接口/指数/指数技术面因子(专业版)-获取指数每日技术面因子数据，用于跟踪指数当前走势情况，数据由Tushare社区自产，覆盖全历史；输出参数_bfq表示不复权描述中说明了因子的默认传参",
+      "description": "/数据接口/指数/指数技术面因子(专业版)-获取指数每日技术面因子数据，用于跟踪指数当前走势情况，数据由Tushare社区自产，覆盖全历史；输出参数_bfq表示不复权描述中说明了因子的默认传参。单次最多返回 8000 条。更新：交易日20:30。参数约束：ts_code,trade_date至少输入一个参数",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -10898,7 +10961,7 @@
     },
     {
       "name": "fund_factor_pro",
-      "description": "/数据接口/公募基金/基金技术面因子(专业版)-获取场内基金每日技术面因子数据，用于跟踪场内基金当前走势情况，数据由Tushare社区自产，覆盖全历史；输出参数_bfq表示不复权",
+      "description": "/数据接口/公募基金/基金技术面因子(专业版)-获取场内基金每日技术面因子数据，用于跟踪场内基金当前走势情况，数据由Tushare社区自产，覆盖全历史；输出参数_bfq表示不复权。单次最多返回 8000 条。更新：交易日20:30。参数约束：ts_code,trade_date至少输入一个参数",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -10959,7 +11022,7 @@
     },
     {
       "name": "dc_index",
-      "description": "/数据接口/沪深股票/打板专题数据/东方财富概念板块-获取东方财富每个交易日的概念板块数据，支持按日期查询",
+      "description": "/数据接口/沪深股票/打板专题数据/东方财富概念板块-获取东方财富每个交易日的概念板块数据，支持按日期查询。单次最多返回 5000 条。更新：交易日20点30",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -11042,7 +11105,7 @@
     },
     {
       "name": "dc_member",
-      "description": "/数据接口/沪深股票/打板专题数据/DC概念板块成分-获取东方财富板块每日成分数据，可以根据概念板块代码和交易日期，获取历史成分",
+      "description": "/数据接口/沪深股票/打板专题数据/DC概念板块成分-获取东方财富板块每日成分数据，可以根据概念板块代码和交易日期，获取历史成分。单次最多返回 8000 条。更新：交易日20点30",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -11114,7 +11177,7 @@
     },
     {
       "name": "stk_nineturn",
-      "description": "/数据接口/沪深股票/特色数据/神奇九转指标-神奇九转（又称“九转序列”）是一种基于技术分析的股票趋势反转指标，其思想来源于技术分析大师汤姆·迪马克（Tom DeMark）的TD序列。",
+      "description": "/数据接口/沪深股票/特色数据/神奇九转指标-神奇九转（又称“九转序列”）是一种基于技术分析的股票趋势反转指标，其思想来源于技术分析大师汤姆·迪马克（Tom DeMark）的TD序列。单次最多返回 10000 条。更新：每日21点左右。参数约束：ts_code：股票代码和日期至少输入一个参数",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -11186,7 +11249,7 @@
     },
     {
       "name": "stk_week_month_adj",
-      "description": "/数据接口/沪深股票/行情数据/周/月线复权行情(每日更新)-获取A股每日更新周/月线的复权行情",
+      "description": "/数据接口/沪深股票/行情数据/周/月线复权行情(每日更新)-获取A股每日更新周/月线的复权行情。单次最多返回 6000 条。更新：每日19~20点之间",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -11260,7 +11323,7 @@
     },
     {
       "name": "stk_auction",
-      "description": "/数据接口/沪深股票/打板专题数据/开盘竞价成交（当日）-获取当日个股的集合竞价成交情况，每天9点25~29分之间可以获取当日的集合竞价成交数据",
+      "description": "/数据接口/沪深股票/打板专题数据/开盘竞价成交（当日）-获取当日个股的集合竞价成交情况，每天9点25~29分之间可以获取当日的集合竞价成交数据。单次最多返回 8000 条。更新：交易日9点25",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -11332,31 +11395,21 @@
     },
     {
       "name": "irm_qa_sh",
-      "description": "/数据接口/大模型语料专题数据/上证e互动问答-上证e互动是由上海证券交易所建立、上海证券市场所有参与主体无偿使用的沟通平台,旨在引导和促进上市公司、投资者等各市场参与主体之间的信息沟通,构建集中、便捷的互动渠道。",
+      "description": "/数据接口/大模型语料专题数据/上证e互动问答-上证e互动是由上海证券交易所建立、上海证券市场所有参与主体无偿使用的沟通平台,旨在引导和促进上市公司、投资者等各市场参与主体之间的信息沟通,构建集中、便捷的互动渠道。单次最多返回 3000 条。更新：每天10,15,16,21点第30分钟",
       "inputSchema": {
         "type": "object",
         "properties": {
           "limit": {
-            "description": "获取条数",
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "integer"
-              }
-            ]
+            "type": "integer",
+            "default": 3000,
+            "maximum": 3000,
+            "description": "获取条数"
           },
           "offset": {
-            "description": "跳过条数",
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "integer"
-              }
-            ]
+            "type": "integer",
+            "default": 0,
+            "maximum": 50000,
+            "description": "跳过条数"
           },
           "pub_end": {
             "description": "发布结束时间",
@@ -11437,31 +11490,21 @@
     },
     {
       "name": "irm_qa_sz",
-      "description": "/数据接口/大模型语料专题数据/深证易互动问答-互动易是由深交所官方推出,供投资者与上市公司直接沟通的平台,一站式公司资讯汇集,提供第一手的互动问答、投资者关系信息、公司声音等内容。",
+      "description": "/数据接口/大模型语料专题数据/深证易互动问答-互动易是由深交所官方推出,供投资者与上市公司直接沟通的平台,一站式公司资讯汇集,提供第一手的互动问答、投资者关系信息、公司声音等内容。单次最多返回 3000 条。更新：每天10,15,16,21点第30分钟",
       "inputSchema": {
         "type": "object",
         "properties": {
           "limit": {
-            "description": "获取条数",
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "integer"
-              }
-            ]
+            "type": "integer",
+            "default": 3000,
+            "maximum": 3000,
+            "description": "获取条数"
           },
           "offset": {
-            "description": "跳过条数",
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "integer"
-              }
-            ]
+            "type": "integer",
+            "default": 0,
+            "maximum": 50000,
+            "description": "跳过条数"
           },
           "pub_end": {
             "description": "发布结束时间",
@@ -11542,7 +11585,7 @@
     },
     {
       "name": "ft_limit",
-      "description": "/数据接口/期货数据/期货合约涨跌停价格-获取所有期货合约每天的涨跌停价格及最低保证金率，数据开始于2005年。",
+      "description": "/数据接口/期货数据/期货合约涨跌停价格-获取所有期货合约每天的涨跌停价格及最低保证金率，数据开始于2005年。单次最多返回 4000 条。更新：交易日9点30",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -11625,7 +11668,7 @@
     },
     {
       "name": "moneyflow_cnt_ths",
-      "description": "/数据接口/沪深股票/资金流向数据/板块资金流向（THS)-获取同花顺概念板块每日资金流向",
+      "description": "/数据接口/沪深股票/资金流向数据/板块资金流向（THS)-获取同花顺概念板块每日资金流向。单次最多返回 4000 条。更新：每日19点左右",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -11686,7 +11729,7 @@
     },
     {
       "name": "rt_k",
-      "description": "/数据接口/沪深股票/行情数据/RT/实时日线-获取实时日k线行情，支持按股票代码及股票代码通配符一次性提取全部股票实时日k线行情",
+      "description": "/数据接口/沪深股票/行情数据/实时日线-获取实时日k线行情，支持按股票代码及股票代码通配符一次性提取全部股票实时日k线行情。单次最多返回 6000 条。更新：盘中实时更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -11702,6 +11745,7 @@
             ]
           },
           "ts_code": {
+            "pattern": "^(.+\\.SH|.+\\.SZ|.+\\.BJ)+$",
             "description": "股票代码，逗号隔开多个code",
             "anyOf": [
               {
@@ -11727,11 +11771,14 @@
     },
     {
       "name": "rt_hk_k",
-      "description": "/数据接口/港股数据/港股实时日线-获取港股实时日k线行情，支持按股票代码及股票代码通配符一次性提取全部股票实时日k线行情",
+      "description": "/数据接口/港股数据/港股实时日线-获取港股实时日k线行情，支持按股票代码及股票代码通配符一次性提取全部股票实时日k线行情。单次最多返回 5000 条。更新：交易日实时更新9:00开始",
       "inputSchema": {
         "type": "object",
         "properties": {
           "topic": {
+            "enum": [
+              "HQ_STK_TICK"
+            ],
             "description": "主题",
             "anyOf": [
               {
@@ -11743,6 +11790,7 @@
             ]
           },
           "ts_code": {
+            "pattern": "^((.+\\.HK),?)+$",
             "description": "逗号隔开多个code，支持通配符方式，e.g. 00001.HK、02*.HK",
             "anyOf": [
               {
@@ -11768,7 +11816,7 @@
     },
     {
       "name": "ci_index_member",
-      "description": "/数据接口/指数专题/中信行业成分-按三级分类提取中信行业成分，可提供某个分类的所有成分，也可按股票代码提取所属分类，参数灵活",
+      "description": "/数据接口/指数专题/中信行业成分-按三级分类提取中信行业成分，可提供某个分类的所有成分，也可按股票代码提取所属分类，参数灵活。单次最多返回 7000 条。更新：每周日更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -11851,7 +11899,7 @@
     },
     {
       "name": "bse_mapping",
-      "description": "/数据接口/沪深股票/基础数据/北交所新旧代码对照-获取北交所股票代码变更后新旧代码映射表数据",
+      "description": "/数据接口/沪深股票/基础数据/北交所新旧代码对照-获取北交所股票代码变更后新旧代码映射表数据。单次最多返回 1000 条。更新：一次性数据，记录历史变更情况",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -11890,7 +11938,7 @@
     },
     {
       "name": "etf_basic",
-      "description": "/数据接口/ETF专题/ETF基本信息-获取国内ETF基础信息，包括了QDII。数据来源与沪深交易所公开披露信息。",
+      "description": "/数据接口/ETF专题/ETF基本信息-获取国内ETF基础信息，包括了QDII。数据来源与沪深交易所公开披露信息。单次最多返回 5000 条。更新：每日早晚8点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -11973,7 +12021,7 @@
     },
     {
       "name": "etf_index",
-      "description": "/数据接口/ETF专题/ETF基准指数-获取ETF基准指数列表信息",
+      "description": "/数据接口/ETF专题/ETF基准指数-获取ETF基准指数列表信息。单次最多返回 5000 条。更新：每日早晚8点更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -12023,7 +12071,7 @@
     },
     {
       "name": "tdx_index",
-      "description": "/数据接口/沪深股票/打板专题数据/通达信板块信息-获取通达信板块基础信息，包括概念板块、行业、风格、地域等",
+      "description": "/数据接口/沪深股票/打板专题数据/通达信板块信息-获取通达信板块基础信息，包括概念板块、行业、风格、地域等。单次最多返回 1000 条。更新：交易日19点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -12073,7 +12121,7 @@
     },
     {
       "name": "tdx_member",
-      "description": "/数据接口/沪深股票/打板专题数据/通达信板块成分-获取通达信各板块成分股信息",
+      "description": "/数据接口/沪深股票/打板专题数据/通达信板块成分-获取通达信各板块成分股信息。单次最多返回 3000 条。更新：交易日19点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -12145,7 +12193,7 @@
     },
     {
       "name": "tdx_daily",
-      "description": "/数据接口/沪深股票/打板专题数据/通达信板块行情-获取通达信各板块行情，包括成交和估值等数据",
+      "description": "/数据接口/沪深股票/打板专题数据/通达信板块行情-获取通达信各板块行情，包括成交和估值等数据。单次最多返回 3000 条。更新：交易日19点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -12206,7 +12254,7 @@
     },
     {
       "name": "dc_daily",
-      "description": "/数据接口/沪深股票/打板专题数据/DC概念板块行情-获取东财概念板块、行业指数板块、地域板块行情数据，历史数据开始于2020年",
+      "description": "/数据接口/沪深股票/打板专题数据/DC概念板块行情-获取东财概念板块、行业指数板块、地域板块行情数据，历史数据开始于2020年。单次最多返回 2000 条。更新：交易日20点30",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -12278,7 +12326,7 @@
     },
     {
       "name": "hk_balancesheet",
-      "description": "/数据接口/港股数据/港股资产负债表-获取港股上市公司资产负债表",
+      "description": "/数据接口/港股数据/港股资产负债表-获取港股上市公司资产负债表。单次最多返回 10000 条。更新：交易日9:00",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -12352,7 +12400,7 @@
     },
     {
       "name": "hk_income",
-      "description": "/数据接口/港股数据/港股利润表-获取港股上市公司财务利润表数据",
+      "description": "/数据接口/港股数据/港股利润表-获取港股上市公司财务利润表数据。单次最多返回 10000 条。更新：交易日9:00",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -12426,7 +12474,7 @@
     },
     {
       "name": "hk_cashflow",
-      "description": "/数据接口/港股数据/港股现金流量表-获取港股上市公司现金流量表数据",
+      "description": "/数据接口/港股数据/港股现金流量表-获取港股上市公司现金流量表数据。单次最多返回 10000 条。更新：交易日9:00",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -12500,7 +12548,7 @@
     },
     {
       "name": "hk_fina_indicator",
-      "description": "/数据接口/港股数据/港股财务指标数据-获取港股上市公司财务指标数据，为避免服务器压力，现阶段每次请求最多返回200条记录，可通过设置日期多次请求获取更多数据。",
+      "description": "/数据接口/港股数据/港股财务指标数据-获取港股上市公司财务指标数据，为避免服务器压力，现阶段每次请求最多返回200条记录，可通过设置日期多次请求获取更多数据。单次最多返回 200 条。更新：交易日9:00",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -12574,7 +12622,7 @@
     },
     {
       "name": "cb_factor_pro",
-      "description": "/数据接口/债券专题/可转债技术面因子(专业版）-获取可转债每日技术面因子数据，用于跟踪可转债当前走势情况，数据由Tushare社区自产，覆盖全历史；输出参数_bfq表示不复权，_qfq表示前复权 _hfq表示后复权",
+      "description": "/数据接口/债券专题/可转债技术面因子(专业版）-获取可转债每日技术面因子数据，用于跟踪可转债当前走势情况，数据由Tushare社区自产，覆盖全历史；输出参数_bfq表示不复权，_qfq表示前复权 _hfq表示后复权。单次最多返回 10000 条。更新：每日20:30左右。参数约束：ts_code,trade_date至少输入一个参数",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -12635,7 +12683,7 @@
     },
     {
       "name": "us_fina_indicator",
-      "description": "/数据接口/美股数据/美股财务指标数据-获取美股上市公司财务指标数据，目前只覆盖主要美股和中概股。为避免服务器压力，现阶段每次请求最多返回200条记录，可通过设置日期多次请求获取更多数据。",
+      "description": "/数据接口/美股数据/美股财务指标数据-获取美股上市公司财务指标数据，目前只覆盖主要美股和中概股。为避免服务器压力，现阶段每次请求最多返回200条记录，可通过设置日期多次请求获取更多数据。单次最多返回 2000 条。更新：交易日9点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -12707,7 +12755,7 @@
     },
     {
       "name": "us_cashflow",
-      "description": "/数据接口/美股数据/美股现金流量表-获取美股上市公司现金流量表数据（目前只覆盖主要美股和中概股）",
+      "description": "/数据接口/美股数据/美股现金流量表-获取美股上市公司现金流量表数据（目前只覆盖主要美股和中概股）。单次最多返回 10000 条。更新：交易日9点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -12792,7 +12840,7 @@
     },
     {
       "name": "us_income",
-      "description": "/数据接口/美股数据/美股利润表-获取美股上市公司财务利润表数据（目前只覆盖主要美股和中概股）",
+      "description": "/数据接口/美股数据/美股利润表-获取美股上市公司财务利润表数据（目前只覆盖主要美股和中概股）。单次最多返回 10000 条。更新：交易日9点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -12877,7 +12925,7 @@
     },
     {
       "name": "us_balancesheet",
-      "description": "/数据接口/美股数据/美股资产负债表-获取美股上市公司资产负债表（目前只覆盖主要美股和中概股）",
+      "description": "/数据接口/美股数据/美股资产负债表-获取美股上市公司资产负债表（目前只覆盖主要美股和中概股）。单次最多返回 10000 条。更新：交易日9点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -12962,7 +13010,7 @@
     },
     {
       "name": "stock_st",
-      "description": "/数据接口/沪深股票/基础数据/ST股票列表-获取ST股票列表，可根据交易日期获取历史上每天的ST股票列表",
+      "description": "/数据接口/沪深股票/基础数据/ST股票列表-获取ST股票列表，可根据交易日期获取历史上每天的ST股票列表。单次最多返回 1000 条。更新：每日早9:30，晚9:30",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -13034,7 +13082,7 @@
     },
     {
       "name": "stock_hsgt",
-      "description": "/数据接口/沪深股票/基础数据/沪深港通股票列表-获取沪深港通股票列表",
+      "description": "/数据接口/沪深股票/基础数据/沪深港通股票列表-获取沪深港通股票列表。单次最多返回 6000 条。更新：每日9:10~9:30之间",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -13106,7 +13154,7 @@
     },
     {
       "name": "stk_ah_comparison",
-      "description": "/数据接口/沪深股票/特色数据/AH股比价-AH股比价数据，可根据交易日期获取历史",
+      "description": "/数据接口/沪深股票/特色数据/AH股比价-AH股比价数据，可根据交易日期获取历史。单次最多返回 1000 条。更新：每日早晚9点更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -13178,7 +13226,7 @@
     },
     {
       "name": "rt_etf_k",
-      "description": "/数据接口/沪深股票/行情数据/RT/ETF实时日线-获取ETF实时日k线行情，支持按ETF代码或代码通配符一次性提取全部ETF实时日k线行情",
+      "description": "/数据接口/ETF专题/ETF实时日线-获取ETF实时日k线行情，支持按ETF代码或代码通配符一次性提取全部ETF实时日k线行情。单次最多返回 2000 条。更新：盘中实时更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -13194,6 +13242,7 @@
             ]
           },
           "ts_code": {
+            "pattern": "^((5.+\\.SH|1.+\\.SZ),?)+$",
             "description": "逗号隔开多个code",
             "anyOf": [
               {
@@ -13219,7 +13268,7 @@
     },
     {
       "name": "hk_adjfactor",
-      "description": "/数据接口/港股数据/港股复权因子-获取港股每日复权因子数据，每天滚动刷新",
+      "description": "/数据接口/港股数据/港股复权因子-获取港股每日复权因子数据，每天滚动刷新。单次最多返回 6000 条。更新：交易日21点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -13280,7 +13329,7 @@
     },
     {
       "name": "us_adjfactor",
-      "description": "/数据接口/美股数据/美股复权因子-获取美股每日复权因子数据，在每天美股收盘后滚动刷新",
+      "description": "/数据接口/美股数据/美股复权因子-获取美股每日复权因子数据，在每天美股收盘后滚动刷新。单次最多返回 15000 条。更新：交易日9:00",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -13341,7 +13390,7 @@
     },
     {
       "name": "rt_idx_k",
-      "description": "/数据接口/指数专题/实时日线-获取交易所指数实时日线行情，支持按代码或代码通配符一次性提取全部交易所指数实时日k线行情",
+      "description": "/数据接口/指数专题/实时日线-获取交易所指数实时日线行情，支持按代码或代码通配符一次性提取全部交易所指数实时日k线行情。单次最多返回 1000 条。更新：盘中实时更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -13357,6 +13406,7 @@
             ]
           },
           "ts_code": {
+            "pattern": "^((0.+\\.SH|3.+\\.SZ),?)+$",
             "description": "指数代码，支持通配符方式，e.g. 0\\*.SH、3\\*.SZ、000001.SH",
             "anyOf": [
               {
@@ -13382,7 +13432,7 @@
     },
     {
       "name": "npr",
-      "description": "/数据接口/大模型语料专题数据/国家政策库-获取国家行政机关公开披露的各类法规、条例政策、批复、通知等文本数据。",
+      "description": "/数据接口/大模型语料专题数据/国家政策库-获取国家行政机关公开披露的各类法规、条例政策、批复、通知等文本数据。单次最多返回 500 条。更新：每天8、15点50分",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -13443,7 +13493,7 @@
     },
     {
       "name": "etf_share_size",
-      "description": "/数据接口/ETF专题/ETF份额规模-获取沪深ETF每日份额和规模数据，能体现规模份额的变化，掌握ETF资金动向，同时提供每日净值和收盘价；数据指标是分批入库，建议在每日19点后提取；另外，涉及海外的ETF数据更新会晚一些属于正常情况。",
+      "description": "/数据接口/ETF专题/ETF份额规模-获取沪深ETF每日份额和规模数据，能体现规模份额的变化，掌握ETF资金动向，同时提供每日净值和收盘价；数据指标是分批入库，建议在每日19点后提取；另外，涉及海外的ETF数据更新会晚一些属于正常情况。单次最多返回 5000 条。更新：每日8:35更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -13515,7 +13565,7 @@
     },
     {
       "name": "research_report",
-      "description": "/数据接口/大模型语料专题数据/券商研究报告-获取券商研究报告-个股、行业等，历史数据从20170101开始提供，增量每天两次更新",
+      "description": "/数据接口/大模型语料专题数据/券商研究报告-获取券商研究报告-个股、行业等，历史数据从20170101开始提供，增量每天两次更新。单次最多返回 1000 条。更新：每12个小时更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -13609,11 +13659,14 @@
     },
     {
       "name": "rt_sw_k",
-      "description": "/数据接口/指数专题/申万实时行情-获取申万行业指数的最新截面数据",
+      "description": "/数据接口/指数专题/申万实时行情-获取申万行业指数的最新截面数据。单次最多返回 1000 条。更新：盘中实时更新",
       "inputSchema": {
         "type": "object",
         "properties": {
           "topic": {
+            "enum": [
+              "HQ_IDX_TICK"
+            ],
             "description": "行情主题",
             "anyOf": [
               {
@@ -13625,6 +13678,7 @@
             ]
           },
           "ts_code": {
+            "pattern": "^([\\d\\*]+.SI,?)+$",
             "description": "指数代码",
             "anyOf": [
               {
@@ -13648,11 +13702,18 @@
     },
     {
       "name": "idx_mins",
-      "description": "/数据接口/指数专题/指数历史分钟-获取交易所指数分钟数据，支持1min/5min/15min/30min/60min行情，提供Python SDK和 http Restful API两种方式",
+      "description": "/数据接口/指数专题/指数历史分钟-获取交易所指数分钟数据，支持1min/5min/15min/30min/60min行情，提供Python SDK和 http Restful API两种方式。单次最多返回 8000 条。更新：工作日20:30",
       "inputSchema": {
         "type": "object",
         "properties": {
           "freq": {
+            "enum": [
+              "1min",
+              "5min",
+              "15min",
+              "60min",
+              "30min"
+            ],
             "description": "分钟频度",
             "anyOf": [
               {
@@ -13712,7 +13773,7 @@
     },
     {
       "name": "st",
-      "description": "/数据接口/沪深股票/基础数据/ST风险警示板股票列表-ST风险警示板股票列表",
+      "description": "/数据接口/沪深股票/基础数据/ST风险警示板股票列表-ST风险警示板股票列表。单次最多返回 1000 条。更新：每日早晚9点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -13762,7 +13823,7 @@
     },
     {
       "name": "p_list",
-      "description": "/数据接口/自选组合/组合列表-自选股组合查询，不加参数查询出所有自定义组合",
+      "description": "/数据接口/自选组合/组合列表-自选股组合查询，不加参数查询出所有自定义组合。单次最多返回 200 条",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -13864,7 +13925,7 @@
     },
     {
       "name": "p_delete",
-      "description": "/数据接口/自选组合/组合删除-删除自选股组合",
+      "description": "/数据接口/自选组合/组合删除-删除自选股组合。单次最多返回 200 条",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -13894,7 +13955,7 @@
     },
     {
       "name": "p_get",
-      "description": "/数据接口/自选组合/成分查询-查询组合的成分列表",
+      "description": "/数据接口/自选组合/成分查询-查询组合的成分列表。单次最多返回 3000 条",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -13924,7 +13985,7 @@
     },
     {
       "name": "stk_shock",
-      "description": "/数据接口/沪深股票/参考数据/个股异常波动-根据证券交易所交易规则的有关规定，交易所每日发布股票交易异常波动情况",
+      "description": "/数据接口/沪深股票/参考数据/个股异常波动-根据证券交易所交易规则的有关规定，交易所每日发布股票交易异常波动情况。单次最多返回 1000 条。更新：每日20:30~22:00之间更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -13985,7 +14046,7 @@
     },
     {
       "name": "stk_high_shock",
-      "description": "/数据接口/沪深股票/参考数据/个股严重异常波动-根据证券交易所交易规则的有关规定，交易所每日发布股票交易严重异常波动情况",
+      "description": "/数据接口/沪深股票/参考数据/个股严重异常波动-根据证券交易所交易规则的有关规定，交易所每日发布股票交易严重异常波动情况。单次最多返回 1000 条。更新：每日20:30~21:30之间更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -14046,7 +14107,7 @@
     },
     {
       "name": "cb_rating",
-      "description": "/数据接口/债券专题/可转债债券评级-获取可转债评级历史记录",
+      "description": "/数据接口/债券专题/可转债债券评级-获取可转债评级历史记录。单次最多返回 3000 条。更新：不定期更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -14076,7 +14137,7 @@
     },
     {
       "name": "stk_alert",
-      "description": "/数据接口/沪深股票/参考数据/交易所重点提示证券-根据证券交易所交易规则的有关规定，交易所每日发布重点提示证券",
+      "description": "/数据接口/沪深股票/参考数据/交易所重点提示证券-根据证券交易所交易规则的有关规定，交易所每日发布重点提示证券。单次最多返回 1000 条。更新：每日20:30~21:30之间",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -14137,7 +14198,7 @@
     },
     {
       "name": "rt_etf_sz_iopv",
-      "description": "/数据接口/ETF专题/深交所ETF实时快照-ETF实时净值和申购赎回数据参考，目前只提供深市",
+      "description": "/数据接口/ETF专题/深交所ETF实时快照-ETF实时净值和申购赎回数据参考，目前只提供深市。单次最多返回 5000 条。更新：盘中实时更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -14176,7 +14237,7 @@
     },
     {
       "name": "top10_cb_holders",
-      "description": "/数据接口/债券专题/可转债十大持有人-获取可转债前十大持有人",
+      "description": "/数据接口/债券专题/可转债十大持有人-获取可转债前十大持有人。单次最多返回 3000 条。更新：每日早晚9点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -14239,7 +14300,7 @@
     },
     {
       "name": "idx_anns",
-      "description": "/数据接口/ETF专题/指数公告-获取指数公司披露的相关公告信息，包括中证指数、国证指数、恒生指数和华证指数的及时与历史公告信息，跟踪指数最新信息和发展方向。",
+      "description": "/数据接口/ETF专题/指数公告-获取指数公司披露的相关公告信息，包括中证指数、国证指数、恒生指数和华证指数的及时与历史公告信息，跟踪指数最新信息和发展方向。单次最多返回 1000 条。更新：每日每隔1小时更新一次",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -14300,7 +14361,7 @@
     },
     {
       "name": "cn_schedule",
-      "description": "/数据接口/宏观经济/国内宏观/中国经济数据发布日程-获取国家统计局、中国人民银行等经济数据发布日程及对应tushare接口，持续更新中",
+      "description": "/数据接口/宏观经济/国内宏观/中国经济数据发布日程-获取国家统计局、中国人民银行等经济数据发布日程及对应tushare接口，持续更新中。单次最多返回 3000 条。更新：每日不定期更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -14339,7 +14400,7 @@
     },
     {
       "name": "mkt_idx_bmk",
-      "description": "/数据接口/公募基金/基金业绩基准-获取官方发布的ETF业绩比较基准列表信息，分为一类库、二类库",
+      "description": "/数据接口/公募基金/基金业绩基准-获取官方发布的ETF业绩比较基准列表信息，分为一类库、二类库。单次最多返回 500 条。更新：不定期更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -14389,11 +14450,19 @@
     },
     {
       "name": "sw_mins",
-      "description": "/数据接口/指数专题/SW历史分钟-获取申万指数分钟数据",
+      "description": "/数据接口/指数专题/SW历史分钟-获取申万指数分钟数据。单次最多返回 5000 条。更新：每日19:00~20点之间",
       "inputSchema": {
         "type": "object",
         "properties": {
           "freq": {
+            "enum": [
+              "1min",
+              "3min",
+              "5min",
+              "15min",
+              "60min",
+              "30min"
+            ],
             "description": "分钟频度",
             "anyOf": [
               {
@@ -14453,7 +14522,7 @@
     },
     {
       "name": "monetary_policy",
-      "description": "/数据接口/大模型语料专题数据/央行货币政策执行报告-获取央行季度更新的货币政策执行报告，历史数据开始于2001年每年四篇，提供原始PDF下载链接，可用于分析过去20多年央行货币政策的动向、宏观以及金融市场的情况。",
+      "description": "/数据接口/大模型语料专题数据/央行货币政策执行报告-获取央行季度更新的货币政策执行报告，历史数据开始于2001年每年四篇，提供原始PDF下载链接，可用于分析过去20多年央行货币政策的动向、宏观以及金融市场的情况。单次最多返回 1000 条。更新：月度更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -14492,7 +14561,7 @@
     },
     {
       "name": "fut_trade_cal",
-      "description": "/数据接口/期货数据/期货交易日历-获取各大期货交易所交易日历数据",
+      "description": "/数据接口/期货数据/期货交易日历-获取各大期货交易所交易日历数据。单次最多返回 120000 条。更新：不定期更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -14564,7 +14633,7 @@
     },
     {
       "name": "fut_index_daily",
-      "description": "/数据接口/期货数据/南华指数日线行情-获取南华指数每日行情，指数行情也可以通过[**通用行情接口**]( https://tushare.pro/document/2?doc_id=109)获取数据．",
+      "description": "/数据接口/期货数据/南华指数日线行情-获取南华指数每日行情，指数行情也可以通过[**通用行情接口**]( https://tushare.pro/document/2?doc_id=109)获取数据．单次最多返回 8000 条。更新：每天9:30,19:00更新。参数约束：ts_code：当 trade_date 为空时必填",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -14627,11 +14696,18 @@
     },
     {
       "name": "etf_mins",
-      "description": "/数据接口/ETF专题/ETF分钟行情-获取ETF分钟数据，支持1min/5min/15min/30min/60min行情",
+      "description": "/数据接口/ETF专题/ETF分钟行情-获取ETF分钟数据，支持1min/5min/15min/30min/60min行情。单次最多返回 8000 条。更新：每日19~20点之间",
       "inputSchema": {
         "type": "object",
         "properties": {
           "freq": {
+            "enum": [
+              "1min",
+              "5min",
+              "15min",
+              "60min",
+              "30min"
+            ],
             "description": "分钟频度",
             "anyOf": [
               {
@@ -14691,11 +14767,18 @@
     },
     {
       "name": "rt_etf_min",
-      "description": "/数据接口/沪深股票/行情数据/RT/ETF实时分钟-获取ETF实时分钟数据，包括1~60min",
+      "description": "/数据接口/ETF专题/ETF实时分钟-获取ETF实时分钟数据，包括1~60min。单次最多返回 1000 条。更新：盘中按1~60min实时更新",
       "inputSchema": {
         "type": "object",
         "properties": {
           "freq": {
+            "enum": [
+              "1MIN",
+              "5MIN",
+              "15MIN",
+              "30MIN",
+              "60MIN"
+            ],
             "description": "1MIN,5MIN,15MIN,30MIN,60MIN",
             "anyOf": [
               {
@@ -14707,6 +14790,13 @@
             ]
           },
           "topic": {
+            "enum": [
+              "HQ_STK_MIN",
+              "HQ_OPT_MIN",
+              "HQ_IDX_MIN",
+              "HQ_BND_MIN",
+              "HQ_FND_MIN"
+            ],
             "description": "分类参数，取上海ETF时，需要输入HQ_FND_TICK",
             "anyOf": [
               {
@@ -14718,6 +14808,7 @@
             ]
           },
           "ts_code": {
+            "pattern": "^(.+\\.SH|.+\\.SZ|.+\\.BJ)+$",
             "description": "股票代码，支持单个和多个：589960.SH 或者 589960.SH,159100.SZ",
             "anyOf": [
               {
@@ -14744,11 +14835,18 @@
     },
     {
       "name": "rt_etf_min_daily",
-      "description": "/数据接口/沪深股票/行情数据/RT/ETF实时分钟-日累计-获取etf当日盘中历史分钟数据，可以提取单只股票当日开盘以来的所有分钟数据",
+      "description": "/数据接口/ETF专题/ETF实时分钟-日累计-获取etf当日盘中历史分钟数据，可以提取单只股票当日开盘以来的所有分钟数据。单次最多返回 2000 条。更新：盘中按1~60min实时更新",
       "inputSchema": {
         "type": "object",
         "properties": {
           "freq": {
+            "enum": [
+              "1MIN",
+              "5MIN",
+              "15MIN",
+              "30MIN",
+              "60MIN"
+            ],
             "description": "1MIN,5MIN,15MIN,30MIN,60MIN",
             "anyOf": [
               {
@@ -14760,6 +14858,12 @@
             ]
           },
           "topic": {
+            "enum": [
+              "HQ_STK_MIN",
+              "HQ_OPT_MIN",
+              "HQ_IDX_MIN",
+              "HQ_FND_MIN"
+            ],
             "description": "分类参数，取上海ETF时，需要输入HQ_FND_TICK",
             "anyOf": [
               {
@@ -14771,6 +14875,7 @@
             ]
           },
           "ts_code": {
+            "pattern": "^(\\d+\\.SH|\\d+\\.SZ|\\d+\\.BJ)+$",
             "description": "基金代码",
             "anyOf": [
               {
@@ -14808,7 +14913,7 @@
     },
     {
       "name": "etf_sh_cons",
-      "description": "/数据接口/ETF专题/ETF每日持仓组合(沪市）-获取上交所场内所有ETF每日的持仓组合信息",
+      "description": "/数据接口/ETF专题/ETF每日持仓组合(沪市）-获取上交所场内所有ETF每日的持仓组合信息。单次最多返回 3000 条。更新：每日早8:35",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -14880,7 +14985,7 @@
     },
     {
       "name": "etf_sz_cons",
-      "description": "/数据接口/ETF专题/ETF每日持仓组合(深市）-获取深交所场内所有ETF每日的持仓组合信息,包括成分股票数量、申赎现金折溢价比例等数据",
+      "description": "/数据接口/ETF专题/ETF每日持仓组合(深市）-获取深交所场内所有ETF每日的持仓组合信息,包括成分股票数量、申赎现金折溢价比例等数据。单次最多返回 3000 条。更新：每日8:35",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -14952,7 +15057,7 @@
     },
     {
       "name": "fina_indicator_vip",
-      "description": "/数据接口/沪深股票/财务数据/财务指标数据-财务指标（VIP）",
+      "description": "/数据接口/沪深股票/财务数据/财务指标数据-财务指标（VIP）。单次最多返回 12000 条",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -15046,7 +15151,7 @@
     },
     {
       "name": "income_vip",
-      "description": "/数据接口/沪深股票/财务数据/利润表-利润表（VIP）",
+      "description": "/数据接口/沪深股票/财务数据/利润表-利润表（VIP）。单次最多返回 9000 条",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -15188,7 +15293,7 @@
     },
     {
       "name": "cashflow_vip",
-      "description": "/数据接口/沪深股票/财务数据/现金流量表-现金流量表（VIP）",
+      "description": "/数据接口/沪深股票/财务数据/现金流量表-现金流量表（VIP）。单次最多返回 6400 条",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -15330,7 +15435,7 @@
     },
     {
       "name": "balancesheet_vip",
-      "description": "/数据接口/沪深股票/财务数据/资产负债表-资产负债表(VIP)",
+      "description": "/数据接口/沪深股票/财务数据/资产负债表-资产负债表(VIP)。单次最多返回 7000 条",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -15468,7 +15573,7 @@
     },
     {
       "name": "fina_mainbz_vip",
-      "description": "/数据接口/沪深股票/财务数据/主营业务构成-主营业务构成（VIP）",
+      "description": "/数据接口/沪深股票/财务数据/主营业务构成-主营业务构成（VIP）。单次最多返回 10000 条",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -15573,7 +15678,7 @@
     },
     {
       "name": "express_vip",
-      "description": "/数据接口/沪深股票/财务数据/业绩快报-业绩快报（VIP）",
+      "description": "/数据接口/沪深股票/财务数据/业绩快报-业绩快报（VIP）。单次最多返回 5000 条",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -15645,7 +15750,7 @@
     },
     {
       "name": "forecast_vip",
-      "description": "/数据接口/沪深股票/财务数据/业绩预告-业绩预告（VIP）",
+      "description": "/数据接口/沪深股票/财务数据/业绩预告-业绩预告（VIP）。单次最多返回 6500 条",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -15728,11 +15833,18 @@
     },
     {
       "name": "rt_fut_min_daily",
-      "description": "/数据接口/期货数据/实时分钟行情-期货行情，日累计",
+      "description": "/数据接口/期货数据/实时分钟行情-期货行情，日累计。单次最多返回 2000 条。更新：实时",
       "inputSchema": {
         "type": "object",
         "properties": {
           "freq": {
+            "enum": [
+              "1MIN",
+              "5MIN",
+              "15MIN",
+              "30MIN",
+              "60MIN"
+            ],
             "description": "分钟类型",
             "anyOf": [
               {
@@ -15744,6 +15856,9 @@
             ]
           },
           "topic": {
+            "enum": [
+              "HQ_FUT_MIN"
+            ],
             "description": "主题",
             "anyOf": [
               {
@@ -15792,11 +15907,18 @@
     },
     {
       "name": "rt_idx_min_daily",
-      "description": "/数据接口/指数专题/指数实时分钟-指数分钟数据按天的累计",
+      "description": "/数据接口/指数专题/指数实时分钟-指数分钟数据按天的累计。单次最多返回 5000 条。更新：交易日9:30",
       "inputSchema": {
         "type": "object",
         "properties": {
           "freq": {
+            "enum": [
+              "1MIN",
+              "5MIN",
+              "15MIN",
+              "30MIN",
+              "60MIN"
+            ],
             "description": "1MIN,5MIN,15MIN,30MIN,60MIN",
             "anyOf": [
               {
@@ -15808,6 +15930,9 @@
             ]
           },
           "topic": {
+            "enum": [
+              "HQ_IDX_MIN"
+            ],
             "description": "主题",
             "anyOf": [
               {
@@ -15819,6 +15944,7 @@
             ]
           },
           "ts_code": {
+            "pattern": "^(\\d+\\.SH|\\d+\\.SZ|\\d+\\.BJ)+$",
             "description": "指数代码，支持单个和多个：000001.SH 或者 000001.SH,399300.SZ",
             "anyOf": [
               {
@@ -15856,7 +15982,7 @@
     },
     {
       "name": "factor_list",
-      "description": "/数据接口/量化因子库/因子列表-提取Tushare自主研发生产的因子列表，包括因子名、因子分类和计算逻辑等信息",
+      "description": "/数据接口/量化因子库/因子列表-提取Tushare自主研发生产的因子列表，包括因子名、因子分类和计算逻辑等信息。单次最多返回 6000 条。更新：每天18点30~19点30之间",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -15917,7 +16043,7 @@
     },
     {
       "name": "factor_value",
-      "description": "/数据接口/量化因子库/因子数据-获取Tushare因子库里各因子的数值，目前是基于daily的时间序列数值。",
+      "description": "/数据接口/量化因子库/因子数据-获取Tushare因子库里各因子的数值，目前是基于daily的时间序列数值。单次最多返回 6000 条。更新：每日18点半~19点半之间更新。参数约束：ts_code,factor_name至少输入一个参数",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -15989,7 +16115,7 @@
     },
     {
       "name": "etf_limit",
-      "description": "/数据接口/ETF专题/ETF每日涨跌停价格-获取ETF每日涨跌停价格，包括涨停价格，跌停价格等，每个交易日8点40左右更新当日股票涨跌停价格。",
+      "description": "/数据接口/ETF专题/ETF每日涨跌停价格-获取ETF每日涨跌停价格，包括涨停价格，跌停价格等，每个交易日8点40左右更新当日股票涨跌停价格。单次最多返回 3000 条。更新：每个交易日9点左右",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -16061,7 +16187,7 @@
     },
     {
       "name": "fut_daily_adj",
-      "description": "/数据接口/期货数据/期货复权行情-获取主力合约的复权日线行情",
+      "description": "/数据接口/期货数据/期货复权行情-获取主力合约的复权日线行情。单次最多返回 3000 条。更新：每天22点更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -16133,7 +16259,7 @@
     },
     {
       "name": "etf_auction",
-      "description": "/数据接口/ETF专题/ETF当日集合竞价-获取当日ETF的集合竞价成交情况，每天9点25~29分之间可以获取当日的集合竞价成交数据",
+      "description": "/数据接口/ETF专题/ETF当日集合竞价-获取当日ETF的集合竞价成交情况，每天9点25~29分之间可以获取当日的集合竞价成交数据。单次最多返回 3000 条。更新：交易日9点27",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -16205,7 +16331,7 @@
     },
     {
       "name": "stk_seasoned",
-      "description": "/数据接口/沪深股票/参考数据/股票增发-获取上市公司针对A股增发的明细，覆盖历次增发预案、全流程进程节点、发行核心参数、配售情况及募资费用等增发信息。",
+      "description": "/数据接口/沪深股票/参考数据/股票增发-获取上市公司针对A股增发的明细，覆盖历次增发预案、全流程进程节点、发行核心参数、配售情况及募资费用等增发信息。单次最多返回 3000 条。更新：每日早晚9:00更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -16266,7 +16392,7 @@
     },
     {
       "name": "fut_inv_weekly",
-      "description": "/数据接口/期货数据/期货交易所库存周报-获取上海期货交易所库存周报",
+      "description": "/数据接口/期货数据/期货交易所库存周报-获取上海期货交易所库存周报。单次最多返回 3000 条。更新：每周更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -16327,7 +16453,7 @@
     },
     {
       "name": "fut_trade_param",
-      "description": "/数据接口/期货数据/期货交易参数-获取郑商所期货交易参数数据",
+      "description": "/数据接口/期货数据/期货交易参数-获取郑商所期货交易参数数据。单次最多返回 3000 条。更新：交易日19点更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -16388,7 +16514,7 @@
     },
     {
       "name": "fut_rcpt_mat",
-      "description": "/数据接口/期货数据/标准仓单到期数量-获取上海期货标准仓单到期数量数据",
+      "description": "/数据接口/期货数据/标准仓单到期数量-获取上海期货标准仓单到期数量数据。单次最多返回 3000 条。更新：每月第一周更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -16449,7 +16575,7 @@
     },
     {
       "name": "vix_index",
-      "description": "/数据接口/指数专题/美股恐慌指数行情-获取恐慌指数行情数据",
+      "description": "/数据接口/指数专题/美股恐慌指数行情-获取恐慌指数行情数据。单次最多返回 300 条。更新：9:30更新上一交易日",
       "inputSchema": {
         "type": "object",
         "properties": {

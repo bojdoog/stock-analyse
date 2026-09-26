@@ -192,6 +192,7 @@ export interface StrategyParams {
   /** 买入比例，单位为百分比，如 30 表示 30% */
   weights: number[];
   bearStartYear: number;
+  bearBuyBank: boolean;
   startYear: number;
   endYear: number;
   /** 多头区间买入排名方式：etf_gain=ETF涨幅排名, ths_moneyflow=同花顺板块流入, ths_concept=同花顺概念流入, dc_moneyflow=东财板块流入 */
@@ -206,6 +207,7 @@ export const DEFAULT_STRATEGY_PARAMS: StrategyParams = {
   bullStartUseMA10: true,
   weights: [30, 30, 20, 10, 10],
   bearStartYear: 2024,
+  bearBuyBank: true,
   startYear: 2019,
   endYear: new Date().getFullYear(),
   rankingMethod: 'etf_gain',
@@ -966,7 +968,7 @@ export function runBacktest(
     } else {
       // 从指定年份开始，空头区间才买入银行 ETF
       const zoneStartYear = parseInt(startDate.split('-')[0], 10);
-      if (zoneStartYear < bearStartYear) return;
+      if (params.bearBuyBank === false || zoneStartYear < bearStartYear) return;
 
       const data = etfMap.get(BANK_ETF_NAME);
       if (!data) return;

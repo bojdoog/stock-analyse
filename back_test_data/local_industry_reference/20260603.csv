@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260603,881129.TI,通信设备,美信科技,10462.9,1.95,91,13.97,98.46,1298.0,1184.0,113.0,515880,通信ETF
 20260603,881121.TI,半导体,源杰科技,17045.7,2.34,179,16.41,1405.0,1901.0,1848.0,52.0,512480,半导体ETF
 20260603,881170.TI,小金属,东方锆业,9720.47,2.46,29,10.01,14.73,273.0,236.0,36.0,512400,有色ETF

@@ -11,7 +11,7 @@ from market_store import DEFAULT_DATABASE, FLOW_NUMBERS, FLOW_TEXT, connect, wri
 from mysql_backend import ensure_schema, settings
 
 TABLES = ('indicators', 'source_files', 'import_events', 'instruments', 'daily_bars',
-          'indicator_daily', 'moneyflow_ind_dc', 'moneyflow_cnt_ths', 'moneyflow_ind_ths')
+          'indicator_daily', 'indicator_intraday', 'moneyflow_ind_dc', 'moneyflow_cnt_ths', 'moneyflow_ind_ths')
 
 
 def layout(source, table):

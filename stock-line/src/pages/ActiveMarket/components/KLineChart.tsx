@@ -45,7 +45,9 @@ const DEFAULT_ZONE_PARAMS: ZoneParams = {
 };
 
 interface KLineChartProps {
+  onDayDoubleClick?: (date: string) => void;
   dateWindowRef?: React.MutableRefObject<{ start: string; end: string } | null>;
+  defaultWindowYears?: number;
   data: KLineData[];
   highlightThreshold?: number;
   showBullZoneBg?: boolean;
@@ -86,7 +88,9 @@ const alignDataToDates = (source: KLineData[], dates: string[]): KLineData[] => 
 };
 
 const KLineChart: React.FC<KLineChartProps> = ({
+  onDayDoubleClick,
   dateWindowRef,
+  defaultWindowYears,
   data,
   highlightThreshold = 4,
   showBullZoneBg = false,
@@ -114,6 +118,8 @@ const KLineChart: React.FC<KLineChartProps> = ({
   const showVolume = requestedShowVolume && !closeOnly;
   const chartRef = useRef<HTMLDivElement>(null);
   const chartInstance = useRef<ECharts | null>(null);
+  const doubleClickRef = useRef(onDayDoubleClick);
+  doubleClickRef.current = onDayDoubleClick;
   const localDateWindow = useRef<{ start: string; end: string } | null>(null);
   const zoomRange = dateWindowRef ?? localDateWindow;
 
@@ -176,9 +182,19 @@ const KLineChart: React.FC<KLineChartProps> = ({
       const index = dates.findIndex(value => value >= date);
       return index < 0 ? dates.length - 1 : index;
     };
+    const defaultStartDate = new Date(`${dates[dates.length - 1]}T00:00:00Z`);
+    if (defaultWindowYears) {
+      const dayOfMonth = defaultStartDate.getUTCDate();
+      defaultStartDate.setUTCDate(1);
+      defaultStartDate.setUTCMonth(defaultStartDate.getUTCMonth() - Math.round(defaultWindowYears * 12));
+      const lastDayOfMonth = new Date(Date.UTC(defaultStartDate.getUTCFullYear(), defaultStartDate.getUTCMonth() + 1, 0)).getUTCDate();
+      defaultStartDate.setUTCDate(Math.min(dayOfMonth, lastDayOfMonth));
+    }
     const initialStart = savedWindow
       ? firstAtOrAfter(savedWindow.start)
-      : Math.round((dates.length - 1) * 0.9);
+      : defaultWindowYears
+        ? firstAtOrAfter(defaultStartDate.toISOString().slice(0, 10))
+        : Math.round((dates.length - 1) * 0.9);
     const afterEnd = savedWindow ? dates.findIndex(value => value > savedWindow.end) : -1;
     const initialEnd = Math.max(initialStart, afterEnd < 0 ? dates.length - 1 : Math.max(0, afterEnd - 1));
     // 首次展示也记录窗口；恢复时不覆盖原窗口，以便切回历史更长的指标。
@@ -491,8 +507,8 @@ const KLineChart: React.FC<KLineChartProps> = ({
         type: 'value',
         scale: true,
         splitArea: { show: false },
-        splitLine: { show: true, lineStyle: { color: '#eee' } },
-        axisLine: { lineStyle: { color: '#ccc' } },
+        splitLine: { show: true, lineStyle: { color: '#edf1f2' } },
+        axisLine: { lineStyle: { color: '#dce4e6' } },
         axisLabel: { color: '#666' },
         // axisLabel: { color: '#666', width: 60, align: 'right', overflow: 'truncate' }
       },
@@ -528,7 +544,7 @@ const KLineChart: React.FC<KLineChartProps> = ({
         show: true,
         data: legendData,
         selected: legendSelected,
-        textStyle: { color: '#333' },
+        textStyle: { color: '#6c8088', fontSize: 11 }, itemWidth: 18, itemHeight: 9, itemGap: 22,
         top: 10
       },
       tooltip: {
@@ -662,7 +678,7 @@ const KLineChart: React.FC<KLineChartProps> = ({
       },
       grid: showVolume
         ? [
-          { left: 80, right: 80, height: '55%', top: '15%' },
+          { left: 80, right: 80, height: '57%', top: '11%' },
           { left: 80, right: 80, top: '72%', height: '16%' }
         ]
         : [{ left: 80, right: 80, height: '75%', top: '15%' }],
@@ -673,7 +689,7 @@ const KLineChart: React.FC<KLineChartProps> = ({
             data: dates,
             scale: true,
             boundaryGap: false,
-            axisLine: { onZero: false, lineStyle: { color: '#ccc' } },
+            axisLine: { onZero: false, lineStyle: { color: '#dce4e6' } },
             splitLine: { show: false },
             axisLabel: { color: '#666' },
             min: 'dataMin',
@@ -685,7 +701,7 @@ const KLineChart: React.FC<KLineChartProps> = ({
             data: dates,
             scale: true,
             boundaryGap: false,
-            axisLine: { onZero: false, lineStyle: { color: '#ccc' } },
+            axisLine: { onZero: false, lineStyle: { color: '#dce4e6' } },
             axisTick: { show: false },
             splitLine: { show: false },
             axisLabel: { show: false },
@@ -698,7 +714,7 @@ const KLineChart: React.FC<KLineChartProps> = ({
           data: dates,
           scale: true,
           boundaryGap: false,
-          axisLine: { onZero: false, lineStyle: { color: '#ccc' } },
+          axisLine: { onZero: false, lineStyle: { color: '#dce4e6' } },
           splitLine: { show: false },
           axisLabel: { color: '#666' },
           min: 'dataMin',
@@ -722,9 +738,9 @@ const KLineChart: React.FC<KLineChartProps> = ({
           endValue: initialEnd,
           rangeMode: ['value', 'value'],
           textStyle: { color: '#666' },
-          borderColor: '#ddd',
-          fillerColor: 'rgba(100,100,100,0.1)',
-          handleStyle: { color: '#999' }
+          borderColor: '#e3ebec',
+          fillerColor: 'rgba(22,125,141,0.09)',
+          handleStyle: { color: '#6b9ba3' }
         }] : [])
       ],
       series: [
@@ -813,6 +829,18 @@ const KLineChart: React.FC<KLineChartProps> = ({
     };
 
     chartInstance.current.setOption(option);
+    const chart = chartInstance.current;
+    // Listen on the canvas so blank space and overlays share the same date hit area.
+    const handleDayDoubleClick = (event: { offsetX: number; offsetY: number }) => {
+      if (!doubleClickRef.current) return;
+      const point = [event.offsetX, event.offsetY];
+      if (!chart.containPixel({ gridIndex: 0 }, point)) return;
+      const index = chart.convertFromPixel({ xAxisIndex: 0 }, event.offsetX);
+      if (typeof index !== 'number' || !Number.isFinite(index)) return;
+      const day = dates[Math.round(index)];
+      if (day) doubleClickRef.current(day);
+    };
+    chart.getZr().on('dblclick', handleDayDoubleClick);
 
     // 设置同步组，使多个图表共享缩放/平移
     if (syncGroup) {
@@ -850,13 +878,14 @@ const KLineChart: React.FC<KLineChartProps> = ({
     }
 
     return () => {
+      chart.getZr().off('dblclick', handleDayDoubleClick);
       window.removeEventListener('resize', handleResize);
       if (resizeObserver) {
         resizeObserver.disconnect();
       }
       chartInstance.current?.dispose();
     };
-  }, [data, highlightThreshold, showBullZoneBg, showBearZoneBg, extraSeries, allETFSeries, syncGroup, dataLabel, mainSeriesName, seriesType, showVolume, showRanking, showZones, maxDate, showDataZoom, baseDates, zoneParams, zoomRange]);
+  }, [data, highlightThreshold, showBullZoneBg, showBearZoneBg, extraSeries, allETFSeries, syncGroup, dataLabel, mainSeriesName, seriesType, showVolume, showRanking, showZones, maxDate, showDataZoom, baseDates, zoneParams, zoomRange, defaultWindowYears]);
 
   return (
     <div

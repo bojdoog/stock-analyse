@@ -1,0 +1,7 @@
+.amv-intraday-subtitle { color: #8a9ba2; font-size: 12px; font-weight: 400; }
+.amv-intraday-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 16px 0; border-bottom: 1px solid #edf1f3; button + button { margin-left: 8px; } }
+.amv-intraday-stats { display: grid; grid-template-columns: 1.3fr repeat(4, 1fr); gap: 12px; padding: 20px 0 14px; span { display: block; color: #81929a; font-size: 12px; } strong { display: block; margin-top: 5px; font-size: 20px; font-variant-numeric: tabular-nums; color: #304b55; } }
+.amv-intraday-chart { width: 100%; height: min(52vh, 470px); min-height: 300px; }
+.amv-intraday-state { min-height: 340px; display: flex; align-items: center; justify-content: center; }
+.amv-intraday-footnote { color: #8a9ba2; font-size: 11px; border-top: 1px solid #edf1f3; padding-top: 12px; }
+@media (max-width: 700px) { .amv-intraday-stats { grid-template-columns: repeat(2, 1fr); strong { font-size: 17px; } } .amv-intraday-toolbar { flex-wrap: wrap; } }

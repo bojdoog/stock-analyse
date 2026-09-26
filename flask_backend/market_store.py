@@ -19,6 +19,24 @@ PROJECT = Path(__file__).resolve().parent.parent
 DEFAULT_DATABASE = PROJECT / 'flask_backend/instance/stock_analyse.sqlite3'
 FLOW_TABLES = {kind: 'moneyflow_' + kind for kind in ('ind_dc', 'cnt_ths', 'ind_ths')}
 PRICE_FIELDS = ('open', 'high', 'low', 'close', 'volume', 'amount')
+AMV_EMA20_DESCRIPTION = (
+    '基于90个同花顺行业的流通市值、换手率与指数收盘价，估算近期活跃交易对应的市值。\n'
+    '公式：AMV(t) = 7.695442042177039 × Σᵢ[P(i,t) × Q(i,t)]。\n'
+    '其中 M=行业流通市值float_mv÷10⁸（亿元），h=行业换手率turnover_rate÷100，'
+    'P=行业指数收盘点位，q=M×h÷P（换手量代理值，不是真实股数）。\n'
+    'Q=EMA20(q)：Q(t)=(2/21)×q(t)+(19/21)×Q(t−1)，首日Q=q；'
+    '从2024-09-10初始化，span=20、adjust=False，并非20日简单平均。'
+    '先逐行业平滑q，再乘当日P，最后汇总90个行业。\n'
+    '7.695442042177039为训练期标定系数；输出沿用原AMV数值尺度，不确认单位为亿元。'
+    '这是反推的替代公式，尚未证明为指南针原公式；独立续算不使用原AMV值，资金流数据未纳入公式。'
+)
+
+
+def amv_ema20_description(synthetic):
+    return AMV_EMA20_DESCRIPTION + ('\n图表口径：close为公式估算值；open取前一交易日close（首日取自身close），'
+        'high/low取open与close的最大/最小值；volume/amount取同日上证指数000001.SH（手/千元）。'
+        '合成K线不代表真实盘中高低价。' if synthetic else '\n图表口径：仅有每日收盘估算值。')
+
 FLOW_NUMBERS = ('pct_change', 'close', 'close_price', 'industry_index', 'company_num',
                 'pct_change_stock', 'net_buy_amount', 'net_sell_amount', 'net_inflow',
                 'net_amount_rate', 'super_large_inflow', 'large_inflow', 'rank')
@@ -115,6 +133,8 @@ def ensure_schema(db):
             row_number INTEGER NOT NULL, PRIMARY KEY(date,sector_key,occurrence))''')
         db.execute(f'CREATE INDEX IF NOT EXISTS {table}_source ON {table}(source_path)')
         db.execute(f'CREATE INDEX IF NOT EXISTS {table}_sector ON {table}(sector_key,date)')
+    from intraday_store import ensure_schema as intraday_schema
+    intraday_schema(db)
     seed_indicator(db)
 
 
@@ -219,9 +239,10 @@ def _import_content(db, relative_path, content, pending=False):
     """Atomically replace one changed source snapshot; identical imports are no-ops."""
     relative_path = Path(relative_path).as_posix()
     parts = relative_path.split('/')
-    if len(parts) != 2 or '..' in parts:
+    intraday = len(parts) == 3 and parts[:2] == ['core_index', '0AMV-intraday'] and parts[-1].endswith('.csv')
+    if (len(parts) != 2 and not intraday) or '..' in parts:
         raise ValueError(f'Expected category/filename: {relative_path}')
-    category, filename = parts
+    category, filename = ('indicator_intraday', parts[-1]) if intraday else parts
     digest = hashlib.sha256(content).hexdigest()
     previous = db.execute('SELECT sha256 FROM source_files WHERE path=?', (relative_path,)).fetchone()
     if previous and previous['sha256'] == digest:
@@ -229,7 +250,9 @@ def _import_content(db, relative_path, content, pending=False):
     rows = csv_rows(content) if filename.endswith('.csv') else []
     table = None
     if filename.endswith('.csv'):
-        if category in ('stock', 'etf', 'index'):
+        if intraday:
+            table = 'indicator_intraday'
+        elif category in ('stock', 'etf', 'index'):
             table = 'daily_bars'
         elif category == 'core_index':
             table = 'indicator_daily'
@@ -242,6 +265,9 @@ def _import_content(db, relative_path, content, pending=False):
     else:
         raise ValueError(f'Unsupported source file: {relative_path}')
     dates = [date_string(row['date']) for row in rows]
+    if intraday:
+        from intraday_store import records as intraday_records
+        snapshots = intraday_records(rows, filename)
     with db:
         upsert(db, 'source_files',
             ('path','category','sha256','content','row_count','min_date','max_date','target_table'), ('path',),
@@ -250,7 +276,11 @@ def _import_content(db, relative_path, content, pending=False):
             ('sha256','content','row_count','min_date','max_date','target_table'), 'imported_at')
         if table:
             db.execute(f'DELETE FROM {table} WHERE source_path=?', (relative_path,))
-        if table == 'daily_bars':
+        if table == 'indicator_intraday':
+            indicator_id = db.execute('SELECT id FROM indicators WHERE code=?', ('0AMV',)).fetchone()[0]
+            db.executemany('INSERT INTO indicator_intraday VALUES(?,?,?,?,?,?,?,?)',
+                           [(indicator_id, *record, relative_path) for record in snapshots])
+        elif table == 'daily_bars':
             cat, exchange, code, name = instrument_identity(category, filename)
             upsert(db, 'instruments', ('category','exchange','code','name','source_path'),
                    ('category','exchange','code'), (cat, exchange, code, name, relative_path),
@@ -263,12 +293,8 @@ def _import_content(db, relative_path, content, pending=False):
                 code = '0AMV'
             elif filename == 'candidate_amv_close.csv':
                 code = 'AMV_EMA20'
-                description = (
-                    'close=原反推EMA20公式；合成K线：open=前一交易日close（首日用自身close），'
-                    'high=max(open,close)，low=min(open,close)；volume/amount取同日上证指数000001.SH（手/千元）。'
-                    '非真实盘中高低价，非指南针原公式。'
-                    if rows and all(row.get('open') not in (None, '') for row in rows) else
-                    '固定比例 7.695442042177039 × 行业市值换手代理 EMA20；只有日收盘估算值，并非指南针原公式。')
+                description = amv_ema20_description(
+                    bool(rows) and all(row.get('open') not in (None, '') for row in rows))
                 upsert(db, 'indicators', ('code','name','source','description'), ('code',),
                        (code, '活跃市值(反推EMA20)', '本地公式', description), ('description',), 'updated_at')
             else:

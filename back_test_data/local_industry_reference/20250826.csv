@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250826,881122.TI,光学光电子,爱克股份,4911.68,1.19,107,12.84,18.63,219.0,197.0,22.0,512480,半导体ETF
 20250826,881124.TI,消费电子,豪声电子,11599.5,1.47,98,12.12,23.49,382.0,364.0,18.0,512480,半导体ETF
 20250826,881102.TI,养殖业,晓鸣股份,3232.27,1.78,38,10.34,24.86,71.0,58.0,12.0,510150,消费ETF

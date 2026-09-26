@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20250604,881129.TI,通信设备,太辰光,5290.52,1.69,88,14.88,78.23,154.0,121.0,33.0,515880,通信ETF
 20250604,881157.TI,证券,光大证券,1423.69,1.39,49,6.43,17.88,104.0,72.0,31.0,512880,证券ETF
 20250604,881122.TI,光学光电子,亚世光电,3891.17,1.51,107,9.98,22.14,63.0,41.0,21.0,512480,半导体ETF

@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260519,881121.TI,半导体,沪硅产业,17965.7,2.85,179,20.0,29.52,1812.0,1628.0,184.0,512480,半导体ETF
 20260519,881145.TI,电力,上海电力,2319.21,3.45,109,10.02,18.45,364.0,301.0,62.0,561380,电网设备ETF
 20260519,881271.TI,IT服务,彩讯股份,14916.9,2.77,130,20.01,29.15,290.0,248.0,42.0,515230,软件ETF

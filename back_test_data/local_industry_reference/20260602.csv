@@ -1,4 +1,4 @@
-date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
+﻿date,ts_code,industry_name,lead_stock,close,pct_change,company_num,pct_change_stock,close_price,net_buy_amount,net_sell_amount,net_inflow,etf_code,etf_name
 20260602,881129.TI,通信设备,阿莱德,10262.8,2.62,91,20.0,44.88,1075.0,852.0,223.0,515880,通信ETF
 20260602,881124.TI,消费电子,英力股份,14011.9,1.17,95,13.34,19.2,482.0,403.0,79.0,512480,半导体ETF
 20260602,881121.TI,半导体,裕太微,16656.4,0.56,179,17.91,217.0,1456.0,1397.0,59.0,512480,半导体ETF

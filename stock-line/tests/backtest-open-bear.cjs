@@ -34,6 +34,13 @@ assert.equal(fresh.navSeries.at(-1).date, '2026-09-18', 'do not extend beyond in
 assert.equal(fresh.navSeries.at(-1).nav, 1.25, 'missing intermediate quote must not lose later gains');
 assert.equal(fresh.yearResults[0].bear_return, 25);
 
+const bankSeries = [{ name: '银行ETF', id: '512800', data: [bar('10', 100), bar('18', 125)] }];
+const disabled = backtest.runBacktest(amv, bankSeries, { ...params, bearBuyBank: false });
+assert.equal(disabled.trades.length, 0, 'disabled bank buying must leave bear periods in cash');
+assert.equal(disabled.totalReturn, 0, 'disabled bank buying must exclude bank returns');
+const beforeStartYear = backtest.runBacktest(amv, bankSeries, { ...params, bearStartYear: 2027 });
+assert.equal(beforeStartYear.trades.length, 0, 'bank buying must respect its starting year');
+
 // Render the annual chart with trades ending earlier than the latest NAV.
 let option;
 const effects = [];
