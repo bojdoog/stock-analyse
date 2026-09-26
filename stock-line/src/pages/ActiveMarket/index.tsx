@@ -76,6 +76,7 @@ const calcDrawdowns = (navs: number[]) => {
 const ActiveMarket: React.FC = () => {
     const [intradayDate, setIntradayDate] = useState<string | null>(null);
     const dateWindowRef = useRef<{ start: string; end: string } | null>(null);
+    const chartQuoteRef = useRef<HTMLDivElement>(null);
     const [data, setData] = useState<KLineData[]>([]);
     const [loading, setLoading] = useState(true);
     const [indicators, setIndicators] = useState<Indicator[]>([]);
@@ -206,13 +207,21 @@ const ActiveMarket: React.FC = () => {
             .catch(err => console.error('加载资金流向数据失败:', err));
     }, []);
 
+    const [backtestError, setBacktestError] = useState<string | null>(null);
     // 数据加载完成后运行多空区间策略回测
     useEffect(() => {
         if (data.length > 0 && allETFSeries.length > 0) {
-            const result = runBacktest(data, allETFSeries, strategyParams, moneyflowData, conceptMoneyflowData, indMoneyflowData);
-            setBacktestResult(result);
+            try {
+                const result = runBacktest(data, allETFSeries, strategyParams, moneyflowData, conceptMoneyflowData, indMoneyflowData);
+                setBacktestResult(result);
+                setBacktestError(null);
+            } catch (error) {
+                setBacktestResult(null);
+                setBacktestError(error instanceof Error ? error.message : '回测计算失败');
+            }
         } else {
             setBacktestResult(null);
+            setBacktestError(null);
         }
     }, [data, allETFSeries, strategyParams, moneyflowData, conceptMoneyflowData, indMoneyflowData]);
 
@@ -627,7 +636,53 @@ const ActiveMarket: React.FC = () => {
                             }}>
                                 合计：{strategyParams.weights.reduce((a, b) => a + b, 0).toFixed(0)}%
                             </span>
+                            <Tooltip title="实际仓位＝配比×倍率；多头 ETF 和空头银行均适用。盈利保护按账户净值计算，暂不计融资利息及强平规则。">
+                                <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 13, color: '#666' }}>
+                                    <span id="leverage-multiplier-label">杠杆倍率</span>
+                                    <InputNumber aria-labelledby="leverage-multiplier-label" min={0} step={0.1}
+                                        value={strategyParams.leverageMultiplier ?? 1} style={{ width: 100 }}
+                                        onChange={value => {
+                                            if (value === null || !Number.isFinite(value) || value < 0) return;
+                                            setActivePreset('custom');
+                                            setStrategyParams(p => ({ ...p, leverageMultiplier: value }));
+                                        }} />
+                                    倍
+                                </span>
+                            </Tooltip>
                         </div>
+                    </div>
+
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap', marginBottom: 12, fontSize: 13, color: '#666' }}>
+                        {backtestError && <Alert type="error" showIcon message={backtestError} />}
+                        <span id="profit-protection-label" style={{ fontWeight: 500 }}>盈利保护</span>
+                        <Switch aria-labelledby="profit-protection-label" checked={strategyParams.profitProtectionEnabled === true}
+                            onChange={checked => {
+                                setActivePreset('custom');
+                                setStrategyParams(p => ({ ...p, profitProtectionEnabled: checked }));
+                            }} />
+                        {strategyParams.profitProtectionEnabled ? <>
+                            <label htmlFor="profit-protection-arm">组合浮盈达到</label>
+                            <InputNumber id="profit-protection-arm" min={0.1} max={1000} step={0.5} precision={2}
+                                value={strategyParams.profitProtectionArmPct ?? 4} style={{ width: 76 }}
+                                onChange={value => {
+                                    if (value === null || !Number.isFinite(value) || value <= 0) return;
+                                    setActivePreset('custom');
+                                    setStrategyParams(p => ({ ...p, profitProtectionArmPct: value }));
+                                }} />
+                            <span>% 启用；</span>
+                            <label htmlFor="profit-protection-drawdown">从最高收盘净值回撤</label>
+                            <InputNumber id="profit-protection-drawdown" min={0.1} max={99.9} step={0.5} precision={2}
+                                value={strategyParams.profitProtectionDrawdownPct ?? 2} style={{ width: 76 }}
+                                onChange={value => {
+                                    if (value === null || !Number.isFinite(value) || value <= 0 || value >= 100) return;
+                                    setActivePreset('custom');
+                                    setStrategyParams(p => ({ ...p, profitProtectionDrawdownPct: value }));
+                                }} />
+                            <span>% 时，各持仓卖出一半</span>
+                            <Tooltip title="按整笔ETF组合的收盘净值判断，按触发日实际收盘价减半一次；卖出资金留现金，不回补，剩余持仓沿用原多头退出规则。">
+                                <span style={{ color: '#999', fontSize: 12, cursor: 'help' }}>每个多头区间仅一次 · 余仓按原规则退出</span>
+                            </Tooltip>
+                        </> : <span style={{ color: '#999', fontSize: 12 }}>未开启，沿用原多头退出规则</span>}
                     </div>
 
                     <div style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
@@ -738,6 +793,7 @@ const ActiveMarket: React.FC = () => {
                             }}
                         />
                         {selectedIndicator?.code === '0AMV' && <span style={{ color: '#81929a', fontSize: 12 }}>双击主图任意位置，查看对应日期的日内走势</span>}
+                        <div ref={chartQuoteRef} style={{ minWidth: 0, maxWidth: '100%', overflowX: 'auto', whiteSpace: 'pre', fontSize: 12, lineHeight: '24px', color: '#526871', fontVariantNumeric: 'tabular-nums' }} />
                         {closeOnly && <span style={{ color: '#888', fontSize: 12 }}>仅有每日收盘估算值，使用折线显示</span>}
                         {!closeOnly && selectedIndicator?.code === 'AMV_EMA20' && (
                             <Tooltip title="开盘值取前一交易日收盘值；最高/最低取开收盘极值，不代表真实盘中高低价；成交量和成交额使用同日上证指数。">
@@ -757,6 +813,7 @@ const ActiveMarket: React.FC = () => {
                         ) : data.length === 0 ? (
                             <Empty description={indicators.length ? '该指标暂无数据' : '暂无可选指标'} />
                         ) : <KLineChart
+                            quoteTargetRef={chartQuoteRef}
                             dateWindowRef={dateWindowRef}
                             defaultWindowYears={1.5}
                             onDayDoubleClick={selectedIndicator?.code === '0AMV' ? setIntradayDate : undefined}
@@ -828,9 +885,9 @@ const ActiveMarket: React.FC = () => {
                                         <span>平均回撤 <span style={{ color: '#006400' }}>{((yearDDMap.get(r.year)?.avgDD ?? 0) * 100).toFixed(2)}%</span></span>
                                     </div>
                                     <Tooltip title={`仅统计开始于当年的已结束多头区间，按 ETF 组合收益计算；收益大于 0 为成功，平均涨幅包含亏损区间。成功 ${bullStats?.wins ?? 0} / 共 ${bullStats?.count ?? 0} 个区间。`}>
-                                        <div style={{ marginTop: 4, fontSize: 12, color: '#999', display: 'flex', justifyContent: 'space-between', gap: 8, flexWrap: 'wrap' }}>
-                                            <span>多头区间成功率 <span style={{ color: '#333' }}>{bullStats ? `${(bullStats.wins / bullStats.count * 100).toFixed(2)}%` : '—'}</span></span>
-                                            <span>多头区间平均涨幅 <span style={{ color: bullAverage === undefined ? '#999' : bullAverage >= 0 ? '#c41e3a' : '#006400' }}>{bullAverage === undefined ? '—' : `${bullAverage >= 0 ? '+' : ''}${bullAverage.toFixed(2)}%`}</span></span>
+                                        <div style={{ marginTop: 4, fontSize: 12, color: '#999', display: 'flex', justifyContent: 'space-between', gap: 8, whiteSpace: 'nowrap' }}>
+                                            <span>多头区间成败 <span style={{ color: '#c41e3a' }}>{bullStats?.wins ?? 0}√</span>{' '}<span style={{ color: '#006400' }}>{(bullStats?.count ?? 0) - (bullStats?.wins ?? 0)}×</span></span>
+                                            <span>平均涨幅 <span style={{ color: bullAverage === undefined ? '#999' : bullAverage >= 0 ? '#c41e3a' : '#006400' }}>{bullAverage === undefined ? '—' : `${bullAverage >= 0 ? '+' : ''}${bullAverage.toFixed(2)}%`}</span></span>
                                         </div>
                                     </Tooltip>
                                     <div style={{ marginTop: 8, fontSize: 13, color: '#1890ff' }}>查看交易明细</div>
@@ -875,6 +932,11 @@ const ActiveMarket: React.FC = () => {
                             ))}
                         </div>
                         <div style={{ marginTop: 10, fontSize: 12, color: '#999', lineHeight: 1.7 }}>
+                            {strategyParams.profitProtectionEnabled && <div style={{ color: '#916c24' }}>
+                                盈利保护：组合浮盈达到 {strategyParams.profitProtectionArmPct ?? 4}% 后启用，
+                                从最高收盘净值回撤达到 {strategyParams.profitProtectionDrawdownPct ?? 2}% 时按实际收盘价减半一次；
+                                卖出资金留现金，剩余持仓按下述原规则退出。
+                            </div>}
                             规则：多头区间启动日买入涨幅前{strategyParams.weights.length} ETF（{strategyParams.weights.map(w => `${w.toFixed(0)}%`).join('/')}），区间结束卖出；单日涨幅&gt;{strategyParams.bullStartSingleDay}%或两日累计&gt;{strategyParams.bullStartTwoDay}%{strategyParams.bullStartUseMA10 ? '且收盘价站上MA10' : ''}启动多头；单日跌幅&lt;{strategyParams.bullEndSingleDay}%{strategyParams.bullEndUseMA10 ? '或跌破MA10' : ''}结束多头；{strategyParams.bearBuyBank ? `${strategyParams.bearStartYear}年起空头区间持有银行 ETF` : '空头区间持有现金'}；跨年收益计入开始年份。点击年份可查看当年每个波段的交易明细。
                         </div>
                     </>

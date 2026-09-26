@@ -171,6 +171,9 @@ const BacktestChart: React.FC<BacktestChartProps> = ({ result, year, amvData = [
                 zoneInfo += `<br/>行情更新至 ${trade.valuation_date}，其后沿用该日估值`;
               }
               zoneInfo += `<br/>策略收益：<span style="color:${retColor}">${trade.return >= 0 ? '+' : ''}${ret}%</span>`;
+              if (trade.protection?.trigger_date) {
+                zoneInfo += `<br/>盈利保护：${trade.protection.trigger_date} 收盘减半，余款留现金`;
+              }
               zoneInfo += `<br/>活跃市值：<span style="color:${amvColor}">${trade.amv_return >= 0 ? '+' : ''}${amvRet}%</span>`;
             }
           }
@@ -414,6 +417,16 @@ const BacktestChart: React.FC<BacktestChartProps> = ({ result, year, amvData = [
                     );
                   })}
                 </div>
+                {t.protection && <div style={{ fontSize: 12, color: '#916c24', padding: '6px 0', lineHeight: 1.7 }}>
+                  {t.protection.trigger_date ? <>
+                    盈利保护：{t.protection.trigger_date} 收盘减半<br />
+                    触发时组合收益 {((t.protection.trigger_return ?? 0) * 100).toFixed(2)}%，
+                    从高点回撤 {((t.protection.drawdown ?? 0) * 100).toFixed(2)}%<br />
+                    卖出资金留现金；上方收益已计入减仓
+                  </> : t.protection.armed_date
+                    ? `保护已启用（${t.protection.armed_date}），未触发减半`
+                    : '本区间未达到盈利保护启用门槛'}
+                </div>}
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 'auto', paddingTop: 8, borderTop: '1px solid #eee' }}>
                   <span style={{ color: '#666', fontWeight: 500 }}>
                     活跃市值：

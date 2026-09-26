@@ -45,6 +45,7 @@ const DEFAULT_ZONE_PARAMS: ZoneParams = {
 };
 
 interface KLineChartProps {
+  quoteTargetRef?: React.RefObject<HTMLDivElement>;
   onDayDoubleClick?: (date: string) => void;
   dateWindowRef?: React.MutableRefObject<{ start: string; end: string } | null>;
   defaultWindowYears?: number;
@@ -70,6 +71,8 @@ interface KLineChartProps {
   seriesType?: 'candlestick' | 'line';
 }
 
+const MA_COLORS: Record<number, string> = { 5: '#f5d742', 10: '#4287f5', 20: '#f542e3', 60: '#ff8c00' };
+
 const ETF_COLORS = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#ffeaa7', '#dda0dd', '#f0e68c', '#87ceeb', '#ffa07a', '#98d8c8', '#c9b1ff', '#f7dc6f', '#a3e4d7', '#f5b7b1', '#aed6f1', '#d5f5e3', '#fadbd8'];
 
 const EMPTY_ITEM: KLineData = {
@@ -88,6 +91,7 @@ const alignDataToDates = (source: KLineData[], dates: string[]): KLineData[] => 
 };
 
 const KLineChart: React.FC<KLineChartProps> = ({
+  quoteTargetRef,
   onDayDoubleClick,
   dateWindowRef,
   defaultWindowYears,
@@ -118,6 +122,8 @@ const KLineChart: React.FC<KLineChartProps> = ({
   const showVolume = requestedShowVolume && !closeOnly;
   const chartRef = useRef<HTMLDivElement>(null);
   const chartInstance = useRef<ECharts | null>(null);
+  const localQuoteRef = useRef<HTMLDivElement>(null);
+  const quoteRef = quoteTargetRef ?? localQuoteRef;
   const doubleClickRef = useRef(onDayDoubleClick);
   doubleClickRef.current = onDayDoubleClick;
   const localDateWindow = useRef<{ start: string; end: string } | null>(null);
@@ -201,6 +207,39 @@ const KLineChart: React.FC<KLineChartProps> = ({
     if (!savedWindow) zoomRange.current = { start: dates[initialStart], end: dates[initialEnd] };
 
     const ma10 = calculateMA(10, filteredData);
+    const hoverMAs = [5, 10, 20, 60].map(period => ({
+      period, values: period === 10 ? ma10 : calculateMA(period, filteredData),
+    }));
+    let hoveredIndex: number | undefined;
+    const showQuote = (index: number) => {
+      const item = filteredData[index];
+      if (!quoteRef.current || !item) return;
+      hoveredIndex = index;
+      const format = (value: unknown) => typeof value === 'number' && Number.isFinite(value)
+        ? value.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : '—';
+      let previousClose: number | undefined;
+      for (let i = index - 1; i >= 0; i--) {
+        if (Number.isFinite(filteredData[i].close)) {
+          previousClose = filteredData[i].close;
+          break;
+        }
+      }
+      const change = previousClose === undefined ? NaN : item.close - previousClose;
+      const closeColor = change > 0 ? '#ff4d4d' : change < 0 ? '#00b300' : '#526871';
+      const span = (text: string, color: string) => {
+        const element = document.createElement('span');
+        element.textContent = text;
+        element.style.color = color;
+        return element;
+      };
+      quoteRef.current.replaceChildren(
+        span(`${item.date}   `, '#526871'),
+        span(`收 ${format(item.close)}   `, closeColor),
+        ...hoverMAs.filter(ma => legendSelected[`MA${ma.period}`] !== false).map(ma =>
+          span(`MA${ma.period} ${format(ma.values[index])}   `, MA_COLORS[ma.period])),
+      );
+    };
+    if (quoteRef.current) quoteRef.current.textContent = '鼠标悬停查看当日日 K 与均线值';
 
     const specialMarks: { index: number; type: 'bull' | 'bear' }[] = [];
     let bullZones: { start: number; end: number }[] = [];
@@ -545,7 +584,7 @@ const KLineChart: React.FC<KLineChartProps> = ({
         data: legendData,
         selected: legendSelected,
         textStyle: { color: '#6c8088', fontSize: 11 }, itemWidth: 18, itemHeight: 9, itemGap: 22,
-        top: 10
+        top: 0
       },
       tooltip: {
         trigger: 'axis',
@@ -678,10 +717,10 @@ const KLineChart: React.FC<KLineChartProps> = ({
       },
       grid: showVolume
         ? [
-          { left: 80, right: 80, height: '57%', top: '11%' },
+          { left: 80, right: 80, bottom: '32%', top: 40 },
           { left: 80, right: 80, top: '72%', height: '16%' }
         ]
-        : [{ left: 80, right: 80, height: '75%', top: '15%' }],
+        : [{ left: 80, right: 80, bottom: '10%', top: 40 }],
       xAxis: showVolume
         ? [
           {
@@ -786,8 +825,8 @@ const KLineChart: React.FC<KLineChartProps> = ({
           type: 'line',
           data: ma5,
           smooth: true,
-          lineStyle: { opacity: 0.8, width: 1, color: '#f5d742' },
-          itemStyle: { color: '#f5d742' },
+          lineStyle: { opacity: 0.8, width: 1, color: MA_COLORS[5] },
+          itemStyle: { color: MA_COLORS[5] },
           symbol: 'none'
         },
         {
@@ -795,8 +834,8 @@ const KLineChart: React.FC<KLineChartProps> = ({
           type: 'line',
           data: ma10,
           smooth: true,
-          lineStyle: { opacity: 0.8, width: 1, color: '#4287f5' },
-          itemStyle: { color: '#4287f5' },
+          lineStyle: { opacity: 0.8, width: 1, color: MA_COLORS[10] },
+          itemStyle: { color: MA_COLORS[10] },
           symbol: 'none'
         },
         {
@@ -804,8 +843,8 @@ const KLineChart: React.FC<KLineChartProps> = ({
           type: 'line',
           data: ma20,
           smooth: true,
-          lineStyle: { opacity: 0.8, width: 1, color: '#f542e3' },
-          itemStyle: { color: '#f542e3' },
+          lineStyle: { opacity: 0.8, width: 1, color: MA_COLORS[20] },
+          itemStyle: { color: MA_COLORS[20] },
           symbol: 'none'
         },
         {
@@ -813,8 +852,8 @@ const KLineChart: React.FC<KLineChartProps> = ({
           type: 'line',
           data: ma60,
           smooth: true,
-          lineStyle: { opacity: 0.8, width: 1, color: '#ff8c00' },
-          itemStyle: { color: '#ff8c00' },
+          lineStyle: { opacity: 0.8, width: 1, color: MA_COLORS[60] },
+          itemStyle: { color: MA_COLORS[60] },
           symbol: 'none'
         },
         ...extraSeriesData,
@@ -830,6 +869,18 @@ const KLineChart: React.FC<KLineChartProps> = ({
 
     chartInstance.current.setOption(option);
     const chart = chartInstance.current;
+    chart.on('legendselectchanged', (payload: unknown) => {
+      const event = payload as { selected?: Record<string, boolean> };
+      Object.assign(legendSelected, event.selected);
+      if (hoveredIndex !== undefined) showQuote(hoveredIndex);
+    });
+    chart.on('updateAxisPointer', (payload: unknown) => {
+      const event = payload as { axesInfo?: { axisDim: string; value: number | string }[] };
+      const axis = event.axesInfo?.find(info => info.axisDim === 'x');
+      if (!axis) return;
+      const index = typeof axis.value === 'number' ? Math.round(axis.value) : dates.indexOf(axis.value);
+      showQuote(index);
+    });
     // Listen on the canvas so blank space and overlays share the same date hit area.
     const handleDayDoubleClick = (event: { offsetX: number; offsetY: number }) => {
       if (!doubleClickRef.current) return;
@@ -878,6 +929,7 @@ const KLineChart: React.FC<KLineChartProps> = ({
     }
 
     return () => {
+      if (quoteTargetRef?.current) quoteTargetRef.current.replaceChildren();
       chart.getZr().off('dblclick', handleDayDoubleClick);
       window.removeEventListener('resize', handleResize);
       if (resizeObserver) {
@@ -885,13 +937,15 @@ const KLineChart: React.FC<KLineChartProps> = ({
       }
       chartInstance.current?.dispose();
     };
-  }, [data, highlightThreshold, showBullZoneBg, showBearZoneBg, extraSeries, allETFSeries, syncGroup, dataLabel, mainSeriesName, seriesType, showVolume, showRanking, showZones, maxDate, showDataZoom, baseDates, zoneParams, zoomRange, defaultWindowYears]);
+  }, [data, highlightThreshold, showBullZoneBg, showBearZoneBg, extraSeries, allETFSeries, syncGroup, dataLabel, mainSeriesName, seriesType, showVolume, showRanking, showZones, maxDate, showDataZoom, baseDates, zoneParams, zoomRange, defaultWindowYears, quoteTargetRef]);
 
   return (
-    <div
-      ref={chartRef}
-      style={{ width: '100%', height: typeof chartHeight === 'number' ? `${chartHeight}px` : chartHeight, backgroundColor: '#fff' }}
-    />
+    <div style={{ width: '100%', height: typeof chartHeight === 'number' ? `${chartHeight}px` : chartHeight, backgroundColor: '#fff', display: 'flex', flexDirection: 'column' }}>
+      {!quoteTargetRef && <div ref={localQuoteRef} style={{ flex: '0 0 24px', lineHeight: '24px', padding: '0 20px', color: '#526871', fontSize: 12, fontVariantNumeric: 'tabular-nums', whiteSpace: 'pre', overflowX: 'auto' }}>
+        鼠标悬停查看当日日 K 与均线值
+      </div>}
+      <div ref={chartRef} style={{ width: '100%', flex: 1, minHeight: 0 }} />
+    </div>
   );
 };
 

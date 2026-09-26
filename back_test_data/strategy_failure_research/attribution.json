@@ -1,0 +1,2134 @@
+{
+  "assumptions": [
+    "Current UI ETF universe and DEFAULT_STRATEGY_PARAMS, not the unobserved browser settings.",
+    "Existing signal-date close execution; no fees/slippage; descriptive, not executable performance.",
+    "Closed bull trades grouped by start date; profit-to-loss tag overlaps timing/selection tags.",
+    "Profit-to-loss means closing-price portfolio profit reached at least 2%; not intraday high.",
+    "Bull-only compounded returns exclude bank trades and differ from calendar-year mark-to-market results.",
+    "ETF historical availability/adjustment and same-close lookahead require separate audit before optimization."
+  ],
+  "parameters": {
+    "bullStartSingleDay": 4,
+    "bullStartTwoDay": 4,
+    "bullEndSingleDay": -2.3,
+    "bullEndUseMA10": true,
+    "bullStartUseMA10": true,
+    "weights": [
+      30,
+      30,
+      20,
+      10,
+      10
+    ],
+    "bearStartYear": 2024,
+    "bearBuyBank": true,
+    "startYear": 2019,
+    "endYear": 2026,
+    "rankingMethod": "etf_gain"
+  },
+  "summary": [
+    {
+      "period": "2023",
+      "trades": 6,
+      "wins": 2,
+      "losses": 4,
+      "timing_failures": 2,
+      "selection_failures": 2,
+      "profit_2pct_to_loss": 1,
+      "bull_only_compounded_pct": -5.449829927303385,
+      "losers_below_ma60": 3,
+      "winners_below_ma60": 2
+    },
+    {
+      "period": "2024H1",
+      "trades": 4,
+      "wins": 1,
+      "losses": 3,
+      "timing_failures": 1,
+      "selection_failures": 2,
+      "profit_2pct_to_loss": 2,
+      "bull_only_compounded_pct": 11.364398951827482,
+      "losers_below_ma60": 1,
+      "winners_below_ma60": 1
+    },
+    {
+      "period": "2024H2",
+      "trades": 4,
+      "wins": 2,
+      "losses": 2,
+      "timing_failures": 2,
+      "selection_failures": 0,
+      "profit_2pct_to_loss": 0,
+      "bull_only_compounded_pct": 23.220295920885768,
+      "losers_below_ma60": 2,
+      "winners_below_ma60": 1
+    },
+    {
+      "period": "2025",
+      "trades": 4,
+      "wins": 3,
+      "losses": 1,
+      "timing_failures": 0,
+      "selection_failures": 1,
+      "profit_2pct_to_loss": 1,
+      "bull_only_compounded_pct": 15.45157852549639,
+      "losers_below_ma60": 1,
+      "winners_below_ma60": 2
+    },
+    {
+      "period": "2026",
+      "trades": 5,
+      "wins": 4,
+      "losses": 1,
+      "timing_failures": 1,
+      "selection_failures": 0,
+      "profit_2pct_to_loss": 0,
+      "bull_only_compounded_pct": 31.27836793163299,
+      "losers_below_ma60": 0,
+      "winners_below_ma60": 2
+    }
+  ],
+  "annual": [
+    {
+      "year": 2019,
+      "start_nav": 1,
+      "end_nav": 1.4212,
+      "annual_return": 42.12,
+      "bull_return": 42.12
+    },
+    {
+      "year": 2020,
+      "start_nav": 1.4212,
+      "end_nav": 1.6774,
+      "annual_return": 18.03,
+      "bull_return": 18.03
+    },
+    {
+      "year": 2021,
+      "start_nav": 1.6774,
+      "end_nav": 1.7472,
+      "annual_return": 4.16,
+      "bull_return": 4.16
+    },
+    {
+      "year": 2022,
+      "start_nav": 1.7472,
+      "end_nav": 1.9858,
+      "annual_return": 13.66,
+      "bull_return": 13.66
+    },
+    {
+      "year": 2023,
+      "start_nav": 1.9858,
+      "end_nav": 1.8776,
+      "annual_return": -5.45,
+      "bull_return": -5.45
+    },
+    {
+      "year": 2024,
+      "start_nav": 1.8776,
+      "end_nav": 3.3794,
+      "annual_return": 79.99,
+      "bull_return": 37.22,
+      "bear_return": 31.16
+    },
+    {
+      "year": 2025,
+      "start_nav": 3.3794,
+      "end_nav": 4.074,
+      "annual_return": 20.55,
+      "bull_return": 15.45,
+      "bear_return": 4.42
+    },
+    {
+      "year": 2026,
+      "start_nav": 4.074,
+      "end_nav": 6.3198,
+      "annual_return": 55.13,
+      "bull_return": 31.28,
+      "bear_return": 18.17
+    }
+  ],
+  "trades": [
+    {
+      "start": "2019-02-11",
+      "end": "2019-03-14",
+      "sessions": 23,
+      "return_pct": 18.081309158034177,
+      "amv_return_pct": 147.8098828580515,
+      "peak_close_profit_pct": 22.700045683922028,
+      "peak_date": "2019-03-12",
+      "worst_close_profit_pct": 0,
+      "giveback_pp": 4.618736525887848,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": true,
+      "timing_failure": false,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "创业板ETF",
+          "weight": 0.3,
+          "return_pct": 25.23734177215189
+        },
+        {
+          "name": "消费ETF",
+          "weight": 0.3,
+          "return_pct": 7.244655581947734
+        },
+        {
+          "name": "有色ETF",
+          "weight": 0.2,
+          "return_pct": 19.039451114922823
+        },
+        {
+          "name": "医药ETF",
+          "weight": 0.1,
+          "return_pct": 15.806715806715799
+        },
+        {
+          "name": "传媒ETF",
+          "weight": 0.1,
+          "return_pct": 29.481481481481463
+        }
+      ]
+    },
+    {
+      "start": "2019-04-01",
+      "end": "2019-04-11",
+      "sessions": 7,
+      "return_pct": -2.5532872565881104,
+      "amv_return_pct": 2.6882757317393757,
+      "peak_close_profit_pct": 1.41851502449571,
+      "peak_date": "2019-04-04",
+      "worst_close_profit_pct": -2.5532872565881104,
+      "giveback_pp": 3.971802281083821,
+      "missing_curve_days": 0,
+      "entry_below_ma60": false,
+      "entry_ma60_falling": false,
+      "timing_failure": false,
+      "selection_failure": true,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "有色ETF",
+          "weight": 0.3,
+          "return_pct": -0.5524861878453025
+        },
+        {
+          "name": "军工ETF",
+          "weight": 0.3,
+          "return_pct": -3.7209302325581395
+        },
+        {
+          "name": "创业板ETF",
+          "weight": 0.2,
+          "return_pct": -4.427390791027152
+        },
+        {
+          "name": "传媒ETF",
+          "weight": 0.1,
+          "return_pct": -4.074889867841414
+        },
+        {
+          "name": "消费ETF",
+          "weight": 0.1,
+          "return_pct": 0.21704814522494065
+        }
+      ]
+    },
+    {
+      "start": "2019-06-20",
+      "end": "2019-07-05",
+      "sessions": 11,
+      "return_pct": 3.718473796900789,
+      "amv_return_pct": 2.1950715798539466,
+      "peak_close_profit_pct": 5.348450290372526,
+      "peak_date": "2019-07-01",
+      "worst_close_profit_pct": 0,
+      "giveback_pp": 1.6299764934717367,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": true,
+      "timing_failure": false,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "证券ETF",
+          "weight": 0.3,
+          "return_pct": -0.30364372469635637
+        },
+        {
+          "name": "白酒ETF",
+          "weight": 0.3,
+          "return_pct": 10.15936254980081
+        },
+        {
+          "name": "上证50ETF",
+          "weight": 0.2,
+          "return_pct": 1.1171293161814422
+        },
+        {
+          "name": "沪深300ETF",
+          "weight": 0.1,
+          "return_pct": 2.029664324746294
+        },
+        {
+          "name": "消费ETF",
+          "weight": 0.1,
+          "return_pct": 3.3536585365853577
+        }
+      ]
+    },
+    {
+      "start": "2019-08-19",
+      "end": "2019-09-19",
+      "sessions": 22,
+      "return_pct": 8.921337566925867,
+      "amv_return_pct": 30.967730672446002,
+      "peak_close_profit_pct": 11.560881071918578,
+      "peak_date": "2019-09-09",
+      "worst_close_profit_pct": -1.6178488743064978,
+      "giveback_pp": 2.63954350499271,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": true,
+      "timing_failure": false,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "证券ETF",
+          "weight": 0.3,
+          "return_pct": 3.541666666666665
+        },
+        {
+          "name": "半导体ETF",
+          "weight": 0.3,
+          "return_pct": 16.317228805834105
+        },
+        {
+          "name": "传媒ETF",
+          "weight": 0.2,
+          "return_pct": 8.677685950413228
+        },
+        {
+          "name": "创业板ETF",
+          "weight": 0.1,
+          "return_pct": 4.719387755102034
+        },
+        {
+          "name": "军工ETF",
+          "weight": 0.1,
+          "return_pct": 7.561929595827888
+        }
+      ]
+    },
+    {
+      "start": "2019-10-29",
+      "end": "2019-11-08",
+      "sessions": 8,
+      "return_pct": 2.596248101486076,
+      "amv_return_pct": 0.01948272226348635,
+      "peak_close_profit_pct": 2.596248101486076,
+      "peak_date": "2019-11-08",
+      "worst_close_profit_pct": -0.5665686132158587,
+      "giveback_pp": 0,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": false,
+      "timing_failure": false,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "白酒ETF",
+          "weight": 0.3,
+          "return_pct": 2.6737967914438387
+        },
+        {
+          "name": "消费ETF",
+          "weight": 0.3,
+          "return_pct": 2.5373134328358304
+        },
+        {
+          "name": "医药ETF",
+          "weight": 0.2,
+          "return_pct": 3.1908104658583403
+        },
+        {
+          "name": "创新药ETF",
+          "weight": 0.1,
+          "return_pct": 2.4121657052962764
+        },
+        {
+          "name": "沪深300ETF",
+          "weight": 0.1,
+          "return_pct": 1.5353637050087965
+        }
+      ]
+    },
+    {
+      "start": "2019-12-13",
+      "end": "2020-01-17",
+      "sessions": 24,
+      "return_pct": 6.562734479668072,
+      "amv_return_pct": 40.24845476396095,
+      "peak_close_profit_pct": 7.607382342627056,
+      "peak_date": "2020-01-13",
+      "worst_close_profit_pct": -0.17529639390259982,
+      "giveback_pp": 1.0446478629589833,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": true,
+      "timing_failure": false,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "证券ETF",
+          "weight": 0.3,
+          "return_pct": 7.73249738766979
+        },
+        {
+          "name": "创业板ETF",
+          "weight": 0.3,
+          "return_pct": 9.746012994684005
+        },
+        {
+          "name": "上证50ETF",
+          "weight": 0.2,
+          "return_pct": 1.4000000000000012
+        },
+        {
+          "name": "沪深300ETF",
+          "weight": 0.1,
+          "return_pct": 4.611895161290325
+        },
+        {
+          "name": "消费ETF",
+          "weight": 0.1,
+          "return_pct": 5.779918488329017
+        }
+      ]
+    },
+    {
+      "start": "2020-02-05",
+      "end": "2020-02-28",
+      "sessions": 17,
+      "return_pct": 0.42661536684475404,
+      "amv_return_pct": 32.622069054367444,
+      "peak_close_profit_pct": 8.369559645808856,
+      "peak_date": "2020-02-25",
+      "worst_close_profit_pct": 0,
+      "giveback_pp": 7.9429442789641005,
+      "missing_curve_days": 0,
+      "entry_below_ma60": false,
+      "entry_ma60_falling": false,
+      "timing_failure": false,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "创新药ETF",
+          "weight": 0.3,
+          "return_pct": -4.978863316110848
+        },
+        {
+          "name": "医药ETF",
+          "weight": 0.3,
+          "return_pct": -2.8402366863905404
+        },
+        {
+          "name": "创业板ETF",
+          "weight": 0.2,
+          "return_pct": 6.627471940138974
+        },
+        {
+          "name": "有色ETF",
+          "weight": 0.1,
+          "return_pct": 3.3724340175952827
+        },
+        {
+          "name": "军工ETF",
+          "weight": 0.1,
+          "return_pct": 11.096075778078474
+        }
+      ]
+    },
+    {
+      "start": "2020-03-02",
+      "end": "2020-03-09",
+      "sessions": 5,
+      "return_pct": -2.5373768162825616,
+      "amv_return_pct": -0.40062308782925493,
+      "peak_close_profit_pct": 2.8974089140100903,
+      "peak_date": "2020-03-05",
+      "worst_close_profit_pct": -2.5373768162825616,
+      "giveback_pp": 5.434785730292652,
+      "missing_curve_days": 0,
+      "entry_below_ma60": false,
+      "entry_ma60_falling": false,
+      "timing_failure": true,
+      "selection_failure": false,
+      "profit_to_loss": true,
+      "holdings": [
+        {
+          "name": "通信ETF",
+          "weight": 0.3,
+          "return_pct": -5.092592592592604
+        },
+        {
+          "name": "证券ETF",
+          "weight": 0.3,
+          "return_pct": -0.19305019305019266
+        },
+        {
+          "name": "军工ETF",
+          "weight": 0.2,
+          "return_pct": -3.0480656506447823
+        },
+        {
+          "name": "沪深300ETF",
+          "weight": 0.1,
+          "return_pct": -2.1099116781157834
+        },
+        {
+          "name": "上证50ETF",
+          "weight": 0.1,
+          "return_pct": -1.310796826491878
+        }
+      ]
+    },
+    {
+      "start": "2020-05-06",
+      "end": "2020-05-14",
+      "sessions": 6,
+      "return_pct": 0.21328700467329711,
+      "amv_return_pct": -2.1914728544055406,
+      "peak_close_profit_pct": 0.943263770269991,
+      "peak_date": "2020-05-13",
+      "worst_close_profit_pct": -0.41164873112507155,
+      "giveback_pp": 0.7299767655966938,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": true,
+      "timing_failure": false,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "半导体ETF",
+          "weight": 0.3,
+          "return_pct": 0.572320499479706
+        },
+        {
+          "name": "通信ETF",
+          "weight": 0.3,
+          "return_pct": 0.17590149516271136
+        },
+        {
+          "name": "有色ETF",
+          "weight": 0.2,
+          "return_pct": -1.6467065868263409
+        },
+        {
+          "name": "创新药ETF",
+          "weight": 0.1,
+          "return_pct": 1.3644366197183233
+        },
+        {
+          "name": "医药ETF",
+          "weight": 0.1,
+          "return_pct": 1.8171806167400772
+        }
+      ]
+    },
+    {
+      "start": "2020-06-01",
+      "end": "2020-07-16",
+      "sessions": 31,
+      "return_pct": 19.00072759792765,
+      "amv_return_pct": 83.79924741521552,
+      "peak_close_profit_pct": 33.937879122161824,
+      "peak_date": "2020-07-13",
+      "worst_close_profit_pct": -0.7617978997059726,
+      "giveback_pp": 14.937151524234174,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": true,
+      "timing_failure": false,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "通信ETF",
+          "weight": 0.3,
+          "return_pct": 9.70961887477313
+        },
+        {
+          "name": "半导体ETF",
+          "weight": 0.3,
+          "return_pct": 18.671548117154813
+        },
+        {
+          "name": "证券ETF",
+          "weight": 0.2,
+          "return_pct": 31.71247357293869
+        },
+        {
+          "name": "创业板ETF",
+          "weight": 0.1,
+          "return_pct": 22.862632084534095
+        },
+        {
+          "name": "新能源车ETF",
+          "weight": 0.1,
+          "return_pct": 18.576195773081206
+        }
+      ]
+    },
+    {
+      "start": "2020-08-03",
+      "end": "2020-08-11",
+      "sessions": 6,
+      "return_pct": -2.251884512367471,
+      "amv_return_pct": -3.43915515000226,
+      "peak_close_profit_pct": 0.9687385990374452,
+      "peak_date": "2020-08-06",
+      "worst_close_profit_pct": -2.251884512367471,
+      "giveback_pp": 3.220623111404916,
+      "missing_curve_days": 0,
+      "entry_below_ma60": false,
+      "entry_ma60_falling": false,
+      "timing_failure": true,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "军工ETF",
+          "weight": 0.3,
+          "return_pct": 3.1623931623931734
+        },
+        {
+          "name": "半导体ETF",
+          "weight": 0.3,
+          "return_pct": -5.594120048999606
+        },
+        {
+          "name": "通信ETF",
+          "weight": 0.2,
+          "return_pct": -3.223330775134303
+        },
+        {
+          "name": "创业板ETF",
+          "weight": 0.1,
+          "return_pct": -6.2725306416726685
+        },
+        {
+          "name": "新能源车ETF",
+          "weight": 0.1,
+          "return_pct": -2.5044722719141377
+        }
+      ]
+    },
+    {
+      "start": "2020-10-12",
+      "end": "2020-10-21",
+      "sessions": 7,
+      "return_pct": -3.16964649604621,
+      "amv_return_pct": -4.258487358842478,
+      "peak_close_profit_pct": 0,
+      "peak_date": "2020-10-12",
+      "worst_close_profit_pct": -3.1759628944424474,
+      "giveback_pp": 3.16964649604621,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": true,
+      "timing_failure": true,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "白酒ETF",
+          "weight": 0.3,
+          "return_pct": 1.591375770020531
+        },
+        {
+          "name": "半导体ETF",
+          "weight": 0.3,
+          "return_pct": -6.188466947960625
+        },
+        {
+          "name": "军工ETF",
+          "weight": 0.2,
+          "return_pct": -5.632582322357016
+        },
+        {
+          "name": "证券ETF",
+          "weight": 0.1,
+          "return_pct": -3.9937353171495604
+        },
+        {
+          "name": "创业板ETF",
+          "weight": 0.1,
+          "return_pct": -2.6462914647782276
+        }
+      ]
+    },
+    {
+      "start": "2020-11-03",
+      "end": "2020-11-26",
+      "sessions": 17,
+      "return_pct": 6.684905508230942,
+      "amv_return_pct": 10.06122558991338,
+      "peak_close_profit_pct": 8.398414116528768,
+      "peak_date": "2020-11-24",
+      "worst_close_profit_pct": 0,
+      "giveback_pp": 1.7135086082978257,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": true,
+      "timing_failure": false,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "有色ETF",
+          "weight": 0.3,
+          "return_pct": 13.110846245530382
+        },
+        {
+          "name": "军工ETF",
+          "weight": 0.3,
+          "return_pct": 3.1894934333958735
+        },
+        {
+          "name": "证券ETF",
+          "weight": 0.2,
+          "return_pct": 1.192504258943794
+        },
+        {
+          "name": "通信ETF",
+          "weight": 0.1,
+          "return_pct": 2.094717668488144
+        },
+        {
+          "name": "煤炭ETF",
+          "weight": 0.1,
+          "return_pct": 13.468309859154925
+        }
+      ]
+    },
+    {
+      "start": "2020-12-31",
+      "end": "2021-01-26",
+      "sessions": 17,
+      "return_pct": 0.13951790091776298,
+      "amv_return_pct": 21.41045228216769,
+      "peak_close_profit_pct": 6.9190120243632585,
+      "peak_date": "2021-01-12",
+      "worst_close_profit_pct": 0,
+      "giveback_pp": 6.779494123445495,
+      "missing_curve_days": 0,
+      "entry_below_ma60": false,
+      "entry_ma60_falling": false,
+      "timing_failure": false,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "军工ETF",
+          "weight": 0.3,
+          "return_pct": -3.493788819875776
+        },
+        {
+          "name": "证券ETF",
+          "weight": 0.3,
+          "return_pct": -4.173486088379697
+        },
+        {
+          "name": "消费ETF",
+          "weight": 0.2,
+          "return_pct": 5.233719536556136
+        },
+        {
+          "name": "创业板ETF",
+          "weight": 0.1,
+          "return_pct": 9.979064898813682
+        },
+        {
+          "name": "半导体ETF",
+          "weight": 0.1,
+          "return_pct": 3.9504997620180893
+        }
+      ]
+    },
+    {
+      "start": "2021-04-19",
+      "end": "2021-06-16",
+      "sessions": 38,
+      "return_pct": 9.317356757686097,
+      "amv_return_pct": 19.199234854610392,
+      "peak_close_profit_pct": 16.58828633482106,
+      "peak_date": "2021-06-11",
+      "worst_close_profit_pct": -1.1970325267938084,
+      "giveback_pp": 7.270929577134962,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": true,
+      "timing_failure": false,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "新能源车ETF",
+          "weight": 0.3,
+          "return_pct": 12.070043777360851
+        },
+        {
+          "name": "新能源ETF",
+          "weight": 0.3,
+          "return_pct": 11.382113821138207
+        },
+        {
+          "name": "创业板ETF",
+          "weight": 0.2,
+          "return_pct": 8.077197998570407
+        },
+        {
+          "name": "有色ETF",
+          "weight": 0.1,
+          "return_pct": -0.6493506493506551
+        },
+        {
+          "name": "软件ETF",
+          "weight": 0.1,
+          "return_pct": 7.312049433573642
+        }
+      ]
+    },
+    {
+      "start": "2021-07-12",
+      "end": "2021-08-16",
+      "sessions": 25,
+      "return_pct": -4.682181134334994,
+      "amv_return_pct": 13.237234482879234,
+      "peak_close_profit_pct": 1.5174062778133526,
+      "peak_date": "2021-08-04",
+      "worst_close_profit_pct": -7.743228464553749,
+      "giveback_pp": 6.199587412148346,
+      "missing_curve_days": 0,
+      "entry_below_ma60": false,
+      "entry_ma60_falling": false,
+      "timing_failure": false,
+      "selection_failure": true,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "软件ETF",
+          "weight": 0.3,
+          "return_pct": -7.747747747747757
+        },
+        {
+          "name": "新能源车ETF",
+          "weight": 0.3,
+          "return_pct": -4.955320877335511
+        },
+        {
+          "name": "创业板ETF",
+          "weight": 0.2,
+          "return_pct": -6.448789028304647
+        },
+        {
+          "name": "新能源ETF",
+          "weight": 0.1,
+          "return_pct": 1.5055467511885912
+        },
+        {
+          "name": "通信ETF",
+          "weight": 0.1,
+          "return_pct": 2.6794258373205704
+        }
+      ]
+    },
+    {
+      "start": "2021-08-24",
+      "end": "2021-09-16",
+      "sessions": 17,
+      "return_pct": -0.0396982372297551,
+      "amv_return_pct": 8.181437912457401,
+      "peak_close_profit_pct": 4.0983776495181345,
+      "peak_date": "2021-09-10",
+      "worst_close_profit_pct": -2.01169086140958,
+      "giveback_pp": 4.13807588674789,
+      "missing_curve_days": 0,
+      "entry_below_ma60": false,
+      "entry_ma60_falling": false,
+      "timing_failure": false,
+      "selection_failure": true,
+      "profit_to_loss": true,
+      "holdings": [
+        {
+          "name": "白酒ETF",
+          "weight": 0.3,
+          "return_pct": -0.2645502645502451
+        },
+        {
+          "name": "有色ETF",
+          "weight": 0.3,
+          "return_pct": 6.133333333333346
+        },
+        {
+          "name": "新能源车ETF",
+          "weight": 0.2,
+          "return_pct": -1.9584332533972848
+        },
+        {
+          "name": "新能源ETF",
+          "weight": 0.1,
+          "return_pct": -0.9565857247976317
+        },
+        {
+          "name": "半导体ETF",
+          "weight": 0.1,
+          "return_pct": -13.12987934705465
+        }
+      ]
+    },
+    {
+      "start": "2022-03-16",
+      "end": "2022-03-24",
+      "sessions": 6,
+      "return_pct": -0.8006812034399803,
+      "amv_return_pct": 0.8742098981497914,
+      "peak_close_profit_pct": 1.2164216785607929,
+      "peak_date": "2022-03-21",
+      "worst_close_profit_pct": -0.8006812034399803,
+      "giveback_pp": 2.017102882000773,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": true,
+      "timing_failure": false,
+      "selection_failure": true,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "证券ETF",
+          "weight": 0.3,
+          "return_pct": -2.171664943123064
+        },
+        {
+          "name": "新能源车ETF",
+          "weight": 0.3,
+          "return_pct": 0.9045226130653283
+        },
+        {
+          "name": "半导体ETF",
+          "weight": 0.2,
+          "return_pct": -2.6339691189827374
+        },
+        {
+          "name": "创业板ETF",
+          "weight": 0.1,
+          "return_pct": 2.6645768025078453
+        },
+        {
+          "name": "新能源ETF",
+          "weight": 0.1,
+          "return_pct": -1.6020236087689654
+        }
+      ]
+    },
+    {
+      "start": "2022-04-29",
+      "end": "2022-05-06",
+      "sessions": 2,
+      "return_pct": -1.10700527440583,
+      "amv_return_pct": -1.090684753394644,
+      "peak_close_profit_pct": 0.2959942047254649,
+      "peak_date": "2022-05-05",
+      "worst_close_profit_pct": -1.10700527440583,
+      "giveback_pp": 1.402999479131295,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": true,
+      "timing_failure": true,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "传媒ETF",
+          "weight": 0.3,
+          "return_pct": -2.881355932203389
+        },
+        {
+          "name": "软件ETF",
+          "weight": 0.3,
+          "return_pct": 1.1940298507462588
+        },
+        {
+          "name": "游戏ETF",
+          "weight": 0.2,
+          "return_pct": -2.37467018469657
+        },
+        {
+          "name": "军工ETF",
+          "weight": 0.1,
+          "return_pct": 2.650356778797147
+        },
+        {
+          "name": "有色ETF",
+          "weight": 0.1,
+          "return_pct": -3.9090909090909176
+        }
+      ]
+    },
+    {
+      "start": "2022-05-11",
+      "end": "2022-05-17",
+      "sessions": 4,
+      "return_pct": 3.080637206825121,
+      "amv_return_pct": -2.146249245248666,
+      "peak_close_profit_pct": 3.080637206825121,
+      "peak_date": "2022-05-17",
+      "worst_close_profit_pct": -0.4853722685883688,
+      "giveback_pp": 0,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": true,
+      "timing_failure": false,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "新能源车ETF",
+          "weight": 0.3,
+          "return_pct": 4.509582863585115
+        },
+        {
+          "name": "新能源ETF",
+          "weight": 0.3,
+          "return_pct": 1.9743336623889496
+        },
+        {
+          "name": "半导体ETF",
+          "weight": 0.2,
+          "return_pct": 2.753303964757703
+        },
+        {
+          "name": "机器人ETF",
+          "weight": 0.1,
+          "return_pct": 1.178203240058906
+        },
+        {
+          "name": "煤炭ETF",
+          "weight": 0.1,
+          "return_pct": 4.669811320754702
+        }
+      ]
+    },
+    {
+      "start": "2022-06-06",
+      "end": "2022-07-08",
+      "sessions": 24,
+      "return_pct": 12.160709917501913,
+      "amv_return_pct": 19.402959713997014,
+      "peak_close_profit_pct": 14.535347954691064,
+      "peak_date": "2022-07-07",
+      "worst_close_profit_pct": -0.9466676681569496,
+      "giveback_pp": 2.37463803718915,
+      "missing_curve_days": 0,
+      "entry_below_ma60": false,
+      "entry_ma60_falling": true,
+      "timing_failure": false,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "新能源车ETF",
+          "weight": 0.3,
+          "return_pct": 15.734098517455752
+        },
+        {
+          "name": "新能源ETF",
+          "weight": 0.3,
+          "return_pct": 14.588634435962655
+        },
+        {
+          "name": "有色ETF",
+          "weight": 0.2,
+          "return_pct": 7.7294685990338285
+        },
+        {
+          "name": "光伏ETF",
+          "weight": 0.1,
+          "return_pct": 15.049073064340224
+        },
+        {
+          "name": "软件ETF",
+          "weight": 0.1,
+          "return_pct": 0.13089005235602524
+        }
+      ]
+    },
+    {
+      "start": "2022-10-14",
+      "end": "2022-11-22",
+      "sessions": 27,
+      "return_pct": 0.20822103869121422,
+      "amv_return_pct": 22.564949049488824,
+      "peak_close_profit_pct": 3.353702818335363,
+      "peak_date": "2022-11-04",
+      "worst_close_profit_pct": -4.886029206116733,
+      "giveback_pp": 3.1454817796441494,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": true,
+      "timing_failure": false,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "医药ETF",
+          "weight": 0.3,
+          "return_pct": 1.4007308160779663
+        },
+        {
+          "name": "创新药ETF",
+          "weight": 0.3,
+          "return_pct": 6.428571428571428
+        },
+        {
+          "name": "光伏ETF",
+          "weight": 0.2,
+          "return_pct": -7.938144329896901
+        },
+        {
+          "name": "创业板ETF",
+          "weight": 0.1,
+          "return_pct": -3.8900634249471544
+        },
+        {
+          "name": "消费ETF",
+          "weight": 0.1,
+          "return_pct": -1.6393442622950838
+        }
+      ]
+    },
+    {
+      "start": "2023-01-30",
+      "end": "2023-02-23",
+      "sessions": 18,
+      "return_pct": -2.283022077541906,
+      "amv_return_pct": 8.819710095420863,
+      "peak_close_profit_pct": 1.2462049249684037,
+      "peak_date": "2023-02-01",
+      "worst_close_profit_pct": -3.13572598497197,
+      "giveback_pp": 3.52922700251031,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": false,
+      "timing_failure": false,
+      "selection_failure": true,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "新能源车ETF",
+          "weight": 0.3,
+          "return_pct": -7.377919320594472
+        },
+        {
+          "name": "高端装备ETF",
+          "weight": 0.3,
+          "return_pct": -0.7583965330444253
+        },
+        {
+          "name": "软件ETF",
+          "weight": 0.2,
+          "return_pct": -0.22002200220021528
+        },
+        {
+          "name": "机器人ETF",
+          "weight": 0.1,
+          "return_pct": 3.8560411311054033
+        },
+        {
+          "name": "军工ETF",
+          "weight": 0.1,
+          "return_pct": -1.8372703412073421
+        }
+      ]
+    },
+    {
+      "start": "2023-04-03",
+      "end": "2023-04-21",
+      "sessions": 13,
+      "return_pct": -3.104009453942792,
+      "amv_return_pct": 3.7580467436060916,
+      "peak_close_profit_pct": 2.50170874804714,
+      "peak_date": "2023-04-12",
+      "worst_close_profit_pct": -3.594675024803019,
+      "giveback_pp": 5.605718201989932,
+      "missing_curve_days": 0,
+      "entry_below_ma60": false,
+      "entry_ma60_falling": false,
+      "timing_failure": false,
+      "selection_failure": true,
+      "profit_to_loss": true,
+      "holdings": [
+        {
+          "name": "游戏ETF",
+          "weight": 0.3,
+          "return_pct": 3.5823170731707155
+        },
+        {
+          "name": "软件ETF",
+          "weight": 0.3,
+          "return_pct": -12.141652613827992
+        },
+        {
+          "name": "半导体ETF",
+          "weight": 0.2,
+          "return_pct": -0.6809338521400865
+        },
+        {
+          "name": "传媒ETF",
+          "weight": 0.1,
+          "return_pct": -1.2401352874859106
+        },
+        {
+          "name": "证券ETF",
+          "weight": 0.1,
+          "return_pct": -2.7600849256900095
+        }
+      ]
+    },
+    {
+      "start": "2023-07-31",
+      "end": "2023-08-09",
+      "sessions": 7,
+      "return_pct": -1.3748570558181639,
+      "amv_return_pct": -1.2558789881784604,
+      "peak_close_profit_pct": 1.4979564316826288,
+      "peak_date": "2023-08-07",
+      "worst_close_profit_pct": -1.3748570558181639,
+      "giveback_pp": 2.8728134875007925,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": true,
+      "timing_failure": true,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "游戏ETF",
+          "weight": 0.3,
+          "return_pct": -1.8930041152263488
+        },
+        {
+          "name": "传媒ETF",
+          "weight": 0.3,
+          "return_pct": -1.0830324909747335
+        },
+        {
+          "name": "新能源车ETF",
+          "weight": 0.2,
+          "return_pct": -0.5844155844155874
+        },
+        {
+          "name": "有色ETF",
+          "weight": 0.1,
+          "return_pct": -1.2867647058823484
+        },
+        {
+          "name": "半导体ETF",
+          "weight": 0.1,
+          "return_pct": -2.3648648648648685
+        }
+      ]
+    },
+    {
+      "start": "2023-08-28",
+      "end": "2023-09-07",
+      "sessions": 8,
+      "return_pct": 0.08443043089725973,
+      "amv_return_pct": 3.513879540349185,
+      "peak_close_profit_pct": 2.2069183368360523,
+      "peak_date": "2023-09-04",
+      "worst_close_profit_pct": 0,
+      "giveback_pp": 2.122487905938793,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": true,
+      "timing_failure": false,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "煤炭ETF",
+          "weight": 0.3,
+          "return_pct": 7.238095238095221
+        },
+        {
+          "name": "证券ETF",
+          "weight": 0.3,
+          "return_pct": -6.256109481915928
+        },
+        {
+          "name": "游戏ETF",
+          "weight": 0.2,
+          "return_pct": -0.8802816901408494
+        },
+        {
+          "name": "传媒ETF",
+          "weight": 0.1,
+          "return_pct": -1.7521902377972465
+        },
+        {
+          "name": "通信ETF",
+          "weight": 0.1,
+          "return_pct": 1.4111006585136643
+        }
+      ]
+    },
+    {
+      "start": "2023-10-25",
+      "end": "2023-11-17",
+      "sessions": 17,
+      "return_pct": 5.140060135516509,
+      "amv_return_pct": 14.587998843425964,
+      "peak_close_profit_pct": 5.687333385285697,
+      "peak_date": "2023-11-15",
+      "worst_close_profit_pct": 0,
+      "giveback_pp": 0.5472732497691889,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": true,
+      "timing_failure": false,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "白酒ETF",
+          "weight": 0.3,
+          "return_pct": 1.0884353741496655
+        },
+        {
+          "name": "中证2000ETF",
+          "weight": 0.3,
+          "return_pct": 8.768267223382065
+        },
+        {
+          "name": "软件ETF",
+          "weight": 0.2,
+          "return_pct": 7.8947368421052655
+        },
+        {
+          "name": "高端装备ETF",
+          "weight": 0.1,
+          "return_pct": 5.504587155963314
+        },
+        {
+          "name": "煤炭ETF",
+          "weight": 0.1,
+          "return_pct": 0.5364327223960519
+        }
+      ]
+    },
+    {
+      "start": "2023-12-29",
+      "end": "2024-01-05",
+      "sessions": 4,
+      "return_pct": -3.7802793510229105,
+      "amv_return_pct": -3.303665162988556,
+      "peak_close_profit_pct": 0,
+      "peak_date": "2023-12-29",
+      "worst_close_profit_pct": -3.7802793510229105,
+      "giveback_pp": 3.7802793510229105,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": false,
+      "timing_failure": true,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "游戏ETF",
+          "weight": 0.3,
+          "return_pct": -3.140333660451411
+        },
+        {
+          "name": "传媒ETF",
+          "weight": 0.3,
+          "return_pct": -3.0470914127423865
+        },
+        {
+          "name": "中证2000ETF",
+          "weight": 0.2,
+          "return_pct": -2.7695351137487556
+        },
+        {
+          "name": "通信ETF",
+          "weight": 0.1,
+          "return_pct": -7.350096711798848
+        },
+        {
+          "name": "机器人ETF",
+          "weight": 0.1,
+          "return_pct": -6.351351351351353
+        }
+      ]
+    },
+    {
+      "start": "2024-01-24",
+      "end": "2024-01-30",
+      "sessions": 4,
+      "return_pct": -0.05685390486902756,
+      "amv_return_pct": 1.1130145921953272,
+      "peak_close_profit_pct": 2.569454794830406,
+      "peak_date": "2024-01-26",
+      "worst_close_profit_pct": -0.05685390486902756,
+      "giveback_pp": 2.6263086996994334,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": true,
+      "timing_failure": false,
+      "selection_failure": true,
+      "profit_to_loss": true,
+      "holdings": [
+        {
+          "name": "证券ETF",
+          "weight": 0.3,
+          "return_pct": -2.5930101465614475
+        },
+        {
+          "name": "煤炭ETF",
+          "weight": 0.3,
+          "return_pct": 3.3645655877342584
+        },
+        {
+          "name": "上证50ETF",
+          "weight": 0.2,
+          "return_pct": 0.4793028322440218
+        },
+        {
+          "name": "军工ETF",
+          "weight": 0.1,
+          "return_pct": -0.24630541871921707
+        },
+        {
+          "name": "中证2000ETF",
+          "weight": 0.1,
+          "return_pct": -3.5955056179775347
+        }
+      ]
+    },
+    {
+      "start": "2024-02-06",
+      "end": "2024-03-25",
+      "sessions": 28,
+      "return_pct": 12.94954304198534,
+      "amv_return_pct": 32.89895391720214,
+      "peak_close_profit_pct": 17.443138350223304,
+      "peak_date": "2024-03-18",
+      "worst_close_profit_pct": 0,
+      "giveback_pp": 4.493595308237966,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": true,
+      "timing_failure": false,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "创新药ETF",
+          "weight": 0.3,
+          "return_pct": 2.422480620155021
+        },
+        {
+          "name": "半导体ETF",
+          "weight": 0.3,
+          "return_pct": 16.720257234726677
+        },
+        {
+          "name": "游戏ETF",
+          "weight": 0.2,
+          "return_pct": 22.775800711743766
+        },
+        {
+          "name": "医药ETF",
+          "weight": 0.1,
+          "return_pct": 1.8779342723004744
+        },
+        {
+          "name": "传媒ETF",
+          "weight": 0.1,
+          "return_pct": 24.63768115942029
+        }
+      ]
+    },
+    {
+      "start": "2024-04-18",
+      "end": "2024-04-19",
+      "sessions": 1,
+      "return_pct": -0.41032749578395306,
+      "amv_return_pct": -0.9500979843225066,
+      "peak_close_profit_pct": 0,
+      "peak_date": "2024-04-18",
+      "worst_close_profit_pct": -0.41032749578395306,
+      "giveback_pp": 0.41032749578395306,
+      "missing_curve_days": 0,
+      "entry_below_ma60": false,
+      "entry_ma60_falling": false,
+      "timing_failure": true,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "有色ETF",
+          "weight": 0.3,
+          "return_pct": -0.6261180679785538
+        },
+        {
+          "name": "证券ETF",
+          "weight": 0.3,
+          "return_pct": -0.6009615384615419
+        },
+        {
+          "name": "军工ETF",
+          "weight": 0.2,
+          "return_pct": 1.2702078521940052
+        },
+        {
+          "name": "新能源车ETF",
+          "weight": 0.1,
+          "return_pct": -2.317290552584672
+        },
+        {
+          "name": "上证50ETF",
+          "weight": 0.1,
+          "return_pct": -0.6451612903225823
+        }
+      ]
+    },
+    {
+      "start": "2024-04-26",
+      "end": "2024-05-14",
+      "sessions": 9,
+      "return_pct": -0.9408542209175108,
+      "amv_return_pct": 4.254008255082997,
+      "peak_close_profit_pct": 2.148983960224855,
+      "peak_date": "2024-04-29",
+      "worst_close_profit_pct": -0.9408542209175108,
+      "giveback_pp": 3.089838181142366,
+      "missing_curve_days": 0,
+      "entry_below_ma60": false,
+      "entry_ma60_falling": false,
+      "timing_failure": false,
+      "selection_failure": true,
+      "profit_to_loss": true,
+      "holdings": [
+        {
+          "name": "证券ETF",
+          "weight": 0.3,
+          "return_pct": 0.5694760820045497
+        },
+        {
+          "name": "通信ETF",
+          "weight": 0.3,
+          "return_pct": -2.7049873203719432
+        },
+        {
+          "name": "软件ETF",
+          "weight": 0.2,
+          "return_pct": -2.5276461295418717
+        },
+        {
+          "name": "创业板ETF",
+          "weight": 0.1,
+          "return_pct": 2.19842164599775
+        },
+        {
+          "name": "半导体ETF",
+          "weight": 0.1,
+          "return_pct": -0.14513788098693414
+        }
+      ]
+    },
+    {
+      "start": "2024-07-31",
+      "end": "2024-08-08",
+      "sessions": 6,
+      "return_pct": -3.034977487391795,
+      "amv_return_pct": -3.5244036415091884,
+      "peak_close_profit_pct": 0,
+      "peak_date": "2024-07-31",
+      "worst_close_profit_pct": -3.3736058914536273,
+      "giveback_pp": 3.034977487391795,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": true,
+      "timing_failure": true,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "证券ETF",
+          "weight": 0.3,
+          "return_pct": -3.3293697978596937
+        },
+        {
+          "name": "机器人ETF",
+          "weight": 0.3,
+          "return_pct": -5.610561056105611
+        },
+        {
+          "name": "医药ETF",
+          "weight": 0.2,
+          "return_pct": 0.6751054852320637
+        },
+        {
+          "name": "软件ETF",
+          "weight": 0.1,
+          "return_pct": -5.818181818181822
+        },
+        {
+          "name": "创新药ETF",
+          "weight": 0.1,
+          "return_pct": 0.9379885356956663
+        }
+      ]
+    },
+    {
+      "start": "2024-08-30",
+      "end": "2024-09-09",
+      "sessions": 6,
+      "return_pct": -4.346438361186647,
+      "amv_return_pct": -4.492971170283743,
+      "peak_close_profit_pct": 0,
+      "peak_date": "2024-08-30",
+      "worst_close_profit_pct": -4.346438361186647,
+      "giveback_pp": 4.346438361186647,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": true,
+      "timing_failure": true,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "半导体ETF",
+          "weight": 0.3,
+          "return_pct": -6.029411764705883
+        },
+        {
+          "name": "白酒ETF",
+          "weight": 0.3,
+          "return_pct": -6.215722120658141
+        },
+        {
+          "name": "游戏ETF",
+          "weight": 0.2,
+          "return_pct": -0.9055627425614499
+        },
+        {
+          "name": "软件ETF",
+          "weight": 0.1,
+          "return_pct": -3.5573122529644285
+        },
+        {
+          "name": "传媒ETF",
+          "weight": 0.1,
+          "return_pct": -1.3605442176870763
+        }
+      ]
+    },
+    {
+      "start": "2024-09-24",
+      "end": "2024-10-11",
+      "sessions": 8,
+      "return_pct": 23.436874539541037,
+      "amv_return_pct": 113.64542592072881,
+      "peak_close_profit_pct": 40.90286548700143,
+      "peak_date": "2024-10-08",
+      "worst_close_profit_pct": 0,
+      "giveback_pp": 17.465990947460387,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": true,
+      "timing_failure": false,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "证券ETF",
+          "weight": 0.3,
+          "return_pct": 28.86836027713626
+        },
+        {
+          "name": "白酒ETF",
+          "weight": 0.3,
+          "return_pct": 19.05660377358489
+        },
+        {
+          "name": "新能源车ETF",
+          "weight": 0.2,
+          "return_pct": 20.459290187891433
+        },
+        {
+          "name": "创业板ETF",
+          "weight": 0.1,
+          "return_pct": 29.80466288594834
+        },
+        {
+          "name": "通信ETF",
+          "weight": 0.1,
+          "return_pct": 19.870609981515706
+        }
+      ]
+    },
+    {
+      "start": "2024-10-18",
+      "end": "2024-11-14",
+      "sessions": 19,
+      "return_pct": 7.626962250801893,
+      "amv_return_pct": 20.940168391435886,
+      "peak_close_profit_pct": 12.552550694696931,
+      "peak_date": "2024-11-11",
+      "worst_close_profit_pct": -2.511065903232035,
+      "giveback_pp": 4.925588443895039,
+      "missing_curve_days": 0,
+      "entry_below_ma60": false,
+      "entry_ma60_falling": false,
+      "timing_failure": false,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "半导体ETF",
+          "weight": 0.3,
+          "return_pct": 8.79917184265011
+        },
+        {
+          "name": "创业板ETF",
+          "weight": 0.3,
+          "return_pct": 6.122448979591821
+        },
+        {
+          "name": "通信ETF",
+          "weight": 0.2,
+          "return_pct": 5.16363636363637
+        },
+        {
+          "name": "证券ETF",
+          "weight": 0.1,
+          "return_pct": 8.212147134302805
+        },
+        {
+          "name": "软件ETF",
+          "weight": 0.1,
+          "return_pct": 12.965340179717577
+        }
+      ]
+    },
+    {
+      "start": "2025-02-06",
+      "end": "2025-02-28",
+      "sessions": 16,
+      "return_pct": 4.340300285299592,
+      "amv_return_pct": 23.948404096095956,
+      "peak_close_profit_pct": 10.24902411049654,
+      "peak_date": "2025-02-26",
+      "worst_close_profit_pct": 0,
+      "giveback_pp": 5.908723825196949,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": true,
+      "timing_failure": false,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "机器人ETF",
+          "weight": 0.3,
+          "return_pct": 4.888888888888876
+        },
+        {
+          "name": "新能源车ETF",
+          "weight": 0.3,
+          "return_pct": 4.860557768924312
+        },
+        {
+          "name": "半导体ETF",
+          "weight": 0.2,
+          "return_pct": 4.433962264150937
+        },
+        {
+          "name": "游戏ETF",
+          "weight": 0.1,
+          "return_pct": 5.286738351254483
+        },
+        {
+          "name": "高端装备ETF",
+          "weight": 0.1,
+          "return_pct": 0
+        }
+      ]
+    },
+    {
+      "start": "2025-04-10",
+      "end": "2025-04-16",
+      "sessions": 4,
+      "return_pct": 0.7426895222733997,
+      "amv_return_pct": -2.922685928303903,
+      "peak_close_profit_pct": 2.676908198778689,
+      "peak_date": "2025-04-14",
+      "worst_close_profit_pct": 0,
+      "giveback_pp": 1.9342186765052893,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": true,
+      "timing_failure": false,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "通信ETF",
+          "weight": 0.3,
+          "return_pct": -0.35874439461883734
+        },
+        {
+          "name": "有色ETF",
+          "weight": 0.3,
+          "return_pct": 2.3762376237624006
+        },
+        {
+          "name": "创业板人工智能ETF",
+          "weight": 0.2,
+          "return_pct": 0
+        },
+        {
+          "name": "机器人ETF",
+          "weight": 0.1,
+          "return_pct": 0.37641154328733606
+        },
+        {
+          "name": "中证2000ETF",
+          "weight": 0.1,
+          "return_pct": 0.9980039920159722
+        }
+      ]
+    },
+    {
+      "start": "2025-05-06",
+      "end": "2025-05-15",
+      "sessions": 7,
+      "return_pct": -0.15123252993603403,
+      "amv_return_pct": 1.0020511393473264,
+      "peak_close_profit_pct": 2.666592143724833,
+      "peak_date": "2025-05-12",
+      "worst_close_profit_pct": -0.15123252993603403,
+      "giveback_pp": 2.817824673660867,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": false,
+      "timing_failure": false,
+      "selection_failure": true,
+      "profit_to_loss": true,
+      "holdings": [
+        {
+          "name": "创业板人工智能ETF",
+          "weight": 0.3,
+          "return_pct": -1.1261261261261257
+        },
+        {
+          "name": "通信ETF",
+          "weight": 0.3,
+          "return_pct": 2.3255813953488413
+        },
+        {
+          "name": "软件ETF",
+          "weight": 0.2,
+          "return_pct": -3.4855769230769162
+        },
+        {
+          "name": "卫星ETF",
+          "weight": 0.1,
+          "return_pct": 1.7679558011049812
+        },
+        {
+          "name": "中证2000ETF",
+          "weight": 0.1,
+          "return_pct": 0.09250693802036469
+        }
+      ]
+    },
+    {
+      "start": "2025-06-25",
+      "end": "2025-09-04",
+      "sessions": 51,
+      "return_pct": 9.99971087126082,
+      "amv_return_pct": 75.0472773982231,
+      "peak_close_profit_pct": 20.54727559649665,
+      "peak_date": "2025-08-28",
+      "worst_close_profit_pct": -0.8169300132013055,
+      "giveback_pp": 10.54756472523583,
+      "missing_curve_days": 0,
+      "entry_below_ma60": false,
+      "entry_ma60_falling": true,
+      "timing_failure": false,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "证券ETF",
+          "weight": 0.3,
+          "return_pct": 7.772020725388606
+        },
+        {
+          "name": "软件ETF",
+          "weight": 0.3,
+          "return_pct": 9.642857142857153
+        },
+        {
+          "name": "军工ETF",
+          "weight": 0.2,
+          "return_pct": 6.8744271310724026
+        },
+        {
+          "name": "创业板ETF",
+          "weight": 0.1,
+          "return_pct": 30.440967283072553
+        },
+        {
+          "name": "高端装备ETF",
+          "weight": 0.1,
+          "return_pct": 3.5626535626535727
+        }
+      ]
+    },
+    {
+      "start": "2026-01-05",
+      "end": "2026-02-02",
+      "sessions": 20,
+      "return_pct": 7.267175271753764,
+      "amv_return_pct": 28.335294660911913,
+      "peak_close_profit_pct": 14.315033142523035,
+      "peak_date": "2026-01-23",
+      "worst_close_profit_pct": 0,
+      "giveback_pp": 7.04785787076927,
+      "missing_curve_days": 0,
+      "entry_below_ma60": false,
+      "entry_ma60_falling": true,
+      "timing_failure": false,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "科创半导体设备ETF",
+          "weight": 0.3,
+          "return_pct": 7.697006719609045
+        },
+        {
+          "name": "传媒ETF",
+          "weight": 0.3,
+          "return_pct": 13.518696069031645
+        },
+        {
+          "name": "半导体ETF",
+          "weight": 0.2,
+          "return_pct": 5.751633986928106
+        },
+        {
+          "name": "游戏ETF",
+          "weight": 0.1,
+          "return_pct": 1.9946808510638236
+        },
+        {
+          "name": "医药ETF",
+          "weight": 0.1,
+          "return_pct": -4.473304473304463
+        }
+      ]
+    },
+    {
+      "start": "2026-04-08",
+      "end": "2026-05-21",
+      "sessions": 28,
+      "return_pct": 5.545768344340515,
+      "amv_return_pct": 30.595329680792617,
+      "peak_close_profit_pct": 15.33787994194059,
+      "peak_date": "2026-05-13",
+      "worst_close_profit_pct": -1.2182043928419448,
+      "giveback_pp": 9.792111597600076,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": false,
+      "timing_failure": false,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "创业板人工智能ETF",
+          "weight": 0.3,
+          "return_pct": 12.557286892758945
+        },
+        {
+          "name": "传媒ETF",
+          "weight": 0.3,
+          "return_pct": -9.239653512993263
+        },
+        {
+          "name": "通信ETF",
+          "weight": 0.2,
+          "return_pct": 20.40133779264215
+        },
+        {
+          "name": "软件ETF",
+          "weight": 0.1,
+          "return_pct": -1.3349514563106846
+        },
+        {
+          "name": "卫星ETF",
+          "weight": 0.1,
+          "return_pct": 6.037059175134485
+        }
+      ]
+    },
+    {
+      "start": "2026-05-25",
+      "end": "2026-05-29",
+      "sessions": 4,
+      "return_pct": -4.397243982163249,
+      "amv_return_pct": -2.7491326800744287,
+      "peak_close_profit_pct": 0,
+      "peak_date": "2026-05-25",
+      "worst_close_profit_pct": -4.397243982163249,
+      "giveback_pp": 4.397243982163249,
+      "missing_curve_days": 0,
+      "entry_below_ma60": false,
+      "entry_ma60_falling": false,
+      "timing_failure": true,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "半导体ETF",
+          "weight": 0.3,
+          "return_pct": -8.006814310051091
+        },
+        {
+          "name": "科创半导体设备ETF",
+          "weight": 0.3,
+          "return_pct": -9.903811898824365
+        },
+        {
+          "name": "通信ETF",
+          "weight": 0.2,
+          "return_pct": 1.7925736235595346
+        },
+        {
+          "name": "创业板人工智能ETF",
+          "weight": 0.1,
+          "return_pct": 0.7555723460521468
+        },
+        {
+          "name": "煤炭ETF",
+          "weight": 0.1,
+          "return_pct": 5.418719211822665
+        }
+      ]
+    },
+    {
+      "start": "2026-06-15",
+      "end": "2026-06-26",
+      "sessions": 8,
+      "return_pct": 10.687296492907588,
+      "amv_return_pct": 7.7329812720981606,
+      "peak_close_profit_pct": 14.924166320164368,
+      "peak_date": "2026-06-25",
+      "worst_close_profit_pct": 0,
+      "giveback_pp": 4.236869827256778,
+      "missing_curve_days": 0,
+      "entry_below_ma60": false,
+      "entry_ma60_falling": false,
+      "timing_failure": false,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "创业板人工智能ETF",
+          "weight": 0.3,
+          "return_pct": 5.379513633013988
+        },
+        {
+          "name": "通信ETF",
+          "weight": 0.3,
+          "return_pct": 4.0260509177027615
+        },
+        {
+          "name": "半导体ETF",
+          "weight": 0.2,
+          "return_pct": 23.1286418646347
+        },
+        {
+          "name": "科创半导体设备ETF",
+          "weight": 0.1,
+          "return_pct": 28.196268140981328
+        },
+        {
+          "name": "创业板ETF",
+          "weight": 0.1,
+          "return_pct": 4.202719406674915
+        }
+      ]
+    },
+    {
+      "start": "2026-08-05",
+      "end": "2026-08-18",
+      "sessions": 9,
+      "return_pct": 9.576470259485976,
+      "amv_return_pct": 1.6038355355159517,
+      "peak_close_profit_pct": 9.576470259485976,
+      "peak_date": "2026-08-18",
+      "worst_close_profit_pct": 0,
+      "giveback_pp": 0,
+      "missing_curve_days": 0,
+      "entry_below_ma60": true,
+      "entry_ma60_falling": true,
+      "timing_failure": false,
+      "selection_failure": false,
+      "profit_to_loss": false,
+      "holdings": [
+        {
+          "name": "科创半导体设备ETF",
+          "weight": 0.3,
+          "return_pct": 16.124439918533607
+        },
+        {
+          "name": "半导体ETF",
+          "weight": 0.3,
+          "return_pct": 9.583736689254607
+        },
+        {
+          "name": "有色ETF",
+          "weight": 0.2,
+          "return_pct": 1.576458223857058
+        },
+        {
+          "name": "卫星ETF",
+          "weight": 0.1,
+          "return_pct": 8.375819373634386
+        },
+        {
+          "name": "中证2000ETF",
+          "weight": 0.1,
+          "return_pct": 7.111436950146621
+        }
+      ]
+    }
+  ]
+}

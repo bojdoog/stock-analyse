@@ -16,6 +16,14 @@ export interface BacktestHolding {
 }
 
 export interface BacktestTrade {
+  protection?: {
+    armed_date?: string;
+    trigger_date?: string;
+    trigger_return?: number;
+    peak_return?: number;
+    drawdown?: number;
+  };
+  relative_nav?: BacktestNavPoint[];
   is_open?: boolean;
   valuation_date?: string;
   type: 'bull' | 'bear';
@@ -183,6 +191,10 @@ export type RankingMethod =
   | 'dc_moneyflow';
 
 export interface StrategyParams {
+  leverageMultiplier?: number;
+  profitProtectionEnabled?: boolean;
+  profitProtectionArmPct?: number;
+  profitProtectionDrawdownPct?: number;
   bullStartSingleDay: number;
   bullStartTwoDay: number;
   bullEndSingleDay: number;
@@ -200,6 +212,10 @@ export interface StrategyParams {
 }
 
 export const DEFAULT_STRATEGY_PARAMS: StrategyParams = {
+  leverageMultiplier: 1,
+  profitProtectionEnabled: false,
+  profitProtectionArmPct: 4,
+  profitProtectionDrawdownPct: 2,
   bullStartSingleDay: 4,
   bullStartTwoDay: 4,
   bullEndSingleDay: -2.3,
@@ -214,6 +230,48 @@ export const DEFAULT_STRATEGY_PARAMS: StrategyParams = {
 };
 
 export type OptimalMethod = 'equal' | 'return' | 'growth' | 'sharpe';
+
+/** One half-sale at the actual closing quote; remaining units stay invested. */
+export function calculateProfitProtection(
+  days: string[], weights: number[], quotes: (number | null)[][],
+  armPct: number, drawdownPct: number, isOpen = false, enabled = true,
+) {
+  if (!Number.isFinite(armPct) || armPct <= 0 || !Number.isFinite(drawdownPct) || drawdownPct <= 0 || drawdownPct >= 100) {
+    throw new Error('盈利保护门槛须大于0，回撤门槛须小于100%');
+  }
+  if (!days.length || quotes.length !== days.length || quotes.some(row => row.length !== weights.length)) {
+    throw new Error('盈利保护行情长度不匹配');
+  }
+  const entry = quotes[0].map(price => {
+    if (price === null || !Number.isFinite(price) || price <= 0) throw new Error('缺少建仓价格');
+    return price;
+  });
+  let last = [...entry];
+  let peak = 1;
+  let soldNav: number | undefined;
+  let soldReturns: number[] | undefined;
+  let holdingReturns = weights.map(() => 0);
+  const status: NonNullable<BacktestTrade['protection']> = {};
+  const curve = days.map((date, i) => {
+    const fresh = quotes[i].every((price, j) => weights[j] === 0 || (price !== null && Number.isFinite(price) && price > 0));
+    last = quotes[i].map((price, j) => price !== null && Number.isFinite(price) && price > 0 ? price : last[j]);
+    const rawReturns = last.map((price, j) => price / entry[j] - 1);
+    const rawNav = 1 + rawReturns.reduce((sum, value, j) => sum + value * weights[j], 0);
+    if (enabled && fresh && soldNav === undefined) {
+      peak = Math.max(peak, rawNav);
+      if (!status.armed_date && rawNav - 1 >= armPct / 100 - 1e-12) status.armed_date = date;
+      const drawdown = 1 - rawNav / peak;
+      if (status.armed_date && drawdown >= drawdownPct / 100 - 1e-12 && i > 0 && (i < days.length - 1 || isOpen)) {
+        soldNav = rawNav;
+        soldReturns = [...rawReturns];
+        Object.assign(status, { trigger_date: date, trigger_return: rawNav - 1, peak_return: peak - 1, drawdown });
+      }
+    }
+    holdingReturns = rawReturns.map((value, j) => soldReturns ? .5 * value + .5 * soldReturns[j] : value);
+    return { date, nav: soldNav === undefined ? rawNav : .5 * rawNav + .5 * soldNav };
+  });
+  return { curve, holdingReturns, status };
+}
 
 function normalizeWeights(weights: number[]): number[] {
   const rounded = weights.map((w) => Math.round(w));
@@ -552,6 +610,8 @@ export function runBacktest(
   indMoneyflowData?: MoneyflowData[],
 ): BacktestResult {
   const { startYear, endYear, weights, bearStartYear, rankingMethod } = params;
+  const leverage = params.leverageMultiplier ?? 1;
+  if (!Number.isFinite(leverage) || leverage < 0) throw new Error('杠杆倍率须为不小于 0 的有限数值');
 
   // 过滤到指定年份区间
   const filteredAMV = amvData.filter((d) => {
@@ -817,6 +877,7 @@ export function runBacktest(
 
       let totalReturn = 0;
       const holdings: BacktestHolding[] = [];
+      const protectionPrices = new Map<string, (date: string) => number | null>();
 
       const getSectorClose = (
         industryName: string,
@@ -884,7 +945,7 @@ export function runBacktest(
           return false;
 
         const holdingReturn = endClose / startClose - 1;
-        const weight = weightPct / 100;
+        const weight = weightPct / 100 * leverage;
         totalReturn += weight * holdingReturn;
         holdings.push({
           name: item.name,
@@ -893,6 +954,13 @@ export function runBacktest(
           holding_return: holdingReturn,
           industry_name: item.industry_name,
         });
+        if (params.profitProtectionEnabled || leverage !== 1) {
+          const sectorMap = rankingMethod === 'dc_moneyflow' ? moneyflowMap
+            : rankingMethod === 'ths_concept' ? conceptMoneyflowMap : indMoneyflowMap;
+          const exact = new Map((data || []).map(row => [row.date, row.close]));
+          protectionPrices.set(item.name, date => useSectorPrice && item.industry_name
+            ? getSectorClose(item.industry_name, date, sectorMap) : exact.get(date) ?? null);
+        }
         return true;
       };
 
@@ -956,7 +1024,7 @@ export function runBacktest(
           ? amvEndClose / amvStartClose - 1
           : 0;
 
-      trades.push({
+      const bullTrade: BacktestTrade = {
         type: 'bull',
         start_date: startDate,
         end_date: endDate,
@@ -964,7 +1032,19 @@ export function runBacktest(
         return: totalReturn,
         amv_return: amvReturn,
         holdings,
-      });
+      };
+      if (params.profitProtectionEnabled || leverage !== 1) {
+        const days = filteredAMV.slice(zone.start_idx, zone.end_idx + 1).map(row => row.date);
+        const managed = calculateProfitProtection(days, holdings.map(h => h.weight),
+          days.map(date => holdings.map(h => protectionPrices.get(h.name)?.(date) ?? null)),
+          params.profitProtectionArmPct ?? 4, params.profitProtectionDrawdownPct ?? 2, zone.is_open, params.profitProtectionEnabled === true);
+        if (params.profitProtectionEnabled) bullTrade.protection = managed.status;
+        bullTrade.relative_nav = managed.curve;
+        bullTrade.is_open = zone.is_open;
+        bullTrade.return = managed.curve[managed.curve.length - 1].nav - 1;
+        holdings.forEach((holding, i) => { holding.holding_return = managed.holdingReturns[i]; });
+      }
+      trades.push(bullTrade);
     } else {
       // 从指定年份开始，空头区间才买入银行 ETF
       const zoneStartYear = parseInt(startDate.split('-')[0], 10);
@@ -992,10 +1072,10 @@ export function runBacktest(
         start_date: startDate,
         end_date: endDate,
         year: zoneStartYear,
-        return: holdingReturn,
+        return: holdingReturn * leverage,
         amv_return: amvReturn,
         holdings: [
-          { name: BANK_ETF_NAME, weight: 1, holding_return: holdingReturn },
+          { name: BANK_ETF_NAME, weight: leverage, holding_return: holdingReturn },
         ],
       });
     }
@@ -1153,6 +1233,28 @@ export function runBacktest(
     navSeries.push({ date, nav: parseFloat(nav.toFixed(6)) });
   }
 
+  if (params.profitProtectionEnabled || leverage !== 1) {
+    // Follow actual units plus cash so the protected curve reconciles to trade P&L.
+    const values = new Map<string, number>();
+    let capital = 1;
+    tradesSorted.forEach(trade => {
+      const dates = allDates.filter(date => date >= trade.start_date && date <= trade.end_date);
+      const curve = trade.relative_nav || dates.map(date => ({ date, nav: 1 + trade.holdings.reduce((sum, h) => {
+        const prices = etfMap.get(h.name) || [];
+        const entry = getClose(prices, trade.start_date);
+        const current = getQuoteAsOf(prices, date)?.close;
+        return sum + (entry && current ? h.weight * (current / entry - 1) : 0);
+      }, 0) }));
+      curve.forEach(point => values.set(point.date, capital * point.nav));
+      capital *= 1 + trade.return;
+    });
+    let current = 1;
+    navSeries.splice(0, navSeries.length, ...allDates.map(date => {
+      current = values.get(date) ?? current;
+      return { date, nav: Number(current.toFixed(6)) };
+    }));
+  }
+
   // 计算基准 ETF（上证50、沪深300、中证2000）在多头区间的买入持有收益
   const bullZonesOnly = zones.filter((z) => z.type === 'bull');
   const benchmarkETFs: { name: string; code: string }[] = [
@@ -1200,6 +1302,9 @@ export function runBacktest(
     };
   });
 
+  if (leverage !== 1 && (navSeries.some(point => !Number.isFinite(point.nav) || point.nav <= 0) || !Number.isFinite(finalNav))) {
+    throw new Error('该倍率下账户净值已耗尽或超出可计算范围，请降低杠杆倍率');
+  }
   return {
     zones,
     trades,

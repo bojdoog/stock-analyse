@@ -21,10 +21,18 @@ function loadTs(relativePath, dependencies, globals = {}) {
 const display = loadTs('src/pages/ActiveMarket/utils/indicatorDisplay.ts', {});
 let option;
 let refIndex = 0;
+let quoteElement;
 const effects = [];
 const react = {
   createElement: () => null,
-  useRef: initial => ({ current: refIndex++ === 0 ? {} : initial }),
+  useRef: initial => {
+    const index = refIndex++;
+    if (index === 2) { quoteElement = { replaceChildren(...children) {
+      this.children = children;
+      this.textContent = children.map(child => child.textContent).join('');
+    } }; return { current: quoteElement }; }
+    return { current: index === 0 ? {} : initial };
+  },
   useEffect: effect => effects.push(effect),
 };
 const handlers = {};
@@ -39,7 +47,8 @@ const Component = loadTs('src/pages/ActiveMarket/components/KLineChart.tsx', {
   react,
   echarts: { init: () => chart, connect() {} },
   '../utils/indicatorDisplay': display,
-}, { window: { addEventListener() {}, removeEventListener() {} } }).default;
+}, { window: { addEventListener() {}, removeEventListener() {} },
+  document: { createElement: () => ({ style: {}, textContent: '' }) } }).default;
 
 function render(data, props = {}) {
   option = undefined;
@@ -66,6 +75,29 @@ for (const data of [closeOnly, closeOnly.map(row => ({ date: row.date, close: ro
 }
 const ohlc = closeOnly.map(row => ({ ...row, open: row.close - 1, high: row.close + 2, low: row.close - 2, volume: 500 }));
 assert.equal(render(ohlc).series[0].type, 'candlestick');
+handlers.updateAxisPointer({ axesInfo: [{ axisDim: 'x', value: 64 }] });
+assert.ok(quoteElement.textContent.includes('day-64'));
+assert.equal(quoteElement.children[1].style.color, '#ff4d4d');
+assert.equal(quoteElement.children[2].style.color, option.series.find(s => s.name === 'MA10').itemStyle.color);
+assert.equal(quoteElement.children[3].style.color, option.series.find(s => s.name === 'MA60').itemStyle.color);
+for (const value of ['164.00', 'MA10 159.50', 'MA60 134.50']) {
+  assert.ok(quoteElement.textContent.includes(value), value);
+}
+for (const value of ['开 ', '高 ', '低 ', 'MA5 ', 'MA20 ']) assert.ok(!quoteElement.textContent.includes(value));
+handlers.legendselectchanged({ selected: { MA5: true, MA10: false, MA20: true, MA60: false } });
+assert.ok(quoteElement.textContent.includes('MA5 162.00'));
+assert.ok(quoteElement.textContent.includes('MA20 154.50'));
+assert.ok(!quoteElement.textContent.includes('MA10 '));
+assert.ok(!quoteElement.textContent.includes('MA60 '));
+handlers.legendselectchanged({ selected: { MA5: false, MA10: true, MA20: false, MA60: true } });
+handlers.updateAxisPointer({ axesInfo: [{ axisDim: 'x', value: 0 }] });
+assert.ok(quoteElement.textContent.includes('MA60 —'));
+assert.equal(quoteElement.children[1].style.color, '#526871');
+render([{ ...ohlc[0], close: 100 }, { ...ohlc[1], close: 99 }, { ...ohlc[2], close: 99 }]);
+handlers.updateAxisPointer({ axesInfo: [{ axisDim: 'x', value: 1 }] });
+assert.equal(quoteElement.children[1].style.color, '#00b300');
+handlers.updateAxisPointer({ axesInfo: [{ axisDim: 'x', value: 2 }] });
+assert.equal(quoteElement.children[1].style.color, '#526871');
 assert.equal(render(ohlc).series.some(series => series.type === 'bar'), true);
 assert.equal(render(ohlc, { seriesType: 'line', mainSeriesName: 'ETF' }).series[0].name, 'ETF');
 assert.equal(render(ohlc, { seriesType: 'line', mainSeriesName: 'ETF' }).series[0].type, 'line');

@@ -1,0 +1,159 @@
+X [ERROR] Could not resolve "./components/IntradayModal"
+
+    src/pages/ActiveMarket/index.tsx:6:26:
+      6 │ import IntradayModal from './components/IntradayModal';
+        ╵                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+error - [icons] build failed: Error: Build failed with 1 error:
+src/pages/ActiveMarket/index.tsx:6:26: ERROR: Could not resolve "./components/IntradayModal"
+./src/pages/ActiveMarket/index.tsx:6:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'./components/IntradayModal'[39m
+[0m [90m 4 |[39m [36mimport[39m { [33mIndicator[39m[33m,[39m queryIndicators } [36mfrom[39m [32m'@/services/indicators'[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m [33mKLineChart[39m [36mfrom[39m [32m'./components/KLineChart'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m [33mIntradayModal[39m [36mfrom[39m [32m'./components/IntradayModal'[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 7 |[39m [36mimport[39m [33mBacktestChart[39m [36mfrom[39m [32m'./components/BacktestChart'[39m[33m;[39m[0m
+[0m [90m 8 |[39m [36mimport[39m [33mNavOverviewChart[39m [36mfrom[39m [32m'./components/NavOverviewChart'[39m[33m;[39m[0m
+[0m [90m 9 |[39m [36mimport[39m { isCloseOnlySeries } [36mfrom[39m [32m'./utils/indicatorDisplay'[39m[33m;[39m[0m
+
+
+
+
+./src/pages/ActiveMarket/index.tsx:6:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'./components/IntradayModal'[39m
+[0m [90m 4 |[39m [36mimport[39m { [33mIndicator[39m[33m,[39m queryIndicators } [36mfrom[39m [32m'@/services/indicators'[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m [33mKLineChart[39m [36mfrom[39m [32m'./components/KLineChart'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m [33mIntradayModal[39m [36mfrom[39m [32m'./components/IntradayModal'[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 7 |[39m [36mimport[39m [33mBacktestChart[39m [36mfrom[39m [32m'./components/BacktestChart'[39m[33m;[39m[0m
+[0m [90m 8 |[39m [36mimport[39m [33mNavOverviewChart[39m [36mfrom[39m [32m'./components/NavOverviewChart'[39m[33m;[39m[0m
+[0m [90m 9 |[39m [36mimport[39m { isCloseOnlySeries } [36mfrom[39m [32m'./utils/indicatorDisplay'[39m[33m;[39m[0m
+
+
+
+
+./src/pages/ActiveMarket/index.tsx:6:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'./components/IntradayModal'[39m
+[0m [90m 4 |[39m [36mimport[39m { [33mIndicator[39m[33m,[39m queryIndicators } [36mfrom[39m [32m'@/services/indicators'[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m [33mKLineChart[39m [36mfrom[39m [32m'./components/KLineChart'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m [33mIntradayModal[39m [36mfrom[39m [32m'./components/IntradayModal'[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 7 |[39m [36mimport[39m [33mBacktestChart[39m [36mfrom[39m [32m'./components/BacktestChart'[39m[33m;[39m[0m
+[0m [90m 8 |[39m [36mimport[39m [33mNavOverviewChart[39m [36mfrom[39m [32m'./components/NavOverviewChart'[39m[33m;[39m[0m
+[0m [90m 9 |[39m [36mimport[39m { isCloseOnlySeries } [36mfrom[39m [32m'./utils/indicatorDisplay'[39m[33m;[39m[0m
+
+
+
+
+./src/pages/ActiveMarket/index.tsx:6:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'./components/IntradayModal'[39m
+[0m [90m 4 |[39m [36mimport[39m { [33mIndicator[39m[33m,[39m queryIndicators } [36mfrom[39m [32m'@/services/indicators'[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m [33mKLineChart[39m [36mfrom[39m [32m'./components/KLineChart'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m [33mIntradayModal[39m [36mfrom[39m [32m'./components/IntradayModal'[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 7 |[39m [36mimport[39m [33mBacktestChart[39m [36mfrom[39m [32m'./components/BacktestChart'[39m[33m;[39m[0m
+[0m [90m 8 |[39m [36mimport[39m [33mNavOverviewChart[39m [36mfrom[39m [32m'./components/NavOverviewChart'[39m[33m;[39m[0m
+[0m [90m 9 |[39m [36mimport[39m { isCloseOnlySeries } [36mfrom[39m [32m'./utils/indicatorDisplay'[39m[33m;[39m[0m
+
+
+
+
+./src/pages/ActiveMarket/index.tsx:6:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'./components/IntradayModal'[39m
+[0m [90m 4 |[39m [36mimport[39m { [33mIndicator[39m[33m,[39m queryIndicators } [36mfrom[39m [32m'@/services/indicators'[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m [33mKLineChart[39m [36mfrom[39m [32m'./components/KLineChart'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m [33mIntradayModal[39m [36mfrom[39m [32m'./components/IntradayModal'[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 7 |[39m [36mimport[39m [33mBacktestChart[39m [36mfrom[39m [32m'./components/BacktestChart'[39m[33m;[39m[0m
+[0m [90m 8 |[39m [36mimport[39m [33mNavOverviewChart[39m [36mfrom[39m [32m'./components/NavOverviewChart'[39m[33m;[39m[0m
+[0m [90m 9 |[39m [36mimport[39m { isCloseOnlySeries } [36mfrom[39m [32m'./utils/indicatorDisplay'[39m[33m;[39m[0m
+
+
+
+
+./src/pages/ActiveMarket/index.tsx:6:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'./components/IntradayModal'[39m
+[0m [90m 4 |[39m [36mimport[39m { [33mIndicator[39m[33m,[39m queryIndicators } [36mfrom[39m [32m'@/services/indicators'[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m [33mKLineChart[39m [36mfrom[39m [32m'./components/KLineChart'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m [33mIntradayModal[39m [36mfrom[39m [32m'./components/IntradayModal'[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 7 |[39m [36mimport[39m [33mBacktestChart[39m [36mfrom[39m [32m'./components/BacktestChart'[39m[33m;[39m[0m
+[0m [90m 8 |[39m [36mimport[39m [33mNavOverviewChart[39m [36mfrom[39m [32m'./components/NavOverviewChart'[39m[33m;[39m[0m
+[0m [90m 9 |[39m [36mimport[39m { isCloseOnlySeries } [36mfrom[39m [32m'./utils/indicatorDisplay'[39m[33m;[39m[0m
+
+
+
+
+ModuleBuildError: ./src/pages/ActiveMarket/index.tsx:6:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'./components/IntradayModal'[39m
+[0m [90m 4 |[39m [36mimport[39m { [33mIndicator[39m[33m,[39m queryIndicators } [36mfrom[39m [32m'@/services/indicators'[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m [33mKLineChart[39m [36mfrom[39m [32m'./components/KLineChart'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m [33mIntradayModal[39m [36mfrom[39m [32m'./components/IntradayModal'[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 7 |[39m [36mimport[39m [33mBacktestChart[39m [36mfrom[39m [32m'./components/BacktestChart'[39m[33m;[39m[0m
+[0m [90m 8 |[39m [36mimport[39m [33mNavOverviewChart[39m [36mfrom[39m [32m'./components/NavOverviewChart'[39m[33m;[39m[0m
+[0m [90m 9 |[39m [36mimport[39m { isCloseOnlySeries } [36mfrom[39m [32m'./utils/indicatorDisplay'[39m[33m;[39m[0m
+
+
+
+
+    at processIssues (C:\_allCode\stock_analyse\stock-line\node_modules\@utoo\pack-shared\cjs\utils.js:62:15)
+    at writeAllEntrypointsToDisk (C:\_allCode\stock_analyse\stock-line\node_modules\@utoo\pack\cjs\core\hmr.js:199:36)
+    at async writeOutputToDisk (C:\_allCode\stock_analyse\stock-line\node_modules\@utoo\pack\cjs\core\hmr.js:212:13)
+    at async C:\_allCode\stock_analyse\stock-line\node_modules\@utoo\pack\cjs\core\hmr.js:243:13
+./src/pages/ActiveMarket/components/IntradayModal.tsx:4:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'./IntradayModal.less'[39m
+[0m [90m 2 |[39m [36mimport[39m { [33mAlert[39m[33m,[39m [33mButton[39m[33m,[39m [33mEmpty[39m[33m,[39m [33mModal[39m[33m,[39m [33mSpin[39m } [36mfrom[39m [32m'antd'[39m[33m;[39m[0m
+[0m [90m 3 |[39m [36mimport[39m { init[33m,[39m [33mEChartsOption[39m } [36mfrom[39m [32m'echarts'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m [32m'./IntradayModal.less'[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 5 |[39m[0m
+[0m [90m 6 |[39m [36minterface[39m [33mSnapshot[39m { time[33m:[39m string[33m;[39m amv[33m:[39m number }[0m
+[0m [90m 7 |[39m [36minterface[39m [33mResult[39m {[0m
+
+
+
+
+./src/pages/ActiveMarket/components/IntradayModal.tsx:4:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'./IntradayModal.less'[39m
+[0m [90m 2 |[39m [36mimport[39m { [33mAlert[39m[33m,[39m [33mButton[39m[33m,[39m [33mEmpty[39m[33m,[39m [33mModal[39m[33m,[39m [33mSpin[39m } [36mfrom[39m [32m'antd'[39m[33m;[39m[0m
+[0m [90m 3 |[39m [36mimport[39m { init[33m,[39m [33mEChartsOption[39m } [36mfrom[39m [32m'echarts'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m [32m'./IntradayModal.less'[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 5 |[39m[0m
+[0m [90m 6 |[39m [36minterface[39m [33mSnapshot[39m { time[33m:[39m string[33m;[39m amv[33m:[39m number }[0m
+[0m [90m 7 |[39m [36minterface[39m [33mResult[39m {[0m
+
+
+
+
+./src/pages/ActiveMarket/components/IntradayModal.tsx:4:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'./IntradayModal.less'[39m
+[0m [90m 2 |[39m [36mimport[39m { [33mAlert[39m[33m,[39m [33mButton[39m[33m,[39m [33mEmpty[39m[33m,[39m [33mModal[39m[33m,[39m [33mSpin[39m } [36mfrom[39m [32m'antd'[39m[33m;[39m[0m
+[0m [90m 3 |[39m [36mimport[39m { init[33m,[39m [33mEChartsOption[39m } [36mfrom[39m [32m'echarts'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m [32m'./IntradayModal.less'[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 5 |[39m[0m
+[0m [90m 6 |[39m [36minterface[39m [33mSnapshot[39m { time[33m:[39m string[33m;[39m amv[33m:[39m number }[0m
+[0m [90m 7 |[39m [36minterface[39m [33mResult[39m {[0m
+
+
+
+
+ModuleBuildError: ./src/pages/ActiveMarket/components/IntradayModal.tsx:4:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'./IntradayModal.less'[39m
+[0m [90m 2 |[39m [36mimport[39m { [33mAlert[39m[33m,[39m [33mButton[39m[33m,[39m [33mEmpty[39m[33m,[39m [33mModal[39m[33m,[39m [33mSpin[39m } [36mfrom[39m [32m'antd'[39m[33m;[39m[0m
+[0m [90m 3 |[39m [36mimport[39m { init[33m,[39m [33mEChartsOption[39m } [36mfrom[39m [32m'echarts'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m [32m'./IntradayModal.less'[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 5 |[39m[0m
+[0m [90m 6 |[39m [36minterface[39m [33mSnapshot[39m { time[33m:[39m string[33m;[39m amv[33m:[39m number }[0m
+[0m [90m 7 |[39m [36minterface[39m [33mResult[39m {[0m
+
+
+
+
+    at processIssues (C:\_allCode\stock_analyse\stock-line\node_modules\@utoo\pack-shared\cjs\utils.js:62:15)
+    at writeAllEntrypointsToDisk (C:\_allCode\stock_analyse\stock-line\node_modules\@utoo\pack\cjs\core\hmr.js:199:36)
+    at async writeOutputToDisk (C:\_allCode\stock_analyse\stock-line\node_modules\@utoo\pack\cjs\core\hmr.js:212:13)
+    at async C:\_allCode\stock_analyse\stock-line\node_modules\@utoo\pack\cjs\core\hmr.js:243:13
