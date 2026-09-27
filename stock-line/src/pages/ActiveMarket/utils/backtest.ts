@@ -214,8 +214,8 @@ export interface StrategyParams {
 export const DEFAULT_STRATEGY_PARAMS: StrategyParams = {
   leverageMultiplier: 1,
   profitProtectionEnabled: false,
-  profitProtectionArmPct: 4,
-  profitProtectionDrawdownPct: 2,
+  profitProtectionArmPct: 13.5,
+  profitProtectionDrawdownPct: 2.2,
   bullStartSingleDay: 4,
   bullStartTwoDay: 4,
   bullEndSingleDay: -2.3,
@@ -1039,7 +1039,7 @@ export function runBacktest(
         const days = filteredAMV.slice(zone.start_idx, zone.end_idx + 1).map(row => row.date);
         const managed = calculateProfitProtection(days, unleveragedWeights,
           days.map(date => holdings.map(h => protectionPrices.get(h.name)?.(date) ?? null)),
-          params.profitProtectionArmPct ?? 4, params.profitProtectionDrawdownPct ?? 2, zone.is_open, params.profitProtectionEnabled === true && leverage > 0);
+          params.profitProtectionArmPct ?? 13.5, params.profitProtectionDrawdownPct ?? 2.2, zone.is_open, params.profitProtectionEnabled === true && leverage > 0);
         if (params.profitProtectionEnabled) bullTrade.protection = managed.status;
         bullTrade.relative_nav = leverage === 1 ? managed.curve
           : managed.curve.map(point => ({ date: point.date, nav: 1 + (point.nav - 1) * leverage }));

@@ -148,3 +148,13 @@ assert.equal(openedDates[3], dated[60].date);
 render(dated);
 assert.doesNotThrow(() => canvasHandlers.dblclick({ offsetX: 300, offsetY: 200 }));
 console.log('PASS: canvas double-click accepts all main-grid heights, maps the current axis date, and ignores outside/invalid coordinates');
+const holidayDates = ['2024-04-30','2024-05-06','2024-09-30','2024-10-08','2025-01-27','2025-02-05','2025-04-30','2025-05-06','2025-09-30'];
+const holidayRows = holidayDates.map(date => ({...ohlc[0],date}));
+assert.equal(render(holidayRows).series.some(s => s.name === '\u957f\u5047\u671f\u95f4'), false);
+const holidaySeries = render(holidayRows,{showHolidayPeriods:true}).series.find(s=>s.name === '\u957f\u5047\u671f\u95f4');
+assert.equal(holidaySeries.markArea.data.length,4);
+assert.deepEqual(JSON.parse(JSON.stringify(holidaySeries.markArea.data.map(pair=>pair.map(p=>p.xAxis)))),[
+ ['2024-04-30','2024-05-06'],['2024-09-30','2024-10-08'],['2025-01-27','2025-02-05'],['2025-04-30','2025-05-06']
+]);
+assert.ok(holidaySeries.markArea.data[0][0].name.includes('2024'));
+console.log('PASS: holiday toggle, yearly labels, trading-day gaps and incomplete final holiday');

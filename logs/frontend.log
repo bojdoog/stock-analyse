@@ -2,9 +2,15 @@
 > dev
 > max dev
 
-info  - [你知道吗？] 需要添加全局 React Context 吗？在 src/app.(ts|tsx) 运行时配置中轻松解决，详见 https://umijs.org/docs/api/runtime-config
+info  - [你知道吗？] 默认使用 esbuild 作为 JavaScript 压缩工具，也可通过 jsMinifier 配置项切换到 terser 或 uglifyJs 等，详见 https://umijs.org/docs/api/config#jsminifier-webpack
 
-  utoo pack v1.4.22 ready in 9886ms
+  utoo pack v1.4.22 ready in 17404ms
 
   ➜  Local:   http://localhost:8000
   ➜  Network: http://26.181.72.104:8000
+Compiled in 246ms
+Compiled in 40ms
+Compiled in 37ms
+Compiled in 72ms
+Compiled in 45ms
+Compiled in 74ms

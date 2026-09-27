@@ -89,6 +89,7 @@ const ActiveMarket: React.FC = () => {
     const selectedIndicator = indicators.find(item => item.id === selectedIndicatorId);
     const [showBullZoneBg, setShowBullZoneBg] = useState(true);
     const [showBearZoneBg, setShowBearZoneBg] = useState(true);
+    const [showHolidayPeriods, setShowHolidayPeriods] = useState(false);
     const [selectedETFs, setSelectedETFs] = useState<string[]>([]);
     const [extraSeries, setExtraSeries] = useState<ExtraSeries[]>([]);
     const [allETFSeries, setAllETFSeries] = useState<ExtraSeries[]>([]);
@@ -663,7 +664,7 @@ const ActiveMarket: React.FC = () => {
                         {strategyParams.profitProtectionEnabled ? <>
                             <label htmlFor="profit-protection-arm">组合浮盈达到</label>
                             <InputNumber id="profit-protection-arm" min={0.1} max={1000} step={0.5} precision={2}
-                                value={strategyParams.profitProtectionArmPct ?? 4} style={{ width: 76 }}
+                                value={strategyParams.profitProtectionArmPct ?? 13.5} style={{ width: 76 }}
                                 onChange={value => {
                                     if (value === null || !Number.isFinite(value) || value <= 0) return;
                                     setActivePreset('custom');
@@ -672,7 +673,7 @@ const ActiveMarket: React.FC = () => {
                             <span>% 启用；</span>
                             <label htmlFor="profit-protection-drawdown">从最高收盘净值回撤</label>
                             <InputNumber id="profit-protection-drawdown" min={0.1} max={99.9} step={0.5} precision={2}
-                                value={strategyParams.profitProtectionDrawdownPct ?? 2} style={{ width: 76 }}
+                                value={strategyParams.profitProtectionDrawdownPct ?? 2.2} style={{ width: 76 }}
                                 onChange={value => {
                                     if (value === null || !Number.isFinite(value) || value <= 0 || value >= 100) return;
                                     setActivePreset('custom');
@@ -794,6 +795,10 @@ const ActiveMarket: React.FC = () => {
                         />
                         {selectedIndicator?.code === '0AMV' && <span style={{ color: '#81929a', fontSize: 12 }}>双击主图任意位置，查看对应日期的日内走势</span>}
                         <div ref={chartQuoteRef} style={{ minWidth: 0, maxWidth: '100%', overflowX: 'auto', whiteSpace: 'pre', fontSize: 12, lineHeight: '24px', color: '#526871', fontVariantNumeric: 'tabular-nums' }} />
+                        <label title="按每年春节（正月初一）、五一、十一前后相邻交易日标记长假位置" style={{ display: 'flex', alignItems: 'center', gap: 6, whiteSpace: 'nowrap', cursor: 'pointer', fontSize: 12, color: '#666' }}>
+                            <input type="checkbox" checked={showHolidayPeriods} onChange={event => setShowHolidayPeriods(event.target.checked)} />
+                            显示长假期间
+                        </label>
                         {closeOnly && <span style={{ color: '#888', fontSize: 12 }}>仅有每日收盘估算值，使用折线显示</span>}
                         {!closeOnly && selectedIndicator?.code === 'AMV_EMA20' && (
                             <Tooltip title="开盘值取前一交易日收盘值；最高/最低取开收盘极值，不代表真实盘中高低价；成交量和成交额使用同日上证指数。">
@@ -814,6 +819,7 @@ const ActiveMarket: React.FC = () => {
                             <Empty description={indicators.length ? '该指标暂无数据' : '暂无可选指标'} />
                         ) : <KLineChart
                             quoteTargetRef={chartQuoteRef}
+                            showHolidayPeriods={showHolidayPeriods}
                             dateWindowRef={dateWindowRef}
                             defaultWindowYears={1.5}
                             onDayDoubleClick={selectedIndicator?.code === '0AMV' ? setIntradayDate : undefined}
@@ -933,8 +939,8 @@ const ActiveMarket: React.FC = () => {
                         </div>
                         <div style={{ marginTop: 10, fontSize: 12, color: '#999', lineHeight: 1.7 }}>
                             {strategyParams.profitProtectionEnabled && <div style={{ color: '#916c24' }}>
-                                盈利保护：组合浮盈达到 {strategyParams.profitProtectionArmPct ?? 4}% 后启用，
-                                从最高收盘净值回撤达到 {strategyParams.profitProtectionDrawdownPct ?? 2}% 时按实际收盘价减半一次；
+                                盈利保护：组合浮盈达到 {strategyParams.profitProtectionArmPct ?? 13.5}% 后启用，
+                                从最高收盘净值回撤达到 {strategyParams.profitProtectionDrawdownPct ?? 2.2}% 时按实际收盘价减半一次；
                                 浮盈和回撤均按加杠杆前的组合净值判断；卖出资金留现金，剩余持仓按下述原规则退出。
                             </div>}
                             规则：多头区间启动日买入涨幅前{strategyParams.weights.length} ETF（{strategyParams.weights.map(w => `${w.toFixed(0)}%`).join('/')}），区间结束卖出；单日涨幅&gt;{strategyParams.bullStartSingleDay}%或两日累计&gt;{strategyParams.bullStartTwoDay}%{strategyParams.bullStartUseMA10 ? '且收盘价站上MA10' : ''}启动多头；单日跌幅&lt;{strategyParams.bullEndSingleDay}%{strategyParams.bullEndUseMA10 ? '或跌破MA10' : ''}结束多头；{strategyParams.bearBuyBank ? `${strategyParams.bearStartYear}年起空头区间持有银行 ETF` : '空头区间持有现金'}；跨年收益计入开始年份。点击年份可查看当年每个波段的交易明细。

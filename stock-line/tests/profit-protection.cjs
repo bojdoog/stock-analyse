@@ -44,7 +44,7 @@ const research = path.join(__dirname, '../../back_test_data/strategy_failure_res
 if (fs.existsSync(path.join(research, 'inputs.json')) && fs.existsSync(path.join(research, 'experiments.json'))) {
   const input = JSON.parse(fs.readFileSync(path.join(research, 'inputs.json'), 'utf8'));
   const previous = JSON.parse(fs.readFileSync(path.join(research, 'baseline.json'), 'utf8'));
-  const params = { ...defaults, endYear: 2026 };
+  const params = { ...defaults, endYear: 2026, profitProtectionArmPct: 4, profitProtectionDrawdownPct: 2 };
   const disabled = runBacktest(input.amv, input.etfs, params);
   assert.deepEqual(JSON.parse(JSON.stringify(disabled)), previous, 'Disabled protection must preserve every baseline output');
   const expected = JSON.parse(fs.readFileSync(path.join(research, 'experiments.json'), 'utf8'));

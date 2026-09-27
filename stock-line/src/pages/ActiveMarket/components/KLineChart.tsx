@@ -45,6 +45,7 @@ const DEFAULT_ZONE_PARAMS: ZoneParams = {
 };
 
 interface KLineChartProps {
+  showHolidayPeriods?: boolean;
   quoteTargetRef?: React.RefObject<HTMLDivElement>;
   onDayDoubleClick?: (date: string) => void;
   dateWindowRef?: React.MutableRefObject<{ start: string; end: string } | null>;
@@ -90,7 +91,28 @@ const alignDataToDates = (source: KLineData[], dates: string[]): KLineData[] => 
   return dates.map(date => map.get(date) || { ...EMPTY_ITEM, date });
 };
 
+const springFestivalDates = new Map<string, string>();
+const getSpringFestivalDate = (year: string): string => {
+  const cached = springFestivalDates.get(year);
+  if (cached) return cached;
+  const lunar = new Intl.DateTimeFormat('en-u-ca-chinese', {
+    month: 'numeric', day: 'numeric', timeZone: 'Asia/Shanghai',
+  });
+  for (let offset = 0; offset < 60; offset++) {
+    const date = new Date(Date.UTC(Number(year), 0, 1 + offset, 12));
+    const parts = lunar.formatToParts(date);
+    if (parts.find(part => part.type === 'month')?.value === '1'
+      && parts.find(part => part.type === 'day')?.value === '1') {
+      const result = date.toISOString().slice(0, 10);
+      springFestivalDates.set(year, result);
+      return result;
+    }
+  }
+  return '';
+};
+
 const KLineChart: React.FC<KLineChartProps> = ({
+  showHolidayPeriods = false,
   quoteTargetRef,
   onDayDoubleClick,
   dateWindowRef,
@@ -179,6 +201,22 @@ const KLineChart: React.FC<KLineChartProps> = ({
         : extraSeries);
 
     const dates = filteredData.map(item => item.date);
+    // Trading-day axes omit holidays: highlight the gap around each holiday anchor.
+    const holidayAreas: [{ name: string; xAxis: string }, { xAxis: string }][] = [];
+    if (showHolidayPeriods) {
+      const years = Array.from(new Set(dates.filter(date => /^\d{4}-\d{2}-\d{2}$/.test(date)).map(date => date.slice(0, 4))));
+      for (const year of years) {
+        for (const [holiday, label] of [[getSpringFestivalDate(year), '春节'], [`${year}-05-01`, '五一'], [`${year}-10-01`, '十一']]) {
+          if (!holiday) continue;
+          const after = dates.findIndex(date => date >= holiday);
+          if (after <= 0 || dates[0] > holiday) continue;
+          holidayAreas.push([
+            { name: `${year} ${label}`, xAxis: dates[after - 1] },
+            { xAxis: dates[after] },
+          ]);
+        }
+      }
+    }
 
     if (dates.length === 0) return;
     chartInstance.current = init(chartRef.current);
@@ -857,6 +895,16 @@ const KLineChart: React.FC<KLineChartProps> = ({
           symbol: 'none'
         },
         ...extraSeriesData,
+        ...(showHolidayPeriods ? [{
+          name: '长假期间', type: 'line' as const, data: [], silent: true,
+          tooltip: { show: false },
+          markArea: {
+            silent: true,
+            itemStyle: { color: 'rgba(130, 83, 190, 0.12)', borderColor: '#8253be', borderWidth: 1, borderType: 'dashed' as const },
+            label: { show: true, position: 'insideTop' as const, color: '#7543ad', fontSize: 11, backgroundColor: 'rgba(255,255,255,0.85)', padding: [3, 4] },
+            data: holidayAreas,
+          },
+        }] : []),
         ...(showVolume ? [{
           name: '成交量',
           type: 'bar',
@@ -937,7 +985,7 @@ const KLineChart: React.FC<KLineChartProps> = ({
       }
       chartInstance.current?.dispose();
     };
-  }, [data, highlightThreshold, showBullZoneBg, showBearZoneBg, extraSeries, allETFSeries, syncGroup, dataLabel, mainSeriesName, seriesType, showVolume, showRanking, showZones, maxDate, showDataZoom, baseDates, zoneParams, zoomRange, defaultWindowYears, quoteTargetRef]);
+  }, [data, highlightThreshold, showBullZoneBg, showBearZoneBg, extraSeries, allETFSeries, syncGroup, dataLabel, mainSeriesName, seriesType, showVolume, showRanking, showZones, maxDate, showDataZoom, baseDates, zoneParams, zoomRange, defaultWindowYears, quoteTargetRef, showHolidayPeriods]);
 
   return (
     <div style={{ width: '100%', height: typeof chartHeight === 'number' ? `${chartHeight}px` : chartHeight, backgroundColor: '#fff', display: 'flex', flexDirection: 'column' }}>
