@@ -1,0 +1,4355 @@
+{
+  "last_date": "2026-09-24",
+  "params": {
+    "leverageMultiplier": 1,
+    "profitProtectionEnabled": true,
+    "profitProtectionArmPct": 13.5,
+    "profitProtectionDrawdownPct": 2.2,
+    "bullStartSingleDay": 4,
+    "bullStartTwoDay": 4,
+    "bullEndSingleDay": -2.3,
+    "bullEndUseMA10": true,
+    "bullStartUseMA10": true,
+    "weights": [
+      30,
+      30,
+      20,
+      10,
+      10
+    ],
+    "bearStartYear": 2024,
+    "bearBuyBank": true,
+    "startYear": 2019,
+    "endYear": 2026,
+    "rankingMethod": "etf_gain"
+  },
+  "summary": [
+    {
+      "method": "original",
+      "total_pct": 616.23,
+      "max_dd_pct": 13.330119436701981,
+      "annual": {
+        "2019": 41.79,
+        "2020": 21.65,
+        "2021": 5.39,
+        "2022": 12.54,
+        "2023": -5.45,
+        "2024": 82.92,
+        "2025": 24.36,
+        "2026": 62.75
+      },
+      "earlier_pct": 93.44158736418704,
+      "later_pct": 270.2573729286092,
+      "excluding_focus_pct": 480.12297997666104,
+      "bull_wins": 25,
+      "bull_count": 45,
+      "improved_trades": 0,
+      "worsened_trades": 0
+    },
+    {
+      "method": "momentum5",
+      "total_pct": 606.32,
+      "max_dd_pct": 13.502445145269071,
+      "annual": {
+        "2019": 38.92,
+        "2020": 26.57,
+        "2021": 6.24,
+        "2022": 11.6,
+        "2023": -3.84,
+        "2024": 76.99,
+        "2025": 18.6,
+        "2026": 67.86
+      },
+      "earlier_pct": 100.46297265492589,
+      "later_pct": 252.34566197793654,
+      "excluding_focus_pct": 404.37454858571886,
+      "bull_wins": 25,
+      "bull_count": 45,
+      "improved_trades": 19,
+      "worsened_trades": 26
+    },
+    {
+      "method": "momentum10",
+      "total_pct": 663.65,
+      "max_dd_pct": 13.818423803207036,
+      "annual": {
+        "2019": 35.39,
+        "2020": 31.46,
+        "2021": 22.47,
+        "2022": 5.95,
+        "2023": -3.59,
+        "2024": 67.34,
+        "2025": 38.83,
+        "2026": 47.62
+      },
+      "earlier_pct": 122.67849648917708,
+      "later_pct": 242.9368851425133,
+      "excluding_focus_pct": 419.96794607985504,
+      "bull_wins": 26,
+      "bull_count": 45,
+      "improved_trades": 20,
+      "worsened_trades": 25
+    },
+    {
+      "method": "momentum20",
+      "total_pct": 878.28,
+      "max_dd_pct": 14.526107105639941,
+      "annual": {
+        "2019": 37.17,
+        "2020": 36.42,
+        "2021": 16.68,
+        "2022": 12.32,
+        "2023": -2.38,
+        "2024": 75.31,
+        "2025": 52.2,
+        "2026": 53.14
+      },
+      "earlier_pct": 139.42076936253142,
+      "later_pct": 308.60465644577823,
+      "excluding_focus_pct": 494.3547527816487,
+      "bull_wins": 26,
+      "bull_count": 45,
+      "improved_trades": 25,
+      "worsened_trades": 20
+    },
+    {
+      "method": "blend5",
+      "total_pct": 588.1,
+      "max_dd_pct": 12.646087078179136,
+      "annual": {
+        "2019": 37.82,
+        "2020": 18.98,
+        "2021": 5.25,
+        "2022": 10.86,
+        "2023": -6.39,
+        "2024": 77.22,
+        "2025": 27.08,
+        "2026": 70.59
+      },
+      "earlier_pct": 79.10489927641147,
+      "later_pct": 284.1889033571128,
+      "excluding_focus_pct": 394.7178530356688,
+      "bull_wins": 23,
+      "bull_count": 45,
+      "improved_trades": 20,
+      "worsened_trades": 22
+    },
+    {
+      "method": "blend20",
+      "total_pct": 815.77,
+      "max_dd_pct": 13.536827029802645,
+      "annual": {
+        "2019": 39.22,
+        "2020": 24.16,
+        "2021": 11.73,
+        "2022": 10.12,
+        "2023": -4.14,
+        "2024": 92.42,
+        "2025": 39.61,
+        "2026": 67.21
+      },
+      "earlier_pct": 103.87695866728683,
+      "later_pct": 349.1777388680332,
+      "excluding_focus_pct": 479.9550127565499,
+      "bull_wins": 25,
+      "bull_count": 45,
+      "improved_trades": 25,
+      "worsened_trades": 20
+    },
+    {
+      "method": "blend5_20",
+      "total_pct": 704.34,
+      "max_dd_pct": 12.575136517057118,
+      "annual": {
+        "2019": 39.06,
+        "2020": 24.55,
+        "2021": 9.25,
+        "2022": 10.65,
+        "2023": -4.36,
+        "2024": 82.52,
+        "2025": 28.9,
+        "2026": 70.71
+      },
+      "earlier_pct": 100.2607025005736,
+      "later_pct": 301.64586629055,
+      "excluding_focus_pct": 465.0045489809123,
+      "bull_wins": 23,
+      "bull_count": 45,
+      "improved_trades": 23,
+      "worsened_trades": 21
+    },
+    {
+      "method": "risk20",
+      "total_pct": 884.84,
+      "max_dd_pct": 15.080802305360475,
+      "annual": {
+        "2019": 32.4,
+        "2020": 35.55,
+        "2021": 16.8,
+        "2022": 11.25,
+        "2023": -2.1,
+        "2024": 81.98,
+        "2025": 54.78,
+        "2026": 53.14
+      },
+      "earlier_pct": 128.30582857401578,
+      "later_pct": 331.36699149339097,
+      "excluding_focus_pct": 490.39764724057164,
+      "bull_wins": 27,
+      "bull_count": 45,
+      "improved_trades": 22,
+      "worsened_trades": 23
+    },
+    {
+      "method": "diverse",
+      "total_pct": 510.98999999999995,
+      "max_dd_pct": 13.171035424188904,
+      "annual": {
+        "2019": 42.51,
+        "2020": 25.15,
+        "2021": 2.25,
+        "2022": 9.49,
+        "2023": -5.59,
+        "2024": 75.79,
+        "2025": 29.73,
+        "2026": 42.13
+      },
+      "earlier_pct": 88.50255222545655,
+      "later_pct": 224.12977262309303,
+      "excluding_focus_pct": 416.7342363200291,
+      "bull_wins": 28,
+      "bull_count": 45,
+      "improved_trades": 19,
+      "worsened_trades": 21
+    }
+  ],
+  "focus": {
+    "2024-02-06": {
+      "original": {
+        "return_pct": 12.332875783190955,
+        "amv_pct": 32.89895391720214,
+        "holdings": [
+          {
+            "name": "创新药ETF",
+            "weight": 0.3,
+            "day_change": 8.119434258774229,
+            "holding_return": 0.03318798449612392
+          },
+          {
+            "name": "半导体ETF",
+            "weight": 0.3,
+            "day_change": 7.612456747404852,
+            "holding_return": 0.1374598070739549
+          },
+          {
+            "name": "游戏ETF",
+            "weight": 0.2,
+            "day_change": 7.525510204081624,
+            "holding_return": 0.20225385527876627
+          },
+          {
+            "name": "传媒ETF",
+            "weight": 0.1,
+            "day_change": 7.068965517241386,
+            "holding_return": 0.19162640901771333
+          },
+          {
+            "name": "高端装备ETF",
+            "weight": 0.1,
+            "day_change": 7.014388489208619,
+            "holding_return": 0.12521008403361356
+          }
+        ],
+        "protection": {
+          "armed_date": "2024-02-27",
+          "trigger_date": "2024-02-28",
+          "trigger_return": 0.10408203632298885,
+          "peak_return": 0.14532420426614467,
+          "drawdown": 0.03600916473216542
+        }
+      },
+      "momentum5": {
+        "return_pct": 12.431762636018927,
+        "amv_pct": 32.89895391720214,
+        "holdings": [
+          {
+            "name": "创业板ETF",
+            "weight": 0.3,
+            "day_change": 6.286836935167006,
+            "holding_return": 0.08533579790511392
+          },
+          {
+            "name": "通信ETF",
+            "weight": 0.3,
+            "day_change": 6.775700934579465,
+            "holding_return": 0.272428884026258
+          },
+          {
+            "name": "医药ETF",
+            "weight": 0.2,
+            "day_change": 6.764705882352939,
+            "holding_return": 0.016528925619834656
+          },
+          {
+            "name": "白酒ETF",
+            "weight": 0.1,
+            "day_change": 5.0167224080267525,
+            "holding_return": 0.07324840764331197
+          },
+          {
+            "name": "沪深300ETF",
+            "weight": 0.1,
+            "day_change": 3.2107231920199597,
+            "holding_return": 0.06357595892479617
+          }
+        ],
+        "protection": {
+          "armed_date": "2024-03-04",
+          "trigger_date": "2024-03-07",
+          "trigger_return": 0.11279008992384099,
+          "peak_return": 0.14219373680395142,
+          "drawdown": 0.025743134402388512
+        }
+      },
+      "momentum10": {
+        "return_pct": 4.722387558523167,
+        "amv_pct": 32.89895391720214,
+        "holdings": [
+          {
+            "name": "煤炭ETF",
+            "weight": 0.3,
+            "day_change": 0.715789473684203,
+            "holding_return": 0.04598662207357873
+          },
+          {
+            "name": "上证50ETF",
+            "weight": 0.3,
+            "day_change": 2.7086063783311243,
+            "holding_return": 0.036580178647384054
+          },
+          {
+            "name": "沪深300ETF",
+            "weight": 0.2,
+            "day_change": 3.2107231920199597,
+            "holding_return": 0.06312292358803995
+          },
+          {
+            "name": "证券ETF",
+            "weight": 0.1,
+            "day_change": 5.88957055214725,
+            "holding_return": 0.0011587485515642815
+          },
+          {
+            "name": "白酒ETF",
+            "weight": 0.1,
+            "day_change": 5.0167224080267525,
+            "holding_return": 0.09713375796178325
+          }
+        ],
+        "protection": {}
+      },
+      "momentum20": {
+        "return_pct": 4.454993372813876,
+        "amv_pct": 32.89895391720214,
+        "holdings": [
+          {
+            "name": "上证50ETF",
+            "weight": 0.3,
+            "day_change": 2.7086063783311243,
+            "holding_return": 0.036580178647384054
+          },
+          {
+            "name": "沪深300ETF",
+            "weight": 0.3,
+            "day_change": 3.2107231920199597,
+            "holding_return": 0.06312292358803995
+          },
+          {
+            "name": "证券ETF",
+            "weight": 0.2,
+            "day_change": 5.88957055214725,
+            "holding_return": 0.0011587485515642815
+          },
+          {
+            "name": "白酒ETF",
+            "weight": 0.1,
+            "day_change": 5.0167224080267525,
+            "holding_return": 0.09713375796178325
+          },
+          {
+            "name": "消费ETF",
+            "weight": 0.1,
+            "day_change": 5.603448275862055,
+            "holding_return": 0.0469387755102042
+          }
+        ],
+        "protection": {}
+      },
+      "blend5": {
+        "return_pct": 11.670233057849867,
+        "amv_pct": 32.89895391720214,
+        "holdings": [
+          {
+            "name": "创新药ETF",
+            "weight": 0.3,
+            "day_change": 8.119434258774238,
+            "holding_return": 0.02325581395348819
+          },
+          {
+            "name": "通信ETF",
+            "weight": 0.3,
+            "day_change": 6.775700934579465,
+            "holding_return": 0.272428884026258
+          },
+          {
+            "name": "医药ETF",
+            "weight": 0.2,
+            "day_change": 6.764705882352939,
+            "holding_return": 0.016528925619834656
+          },
+          {
+            "name": "创业板ETF",
+            "weight": 0.1,
+            "day_change": 6.286836935167006,
+            "holding_return": 0.08533579790511392
+          },
+          {
+            "name": "半导体ETF",
+            "weight": 0.1,
+            "day_change": 7.61245674740485,
+            "holding_return": 0.16157556270096451
+          }
+        ],
+        "protection": {
+          "armed_date": "2024-03-04",
+          "trigger_date": "2024-03-07",
+          "trigger_return": 0.10906758448740983,
+          "peak_return": 0.15446229853461624,
+          "drawdown": 0.03932108835847381
+        }
+      },
+      "blend20": {
+        "return_pct": 11.344020577510495,
+        "amv_pct": 32.89895391720214,
+        "holdings": [
+          {
+            "name": "创新药ETF",
+            "weight": 0.3,
+            "day_change": 8.119434258774238,
+            "holding_return": 0.02325581395348819
+          },
+          {
+            "name": "通信ETF",
+            "weight": 0.3,
+            "day_change": 6.775700934579465,
+            "holding_return": 0.272428884026258
+          },
+          {
+            "name": "医药ETF",
+            "weight": 0.2,
+            "day_change": 6.764705882352939,
+            "holding_return": 0.016528925619834656
+          },
+          {
+            "name": "证券ETF",
+            "weight": 0.1,
+            "day_change": 5.88957055214725,
+            "holding_return": 0.016222479721900385
+          },
+          {
+            "name": "传媒ETF",
+            "weight": 0.1,
+            "day_change": 7.068965517241388,
+            "holding_return": 0.19806763285024154
+          }
+        ],
+        "protection": {
+          "armed_date": "2024-03-04",
+          "trigger_date": "2024-03-07",
+          "trigger_return": 0.10424509463435228,
+          "peak_return": 0.15097847330214442,
+          "drawdown": 0.040603173518714564
+        }
+      },
+      "blend5_20": {
+        "return_pct": 10.78696150727334,
+        "amv_pct": 32.89895391720214,
+        "holdings": [
+          {
+            "name": "通信ETF",
+            "weight": 0.3,
+            "day_change": 6.775700934579465,
+            "holding_return": 0.272428884026258
+          },
+          {
+            "name": "创新药ETF",
+            "weight": 0.3,
+            "day_change": 8.119434258774238,
+            "holding_return": 0.02325581395348819
+          },
+          {
+            "name": "医药ETF",
+            "weight": 0.2,
+            "day_change": 6.764705882352939,
+            "holding_return": 0.016528925619834656
+          },
+          {
+            "name": "创业板ETF",
+            "weight": 0.1,
+            "day_change": 6.286836935167006,
+            "holding_return": 0.08533579790511392
+          },
+          {
+            "name": "白酒ETF",
+            "weight": 0.1,
+            "day_change": 5.0167224080267525,
+            "holding_return": 0.07324840764331197
+          }
+        ],
+        "protection": {
+          "armed_date": "2024-03-04",
+          "trigger_date": "2024-03-07",
+          "trigger_return": 0.09840903491442776,
+          "peak_return": 0.1399360118489712,
+          "drawdown": 0.036429217520014046
+        }
+      },
+      "risk20": {
+        "return_pct": 6.895890081606804,
+        "amv_pct": 32.89895391720214,
+        "holdings": [
+          {
+            "name": "上证50ETF",
+            "weight": 0.3,
+            "day_change": 2.7086063783311243,
+            "holding_return": 0.036580178647384054
+          },
+          {
+            "name": "沪深300ETF",
+            "weight": 0.3,
+            "day_change": 3.2107231920199597,
+            "holding_return": 0.06312292358803995
+          },
+          {
+            "name": "证券ETF",
+            "weight": 0.2,
+            "day_change": 5.88957055214725,
+            "holding_return": 0.0011587485515642815
+          },
+          {
+            "name": "白酒ETF",
+            "weight": 0.1,
+            "day_change": 5.0167224080267525,
+            "holding_return": 0.09713375796178325
+          },
+          {
+            "name": "通信ETF",
+            "weight": 0.1,
+            "day_change": 6.775700934579465,
+            "holding_return": 0.29102844638949654
+          }
+        ],
+        "protection": {}
+      },
+      "diverse": {
+        "return_pct": 10.37020555383048,
+        "amv_pct": 32.89895391720214,
+        "holdings": [
+          {
+            "name": "创新药ETF",
+            "weight": 0.3,
+            "day_change": 8.119434258774238,
+            "holding_return": 0.02325581395348819
+          },
+          {
+            "name": "游戏ETF",
+            "weight": 0.3,
+            "day_change": 7.525510204081631,
+            "holding_return": 0.19572953736654797
+          },
+          {
+            "name": "光伏ETF",
+            "weight": 0.2,
+            "day_change": 6.53153153153152,
+            "holding_return": 0.10993657505285426
+          },
+          {
+            "name": "军工ETF",
+            "weight": 0.1,
+            "day_change": 6.491712707182318,
+            "holding_return": 0.14396887159533067
+          },
+          {
+            "name": "证券ETF",
+            "weight": 0.1,
+            "day_change": 5.88957055214725,
+            "holding_return": 0.016222479721900385
+          }
+        ],
+        "protection": {
+          "armed_date": "2024-03-04",
+          "trigger_date": "2024-03-07",
+          "trigger_return": 0.09563604927311031,
+          "peak_return": 0.14535350322542695,
+          "drawdown": 0.043407955545870736
+        }
+      }
+    },
+    "2024-09-24": {
+      "original": {
+        "return_pct": 26.92143743040869,
+        "amv_pct": 113.64542592072881,
+        "holdings": [
+          {
+            "name": "证券ETF",
+            "weight": 0.3,
+            "day_change": 6.127450980392163,
+            "holding_return": 0.3250577367205544
+          },
+          {
+            "name": "白酒ETF",
+            "weight": 0.3,
+            "day_change": 6.000000000000005,
+            "holding_return": 0.21226415094339612
+          },
+          {
+            "name": "新能源车ETF",
+            "weight": 0.2,
+            "day_change": 5.739514348785865,
+            "holding_return": 0.2468684759916493
+          },
+          {
+            "name": "创业板ETF",
+            "weight": 0.1,
+            "day_change": 5.729513657561631,
+            "holding_return": 0.35538752362948967
+          },
+          {
+            "name": "通信ETF",
+            "weight": 0.1,
+            "day_change": 5.560975609756125,
+            "holding_return": 0.23105360443622913
+          }
+        ],
+        "protection": {
+          "armed_date": "2024-09-27",
+          "trigger_date": "2024-10-09",
+          "trigger_return": 0.3040600032127634,
+          "peak_return": 0.4090286548700144,
+          "drawdown": 0.07449717313728765
+        }
+      },
+      "momentum5": {
+        "return_pct": 18.23919446493596,
+        "amv_pct": 113.64542592072881,
+        "holdings": [
+          {
+            "name": "煤炭ETF",
+            "weight": 0.3,
+            "day_change": 5.390334572490696,
+            "holding_return": 0.05555555555555558
+          },
+          {
+            "name": "有色ETF",
+            "weight": 0.3,
+            "day_change": 4.013377926421424,
+            "holding_return": 0.09967845659163954
+          },
+          {
+            "name": "软件ETF",
+            "weight": 0.2,
+            "day_change": 3.875968992248069,
+            "holding_return": 0.4104477611940297
+          },
+          {
+            "name": "白酒ETF",
+            "weight": 0.1,
+            "day_change": 6.000000000000005,
+            "holding_return": 0.21226415094339612
+          },
+          {
+            "name": "证券ETF",
+            "weight": 0.1,
+            "day_change": 6.127450980392157,
+            "holding_return": 0.3250577367205544
+          }
+        ],
+        "protection": {
+          "armed_date": "2024-09-30",
+          "trigger_date": "2024-10-09",
+          "trigger_return": 0.20619965207372748,
+          "peak_return": 0.27061302563396206,
+          "drawdown": 0.05069472157197197
+        }
+      },
+      "momentum10": {
+        "return_pct": 22.62811188875993,
+        "amv_pct": 113.64542592072881,
+        "holdings": [
+          {
+            "name": "通信ETF",
+            "weight": 0.3,
+            "day_change": 5.560975609756125,
+            "holding_return": 0.22181146025877996
+          },
+          {
+            "name": "软件ETF",
+            "weight": 0.3,
+            "day_change": 3.875968992248069,
+            "holding_return": 0.3348880597014924
+          },
+          {
+            "name": "有色ETF",
+            "weight": 0.2,
+            "day_change": 4.013377926421424,
+            "holding_return": 0.10878885316184328
+          },
+          {
+            "name": "煤炭ETF",
+            "weight": 0.1,
+            "day_change": 5.390334572490696,
+            "holding_return": 0.08818342151675485
+          },
+          {
+            "name": "证券ETF",
+            "weight": 0.1,
+            "day_change": 6.127450980392157,
+            "holding_return": 0.28695150115473445
+          }
+        ],
+        "protection": {
+          "armed_date": "2024-09-30",
+          "trigger_date": "2024-10-10",
+          "trigger_return": 0.2465916094685019,
+          "peak_return": 0.3201535175342096,
+          "drawdown": 0.05572223767059081
+        }
+      },
+      "momentum20": {
+        "return_pct": 27.783357528339316,
+        "amv_pct": 113.64542592072881,
+        "holdings": [
+          {
+            "name": "证券ETF",
+            "weight": 0.3,
+            "day_change": 6.127450980392157,
+            "holding_return": 0.3250577367205544
+          },
+          {
+            "name": "游戏ETF",
+            "weight": 0.3,
+            "day_change": 4.1059602649006655,
+            "holding_return": 0.18893129770992356
+          },
+          {
+            "name": "软件ETF",
+            "weight": 0.2,
+            "day_change": 3.875968992248069,
+            "holding_return": 0.4104477611940297
+          },
+          {
+            "name": "新能源车ETF",
+            "weight": 0.1,
+            "day_change": 5.739514348785857,
+            "holding_return": 0.2468684759916493
+          },
+          {
+            "name": "传媒ETF",
+            "weight": 0.1,
+            "day_change": 3.9723661485319584,
+            "holding_return": 0.16860465116279078
+          }
+        ],
+        "protection": {
+          "armed_date": "2024-09-27",
+          "trigger_date": "2024-10-09",
+          "trigger_return": 0.33059971770925545,
+          "peak_return": 0.3862674073557968,
+          "drawdown": 0.040156530660071854
+        }
+      },
+      "blend5": {
+        "return_pct": 20.882120111922518,
+        "amv_pct": 113.64542592072881,
+        "holdings": [
+          {
+            "name": "证券ETF",
+            "weight": 0.3,
+            "day_change": 6.127450980392157,
+            "holding_return": 0.3250577367205544
+          },
+          {
+            "name": "白酒ETF",
+            "weight": 0.3,
+            "day_change": 6.000000000000005,
+            "holding_return": 0.21226415094339612
+          },
+          {
+            "name": "煤炭ETF",
+            "weight": 0.2,
+            "day_change": 5.390334572490696,
+            "holding_return": 0.05555555555555558
+          },
+          {
+            "name": "通信ETF",
+            "weight": 0.1,
+            "day_change": 5.560975609756125,
+            "holding_return": 0.23105360443622913
+          },
+          {
+            "name": "上证50ETF",
+            "weight": 0.1,
+            "day_change": 5.150214592274693,
+            "holding_return": 0.13408163265306117
+          }
+        ],
+        "protection": {
+          "armed_date": "2024-09-27",
+          "trigger_date": "2024-10-09",
+          "trigger_return": 0.22602310317859353,
+          "peak_return": 0.3149281336355785,
+          "drawdown": 0.06761208326357415
+        }
+      },
+      "blend20": {
+        "return_pct": 26.71040538661069,
+        "amv_pct": 113.64542592072881,
+        "holdings": [
+          {
+            "name": "证券ETF",
+            "weight": 0.3,
+            "day_change": 6.127450980392157,
+            "holding_return": 0.3250577367205544
+          },
+          {
+            "name": "新能源车ETF",
+            "weight": 0.3,
+            "day_change": 5.739514348785857,
+            "holding_return": 0.2468684759916493
+          },
+          {
+            "name": "创业板ETF",
+            "weight": 0.2,
+            "day_change": 5.729513657561625,
+            "holding_return": 0.35538752362948967
+          },
+          {
+            "name": "煤炭ETF",
+            "weight": 0.1,
+            "day_change": 5.390334572490696,
+            "holding_return": 0.05555555555555558
+          },
+          {
+            "name": "游戏ETF",
+            "weight": 0.1,
+            "day_change": 4.1059602649006655,
+            "holding_return": 0.18893129770992356
+          }
+        ],
+        "protection": {
+          "armed_date": "2024-09-27",
+          "trigger_date": "2024-10-09",
+          "trigger_return": 0.305018297008413,
+          "peak_return": 0.4225161746090902,
+          "drawdown": 0.08259862326905765
+        }
+      },
+      "blend5_20": {
+        "return_pct": 22.77078194441886,
+        "amv_pct": 113.64542592072881,
+        "holdings": [
+          {
+            "name": "证券ETF",
+            "weight": 0.3,
+            "day_change": 6.127450980392157,
+            "holding_return": 0.3250577367205544
+          },
+          {
+            "name": "煤炭ETF",
+            "weight": 0.3,
+            "day_change": 5.390334572490696,
+            "holding_return": 0.05555555555555558
+          },
+          {
+            "name": "新能源车ETF",
+            "weight": 0.2,
+            "day_change": 5.739514348785857,
+            "holding_return": 0.2468684759916493
+          },
+          {
+            "name": "软件ETF",
+            "weight": 0.1,
+            "day_change": 3.875968992248069,
+            "holding_return": 0.4104477611940297
+          },
+          {
+            "name": "通信ETF",
+            "weight": 0.1,
+            "day_change": 5.560975609756125,
+            "holding_return": 0.23105360443622913
+          }
+        ],
+        "protection": {
+          "armed_date": "2024-09-30",
+          "trigger_date": "2024-10-09",
+          "trigger_return": 0.2567114490390052,
+          "peak_return": 0.3124411288314497,
+          "drawdown": 0.04246261304083343
+        }
+      },
+      "risk20": {
+        "return_pct": 27.50432794083664,
+        "amv_pct": 113.64542592072881,
+        "holdings": [
+          {
+            "name": "证券ETF",
+            "weight": 0.3,
+            "day_change": 6.127450980392157,
+            "holding_return": 0.3250577367205544
+          },
+          {
+            "name": "游戏ETF",
+            "weight": 0.3,
+            "day_change": 4.1059602649006655,
+            "holding_return": 0.18893129770992356
+          },
+          {
+            "name": "软件ETF",
+            "weight": 0.2,
+            "day_change": 3.875968992248069,
+            "holding_return": 0.4104477611940297
+          },
+          {
+            "name": "传媒ETF",
+            "weight": 0.1,
+            "day_change": 3.9723661485319584,
+            "holding_return": 0.16860465116279078
+          },
+          {
+            "name": "机器人ETF",
+            "weight": 0.1,
+            "day_change": 4.129263913824044,
+            "holding_return": 0.21896551724137936
+          }
+        ],
+        "protection": {
+          "armed_date": "2024-09-27",
+          "trigger_date": "2024-10-09",
+          "trigger_return": 0.3280646230436448,
+          "peak_return": 0.3831038482167859,
+          "drawdown": 0.03979399323058952
+        }
+      },
+      "diverse": {
+        "return_pct": 23.923117749669352,
+        "amv_pct": 113.64542592072881,
+        "holdings": [
+          {
+            "name": "证券ETF",
+            "weight": 0.3,
+            "day_change": 6.127450980392157,
+            "holding_return": 0.3250577367205544
+          },
+          {
+            "name": "白酒ETF",
+            "weight": 0.3,
+            "day_change": 6.000000000000005,
+            "holding_return": 0.21226415094339612
+          },
+          {
+            "name": "新能源车ETF",
+            "weight": 0.2,
+            "day_change": 5.739514348785857,
+            "holding_return": 0.2468684759916493
+          },
+          {
+            "name": "通信ETF",
+            "weight": 0.1,
+            "day_change": 5.560975609756125,
+            "holding_return": 0.23105360443622913
+          },
+          {
+            "name": "煤炭ETF",
+            "weight": 0.1,
+            "day_change": 5.390334572490696,
+            "holding_return": 0.05555555555555558
+          }
+        ],
+        "protection": {
+          "armed_date": "2024-09-27",
+          "trigger_date": "2024-10-09",
+          "trigger_return": 0.2669317821841013,
+          "peak_return": 0.3543037571394454,
+          "drawdown": 0.06451431187039669
+        }
+      }
+    },
+    "2025-06-25": {
+      "original": {
+        "return_pct": 13.47675523047891,
+        "amv_pct": 75.0472773982231,
+        "holdings": [
+          {
+            "name": "证券ETF",
+            "weight": 0.3,
+            "day_change": 5.368516833484981,
+            "holding_return": 0.09844559585492241
+          },
+          {
+            "name": "软件ETF",
+            "weight": 0.3,
+            "day_change": 4.477611940298497,
+            "holding_return": 0.13333333333333341
+          },
+          {
+            "name": "军工ETF",
+            "weight": 0.2,
+            "day_change": 3.216650898770107,
+            "holding_return": 0.11824014665444549
+          },
+          {
+            "name": "创业板ETF",
+            "weight": 0.1,
+            "day_change": 3.1800391389432456,
+            "holding_return": 0.3274063537221432
+          },
+          {
+            "name": "高端装备ETF",
+            "weight": 0.1,
+            "day_change": 3.0379746835442925,
+            "holding_return": 0.08845208845208852
+          }
+        ],
+        "protection": {
+          "armed_date": "2025-08-18",
+          "trigger_date": "2025-09-02",
+          "trigger_return": 0.16953799589696983,
+          "peak_return": 0.2054727559649665,
+          "drawdown": 0.029809682458755593
+        }
+      },
+      "momentum5": {
+        "return_pct": 13.809625666407843,
+        "amv_pct": 75.0472773982231,
+        "holdings": [
+          {
+            "name": "证券ETF",
+            "weight": 0.3,
+            "day_change": 5.368516833484982,
+            "holding_return": 0.07858376511226262
+          },
+          {
+            "name": "新能源车ETF",
+            "weight": 0.3,
+            "day_change": 1.4411529223378627,
+            "holding_return": 0.17876874506708773
+          },
+          {
+            "name": "软件ETF",
+            "weight": 0.2,
+            "day_change": 4.477611940298498,
+            "holding_return": 0.11309523809523814
+          },
+          {
+            "name": "科创半导体设备ETF",
+            "weight": 0.1,
+            "day_change": 0.9615384615384581,
+            "holding_return": 0.15142857142857125
+          },
+          {
+            "name": "半导体ETF",
+            "weight": 0.1,
+            "day_change": 2.1568627450980316,
+            "holding_return": 0.2312859884836852
+          }
+        ],
+        "protection": {
+          "armed_date": "2025-08-22",
+          "trigger_date": "2025-09-03",
+          "trigger_return": 0.15216700101739145,
+          "peak_return": 0.20016834010526363,
+          "drawdown": 0.03999550520026396
+        }
+      },
+      "momentum10": {
+        "return_pct": 30.235855674790923,
+        "amv_pct": 75.0472773982231,
+        "holdings": [
+          {
+            "name": "证券ETF",
+            "weight": 0.3,
+            "day_change": 5.368516833484982,
+            "holding_return": 0.09844559585492241
+          },
+          {
+            "name": "软件ETF",
+            "weight": 0.3,
+            "day_change": 4.477611940298498,
+            "holding_return": 0.13333333333333341
+          },
+          {
+            "name": "通信ETF",
+            "weight": 0.2,
+            "day_change": 1.4738393515106862,
+            "holding_return": 0.7810457516339869
+          },
+          {
+            "name": "科创半导体设备ETF",
+            "weight": 0.1,
+            "day_change": 0.9615384615384581,
+            "holding_return": 0.14857142857142847
+          },
+          {
+            "name": "创业板人工智能ETF",
+            "weight": 0.1,
+            "day_change": 2.4520255863539564,
+            "holding_return": 0.6175858480749219
+          }
+        ],
+        "protection": {
+          "armed_date": "2025-08-12",
+          "trigger_date": "2025-09-02",
+          "trigger_return": 0.3439443796773185,
+          "peak_return": 0.4011775406145561,
+          "drawdown": 0.040846473254299465
+        }
+      },
+      "momentum20": {
+        "return_pct": 46.895099875605695,
+        "amv_pct": 75.0472773982231,
+        "holdings": [
+          {
+            "name": "通信ETF",
+            "weight": 0.3,
+            "day_change": 1.4738393515106862,
+            "holding_return": 0.7810457516339869
+          },
+          {
+            "name": "创业板人工智能ETF",
+            "weight": 0.3,
+            "day_change": 2.4520255863539564,
+            "holding_return": 0.6175858480749219
+          },
+          {
+            "name": "证券ETF",
+            "weight": 0.2,
+            "day_change": 5.368516833484982,
+            "holding_return": 0.09844559585492241
+          },
+          {
+            "name": "游戏ETF",
+            "weight": 0.1,
+            "day_change": 0.7425742574257432,
+            "holding_return": 0.16339066339066333
+          },
+          {
+            "name": "软件ETF",
+            "weight": 0.1,
+            "day_change": 4.477611940298498,
+            "holding_return": 0.13333333333333341
+          }
+        ],
+        "protection": {
+          "armed_date": "2025-07-28",
+          "trigger_date": "2025-09-02",
+          "trigger_return": 0.5182602791713782,
+          "peak_return": 0.5934956552666226,
+          "drawdown": 0.04721404532644058
+        }
+      },
+      "blend5": {
+        "return_pct": 17.107120984773204,
+        "amv_pct": 75.0472773982231,
+        "holdings": [
+          {
+            "name": "证券ETF",
+            "weight": 0.3,
+            "day_change": 5.368516833484982,
+            "holding_return": 0.09844559585492241
+          },
+          {
+            "name": "软件ETF",
+            "weight": 0.3,
+            "day_change": 4.477611940298498,
+            "holding_return": 0.13333333333333341
+          },
+          {
+            "name": "创业板ETF",
+            "weight": 0.2,
+            "day_change": 3.180039138943247,
+            "holding_return": 0.3274063537221432
+          },
+          {
+            "name": "军工ETF",
+            "weight": 0.1,
+            "day_change": 3.2166508987701015,
+            "holding_return": 0.11824014665444549
+          },
+          {
+            "name": "半导体ETF",
+            "weight": 0.1,
+            "day_change": 2.1568627450980316,
+            "holding_return": 0.2423224568138196
+          }
+        ],
+        "protection": {
+          "armed_date": "2025-08-18",
+          "trigger_date": "2025-09-02",
+          "trigger_return": 0.20371532074667598,
+          "peak_return": 0.2381500135631649,
+          "drawdown": 0.027811406081071133
+        }
+      },
+      "blend20": {
+        "return_pct": 30.38960589070743,
+        "amv_pct": 75.0472773982231,
+        "holdings": [
+          {
+            "name": "证券ETF",
+            "weight": 0.3,
+            "day_change": 5.368516833484982,
+            "holding_return": 0.09844559585492241
+          },
+          {
+            "name": "软件ETF",
+            "weight": 0.3,
+            "day_change": 4.477611940298498,
+            "holding_return": 0.13333333333333341
+          },
+          {
+            "name": "创业板人工智能ETF",
+            "weight": 0.2,
+            "day_change": 2.4520255863539564,
+            "holding_return": 0.6175858480749219
+          },
+          {
+            "name": "创业板ETF",
+            "weight": 0.1,
+            "day_change": 3.180039138943247,
+            "holding_return": 0.3274063537221432
+          },
+          {
+            "name": "通信ETF",
+            "weight": 0.1,
+            "day_change": 1.4738393515106862,
+            "holding_return": 0.7810457516339869
+          }
+        ],
+        "protection": {
+          "armed_date": "2025-08-12",
+          "trigger_date": "2025-09-02",
+          "trigger_return": 0.34384365605685874,
+          "peak_return": 0.3982628313629406,
+          "drawdown": 0.03891913171505634
+        }
+      },
+      "blend5_20": {
+        "return_pct": 20.859754897384207,
+        "amv_pct": 75.0472773982231,
+        "holdings": [
+          {
+            "name": "证券ETF",
+            "weight": 0.3,
+            "day_change": 5.368516833484982,
+            "holding_return": 0.09844559585492241
+          },
+          {
+            "name": "软件ETF",
+            "weight": 0.3,
+            "day_change": 4.477611940298498,
+            "holding_return": 0.13333333333333341
+          },
+          {
+            "name": "创业板ETF",
+            "weight": 0.2,
+            "day_change": 3.180039138943247,
+            "holding_return": 0.3274063537221432
+          },
+          {
+            "name": "创业板人工智能ETF",
+            "weight": 0.1,
+            "day_change": 2.4520255863539564,
+            "holding_return": 0.6175858480749219
+          },
+          {
+            "name": "军工ETF",
+            "weight": 0.1,
+            "day_change": 3.2166508987701015,
+            "holding_return": 0.11824014665444549
+          }
+        ],
+        "protection": {
+          "armed_date": "2025-08-15",
+          "trigger_date": "2025-09-02",
+          "trigger_return": 0.2421472764230448,
+          "peak_return": 0.28181036402821036,
+          "drawdown": 0.030943023022938054
+        }
+      },
+      "risk20": {
+        "return_pct": 51.69041111539943,
+        "amv_pct": 75.0472773982231,
+        "holdings": [
+          {
+            "name": "通信ETF",
+            "weight": 0.3,
+            "day_change": 1.4738393515106862,
+            "holding_return": 0.7810457516339869
+          },
+          {
+            "name": "创业板人工智能ETF",
+            "weight": 0.3,
+            "day_change": 2.4520255863539564,
+            "holding_return": 0.6175858480749219
+          },
+          {
+            "name": "卫星ETF",
+            "weight": 0.2,
+            "day_change": 2.2517911975435068,
+            "holding_return": 0.1291291291291291
+          },
+          {
+            "name": "电网设备ETF",
+            "weight": 0.1,
+            "day_change": 1.0235414534288667,
+            "holding_return": 0.3850050658561297
+          },
+          {
+            "name": "有色ETF",
+            "weight": 0.1,
+            "day_change": 0.7252946509519465,
+            "holding_return": 0.3298829882988299
+          }
+        ],
+        "protection": {
+          "armed_date": "2025-07-24",
+          "trigger_date": "2025-09-02",
+          "trigger_return": 0.5734183310012111,
+          "peak_return": 0.6562629587554534,
+          "drawdown": 0.05001900653293201
+        }
+      },
+      "diverse": {
+        "return_pct": 17.269177218479893,
+        "amv_pct": 75.0472773982231,
+        "holdings": [
+          {
+            "name": "证券ETF",
+            "weight": 0.3,
+            "day_change": 5.368516833484982,
+            "holding_return": 0.09844559585492241
+          },
+          {
+            "name": "软件ETF",
+            "weight": 0.3,
+            "day_change": 4.477611940298498,
+            "holding_return": 0.13333333333333341
+          },
+          {
+            "name": "军工ETF",
+            "weight": 0.2,
+            "day_change": 3.2166508987701015,
+            "holding_return": 0.11824014665444549
+          },
+          {
+            "name": "创业板人工智能ETF",
+            "weight": 0.1,
+            "day_change": 2.4520255863539564,
+            "holding_return": 0.6175858480749219
+          },
+          {
+            "name": "机器人ETF",
+            "weight": 0.1,
+            "day_change": 1.5625,
+            "holding_return": 0.1775147928994082
+          }
+        ],
+        "protection": {
+          "armed_date": "2025-08-15",
+          "trigger_date": "2025-09-02",
+          "trigger_return": 0.2103787332386109,
+          "peak_return": 0.2470638995242016,
+          "drawdown": 0.029417230584244614
+        }
+      }
+    },
+    "2026-04-08": {
+      "original": {
+        "return_pct": 8.7994210748092,
+        "amv_pct": 30.595329680792617,
+        "holdings": [
+          {
+            "name": "创业板人工智能ETF",
+            "weight": 0.3,
+            "day_change": 9.648241206030136,
+            "holding_return": 0.17231897341888192
+          },
+          {
+            "name": "传媒ETF",
+            "weight": 0.3,
+            "day_change": 8.004158004158,
+            "holding_return": -0.0750721847930702
+          },
+          {
+            "name": "通信ETF",
+            "weight": 0.2,
+            "day_change": 7.4573225516621875,
+            "holding_return": 0.24749163879598657
+          },
+          {
+            "name": "软件ETF",
+            "weight": 0.1,
+            "day_change": 7.152145643693101,
+            "holding_return": -0.00182038834951459
+          },
+          {
+            "name": "卫星ETF",
+            "weight": 0.1,
+            "day_change": 6.90095846645368,
+            "holding_return": 0.09503885236102805
+          }
+        ],
+        "protection": {
+          "armed_date": "2026-05-13",
+          "trigger_date": "2026-05-14",
+          "trigger_return": 0.12053073805277914,
+          "peak_return": 0.1533787994194058,
+          "drawdown": 0.02847985534601638
+        }
+      },
+      "momentum5": {
+        "return_pct": 23.046973697892568,
+        "amv_pct": 30.595329680792617,
+        "holdings": [
+          {
+            "name": "通信ETF",
+            "weight": 0.3,
+            "day_change": 7.457322551662182,
+            "holding_return": 0.22909698996655514
+          },
+          {
+            "name": "创业板人工智能ETF",
+            "weight": 0.3,
+            "day_change": 9.64824120603014,
+            "holding_return": 0.1652153987167737
+          },
+          {
+            "name": "半导体ETF",
+            "weight": 0.2,
+            "day_change": 6.541405706332637,
+            "holding_return": 0.3608752449379492
+          },
+          {
+            "name": "游戏ETF",
+            "weight": 0.1,
+            "day_change": 5.868544600938974,
+            "holding_return": -0.08056171470805618
+          },
+          {
+            "name": "科创半导体设备ETF",
+            "weight": 0.1,
+            "day_change": 6.772422208663809,
+            "holding_return": 0.48057142857142854
+          }
+        ],
+        "protection": {
+          "armed_date": "2026-05-06",
+          "trigger_date": "2026-05-15",
+          "trigger_return": 0.24062628900291716,
+          "peak_return": 0.27082781642148857,
+          "drawdown": 0.02376523949846765
+        }
+      },
+      "momentum10": {
+        "return_pct": 12.767860148605426,
+        "amv_pct": 30.595329680792617,
+        "holdings": [
+          {
+            "name": "通信ETF",
+            "weight": 0.3,
+            "day_change": 7.457322551662182,
+            "holding_return": 0.22909698996655514
+          },
+          {
+            "name": "有色ETF",
+            "weight": 0.3,
+            "day_change": 6.375502008032163,
+            "holding_return": -0.05946201038225596
+          },
+          {
+            "name": "创业板人工智能ETF",
+            "weight": 0.2,
+            "day_change": 9.64824120603014,
+            "holding_return": 0.1652153987167737
+          },
+          {
+            "name": "科创半导体设备ETF",
+            "weight": 0.1,
+            "day_change": 6.772422208663809,
+            "holding_return": 0.48057142857142854
+          },
+          {
+            "name": "创新药ETF",
+            "weight": 0.1,
+            "day_change": 2.2250209907640706,
+            "holding_return": -0.043121149897330624
+          }
+        ],
+        "protection": {
+          "armed_date": "2026-05-11",
+          "trigger_date": "2026-05-15",
+          "trigger_return": 0.14470717862111804,
+          "peak_return": 0.18777131276167003,
+          "drawdown": 0.036256250406001334
+        }
+      },
+      "momentum20": {
+        "return_pct": 12.050057780639944,
+        "amv_pct": 30.595329680792617,
+        "holdings": [
+          {
+            "name": "通信ETF",
+            "weight": 0.3,
+            "day_change": 7.457322551662182,
+            "holding_return": 0.22909698996655514
+          },
+          {
+            "name": "创业板人工智能ETF",
+            "weight": 0.3,
+            "day_change": 9.64824120603014,
+            "holding_return": 0.1652153987167737
+          },
+          {
+            "name": "创新药ETF",
+            "weight": 0.2,
+            "day_change": 2.2250209907640706,
+            "holding_return": -0.043121149897330624
+          },
+          {
+            "name": "创业板ETF",
+            "weight": 0.1,
+            "day_change": 6.15677562678516,
+            "holding_return": 0.16831091180866964
+          },
+          {
+            "name": "医药ETF",
+            "weight": 0.1,
+            "day_change": 1.6260162601626105,
+            "holding_return": -0.06000000000000005
+          }
+        ],
+        "protection": {
+          "armed_date": "2026-05-11",
+          "trigger_date": "2026-05-15",
+          "trigger_return": 0.14311594401212857,
+          "peak_return": 0.18063802245412375,
+          "drawdown": 0.03178118756839643
+        }
+      },
+      "blend5": {
+        "return_pct": 18.771268616960345,
+        "amv_pct": 30.595329680792617,
+        "holdings": [
+          {
+            "name": "创业板人工智能ETF",
+            "weight": 0.3,
+            "day_change": 9.64824120603014,
+            "holding_return": 0.1652153987167737
+          },
+          {
+            "name": "通信ETF",
+            "weight": 0.3,
+            "day_change": 7.457322551662182,
+            "holding_return": 0.22909698996655514
+          },
+          {
+            "name": "传媒ETF",
+            "weight": 0.2,
+            "day_change": 8.00415800415799,
+            "holding_return": -0.07362848893166501
+          },
+          {
+            "name": "半导体ETF",
+            "weight": 0.1,
+            "day_change": 6.541405706332637,
+            "holding_return": 0.3608752449379492
+          },
+          {
+            "name": "科创半导体设备ETF",
+            "weight": 0.1,
+            "day_change": 6.772422208663809,
+            "holding_return": 0.48057142857142854
+          }
+        ],
+        "protection": {
+          "armed_date": "2026-05-07",
+          "trigger_date": "2026-05-15",
+          "trigger_return": 0.20257341667411088,
+          "peak_return": 0.2337023597362342,
+          "drawdown": 0.025232133842054694
+        }
+      },
+      "blend20": {
+        "return_pct": 21.101379901854635,
+        "amv_pct": 30.595329680792617,
+        "holdings": [
+          {
+            "name": "创业板人工智能ETF",
+            "weight": 0.3,
+            "day_change": 9.64824120603014,
+            "holding_return": 0.12557286892758945
+          },
+          {
+            "name": "通信ETF",
+            "weight": 0.3,
+            "day_change": 7.457322551662182,
+            "holding_return": 0.2040133779264215
+          },
+          {
+            "name": "科创半导体设备ETF",
+            "weight": 0.2,
+            "day_change": 6.772422208663809,
+            "holding_return": 0.532
+          },
+          {
+            "name": "创业板ETF",
+            "weight": 0.1,
+            "day_change": 6.15677562678516,
+            "holding_return": 0.14977578475336317
+          },
+          {
+            "name": "传媒ETF",
+            "weight": 0.1,
+            "day_change": 8.00415800415799,
+            "holding_return": -0.09239653512993262
+          }
+        ],
+        "protection": {
+          "armed_date": "2026-05-07"
+        }
+      },
+      "blend5_20": {
+        "return_pct": 17.78917590037654,
+        "amv_pct": 30.595329680792617,
+        "holdings": [
+          {
+            "name": "创业板人工智能ETF",
+            "weight": 0.3,
+            "day_change": 9.64824120603014,
+            "holding_return": 0.11136571952337315
+          },
+          {
+            "name": "通信ETF",
+            "weight": 0.3,
+            "day_change": 7.457322551662182,
+            "holding_return": 0.16178929765886296
+          },
+          {
+            "name": "科创半导体设备ETF",
+            "weight": 0.2,
+            "day_change": 6.772422208663809,
+            "holding_return": 0.2957142857142858
+          },
+          {
+            "name": "创业板ETF",
+            "weight": 0.1,
+            "day_change": 6.15677562678516,
+            "holding_return": 0.12406576980568007
+          },
+          {
+            "name": "半导体ETF",
+            "weight": 0.1,
+            "day_change": 6.541405706332637,
+            "holding_return": 0.2439581972566951
+          }
+        ],
+        "protection": {
+          "armed_date": "2026-04-22",
+          "trigger_date": "2026-04-24",
+          "trigger_return": 0.09627467684111224,
+          "peak_return": 0.13879251630730294,
+          "drawdown": 0.03733589644939084
+        }
+      },
+      "risk20": {
+        "return_pct": 9.966692294498912,
+        "amv_pct": 30.595329680792617,
+        "holdings": [
+          {
+            "name": "通信ETF",
+            "weight": 0.3,
+            "day_change": 7.457322551662182,
+            "holding_return": 0.22909698996655514
+          },
+          {
+            "name": "创新药ETF",
+            "weight": 0.3,
+            "day_change": 2.2250209907640706,
+            "holding_return": -0.043121149897330624
+          },
+          {
+            "name": "创业板人工智能ETF",
+            "weight": 0.2,
+            "day_change": 9.64824120603014,
+            "holding_return": 0.1652153987167737
+          },
+          {
+            "name": "创业板ETF",
+            "weight": 0.1,
+            "day_change": 6.15677562678516,
+            "holding_return": 0.16831091180866964
+          },
+          {
+            "name": "医药ETF",
+            "weight": 0.1,
+            "day_change": 1.6260162601626105,
+            "holding_return": -0.06000000000000005
+          }
+        ],
+        "protection": {
+          "armed_date": "2026-05-13",
+          "trigger_date": "2026-05-15",
+          "trigger_return": 0.11852337498083476,
+          "peak_return": 0.15545917442178148,
+          "drawdown": 0.03196633880156796
+        }
+      },
+      "diverse": {
+        "return_pct": 0.8289035238305376,
+        "amv_pct": 30.595329680792617,
+        "holdings": [
+          {
+            "name": "创业板人工智能ETF",
+            "weight": 0.3,
+            "day_change": 9.64824120603014,
+            "holding_return": 0.12557286892758945
+          },
+          {
+            "name": "传媒ETF",
+            "weight": 0.3,
+            "day_change": 8.00415800415799,
+            "holding_return": -0.09239653512993262
+          },
+          {
+            "name": "有色ETF",
+            "weight": 0.2,
+            "day_change": 6.375502008032163,
+            "holding_return": -0.08117036337895256
+          },
+          {
+            "name": "光伏ETF",
+            "weight": 0.1,
+            "day_change": 4.575163398692816,
+            "holding_return": 0.059374999999999956
+          },
+          {
+            "name": "新能源车ETF",
+            "weight": 0.1,
+            "day_change": 3.8418708240534505,
+            "holding_return": 0.0863270777479892
+          }
+        ],
+        "protection": {}
+      }
+    }
+  },
+  "attribution": {
+    "2025-06-25": {
+      "end": "2025-09-04",
+      "amv_pct": 75.0472773982231,
+      "selected_pct": 13.47675523047891,
+      "equal_universe_pct": 19.15431517950965,
+      "outcome": [
+        {
+          "name": "通信ETF",
+          "entry_gain_pct": 1.4738393515106862,
+          "entry_20d_pct": 14.65445462114905,
+          "return_pct": 71.1692084241104,
+          "selected": false
+        },
+        {
+          "name": "创业板人工智能ETF",
+          "entry_gain_pct": 2.4520255863539564,
+          "entry_20d_pct": 12.925969447708585,
+          "return_pct": 55.0468262226847,
+          "selected": false
+        },
+        {
+          "name": "电网设备ETF",
+          "entry_gain_pct": 1.0235414534288667,
+          "entry_20d_pct": 6.933911159263251,
+          "return_pct": 34.75177304964538,
+          "selected": false
+        },
+        {
+          "name": "创业板ETF",
+          "entry_gain_pct": 3.180039138943247,
+          "entry_20d_pct": 7.219115404168774,
+          "return_pct": 30.440967283072553,
+          "selected": true
+        },
+        {
+          "name": "有色ETF",
+          "entry_gain_pct": 0.7252946509519465,
+          "entry_20d_pct": 6.011450381679384,
+          "return_pct": 29.97299729972997,
+          "selected": false
+        },
+        {
+          "name": "光伏ETF",
+          "entry_gain_pct": 0.9900990099009688,
+          "entry_20d_pct": 1.492537313432818,
+          "return_pct": 29.166666666666686,
+          "selected": false
+        },
+        {
+          "name": "新能源ETF",
+          "entry_gain_pct": 1.3557483731019282,
+          "entry_20d_pct": 4.296875,
+          "return_pct": 25.093632958801493,
+          "selected": false
+        },
+        {
+          "name": "创新药ETF",
+          "entry_gain_pct": 0.6628369421122438,
+          "entry_20d_pct": 2.0609318996415604,
+          "return_pct": 19.710272168568906,
+          "selected": false
+        },
+        {
+          "name": "半导体ETF",
+          "entry_gain_pct": 2.1568627450980316,
+          "entry_20d_pct": 4.513540621865597,
+          "return_pct": 18.426103646833013,
+          "selected": false
+        },
+        {
+          "name": "新能源车ETF",
+          "entry_gain_pct": 1.4411529223378627,
+          "entry_20d_pct": 3.852459016393439,
+          "return_pct": 17.284925019731674,
+          "selected": false
+        },
+        {
+          "name": "医药ETF",
+          "entry_gain_pct": 1.0958904109588996,
+          "entry_20d_pct": 0.5449591280654031,
+          "return_pct": 16.802168021680217,
+          "selected": false
+        },
+        {
+          "name": "游戏ETF",
+          "entry_gain_pct": 0.7425742574257432,
+          "entry_20d_pct": 10.09918845807034,
+          "return_pct": 15.8067158067158,
+          "selected": false
+        },
+        {
+          "name": "传媒ETF",
+          "entry_gain_pct": 1.2077294685990392,
+          "entry_20d_pct": 5.276381909547734,
+          "return_pct": 14.797136038186153,
+          "selected": false
+        },
+        {
+          "name": "机器人ETF",
+          "entry_gain_pct": 1.5625,
+          "entry_20d_pct": 0.9557945041815952,
+          "return_pct": 13.964497041420117,
+          "selected": false
+        },
+        {
+          "name": "消费ETF",
+          "entry_gain_pct": 0.9633911368015502,
+          "entry_20d_pct": -1.5037593984962405,
+          "return_pct": 12.977099236641209,
+          "selected": false
+        },
+        {
+          "name": "沪深300ETF",
+          "entry_gain_pct": 1.6514227642276502,
+          "entry_20d_pct": 3.6772341496777328,
+          "return_pct": 11.37215696075981,
+          "selected": false
+        },
+        {
+          "name": "科创半导体设备ETF",
+          "entry_gain_pct": 0.9615384615384581,
+          "entry_20d_pct": null,
+          "return_pct": 11.142857142857125,
+          "selected": false
+        },
+        {
+          "name": "中证2000ETF",
+          "entry_gain_pct": 0.707964601769917,
+          "entry_20d_pct": 4.021937842778778,
+          "return_pct": 10.63268892794376,
+          "selected": false
+        },
+        {
+          "name": "白酒ETF",
+          "entry_gain_pct": 0.18018018018017834,
+          "entry_20d_pct": -4.794520547945192,
+          "return_pct": 10.071942446043153,
+          "selected": false
+        },
+        {
+          "name": "软件ETF",
+          "entry_gain_pct": 4.477611940298498,
+          "entry_20d_pct": 8.52713178294573,
+          "return_pct": 9.642857142857153,
+          "selected": true
+        },
+        {
+          "name": "卫星ETF",
+          "entry_gain_pct": 2.2517911975435068,
+          "entry_20d_pct": 8.351409978308011,
+          "return_pct": 8.508508508508498,
+          "selected": false
+        },
+        {
+          "name": "证券ETF",
+          "entry_gain_pct": 5.368516833484982,
+          "entry_20d_pct": 11.13243761996161,
+          "return_pct": 7.7720207253886,
+          "selected": true
+        },
+        {
+          "name": "上证50ETF",
+          "entry_gain_pct": 1.4326647564469885,
+          "entry_20d_pct": 2.9818181818181744,
+          "return_pct": 7.132768361581924,
+          "selected": false
+        },
+        {
+          "name": "军工ETF",
+          "entry_gain_pct": 3.2166508987701015,
+          "entry_20d_pct": 5.410628019323682,
+          "return_pct": 6.874427131072409,
+          "selected": true
+        },
+        {
+          "name": "煤炭ETF",
+          "entry_gain_pct": 0,
+          "entry_20d_pct": 0.5102040816326703,
+          "return_pct": 5.888324873096423,
+          "selected": false
+        },
+        {
+          "name": "高端装备ETF",
+          "entry_gain_pct": 3.037974683544298,
+          "entry_20d_pct": 5.167958656330729,
+          "return_pct": 3.5626535626535656,
+          "selected": true
+        }
+      ]
+    },
+    "2026-04-08": {
+      "end": "2026-05-21",
+      "amv_pct": 30.595329680792617,
+      "selected_pct": 8.7994210748092,
+      "equal_universe_pct": 5.971692703398924,
+      "outcome": [
+        {
+          "name": "科创半导体设备ETF",
+          "entry_gain_pct": 6.772422208663809,
+          "entry_20d_pct": 0,
+          "return_pct": 53.19999999999999,
+          "selected": false
+        },
+        {
+          "name": "半导体ETF",
+          "entry_gain_pct": 6.541405706332637,
+          "entry_20d_pct": -4.0125391849529795,
+          "return_pct": 39.25538863487918,
+          "selected": false
+        },
+        {
+          "name": "机器人ETF",
+          "entry_gain_pct": 6.380638063806376,
+          "entry_20d_pct": -6.750241080038566,
+          "return_pct": 22.750775594622553,
+          "selected": false
+        },
+        {
+          "name": "通信ETF",
+          "entry_gain_pct": 7.457322551662182,
+          "entry_20d_pct": 8.82620564149228,
+          "return_pct": 20.401337792642153,
+          "selected": true
+        },
+        {
+          "name": "创业板ETF",
+          "entry_gain_pct": 6.15677562678516,
+          "entry_20d_pct": 1.4866504854369023,
+          "return_pct": 14.977578475336315,
+          "selected": false
+        },
+        {
+          "name": "创业板人工智能ETF",
+          "entry_gain_pct": 9.64824120603014,
+          "entry_20d_pct": 3.021718602455148,
+          "return_pct": 12.557286892758952,
+          "selected": true
+        },
+        {
+          "name": "电网设备ETF",
+          "entry_gain_pct": 4.580545548121462,
+          "entry_20d_pct": -10.563380281690126,
+          "return_pct": 9.104330708661408,
+          "selected": false
+        },
+        {
+          "name": "新能源车ETF",
+          "entry_gain_pct": 3.8418708240534505,
+          "entry_20d_pct": 0,
+          "return_pct": 8.632707774798916,
+          "selected": false
+        },
+        {
+          "name": "中证2000ETF",
+          "entry_gain_pct": 4.464918497519488,
+          "entry_20d_pct": -4.780361757105944,
+          "return_pct": 7.394843962008139,
+          "selected": false
+        },
+        {
+          "name": "卫星ETF",
+          "entry_gain_pct": 6.900958466453688,
+          "entry_20d_pct": -8.127402526084559,
+          "return_pct": 6.0370591751344875,
+          "selected": true
+        },
+        {
+          "name": "光伏ETF",
+          "entry_gain_pct": 4.575163398692816,
+          "entry_20d_pct": -11.357340720221599,
+          "return_pct": 5.9375,
+          "selected": false
+        },
+        {
+          "name": "新能源ETF",
+          "entry_gain_pct": 3.8743455497382007,
+          "entry_20d_pct": -5.283259070655633,
+          "return_pct": 5.712365591397855,
+          "selected": false
+        },
+        {
+          "name": "沪深300ETF",
+          "entry_gain_pct": 3.5087719298245723,
+          "entry_20d_pct": -1.7296604740550836,
+          "return_pct": 4.476314645806156,
+          "selected": false
+        },
+        {
+          "name": "上证50ETF",
+          "entry_gain_pct": 2.6896551724137963,
+          "entry_20d_pct": -2.6797385620914937,
+          "return_pct": 0.5372733378106176,
+          "selected": false
+        },
+        {
+          "name": "军工ETF",
+          "entry_gain_pct": 5.043341213553987,
+          "entry_20d_pct": -11.780277961614816,
+          "return_pct": 0.3000750187546828,
+          "selected": false
+        },
+        {
+          "name": "证券ETF",
+          "entry_gain_pct": 3.8423645320197153,
+          "entry_20d_pct": -5.892857142857144,
+          "return_pct": 0,
+          "selected": false
+        },
+        {
+          "name": "煤炭ETF",
+          "entry_gain_pct": -1.9575856443719397,
+          "entry_20d_pct": -2.593192868719618,
+          "return_pct": -0.9983361064891767,
+          "selected": false
+        },
+        {
+          "name": "高端装备ETF",
+          "entry_gain_pct": 5.0672182006204824,
+          "entry_20d_pct": -12.489233419465984,
+          "return_pct": -1.1811023622047259,
+          "selected": false
+        },
+        {
+          "name": "软件ETF",
+          "entry_gain_pct": 7.152145643693109,
+          "entry_20d_pct": -9.450549450549461,
+          "return_pct": -1.3349514563106908,
+          "selected": true
+        },
+        {
+          "name": "创新药ETF",
+          "entry_gain_pct": 2.2250209907640706,
+          "entry_20d_pct": 2.612726506531815,
+          "return_pct": -4.517453798767974,
+          "selected": false
+        },
+        {
+          "name": "消费ETF",
+          "entry_gain_pct": 1.9455252918287869,
+          "entry_20d_pct": -1.132075471698113,
+          "return_pct": -4.580152671755727,
+          "selected": false
+        },
+        {
+          "name": "医药ETF",
+          "entry_gain_pct": 1.6260162601626105,
+          "entry_20d_pct": 0.2673796791443861,
+          "return_pct": -6.933333333333337,
+          "selected": false
+        },
+        {
+          "name": "有色ETF",
+          "entry_gain_pct": 6.375502008032163,
+          "entry_20d_pct": -7.02062308029835,
+          "return_pct": -8.117036337895257,
+          "selected": false
+        },
+        {
+          "name": "白酒ETF",
+          "entry_gain_pct": 1.4256619144602967,
+          "entry_20d_pct": -1.9685039370078705,
+          "return_pct": -8.835341365461844,
+          "selected": false
+        },
+        {
+          "name": "传媒ETF",
+          "entry_gain_pct": 8.00415800415799,
+          "entry_20d_pct": -4.5913682277318735,
+          "return_pct": -9.239653512993257,
+          "selected": true
+        },
+        {
+          "name": "游戏ETF",
+          "entry_gain_pct": 5.868544600938974,
+          "entry_20d_pct": -5.450733752620551,
+          "return_pct": -10.273466371027354,
+          "selected": false
+        }
+      ]
+    }
+  },
+  "contribution": {
+    "momentum5": {
+      "net_log_gain": -0.013931716471555874,
+      "changes": [
+        {
+          "start": "2026-04-08",
+          "original_pct": 8.7994210748092,
+          "candidate_pct": 23.046973697892568,
+          "log_wealth_gain": 0.12306016904595278
+        },
+        {
+          "start": "2020-02-05",
+          "original_pct": 0.5110302826902613,
+          "candidate_pct": 6.606352499078194,
+          "log_wealth_gain": 0.05887562634681241
+        },
+        {
+          "start": "2021-07-12",
+          "original_pct": -4.682181134334995,
+          "candidate_pct": 0.8832411154264141,
+          "log_wealth_gain": 0.05674704982774818
+        },
+        {
+          "start": "2022-03-16",
+          "original_pct": -0.8006812034399791,
+          "candidate_pct": 2.9818760210053696,
+          "log_wealth_gain": 0.03742186448848839
+        },
+        {
+          "start": "2024-10-18",
+          "original_pct": 7.626962250801883,
+          "candidate_pct": 11.4936535455324,
+          "log_wealth_gain": 0.03529647552890751
+        },
+        {
+          "start": "2019-12-13",
+          "original_pct": 6.562734479668064,
+          "candidate_pct": 9.501463645539232,
+          "log_wealth_gain": 0.027204047922024823
+        },
+        {
+          "start": "2023-01-30",
+          "original_pct": -2.2830220775419074,
+          "candidate_pct": 0.017607465882485407,
+          "log_wealth_gain": 0.02327092512187917
+        },
+        {
+          "start": "2019-04-01",
+          "original_pct": -2.5532872565881104,
+          "candidate_pct": -0.31894516566243203,
+          "log_wealth_gain": 0.022669944556012785
+        },
+        {
+          "start": "2024-08-30",
+          "original_pct": -4.346438361186644,
+          "candidate_pct": -2.2005027151285494,
+          "log_wealth_gain": 0.02218650543691581
+        },
+        {
+          "start": "2026-01-05",
+          "original_pct": 9.176341283843348,
+          "candidate_pct": 11.23495144344795,
+          "log_wealth_gain": 0.018680259044875653
+        },
+        {
+          "start": "2023-07-31",
+          "original_pct": -1.3748570558181683,
+          "candidate_pct": 0.39956150250766154,
+          "log_wealth_gain": 0.017831611207534556
+        },
+        {
+          "start": "2020-03-02",
+          "original_pct": -2.537376816282566,
+          "candidate_pct": -0.8623728171518796,
+          "log_wealth_gain": 0.017040105758270935
+        },
+        {
+          "start": "2024-07-31",
+          "original_pct": -3.632056287214469,
+          "candidate_pct": -2.430736601278982,
+          "log_wealth_gain": 0.012388907411536376
+        },
+        {
+          "start": "2024-04-26",
+          "original_pct": -0.9408542209175086,
+          "candidate_pct": -0.24535811374115646,
+          "log_wealth_gain": 0.006996486032816071
+        },
+        {
+          "start": "2025-06-25",
+          "original_pct": 13.47675523047891,
+          "candidate_pct": 13.809625666407843,
+          "log_wealth_gain": 0.0029290859628729946
+        },
+        {
+          "start": "2020-08-03",
+          "original_pct": -2.501112820542706,
+          "candidate_pct": -2.2518845123674747,
+          "log_wealth_gain": 0.0025529553860959746
+        },
+        {
+          "start": "2020-10-12",
+          "original_pct": -3.169646496046208,
+          "candidate_pct": -2.926470637592926,
+          "log_wealth_gain": 0.0025082116185197565
+        },
+        {
+          "start": "2021-04-19",
+          "original_pct": 10.611980626899253,
+          "candidate_pct": 10.854510156200625,
+          "log_wealth_gain": 0.0021902151011272955
+        },
+        {
+          "start": "2024-02-06",
+          "original_pct": 12.332875783190955,
+          "candidate_pct": 12.431762636018927,
+          "log_wealth_gain": 0.000879914740180828
+        },
+        {
+          "start": "2023-08-28",
+          "original_pct": 0.08443043089725322,
+          "candidate_pct": -0.016304538194689133,
+          "log_wealth_gain": -0.0010070067598733296
+        },
+        {
+          "start": "2026-06-15",
+          "original_pct": 10.687296492907583,
+          "candidate_pct": 10.573981145844048,
+          "log_wealth_gain": -0.0010242674016856996
+        },
+        {
+          "start": "2020-12-31",
+          "original_pct": 0.13951790091777383,
+          "candidate_pct": 0.007047301333695799,
+          "log_wealth_gain": -0.001323736121016936
+        },
+        {
+          "start": "2020-05-06",
+          "original_pct": 0.12783849775259704,
+          "candidate_pct": -0.02599575869107751,
+          "log_wealth_gain": -0.0015375599209327582
+        },
+        {
+          "start": "2024-04-18",
+          "original_pct": -0.41032749578395755,
+          "candidate_pct": -0.7795482850612934,
+          "log_wealth_gain": -0.003714309975020208
+        },
+        {
+          "start": "2023-10-25",
+          "original_pct": 5.140060135516511,
+          "candidate_pct": 4.525539603763051,
+          "log_wealth_gain": -0.005861927681090292
+        },
+        {
+          "start": "2022-10-14",
+          "original_pct": -0.7721641812359126,
+          "candidate_pct": -1.4121166808014562,
+          "log_wealth_gain": -0.006470211112788108
+        },
+        {
+          "start": "2019-08-19",
+          "original_pct": 8.921337566925857,
+          "candidate_pct": 8.209538174463926,
+          "log_wealth_gain": -0.006556432288696282
+        },
+        {
+          "start": "2023-04-03",
+          "original_pct": -3.104009453942791,
+          "candidate_pct": -3.753926887299719,
+          "log_wealth_gain": -0.006729967300476668
+        },
+        {
+          "start": "2025-02-06",
+          "original_pct": 4.340300285299592,
+          "candidate_pct": 3.516421047126017,
+          "log_wealth_gain": -0.007927417959257985
+        },
+        {
+          "start": "2022-05-11",
+          "original_pct": 3.080637206825121,
+          "candidate_pct": 2.203634660367615,
+          "log_wealth_gain": -0.008544326109111761
+        },
+        {
+          "start": "2023-12-29",
+          "original_pct": -3.7802793510229082,
+          "candidate_pct": -4.796543447621993,
+          "log_wealth_gain": -0.010618083552406352
+        },
+        {
+          "start": "2022-04-29",
+          "original_pct": -1.1070052744058256,
+          "candidate_pct": -2.222607625866757,
+          "log_wealth_gain": -0.01134501572498529
+        },
+        {
+          "start": "2019-10-29",
+          "original_pct": 2.5936792286533894,
+          "candidate_pct": 1.4261699920280035,
+          "log_wealth_gain": -0.01144518031557173
+        },
+        {
+          "start": "2019-06-20",
+          "original_pct": 3.7184737969007786,
+          "candidate_pct": 2.42544836490024,
+          "log_wealth_gain": -0.012545044997938728
+        },
+        {
+          "start": "2026-05-25",
+          "original_pct": -4.397243982163246,
+          "candidate_pct": -5.773494537632384,
+          "log_wealth_gain": -0.014500131941182295
+        },
+        {
+          "start": "2025-04-10",
+          "original_pct": 0.7426895222734098,
+          "candidate_pct": -0.9017827449587124,
+          "log_wealth_gain": -0.016458185800817114
+        },
+        {
+          "start": "2020-11-03",
+          "original_pct": 6.684905508230932,
+          "candidate_pct": 4.664531501677449,
+          "log_wealth_gain": -0.019119384281785192
+        },
+        {
+          "start": "2020-06-01",
+          "original_pct": 22.967054185642823,
+          "candidate_pct": 20.60953907496024,
+          "log_wealth_gain": -0.01935808937198187
+        },
+        {
+          "start": "2022-06-06",
+          "original_pct": 12.160709917501912,
+          "candidate_pct": 10.000356864550696,
+          "log_wealth_gain": -0.019449142762878194
+        },
+        {
+          "start": "2025-05-06",
+          "original_pct": -0.15123252993602954,
+          "candidate_pct": -2.71754841096572,
+          "log_wealth_gain": -0.026038096702708163
+        },
+        {
+          "start": "2024-01-24",
+          "original_pct": -0.05685390486902531,
+          "candidate_pct": -3.6052787428030197,
+          "log_wealth_gain": -0.036150043885377105
+        },
+        {
+          "start": "2019-02-11",
+          "original_pct": 17.809634759891658,
+          "candidate_pct": 13.212740296458382,
+          "log_wealth_gain": -0.039801350781473996
+        },
+        {
+          "start": "2021-08-24",
+          "original_pct": -0.03969823722975718,
+          "candidate_pct": -5.00474068667045,
+          "log_wealth_gain": -0.05094613640698725
+        },
+        {
+          "start": "2024-09-24",
+          "original_pct": 26.92143743040869,
+          "candidate_pct": 18.23919446493596,
+          "log_wealth_gain": -0.07085864766999081
+        },
+        {
+          "start": "2026-08-05",
+          "original_pct": 9.57647025948598,
+          "candidate_pct": -0.38723850251363157,
+          "log_wealth_gain": -0.09533238018409408
+        }
+      ]
+    },
+    "momentum10": {
+      "net_log_gain": 0.06410147416764017,
+      "changes": [
+        {
+          "start": "2025-06-25",
+          "original_pct": 13.47675523047891,
+          "candidate_pct": 30.235855674790923,
+          "log_wealth_gain": 0.13774906485345978
+        },
+        {
+          "start": "2021-08-24",
+          "original_pct": -0.03969823722975718,
+          "candidate_pct": 12.414620110477648,
+          "log_wealth_gain": 0.11742087636078416
+        },
+        {
+          "start": "2020-02-05",
+          "original_pct": 0.5110302826902613,
+          "candidate_pct": 6.862777932768704,
+          "log_wealth_gain": 0.061278086660474
+        },
+        {
+          "start": "2021-07-12",
+          "original_pct": -4.682181134334995,
+          "candidate_pct": -0.5813569169694888,
+          "log_wealth_gain": 0.04212288250643727
+        },
+        {
+          "start": "2026-04-08",
+          "original_pct": 8.7994210748092,
+          "candidate_pct": 12.767860148605426,
+          "log_wealth_gain": 0.03582535729964795
+        },
+        {
+          "start": "2019-12-13",
+          "original_pct": 6.562734479668064,
+          "candidate_pct": 10.33606494500765,
+          "log_wealth_gain": 0.03479697634109355
+        },
+        {
+          "start": "2020-12-31",
+          "original_pct": 0.13951790091777383,
+          "candidate_pct": 3.01075050255466,
+          "log_wealth_gain": 0.028268963954939733
+        },
+        {
+          "start": "2026-06-15",
+          "original_pct": 10.687296492907583,
+          "candidate_pct": 13.533119245392866,
+          "log_wealth_gain": 0.025385516907168438
+        },
+        {
+          "start": "2024-08-30",
+          "original_pct": -4.346438361186644,
+          "candidate_pct": -2.3181778015381127,
+          "log_wealth_gain": 0.020982553049702857
+        },
+        {
+          "start": "2024-04-26",
+          "original_pct": -0.9408542209175086,
+          "candidate_pct": 1.1507170677266476,
+          "log_wealth_gain": 0.020894548885627046
+        },
+        {
+          "start": "2020-05-06",
+          "original_pct": 0.12783849775259704,
+          "candidate_pct": 1.871137838432979,
+          "log_wealth_gain": 0.01726090552672395
+        },
+        {
+          "start": "2023-07-31",
+          "original_pct": -1.3748570558181683,
+          "candidate_pct": 0.32399971086547463,
+          "log_wealth_gain": 0.01707871708036028
+        },
+        {
+          "start": "2024-10-18",
+          "original_pct": 7.626962250801883,
+          "candidate_pct": 8.995540490827047,
+          "log_wealth_gain": 0.012635773586818323
+        },
+        {
+          "start": "2023-01-30",
+          "original_pct": -2.2830220775419074,
+          "candidate_pct": -1.1336745851829422,
+          "log_wealth_gain": 0.011693369367002129
+        },
+        {
+          "start": "2020-10-12",
+          "original_pct": -3.169646496046208,
+          "candidate_pct": -2.226477236060309,
+          "log_wealth_gain": 0.009693297616464034
+        },
+        {
+          "start": "2019-04-01",
+          "original_pct": -2.5532872565881104,
+          "candidate_pct": -1.6567455365689487,
+          "log_wealth_gain": 0.009158262797245098
+        },
+        {
+          "start": "2023-08-28",
+          "original_pct": 0.08443043089725322,
+          "candidate_pct": 0.63575764256949,
+          "log_wealth_gain": 0.005493504200911142
+        },
+        {
+          "start": "2022-10-14",
+          "original_pct": -0.7721641812359126,
+          "candidate_pct": -0.36735609074093345,
+          "log_wealth_gain": 0.004071283044286261
+        },
+        {
+          "start": "2023-04-03",
+          "original_pct": -3.104009453942791,
+          "candidate_pct": -2.7932592735393835,
+          "log_wealth_gain": 0.0032019172925331504
+        },
+        {
+          "start": "2020-08-03",
+          "original_pct": -2.501112820542706,
+          "candidate_pct": -2.4551908521160626,
+          "log_wealth_gain": 0.00047088903809663565
+        },
+        {
+          "start": "2024-07-31",
+          "original_pct": -3.632056287214469,
+          "candidate_pct": -3.733311422429697,
+          "log_wealth_gain": -0.0010512662581656312
+        },
+        {
+          "start": "2024-04-18",
+          "original_pct": -0.41032749578395755,
+          "candidate_pct": -0.5894860532727031,
+          "log_wealth_gain": -0.001800587316909797
+        },
+        {
+          "start": "2022-05-11",
+          "original_pct": 3.080637206825121,
+          "candidate_pct": 2.5568093447634554,
+          "log_wealth_gain": -0.005094684882320939
+        },
+        {
+          "start": "2023-12-29",
+          "original_pct": -3.7802793510229082,
+          "candidate_pct": -4.350138042973306,
+          "log_wealth_gain": -0.005940080338011993
+        },
+        {
+          "start": "2020-11-03",
+          "original_pct": 6.684905508230932,
+          "candidate_pct": 6.052498242174753,
+          "log_wealth_gain": -0.005945443704614485
+        },
+        {
+          "start": "2019-06-20",
+          "original_pct": 3.7184737969007786,
+          "candidate_pct": 2.960134619880317,
+          "log_wealth_gain": -0.007338375132135426
+        },
+        {
+          "start": "2026-01-05",
+          "original_pct": 9.176341283843348,
+          "candidate_pct": 8.327059181490814,
+          "log_wealth_gain": -0.00780940819118186
+        },
+        {
+          "start": "2025-02-06",
+          "original_pct": 4.340300285299592,
+          "candidate_pct": 3.516421047126017,
+          "log_wealth_gain": -0.007927417959257985
+        },
+        {
+          "start": "2025-05-06",
+          "original_pct": -0.15123252993602954,
+          "candidate_pct": -1.0082008753452776,
+          "log_wealth_gain": -0.00861970639184976
+        },
+        {
+          "start": "2021-04-19",
+          "original_pct": 10.611980626899253,
+          "candidate_pct": 9.584460427710395,
+          "log_wealth_gain": -0.009332827110948717
+        },
+        {
+          "start": "2020-03-02",
+          "original_pct": -2.537376816282566,
+          "candidate_pct": -3.494532427751018,
+          "log_wealth_gain": -0.009869287024106901
+        },
+        {
+          "start": "2019-10-29",
+          "original_pct": 2.5936792286533894,
+          "candidate_pct": 1.5486870794580332,
+          "log_wealth_gain": -0.010237965746466302
+        },
+        {
+          "start": "2022-04-29",
+          "original_pct": -1.1070052744058256,
+          "candidate_pct": -2.1675111530553792,
+          "log_wealth_gain": -0.010781685550410557
+        },
+        {
+          "start": "2025-04-10",
+          "original_pct": 0.7426895222734098,
+          "candidate_pct": -0.3777274753626103,
+          "log_wealth_gain": -0.01118387830451447
+        },
+        {
+          "start": "2023-10-25",
+          "original_pct": 5.140060135516511,
+          "candidate_pct": 3.8834758643108147,
+          "log_wealth_gain": -0.012023520732622268
+        },
+        {
+          "start": "2022-03-16",
+          "original_pct": -0.8006812034399791,
+          "candidate_pct": -2.059158348763357,
+          "log_wealth_gain": -0.012767507520565703
+        },
+        {
+          "start": "2020-06-01",
+          "original_pct": 22.967054185642823,
+          "candidate_pct": 20.09676839899326,
+          "log_wealth_gain": -0.023618646205857654
+        },
+        {
+          "start": "2026-05-25",
+          "original_pct": -4.397243982163246,
+          "candidate_pct": -6.73021537096462,
+          "log_wealth_gain": -0.024705444657119584
+        },
+        {
+          "start": "2019-08-19",
+          "original_pct": 8.921337566925857,
+          "candidate_pct": 6.198669819624825,
+          "log_wealth_gain": -0.025314364508939743
+        },
+        {
+          "start": "2024-09-24",
+          "original_pct": 26.92143743040869,
+          "candidate_pct": 22.62811188875993,
+          "log_wealth_gain": -0.03441199729280191
+        },
+        {
+          "start": "2022-06-06",
+          "original_pct": 12.160709917501912,
+          "candidate_pct": 8.218721433844568,
+          "log_wealth_gain": -0.03577837513734381
+        },
+        {
+          "start": "2024-01-24",
+          "original_pct": -0.05685390486902531,
+          "candidate_pct": -3.6052787428030197,
+          "log_wealth_gain": -0.036150043885377105
+        },
+        {
+          "start": "2019-02-11",
+          "original_pct": 17.809634759891658,
+          "candidate_pct": 12.37666480460926,
+          "log_wealth_gain": -0.04721374960009822
+        },
+        {
+          "start": "2024-02-06",
+          "original_pct": 12.332875783190955,
+          "candidate_pct": 4.722387558523167,
+          "log_wealth_gain": -0.07015364773640984
+        },
+        {
+          "start": "2026-08-05",
+          "original_pct": 9.57647025948598,
+          "candidate_pct": -3.4258310739990305,
+          "log_wealth_gain": -0.12631136101410487
+        }
+      ]
+    },
+    "momentum20": {
+      "net_log_gain": 0.3117966645394869,
+      "changes": [
+        {
+          "start": "2025-06-25",
+          "original_pct": 13.47675523047891,
+          "candidate_pct": 46.895099875605695,
+          "log_wealth_gain": 0.2581207095365113
+        },
+        {
+          "start": "2020-02-05",
+          "original_pct": 0.5110302826902613,
+          "candidate_pct": 8.355602057176759,
+          "log_wealth_gain": 0.07515095445523805
+        },
+        {
+          "start": "2021-08-24",
+          "original_pct": -0.03969823722975718,
+          "candidate_pct": 7.643730142063321,
+          "log_wealth_gain": 0.07405385432616488
+        },
+        {
+          "start": "2019-12-13",
+          "original_pct": 6.562734479668064,
+          "candidate_pct": 13.165701689192488,
+          "log_wealth_gain": 0.060119263376258565
+        },
+        {
+          "start": "2026-06-15",
+          "original_pct": 10.687296492907583,
+          "candidate_pct": 15.25064739450106,
+          "log_wealth_gain": 0.04040022219887752
+        },
+        {
+          "start": "2022-10-14",
+          "original_pct": -0.7721641812359126,
+          "candidate_pct": 2.8844353796163347,
+          "log_wealth_gain": 0.03618779378489516
+        },
+        {
+          "start": "2020-12-31",
+          "original_pct": 0.13951790091777383,
+          "candidate_pct": 3.314867827789625,
+          "log_wealth_gain": 0.031216901762528712
+        },
+        {
+          "start": "2026-04-08",
+          "original_pct": 8.7994210748092,
+          "candidate_pct": 12.050057780639944,
+          "log_wealth_gain": 0.029439702511071072
+        },
+        {
+          "start": "2021-07-12",
+          "original_pct": -4.682181134334995,
+          "candidate_pct": -1.8510382889379007,
+          "log_wealth_gain": 0.02926957233621919
+        },
+        {
+          "start": "2020-05-06",
+          "original_pct": 0.12783849775259704,
+          "candidate_pct": 2.3947044497603986,
+          "log_wealth_gain": 0.022387242383082512
+        },
+        {
+          "start": "2024-08-30",
+          "original_pct": -4.346438361186644,
+          "candidate_pct": -2.5753668984895284,
+          "log_wealth_gain": 0.018346153905203125
+        },
+        {
+          "start": "2020-10-12",
+          "original_pct": -3.169646496046208,
+          "candidate_pct": -1.3926381402868282,
+          "log_wealth_gain": 0.01818540832730629
+        },
+        {
+          "start": "2023-07-31",
+          "original_pct": -1.3748570558181683,
+          "candidate_pct": 0.32399971086547463,
+          "log_wealth_gain": 0.01707871708036028
+        },
+        {
+          "start": "2020-06-01",
+          "original_pct": 22.967054185642823,
+          "candidate_pct": 25.078594842175427,
+          "log_wealth_gain": 0.017025831109369567
+        },
+        {
+          "start": "2024-10-18",
+          "original_pct": 7.626962250801883,
+          "candidate_pct": 9.300391567893683,
+          "log_wealth_gain": 0.01542878280478832
+        },
+        {
+          "start": "2024-04-26",
+          "original_pct": -0.9408542209175086,
+          "candidate_pct": 0.5683721878376513,
+          "log_wealth_gain": 0.015120712608169815
+        },
+        {
+          "start": "2023-04-03",
+          "original_pct": -3.104009453942791,
+          "candidate_pct": -1.7031075409051688,
+          "log_wealth_gain": 0.01435427301932487
+        },
+        {
+          "start": "2020-08-03",
+          "original_pct": -2.501112820542706,
+          "candidate_pct": -1.544680400437437,
+          "log_wealth_gain": 0.009761872745847833
+        },
+        {
+          "start": "2019-04-01",
+          "original_pct": -2.5532872565881104,
+          "candidate_pct": -1.7601398540230573,
+          "log_wealth_gain": 0.008106348168732045
+        },
+        {
+          "start": "2023-10-25",
+          "original_pct": 5.140060135516511,
+          "candidate_pct": 5.929175645348117,
+          "log_wealth_gain": 0.0074773491606088495
+        },
+        {
+          "start": "2024-09-24",
+          "original_pct": 26.92143743040869,
+          "candidate_pct": 27.783357528339316,
+          "log_wealth_gain": 0.006768018546064317
+        },
+        {
+          "start": "2022-06-06",
+          "original_pct": 12.160709917501912,
+          "candidate_pct": 12.777550196955545,
+          "log_wealth_gain": 0.0054845434063824335
+        },
+        {
+          "start": "2023-01-30",
+          "original_pct": -2.2830220775419074,
+          "candidate_pct": -1.9621401346091805,
+          "log_wealth_gain": 0.003278409197557792
+        },
+        {
+          "start": "2022-03-16",
+          "original_pct": -0.8006812034399791,
+          "candidate_pct": -0.5588024999939267,
+          "log_wealth_gain": 0.002435342270569831
+        },
+        {
+          "start": "2024-07-31",
+          "original_pct": -3.632056287214469,
+          "candidate_pct": -3.456290161609865,
+          "log_wealth_gain": 0.0018222452714092858
+        },
+        {
+          "start": "2024-04-18",
+          "original_pct": -0.41032749578395755,
+          "candidate_pct": -0.45131372331954633,
+          "log_wealth_gain": -0.0004116356925430517
+        },
+        {
+          "start": "2021-04-19",
+          "original_pct": 10.611980626899253,
+          "candidate_pct": 10.441465352974388,
+          "log_wealth_gain": -0.0015427518624653038
+        },
+        {
+          "start": "2019-10-29",
+          "original_pct": 2.5936792286533894,
+          "candidate_pct": 2.3760844442107354,
+          "log_wealth_gain": -0.002123189901627308
+        },
+        {
+          "start": "2023-08-28",
+          "original_pct": 0.08443043089725322,
+          "candidate_pct": -0.23902497427834568,
+          "log_wealth_gain": -0.003237059034525519
+        },
+        {
+          "start": "2023-12-29",
+          "original_pct": -3.7802793510229082,
+          "candidate_pct": -4.449309563864179,
+          "log_wealth_gain": -0.006977436439161989
+        },
+        {
+          "start": "2019-08-19",
+          "original_pct": 8.921337566925857,
+          "candidate_pct": 8.027024630461677,
+          "log_wealth_gain": -0.008244524117168493
+        },
+        {
+          "start": "2026-01-05",
+          "original_pct": 9.176341283843348,
+          "candidate_pct": 8.141635046418072,
+          "log_wealth_gain": -0.009522581369272793
+        },
+        {
+          "start": "2025-04-10",
+          "original_pct": 0.7426895222734098,
+          "candidate_pct": -0.33497836182329044,
+          "log_wealth_gain": -0.010754858337390068
+        },
+        {
+          "start": "2025-02-06",
+          "original_pct": 4.340300285299592,
+          "candidate_pct": 2.904724103576073,
+          "log_wealth_gain": -0.0138541240981406
+        },
+        {
+          "start": "2022-04-29",
+          "original_pct": -1.1070052744058256,
+          "candidate_pct": -3.212663501650681,
+          "log_wealth_gain": -0.021522239798432388
+        },
+        {
+          "start": "2020-11-03",
+          "original_pct": 6.684905508230932,
+          "candidate_pct": 4.261987419056235,
+          "log_wealth_gain": -0.02297284034681179
+        },
+        {
+          "start": "2022-05-11",
+          "original_pct": 3.080637206825121,
+          "candidate_pct": 0.5771876975753765,
+          "log_wealth_gain": -0.02458609793619076
+        },
+        {
+          "start": "2026-05-25",
+          "original_pct": -4.397243982163246,
+          "candidate_pct": -6.758672952619915,
+          "log_wealth_gain": -0.025010601616620224
+        },
+        {
+          "start": "2019-06-20",
+          "original_pct": 3.7184737969007786,
+          "candidate_pct": 1.0004046370171826,
+          "log_wealth_gain": -0.026555722775711884
+        },
+        {
+          "start": "2024-01-24",
+          "original_pct": -0.05685390486902531,
+          "candidate_pct": -2.707396808880247,
+          "log_wealth_gain": -0.02687851960380011
+        },
+        {
+          "start": "2025-05-06",
+          "original_pct": -0.15123252993602954,
+          "candidate_pct": -3.251679837948318,
+          "log_wealth_gain": -0.03154374687752991
+        },
+        {
+          "start": "2020-03-02",
+          "original_pct": -2.537376816282566,
+          "candidate_pct": -5.998147026138967,
+          "log_wealth_gain": -0.036154457980182665
+        },
+        {
+          "start": "2019-02-11",
+          "original_pct": 17.809634759891658,
+          "candidate_pct": 10.460683558003359,
+          "log_wealth_gain": -0.06441040426686676
+        },
+        {
+          "start": "2024-02-06",
+          "original_pct": 12.332875783190955,
+          "candidate_pct": 4.454993372813876,
+          "log_wealth_gain": -0.07271027532364802
+        },
+        {
+          "start": "2026-08-05",
+          "original_pct": 9.57647025948598,
+          "candidate_pct": -0.47467128923479596,
+          "log_wealth_gain": -0.09621049237496508
+        }
+      ]
+    },
+    "blend5": {
+      "net_log_gain": -0.04006792801604836,
+      "changes": [
+        {
+          "start": "2026-04-08",
+          "original_pct": 8.7994210748092,
+          "candidate_pct": 18.771268616960345,
+          "log_wealth_gain": 0.08769351761624863
+        },
+        {
+          "start": "2025-06-25",
+          "original_pct": 13.47675523047891,
+          "candidate_pct": 17.107120984773204,
+          "log_wealth_gain": 0.03149106368146806
+        },
+        {
+          "start": "2026-06-15",
+          "original_pct": 10.687296492907583,
+          "candidate_pct": 14.166434691850993,
+          "log_wealth_gain": 0.030948260167940955
+        },
+        {
+          "start": "2024-08-30",
+          "original_pct": -4.346438361186644,
+          "candidate_pct": -2.869622743594702,
+          "log_wealth_gain": 0.01532124008842264
+        },
+        {
+          "start": "2024-10-18",
+          "original_pct": 7.626962250801883,
+          "candidate_pct": 8.995540490827047,
+          "log_wealth_gain": 0.012635773586818323
+        },
+        {
+          "start": "2019-04-01",
+          "original_pct": -2.5532872565881104,
+          "candidate_pct": -1.4084299632825092,
+          "log_wealth_gain": 0.011680068734957732
+        },
+        {
+          "start": "2021-07-12",
+          "original_pct": -4.682181134334995,
+          "candidate_pct": -3.635016791936585,
+          "log_wealth_gain": 0.010926121160578827
+        },
+        {
+          "start": "2026-01-05",
+          "original_pct": 9.176341283843348,
+          "candidate_pct": 10.154149741088236,
+          "log_wealth_gain": 0.008916361156808827
+        },
+        {
+          "start": "2023-01-30",
+          "original_pct": -2.2830220775419074,
+          "candidate_pct": -1.567232345702485,
+          "log_wealth_gain": 0.0072984332156075474
+        },
+        {
+          "start": "2020-10-12",
+          "original_pct": -3.169646496046208,
+          "candidate_pct": -2.5425861587506704,
+          "log_wealth_gain": 0.00645498708606536
+        },
+        {
+          "start": "2023-07-31",
+          "original_pct": -1.3748570558181683,
+          "candidate_pct": -0.8485804422391441,
+          "log_wealth_gain": 0.005321943602102201
+        },
+        {
+          "start": "2020-02-05",
+          "original_pct": 0.5110302826902613,
+          "candidate_pct": 0.8383120349272799,
+          "log_wealth_gain": 0.0032508876036377345
+        },
+        {
+          "start": "2025-02-06",
+          "original_pct": 4.340300285299592,
+          "candidate_pct": 4.652103998219981,
+          "log_wealth_gain": 0.002983878245100974
+        },
+        {
+          "start": "2024-07-31",
+          "original_pct": -3.632056287214469,
+          "candidate_pct": -3.3720995536951404,
+          "log_wealth_gain": 0.002693911797575697
+        },
+        {
+          "start": "2025-04-10",
+          "original_pct": 0.7426895222734098,
+          "candidate_pct": 1.0117481703656672,
+          "log_wealth_gain": 0.0026671909740790607
+        },
+        {
+          "start": "2020-05-06",
+          "original_pct": 0.12783849775259704,
+          "candidate_pct": 0.3062946066344052,
+          "log_wealth_gain": 0.00178069626438412
+        },
+        {
+          "start": "2020-03-02",
+          "original_pct": -2.537376816282566,
+          "candidate_pct": -2.36884265427032,
+          "log_wealth_gain": 0.0017277250302722895
+        },
+        {
+          "start": "2024-04-18",
+          "original_pct": -0.41032749578395755,
+          "candidate_pct": -0.24637997127695543,
+          "log_wealth_gain": 0.001644876628541362
+        },
+        {
+          "start": "2019-12-13",
+          "original_pct": 6.562734479668064,
+          "candidate_pct": 6.723745392280467,
+          "log_wealth_gain": 0.0015098091852305277
+        },
+        {
+          "start": "2022-03-16",
+          "original_pct": -0.8006812034399791,
+          "candidate_pct": -0.6974866524185996,
+          "log_wealth_gain": 0.0010397340840960774
+        },
+        {
+          "start": "2020-08-03",
+          "original_pct": -2.501112820542706,
+          "candidate_pct": -2.501112820542706,
+          "log_wealth_gain": 0
+        },
+        {
+          "start": "2021-04-19",
+          "original_pct": 10.611980626899253,
+          "candidate_pct": 10.611980626899253,
+          "log_wealth_gain": 0
+        },
+        {
+          "start": "2023-04-03",
+          "original_pct": -3.104009453942791,
+          "candidate_pct": -3.104009453942791,
+          "log_wealth_gain": 0
+        },
+        {
+          "start": "2024-04-26",
+          "original_pct": -0.9408542209175086,
+          "candidate_pct": -1.0453483835709432,
+          "log_wealth_gain": -0.0010554231445250503
+        },
+        {
+          "start": "2020-12-31",
+          "original_pct": 0.13951790091777383,
+          "candidate_pct": -0.03240079971692511,
+          "log_wealth_gain": -0.0017182671503491735
+        },
+        {
+          "start": "2022-04-29",
+          "original_pct": -1.1070052744058256,
+          "candidate_pct": -1.319724995757987,
+          "log_wealth_gain": -0.002153325739237241
+        },
+        {
+          "start": "2023-10-25",
+          "original_pct": 5.140060135516511,
+          "candidate_pct": 4.894180178343954,
+          "log_wealth_gain": -0.0023413331952734963
+        },
+        {
+          "start": "2019-10-29",
+          "original_pct": 2.5936792286533894,
+          "candidate_pct": 2.3467689395044067,
+          "log_wealth_gain": -0.0024095820109807224
+        },
+        {
+          "start": "2022-05-11",
+          "original_pct": 3.080637206825121,
+          "candidate_pct": 2.7794724012802696,
+          "log_wealth_gain": -0.0029259191688396267
+        },
+        {
+          "start": "2022-06-06",
+          "original_pct": 12.160709917501912,
+          "candidate_pct": 11.653339195663893,
+          "log_wealth_gain": -0.004533867225691485
+        },
+        {
+          "start": "2023-08-28",
+          "original_pct": 0.08443043089725322,
+          "candidate_pct": -0.3848343451414271,
+          "log_wealth_gain": -0.004699715462323679
+        },
+        {
+          "start": "2026-05-25",
+          "original_pct": -4.397243982163246,
+          "candidate_pct": -4.892016250395592,
+          "log_wealth_gain": -0.00518873115268875
+        },
+        {
+          "start": "2024-02-06",
+          "original_pct": 12.332875783190955,
+          "candidate_pct": 11.670233057849867,
+          "log_wealth_gain": -0.00591638805084232
+        },
+        {
+          "start": "2019-08-19",
+          "original_pct": 8.921337566925857,
+          "candidate_pct": 8.225395868893038,
+          "log_wealth_gain": -0.006409896845815245
+        },
+        {
+          "start": "2022-10-14",
+          "original_pct": -0.7721641812359126,
+          "candidate_pct": -1.4121166808014562,
+          "log_wealth_gain": -0.006470211112788108
+        },
+        {
+          "start": "2020-11-03",
+          "original_pct": 6.684905508230932,
+          "candidate_pct": 5.909630893167139,
+          "log_wealth_gain": -0.007293489897824838
+        },
+        {
+          "start": "2019-06-20",
+          "original_pct": 3.7184737969007786,
+          "candidate_pct": 2.960134619880317,
+          "log_wealth_gain": -0.007338375132135426
+        },
+        {
+          "start": "2024-01-24",
+          "original_pct": -0.05685390486902531,
+          "candidate_pct": -0.8765162126292525,
+          "log_wealth_gain": -0.008235101387759947
+        },
+        {
+          "start": "2021-08-24",
+          "original_pct": -0.03969823722975718,
+          "candidate_pct": -1.253832807229427,
+          "log_wealth_gain": -0.012220535007219804
+        },
+        {
+          "start": "2025-05-06",
+          "original_pct": -0.15123252993602954,
+          "candidate_pct": -1.693300940428255,
+          "log_wealth_gain": -0.01556454200853801
+        },
+        {
+          "start": "2023-12-29",
+          "original_pct": -3.7802793510229082,
+          "candidate_pct": -5.270291849840514,
+          "log_wealth_gain": -0.015606673990907823
+        },
+        {
+          "start": "2019-02-11",
+          "original_pct": 17.809634759891658,
+          "candidate_pct": 14.849590896573673,
+          "log_wealth_gain": -0.025446689944653527
+        },
+        {
+          "start": "2020-06-01",
+          "original_pct": 22.967054185642823,
+          "candidate_pct": 19.760032815444074,
+          "log_wealth_gain": -0.02642645322298889
+        },
+        {
+          "start": "2024-09-24",
+          "original_pct": 26.92143743040869,
+          "candidate_pct": 20.882120111922518,
+          "log_wealth_gain": -0.0487524353438553
+        },
+        {
+          "start": "2026-08-05",
+          "original_pct": 9.57647025948598,
+          "candidate_pct": 1.6235411280180578,
+          "log_wealth_gain": -0.07534745173074683
+        }
+      ]
+    },
+    "blend20": {
+      "net_log_gain": 0.2457613733057937,
+      "changes": [
+        {
+          "start": "2025-06-25",
+          "original_pct": 13.47675523047891,
+          "candidate_pct": 30.38960589070743,
+          "log_wealth_gain": 0.13892892067283186
+        },
+        {
+          "start": "2026-04-08",
+          "original_pct": 8.7994210748092,
+          "candidate_pct": 21.101379901854635,
+          "log_wealth_gain": 0.10712203182045978
+        },
+        {
+          "start": "2021-08-24",
+          "original_pct": -0.03969823722975718,
+          "candidate_pct": 4.045978846200726,
+          "log_wealth_gain": 0.040059780935025414
+        },
+        {
+          "start": "2020-12-31",
+          "original_pct": 0.13951790091777383,
+          "candidate_pct": 2.6632636406351162,
+          "log_wealth_gain": 0.02488995475932294
+        },
+        {
+          "start": "2019-12-13",
+          "original_pct": 6.562734479668064,
+          "candidate_pct": 8.99195075266257,
+          "log_wealth_gain": 0.022540165325395985
+        },
+        {
+          "start": "2021-07-12",
+          "original_pct": -4.682181134334995,
+          "candidate_pct": -2.5797914700986357,
+          "log_wealth_gain": 0.02181689916371171
+        },
+        {
+          "start": "2024-08-30",
+          "original_pct": -4.346438361186644,
+          "candidate_pct": -2.324914157032232,
+          "log_wealth_gain": 0.020913588449839714
+        },
+        {
+          "start": "2024-07-31",
+          "original_pct": -3.632056287214469,
+          "candidate_pct": -1.7290556452215777,
+          "log_wealth_gain": 0.019554789910398017
+        },
+        {
+          "start": "2024-10-18",
+          "original_pct": 7.626962250801883,
+          "candidate_pct": 9.09142175242259,
+          "log_wealth_gain": 0.013515067486709626
+        },
+        {
+          "start": "2026-01-05",
+          "original_pct": 9.176341283843348,
+          "candidate_pct": 10.544433916700813,
+          "log_wealth_gain": 0.012453172095817207
+        },
+        {
+          "start": "2023-10-25",
+          "original_pct": 5.140060135516511,
+          "candidate_pct": 6.425525198257209,
+          "log_wealth_gain": 0.012152079268631577
+        },
+        {
+          "start": "2020-05-06",
+          "original_pct": 0.12783849775259704,
+          "candidate_pct": 1.3467966146732735,
+          "log_wealth_gain": 0.012100510714556992
+        },
+        {
+          "start": "2024-04-26",
+          "original_pct": -0.9408542209175086,
+          "candidate_pct": 0.08678687593337564,
+          "log_wealth_gain": 0.010320574512065686
+        },
+        {
+          "start": "2020-06-01",
+          "original_pct": 22.967054185642823,
+          "candidate_pct": 23.81498394076147,
+          "log_wealth_gain": 0.006871919029345492
+        },
+        {
+          "start": "2022-10-14",
+          "original_pct": -0.7721641812359126,
+          "candidate_pct": -0.1737970855928861,
+          "log_wealth_gain": 0.00601212516775865
+        },
+        {
+          "start": "2022-06-06",
+          "original_pct": 12.160709917501912,
+          "candidate_pct": 12.731506334117793,
+          "log_wealth_gain": 0.0050761885120305305
+        },
+        {
+          "start": "2023-07-31",
+          "original_pct": -1.3748570558181683,
+          "candidate_pct": -0.9217959720383639,
+          "log_wealth_gain": 0.004583249437182443
+        },
+        {
+          "start": "2026-06-15",
+          "original_pct": 10.687296492907583,
+          "candidate_pct": 11.194059120542255,
+          "log_wealth_gain": 0.0045678782463573755
+        },
+        {
+          "start": "2020-02-05",
+          "original_pct": 0.5110302826902613,
+          "candidate_pct": 0.8383120349272799,
+          "log_wealth_gain": 0.0032508876036377345
+        },
+        {
+          "start": "2023-04-03",
+          "original_pct": -3.104009453942791,
+          "candidate_pct": -2.7932592735393835,
+          "log_wealth_gain": 0.0032019172925331504
+        },
+        {
+          "start": "2025-02-06",
+          "original_pct": 4.340300285299592,
+          "candidate_pct": 4.652103998219981,
+          "log_wealth_gain": 0.002983878245100974
+        },
+        {
+          "start": "2020-10-12",
+          "original_pct": -3.169646496046208,
+          "candidate_pct": -2.9764862449860763,
+          "log_wealth_gain": 0.0019928445866797756
+        },
+        {
+          "start": "2025-04-10",
+          "original_pct": 0.7426895222734098,
+          "candidate_pct": 0.9223848444425808,
+          "log_wealth_gain": 0.0017821169113386706
+        },
+        {
+          "start": "2019-08-19",
+          "original_pct": 8.921337566925857,
+          "candidate_pct": 9.066314337506821,
+          "log_wealth_gain": 0.0013301376540329794
+        },
+        {
+          "start": "2019-10-29",
+          "original_pct": 2.5936792286533894,
+          "candidate_pct": 2.597770501973362,
+          "log_wealth_gain": 0.00003987761990953654
+        },
+        {
+          "start": "2019-04-01",
+          "original_pct": -2.5532872565881104,
+          "candidate_pct": -2.5591924396722754,
+          "log_wealth_gain": -0.00006060093613757971
+        },
+        {
+          "start": "2020-08-03",
+          "original_pct": -2.501112820542706,
+          "candidate_pct": -2.5531717501282802,
+          "log_wealth_gain": -0.0005340864323014349
+        },
+        {
+          "start": "2024-01-24",
+          "original_pct": -0.05685390486902531,
+          "candidate_pct": -0.1417438083159528,
+          "log_wealth_gain": -0.0008497428705035547
+        },
+        {
+          "start": "2023-12-29",
+          "original_pct": -3.7802793510229082,
+          "candidate_pct": -3.9197011083207833,
+          "log_wealth_gain": -0.001450044384397455
+        },
+        {
+          "start": "2023-01-30",
+          "original_pct": -2.2830220775419074,
+          "candidate_pct": -2.426197926857643,
+          "log_wealth_gain": -0.001466284019871936
+        },
+        {
+          "start": "2024-09-24",
+          "original_pct": 26.92143743040869,
+          "candidate_pct": 26.71040538661069,
+          "log_wealth_gain": -0.0016640820028962942
+        },
+        {
+          "start": "2024-04-18",
+          "original_pct": -0.41032749578395755,
+          "candidate_pct": -0.6434396470714088,
+          "log_wealth_gain": -0.0023434699378259553
+        },
+        {
+          "start": "2022-03-16",
+          "original_pct": -0.8006812034399791,
+          "candidate_pct": -1.0406021097739693,
+          "log_wealth_gain": -0.002421503606607972
+        },
+        {
+          "start": "2023-08-28",
+          "original_pct": 0.08443043089725322,
+          "candidate_pct": -0.23902497427834568,
+          "log_wealth_gain": -0.003237059034525519
+        },
+        {
+          "start": "2021-04-19",
+          "original_pct": 10.611980626899253,
+          "candidate_pct": 10.229284255100302,
+          "log_wealth_gain": -0.003465808394793784
+        },
+        {
+          "start": "2020-03-02",
+          "original_pct": -2.537376816282566,
+          "candidate_pct": -2.8914091954590493,
+          "log_wealth_gain": -0.003639107374896907
+        },
+        {
+          "start": "2026-05-25",
+          "original_pct": -4.397243982163246,
+          "candidate_pct": -4.892016250395592,
+          "log_wealth_gain": -0.00518873115268875
+        },
+        {
+          "start": "2024-02-06",
+          "original_pct": 12.332875783190955,
+          "candidate_pct": 11.344020577510495,
+          "log_wealth_gain": -0.008841875616579344
+        },
+        {
+          "start": "2022-05-11",
+          "original_pct": 3.080637206825121,
+          "candidate_pct": 2.0702338139009235,
+          "log_wealth_gain": -0.009850424303922784
+        },
+        {
+          "start": "2019-06-20",
+          "original_pct": 3.7184737969007786,
+          "candidate_pct": 2.001280651033399,
+          "log_wealth_gain": -0.01669487730830601
+        },
+        {
+          "start": "2022-04-29",
+          "original_pct": -1.1070052744058256,
+          "candidate_pct": -3.121758853625878,
+          "log_wealth_gain": -0.02058346011639913
+        },
+        {
+          "start": "2020-11-03",
+          "original_pct": 6.684905508230932,
+          "candidate_pct": 4.100019789069886,
+          "log_wealth_gain": -0.02452751593071287
+        },
+        {
+          "start": "2019-02-11",
+          "original_pct": 17.809634759891658,
+          "candidate_pct": 14.849590896573673,
+          "log_wealth_gain": -0.025446689944653527
+        },
+        {
+          "start": "2025-05-06",
+          "original_pct": -0.15123252993602954,
+          "candidate_pct": -2.9159053222655995,
+          "log_wealth_gain": -0.02807915761541657
+        },
+        {
+          "start": "2026-08-05",
+          "original_pct": 9.57647025948598,
+          "candidate_pct": -0.05020569948975817,
+          "log_wealth_gain": -0.09195466113144266
+        }
+      ]
+    },
+    "blend5_20": {
+      "net_log_gain": 0.116016841824512,
+      "changes": [
+        {
+          "start": "2026-04-08",
+          "original_pct": 8.7994210748092,
+          "candidate_pct": 17.78917590037654,
+          "log_wealth_gain": 0.07939036819588602
+        },
+        {
+          "start": "2025-06-25",
+          "original_pct": 13.47675523047891,
+          "candidate_pct": 20.859754897384207,
+          "log_wealth_gain": 0.06303280672780581
+        },
+        {
+          "start": "2026-06-15",
+          "original_pct": 10.687296492907583,
+          "candidate_pct": 15.65483716607401,
+          "log_wealth_gain": 0.0439011367411901
+        },
+        {
+          "start": "2021-07-12",
+          "original_pct": -4.682181134334995,
+          "candidate_pct": -1.4152392190870278,
+          "log_wealth_gain": 0.03369992395212973
+        },
+        {
+          "start": "2024-08-30",
+          "original_pct": -4.346438361186644,
+          "candidate_pct": -1.3033125338622775,
+          "log_wealth_gain": 0.03131845288213284
+        },
+        {
+          "start": "2019-12-13",
+          "original_pct": 6.562734479668064,
+          "candidate_pct": 9.844030730377607,
+          "log_wealth_gain": 0.030327589295278384
+        },
+        {
+          "start": "2026-01-05",
+          "original_pct": 9.176341283843348,
+          "candidate_pct": 11.742472453350118,
+          "log_wealth_gain": 0.02323248570055205
+        },
+        {
+          "start": "2020-12-31",
+          "original_pct": 0.13951790091777383,
+          "candidate_pct": 2.3630229625466237,
+          "log_wealth_gain": 0.021961150870981352
+        },
+        {
+          "start": "2020-02-05",
+          "original_pct": 0.5110302826902613,
+          "candidate_pct": 2.2845081236136044,
+          "log_wealth_gain": 0.017490750215014544
+        },
+        {
+          "start": "2024-10-18",
+          "original_pct": 7.626962250801883,
+          "candidate_pct": 8.995540490827047,
+          "log_wealth_gain": 0.012635773586818323
+        },
+        {
+          "start": "2023-01-30",
+          "original_pct": -2.2830220775419074,
+          "candidate_pct": -1.0975604539110173,
+          "log_wealth_gain": 0.0120585850943743
+        },
+        {
+          "start": "2023-10-25",
+          "original_pct": 5.140060135516511,
+          "candidate_pct": 6.323933665535897,
+          "log_wealth_gain": 0.011197044731899045
+        },
+        {
+          "start": "2019-04-01",
+          "original_pct": -2.5532872565881104,
+          "candidate_pct": -1.4856307294028204,
+          "log_wealth_gain": 0.010896725824649428
+        },
+        {
+          "start": "2022-06-06",
+          "original_pct": 12.160709917501912,
+          "candidate_pct": 12.731506334117793,
+          "log_wealth_gain": 0.0050761885120305305
+        },
+        {
+          "start": "2021-04-19",
+          "original_pct": 10.611980626899253,
+          "candidate_pct": 11.160930502031775,
+          "log_wealth_gain": 0.004950568520584021
+        },
+        {
+          "start": "2024-04-26",
+          "original_pct": -0.9408542209175086,
+          "candidate_pct": -0.4682474433635453,
+          "log_wealth_gain": 0.004759610573423976
+        },
+        {
+          "start": "2024-07-31",
+          "original_pct": -3.632056287214469,
+          "candidate_pct": -3.226011820511343,
+          "log_wealth_gain": 0.00420462880252388
+        },
+        {
+          "start": "2023-07-31",
+          "original_pct": -1.3748570558181683,
+          "candidate_pct": -1.0592637976849284,
+          "log_wealth_gain": 0.0031948181328816335
+        },
+        {
+          "start": "2025-02-06",
+          "original_pct": 4.340300285299592,
+          "candidate_pct": 4.652103998219981,
+          "log_wealth_gain": 0.002983878245100974
+        },
+        {
+          "start": "2020-10-12",
+          "original_pct": -3.169646496046208,
+          "candidate_pct": -2.926470637592926,
+          "log_wealth_gain": 0.0025082116185197565
+        },
+        {
+          "start": "2022-03-16",
+          "original_pct": -0.8006812034399791,
+          "candidate_pct": -0.6867529365691571,
+          "log_wealth_gain": 0.001147819322021613
+        },
+        {
+          "start": "2020-05-06",
+          "original_pct": 0.12783849775259704,
+          "candidate_pct": 0.1562262440530926,
+          "log_wealth_gain": 0.0002834748388714797
+        },
+        {
+          "start": "2019-10-29",
+          "original_pct": 2.5936792286533894,
+          "candidate_pct": 2.6179330510637477,
+          "log_wealth_gain": 0.00023637865570901275
+        },
+        {
+          "start": "2023-04-03",
+          "original_pct": -3.104009453942791,
+          "candidate_pct": -3.104009453942791,
+          "log_wealth_gain": 0
+        },
+        {
+          "start": "2024-04-18",
+          "original_pct": -0.41032749578395755,
+          "candidate_pct": -0.4202706943172263,
+          "log_wealth_gain": -0.00009984664763933348
+        },
+        {
+          "start": "2025-04-10",
+          "original_pct": 0.7426895222734098,
+          "candidate_pct": 0.6499258680384035,
+          "log_wealth_gain": -0.000921222067805701
+        },
+        {
+          "start": "2020-03-02",
+          "original_pct": -2.537376816282566,
+          "candidate_pct": -2.6352475675362252,
+          "log_wealth_gain": -0.0010046920683167233
+        },
+        {
+          "start": "2020-08-03",
+          "original_pct": -2.501112820542706,
+          "candidate_pct": -2.618718808862608,
+          "log_wealth_gain": -0.0012069571119529452
+        },
+        {
+          "start": "2020-06-01",
+          "original_pct": 22.967054185642823,
+          "candidate_pct": 22.79879178423578,
+          "log_wealth_gain": -0.0013692905703264224
+        },
+        {
+          "start": "2022-10-14",
+          "original_pct": -0.7721641812359126,
+          "candidate_pct": -1.0073085903064771,
+          "log_wealth_gain": -0.0023725546759560995
+        },
+        {
+          "start": "2021-08-24",
+          "original_pct": -0.03969823722975718,
+          "candidate_pct": -0.3058073445293963,
+          "log_wealth_gain": -0.002665697715994027
+        },
+        {
+          "start": "2023-08-28",
+          "original_pct": 0.08443043089725322,
+          "candidate_pct": -0.23902497427834568,
+          "log_wealth_gain": -0.003237059034525519
+        },
+        {
+          "start": "2019-08-19",
+          "original_pct": 8.921337566925857,
+          "candidate_pct": 8.445082392151004,
+          "log_wealth_gain": -0.004382056225321945
+        },
+        {
+          "start": "2026-05-25",
+          "original_pct": -4.397243982163246,
+          "candidate_pct": -4.892016250395592,
+          "log_wealth_gain": -0.00518873115268875
+        },
+        {
+          "start": "2022-05-11",
+          "original_pct": 3.080637206825121,
+          "candidate_pct": 2.4788072470050215,
+          "log_wealth_gain": -0.005855548802629745
+        },
+        {
+          "start": "2024-01-24",
+          "original_pct": -0.05685390486902531,
+          "candidate_pct": -0.8442383855062019,
+          "log_wealth_gain": -0.007909521901689608
+        },
+        {
+          "start": "2023-12-29",
+          "original_pct": -3.7802793510229082,
+          "candidate_pct": -4.902321189246351,
+          "log_wealth_gain": -0.01172977163893616
+        },
+        {
+          "start": "2024-02-06",
+          "original_pct": 12.332875783190955,
+          "candidate_pct": 10.78696150727334,
+          "log_wealth_gain": -0.013857477067596302
+        },
+        {
+          "start": "2022-04-29",
+          "original_pct": -1.1070052744058256,
+          "candidate_pct": -2.5738097906230384,
+          "log_wealth_gain": -0.014943336401815192
+        },
+        {
+          "start": "2020-11-03",
+          "original_pct": 6.684905508230932,
+          "candidate_pct": 5.083795241621791,
+          "log_wealth_gain": -0.015121599843137176
+        },
+        {
+          "start": "2019-06-20",
+          "original_pct": 3.7184737969007786,
+          "candidate_pct": 2.001280651033399,
+          "log_wealth_gain": -0.01669487730830601
+        },
+        {
+          "start": "2025-05-06",
+          "original_pct": -0.15123252993602954,
+          "candidate_pct": -3.0285179348782054,
+          "log_wealth_gain": -0.029239780022089466
+        },
+        {
+          "start": "2024-09-24",
+          "original_pct": 26.92143743040869,
+          "candidate_pct": 22.77078194441886,
+          "log_wealth_gain": -0.03324923678068463
+        },
+        {
+          "start": "2019-02-11",
+          "original_pct": 17.809634759891658,
+          "candidate_pct": 13.212740296458382,
+          "log_wealth_gain": -0.039801350781473996
+        },
+        {
+          "start": "2026-08-05",
+          "original_pct": 9.57647025948598,
+          "candidate_pct": -0.2166093958472115,
+          "log_wealth_gain": -0.09362092139698114
+        }
+      ]
+    },
+    "risk20": {
+      "net_log_gain": 0.3184713405768198,
+      "changes": [
+        {
+          "start": "2025-06-25",
+          "original_pct": 13.47675523047891,
+          "candidate_pct": 51.69041111539943,
+          "log_wealth_gain": 0.2902436586182691
+        },
+        {
+          "start": "2021-08-24",
+          "original_pct": -0.03969823722975718,
+          "candidate_pct": 7.95472032522353,
+          "log_wealth_gain": 0.07693875816638454
+        },
+        {
+          "start": "2020-02-05",
+          "original_pct": 0.5110302826902613,
+          "candidate_pct": 8.355602057176759,
+          "log_wealth_gain": 0.07515095445523805
+        },
+        {
+          "start": "2020-12-31",
+          "original_pct": 0.13951790091777383,
+          "candidate_pct": 5.043254114460605,
+          "log_wealth_gain": 0.047807816639815134
+        },
+        {
+          "start": "2019-12-13",
+          "original_pct": 6.562734479668064,
+          "candidate_pct": 11.413516993982785,
+          "log_wealth_gain": 0.044514789729688455
+        },
+        {
+          "start": "2026-06-15",
+          "original_pct": 10.687296492907583,
+          "candidate_pct": 15.039188568513095,
+          "log_wealth_gain": 0.03856376350730002
+        },
+        {
+          "start": "2022-10-14",
+          "original_pct": -0.7721641812359126,
+          "candidate_pct": 2.8844353796163347,
+          "log_wealth_gain": 0.03618779378489516
+        },
+        {
+          "start": "2021-07-12",
+          "original_pct": -4.682181134334995,
+          "candidate_pct": -1.5203683400438317,
+          "log_wealth_gain": 0.03263297187998933
+        },
+        {
+          "start": "2020-05-06",
+          "original_pct": 0.12783849775259704,
+          "candidate_pct": 3.098620345403713,
+          "log_wealth_gain": 0.02923825469323126
+        },
+        {
+          "start": "2024-04-26",
+          "original_pct": -0.9408542209175086,
+          "candidate_pct": 1.6148038140441745,
+          "log_wealth_gain": 0.025472127506297838
+        },
+        {
+          "start": "2020-10-12",
+          "original_pct": -3.169646496046208,
+          "candidate_pct": -1.1701701351593319,
+          "log_wealth_gain": 0.020438966507860503
+        },
+        {
+          "start": "2024-10-18",
+          "original_pct": 7.626962250801883,
+          "candidate_pct": 9.841344109429496,
+          "log_wealth_gain": 0.020365803483537257
+        },
+        {
+          "start": "2023-10-25",
+          "original_pct": 5.140060135516511,
+          "candidate_pct": 7.290821629306854,
+          "log_wealth_gain": 0.020249739294776713
+        },
+        {
+          "start": "2023-07-31",
+          "original_pct": -1.3748570558181683,
+          "candidate_pct": 0.3960252978058909,
+          "log_wealth_gain": 0.01779638927105192
+        },
+        {
+          "start": "2019-04-01",
+          "original_pct": -2.5532872565881104,
+          "candidate_pct": -0.8268145811612837,
+          "log_wealth_gain": 0.01756197683954893
+        },
+        {
+          "start": "2024-08-30",
+          "original_pct": -4.346438361186644,
+          "candidate_pct": -2.816426800566374,
+          "log_wealth_gain": 0.015868765824299937
+        },
+        {
+          "start": "2023-04-03",
+          "original_pct": -3.104009453942791,
+          "candidate_pct": -1.7031075409051688,
+          "log_wealth_gain": 0.01435427301932487
+        },
+        {
+          "start": "2026-04-08",
+          "original_pct": 8.7994210748092,
+          "candidate_pct": 9.966692294498912,
+          "log_wealth_gain": 0.010671509213219701
+        },
+        {
+          "start": "2020-08-03",
+          "original_pct": -2.501112820542706,
+          "candidate_pct": -1.9500065763649488,
+          "log_wealth_gain": 0.005636521176169722
+        },
+        {
+          "start": "2024-09-24",
+          "original_pct": 26.92143743040869,
+          "candidate_pct": 27.50432794083664,
+          "log_wealth_gain": 0.004582016521687812
+        },
+        {
+          "start": "2022-03-16",
+          "original_pct": -0.8006812034399791,
+          "candidate_pct": -0.5470215673587298,
+          "log_wealth_gain": 0.002553806600595896
+        },
+        {
+          "start": "2024-07-31",
+          "original_pct": -3.632056287214469,
+          "candidate_pct": -3.5255270948673756,
+          "log_wealth_gain": 0.0011048316553140417
+        },
+        {
+          "start": "2024-04-18",
+          "original_pct": -0.41032749578395755,
+          "candidate_pct": -0.6047648920809556,
+          "log_wealth_gain": -0.0019542935242099755
+        },
+        {
+          "start": "2019-10-29",
+          "original_pct": 2.5936792286533894,
+          "candidate_pct": 2.280756467845557,
+          "log_wealth_gain": -0.003054778436216268
+        },
+        {
+          "start": "2023-12-29",
+          "original_pct": -3.7802793510229082,
+          "candidate_pct": -4.088366802921417,
+          "log_wealth_gain": -0.00320705298529029
+        },
+        {
+          "start": "2026-01-05",
+          "original_pct": 9.176341283843348,
+          "candidate_pct": 8.78542935672375,
+          "log_wealth_gain": -0.0035869808279447137
+        },
+        {
+          "start": "2023-08-28",
+          "original_pct": 0.08443043089725322,
+          "candidate_pct": -0.3848343451414271,
+          "log_wealth_gain": -0.004699715462323679
+        },
+        {
+          "start": "2021-04-19",
+          "original_pct": 10.611980626899253,
+          "candidate_pct": 9.867520989823241,
+          "log_wealth_gain": -0.0067531218172235405
+        },
+        {
+          "start": "2022-06-06",
+          "original_pct": 12.160709917501912,
+          "candidate_pct": 11.093731405065999,
+          "log_wealth_gain": -0.009558480716178628
+        },
+        {
+          "start": "2023-01-30",
+          "original_pct": -2.2830220775419074,
+          "candidate_pct": -3.2222165673024716,
+          "log_wealth_gain": -0.009657862077425344
+        },
+        {
+          "start": "2025-04-10",
+          "original_pct": 0.7426895222734098,
+          "candidate_pct": -0.3213685178561909,
+          "log_wealth_gain": -0.01061831178799947
+        },
+        {
+          "start": "2020-03-02",
+          "original_pct": -2.537376816282566,
+          "candidate_pct": -4.035448918034601,
+          "log_wealth_gain": -0.015490088831905717
+        },
+        {
+          "start": "2022-05-11",
+          "original_pct": 3.080637206825121,
+          "candidate_pct": 1.1150810340750716,
+          "log_wealth_gain": -0.01925228305951414
+        },
+        {
+          "start": "2020-06-01",
+          "original_pct": 22.967054185642823,
+          "candidate_pct": 20.498278433527517,
+          "log_wealth_gain": -0.020281001374419554
+        },
+        {
+          "start": "2024-01-24",
+          "original_pct": -0.05685390486902531,
+          "candidate_pct": -2.1317832125306913,
+          "log_wealth_gain": -0.020979638203960257
+        },
+        {
+          "start": "2022-04-29",
+          "original_pct": -1.1070052744058256,
+          "candidate_pct": -3.212663501650681,
+          "log_wealth_gain": -0.021522239798432388
+        },
+        {
+          "start": "2026-05-25",
+          "original_pct": -4.397243982163246,
+          "candidate_pct": -6.758672952619915,
+          "log_wealth_gain": -0.025010601616620224
+        },
+        {
+          "start": "2019-06-20",
+          "original_pct": 3.7184737969007786,
+          "candidate_pct": 1.0004046370171826,
+          "log_wealth_gain": -0.026555722775711884
+        },
+        {
+          "start": "2019-08-19",
+          "original_pct": 8.921337566925857,
+          "candidate_pct": 5.891001065419332,
+          "log_wealth_gain": -0.02821567477776126
+        },
+        {
+          "start": "2025-02-06",
+          "original_pct": 4.340300285299592,
+          "candidate_pct": 1.3308982033348515,
+          "log_wealth_gain": -0.02926629397885007
+        },
+        {
+          "start": "2025-05-06",
+          "original_pct": -0.15123252993602954,
+          "candidate_pct": -3.251679837948318,
+          "log_wealth_gain": -0.03154374687752991
+        },
+        {
+          "start": "2020-11-03",
+          "original_pct": 6.684905508230932,
+          "candidate_pct": 3.085445531951314,
+          "log_wealth_gain": -0.0343214690489214
+        },
+        {
+          "start": "2024-02-06",
+          "original_pct": 12.332875783190955,
+          "candidate_pct": 6.895890081606804,
+          "log_wealth_gain": -0.049611197620842706
+        },
+        {
+          "start": "2019-02-11",
+          "original_pct": 17.809634759891658,
+          "candidate_pct": 9.539698489589776,
+          "log_wealth_gain": -0.07278303016859976
+        },
+        {
+          "start": "2026-08-05",
+          "original_pct": 9.57647025948598,
+          "candidate_pct": 0.9961201763656113,
+          "log_wealth_gain": -0.0815405620437953
+        }
+      ]
+    },
+    "diverse": {
+      "net_log_gain": -0.1589184442967182,
+      "changes": [
+        {
+          "start": "2025-06-25",
+          "original_pct": 13.47675523047891,
+          "candidate_pct": 17.269177218479893,
+          "log_wealth_gain": 0.0328739361030783
+        },
+        {
+          "start": "2020-02-05",
+          "original_pct": 0.5110302826902613,
+          "candidate_pct": 3.1031680148833285,
+          "log_wealth_gain": 0.02546264261105411
+        },
+        {
+          "start": "2025-05-06",
+          "original_pct": -0.15123252993602954,
+          "candidate_pct": 1.361526988729489,
+          "log_wealth_gain": 0.015036884932102422
+        },
+        {
+          "start": "2024-07-31",
+          "original_pct": -3.632056287214469,
+          "candidate_pct": -2.398239515619427,
+          "log_wealth_gain": 0.01272191879112867
+        },
+        {
+          "start": "2022-03-16",
+          "original_pct": -0.8006812034399791,
+          "candidate_pct": 0.31615000094349366,
+          "log_wealth_gain": 0.011195551667521671
+        },
+        {
+          "start": "2019-06-20",
+          "original_pct": 3.7184737969007786,
+          "candidate_pct": 4.856052023295732,
+          "log_wealth_gain": 0.01090823054145487
+        },
+        {
+          "start": "2021-07-12",
+          "original_pct": -4.682181134334995,
+          "candidate_pct": -3.6712968272122226,
+          "log_wealth_gain": 0.010549564601972839
+        },
+        {
+          "start": "2019-12-13",
+          "original_pct": 6.562734479668064,
+          "candidate_pct": 7.675149024452743,
+          "log_wealth_gain": 0.010384947089011158
+        },
+        {
+          "start": "2024-04-26",
+          "original_pct": -0.9408542209175086,
+          "candidate_pct": -0.4975297855884908,
+          "log_wealth_gain": 0.004465366276855006
+        },
+        {
+          "start": "2021-08-24",
+          "original_pct": -0.03969823722975718,
+          "candidate_pct": 0.2712919459304519,
+          "log_wealth_gain": 0.003106307326089531
+        },
+        {
+          "start": "2019-04-01",
+          "original_pct": -2.5532872565881104,
+          "candidate_pct": -2.283665916862798,
+          "log_wealth_gain": 0.002763038553068079
+        },
+        {
+          "start": "2023-01-30",
+          "original_pct": -2.2830220775419074,
+          "candidate_pct": -2.0237010909373687,
+          "log_wealth_gain": 0.0026502815282388854
+        },
+        {
+          "start": "2023-04-03",
+          "original_pct": -3.104009453942791,
+          "candidate_pct": -2.8893340938252132,
+          "log_wealth_gain": 0.002213073011628911
+        },
+        {
+          "start": "2020-08-03",
+          "original_pct": -2.501112820542706,
+          "candidate_pct": -2.3252283135921648,
+          "log_wealth_gain": 0.0018023390613765293
+        },
+        {
+          "start": "2026-01-05",
+          "original_pct": 9.176341283843348,
+          "candidate_pct": 9.302746709029485,
+          "log_wealth_gain": 0.0011571399391296859
+        },
+        {
+          "start": "2020-11-03",
+          "original_pct": 6.684905508230932,
+          "candidate_pct": 6.777737004337991,
+          "log_wealth_gain": 0.0008697681324152507
+        },
+        {
+          "start": "2020-10-12",
+          "original_pct": -3.169646496046208,
+          "candidate_pct": -3.0871365548663987,
+          "log_wealth_gain": 0.0008517453923529364
+        },
+        {
+          "start": "2023-07-31",
+          "original_pct": -1.3748570558181683,
+          "candidate_pct": -1.3572576452478446,
+          "log_wealth_gain": 0.00017843158393832174
+        },
+        {
+          "start": "2024-01-24",
+          "original_pct": -0.05685390486902531,
+          "candidate_pct": -0.056584780197022067,
+          "log_wealth_gain": 0.0000026927740437693798
+        },
+        {
+          "start": "2020-05-06",
+          "original_pct": 0.12783849775259704,
+          "candidate_pct": 0.12783849775259704,
+          "log_wealth_gain": 0
+        },
+        {
+          "start": "2020-06-01",
+          "original_pct": 22.967054185642823,
+          "candidate_pct": 22.967054185642823,
+          "log_wealth_gain": 0
+        },
+        {
+          "start": "2020-12-31",
+          "original_pct": 0.13951790091777383,
+          "candidate_pct": 0.13951790091777383,
+          "log_wealth_gain": 0
+        },
+        {
+          "start": "2023-10-25",
+          "original_pct": 5.140060135516511,
+          "candidate_pct": 5.140060135516511,
+          "log_wealth_gain": 0
+        },
+        {
+          "start": "2024-04-18",
+          "original_pct": -0.41032749578395755,
+          "candidate_pct": -0.41032749578395755,
+          "log_wealth_gain": 0
+        },
+        {
+          "start": "2026-05-25",
+          "original_pct": -4.397243982163246,
+          "candidate_pct": -4.42570156381854,
+          "log_wealth_gain": -0.00029770917798428964
+        },
+        {
+          "start": "2025-04-10",
+          "original_pct": 0.7426895222734098,
+          "candidate_pct": 0.6868383223431529,
+          "log_wealth_gain": -0.0005545483024181366
+        },
+        {
+          "start": "2020-03-02",
+          "original_pct": -2.537376816282566,
+          "candidate_pct": -2.5991345991981163,
+          "log_wealth_gain": -0.00063385691626358
+        },
+        {
+          "start": "2023-08-28",
+          "original_pct": 0.08443043089725322,
+          "candidate_pct": 0.018685599255308105,
+          "log_wealth_gain": -0.0006571095474367348
+        },
+        {
+          "start": "2022-04-29",
+          "original_pct": -1.1070052744058256,
+          "candidate_pct": -1.2159270426421065,
+          "log_wealth_gain": -0.0011020173511906344
+        },
+        {
+          "start": "2024-08-30",
+          "original_pct": -4.346438361186644,
+          "candidate_pct": -4.666252028651696,
+          "log_wealth_gain": -0.0033490598620646867
+        },
+        {
+          "start": "2022-05-11",
+          "original_pct": 3.080637206825121,
+          "candidate_pct": 2.71228157039598,
+          "log_wealth_gain": -0.0035798707944418857
+        },
+        {
+          "start": "2019-10-29",
+          "original_pct": 2.5936792286533894,
+          "candidate_pct": 2.1058446349188076,
+          "log_wealth_gain": -0.004766357127611745
+        },
+        {
+          "start": "2025-02-06",
+          "original_pct": 4.340300285299592,
+          "candidate_pct": 3.8107599211326892,
+          "log_wealth_gain": -0.005088050054104986
+        },
+        {
+          "start": "2019-08-19",
+          "original_pct": 8.921337566925857,
+          "candidate_pct": 8.30708304879697,
+          "log_wealth_gain": -0.005655394018457001
+        },
+        {
+          "start": "2023-12-29",
+          "original_pct": -3.7802793510229082,
+          "candidate_pct": -4.346865109754949,
+          "log_wealth_gain": -0.005905863067267596
+        },
+        {
+          "start": "2019-02-11",
+          "original_pct": 17.809634759891658,
+          "candidate_pct": 16.806886565097212,
+          "log_wealth_gain": -0.00854802803249483
+        },
+        {
+          "start": "2024-10-18",
+          "original_pct": 7.626962250801883,
+          "candidate_pct": 6.330620445806789,
+          "log_wealth_gain": -0.012117894134743986
+        },
+        {
+          "start": "2022-10-14",
+          "original_pct": -0.7721641812359126,
+          "candidate_pct": -2.0549671445649675,
+          "log_wealth_gain": -0.013012145857789858
+        },
+        {
+          "start": "2024-02-06",
+          "original_pct": 12.332875783190955,
+          "candidate_pct": 10.37020555383048,
+          "log_wealth_gain": -0.01762634833950309
+        },
+        {
+          "start": "2022-06-06",
+          "original_pct": 12.160709917501912,
+          "candidate_pct": 9.827155939285337,
+          "log_wealth_gain": -0.021024932425382416
+        },
+        {
+          "start": "2026-08-05",
+          "original_pct": 9.57647025948598,
+          "candidate_pct": 7.219123431556884,
+          "log_wealth_gain": -0.021748041105018958
+        },
+        {
+          "start": "2024-09-24",
+          "original_pct": 26.92143743040869,
+          "candidate_pct": 23.923117749669352,
+          "log_wealth_gain": -0.0239069369682291
+        },
+        {
+          "start": "2026-06-15",
+          "original_pct": 10.687296492907583,
+          "candidate_pct": 6.50226853451501,
+          "log_wealth_gain": -0.03854279125178003
+        },
+        {
+          "start": "2021-04-19",
+          "original_pct": 10.611980626899253,
+          "candidate_pct": 5.859634614929954,
+          "log_wealth_gain": -0.04391439231758094
+        },
+        {
+          "start": "2026-04-08",
+          "original_pct": 8.7994210748092,
+          "candidate_pct": 0.8289035238305376,
+          "log_wealth_gain": -0.07608095756141467
+        }
+      ]
+    }
+  },
+  "checks": {
+    "production_parity": true,
+    "future_quote_invariance": true,
+    "zones_and_bear_positions_unchanged": true,
+    "nav_reconciles": true
+  },
+  "conventions": [
+    "Frozen snapshot from live /api/indicators/1/data and /api/sector-data on 2026-09-30.",
+    "Same-close fills and original universe retained; no fees or slippage.",
+    "Entry selection uses only quotes through the entry date; no periodic switching.",
+    "Every method retains 30/30/20/10/10 weights, bank allocation and fixed 13.5/2.2 protection.",
+    "Annual returns group whole trades by entry year, same as UI.",
+    "All date splits are retrospective diagnostics, not untouched out-of-sample tests.",
+    "Existing engine missing-end-quote fallback retained; current ETF universe may contain survivorship bias."
+  ]
+}

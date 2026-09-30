@@ -9,6 +9,12 @@ api_bp = Blueprint('api', __name__, url_prefix='/api')
 data_service = DataService(Config.DATA_DIR)
 
 
+@api_bp.route('/etf-types', methods=['GET'])
+def get_etf_types():
+    """Active ETF registry shared by chart controls, rankings and downloaders."""
+    return jsonify(code=0, message='success', data=data_service.get_data_list('etf'))
+
+
 @api_bp.route('/health', methods=['GET'])
 def health_check():
     """健康检查接口"""

@@ -14,3 +14,18 @@
 2026-09-21 01:22:05,673 [ERROR] fetch_moneyflow_cnt_ths.py:485 20260421~20260427 拉取失败: HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.
 2026-09-21 01:22:20,374 [INFO] fetch_moneyflow_cnt_ths.py:388 Database file index updated: 504 files
 2026-09-26 23:26:40,621 [INFO] fetch_moneyflow_cnt_ths.py:388 Database file index updated: 508 files
+2026-10-01 00:45:15,883 [ERROR] fetch_moneyflow_cnt_ths.py:293 获取 20241231~20250106 概念资金流向失败: HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.
+2026-10-01 00:45:15,893 [ERROR] fetch_moneyflow_cnt_ths.py:485 20241231~20250106 拉取失败: HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.
+2026-10-01 00:46:03,213 [ERROR] fetch_moneyflow_cnt_ths.py:293 获取 20250708~20250714 概念资金流向失败: HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.
+2026-10-01 00:46:03,214 [ERROR] fetch_moneyflow_cnt_ths.py:485 20250708~20250714 拉取失败: HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.
+2026-10-01 00:46:49,117 [ERROR] fetch_moneyflow_cnt_ths.py:293 获取 20260106~20260112 概念资金流向失败: HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.
+2026-10-01 00:46:49,117 [ERROR] fetch_moneyflow_cnt_ths.py:485 20260106~20260112 拉取失败: HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.
+2026-10-01 00:47:21,980 [ERROR] fetch_moneyflow_cnt_ths.py:293 获取 20260210~20260216 概念资金流向失败: HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.
+2026-10-01 00:47:21,980 [ERROR] fetch_moneyflow_cnt_ths.py:485 20260210~20260216 拉取失败: HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.
+2026-10-01 00:47:55,014 [ERROR] fetch_moneyflow_cnt_ths.py:293 获取 20260324~20260330 概念资金流向失败: HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.
+2026-10-01 00:47:55,014 [ERROR] fetch_moneyflow_cnt_ths.py:485 20260324~20260330 拉取失败: HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.
+2026-10-01 00:48:28,810 [ERROR] fetch_moneyflow_cnt_ths.py:293 获取 20260512~20260518 概念资金流向失败: HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.
+2026-10-01 00:48:28,810 [ERROR] fetch_moneyflow_cnt_ths.py:485 20260512~20260518 拉取失败: HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.
+2026-10-01 00:49:00,344 [ERROR] fetch_moneyflow_cnt_ths.py:293 获取 20260602~20260608 概念资金流向失败: HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.
+2026-10-01 00:49:00,345 [ERROR] fetch_moneyflow_cnt_ths.py:485 20260602~20260608 拉取失败: HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.
+2026-10-01 00:49:17,769 [INFO] fetch_moneyflow_cnt_ths.py:388 Database file index updated: 511 files

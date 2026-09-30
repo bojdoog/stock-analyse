@@ -135,6 +135,8 @@ def ensure_schema(db):
         db.execute(f'CREATE INDEX IF NOT EXISTS {table}_sector ON {table}(sector_key,date)')
     from intraday_store import ensure_schema as intraday_schema
     intraday_schema(db)
+    from etf_catalog import ensure_schema as catalog_schema
+    catalog_schema(db)
     seed_indicator(db)
 
 
@@ -269,6 +271,9 @@ def _import_content(db, relative_path, content, pending=False):
         from intraday_store import records as intraday_records
         snapshots = intraday_records(rows, filename)
     with db:
+        if relative_path == 'catalog/etfs.json':
+            from etf_catalog import apply_snapshot
+            apply_snapshot(db, json.loads(decode(content)))
         upsert(db, 'source_files',
             ('path','category','sha256','content','row_count','min_date','max_date','target_table'), ('path',),
             (relative_path, category, digest, content, len(rows), min(dates) if dates else None,
@@ -331,8 +336,16 @@ def file_content(relative_path, path=None):
 
 def list_files(category, path=None):
     with connect(path) as db:
-        return [row[0].split('/')[-1] for row in db.execute(
-            "SELECT path FROM source_files WHERE category=? AND path LIKE '%.csv' ORDER BY path", (category,))]
+        return available_files(db, category)
+
+
+def available_files(db, category):
+    if category == 'etf':
+        rows = db.execute('''SELECT c.source_path FROM etf_catalog c
+            JOIN source_files f ON f.path=c.source_path WHERE c.enabled=1 ORDER BY c.sort_order,c.code''')
+    else:
+        rows = db.execute("SELECT path FROM source_files WHERE category=? AND path LIKE '%.csv' ORDER BY path", (category,))
+    return [row[0].split('/')[-1] for row in rows]
 
 
 def save_dataframe(frame, output_path, path=None, category=None, _pending=False):

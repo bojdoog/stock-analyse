@@ -1,0 +1,20 @@
+{
+  "request": {
+    "tool": "moneyflow_mkt_dc",
+    "arguments": {
+      "start_date": "20261001",
+      "end_date": "20261001"
+    }
+  },
+  "retrieved_at": "2026-09-30T16:53:46.722451+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": []
+}

@@ -25,37 +25,7 @@ interface ExtraSeries {
     data: KLineData[];
 }
 
-const ETF_OPTIONS = [
-    { value: '510050', label: '上证50ETF', file: 'etf/510050_上证50ETF.csv' },
-    { value: '510300', label: '沪深300ETF', file: 'etf/510300_沪深300ETF.csv' },
-    { value: '563300', label: '中证2000ETF', file: 'etf/563300_中证2000ETF.csv' },
-    { value: '159915', label: '创业板ETF', file: 'etf/159915_创业板ETF.csv' },
-    { value: '512480', label: '半导体ETF', file: 'etf/512480_半导体ETF.csv' },
-    { value: '588710', label: '科创半导体设备ETF', file: 'etf/588710_科创半导体设备ETF.csv' },
-    { value: '515880', label: '通信ETF', file: 'etf/515880_通信ETF.csv' },
-    { value: '159381', label: '创业板人工智能ETF', file: 'etf/159381_创业板人工智能ETF.csv' },
-    { value: '516160', label: '新能源ETF', file: 'etf/516160_新能源ETF.csv' },
-    { value: '515030', label: '新能源车ETF', file: 'etf/515030_新能源车ETF.csv' },
-    { value: '512400', label: '有色ETF', file: 'etf/512400_有色ETF.csv' },
-    { value: '510150', label: '消费ETF', file: 'etf/510150_消费ETF.csv' },
-    { value: '515220', label: '煤炭ETF', file: 'etf/515220_煤炭ETF.csv' },
-    { value: '512690', label: '白酒ETF', file: 'etf/512690_白酒ETF.csv' },
-    { value: '512880', label: '证券ETF', file: 'etf/512880_证券ETF.csv' },
-    { value: '512800', label: '银行ETF', file: 'etf/512800_银行ETF.csv' },
-    { value: '562500', label: '机器人ETF', file: 'etf/562500_机器人ETF.csv' },
-    { value: '510660', label: '创新药ETF', file: 'etf/510660_创新药ETF.csv' },
-    { value: '159869', label: '游戏ETF', file: 'etf/159869_游戏ETF.csv' },
-    { value: '515230', label: '软件ETF', file: 'etf/515230_软件ETF.csv' },
-    { value: '512980', label: '传媒ETF', file: 'etf/512980_传媒ETF.csv' },
-    { value: '516290', label: '光伏ETF', file: 'etf/516290_光伏ETF.csv' },
-    { value: '561380', label: '电网设备ETF', file: 'etf/561380_电网设备ETF.csv' },
-    { value: '159206', label: '卫星ETF', file: 'etf/159206_卫星ETF.csv' },
-    { value: '159638', label: '高端装备ETF', file: 'etf/159638_高端装备ETF.csv' },
-    { value: '512660', label: '军工ETF', file: 'etf/512660_军工ETF.csv' },
-    { value: '159929', label: '医药ETF', file: 'etf/159929_医药ETF.csv' },
-    { value: 'sh000001', label: '上证指数', file: 'index/000001_上证指数.csv' },
-    { value: 'sh000300', label: '沪深300', file: 'index/000300_沪深300.csv' },
-];
+
 
 // 基于净值序列计算最大回撤与平均回撤（回撤取正值，平均只统计发生回撤的点）
 const calcDrawdowns = (navs: number[]) => {
@@ -92,6 +62,8 @@ const ActiveMarket: React.FC = () => {
     const [showHolidayPeriods, setShowHolidayPeriods] = useState(false);
     const [selectedETFs, setSelectedETFs] = useState<string[]>([]);
     const [extraSeries, setExtraSeries] = useState<ExtraSeries[]>([]);
+    const [etfOptions, setEtfOptions] = useState<{ value: string; label: string }[]>([]);
+    const [etfListError, setEtfListError] = useState('');
     const [allETFSeries, setAllETFSeries] = useState<ExtraSeries[]>([]);
     const [upperETFId, setUpperETFId] = useState<string | undefined>(undefined);
     const [chartZones, setChartZones] = useState<{ bull: { start: number; end: number }[]; bear: { start: number; end: number }[] } | undefined>(undefined);
@@ -172,22 +144,38 @@ const ActiveMarket: React.FC = () => {
         return () => controller.abort();
     }, [selectedIndicatorId, reloadKey]);
 
-    // 加载所有板块 ETF + Index 数据（通过后端 API，27+2 → 1 个请求）
+    // ETF 种类和行情均由数据库提供，不在前端维护品种清单。
     useEffect(() => {
-        fetch('/api/sector-data')
-            .then(res => res.json())
-            .then(json => {
-                if (json.code === 0) {
-                    const { etf_data, index_data } = json.data;
-                    const allSeries: ExtraSeries[] = [
-                        ...(etf_data || []),
-                        ...(index_data || []),
-                    ];
-                    setAllETFSeries(allSeries);
-                }
+        const controller = new AbortController();
+        const load = async (url: string) => {
+            const response = await fetch(url, { signal: controller.signal });
+            const result = await response.json();
+            if (!response.ok || result.code !== 0) throw new Error(result.message || 'ETF 数据加载失败');
+            return result.data;
+        };
+        setEtfListError('');
+        Promise.all([load('/api/etf-types'), load('/api/list/index'), load('/api/sector-data')])
+            .then(([etfs, indices, series]) => {
+                if (controller.signal.aborted) return;
+                const options: { value: string; label: string }[] = [
+                    ...etfs.map((item: { code: string; name: string }) => ({ value: item.code, label: item.name })),
+                    ...indices.map((item: { code: string; name: string }) => ({ value: `sh${item.code}`, label: item.name })),
+                ];
+                const allowed = new Set(options.map(item => item.value));
+                setEtfOptions(options);
+                setSelectedETFs(previous => previous.filter(id => allowed.has(id)));
+                setUpperETFId(previous => previous && allowed.has(previous) ? previous : undefined);
+                setAllETFSeries([...(series.etf_data || []), ...(series.index_data || [])].filter(item => allowed.has(item.id)));
             })
-            .catch(err => console.error('加载板块数据失败:', err));
-    }, []);
+            .catch(error => {
+                if (!controller.signal.aborted) {
+                    setAllETFSeries([]);
+                    setEtfOptions([]);
+                    setEtfListError(error.message || 'ETF 清单加载失败');
+                }
+            });
+        return () => controller.abort();
+    }, [reloadKey]);
 
     useEffect(() => {
         setExtraSeries(allETFSeries.filter(s => selectedETFs.includes(s.id)));
@@ -295,7 +283,7 @@ const ActiveMarket: React.FC = () => {
                     placeholder="选择指数/ETF"
                     value={selectedETFs}
                     onChange={setSelectedETFs}
-                    options={ETF_OPTIONS}
+                    options={etfOptions}
                     style={{ minWidth: 300, fontSize: 14 }}
                     maxTagCount="responsive"
                     size="middle"
@@ -307,7 +295,7 @@ const ActiveMarket: React.FC = () => {
                     placeholder="选择ETF单独展示"
                     value={upperETFId}
                     onChange={setUpperETFId}
-                    options={ETF_OPTIONS}
+                    options={etfOptions}
                     style={{ minWidth: 180, fontSize: 14 }}
                     size="middle"
                 />
@@ -318,30 +306,12 @@ const ActiveMarket: React.FC = () => {
                         <span style={{ color: '#333', fontSize: 14, fontWeight: 500 }}>策略预设：</span>
                         {[
                             { key: 'default', label: '默认策略' },
-                            { key: 'conservative', label: '稳健策略' },
-                            { key: 'aggressive', label: '激进策略' },
                         ].map(preset => (
                             <button
                                 key={preset.key}
                                 onClick={() => {
                                     setActivePreset(preset.key);
-                                    if (preset.key === 'default') {
-                                        setStrategyParams(DEFAULT_STRATEGY_PARAMS);
-                                    } else if (preset.key === 'conservative') {
-                                        setStrategyParams({
-                                            ...DEFAULT_STRATEGY_PARAMS,
-                                            bullStartSingleDay: 5,
-                                            bullStartTwoDay: 5,
-                                            bullEndSingleDay: -1.5,
-                                        });
-                                    } else if (preset.key === 'aggressive') {
-                                        setStrategyParams({
-                                            ...DEFAULT_STRATEGY_PARAMS,
-                                            bullStartSingleDay: 3,
-                                            bullStartTwoDay: 3,
-                                            bullEndSingleDay: -3,
-                                        });
-                                    }
+                                    setStrategyParams(DEFAULT_STRATEGY_PARAMS);
                                 }}
                                 style={{
                                     padding: '4px 12px',
@@ -404,11 +374,12 @@ const ActiveMarket: React.FC = () => {
                                     }}
                                     options={[
                                         { value: 'etf_gain', label: 'ETF涨幅' },
+                                        { value: 'etf_blend20', label: '当天＋近20日混合排名' },
                                         { value: 'dc_moneyflow', label: '东财板块流入' },
                                         { value: 'ths_moneyflow', label: '同花顺板块流入' },
                                         { value: 'ths_concept', label: '同花顺概念流入' },
                                     ]}
-                                    style={{ width: 140 }}
+                                    style={{ width: 210 }}
                                     size="small"
                                 />
                             </label>
@@ -527,28 +498,33 @@ const ActiveMarket: React.FC = () => {
                             </button>
                             <span style={{ color: '#e8e8e8', margin: '0 4px' }}>|</span>
                             {([
-                                { key: 'equal', label: '等权', tip: '前 5 名 ETF 各买入 20%，不考虑历史表现差异。' },
+                                { key: 'rank_weight', label: '前排加权', tip: '按排名第1～5名，分别配置30%、30%、20%、10%、10%。' },
                                 { key: 'return', label: '收益加权', tip: '按历史各名次（第1~5名）的平均区间收益比例分配仓位，收益高的名次配更多。' },
                                 { key: 'growth', label: '增长最优', tip: '网格搜索所有权重组合，找出使历史多头区间累计净值乘积最大的分配方案。' },
                                 { key: 'sharpe', label: '夏普最优', tip: '网格搜索所有权重组合，找出使历史多头区间收益均值/波动（夏普）最大的分配方案。' },
-                            ] as { key: OptimalMethod; label: string; tip: string }[]).map((item) => (
+                            ] as { key: OptimalMethod | 'rank_weight'; label: string; tip: string }[]).map((item) => (
                                 <Tooltip key={item.key} title={item.tip} placement="top">
                                     <button
                                         onClick={() => {
+                                            if (item.key === 'rank_weight') {
+                                                setActivePreset('custom');
+                                                setStrategyParams(p => ({ ...p, weights: [30, 30, 20, 10, 10] }));
+                                                return;
+                                            }
                                             if (!backtestResult) return;
                                             setActivePreset('custom');
                                             const optimal = calculateOptimalWeights(backtestResult, item.key);
                                             setStrategyParams(p => ({ ...p, weights: optimal }));
                                         }}
-                                        disabled={!backtestResult}
+                                        disabled={item.key !== 'rank_weight' && !backtestResult}
                                         style={{
                                             padding: '2px 8px',
                                             fontSize: 12,
-                                            color: backtestResult ? '#1890ff' : '#bbb',
+                                            color: item.key === 'rank_weight' || backtestResult ? '#1890ff' : '#bbb',
                                             backgroundColor: '#fff',
                                             border: '1px solid #1890ff',
                                             borderRadius: 4,
-                                            cursor: backtestResult ? 'pointer' : 'not-allowed',
+                                            cursor: item.key === 'rank_weight' || backtestResult ? 'pointer' : 'not-allowed',
                                             lineHeight: '20px',
                                         }}
                                     >
@@ -743,15 +719,15 @@ const ActiveMarket: React.FC = () => {
                 {upperETFId && (
                     <div style={{ flex: '0 0 30%', minHeight: 220, display: 'flex', flexDirection: 'column', border: '1px solid #ddd', borderRadius: 4, padding: '8px 0', backgroundColor: '#fff' }}>
                         <div style={{ fontSize: 14, fontWeight: 'bold', color: '#333', marginBottom: 4, padding: '0 12px', flexShrink: 0 }}>
-                            {ETF_OPTIONS.find(o => o.value === upperETFId)?.label}（独立副图）
+                            {etfOptions.find(o => o.value === upperETFId)?.label}（独立副图）
                         </div>
                         <div style={{ flex: 1, minHeight: 0 }}>
                             <KLineChart
                                 dateWindowRef={dateWindowRef}
                                 defaultWindowYears={1.5}
                                 data={allETFSeries.find(s => s.id === upperETFId)?.data || []}
-                                dataLabel={ETF_OPTIONS.find(o => o.value === upperETFId)?.label || ''}
-                                mainSeriesName={ETF_OPTIONS.find(o => o.value === upperETFId)?.label || '日K'}
+                                dataLabel={etfOptions.find(o => o.value === upperETFId)?.label || ''}
+                                mainSeriesName={etfOptions.find(o => o.value === upperETFId)?.label || '日K'}
                                 highlightThreshold={4}
                                 showZones={true}
                                 showBullZoneBg={showBullZoneBg}
@@ -795,20 +771,20 @@ const ActiveMarket: React.FC = () => {
                         />
                         {selectedIndicator?.code === '0AMV' && <span style={{ color: '#81929a', fontSize: 12 }}>双击主图任意位置，查看对应日期的日内走势</span>}
                         <div ref={chartQuoteRef} style={{ minWidth: 0, maxWidth: '100%', overflowX: 'auto', whiteSpace: 'pre', fontSize: 12, lineHeight: '24px', color: '#526871', fontVariantNumeric: 'tabular-nums' }} />
-                        <label title="按每年春节（正月初一）、五一、十一前后相邻交易日标记长假位置" style={{ display: 'flex', alignItems: 'center', gap: 6, whiteSpace: 'nowrap', cursor: 'pointer', fontSize: 12, color: '#666' }}>
-                            <input type="checkbox" checked={showHolidayPeriods} onChange={event => setShowHolidayPeriods(event.target.checked)} />
-                            显示长假期间
-                        </label>
                         {closeOnly && <span style={{ color: '#888', fontSize: 12 }}>仅有每日收盘估算值，使用折线显示</span>}
                         {!closeOnly && selectedIndicator?.code === 'AMV_EMA20' && (
                             <Tooltip title="开盘值取前一交易日收盘值；最高/最低取开收盘极值，不代表真实盘中高低价；成交量和成交额使用同日上证指数。">
                                 <span style={{ color: '#888', fontSize: 12 }}>合成K线 · 成交量：上证指数</span>
                             </Tooltip>
                         )}
+                        <label title="按每年春节（正月初一）、五一、十一前后相邻交易日标记长假位置" style={{ marginLeft: 'auto', alignSelf: 'center', flexShrink: 0, display: 'flex', alignItems: 'center', gap: 6, whiteSpace: 'nowrap', cursor: 'pointer', fontSize: 12, color: '#666' }}>
+                            <input type="checkbox" checked={showHolidayPeriods} onChange={event => setShowHolidayPeriods(event.target.checked)} />
+                            显示长假期间
+                        </label>
                     </div>
                     <div className="chart-canvas">
-                        {indicatorListError || dataError ? (
-                            <Alert type="error" showIcon message={indicatorListError || dataError}
+                        {indicatorListError || dataError || etfListError ? (
+                            <Alert type="error" showIcon message={indicatorListError || dataError || etfListError}
                                 action={<Button size="small" onClick={() => setReloadKey(key => key + 1)}>重试</Button>}
                                 style={{ margin: 16 }} />
                         ) : loading || indicatorsLoading ? (
@@ -943,7 +919,7 @@ const ActiveMarket: React.FC = () => {
                                 从最高收盘净值回撤达到 {strategyParams.profitProtectionDrawdownPct ?? 2.2}% 时按实际收盘价减半一次；
                                 浮盈和回撤均按加杠杆前的组合净值判断；卖出资金留现金，剩余持仓按下述原规则退出。
                             </div>}
-                            规则：多头区间启动日买入涨幅前{strategyParams.weights.length} ETF（{strategyParams.weights.map(w => `${w.toFixed(0)}%`).join('/')}），区间结束卖出；单日涨幅&gt;{strategyParams.bullStartSingleDay}%或两日累计&gt;{strategyParams.bullStartTwoDay}%{strategyParams.bullStartUseMA10 ? '且收盘价站上MA10' : ''}启动多头；单日跌幅&lt;{strategyParams.bullEndSingleDay}%{strategyParams.bullEndUseMA10 ? '或跌破MA10' : ''}结束多头；{strategyParams.bearBuyBank ? `${strategyParams.bearStartYear}年起空头区间持有银行 ETF` : '空头区间持有现金'}；跨年收益计入开始年份。点击年份可查看当年每个波段的交易明细。
+                            规则：多头区间启动日按所选方式买入排名前{strategyParams.weights.length} ETF（{strategyParams.weights.map(w => `${w.toFixed(0)}%`).join('/')}），区间结束卖出；单日涨幅&gt;{strategyParams.bullStartSingleDay}%或两日累计&gt;{strategyParams.bullStartTwoDay}%{strategyParams.bullStartUseMA10 ? '且收盘价站上MA10' : ''}启动多头；单日跌幅&lt;{strategyParams.bullEndSingleDay}%{strategyParams.bullEndUseMA10 ? '或跌破MA10' : ''}结束多头；{strategyParams.bearBuyBank ? `${strategyParams.bearStartYear}年起空头区间持有银行 ETF` : '空头区间持有现金'}；跨年收益计入开始年份。点击年份可查看当年每个波段的交易明细。
                         </div>
                     </>
                 )}

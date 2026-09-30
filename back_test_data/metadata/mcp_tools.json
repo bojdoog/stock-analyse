@@ -1470,7 +1470,7 @@
         "type": "object",
         "properties": {
           "type": {
-            "description": "类型：P-按产品 D-按地区 I-按行业（请输入大写字母）",
+            "description": "类型：P-按产品 D-按地区 I-按行业 S-销售模式（请输入大写字母）",
             "anyOf": [
               {
                 "type": "string"

@@ -2,15 +2,10 @@
 > dev
 > max dev
 
-info  - [你知道吗？] 默认使用 esbuild 作为 JavaScript 压缩工具，也可通过 jsMinifier 配置项切换到 terser 或 uglifyJs 等，详见 https://umijs.org/docs/api/config#jsminifier-webpack
+info  - [你知道吗？] 想快速修改 html 模板、DIY 项目？试试编写项目级插件，详见 https://umijs.org/docs/guides/directory-structure#plugints
 
-  utoo pack v1.4.22 ready in 17404ms
+  utoo pack v1.4.22 ready in 13773ms
 
   ➜  Local:   http://localhost:8000
   ➜  Network: http://26.181.72.104:8000
-Compiled in 246ms
-Compiled in 40ms
-Compiled in 37ms
-Compiled in 72ms
-Compiled in 45ms
-Compiled in 74ms
+Compiled in 241ms

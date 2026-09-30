@@ -60,6 +60,9 @@ def main():
             errors.append({'source_file': path.name, 'error': str(error)})
     if not rows:
         raise SystemExit(f'No readable records: {errors}')
+    if errors:
+        raise SystemExit('Intraday cache parsing failed; no CSV files exported: '
+                         + json.dumps(errors, ensure_ascii=False))
     rows.sort(key=lambda row: (row['date'], row['time'], row['source_file']))
     args.output.mkdir(parents=True, exist_ok=True)
     if args.split_by_date:

@@ -25,6 +25,8 @@ except ImportError:
     from storage_sqlite import save_dataframe, refresh_index, list_files, initialize, read_frame, has_file
 from typing import Optional
 
+from etf_catalog import sector_mapping
+
 import pandas as pd
 import tushare as ts
 from tqdm import tqdm
@@ -49,104 +51,6 @@ logger.addHandler(console_handler)
 
 # --------------------------- 板块到 ETF 映射 --------------------------- #
 # 东方财富板块名称 -> ETF代码/名称映射
-INDUSTRY_TO_ETF = {
-    "互联网服务": {"code": "515230", "name": "软件ETF"},
-    "软件开发": {"code": "515230", "name": "软件ETF"},
-    "证券": {"code": "512880", "name": "证券ETF"},
-    "酿酒行业": {"code": "512690", "name": "白酒ETF"},
-    "电池": {"code": "516160", "name": "新能源ETF"},
-    "半导体": {"code": "512480", "name": "半导体ETF"},
-    "银行": {"code": "512800", "name": "银行ETF"},
-    "光伏设备": {"code": "516290", "name": "光伏ETF"},
-    "通信设备": {"code": "515880", "name": "通信ETF"},
-    "医药商业": {"code": "159929", "name": "医药ETF"},
-    "医疗器械": {"code": "159929", "name": "医药ETF"},
-    "化学制药": {"code": "159929", "name": "医药ETF"},
-    "中药": {"code": "159929", "name": "医药ETF"},
-    "医疗服务": {"code": "510660", "name": "创新药ETF"},
-    "生物制品": {"code": "510660", "name": "创新药ETF"},
-    "游戏": {"code": "159869", "name": "游戏ETF"},
-    "文化传媒": {"code": "512980", "name": "传媒ETF"},
-    "航天航空": {"code": "512660", "name": "军工ETF"},
-    "船舶制造": {"code": "512660", "name": "军工ETF"},
-    "风电设备": {"code": "516160", "name": "新能源ETF"},
-    "电网设备": {"code": "561380", "name": "电网设备ETF"},
-    "汽车整车": {"code": "515030", "name": "新能源车ETF"},
-    "汽车零部件": {"code": "515030", "name": "新能源车ETF"},
-    "能源金属": {"code": "512400", "name": "有色ETF"},
-    "小金属": {"code": "512400", "name": "有色ETF"},
-    "贵金属": {"code": "512400", "name": "有色ETF"},
-    "有色金属": {"code": "512400", "name": "有色ETF"},
-    "煤炭行业": {"code": "515220", "name": "煤炭ETF"},
-    "石油行业": {"code": "510300", "name": "沪深300ETF"},
-    "电力行业": {"code": "561380", "name": "电网设备ETF"},
-    "公用事业": {"code": "561380", "name": "电网设备ETF"},
-    "燃气": {"code": "561380", "name": "电网设备ETF"},
-    "水泥建材": {"code": "510300", "name": "沪深300ETF"},
-    "房地产": {"code": "510300", "name": "沪深300ETF"},
-    "工程建设": {"code": "510300", "name": "沪深300ETF"},
-    "装修装饰": {"code": "510300", "name": "沪深300ETF"},
-    "家电行业": {"code": "510150", "name": "消费ETF"},
-    "旅游酒店": {"code": "510150", "name": "消费ETF"},
-    "食品饮料": {"code": "510150", "name": "消费ETF"},
-    "商业百货": {"code": "510150", "name": "消费ETF"},
-    "农牧饲渔": {"code": "510150", "name": "消费ETF"},
-    "猪肉概念": {"code": "510150", "name": "消费ETF"},
-    "鸡肉概念": {"code": "510150", "name": "消费ETF"},
-    "机器人": {"code": "562500", "name": "机器人ETF"},
-    "人工智能": {"code": "159381", "name": "创业板人工智能ETF"},
-    "算力概念": {"code": "515230", "name": "软件ETF"},
-    "数据要素": {"code": "515230", "name": "软件ETF"},
-    "云计算": {"code": "515230", "name": "软件ETF"},
-    "区块链": {"code": "515230", "name": "软件ETF"},
-    "数字货币": {"code": "515230", "name": "软件ETF"},
-    "网络安全": {"code": "515230", "name": "软件ETF"},
-    "物联网": {"code": "515880", "name": "通信ETF"},
-    "5G概念": {"code": "515880", "name": "通信ETF"},
-    "光通信模块": {"code": "515880", "name": "通信ETF"},
-    "CPO概念": {"code": "515880", "name": "通信ETF"},
-    "ChatGPT概念": {"code": "159381", "name": "创业板人工智能ETF"},
-    "AIGC概念": {"code": "159381", "name": "创业板人工智能ETF"},
-    "元宇宙概念": {"code": "159869", "name": "游戏ETF"},
-    "虚拟现实": {"code": "159869", "name": "游戏ETF"},
-    "增强现实": {"code": "159869", "name": "游戏ETF"},
-    "半导体概念": {"code": "512480", "name": "半导体ETF"},
-    "芯片概念": {"code": "512480", "name": "半导体ETF"},
-    "汽车芯片": {"code": "512480", "name": "半导体ETF"},
-    "存储芯片": {"code": "512480", "name": "半导体ETF"},
-    "国产芯片": {"code": "512480", "name": "半导体ETF"},
-    "EDA概念": {"code": "588710", "name": "科创半导体设备ETF"},
-    "光刻机": {"code": "588710", "name": "科创半导体设备ETF"},
-    "中芯概念": {"code": "588710", "name": "科创半导体设备ETF"},
-    "固态电池": {"code": "516160", "name": "新能源ETF"},
-    "钠离子电池": {"code": "516160", "name": "新能源ETF"},
-    "锂电池": {"code": "516160", "name": "新能源ETF"},
-    "储能": {"code": "516160", "name": "新能源ETF"},
-    "氢能源": {"code": "516160", "name": "新能源ETF"},
-    "充电桩": {"code": "516160", "name": "新能源ETF"},
-    "特高压": {"code": "561380", "name": "电网设备ETF"},
-    "智能电网": {"code": "561380", "name": "电网设备ETF"},
-    "虚拟电厂": {"code": "561380", "name": "电网设备ETF"},
-    "核能核电": {"code": "561380", "name": "电网设备ETF"},
-    "超导概念": {"code": "561380", "name": "电网设备ETF"},
-    "新能源车": {"code": "515030", "name": "新能源车ETF"},
-    "无人驾驶": {"code": "515030", "name": "新能源车ETF"},
-    "特斯拉": {"code": "515030", "name": "新能源车ETF"},
-    "比亚迪概念": {"code": "515030", "name": "新能源车ETF"},
-    "北斗导航": {"code": "159206", "name": "卫星ETF"},
-    "航天概念": {"code": "159206", "name": "卫星ETF"},
-    "大飞机": {"code": "512660", "name": "军工ETF"},
-    "军民融合": {"code": "512660", "name": "军工ETF"},
-    "航母概念": {"code": "512660", "name": "军工ETF"},
-    "国产航母": {"code": "512660", "name": "军工ETF"},
-    "军工": {"code": "512660", "name": "军工ETF"},
-    "无人机": {"code": "512660", "name": "军工ETF"},
-    "人形机器人": {"code": "562500", "name": "机器人ETF"},
-    "工业母机": {"code": "159638", "name": "高端装备ETF"},
-    "高端装备": {"code": "159638", "name": "高端装备ETF"},
-    "海工装备": {"code": "159638", "name": "高端装备ETF"},
-    "海洋经济": {"code": "159638", "name": "高端装备ETF"},
-}
 
 pro: Optional[ts.pro_api] = None
 
@@ -204,6 +108,7 @@ def fetch_moneyflow_ind_dc(start_date: str, end_date: str) -> pd.DataFrame:
     df["large_inflow"] = df["large_inflow"] / 1e8
 
     # 添加 ETF 映射
+    INDUSTRY_TO_ETF = sector_mapping("ind_dc")
     df["etf_code"] = df["industry_name"].map(
         lambda x: INDUSTRY_TO_ETF.get(x, {}).get("code", "")
     )

@@ -22,6 +22,8 @@ try:
 except ImportError:
     from storage_sqlite import save_dataframe, refresh_index, list_files, initialize, read_frame, has_file
 
+from etf_catalog import list_etfs
+
 import pandas as pd
 
 BASE_DIR = Path(__file__).resolve().parents[1]
@@ -29,33 +31,6 @@ DATA_DIR = BASE_DIR / "data"
 AMV_FILE = DATA_DIR / "core_index" / "0AMV-2013-2026.csv"
 
 # 板块 ETF 选项（排除指数）
-ETF_OPTIONS = [
-    ("510050", "上证50ETF"),
-    ("510300", "沪深300ETF"),
-    ("563300", "中证2000ETF"),
-    ("159915", "创业板ETF"),
-    ("512480", "半导体ETF"),
-    ("588710", "科创半导体设备ETF"),
-    ("515880", "通信ETF"),
-    ("159381", "创业板人工智能ETF"),
-    ("516160", "新能源ETF"),
-    ("515030", "新能源车ETF"),
-    ("512400", "有色ETF"),
-    ("510150", "消费ETF"),
-    ("515220", "煤炭ETF"),
-    ("512690", "白酒ETF"),
-    ("512880", "证券ETF"),
-    ("512800", "银行ETF"),
-    ("562500", "机器人ETF"),
-    ("510660", "创新药ETF"),
-    ("159869", "游戏ETF"),
-    ("516290", "光伏ETF"),
-    ("561380", "电网设备ETF"),
-    ("159206", "卫星ETF"),
-    ("159638", "高端装备ETF"),
-    ("512660", "军工ETF"),
-    ("159929", "医药ETF"),
-]
 
 WEIGHTS = [0.30, 0.30, 0.20, 0.10, 0.10]
 BANK_ETF_NAME = "银行ETF"
@@ -314,8 +289,9 @@ def main():
 
     print("加载 ETF 数据...")
     etf_data = {}
-    for code, name in ETF_OPTIONS:
-        path = DATA_DIR / "etf" / f"{code}_{name}.csv"
+    for item in list_etfs():
+        name = item["name"]
+        path = DATA_DIR / item["source_path"]
         if has_file(path):
             etf_data[name] = load_csv(path)
         else:

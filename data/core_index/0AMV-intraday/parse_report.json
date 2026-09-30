@@ -5,8 +5,8 @@
     "Volume/amount field meanings and units are inferred, not verified.",
     "CDE and locked VDAT files are not parsed by this script."
   ],
-  "records": 448840,
-  "output_files": 1878,
+  "records": 449557,
+  "output_files": 1881,
   "files": [
     {
       "source_file": "Z_SK0AMV20181228.fde",
@@ -15025,8 +15025,32 @@
       "last_time": "14:58:59"
     },
     {
-      "source_file": "Z_SK0AMV__.fde",
+      "source_file": "Z_SK0AMV20260924.fde",
       "date": "2026-09-24",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20260928.fde",
+      "date": "2026-09-28",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20260929.fde",
+      "date": "2026-09-29",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV__.fde",
+      "date": "2026-09-30",
       "records": 239,
       "header_end_time": 145900,
       "first_time": "09:30:59",

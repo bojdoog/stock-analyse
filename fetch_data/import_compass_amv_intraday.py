@@ -53,6 +53,7 @@ def main():
     report = {'databases': results, 'first_date': sources[0][2][0][0],
               'last_date': sources[-1][2][0][0], 'table': 'indicator_intraday'}
     (folder / 'database_import_report.json').write_text(json.dumps(report, indent=2), encoding='utf-8')
+    print(f"Intraday import complete: {len(sources)} days, latest={report['last_date']}; SQLite and MySQL verified.", flush=True)
 
 
 if __name__ == '__main__':

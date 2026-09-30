@@ -11,6 +11,7 @@ export interface BacktestHolding {
   name: string;
   weight: number;
   day_change?: number;
+  entry_20d_change?: number | null;
   holding_return: number;
   industry_name?: string; // 板块名称（仅用于资金流入排名）
 }
@@ -186,6 +187,7 @@ const ETF_TO_INDUSTRY: Record<string, string[]> = {
 
 export type RankingMethod =
   | 'etf_gain'
+  | 'etf_blend20'
   | 'ths_moneyflow'
   | 'ths_concept'
   | 'dc_moneyflow';
@@ -221,12 +223,12 @@ export const DEFAULT_STRATEGY_PARAMS: StrategyParams = {
   bullEndSingleDay: -2.3,
   bullEndUseMA10: true,
   bullStartUseMA10: true,
-  weights: [30, 30, 20, 10, 10],
+  weights: [20, 20, 20, 20, 20],
   bearStartYear: 2024,
   bearBuyBank: true,
   startYear: 2019,
   endYear: new Date().getFullYear(),
-  rankingMethod: 'etf_gain',
+  rankingMethod: 'etf_blend20',
 };
 
 export type OptimalMethod = 'equal' | 'return' | 'growth' | 'sharpe';
@@ -793,6 +795,27 @@ export function runBacktest(
 
       // 构建持仓：如果 topN 中的 ETF 缺少 start/end 价格数据，用候选池中的下一个补上
       // 先把所有候选收集起来，过滤有完整价格数据的
+      if (rankingMethod === 'etf_blend20') {
+        // Use the full AMV history for lookback, including sessions before the selected backtest year.
+        const entryIndex = amvData.findIndex(row => row.date === startDate);
+        const oldDate = amvData[entryIndex - 20]?.date;
+        const candidates: { name: string; day_change: number; gain: number; gain20: number | null }[] = [];
+        etfMap.forEach((data, name) => {
+          if (name === BANK_ETF_NAME) return;
+          const close = getClose(data, startDate);
+          const previous = getClose(data, prevDate);
+          if (close === null || previous === null || close <= 0 || previous <= 0) return;
+          const old = oldDate ? getClose(data, oldDate) : null;
+          const gain = close / previous - 1;
+          candidates.push({ name, day_change: gain * 100, gain,
+            gain20: old !== null && old > 0 ? close / old - 1 : null });
+        });
+        const eligible = candidates.filter(row => row.gain20 !== null);
+        topN = eligible.map(row => ({ ...row, score: (
+          candidates.filter(other => other.gain < row.gain).length / Math.max(1, candidates.length - 1)
+          + eligible.filter(other => other.gain20! < row.gain20!).length / Math.max(1, eligible.length - 1)
+        ) / 2 })).sort((a, b) => b.score - a.score).slice(0, weights.length);
+      }
       const rankedCandidates = topN.map((item) => ({
         item,
       }));
@@ -801,7 +824,7 @@ export function runBacktest(
       const backupCandidates: {
         item: { name: string; day_change: number; industry_name?: string };
       }[] = [];
-      if (rankingMethod !== 'etf_gain') {
+      if (rankingMethod !== 'etf_gain' && rankingMethod !== 'etf_blend20') {
         const allCandidates = ((): {
           name: string;
           day_change: number;
@@ -956,6 +979,12 @@ export function runBacktest(
           holding_return: holdingReturn,
           industry_name: item.industry_name,
         });
+        if (rankingMethod === 'etf_blend20') {
+          const oldDate = amvData[amvData.findIndex(row => row.date === startDate) - 20]?.date;
+          const oldClose = data && oldDate ? getClose(data, oldDate) : null;
+          holdings[holdings.length - 1].entry_20d_change = oldClose !== null && oldClose > 0
+            ? (startClose / oldClose - 1) * 100 : null;
+        }
         if (params.profitProtectionEnabled || leverage !== 1) {
           const sectorMap = rankingMethod === 'dc_moneyflow' ? moneyflowMap
             : rankingMethod === 'ths_concept' ? conceptMoneyflowMap : indMoneyflowMap;

@@ -409,6 +409,12 @@ const BacktestChart: React.FC<BacktestChartProps> = ({ result, year, amvData = [
                             </>
                           );
                         })()}
+                        {rankingMethod === 'etf_blend20' && t.type === 'bull' && <>
+                          <span title="启动日收盘价相对20个交易日前收盘价的涨幅" style={{ color: '#999', marginLeft: 8 }}>20日涨幅</span>
+                          <span style={{ color: h.entry_20d_change == null ? '#999' : h.entry_20d_change >= 0 ? '#c41e3a' : '#006400' }}>
+                            {h.entry_20d_change == null ? '—' : `${h.entry_20d_change >= 0 ? '+' : ''}${h.entry_20d_change.toFixed(2)}%`}
+                          </span>
+                        </>}
                         <span style={{ color: '#999', marginLeft: 8 }}>区间收益</span>
                         <span style={{ color: h.holding_return >= 0 ? '#c41e3a' : '#006400' }}>
                           {(h.holding_return >= 0 ? '+' : '') + (h.holding_return * 100).toFixed(2)}%

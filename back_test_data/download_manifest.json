@@ -1,25 +1,25 @@
 {
-  "created_at": "2026-09-19T14:45:27.828356+00:00",
+  "created_at": "2026-09-30T16:55:08.712669+00:00",
   "start": "20240910",
-  "end": "20260911",
+  "end": "20261001",
   "requests": [
     {
       "tool": "trade_cal",
       "key": "SSE",
-      "rows": 732,
-      "cached": true
+      "rows": 752,
+      "cached": false
     },
     {
       "tool": "trade_cal",
       "key": "SZSE",
-      "rows": 732,
-      "cached": true
+      "rows": 752,
+      "cached": false
     },
     {
       "tool": "ths_index",
       "key": "A_industry",
       "rows": 777,
-      "cached": true
+      "cached": false
     },
     {
       "tool": "moneyflow_ind_ths",
@@ -167,21 +167,27 @@
     },
     {
       "tool": "moneyflow_ind_ths",
-      "key": "20260901_20260911",
-      "rows": 810,
-      "cached": true
+      "key": "20260901_20260930",
+      "rows": 1890,
+      "cached": false
+    },
+    {
+      "tool": "moneyflow_ind_ths",
+      "key": "20261001_20261001",
+      "rows": 0,
+      "cached": false
     },
     {
       "tool": "moneyflow_ind_ths",
       "key": "missing_20241104",
       "rows": 0,
-      "cached": false
+      "cached": true
     },
     {
       "tool": "moneyflow_ind_ths",
       "key": "missing_20250120",
       "rows": 0,
-      "cached": false
+      "cached": true
     },
     {
       "tool": "daily_info",
@@ -329,9 +335,15 @@
     },
     {
       "tool": "daily_info",
-      "key": "20260901_20260911",
-      "rows": 108,
-      "cached": true
+      "key": "20260901_20260930",
+      "rows": 249,
+      "cached": false
+    },
+    {
+      "tool": "daily_info",
+      "key": "20261001_20261001",
+      "rows": 0,
+      "cached": false
     },
     {
       "tool": "sz_daily_info",
@@ -479,15 +491,21 @@
     },
     {
       "tool": "sz_daily_info",
-      "key": "20260901_20260911",
-      "rows": 126,
-      "cached": true
+      "key": "20260901_20260930",
+      "rows": 294,
+      "cached": false
+    },
+    {
+      "tool": "sz_daily_info",
+      "key": "20261001_20261001",
+      "rows": 0,
+      "cached": false
     },
     {
       "tool": "sz_daily_info",
       "key": "missing_20241112",
       "rows": 0,
-      "cached": false
+      "cached": true
     },
     {
       "tool": "moneyflow_mkt_dc",
@@ -635,14 +653,20 @@
     },
     {
       "tool": "moneyflow_mkt_dc",
-      "key": "20260901_20260911",
-      "rows": 9,
-      "cached": true
+      "key": "20260901_20260930",
+      "rows": 21,
+      "cached": false
+    },
+    {
+      "tool": "moneyflow_mkt_dc",
+      "key": "20261001_20261001",
+      "rows": 0,
+      "cached": false
     },
     {
       "tool": "ths_daily",
       "key": "881101.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -654,7 +678,7 @@
     {
       "tool": "ths_daily",
       "key": "881102.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -666,7 +690,7 @@
     {
       "tool": "ths_daily",
       "key": "881103.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -678,7 +702,7 @@
     {
       "tool": "ths_daily",
       "key": "881105.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -690,7 +714,7 @@
     {
       "tool": "ths_daily",
       "key": "881107.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -702,7 +726,7 @@
     {
       "tool": "ths_daily",
       "key": "881108.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -714,31 +738,31 @@
     {
       "tool": "ths_daily",
       "key": "881109.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
       "tool": "ths_member",
       "key": "881109.TI_0",
-      "rows": 181,
+      "rows": 183,
       "cached": false
     },
     {
       "tool": "ths_daily",
       "key": "881112.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
       "tool": "ths_member",
       "key": "881112.TI_0",
-      "rows": 44,
+      "rows": 45,
       "cached": false
     },
     {
       "tool": "ths_daily",
       "key": "881114.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -750,7 +774,7 @@
     {
       "tool": "ths_daily",
       "key": "881115.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -762,7 +786,7 @@
     {
       "tool": "ths_daily",
       "key": "881116.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -774,7 +798,7 @@
     {
       "tool": "ths_daily",
       "key": "881117.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -786,19 +810,19 @@
     {
       "tool": "ths_daily",
       "key": "881118.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
       "tool": "ths_member",
       "key": "881118.TI_0",
-      "rows": 200,
+      "rows": 205,
       "cached": false
     },
     {
       "tool": "ths_daily",
       "key": "881121.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -810,7 +834,7 @@
     {
       "tool": "ths_daily",
       "key": "881122.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -822,7 +846,7 @@
     {
       "tool": "ths_daily",
       "key": "881123.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -834,7 +858,7 @@
     {
       "tool": "ths_daily",
       "key": "881124.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -846,7 +870,7 @@
     {
       "tool": "ths_daily",
       "key": "881125.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -858,7 +882,7 @@
     {
       "tool": "ths_daily",
       "key": "881126.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -870,7 +894,7 @@
     {
       "tool": "ths_daily",
       "key": "881128.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -882,7 +906,7 @@
     {
       "tool": "ths_daily",
       "key": "881129.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -894,7 +918,7 @@
     {
       "tool": "ths_daily",
       "key": "881130.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -906,7 +930,7 @@
     {
       "tool": "ths_daily",
       "key": "881131.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -918,7 +942,7 @@
     {
       "tool": "ths_daily",
       "key": "881132.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -930,7 +954,7 @@
     {
       "tool": "ths_daily",
       "key": "881133.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -942,7 +966,7 @@
     {
       "tool": "ths_daily",
       "key": "881134.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -954,7 +978,7 @@
     {
       "tool": "ths_daily",
       "key": "881135.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -966,7 +990,7 @@
     {
       "tool": "ths_daily",
       "key": "881136.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -978,7 +1002,7 @@
     {
       "tool": "ths_daily",
       "key": "881137.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -990,7 +1014,7 @@
     {
       "tool": "ths_daily",
       "key": "881138.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1002,7 +1026,7 @@
     {
       "tool": "ths_daily",
       "key": "881139.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1014,7 +1038,7 @@
     {
       "tool": "ths_daily",
       "key": "881140.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1026,7 +1050,7 @@
     {
       "tool": "ths_daily",
       "key": "881141.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1038,7 +1062,7 @@
     {
       "tool": "ths_daily",
       "key": "881142.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1050,7 +1074,7 @@
     {
       "tool": "ths_daily",
       "key": "881143.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1062,19 +1086,19 @@
     {
       "tool": "ths_daily",
       "key": "881144.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
       "tool": "ths_member",
       "key": "881144.TI_0",
-      "rows": 141,
+      "rows": 143,
       "cached": false
     },
     {
       "tool": "ths_daily",
       "key": "881145.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1086,7 +1110,7 @@
     {
       "tool": "ths_daily",
       "key": "881146.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1098,7 +1122,7 @@
     {
       "tool": "ths_daily",
       "key": "881148.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1110,7 +1134,7 @@
     {
       "tool": "ths_daily",
       "key": "881149.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1122,7 +1146,7 @@
     {
       "tool": "ths_daily",
       "key": "881151.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1134,7 +1158,7 @@
     {
       "tool": "ths_daily",
       "key": "881152.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1146,7 +1170,7 @@
     {
       "tool": "ths_daily",
       "key": "881153.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1158,7 +1182,7 @@
     {
       "tool": "ths_daily",
       "key": "881155.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1170,7 +1194,7 @@
     {
       "tool": "ths_daily",
       "key": "881156.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1182,7 +1206,7 @@
     {
       "tool": "ths_daily",
       "key": "881157.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1194,7 +1218,7 @@
     {
       "tool": "ths_daily",
       "key": "881158.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1206,7 +1230,7 @@
     {
       "tool": "ths_daily",
       "key": "881159.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1218,7 +1242,7 @@
     {
       "tool": "ths_daily",
       "key": "881160.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1230,7 +1254,7 @@
     {
       "tool": "ths_daily",
       "key": "881162.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1242,7 +1266,7 @@
     {
       "tool": "ths_daily",
       "key": "881164.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1254,7 +1278,7 @@
     {
       "tool": "ths_daily",
       "key": "881165.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1266,7 +1290,7 @@
     {
       "tool": "ths_daily",
       "key": "881166.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1278,7 +1302,7 @@
     {
       "tool": "ths_daily",
       "key": "881167.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1290,7 +1314,7 @@
     {
       "tool": "ths_daily",
       "key": "881168.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1302,7 +1326,7 @@
     {
       "tool": "ths_daily",
       "key": "881169.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1314,7 +1338,7 @@
     {
       "tool": "ths_daily",
       "key": "881170.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1326,7 +1350,7 @@
     {
       "tool": "ths_daily",
       "key": "881171.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1338,7 +1362,7 @@
     {
       "tool": "ths_daily",
       "key": "881172.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1350,7 +1374,7 @@
     {
       "tool": "ths_daily",
       "key": "881173.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1362,7 +1386,7 @@
     {
       "tool": "ths_daily",
       "key": "881174.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1374,7 +1398,7 @@
     {
       "tool": "ths_daily",
       "key": "881175.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1386,7 +1410,7 @@
     {
       "tool": "ths_daily",
       "key": "881177.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1398,7 +1422,7 @@
     {
       "tool": "ths_daily",
       "key": "881178.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1410,7 +1434,7 @@
     {
       "tool": "ths_daily",
       "key": "881179.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1422,7 +1446,7 @@
     {
       "tool": "ths_daily",
       "key": "881180.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1434,7 +1458,7 @@
     {
       "tool": "ths_daily",
       "key": "881181.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1446,7 +1470,7 @@
     {
       "tool": "ths_daily",
       "key": "881182.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1458,7 +1482,7 @@
     {
       "tool": "ths_daily",
       "key": "881263.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1470,7 +1494,7 @@
     {
       "tool": "ths_daily",
       "key": "881264.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1482,7 +1506,7 @@
     {
       "tool": "ths_daily",
       "key": "881265.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1494,7 +1518,7 @@
     {
       "tool": "ths_daily",
       "key": "881266.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1506,7 +1530,7 @@
     {
       "tool": "ths_daily",
       "key": "881267.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1518,7 +1542,7 @@
     {
       "tool": "ths_daily",
       "key": "881268.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1530,7 +1554,7 @@
     {
       "tool": "ths_daily",
       "key": "881269.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1542,7 +1566,7 @@
     {
       "tool": "ths_daily",
       "key": "881270.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1554,7 +1578,7 @@
     {
       "tool": "ths_daily",
       "key": "881271.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1566,7 +1590,7 @@
     {
       "tool": "ths_daily",
       "key": "881272.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1578,7 +1602,7 @@
     {
       "tool": "ths_daily",
       "key": "881273.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1590,7 +1614,7 @@
     {
       "tool": "ths_daily",
       "key": "881274.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1602,7 +1626,7 @@
     {
       "tool": "ths_daily",
       "key": "881275.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1614,7 +1638,7 @@
     {
       "tool": "ths_daily",
       "key": "881276.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1626,7 +1650,7 @@
     {
       "tool": "ths_daily",
       "key": "881277.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1638,7 +1662,7 @@
     {
       "tool": "ths_daily",
       "key": "881278.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1650,7 +1674,7 @@
     {
       "tool": "ths_daily",
       "key": "881279.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1662,7 +1686,7 @@
     {
       "tool": "ths_daily",
       "key": "881280.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1674,7 +1698,7 @@
     {
       "tool": "ths_daily",
       "key": "881281.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1686,7 +1710,7 @@
     {
       "tool": "ths_daily",
       "key": "881282.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1698,7 +1722,7 @@
     {
       "tool": "ths_daily",
       "key": "881283.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1710,7 +1734,7 @@
     {
       "tool": "ths_daily",
       "key": "881284.TI",
-      "rows": 486,
+      "rows": 498,
       "cached": false
     },
     {
@@ -1721,5 +1745,5 @@
     }
   ],
   "failures": [],
-  "amv_source_sha256": "529e8a9a3f8ec35df44ca615ab1e1ab6f60231c8ad251881e07866e3ccb55e96"
+  "amv_source_sha256": "38d7c35103db25a30dabbd264c7451d0e72c3110d7ede7b64f4402e386376357"
 }

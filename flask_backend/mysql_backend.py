@@ -136,4 +136,6 @@ def ensure_schema(db, flow_numbers, flow_text):
         db.execute(sql + suffix)
     from intraday_store import ensure_schema as intraday_schema
     intraday_schema(db)
+    from etf_catalog import ensure_schema as catalog_schema
+    catalog_schema(db)
     db.commit()

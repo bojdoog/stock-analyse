@@ -46,6 +46,9 @@ class DataService:
     def get_data_list(self, category):
         if category not in ('stock', 'etf', 'index'):
             return []
+        if category == 'etf':
+            from etf_catalog import list_etfs
+            return list_etfs(self.database)
         with connect(self.database) as db:
             return [dict(row) for row in db.execute(
                 'SELECT code,name,source_path AS file FROM instruments WHERE category=? ORDER BY source_path', (category,))]
@@ -54,6 +57,9 @@ class DataService:
         return {category: self.get_data_list(category) for category in ('stock', 'etf', 'index')}
 
     def get_file_bytes(self, relative_path):
+        if relative_path == 'etf/index.json':
+            import json
+            return json.dumps(list_files('etf', self.database), ensure_ascii=False).encode('utf-8')
         return file_content(relative_path, self.database)
 
     def get_kline_raw(self, category, code):
@@ -93,6 +99,14 @@ class DataService:
             values.append(limit)
         with connect(self.database) as db:
             rows = [dict(row) for row in db.execute(sql, values)]
+        # Resolve historic snapshots against today's registry as well. Disabled
+        # ETF mappings must not leak back into rankings from archived flow rows.
+        from etf_catalog import sector_mapping
+        mapping = sector_mapping(flow_type, self.database)
+        for row in rows:
+            etf = mapping.get(row['industry_name'], {})
+            row['etf_code'] = etf.get('code', '')
+            row['etf_name'] = etf.get('name', '')
         if limit and limit > 0:
             rows.reverse()
         for row in rows:

@@ -25,7 +25,8 @@ today = dt.date.today().strftime("%Y%m%d")
 
 SCRIPTS: list[tuple[str, list[str]]] = [
     ("fetch_compass_amv_daily.py", []),
-    ("parse_compass_amv_cache.py", ["--output", str(TOOLS_DIR.parent / "back_test_data" / "compass_amv_cache")]),
+    ("parse_compass_amv_cache.py", ["--split-by-date", "--output", str(TOOLS_DIR.parent / "data" / "core_index" / "0AMV-intraday")]),
+    ("import_compass_amv_intraday.py", []),
     ("fetch_etf.py", []),
     ("fetch_index.py", []),
     ("fetch_moneyflow_cnt_ths.py", ["--start", MONEYFLOW_START["fetch_moneyflow_cnt_ths.py"], "--end", today]),
@@ -61,14 +62,21 @@ def main():
 
     success = 0
     fail = 0
+    skipped = 0
+    results = {}
 
     for script_name, script_args in SCRIPTS:
-        if run_script(script_name, script_args):
+        if script_name == 'import_compass_amv_intraday.py' and not results.get('parse_compass_amv_cache.py'):
+            print('[SKIP] 日内缓存解析失败，跳过入库，避免把旧CSV当成本次更新。')
+            skipped += 1
+            continue
+        results[script_name] = run_script(script_name, script_args)
+        if results[script_name]:
             success += 1
         else:
             fail += 1
 
-    print(f"\n全部完成: {success} 成功, {fail} 失败")
+    print(f"\n全部完成: {success} 成功, {fail} 失败, {skipped} 跳过")
 
     if fail > 0:
         sys.exit(1)

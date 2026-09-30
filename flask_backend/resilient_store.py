@@ -83,6 +83,10 @@ def try_mysql():
             remote.close()
             logger.warning('MySQL market tables missing; using SQLite. Restore MySQL before switching back.')
             return None
+        if not remote.execute("SELECT 1 FROM information_schema.tables WHERE table_schema=DATABASE() AND table_name='etf_sector_mapping'").fetchone():
+            from etf_catalog import ensure_schema as catalog_schema
+            catalog_schema(remote)
+            remote.commit()
         replay(remote)
         return remote
     except Exception as exc:
@@ -142,8 +146,7 @@ def refresh_index(out_dir, category=None):
     category = category or out_dir.name
     with store.connect(sqlite_path()) as db:
         db.execute('BEGIN IMMEDIATE')
-        files = [row[0].split('/')[-1] for row in db.execute(
-            "SELECT path FROM source_files WHERE category=? AND path LIKE '%.csv' ORDER BY path", (category,))]
+        files = store.available_files(db, category)
         content = json.dumps(files, ensure_ascii=False).encode('utf-8')
         store.import_content(db, f'{category}/index.json', content, pending=True)
         db.commit()

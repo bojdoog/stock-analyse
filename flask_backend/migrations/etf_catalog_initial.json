@@ -1,0 +1,2460 @@
+{
+  "etfs": [
+    {
+      "code": "159206",
+      "exchange": "SZ",
+      "name": "卫星ETF",
+      "source_path": "etf/159206_卫星ETF.csv",
+      "enabled": 1,
+      "sort_order": 0
+    },
+    {
+      "code": "159381",
+      "exchange": "SZ",
+      "name": "创业板人工智能ETF",
+      "source_path": "etf/159381_创业板人工智能ETF.csv",
+      "enabled": 0,
+      "sort_order": 1
+    },
+    {
+      "code": "159638",
+      "exchange": "SZ",
+      "name": "高端装备ETF",
+      "source_path": "etf/159638_高端装备ETF.csv",
+      "enabled": 1,
+      "sort_order": 2
+    },
+    {
+      "code": "159869",
+      "exchange": "SZ",
+      "name": "游戏ETF",
+      "source_path": "etf/159869_游戏ETF.csv",
+      "enabled": 1,
+      "sort_order": 3
+    },
+    {
+      "code": "159915",
+      "exchange": "SZ",
+      "name": "创业板ETF",
+      "source_path": "etf/159915_创业板ETF.csv",
+      "enabled": 1,
+      "sort_order": 4
+    },
+    {
+      "code": "159929",
+      "exchange": "SZ",
+      "name": "医药ETF",
+      "source_path": "etf/159929_医药ETF.csv",
+      "enabled": 0,
+      "sort_order": 5
+    },
+    {
+      "code": "510050",
+      "exchange": "SH",
+      "name": "上证50ETF",
+      "source_path": "etf/510050_上证50ETF.csv",
+      "enabled": 1,
+      "sort_order": 6
+    },
+    {
+      "code": "510150",
+      "exchange": "SH",
+      "name": "消费ETF",
+      "source_path": "etf/510150_消费ETF.csv",
+      "enabled": 1,
+      "sort_order": 7
+    },
+    {
+      "code": "510300",
+      "exchange": "SH",
+      "name": "沪深300ETF",
+      "source_path": "etf/510300_沪深300ETF.csv",
+      "enabled": 1,
+      "sort_order": 8
+    },
+    {
+      "code": "510660",
+      "exchange": "SH",
+      "name": "创新药ETF",
+      "source_path": "etf/510660_创新药ETF.csv",
+      "enabled": 1,
+      "sort_order": 9
+    },
+    {
+      "code": "512010",
+      "exchange": "SH",
+      "name": "医药ETF",
+      "source_path": "etf/512010_医药ETF.csv",
+      "enabled": 0,
+      "sort_order": 10
+    },
+    {
+      "code": "512400",
+      "exchange": "SH",
+      "name": "有色ETF",
+      "source_path": "etf/512400_有色ETF.csv",
+      "enabled": 1,
+      "sort_order": 11
+    },
+    {
+      "code": "512480",
+      "exchange": "SH",
+      "name": "半导体ETF",
+      "source_path": "etf/512480_半导体ETF.csv",
+      "enabled": 1,
+      "sort_order": 12
+    },
+    {
+      "code": "512660",
+      "exchange": "SH",
+      "name": "军工ETF",
+      "source_path": "etf/512660_军工ETF.csv",
+      "enabled": 0,
+      "sort_order": 13
+    },
+    {
+      "code": "512690",
+      "exchange": "SH",
+      "name": "白酒ETF",
+      "source_path": "etf/512690_白酒ETF.csv",
+      "enabled": 1,
+      "sort_order": 14
+    },
+    {
+      "code": "512800",
+      "exchange": "SH",
+      "name": "银行ETF",
+      "source_path": "etf/512800_银行ETF.csv",
+      "enabled": 1,
+      "sort_order": 15
+    },
+    {
+      "code": "512880",
+      "exchange": "SH",
+      "name": "证券ETF",
+      "source_path": "etf/512880_证券ETF.csv",
+      "enabled": 1,
+      "sort_order": 16
+    },
+    {
+      "code": "512980",
+      "exchange": "SH",
+      "name": "传媒ETF",
+      "source_path": "etf/512980_传媒ETF.csv",
+      "enabled": 1,
+      "sort_order": 17
+    },
+    {
+      "code": "515030",
+      "exchange": "SH",
+      "name": "新能源车ETF",
+      "source_path": "etf/515030_新能源车ETF.csv",
+      "enabled": 1,
+      "sort_order": 18
+    },
+    {
+      "code": "515220",
+      "exchange": "SH",
+      "name": "煤炭ETF",
+      "source_path": "etf/515220_煤炭ETF.csv",
+      "enabled": 1,
+      "sort_order": 19
+    },
+    {
+      "code": "515230",
+      "exchange": "SH",
+      "name": "软件ETF",
+      "source_path": "etf/515230_软件ETF.csv",
+      "enabled": 1,
+      "sort_order": 20
+    },
+    {
+      "code": "515880",
+      "exchange": "SH",
+      "name": "通信ETF",
+      "source_path": "etf/515880_通信ETF.csv",
+      "enabled": 1,
+      "sort_order": 21
+    },
+    {
+      "code": "516160",
+      "exchange": "SH",
+      "name": "新能源ETF",
+      "source_path": "etf/516160_新能源ETF.csv",
+      "enabled": 0,
+      "sort_order": 22
+    },
+    {
+      "code": "516290",
+      "exchange": "SH",
+      "name": "光伏ETF",
+      "source_path": "etf/516290_光伏ETF.csv",
+      "enabled": 1,
+      "sort_order": 23
+    },
+    {
+      "code": "561380",
+      "exchange": "SH",
+      "name": "电网设备ETF",
+      "source_path": "etf/561380_电网设备ETF.csv",
+      "enabled": 1,
+      "sort_order": 24
+    },
+    {
+      "code": "562500",
+      "exchange": "SH",
+      "name": "机器人ETF",
+      "source_path": "etf/562500_机器人ETF.csv",
+      "enabled": 1,
+      "sort_order": 25
+    },
+    {
+      "code": "563300",
+      "exchange": "SH",
+      "name": "中证2000ETF",
+      "source_path": "etf/563300_中证2000ETF.csv",
+      "enabled": 1,
+      "sort_order": 26
+    },
+    {
+      "code": "588710",
+      "exchange": "SH",
+      "name": "科创半导体设备ETF",
+      "source_path": "etf/588710_科创半导体设备ETF.csv",
+      "enabled": 1,
+      "sort_order": 27
+    }
+  ],
+  "mappings": [
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "互联网服务",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "软件开发",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "证券",
+      "etf_code": "512880"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "酿酒行业",
+      "etf_code": "512690"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "电池",
+      "etf_code": "516160"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "半导体",
+      "etf_code": "512480"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "银行",
+      "etf_code": "512800"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "光伏设备",
+      "etf_code": "516290"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "通信设备",
+      "etf_code": "515880"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "医药商业",
+      "etf_code": "159929"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "医疗器械",
+      "etf_code": "159929"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "化学制药",
+      "etf_code": "159929"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "中药",
+      "etf_code": "159929"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "医疗服务",
+      "etf_code": "510660"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "生物制品",
+      "etf_code": "510660"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "游戏",
+      "etf_code": "159869"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "文化传媒",
+      "etf_code": "512980"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "航天航空",
+      "etf_code": "512660"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "船舶制造",
+      "etf_code": "512660"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "风电设备",
+      "etf_code": "516160"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "电网设备",
+      "etf_code": "561380"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "汽车整车",
+      "etf_code": "515030"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "汽车零部件",
+      "etf_code": "515030"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "能源金属",
+      "etf_code": "512400"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "小金属",
+      "etf_code": "512400"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "贵金属",
+      "etf_code": "512400"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "有色金属",
+      "etf_code": "512400"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "煤炭行业",
+      "etf_code": "515220"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "石油行业",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "电力行业",
+      "etf_code": "561380"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "公用事业",
+      "etf_code": "561380"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "燃气",
+      "etf_code": "561380"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "水泥建材",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "房地产",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "工程建设",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "装修装饰",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "家电行业",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "旅游酒店",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "食品饮料",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "商业百货",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "农牧饲渔",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "猪肉概念",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "鸡肉概念",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "机器人",
+      "etf_code": "562500"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "人工智能",
+      "etf_code": "159381"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "算力概念",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "数据要素",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "云计算",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "区块链",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "数字货币",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "网络安全",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "物联网",
+      "etf_code": "515880"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "5G概念",
+      "etf_code": "515880"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "光通信模块",
+      "etf_code": "515880"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "CPO概念",
+      "etf_code": "515880"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "ChatGPT概念",
+      "etf_code": "159381"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "AIGC概念",
+      "etf_code": "159381"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "元宇宙概念",
+      "etf_code": "159869"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "虚拟现实",
+      "etf_code": "159869"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "增强现实",
+      "etf_code": "159869"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "半导体概念",
+      "etf_code": "512480"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "芯片概念",
+      "etf_code": "512480"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "汽车芯片",
+      "etf_code": "512480"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "存储芯片",
+      "etf_code": "512480"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "国产芯片",
+      "etf_code": "512480"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "EDA概念",
+      "etf_code": "588710"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "光刻机",
+      "etf_code": "588710"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "中芯概念",
+      "etf_code": "588710"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "固态电池",
+      "etf_code": "516160"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "钠离子电池",
+      "etf_code": "516160"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "锂电池",
+      "etf_code": "516160"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "储能",
+      "etf_code": "516160"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "氢能源",
+      "etf_code": "516160"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "充电桩",
+      "etf_code": "516160"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "特高压",
+      "etf_code": "561380"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "智能电网",
+      "etf_code": "561380"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "虚拟电厂",
+      "etf_code": "561380"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "核能核电",
+      "etf_code": "561380"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "超导概念",
+      "etf_code": "561380"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "新能源车",
+      "etf_code": "515030"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "无人驾驶",
+      "etf_code": "515030"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "特斯拉",
+      "etf_code": "515030"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "比亚迪概念",
+      "etf_code": "515030"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "北斗导航",
+      "etf_code": "159206"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "航天概念",
+      "etf_code": "159206"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "大飞机",
+      "etf_code": "512660"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "军民融合",
+      "etf_code": "512660"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "航母概念",
+      "etf_code": "512660"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "国产航母",
+      "etf_code": "512660"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "军工",
+      "etf_code": "512660"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "无人机",
+      "etf_code": "512660"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "人形机器人",
+      "etf_code": "562500"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "工业母机",
+      "etf_code": "159638"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "高端装备",
+      "etf_code": "159638"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "海工装备",
+      "etf_code": "159638"
+    },
+    {
+      "flow_type": "ind_dc",
+      "sector_name": "海洋经济",
+      "etf_code": "159638"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "证券",
+      "etf_code": "512880"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "银行",
+      "etf_code": "512800"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "保险",
+      "etf_code": "512800"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "多元金融",
+      "etf_code": "512880"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "白酒",
+      "etf_code": "512690"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "食品饮料",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "商业百货",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "旅游酒店",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "家电行业",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "农牧饲渔",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "养殖业",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "农产品加工",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "食品加工",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "饮料制造",
+      "etf_code": "512690"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "美容护理",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "医药商业",
+      "etf_code": "159929"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "医疗器械",
+      "etf_code": "159929"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "化学制药",
+      "etf_code": "159929"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "中药",
+      "etf_code": "159929"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "医疗服务",
+      "etf_code": "510660"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "生物制品",
+      "etf_code": "510660"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "医药生物",
+      "etf_code": "159929"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "生物医药",
+      "etf_code": "510660"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "半导体",
+      "etf_code": "512480"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "半导体及元件",
+      "etf_code": "512480"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "电子化学品",
+      "etf_code": "512480"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "消费电子",
+      "etf_code": "512480"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "光学光电子",
+      "etf_code": "512480"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "其他电子",
+      "etf_code": "512480"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "软件开发",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "计算机应用",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "计算机设备",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "IT服务",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "互联网服务",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "互联网电商",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "通信服务",
+      "etf_code": "515880"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "通信设备",
+      "etf_code": "515880"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "通信",
+      "etf_code": "515880"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "游戏",
+      "etf_code": "159869"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "文化传媒",
+      "etf_code": "512980"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "传媒",
+      "etf_code": "512980"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "互联网传媒",
+      "etf_code": "512980"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "广告传媒",
+      "etf_code": "512980"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "国防军工",
+      "etf_code": "512660"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "航天航空",
+      "etf_code": "512660"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "航天装备",
+      "etf_code": "512660"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "航空装备",
+      "etf_code": "512660"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "船舶制造",
+      "etf_code": "512660"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "地面兵装",
+      "etf_code": "512660"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "军工装备",
+      "etf_code": "512660"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "能源金属",
+      "etf_code": "512400"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "小金属",
+      "etf_code": "512400"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "贵金属",
+      "etf_code": "512400"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "有色金属",
+      "etf_code": "512400"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "工业金属",
+      "etf_code": "512400"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "金属新材料",
+      "etf_code": "512400"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "黄金",
+      "etf_code": "512400"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "稀土",
+      "etf_code": "512400"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "钢铁",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "石油加工贸易",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "石油开采",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "油气开采",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "油气",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "化学原料",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "化学制品",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "化学纤维",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "化工合成材料",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "基础化学",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "化工",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "煤炭开采加工",
+      "etf_code": "515220"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "煤炭开采",
+      "etf_code": "515220"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "煤炭行业",
+      "etf_code": "515220"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "煤炭",
+      "etf_code": "515220"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "石油行业",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "燃气",
+      "etf_code": "561380"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "石油",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "电池",
+      "etf_code": "516160"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "风电设备",
+      "etf_code": "516160"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "电力设备",
+      "etf_code": "516160"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "光伏设备",
+      "etf_code": "516290"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "光伏",
+      "etf_code": "516290"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "新能源",
+      "etf_code": "516160"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "新能源车",
+      "etf_code": "515030"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "新能源汽车",
+      "etf_code": "515030"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "汽车整车",
+      "etf_code": "515030"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "汽车零部件",
+      "etf_code": "515030"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "汽车服务",
+      "etf_code": "515030"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "汽车",
+      "etf_code": "515030"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "电力",
+      "etf_code": "561380"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "电力行业",
+      "etf_code": "561380"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "电网设备",
+      "etf_code": "561380"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "公用事业",
+      "etf_code": "561380"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "环保",
+      "etf_code": "516160"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "环境治理",
+      "etf_code": "516160"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "房地产",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "房地产开发",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "工程建设",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "建筑装饰",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "建筑材料",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "水泥建材",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "装修装饰",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "装修建材",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "港口航运",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "港口",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "航运",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "公路铁路运输",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "公路运输",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "铁路运输",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "物流",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "交运",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "交通运输",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "机场航运",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "机场",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "航空",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "水上运输",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "贸易",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "零售",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "综合",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "自动化设备",
+      "etf_code": "562500"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "机器人",
+      "etf_code": "562500"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "人工智能",
+      "etf_code": "159381"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "仪器仪表",
+      "etf_code": "562500"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "通用设备",
+      "etf_code": "159638"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "专用设备",
+      "etf_code": "159638"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "高端装备",
+      "etf_code": "159638"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "工业母机",
+      "etf_code": "159638"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "海工装备",
+      "etf_code": "159638"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "海洋装备",
+      "etf_code": "159638"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "工程机械",
+      "etf_code": "159638"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "航天",
+      "etf_code": "159206"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "卫星",
+      "etf_code": "159206"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "北斗",
+      "etf_code": "159206"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "农业",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "种植业",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "林业",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "渔业",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "饲料",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "造纸",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "包装印刷",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "纺织",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "纺织制造",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "服装",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "服装家纺",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "家用轻工",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "轻工制造",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "其他轻工",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "家居",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "家用电器",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "白色家电",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "黑色家电",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "厨卫电器",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "小家电",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "电机",
+      "etf_code": "561380"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "仪表",
+      "etf_code": "562500"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "非汽车交运",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "交运设备",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "其他社会服务",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "教育",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "休闲服务",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "酒店餐饮",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "ind_ths",
+      "sector_name": "景点旅游",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "半导体",
+      "etf_code": "512480"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "芯片",
+      "etf_code": "512480"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "集成电路",
+      "etf_code": "512480"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "第三代半导体",
+      "etf_code": "512480"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "汽车芯片",
+      "etf_code": "512480"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "存储芯片",
+      "etf_code": "512480"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "国产芯片",
+      "etf_code": "512480"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "Chiplet概念",
+      "etf_code": "512480"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "封测概念",
+      "etf_code": "512480"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "HBM概念",
+      "etf_code": "512480"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "半导体概念",
+      "etf_code": "512480"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "光刻机",
+      "etf_code": "588710"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "光刻胶",
+      "etf_code": "588710"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "EDA概念",
+      "etf_code": "588710"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "中芯概念",
+      "etf_code": "588710"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "设备更新",
+      "etf_code": "588710"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "软件开发",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "信创",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "数据要素",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "云计算",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "大数据",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "网络安全",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "数字货币",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "区块链",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "国产软件",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "互联网服务",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "算力租赁",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "智慧政务",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "华为昇腾",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "华为欧拉",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "华为鲲鹏",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "华为概念",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "鸿蒙概念",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "操作系统",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "东数西算",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "液冷服务器",
+      "etf_code": "515230"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "5G",
+      "etf_code": "515880"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "5G概念",
+      "etf_code": "515880"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "光通信",
+      "etf_code": "515880"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "CPO概念",
+      "etf_code": "515880"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "算力概念",
+      "etf_code": "515880"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "6G概念",
+      "etf_code": "515880"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "通信设备",
+      "etf_code": "515880"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "卫星导航",
+      "etf_code": "515880"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "北斗导航",
+      "etf_code": "159206"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "商业航天",
+      "etf_code": "159206"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "航天概念",
+      "etf_code": "159206"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "卫星互联网",
+      "etf_code": "159206"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "网络游戏",
+      "etf_code": "159869"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "手游",
+      "etf_code": "159869"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "云游戏",
+      "etf_code": "159869"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "元宇宙",
+      "etf_code": "159869"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "虚拟现实",
+      "etf_code": "159869"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "增强现实",
+      "etf_code": "159869"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "短剧互动游戏",
+      "etf_code": "159869"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "文化传媒",
+      "etf_code": "512980"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "传媒",
+      "etf_code": "512980"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "影视院线",
+      "etf_code": "512980"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "动漫游戏",
+      "etf_code": "159869"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "人工智能",
+      "etf_code": "159381"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "AIGC概念",
+      "etf_code": "159381"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "ChatGPT概念",
+      "etf_code": "159381"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "大模型",
+      "etf_code": "159381"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "人形机器人",
+      "etf_code": "562500"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "机器人概念",
+      "etf_code": "562500"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "减速器",
+      "etf_code": "562500"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "工业母机",
+      "etf_code": "159638"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "高端装备",
+      "etf_code": "159638"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "海工装备",
+      "etf_code": "159638"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "海洋经济",
+      "etf_code": "159638"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "智能制造",
+      "etf_code": "159638"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "锂电池",
+      "etf_code": "516160"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "钠离子电池",
+      "etf_code": "516160"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "固态电池",
+      "etf_code": "516160"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "储能",
+      "etf_code": "516160"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "氢能源",
+      "etf_code": "516160"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "燃料电池",
+      "etf_code": "516160"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "充电桩",
+      "etf_code": "516160"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "风电",
+      "etf_code": "516160"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "风电设备",
+      "etf_code": "516160"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "光伏",
+      "etf_code": "516290"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "光伏设备",
+      "etf_code": "516290"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "光伏概念",
+      "etf_code": "516290"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "TOPCon电池",
+      "etf_code": "516290"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "钙钛矿电池",
+      "etf_code": "516290"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "HJT电池",
+      "etf_code": "516290"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "特高压",
+      "etf_code": "561380"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "智能电网",
+      "etf_code": "561380"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "虚拟电厂",
+      "etf_code": "561380"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "核能核电",
+      "etf_code": "561380"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "超导概念",
+      "etf_code": "561380"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "电网设备",
+      "etf_code": "561380"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "电力物联网",
+      "etf_code": "561380"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "碳中和",
+      "etf_code": "516160"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "新能源车",
+      "etf_code": "515030"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "新能源汽车",
+      "etf_code": "515030"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "特斯拉",
+      "etf_code": "515030"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "比亚迪概念",
+      "etf_code": "515030"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "无人驾驶",
+      "etf_code": "515030"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "一体化压铸",
+      "etf_code": "515030"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "汽车整车",
+      "etf_code": "515030"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "汽车零部件",
+      "etf_code": "515030"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "智能汽车",
+      "etf_code": "515030"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "低空经济",
+      "etf_code": "515030"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "飞行汽车",
+      "etf_code": "515030"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "汽车热管理",
+      "etf_code": "515030"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "军工",
+      "etf_code": "512660"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "国防军工",
+      "etf_code": "512660"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "大飞机",
+      "etf_code": "512660"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "无人机",
+      "etf_code": "512660"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "军民融合",
+      "etf_code": "512660"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "航母概念",
+      "etf_code": "512660"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "军工信息化",
+      "etf_code": "512660"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "军工电子",
+      "etf_code": "512660"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "航空发动机",
+      "etf_code": "512660"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "黄金概念",
+      "etf_code": "512400"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "贵金属",
+      "etf_code": "512400"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "稀土永磁",
+      "etf_code": "512400"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "小金属",
+      "etf_code": "512400"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "有色金属",
+      "etf_code": "512400"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "锂矿",
+      "etf_code": "512400"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "钴",
+      "etf_code": "512400"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "镍",
+      "etf_code": "512400"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "能源金属",
+      "etf_code": "512400"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "固态电池概念",
+      "etf_code": "512400"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "稀缺资源",
+      "etf_code": "512400"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "煤炭概念",
+      "etf_code": "515220"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "煤炭",
+      "etf_code": "515220"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "煤化工",
+      "etf_code": "515220"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "焦炭",
+      "etf_code": "515220"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "创新药",
+      "etf_code": "510660"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "医药",
+      "etf_code": "159929"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "医药商业",
+      "etf_code": "159929"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "化学制药",
+      "etf_code": "159929"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "医疗器械",
+      "etf_code": "159929"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "中药",
+      "etf_code": "159929"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "医疗服务",
+      "etf_code": "510660"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "生物医药",
+      "etf_code": "510660"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "生物制品",
+      "etf_code": "510660"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "DRG/DIP",
+      "etf_code": "159929"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "减肥药",
+      "etf_code": "510660"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "CRO概念",
+      "etf_code": "510660"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "仿制药",
+      "etf_code": "159929"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "证券",
+      "etf_code": "512880"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "券商概念",
+      "etf_code": "512880"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "互联网金融",
+      "etf_code": "512880"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "多元金融",
+      "etf_code": "512880"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "银行",
+      "etf_code": "512800"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "保险",
+      "etf_code": "512800"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "白酒",
+      "etf_code": "512690"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "酿酒",
+      "etf_code": "512690"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "饮料制造",
+      "etf_code": "512690"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "啤酒概念",
+      "etf_code": "512690"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "食品",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "乳业",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "猪肉概念",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "鸡肉概念",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "预制菜",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "免税概念",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "旅游酒店",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "旅游概念",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "餐饮",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "农业",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "农牧饲渔",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "大消费",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "家电",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "零售",
+      "etf_code": "510150"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "电商",
+      "etf_code": "512980"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "网红经济",
+      "etf_code": "512980"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "房地产",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "工程建设",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "水泥建材",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "建筑材料",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "基建",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "中字头",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "国企改革",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "石油行业",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "油气开采",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "化工",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "钢铁",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "航运概念",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "港口航运",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "物流",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "一带一路",
+      "etf_code": "510300"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "电力",
+      "etf_code": "561380"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "公用事业",
+      "etf_code": "561380"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "燃气",
+      "etf_code": "561380"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "水务",
+      "etf_code": "561380"
+    },
+    {
+      "flow_type": "cnt_ths",
+      "sector_name": "绿色电力",
+      "etf_code": "516160"
+    }
+  ]
+}

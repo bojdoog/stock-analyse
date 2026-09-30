@@ -53,6 +53,11 @@ class MarketStorageTest(unittest.TestCase):
         with connect(TestConfig.DATABASE_PATH) as db:
             for name, content in self.sources.items():
                 import_content(db, name, content)
+            from etf_catalog import apply_snapshot
+            apply_snapshot(db, {'etfs': [dict(code='512800', exchange='SH', name='bankETF',
+                source_path='etf/512800_bankETF.csv', enabled=1, sort_order=0)],
+                'mappings': [dict(flow_type='ind_dc', sector_name='bank', etf_code='512800')]})
+            db.commit()
 
     def tearDown(self):
         self.temp.cleanup()
