@@ -1,0 +1,50 @@
+[
+  {
+    "name": "??????",
+    "api": "idx_mins",
+    "params": {
+      "ts_code": "801150.SI",
+      "freq": "1min",
+      "start_date": "2026-10-09 09:30:00",
+      "end_date": "2026-10-09 09:35:00",
+      "limit": 20
+    },
+    "error": "[upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=697d687332f64e0391bd217e8c8d28a6"
+  },
+  {
+    "name": "??????",
+    "api": "idx_mins",
+    "params": {
+      "ts_code": "801030.SI",
+      "freq": "1min",
+      "start_date": "2026-10-09 09:30:00",
+      "end_date": "2026-10-09 09:35:00",
+      "limit": 20
+    },
+    "error": "[upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=8cd3ab7b832b4f6c8df3e1871e193f2e"
+  },
+  {
+    "name": "???????",
+    "api": "idx_mins",
+    "params": {
+      "ts_code": "881101.TI",
+      "freq": "1min",
+      "start_date": "2026-10-09 09:30:00",
+      "end_date": "2026-10-09 09:35:00",
+      "limit": 20
+    },
+    "error": "[upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=5a9b226e2da64699b5ab968d39e45280"
+  },
+  {
+    "name": "??????",
+    "api": "idx_mins",
+    "params": {
+      "ts_code": "000001.SH",
+      "freq": "1min",
+      "start_date": "2026-10-09 09:30:00",
+      "end_date": "2026-10-09 09:35:00",
+      "limit": 20
+    },
+    "error": "[upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=86559ee11d394d7f8ae35291151fdfcc"
+  }
+]

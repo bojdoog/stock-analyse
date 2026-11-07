@@ -18,6 +18,10 @@ try:
     from .download_amv_research import query, redact
 except ImportError:
     from download_amv_research import query, redact
+try:
+    from .trading_date import default_end_date
+except ImportError:
+    from trading_date import default_end_date
 from market_store import connect, file_content, save_dataframe
 from research_storage import archive_file, read_file
 
@@ -112,7 +116,7 @@ def update(end):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--end', required=True, help='Last trading date, YYYYMMDD')
+    parser.add_argument('--end', default=default_end_date(), help='Last trading date, YYYYMMDD (default: 15:00 rule)')
     args = parser.parse_args()
     try:
         update(args.end)

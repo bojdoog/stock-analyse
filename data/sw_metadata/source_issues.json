@@ -1,0 +1,36 @@
+{
+  "sw_mins": {
+    "params": {
+      "ts_code": "801010.SI",
+      "freq": "1min",
+      "start_date": "2026-09-30 09:30:00",
+      "end_date": "2026-09-30 09:35:00",
+      "limit": 10
+    },
+    "code": 503,
+    "error": "upstream_pool_exhausted",
+    "batch_skipped": true
+  },
+  "index_member_all": {
+    "params": {
+      "l1_code": "801230.SI",
+      "is_new": "Y",
+      "limit": 20000
+    },
+    "methods_tested": [
+      "SDK POST",
+      "legacy GET"
+    ],
+    "returned_rows": 3000,
+    "returned_l1_codes": 31,
+    "expected_l1_codes": [
+      "801230.SI"
+    ],
+    "status": "filter ignored; cannot establish complete membership"
+  },
+  "sw_daily": {
+    "annual_response_missing_fields": true,
+    "single_day_repair_works_but_intermittent_503": true
+  },
+  "requested_flow_formula": "sum(buy_lg_amount + buy_elg_amount - sell_lg_amount - sell_elg_amount) by point-in-time SW membership"
+}

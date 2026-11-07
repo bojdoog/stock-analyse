@@ -21,6 +21,11 @@ try:
 except ImportError:
     from storage_sqlite import save_dataframe, refresh_index, list_files, initialize, read_frame, has_file
 
+try:
+    from .trading_date import default_end_date
+except ImportError:
+    from trading_date import default_end_date
+
 import pandas as pd
 import tushare as ts
 
@@ -61,7 +66,7 @@ def main():
     # 参数
     code = sys.argv[1] if len(sys.argv) >= 2 else "000001"
     start = sys.argv[2] if len(sys.argv) >= 3 else START_DEFAULT
-    end = dt.date.today().strftime("%Y%m%d")
+    end = default_end_date()
 
     # 初始化 Tushare
     os.environ["NO_PROXY"] = "api.waditu.com,.waditu.com,waditu.com"

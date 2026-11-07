@@ -1,0 +1,206 @@
+{
+  "start": "20240910",
+  "end": "20261009",
+  "initial_missing": 91,
+  "remaining": 0,
+  "batch_errors": [],
+  "rounds": [
+    {
+      "round": 1,
+      "requested": 91,
+      "recovered": 79,
+      "remaining": 12
+    },
+    {
+      "round": 2,
+      "requested": 12,
+      "recovered": 7,
+      "remaining": 5
+    },
+    {
+      "round": 3,
+      "requested": 5,
+      "recovered": 0,
+      "remaining": 5
+    },
+    {
+      "round": 4,
+      "requested": 5,
+      "recovered": 0,
+      "remaining": 5
+    },
+    {
+      "round": 5,
+      "requested": 5,
+      "recovered": 0,
+      "remaining": 5
+    }
+  ],
+  "pending": [],
+  "daily_export": {
+    "files": 500,
+    "rows": 15500
+  },
+  "results": [
+    {
+      "code": "801230.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801040.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801160.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801050.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801130.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801790.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801770.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801730.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801170.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801080.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801950.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801980.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801890.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801970.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801200.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801140.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801780.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801710.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801180.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801150.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801750.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801010.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801210.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801030.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801880.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801110.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801740.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801120.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801720.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801760.SI",
+      "status": "ok",
+      "missing_dates": []
+    },
+    {
+      "code": "801960.SI",
+      "status": "ok",
+      "missing_dates": []
+    }
+  ],
+  "manual_followup": {
+    "recovered": 5,
+    "remaining": 0,
+    "details": "sw_metadata/manual_five_probe.json"
+  }
+}

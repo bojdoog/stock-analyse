@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { init, ECharts } from 'echarts';
-import { BacktestResult, BacktestTrade, KLineData, RankingMethod } from '../utils/backtest';
+import { BacktestResult, BacktestTrade, KLineData, RankingMethod, isSectorVolumeRanking } from '../utils/backtest';
 
 interface BacktestChartProps {
   result: BacktestResult;
@@ -409,11 +409,21 @@ const BacktestChart: React.FC<BacktestChartProps> = ({ result, year, amvData = [
                             </>
                           );
                         })()}
-                        {rankingMethod === 'etf_blend20' && t.type === 'bull' && <>
+                        {(rankingMethod === 'etf_blend20' || isSectorVolumeRanking(rankingMethod)) && t.type === 'bull' && <>
                           <span title="启动日收盘价相对20个交易日前收盘价的涨幅" style={{ color: '#999', marginLeft: 8 }}>20日涨幅</span>
                           <span style={{ color: h.entry_20d_change == null ? '#999' : h.entry_20d_change >= 0 ? '#c41e3a' : '#006400' }}>
                             {h.entry_20d_change == null ? '—' : `${h.entry_20d_change >= 0 ? '+' : ''}${h.entry_20d_change.toFixed(2)}%`}
                           </span>
+                        </>}
+                        {isSectorVolumeRanking(rankingMethod) && t.type === 'bull' && <>
+                          <span style={{ color: '#999', marginLeft: 8 }}>板块放量 </span>
+                          <span title="对应行业合计成交量÷此前20交易日平均成交量；缺少映射时量能采用中性分">
+                            {h.entry_sector_volume_ratio == null ? '—' : `${h.entry_sector_volume_ratio.toFixed(2)}倍`}
+                          </span>
+                          {rankingMethod === 'etf_sector_40203010' && <>
+                            <span style={{ color: '#999', marginLeft: 8 }}>成交占比 </span>
+                            <span>{h.entry_sector_amount_share == null ? '—' : `${(h.entry_sector_amount_share * 100).toFixed(2)}%`}</span>
+                          </>}
                         </>}
                         <span style={{ color: '#999', marginLeft: 8 }}>区间收益</span>
                         <span style={{ color: h.holding_return >= 0 ? '#c41e3a' : '#006400' }}>

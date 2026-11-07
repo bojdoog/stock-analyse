@@ -1,0 +1,25 @@
+{
+  "code": "AMV_SW_EMA20",
+  "rows": 500,
+  "last_date": "2026-10-09",
+  "scale": 8.668600252204838,
+  "industries": 31,
+  "days_with_carried_contributions": 0,
+  "missing_industry_days": 0,
+  "metrics": {
+    "train": {
+      "rows": 133,
+      "mape_pct": 3.8193064901263174
+    },
+    "validation": {
+      "rows": 126,
+      "mape_pct": 1.9985449135878137
+    },
+    "test": {
+      "rows": 182,
+      "mape_pct": 4.181800514235653
+    }
+  },
+  "synthetic_ohlc": true,
+  "volume_amount": "sum of available SW industry bars; shares/yuan"
+}

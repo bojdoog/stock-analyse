@@ -1,0 +1,18 @@
+{
+  "request": {
+    "tool": "daily_info",
+    "arguments": {
+      "trade_date": "20261028"
+    }
+  },
+  "retrieved_at": "2026-10-27T16:26:21.003472+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[]"
+      }
+    ]
+  },
+  "rows": []
+}

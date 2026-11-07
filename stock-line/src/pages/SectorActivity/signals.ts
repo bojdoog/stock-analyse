@@ -48,6 +48,7 @@ export function calculateSignals(points: SignalPoint[], params: SignalParams) {
     const twoDays = twoAgo?.amv > 0 ? (point.amv / twoAgo.amv - 1) * 100 : null;
     let event: 'start' | 'exit' | null = null;
     let reason = '';
+    let startBars = 0;
     if (bull) {
       belowDays = point.ma10 != null && point.amv < point.ma10 ? belowDays + 1 : 0;
       const drop = day != null && day <= -params.exitDrop;
@@ -63,8 +64,9 @@ export function calculateSignals(points: SignalPoint[], params: SignalParams) {
       && (!params.requireQuantity || (point.quantity_change != null && point.quantity_change > 0))) {
       bull = true;
       event = 'start';
+      startBars = day != null && day >= params.startDay ? 1 : 2;
       reason = day != null && day >= params.startDay ? '单日涨幅达到启动阈值' : '两日累计涨幅达到启动阈值';
     }
-    return { date: point.date, bull, zoneBull: bull || event === 'exit', event, reason };
+    return { date: point.date, bull, zoneBull: bull || event === 'exit', event, reason, startBars };
   });
 }

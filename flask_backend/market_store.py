@@ -10,6 +10,7 @@ import json
 import math
 import os
 import sqlite3
+import time
 from collections import Counter
 from contextlib import contextmanager
 from datetime import datetime
@@ -114,6 +115,7 @@ def ensure_schema(db):
             PRIMARY KEY(category,exchange,code,date)
         );
         CREATE INDEX IF NOT EXISTS daily_bars_date ON daily_bars(date,category,code);
+        CREATE INDEX IF NOT EXISTS daily_bars_code ON daily_bars(category,code,date);
         CREATE INDEX IF NOT EXISTS daily_bars_source ON daily_bars(source_path);
         CREATE TABLE IF NOT EXISTS indicator_daily (
             indicator_id INTEGER NOT NULL REFERENCES indicators(id), date TEXT NOT NULL,
@@ -135,6 +137,8 @@ def ensure_schema(db):
         db.execute(f'CREATE INDEX IF NOT EXISTS {table}_sector ON {table}(sector_key,date)')
     from intraday_store import ensure_schema as intraday_schema
     intraday_schema(db)
+    from etf_intraday import ensure_schema as etf_intraday_schema
+    etf_intraday_schema(db)
     from etf_catalog import ensure_schema as catalog_schema
     catalog_schema(db)
     seed_indicator(db)
@@ -206,16 +210,31 @@ def number(value):
 
 def date_string(value):
     value = str(value).strip()
+    # 高频路径：直接切片拼接，避免每行都走 strptime（整轮抓取会调用上百万次）。
     if len(value) == 8 and value.isdigit():
-        return datetime.strptime(value, '%Y%m%d').strftime('%Y-%m-%d')
+        return f'{value[:4]}-{value[4:6]}-{value[6:]}'
+    if len(value) >= 10 and value[4] == '-' and value[7] == '-':
+        return value[:10]
     return datetime.strptime(value[:10], '%Y-%m-%d').strftime('%Y-%m-%d')
+
+
+def exchange_for(category, code):
+    """代码所属交易所；与导入时的 instrument_identity 保持一致。
+
+    daily_bars 主键是 (category,exchange,code,date)，查询时带上 exchange
+    才能命中主键前缀，否则 MySQL 会退化成大范围扫描。
+    """
+    if category == 'sw_index':
+        return 'SI'
+    return ('BJ' if category == 'stock' and code.startswith(('4', '8', '92')) else
+            'SH' if category == 'index' or code.startswith(('5', '6', '9')) else 'SZ')
 
 
 def instrument_identity(category, filename):
     code, _, name = Path(filename).stem.partition('_')
-    exchange = ('BJ' if category == 'stock' and code.startswith(('4', '8', '92')) else
-                'SH' if category == 'index' or code.startswith(('5', '6', '9')) else 'SZ')
-    return category, exchange, code, name or code
+    if category == 'sw_index':
+        return category, 'SI', code.removesuffix('.SI'), name or code
+    return category, exchange_for(category, code), code, name or code
 
 
 @contextmanager
@@ -232,13 +251,31 @@ def writer_guard(db):
             db.execute("SELECT RELEASE_LOCK(CONCAT('market:', DATABASE()))")
 
 
-def import_content(db, relative_path, content, pending=False):
+@contextmanager
+def _transaction(db, commit=True):
+    """commit=False 时复用外层事务，让批量入库只提交一次。"""
+    if commit:
+        with db:
+            yield
+    else:
+        yield
+
+
+def _chunks(items, size=400):
+    for index in range(0, len(items), size):
+        yield items[index:index + size]
+
+
+def import_content(db, relative_path, content, pending=False, commit=True, previous=None, previous_rows=None):
     with writer_guard(db):
-        return _import_content(db, relative_path, content, pending)
+        return _import_content(db, relative_path, content, pending, commit, previous, previous_rows)
 
 
-def _import_content(db, relative_path, content, pending=False):
-    """Atomically replace one changed source snapshot; identical imports are no-ops."""
+def _import_content(db, relative_path, content, pending=False, commit=True, previous=None, previous_rows=None):
+    """Atomically replace one changed source snapshot; identical imports are no-ops.
+
+    previous / previous_rows 由调用方传入已有的旧快照（及其解析结果），避免重复读库与解析。
+    """
     relative_path = Path(relative_path).as_posix()
     parts = relative_path.split('/')
     intraday = len(parts) == 3 and parts[:2] == ['core_index', '0AMV-intraday'] and parts[-1].endswith('.csv')
@@ -246,7 +283,9 @@ def _import_content(db, relative_path, content, pending=False):
         raise ValueError(f'Expected category/filename: {relative_path}')
     category, filename = ('indicator_intraday', parts[-1]) if intraday else parts
     digest = hashlib.sha256(content).hexdigest()
-    previous = db.execute('SELECT sha256 FROM source_files WHERE path=?', (relative_path,)).fetchone()
+    if previous is None:
+        previous = db.execute('SELECT sha256, content FROM source_files WHERE path=?',
+                              (relative_path,)).fetchone()
     if previous and previous['sha256'] == digest:
         return False
     rows = csv_rows(content) if filename.endswith('.csv') else []
@@ -254,7 +293,7 @@ def _import_content(db, relative_path, content, pending=False):
     if filename.endswith('.csv'):
         if intraday:
             table = 'indicator_intraday'
-        elif category in ('stock', 'etf', 'index'):
+        elif category in ('stock', 'etf', 'index', 'sw_index', 'etf_hj'):
             table = 'daily_bars'
         elif category == 'core_index':
             table = 'indicator_daily'
@@ -270,7 +309,7 @@ def _import_content(db, relative_path, content, pending=False):
     if intraday:
         from intraday_store import records as intraday_records
         snapshots = intraday_records(rows, filename)
-    with db:
+    with _transaction(db, commit):
         if relative_path == 'catalog/etfs.json':
             from etf_catalog import apply_snapshot
             apply_snapshot(db, json.loads(decode(content)))
@@ -279,7 +318,7 @@ def _import_content(db, relative_path, content, pending=False):
             (relative_path, category, digest, content, len(rows), min(dates) if dates else None,
              max(dates) if dates else None, table),
             ('sha256','content','row_count','min_date','max_date','target_table'), 'imported_at')
-        if table:
+        if table and table != 'daily_bars':
             db.execute(f'DELETE FROM {table} WHERE source_path=?', (relative_path,))
         if table == 'indicator_intraday':
             indicator_id = db.execute('SELECT id FROM indicators WHERE code=?', ('0AMV',)).fetchone()[0]
@@ -290,9 +329,25 @@ def _import_content(db, relative_path, content, pending=False):
             upsert(db, 'instruments', ('category','exchange','code','name','source_path'),
                    ('category','exchange','code'), (cat, exchange, code, name, relative_path),
                    ('name','source_path'))
-            db.executemany('INSERT INTO daily_bars VALUES(?,?,?,?,?,?,?,?,?,?,?,?)', [
+            # 只重写本次变化/新增/删除的日期，避免把整段历史（数千行）删掉再插回。
+            changed_days = set(dates)
+            removed_days = []
+            if previous is not None:
+                old_by_day = {date_string(row['date']): row
+                              for row in (previous_rows or csv_rows(previous['content']))}
+                new_by_day = dict(zip(dates, rows))
+                changed_days = {day for day, row in new_by_day.items() if old_by_day.get(day) != row}
+                removed_days = [day for day in old_by_day if day not in new_by_day]
+            days = sorted(changed_days | set(removed_days))
+            for chunk in _chunks(days):
+                placeholders = ','.join('?' for _ in chunk)
+                db.execute(f'DELETE FROM daily_bars WHERE source_path=? AND date IN ({placeholders})',
+                           (relative_path, *chunk))
+            insert_rows = [
                 (cat, exchange, code, day, *(number(row.get(key)) for key in PRICE_FIELDS), relative_path, i)
-                for i, (day, row) in enumerate(zip(dates, rows))])
+                for i, (day, row) in enumerate(zip(dates, rows)) if day in changed_days]
+            if insert_rows:
+                db.executemany('INSERT INTO daily_bars VALUES(?,?,?,?,?,?,?,?,?,?,?,?)', insert_rows)
         elif table == 'indicator_daily':
             if filename == '0AMV-2013-2026.csv':
                 code = '0AMV'
@@ -301,7 +356,46 @@ def _import_content(db, relative_path, content, pending=False):
                 description = amv_ema20_description(
                     bool(rows) and all(row.get('open') not in (None, '') for row in rows))
                 upsert(db, 'indicators', ('code','name','source','description'), ('code',),
-                       (code, '活跃市值(反推EMA20)', '本地公式', description), ('description',), 'updated_at')
+                       (code, '活跃市值(THS反推EMA20)', '本地公式', description), ('name','description'), 'updated_at')
+            elif filename == 'candidate_amv_log_memory_close.csv':
+                code = 'AMV_THS_LOG_MEMORY'
+                description = (
+                    '基于90个THS行业的对数成交记忆研究模型。M=Σ行业流通市值/10⁸，'
+                    'A=Σ(行业流通市值/10⁸×换手率/100)，H90/H120/H250为A的90/120/250交易日简单均值。'
+                    'Z(X)=(ln(X)-训练均值)/训练标准差。'
+                    '估算收盘=exp(12.081280012936546+0.014788830094259063×Z(M)'
+                    '+0.012871150784723276×Z(A)-0.03857201780319821×Z(H90)'
+                    '-0.048533873581396686×Z(H120)+0.012525385797847465×Z(H250))。'
+                    '标准化参数保存于amv_log_memory/model.json；参数在2025-09-19至2025-12-31拟合并固定。'
+                    '使用满250日历史后输出，不使用自由流通市值；这是截图思路的板块近似版，不是其原公式。'
+                    '2026年历史检验弱于THS EMA20，仅作为研究对照。'
+                    '日K为合成：开盘取前收（首日取自身），高低取两者极值，不代表盘中高低。'
+                    '成交量/额借用同日上证指数000001.SH（手/千元），并非指标自身成交。')
+                upsert(db, 'indicators', ('code','name','source','description'), ('code',),
+                       (code, '活跃市值(THS对数成交记忆)', '本地研究公式', description),
+                       ('name','source','description'), 'updated_at')
+            elif filename == 'candidate_amv_flow40_close.csv':
+                code = 'AMV_EMA20_FLOW40'
+                description = (
+                    '以活跃市值(THS反推EMA20)为基础，加入主力净流入净占比的40日指数平滑修正。\n'
+                    '公式：新值=旧EMA20反推值×exp(0.01703745581667001×Z)，'
+                    'Z=(EMA40(net_amount_rate)+2.163271807211645)/0.35290158113635006。'
+                    'net_amount_rate使用东方财富大盘资金流接口返回的百分数数值；'
+                    'EMA从2024-09-10初始化，adjust=False。\n'
+                    '参数在2024-12-10至2025-06-30拟合，2025年下半年选择模型；'
+                    '独立计算不使用原AMV值。该版本改善数值拟合，但未证明为原始公式，'
+                    '也未证明择时效果更好。\n'
+                    '依赖盘后行业与资金流数据，不能作为盘中实时指标。'
+                )
+                synthetic = bool(rows) and all(row.get('open') not in (None, '') for row in rows)
+                description += (
+                    '\n图表口径：close为公式估算值；open取前一交易日close（首日取自身close），'
+                    'high/low取open与close的最大/最小值；volume/amount取同日上证指数000001.SH（手/千元）。'
+                    '合成K线不代表真实盘中高低价。' if synthetic else '\n图表口径：仅有每日收盘估算值。'
+                )
+                upsert(db, 'indicators', ('code','name','source','description'), ('code',),
+                       (code, '活跃市值(THS反推EMA20＋资金流修正)', '本地研究公式', description),
+                       ('name','source','description'), 'updated_at')
             else:
                 raise ValueError(f'Indicator mapping not configured: {filename}')
             indicator_id = db.execute('SELECT id FROM indicators WHERE code=?', (code,)).fetchone()[0]
@@ -357,21 +451,71 @@ def save_dataframe(frame, output_path, path=None, category=None, _pending=False)
     if str(path or database_path()) == 'auto':
         from resilient_store import save_dataframe as automatic_save
         return automatic_save(frame, output_path, category)
-    output_path = Path(output_path)
-    category = category or output_path.parent.name
-    relative_path = f'{category}/{output_path.name}'
     initialize(path)
+    with connect(path) as db:
+        _save_frame(db, frame, output_path, category, _pending)
+
+
+def save_frames(frames, path=None, category=None, _pending=False, progress=None):
+    """批量入库：整批共用一个事务，逐只保存后再统一导出备份文件。
+
+    frames 为 (CSV 路径, frame) 的可迭代对象；progress(已处理数) 用于回显进度。
+    """
+    if str(path or database_path()) == 'auto':
+        from resilient_store import save_frames as automatic_save
+        return automatic_save(frames, category, progress)
+    initialize(path)
+    count = 0
+    exports = []
+
+    def begin():
+        db.execute('START TRANSACTION' if getattr(db, 'dialect', None) == 'mysql' else 'BEGIN IMMEDIATE')
+
+    with connect(path) as db:
+        begin()
+        try:
+            for output_path, frame in frames:
+                cat = category or Path(output_path).parent.name
+                relative_path = f'{cat}/{Path(output_path).name}'
+                _save_frame(db, frame, output_path, cat, _pending, batch=True)
+                exports.append((Path(output_path), relative_path))
+                count += 1
+                if progress:
+                    progress(count)
+                # 分段提交：兼顾速度（不再每只提交）与中断/取消时已入库的数据不丢。
+                if count % 200 == 0:
+                    db.commit()
+                    begin()
+            db.commit()
+        except Exception:
+            db.rollback()
+            raise
+        # 事务提交后再落盘，保证导出的始终是已提交的快照。
+        for output_path, relative_path in exports:
+            content = db.execute('SELECT content FROM source_files WHERE path=?',
+                                 (relative_path,)).fetchone()[0]
+            export_file(output_path, content)
+    return count
+
+
+def _save_frame(db, frame, output_path, category, pending=False, batch=False):
+    mysql = getattr(db, 'dialect', None) == 'mysql'
+    output_path = Path(output_path)
+    relative_path = f'{category}/{output_path.name}'
     content = frame.to_csv(index=False).encode('utf-8-sig')
-    if category in ('stock', 'etf', 'index', 'core_index'):
+    if category in ('stock', 'etf', 'index', 'sw_index', 'core_index', 'etf_hj'):
         dates = [date_string(row['date']) for row in csv_rows(content)]
         if len(dates) != len(set(dates)):
             raise ValueError('Duplicate dates in fetched price data')
-    with connect(path) as db, writer_guard(db):
+    with writer_guard(db):
         # Reserve the writer before reading/merging, so concurrent updates cannot be lost.
-        db.execute('START TRANSACTION' if is_mysql(path) else 'BEGIN IMMEDIATE')
-        previous = db.execute('SELECT content FROM source_files WHERE path=?', (relative_path,)).fetchone()
-        if category in ('stock', 'etf', 'index', 'core_index') and previous:
-            old, new = csv_rows(previous[0]), csv_rows(content)
+        if not batch:
+            db.execute('START TRANSACTION' if mysql else 'BEGIN IMMEDIATE')
+        previous = db.execute('SELECT sha256, content FROM source_files WHERE path=?', (relative_path,)).fetchone()
+        old_rows = None
+        if category in ('stock', 'etf', 'index', 'sw_index', 'core_index', 'etf_hj') and previous:
+            old, new = csv_rows(previous['content']), csv_rows(content)
+            old_rows = old
             merged = {date_string(row['date']): row for row in old}
             merged.update({date_string(row['date']): row for row in new})
             columns = list(dict.fromkeys([*(old[0].keys() if old else []), *frame.columns]))
@@ -380,15 +524,49 @@ def save_dataframe(frame, output_path, path=None, category=None, _pending=False)
             writer.writeheader()
             writer.writerows(merged[day] for day in sorted(merged))
             content = buffer.getvalue().encode('utf-8-sig')
-        import_content(db, relative_path, content, pending=_pending)
+        # 批量模式下不提交，由 save_frames 在整批结束时统一 commit。
+        import_content(db, relative_path, content, pending=pending, commit=not batch,
+                       previous=previous, previous_rows=old_rows)
+        if batch:
+            return content
         db.commit()
         # Export the latest committed snapshot while holding the writer lock.
         # Otherwise a slower concurrent fetch could overwrite the backup with older data.
-        db.execute('START TRANSACTION' if is_mysql(path) else 'BEGIN IMMEDIATE')
+        db.execute('START TRANSACTION' if mysql else 'BEGIN IMMEDIATE')
         content = db.execute('SELECT content FROM source_files WHERE path=?', (relative_path,)).fetchone()[0]
-        output_path.parent.mkdir(parents=True, exist_ok=True)
-        output_path.write_bytes(content)
+        export_file(output_path, content)
         db.commit()
+
+
+def export_file(output_path, content, attempts=8, delay=0.5):
+    """Write a backup export, retrying transient Windows file locks.
+
+    Indexers and antivirus hooks briefly memory-map these files, which makes
+    an in-place rewrite or replace fail with EINVAL/1224. The committed
+    database copy is authoritative, so retry with backoff and fall back to
+    writing a temporary file and renaming it over the destination.
+    """
+    output_path = Path(output_path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    temp = output_path.with_name(output_path.name + '.exporting')
+    last = None
+    for attempt in range(attempts):
+        if attempt:
+            time.sleep(delay * attempt)
+        try:
+            output_path.write_bytes(content)
+            temp.unlink(missing_ok=True)
+            return
+        except OSError as exc:
+            last = exc
+        try:
+            temp.write_bytes(content)
+            os.replace(temp, output_path)
+            return
+        except OSError as exc:
+            last = exc
+    temp.unlink(missing_ok=True)
+    raise last
 
 
 def refresh_index(out_dir, path=None, category=None):
@@ -402,5 +580,5 @@ def refresh_index(out_dir, path=None, category=None):
     with connect(path) as db:
         import_content(db, f'{category}/index.json', content)
     out_dir.mkdir(parents=True, exist_ok=True)
-    (out_dir / 'index.json').write_bytes(content)
+    export_file(out_dir / 'index.json', content)
     return files

@@ -1,0 +1,571 @@
+{
+  "date": "2026-10-18",
+  "pages": [
+    {
+      "slug": "00-overall-supply-chain",
+      "title": "总图 美国AI算力全产业链",
+      "width": 1440,
+      "height": 1510,
+      "png": "/workspace/scratch/3aa8a65cdc55/output/diagrams/00-overall-supply-chain.png",
+      "svg": "/workspace/scratch/3aa8a65cdc55/output/diagrams/00-overall-supply-chain.svg",
+      "pixel_width": 3840,
+      "pixel_height": 4027
+    },
+    {
+      "slug": "01-chip-foundation",
+      "title": "01 芯片共同底座",
+      "width": 1440,
+      "height": 1180,
+      "png": "/workspace/scratch/3aa8a65cdc55/output/diagrams/01-chip-foundation.png",
+      "svg": "/workspace/scratch/3aa8a65cdc55/output/diagrams/01-chip-foundation.svg",
+      "pixel_width": 3840,
+      "pixel_height": 3147
+    },
+    {
+      "slug": "02-ddr-memory-module",
+      "title": "02 DDR5 内存条制造",
+      "width": 1440,
+      "height": 1180,
+      "png": "/workspace/scratch/3aa8a65cdc55/output/diagrams/02-ddr-memory-module.png",
+      "svg": "/workspace/scratch/3aa8a65cdc55/output/diagrams/02-ddr-memory-module.svg",
+      "pixel_width": 3840,
+      "pixel_height": 3147
+    },
+    {
+      "slug": "03-hbm-manufacturing",
+      "title": "03 HBM 制造与封装",
+      "width": 1440,
+      "height": 1180,
+      "png": "/workspace/scratch/3aa8a65cdc55/output/diagrams/03-hbm-manufacturing.png",
+      "svg": "/workspace/scratch/3aa8a65cdc55/output/diagrams/03-hbm-manufacturing.svg",
+      "pixel_width": 3840,
+      "pixel_height": 3147
+    },
+    {
+      "slug": "04-gpu-graphics-card",
+      "title": "04 GPU 与显卡制造",
+      "width": 1440,
+      "height": 1180,
+      "png": "/workspace/scratch/3aa8a65cdc55/output/diagrams/04-gpu-graphics-card.png",
+      "svg": "/workspace/scratch/3aa8a65cdc55/output/diagrams/04-gpu-graphics-card.svg",
+      "pixel_width": 3840,
+      "pixel_height": 3147
+    },
+    {
+      "slug": "05-google-tpu",
+      "title": "05 Google TPU 制作与部署",
+      "width": 1440,
+      "height": 1180,
+      "png": "/workspace/scratch/3aa8a65cdc55/output/diagrams/05-google-tpu.png",
+      "svg": "/workspace/scratch/3aa8a65cdc55/output/diagrams/05-google-tpu.svg",
+      "pixel_width": 3840,
+      "pixel_height": 3147
+    },
+    {
+      "slug": "06-custom-ai-asics",
+      "title": "06 定制 AI ASIC",
+      "width": 1440,
+      "height": 1180,
+      "png": "/workspace/scratch/3aa8a65cdc55/output/diagrams/06-custom-ai-asics.png",
+      "svg": "/workspace/scratch/3aa8a65cdc55/output/diagrams/06-custom-ai-asics.svg",
+      "pixel_width": 3840,
+      "pixel_height": 3147
+    },
+    {
+      "slug": "07-ai-server-assembly",
+      "title": "07 AI 服务器与集群集成",
+      "width": 1440,
+      "height": 1180,
+      "png": "/workspace/scratch/3aa8a65cdc55/output/diagrams/07-ai-server-assembly.png",
+      "svg": "/workspace/scratch/3aa8a65cdc55/output/diagrams/07-ai-server-assembly.svg",
+      "pixel_width": 3840,
+      "pixel_height": 3147
+    },
+    {
+      "slug": "08-cloud-services",
+      "title": "08 CoreWeave 与云服务",
+      "width": 1440,
+      "height": 1180,
+      "png": "/workspace/scratch/3aa8a65cdc55/output/diagrams/08-cloud-services.png",
+      "svg": "/workspace/scratch/3aa8a65cdc55/output/diagrams/08-cloud-services.svg",
+      "pixel_width": 3840,
+      "pixel_height": 3147
+    },
+    {
+      "slug": "appendix-A1",
+      "title": "公司对照 A：设计、材料与晶圆制造",
+      "width": 1440,
+      "height": 1180
+    },
+    {
+      "slug": "appendix-A2",
+      "title": "公司对照 B：计算芯片与内存产品",
+      "width": 1440,
+      "height": 1180
+    },
+    {
+      "slug": "appendix-A3",
+      "title": "公司对照 C：板卡、网络与系统集成",
+      "width": 1440,
+      "height": 1180
+    },
+    {
+      "slug": "appendix-A4",
+      "title": "公司对照 D：数据中心、算力与应用",
+      "width": 1440,
+      "height": 1180
+    },
+    {
+      "slug": "references-1",
+      "title": "资料来源 1",
+      "width": 1440,
+      "height": 1180
+    },
+    {
+      "slug": "references-2",
+      "title": "资料来源 2",
+      "width": 1440,
+      "height": 1180
+    },
+    {
+      "slug": "references-3",
+      "title": "资料来源 3",
+      "width": 1440,
+      "height": 1180
+    },
+    {
+      "slug": "references-4",
+      "title": "资料来源 4",
+      "width": 1440,
+      "height": 1180
+    },
+    {
+      "slug": "references-5",
+      "title": "资料来源 5",
+      "width": 1440,
+      "height": 1180
+    },
+    {
+      "slug": "references-6",
+      "title": "资料来源 6",
+      "width": 1440,
+      "height": 1180
+    },
+    {
+      "slug": "references-7",
+      "title": "资料来源 7",
+      "width": 1440,
+      "height": 1180
+    },
+    {
+      "slug": "references-8",
+      "title": "资料来源 8",
+      "width": 1440,
+      "height": 1180
+    }
+  ],
+  "sources": [
+    [
+      "S01",
+      "ASML：微芯片制造过程",
+      "https://www.asml.com/en/technology/all-about-microchips/how-microchips-are-made",
+      "支持多轮晶圆工艺及 fabless、代工、IDM 的分工。"
+    ],
+    [
+      "S02",
+      "Synopsys 与 TSMC：EDA 与 IP 协作",
+      "https://www.synopsys.com/partners/tsmc.html",
+      "支持设计工具、工艺适配、签核和多芯片设计的上游角色。"
+    ],
+    [
+      "S03",
+      "Cadence 与 TSMC：设计流程与 3D-IC",
+      "https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2025/cadence-and-tsmc-advance-ai-and-3d-ic-chip-design-with-certified.html",
+      "支持 EDA、IP、物理实现和先进封装协同设计。"
+    ],
+    [
+      "S04",
+      "Lam Research：工艺设备范围",
+      "https://www.lamresearch.com/products/our-processes/",
+      "沉积、刻蚀、去胶、清洗等设备参与晶圆制造。"
+    ],
+    [
+      "S05",
+      "Applied Materials：半导体产品与工艺",
+      "https://www.appliedmaterials.com/us/en/semiconductor/products.html",
+      "支持沉积、CMP、刻蚀、金属加工等设备分类。"
+    ],
+    [
+      "S06",
+      "KLA：FY2026 年报",
+      "https://ir.kla.com/sec-filings/annual-reports/content/0000319201-26-000027/klac-20260630.htm",
+      "支持检测、量测、过程控制与良率管理的角色。"
+    ],
+    [
+      "S07",
+      "TSMC：3DFabric Alliance",
+      "https://pr.tsmc.com/english/news/2968",
+      "包含 NVIDIA、AWS Trainium、存储、EDA、载板与封测合作说明。"
+    ],
+    [
+      "S08",
+      "Entegris：CMP 与材料纯度",
+      "https://www.entegris.com/en/home/our-science/by-industry/microelectronics/semiconductor/cmp.html",
+      "支持抛光材料、清洗、过滤和污染控制等上游材料角色。"
+    ],
+    [
+      "S09",
+      "Qnity：独立公司成立公告",
+      "https://www.qnityelectronics.com/news/qnity-launches-independent-co.html",
+      "2025 年从 DuPont 分拆，材料业务应按当前公司身份标注。"
+    ],
+    [
+      "S10",
+      "味之素：ABF 与半导体载板",
+      "https://www.ajinomoto.com/stories/the-ajinomoto-groups-unexpected-role-in-semiconductor-manufacturing-the-insulating-film-abf-born-from-aminoscience",
+      "ABF 是封装载板的绝缘材料；材料、载板、芯片制造分别分工。"
+    ],
+    [
+      "S11",
+      "Kingston：DRAM 模组测试流程",
+      "https://www.kingston.com/en/blog/system-builder/reliable-quality-dram-testing",
+      "直接列出 Micron、SK hynix、Samsung 颗粒供应；说明模组验证与老化。"
+    ],
+    [
+      "S12",
+      "Rambus：DDR5 芯片组说明",
+      "https://www.rambus.com/blogs/complete-guide-to-ddr5-chipsets/",
+      "区分 RDIMM 和 MRDIMM；说明 RCD/MRCD/MDB、PMIC、SPD 与 TS。"
+    ],
+    [
+      "S13",
+      "Renesas：DDR5 Solutions",
+      "https://www.renesas.com/en/products/memory-logic/memory-interface-products/ddr5-solutions",
+      "支持日本瑞萨的 DDR5 接口、管理、电源芯片产品角色。"
+    ],
+    [
+      "S14",
+      "澜起科技：DDR5 服务器产品",
+      "https://www.montage-tech.com/cn/Memory_Interface/DDR5_Server",
+      "支持中国澜起的 RCD、MRCD/MDB、SPD、TS、PMIC 等角色。"
+    ],
+    [
+      "S15",
+      "Penguin Solutions：SMART Modular 产品组合",
+      "https://www.penguinsolutions.com/en-us/products/smart-modular-portfolio",
+      "支持 SMART Modular 的模组业务及当前集团归属。"
+    ],
+    [
+      "S16",
+      "SK hynix：MR-MUF 堆叠技术",
+      "https://news.skhynix.com/en/rulebreaker-revolutions-mr-muf-unlocks-hbm-heat-control/",
+      "解释 TSV、堆叠、回流与填充；MR-MUF 是特定厂商路线。"
+    ],
+    [
+      "S17",
+      "SK hynix：2026 TSMC 技术论坛",
+      "https://news.skhynix.com/en/tsmc-technology-symposium-2026/",
+      "直接支持 SK hynix HBM4 基础裸片与 TSMC 逻辑工艺协作。"
+    ],
+    [
+      "S18",
+      "Micron：HBM4、SOCAMM2 与 SSD 量产公告",
+      "https://micron.gcs-web.com/news-releases/news-release-details/micron-high-volume-production-hbm4-designed-nvidia-vera-rubin",
+      "2026 年公开 HBM4 与 Vera Rubin、SOCAMM2 与 Vera 平台的产品关系。"
+    ],
+    [
+      "S19",
+      "SK hynix：GTC 2026 产品与 NVIDIA 合作",
+      "https://news.skhynix.com/en/gtc-2026-exhibition-booth/",
+      "公开 HBM3E 用于 GB300、GDDR7 用于 RTX 50；不代表独家供应。"
+    ],
+    [
+      "S20",
+      "Teradyne：Magnum 7H HBM 测试平台",
+      "https://www.teradyne.com/products/magnum-7h/",
+      "支持 HBM 基础裸片与堆栈的多阶段测试；测试机不是存储原厂。"
+    ],
+    [
+      "S21",
+      "NVIDIA：RTX 50 系列与合作伙伴",
+      "https://www.nvidia.com/en-us/geforce/news/rtx-50-series-graphics-cards-gpu-laptop-announcements/",
+      "支持 GDDR7、公版与 PNY、ASUS、MSI、GIGABYTE 等板卡参与者。"
+    ],
+    [
+      "S22",
+      "NVIDIA：Blackwell Ultra 技术说明",
+      "https://developer.nvidia.com/blog/inside-nvidia-blackwell-ultra-the-chip-powering-the-ai-factory-era/",
+      "支持 TSMC 4NP、HBM3E、GPU/CPU 互连和机架构成，作为架构实例。"
+    ],
+    [
+      "S23",
+      "AMD：MI300X 系统文档",
+      "https://instinct.docs.amd.com/projects/system-acceptance/en/latest/gpus/mi300x.html",
+      "支持 OAM 模组、HBM3、UBB 底板与 Infinity Fabric 的物理层级。"
+    ],
+    [
+      "S24",
+      "NVIDIA：RTX PRO 6000 Blackwell Server Edition",
+      "https://www.nvidia.com/en-us/data-center/rtx-pro-6000-blackwell-server-edition/",
+      "数据中心 GPU 使用 GDDR7 的明确例子，避免将服务器 GPU 全部等同于 HBM。"
+    ],
+    [
+      "S25",
+      "Broadcom：2026-04-06 SEC 8-K",
+      "https://www.sec.gov/Archives/edgar/data/1730168/000119312526144028/d87999d8k.htm",
+      "直接确认 Google TPU 开发/供应与机架组件合作；未来部署保留规划状态。"
+    ],
+    [
+      "S26",
+      "Google 作者论文：TPU v4，ISCA 2023",
+      "https://suvinay.github.io/pubs/2023.tpu.isca.pdf",
+      "支持 ASIC+HBM、4 芯片 PCB、64 芯片机架、4096 芯片系统及 ICI/OCS。"
+    ],
+    [
+      "S27",
+      "Google Cloud：TPU 系统架构",
+      "https://docs.cloud.google.com/tpu/docs/system-architecture-tpu-vm",
+      "支持 TPU、Pod、Slice、ICI/OCS 与云服务入口的关系。"
+    ],
+    [
+      "S28",
+      "Broadcom：FY2025 10-K",
+      "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm",
+      "披露公司级代工及组测伙伴池，不等于某代 TPU 的完整供应清单。"
+    ],
+    [
+      "S29",
+      "AWS：EC2 Trn2 产品页",
+      "https://aws.amazon.com/ec2/instance-types/trn2/",
+      "支持 Trainium2、HBM3、16/64 芯片系统、NeuronLink、EFA 与云实例。"
+    ],
+    [
+      "S30",
+      "Marvell：与 AWS 的定制 AI 产品合作",
+      "https://www.marvell.com/company/newsroom/marvell-expands-strategic-collaboration-aws-enable-accelerated-infrastructure-ai-cloud.html",
+      "仅确认公告所列合作范围，不能推出某代 Trainium 由 Marvell 独家设计。"
+    ],
+    [
+      "S31",
+      "Microsoft：Maia 200 官方发布",
+      "https://blogs.microsoft.com/blog/2026/01/26/maia-200-the-ai-accelerator-built-for-inference/",
+      "支持微软设计、TSMC 3nm、HBM3e、托盘、Ethernet 与 Azure 使用。"
+    ],
+    [
+      "S32",
+      "Meta：与 Broadcom 定制芯片合作",
+      "https://about.fb.com/news/2026/04/meta-partners-with-broadcom-to-co-develop-custom-ai-silicon/",
+      "2026 年公开芯片设计、先进封装和网络合作。"
+    ],
+    [
+      "S33",
+      "Meta：2024 年 MTIA 架构",
+      "https://ai.meta.com/blog/next-generation-meta-training-inference-accelerator-AI-MTIA/",
+      "公开 TSMC 5nm 与 LPDDR5；这套参数仅用于该代架构实例。"
+    ],
+    [
+      "S34",
+      "OpenAI：与 Broadcom 的自研加速器合作",
+      "https://openai.com/index/openai-and-broadcom-announce-strategic-collaboration/",
+      "支持模型公司向芯片设计延伸；公告规划不能当作已完成交付。"
+    ],
+    [
+      "S35",
+      "Astera Labs：AI 加速器底板方案",
+      "https://www.asteralabs.com/solutions/ai-servers-and-clustering/ai-accelerator-baseboard/",
+      "支持 PCIe/CXL、Retimer、Fabric Switch 等板级互连角色。"
+    ],
+    [
+      "S36",
+      "Credo：PCIe AEC 与机架互连",
+      "https://credosemi.com/blogs/how-pcie-aecs-extend-stable-gen6-connectivity-across-the-rack/",
+      "支持有源电缆、信号调理及机架内部互连的角色。"
+    ],
+    [
+      "S37",
+      "Coherent：Datacenter 产品",
+      "https://www.coherent.com/communications/datacom/datacenter",
+      "支持光器件、光模块与数据中心连接角色。"
+    ],
+    [
+      "S38",
+      "Lumentum：Data Center 产品",
+      "https://www.lumentum.com/en/products/data-center",
+      "支持激光器、光收发模块和 OCS；不同产品承担不同连接任务。"
+    ],
+    [
+      "S39",
+      "TTM：Computing Applications",
+      "https://www.ttm.com/index.php/en/markets-we-serve/computing/applications",
+      "支持 GPU、AI 加速器、服务器和高速网络 PCB 的制造角色。"
+    ],
+    [
+      "S40",
+      "Amphenol：AI 互连产品",
+      "https://amphenol.com/markets/it-datacom/artificial-intelligence?PageSize=10&pagenumber=4",
+      "支持高速、电源、内存模组连接器和线缆。"
+    ],
+    [
+      "S41",
+      "Texas Instruments：数据中心计算供电",
+      "https://www.ti.com/applications/data-center/compute/overview.html",
+      "支持芯片、主板、加速卡上的电源管理和功率级。"
+    ],
+    [
+      "S42",
+      "MPS：MP29816-C 多相控制器",
+      "https://www.monolithicpower.com/en/products/mp29816-c.html",
+      "支持 CPU/GPU/SoC 的板级供电角色，与机房配电区分。"
+    ],
+    [
+      "S43",
+      "Arista：1.6T AI 网络产品",
+      "https://www.arista.com/company/news/press-release/24102-pr-20260609",
+      "公开 Broadcom Tomahawk 6 进入 Arista 交换机的具体关系。"
+    ],
+    [
+      "S44",
+      "CoreWeave / Dell：扩大战略合作",
+      "https://investors.coreweave.com/news/news-details/2024/CoreWeave-and-Dell-Technologies-Extend-Relationship-to-Deliver-AI-at-Scale/default.aspx",
+      "支持 NVIDIA 平台→Dell PowerEdge 机架→CoreWeave，含其调度和运维软件。"
+    ],
+    [
+      "S45",
+      "Vertiv：NVIDIA GB300 电力与冷却参考架构",
+      "https://investors.vertiv.com/news/news-details/2025/Vertiv-Develops-Energy-Efficient-Cooling-and-Power-Reference-Architecture-for-the-NVIDIA-GB300-NVL72-Platform-Available-as-SimReady-Assets-in-NVIDIA-Omniverse-Blueprint-for-AI-Factory-Design-and-Operations/default.aspx",
+      "支持机架/机房电力和冷却配套；不推出向所有云机房供货。"
+    ],
+    [
+      "S46",
+      "HPE：完成 Juniper 收购",
+      "https://www.hpe.com/us/en/newsroom/press-release/2025/07/hewlett-packard-enterprise-closes-acquisition-of-juniper-networks-to-offer-industry-leading-comprehensive-cloud-native-ai-driven-portfolio.html",
+      "2025-07-02 完成收购，目录将 Juniper 标在 HPE 体系内。"
+    ],
+    [
+      "S47",
+      "CoreWeave：扩大 OpenAI 算力协议",
+      "https://www.coreweave.com/news/coreweave-expands-agreement-with-openai-by-up-to-6-5b",
+      "支持 CoreWeave 直接为 OpenAI 提供模型训练和部署算力。"
+    ],
+    [
+      "S48",
+      "CoreWeave：SEC 招股书",
+      "https://www.sec.gov/Archives/edgar/data/1769628/000119312525067651/d899798d424b4.htm",
+      "支持 CoreWeave 的算力运营角色和 Microsoft 客户关系。"
+    ],
+    [
+      "S49",
+      "Core Scientific：为 CoreWeave 提供托管设施",
+      "https://investors.corescientific.com/news-events/press-releases/detail/74/core-scientific-to-provide-approximately-200-mw-of-infrastructure-to-host-coreweaves-high-performance-computing-services-capturing-significant-ai-compute-opportunity",
+      "支持设施/托管→CoreWeave 的交付关系，与芯片制造区分。"
+    ],
+    [
+      "S50",
+      "Anthropic：Google / Broadcom 算力合作",
+      "https://www.anthropic.com/news/google-broadcom-partnership-compute",
+      "说明使用多类芯片/多家云，以及 Claude 在三大云平台的模型分发。"
+    ],
+    [
+      "S51",
+      "OpenAI：Intelligence Age 算力基础设施",
+      "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age/",
+      "支持 OCI 和 NVIDIA GB200 在 OpenAI 基础设施中的实例。"
+    ],
+    [
+      "S52",
+      "NVIDIA：Vera Rubin 系统与伙伴生态",
+      "https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory",
+      "支持美国系统品牌、台湾 ODM 和云运营商共同组成的生态。"
+    ],
+    [
+      "S53",
+      "Core Scientific：终止 CoreWeave 合并协议",
+      "https://investors.corescientific.com/sec-filings/all-sec-filings/content/0001140361-25-039808/ef20057995_ex99-1.htm",
+      "2025-10-30 终止拟议合并；图中保留托管关系，不画为母子公司。"
+    ],
+    [
+      "S54",
+      "FormFactor：HBM 与晶圆级测试",
+      "https://www.formfactor.com/applications/high-volume-test-on-wafer/advanced-packaging/",
+      "支持已知良品裸片筛选及先进封装中多阶段测试。"
+    ],
+    [
+      "S55",
+      "SUMCO：硅片制造工艺",
+      "https://www.sumcosi.com/english/products/process/",
+      "支持单晶生长、切片、抛光与清洗后向晶圆制造提供硅片。"
+    ],
+    [
+      "S56",
+      "Intel Foundry：系统代工与封装服务",
+      "https://www.intel.com/content/www/us/en/foundry/library/fact-sheet.html",
+      "支持 Intel Foundry 的晶圆、先进封装和系统组测角色，不指定未公开客户。"
+    ],
+    [
+      "S57",
+      "Samsung：先进封装",
+      "https://semiconductor.samsung.com/foundry/advanced-package/",
+      "支持 Samsung Foundry 的异质集成和先进封装业务。"
+    ],
+    [
+      "S58",
+      "GlobalFoundries：硅光子技术",
+      "https://gf.com/technologies/silicon-photonics/",
+      "支持特色代工/硅光子角色；不把其与最先进 GPU 工艺简单等同。"
+    ],
+    [
+      "S59",
+      "Arm：Neoverse Compute Subsystems",
+      "https://www.arm.com/products/cloud-datacenter/neoverse-compute-subsystems",
+      "支持 Arm 在云与数据中心 CPU IP、互连及子系统上的角色。"
+    ],
+    [
+      "S60",
+      "SiFive：RISC-V 核心 IP",
+      "https://www.sifive.com/risc-v-core-ip",
+      "支持美国 RISC-V 设计 IP 公司在设计上游的位置。"
+    ],
+    [
+      "S61",
+      "Kioxia：Data Center SSD",
+      "https://www.kioxia.com/en-jp/business/ssd/data-center-ssd.html",
+      "说明 NAND、固件、控制器及面向云的 SSD 产品组成。"
+    ],
+    [
+      "S62",
+      "Solidigm：Data Center SSD",
+      "https://www.solidigm.com/products/data-center.html",
+      "支持企业级 SSD 角色；Solidigm 归属 SK hynix 集团。"
+    ],
+    [
+      "S63",
+      "Equinix：AI Infrastructure",
+      "https://www.equinix.com/product-solutions/ai",
+      "支持互连、托管与基础设施角色，不等同于 AI 芯片制造商。"
+    ],
+    [
+      "S64",
+      "Digital Realty：NVIDIA 数据中心合作",
+      "https://www.digitalrealty.com/partners/nvidia",
+      "支持适配 AI 的数据中心空间、电力和冷却设施角色。"
+    ],
+    [
+      "S65",
+      "Kioxia / Sandisk：用于 AI 的 QLC 闪存",
+      "https://www.kioxia.com/en-jp/about/news/2026/20260812-1.html",
+      "支持两家公司的 NAND 技术协作，以及 NAND 与 DRAM/HBM 的区别。"
+    ],
+    [
+      "S66",
+      "Lambda：AI Cloud Platform",
+      "https://lambda.ai/cloud",
+      "支持专用 GPU 云和大规模 GPU 集群服务的公司角色。"
+    ],
+    [
+      "S67",
+      "Crusoe：Infrastructure Cloud",
+      "https://docs.cloud.crusoe.ai/infrastructure-cloud/overview/index.html",
+      "支持 GPU/CPU、存储、网络、Kubernetes/Slurm 等算力运营能力。"
+    ]
+  ]
+}

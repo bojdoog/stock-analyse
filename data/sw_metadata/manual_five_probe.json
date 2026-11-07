@@ -1,0 +1,115 @@
+{
+  "probes": [
+    {
+      "code": "801150.SI",
+      "date": "20260827",
+      "rows": [
+        {
+          "ts_code": "801150.SI",
+          "trade_date": "20260827",
+          "name": "医药生物",
+          "open": 7912.6,
+          "high": 7990.2,
+          "low": 7860.32,
+          "close": 7990.2,
+          "vol": 909245.0,
+          "amount": 13800975.0,
+          "float_mv": 314552868.0,
+          "total_mv": 613960106.0
+        }
+      ],
+      "problem": null,
+      "seconds": 1.7
+    },
+    {
+      "code": "801210.SI",
+      "date": "20260427",
+      "rows": [
+        {
+          "ts_code": "801210.SI",
+          "trade_date": "20260427",
+          "name": "社会服务",
+          "open": 8489.14,
+          "high": 8546.46,
+          "low": 8406.03,
+          "close": 8541.08,
+          "vol": 120173.0,
+          "amount": 1274633.0,
+          "float_mv": 27327281.0,
+          "total_mv": 53923036.0
+        }
+      ],
+      "problem": null,
+      "seconds": 1.7
+    },
+    {
+      "code": "801030.SI",
+      "date": "20260721",
+      "rows": [
+        {
+          "ts_code": "801030.SI",
+          "trade_date": "20260721",
+          "name": "基础化工",
+          "open": 3960.44,
+          "high": 4058.11,
+          "low": 3857.7,
+          "close": 4058.11,
+          "vol": 902432.0,
+          "amount": 12951368.0,
+          "float_mv": 205971076.0,
+          "total_mv": 426128743.0
+        }
+      ],
+      "problem": null,
+      "seconds": 1.5
+    },
+    {
+      "code": "801740.SI",
+      "date": "20260415",
+      "rows": [
+        {
+          "ts_code": "801740.SI",
+          "trade_date": "20260415",
+          "name": "国防军工",
+          "open": 1975.76,
+          "high": 1995.73,
+          "low": 1957.94,
+          "close": 1963.56,
+          "vol": 320941.0,
+          "amount": 9982773.0,
+          "float_mv": 160283936.0,
+          "total_mv": 347454990.0
+        }
+      ],
+      "problem": null,
+      "seconds": 1.9
+    },
+    {
+      "code": "801740.SI",
+      "date": "20260514",
+      "rows": [
+        {
+          "ts_code": "801740.SI",
+          "trade_date": "20260514",
+          "name": "国防军工",
+          "open": 2163.26,
+          "high": 2163.26,
+          "low": 2066.71,
+          "close": 2066.71,
+          "vol": 334540.0,
+          "amount": 11000105.0,
+          "float_mv": 168689260.0,
+          "total_mv": 365254240.0
+        }
+      ],
+      "problem": null,
+      "seconds": 1.5
+    }
+  ],
+  "recovered": 5,
+  "remaining": [],
+  "published": {
+    "files": 500,
+    "rows": 15500
+  }
+}

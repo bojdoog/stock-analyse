@@ -1,0 +1,33 @@
+.hj-page { display: grid; grid-template-columns: 330px minmax(0, 1fr); gap: 20px; align-items: stretch; }
+.hj-panel { padding: 20px; background: #fff; border: 1px solid #e2e8e9; border-radius: 12px; min-width: 0; display: flex; flex-direction: column; }
+.hj-panel-title { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 16px; flex-shrink: 0; }
+.hj-panel-title strong { font-size: 16px; color: #23434c; }
+.hj-panel-title > span { font-size: 11px; color: #819097; }
+.hj-list { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 4px; overflow-y: auto; padding-right: 6px; scrollbar-width: thin; scrollbar-color: #cfdcde transparent; }
+.hj-list::-webkit-scrollbar { width: 6px; }
+.hj-list::-webkit-scrollbar-track { background: transparent; }
+.hj-list::-webkit-scrollbar-thumb { background: #cfdcde; border-radius: 3px; }
+.hj-list::-webkit-scrollbar-thumb:hover { background: #a9bcc0; }
+.hj-list::-webkit-scrollbar-button { display: none; height: 0; }
+.hj-list-panel { overflow: hidden; contain: size; }
+.hj-list-panel .ant-spin-nested-loading { flex: 1; min-height: 0; display: flex; }
+.hj-list-panel .ant-spin-container { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+.hj-row { display: grid; grid-template-columns: 22px minmax(0, 1fr) auto; grid-template-areas: 'rank name price' 'rank name volume'; align-items: center; gap: 2px 10px; width: 100%; padding: 9px 10px; border: 1px solid transparent; border-radius: 8px; background: transparent; text-align: left; cursor: pointer; font: inherit; transition: background .15s, border-color .15s; }
+.hj-row:hover { background: #f4f8f8; }
+.hj-row-active { background: #edf6f5; border-color: #cfe6e3; }
+.hj-rank { grid-area: rank; font-size: 11px; color: #a3b1b6; font-variant-numeric: tabular-nums; }
+.hj-name { grid-area: name; display: flex; flex-direction: column; min-width: 0; }
+.hj-name b { font-size: 13px; font-weight: 600; color: #344f57; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hj-name small { font-size: 11px; color: #819097; font-variant-numeric: tabular-nums; }
+.hj-price { grid-area: price; display: flex; align-items: baseline; gap: 8px; justify-self: end; font-variant-numeric: tabular-nums; }
+.hj-price b { font-size: 13px; }
+.hj-price small { font-size: 11px; }
+.hj-volume { grid-area: volume; justify-self: end; font-size: 11px; color: #7a898f; font-variant-numeric: tabular-nums; }
+.hj-empty { padding: 60px 0; }
+/* 图表被 antd Spin 包裹，需让 Spin 的每一层都撑满面板，K 线画布才能自适应高度。 */
+.hj-chart-panel .ant-spin-nested-loading,
+.hj-chart-panel .ant-spin-container {
+  flex: 1; min-height: 0; width: 100%; display: flex; flex-direction: column;
+}
+.hj-chart-panel .hj-chart { flex: 1 1 auto; width: 100%; min-height: 360px; cursor: pointer; }
+.hj-date-picker { width: 128px; margin-right: 8px; }

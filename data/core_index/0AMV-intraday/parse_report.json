@@ -5,8 +5,8 @@
     "Volume/amount field meanings and units are inferred, not verified.",
     "CDE and locked VDAT files are not parsed by this script."
   ],
-  "records": 449557,
-  "output_files": 1881,
+  "records": 454815,
+  "output_files": 1903,
   "files": [
     {
       "source_file": "Z_SK0AMV20181228.fde",
@@ -15049,8 +15049,184 @@
       "last_time": "14:58:59"
     },
     {
-      "source_file": "Z_SK0AMV__.fde",
+      "source_file": "Z_SK0AMV20260930.fde",
       "date": "2026-09-30",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20261008.fde",
+      "date": "2026-10-08",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20261009.fde",
+      "date": "2026-10-09",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20261012.fde",
+      "date": "2026-10-12",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20261013.fde",
+      "date": "2026-10-13",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20261014.fde",
+      "date": "2026-10-14",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20261015.fde",
+      "date": "2026-10-15",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20261016.fde",
+      "date": "2026-10-16",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20261019.fde",
+      "date": "2026-10-19",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20261020.fde",
+      "date": "2026-10-20",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20261021.fde",
+      "date": "2026-10-21",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20261022.fde",
+      "date": "2026-10-22",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20261023.fde",
+      "date": "2026-10-23",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20261026.fde",
+      "date": "2026-10-26",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20261027.fde",
+      "date": "2026-10-27",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20261028.fde",
+      "date": "2026-10-28",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20261029.fde",
+      "date": "2026-10-29",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20261030.fde",
+      "date": "2026-10-30",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20261102.fde",
+      "date": "2026-11-02",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20261103.fde",
+      "date": "2026-11-03",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20261104.fde",
+      "date": "2026-11-04",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV20261105.fde",
+      "date": "2026-11-05",
+      "records": 239,
+      "header_end_time": 145900,
+      "first_time": "09:30:59",
+      "last_time": "14:58:59"
+    },
+    {
+      "source_file": "Z_SK0AMV__.fde",
+      "date": "2026-11-06",
       "records": 239,
       "header_end_time": 145900,
       "first_time": "09:30:59",

@@ -15,6 +15,95 @@ def get_etf_types():
     return jsonify(code=0, message='success', data=data_service.get_data_list('etf'))
 
 
+@api_bp.route('/etf-sector-volume', methods=['GET'])
+def get_etf_sector_volume():
+    from services.sector_volume import load_sector_volume
+    try:
+        return jsonify(code=0, message='success', data=load_sector_volume(data_service.database))
+    except Exception:
+        current_app.logger.exception('Failed to load THS sector volume')
+        return jsonify(code=1, message='同花顺板块量能加载失败，请检查行业日线数据。'), 503
+
+
+@api_bp.route('/huijin-etfs', methods=['GET'])
+def get_huijin_etfs():
+    """国家队（汇金系）宽基 ETF：最新交易日行情，按成交量降序。"""
+    data = data_service.get_huijin_etfs()
+    return jsonify({
+        'code': 0,
+        'message': 'success',
+        'data': data,
+        'date': data[0]['date'] if data else None,
+    })
+
+
+@api_bp.route('/b1-picks/history', methods=['GET'])
+def get_b1_history():
+    """B1 选股历史：日期、当天条件、命中数量，按日期由近到远。"""
+    return jsonify({'code': 0, 'message': 'success', 'data': data_service.get_b1_history()})
+
+
+@api_bp.route('/b1-picks', methods=['GET'])
+def get_b1_picks():
+    """B1 选股：默认取个股最新交易日，结果落库后复用。"""
+    date = request.args.get('date') or None
+    refresh = request.args.get('refresh') == '1'
+    result = data_service.get_b1_picks(date, refresh)
+    return jsonify({'code': 0, 'message': 'success', **result})
+
+
+@api_bp.route('/console/<kind>', methods=['POST'])
+def start_console_job(kind):
+    """页面控制台任务：fetch（拉取个股日线）| b1（B1 选股）。"""
+    import jobs
+    if kind not in ('fetch', 'b1'):
+        return jsonify({'code': 400, 'message': f'未知任务类型: {kind}'}), 400
+    payload = request.get_json(silent=True) or {}
+    options = payload.get('options') if isinstance(payload.get('options'), dict) else None
+    job = jobs.start(kind, options)
+    return jsonify({'code': 0, 'message': 'success', 'job': job.snapshot()})
+
+
+@api_bp.route('/console/jobs/<job_id>', methods=['GET'])
+def get_console_job(job_id):
+    """轮询任务日志与进度；since 为已消费的日志条数。"""
+    import jobs
+    since = request.args.get('since', default=0, type=int)
+    snapshot = jobs.get(job_id, since)
+    if snapshot is None:
+        return jsonify({'code': 404, 'message': '任务不存在或后端已重启'}), 404
+    return jsonify({'code': 0, 'message': 'success', 'job': snapshot})
+
+
+@api_bp.route('/console/active', methods=['GET'])
+def get_console_active():
+    """页面刷新后找回仍在运行的任务。"""
+    import jobs
+    return jsonify({'code': 0, 'message': 'success', 'job': jobs.active()})
+
+
+@api_bp.route('/console/state', methods=['GET'])
+def get_console_state():
+    """两个控制台的数据：运行中的任务优先，否则返回各自上一次执行结果。"""
+    import jobs
+    return jsonify({
+        'code': 0,
+        'message': 'success',
+        'running': jobs.active_all(),
+        'last': jobs.last_jobs(),
+    })
+
+
+@api_bp.route('/console/jobs/<job_id>/cancel', methods=['POST'])
+def cancel_console_job(job_id):
+    """取消运行中的任务（拉取数据会终止子进程，已下载的数据保留）。"""
+    import jobs
+    snapshot = jobs.cancel(job_id)
+    if snapshot is None:
+        return jsonify({'code': 409, 'message': '任务不存在或已结束'}), 409
+    return jsonify({'code': 0, 'message': 'success', 'job': snapshot})
+
+
 @api_bp.route('/health', methods=['GET'])
 def health_check():
     """健康检查接口"""
@@ -96,6 +185,16 @@ def get_all_data_lists():
         'message': 'success',
         'data': data,
     })
+
+
+@api_bp.route('/etf_hj/<code>/intraday', methods=['GET'])
+def get_etf_intraday(code):
+    """单只汇金系宽基 ETF 某日的分时走势（1 分钟），数据来自本地 etf_intraday 表。"""
+    date = request.args.get('date', '')
+    if not date:
+        return jsonify({'code': 400, 'message': '缺少 date 参数', 'data': []}), 400
+    result = data_service.get_etf_intraday(code, date)
+    return jsonify({'code': 0, 'message': 'success', **result})
 
 
 @api_bp.route('/kline/<category>/<code>', methods=['GET'])

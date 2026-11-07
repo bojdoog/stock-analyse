@@ -22,11 +22,20 @@ try:
 except ImportError:
     from storage_sqlite import save_dataframe, refresh_index, list_files, initialize, read_frame, has_file
 
+try:
+    from .trading_date import default_end_date
+except ImportError:
+    from trading_date import default_end_date
+
 import pandas as pd
-import tushare as ts
+try:
+    from .tushare_client import create_client
+except ImportError:
+    from tushare_client import create_client
+
+pro = None
 
 # ---------- 配置 ----------
-TOKEN = "eb0e5fcfd014dfb595b4ca773f42d29570a3fb06edcca84fe19830db"
 START_DEFAULT = "20130104"
 DATA_DIR = Path(__file__).resolve().parents[1] / "data" / "index"
 
@@ -49,10 +58,15 @@ COMMON_INDEXES = {
 }
 
 
+try:
+    from .permission_errors import skip_if_permission_denied
+except ImportError:
+    from permission_errors import skip_if_permission_denied
+
+
 def setup_tushare():
-    os.environ["NO_PROXY"] = "api.waditu.com,.waditu.com,waditu.com"
-    os.environ["no_proxy"] = os.environ["NO_PROXY"]
-    ts.set_token(TOKEN)
+    global pro
+    pro = create_client()
 
 
 def to_ts_code(code: str) -> str:
@@ -67,7 +81,7 @@ def to_ts_code(code: str) -> str:
 def fetch_index_kline(ts_code: str, start: str, end: str) -> pd.DataFrame:
     """抓取单只指数日K线（使用 index_daily 接口）"""
     try:
-        df = ts.pro_api().index_daily(ts_code=ts_code, start_date=start, end_date=end)
+        df = pro.index_daily(ts_code=ts_code, start_date=start, end_date=end)
         if df is None or df.empty:
             return pd.DataFrame()
         df = df.rename(columns={"trade_date": "date", "vol": "volume"})[
@@ -78,6 +92,7 @@ def fetch_index_kline(ts_code: str, start: str, end: str) -> pd.DataFrame:
             df[c] = pd.to_numeric(df[c], errors="coerce")
         return df.sort_values("date").reset_index(drop=True)
     except Exception as e:
+        skip_if_permission_denied(e, 'index_daily')
         print(f"    [失败] {ts_code}: {e}")
         return pd.DataFrame()
 
@@ -98,7 +113,7 @@ def main():
 
     # ---- 初始化 ----
     setup_tushare()
-    end = dt.date.today().strftime("%Y%m%d")
+    end = default_end_date()
     start = START_DEFAULT
 
     # ---- 逐指数抓取 ----

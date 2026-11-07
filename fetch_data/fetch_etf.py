@@ -3,7 +3,7 @@
 热门ETF日K线数据抓取脚本
 - 基于 Tushare Pro，前复权日线
 - 从数据库读取启用的 ETF 清单
-- 时间从 2013-01-04 至今
+- 时间从各 ETF 上市日期至今
 - 保存到 ../public/data/etf/{板块}_{简称}_{code}.csv
 
 用法：
@@ -22,29 +22,54 @@ try:
 except ImportError:
     from storage_sqlite import save_dataframe, refresh_index, list_files, initialize, read_frame, has_file
 
+try:
+    from .trading_date import default_end_date
+except ImportError:
+    from trading_date import default_end_date
+
 from etf_catalog import list_etfs
 
 import pandas as pd
-import tushare as ts
+try:
+    from .tushare_client import create_client
+except ImportError:
+    from tushare_client import create_client
+
+pro = None
 
 # ---------- 配置 ----------
-TOKEN = "eb0e5fcfd014dfb595b4ca773f42d29570a3fb06edcca84fe19830db"
-START_DEFAULT = "20130104"
 DATA_DIR = Path(__file__).resolve().parents[1] / "data" / "etf"
 
 # ETF 清单由 etf_catalog 统一管理。
 
 
+try:
+    from .permission_errors import skip_if_permission_denied
+except ImportError:
+    from permission_errors import skip_if_permission_denied
+
+
 def setup_tushare():
-    os.environ["NO_PROXY"] = "api.waditu.com,.waditu.com,waditu.com"
-    os.environ["no_proxy"] = os.environ["NO_PROXY"]
-    ts.set_token(TOKEN)
+    global pro
+    pro = create_client()
+
+
+def fetch_listing_date(ts_code: str) -> str:
+    """Use exchange listing date, never fund inception or first cached bar."""
+    frame = pro.fund_basic(ts_code=ts_code, market='E', fields='ts_code,list_date')
+    if frame is None or not {'ts_code', 'list_date'}.issubset(frame.columns):
+        raise ValueError('未取得 ETF 上市日期')
+    dates = frame.loc[frame['ts_code'] == ts_code, 'list_date'].dropna().astype(str).unique()
+    if len(dates) != 1 or len(dates[0]) != 8 or not dates[0].isdigit():
+        raise ValueError('ETF 上市日期缺失或不唯一')
+    dt.datetime.strptime(dates[0], '%Y%m%d')
+    return dates[0]
 
 
 def fetch_adj_factor(ts_code: str, start: str, end: str) -> pd.DataFrame:
     """获取 ETF 复权因子（fund_adj 接口）"""
     try:
-        df = ts.pro_api().fund_adj(ts_code=ts_code, start_date=start, end_date=end)
+        df = pro.fund_adj(ts_code=ts_code, start_date=start, end_date=end)
         if df is None or df.empty:
             return pd.DataFrame()
         df = df[["trade_date", "adj_factor"]].copy()
@@ -52,6 +77,7 @@ def fetch_adj_factor(ts_code: str, start: str, end: str) -> pd.DataFrame:
         df["adj_factor"] = pd.to_numeric(df["adj_factor"], errors="coerce")
         return df.sort_values("date").reset_index(drop=True)
     except Exception as e:
+        skip_if_permission_denied(e, 'fund_adj')
         print(f"    [复权因子失败] {ts_code}: {e}")
         return pd.DataFrame()
 
@@ -80,7 +106,7 @@ def adjust_prices(df: pd.DataFrame, adj_df: pd.DataFrame) -> pd.DataFrame:
 def fetch_kline(ts_code: str, start: str, end: str, adjust: bool = True) -> pd.DataFrame:
     """抓取单只ETF日K线（使用 fund_daily 接口，默认前复权）"""
     try:
-        df = ts.pro_api().fund_daily(ts_code=ts_code, start_date=start, end_date=end)
+        df = pro.fund_daily(ts_code=ts_code, start_date=start, end_date=end)
         if df is None or df.empty:
             return pd.DataFrame()
         df = df.rename(columns={"trade_date": "date", "vol": "volume"})[
@@ -101,6 +127,7 @@ def fetch_kline(ts_code: str, start: str, end: str, adjust: bool = True) -> pd.D
 
         return df
     except Exception as e:
+        skip_if_permission_denied(e, 'fund_daily')
         print(f"    [失败] {ts_code}: {e}")
         return pd.DataFrame()
 
@@ -123,13 +150,25 @@ def main():
     if not items:
         raise ValueError('数据库没有启用的 ETF，请先初始化 ETF 清单')
     setup_tushare()
-    end = dt.date.today().strftime("%Y%m%d")
+    end = default_end_date()
     total = 0
+    failed = []
     for item in items:
         print(f"{item['ts_code']} {item['name']}")
-        df = fetch_kline(item['ts_code'], START_DEFAULT, end)
+        try:
+            start = fetch_listing_date(item['ts_code'])
+            if start > end:
+                raise ValueError('ETF 尚未上市')
+        except Exception as exc:
+            skip_if_permission_denied(exc, 'fund_basic')
+            print(f"  [失败] 无法确定上市日期，保留原数据：{exc}")
+            failed.append(item['ts_code'])
+            continue
+        print(f"  上市日期：{start}，拉取至 {end}")
+        df = fetch_kline(item['ts_code'], start, end)
         if df.empty:
-            print('  无数据，跳过')
+            print('  未取得行情，保留原数据')
+            failed.append(item['ts_code'])
             continue
         # Stable registered source path, independent of the display name.
         out_path = DATA_DIR.parent / item['source_path']
@@ -139,6 +178,9 @@ def main():
         time.sleep(0.5)
     refresh_index(DATA_DIR, category='etf')
     print(f"完成，共 {total} 条记录")
+    if failed:
+        print(f"失败：{', '.join(failed)}")
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

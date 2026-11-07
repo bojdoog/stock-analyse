@@ -1,0 +1,144 @@
+{
+  "input_first_date": "20240910",
+  "input_last_date": "20260930",
+  "first_prediction": "2025-09-19",
+  "industries": 90,
+  "train_end": "2025-12-31",
+  "ridge_alpha": 1.0,
+  "intercept": 12.081280012936546,
+  "coefficients": {
+    "cap": 0.014788830094259063,
+    "activity": 0.012871150784723276,
+    "memory90": -0.03857201780319821,
+    "memory120": -0.048533873581396686,
+    "memory250": 0.012525385797847465
+  },
+  "log_training_mean": {
+    "cap": 13.779701826528697,
+    "activity": 9.978839554166704,
+    "memory90": 10.007459947378708,
+    "memory120": 9.920106043477036,
+    "memory250": 9.824448325884857
+  },
+  "log_training_std": {
+    "cap": 0.014629395531809966,
+    "activity": 0.11193307051660771,
+    "memory90": 0.05597882120849059,
+    "memory120": 0.06559253860149661,
+    "memory250": 0.00830692806326668
+  },
+  "power_exponents": {
+    "cap": 1.0108982330884708,
+    "activity": 0.11498970523473274,
+    "memory90": -0.6890466246071612,
+    "memory120": -0.739929794092301,
+    "memory250": 1.5078240358472403
+  },
+  "baseline_rescale": 1.021955614760839,
+  "metrics": {
+    "THS_EMA20": {
+      "train": {
+        "rows": 68,
+        "mape_pct": 2.2356361006453342,
+        "return_corr": 0.943870968178188,
+        "return_mae_pp": 0.3970001185829271,
+        "direction_accuracy_pct": 95.52238805970148
+      },
+      "test_2026": {
+        "rows": 181,
+        "mape_pct": 3.4901687679834756,
+        "return_corr": 0.9703201663145207,
+        "return_mae_pp": 0.40906460657581384,
+        "direction_accuracy_pct": 96.13259668508287
+      },
+      "test_2026_H1": {
+        "rows": 116,
+        "mape_pct": 3.472394362351635,
+        "return_corr": 0.9642194735994758,
+        "return_mae_pp": 0.4150214969612692,
+        "direction_accuracy_pct": 93.96551724137932
+      },
+      "test_2026_H2": {
+        "rows": 65,
+        "mape_pct": 3.521889245726454,
+        "return_corr": 0.9747002171190796,
+        "return_mae_pp": 0.39843384834946277,
+        "direction_accuracy_pct": 100.0
+      }
+    },
+    "THS_EMA20_rescaled": {
+      "train": {
+        "rows": 68,
+        "mape_pct": 1.2105748112363721,
+        "return_corr": 0.9438709681781878,
+        "return_mae_pp": 0.3970001185829273,
+        "direction_accuracy_pct": 95.52238805970148
+      },
+      "test_2026": {
+        "rows": 181,
+        "mape_pct": 2.4912050168842654,
+        "return_corr": 0.9703201663145208,
+        "return_mae_pp": 0.4090646065758134,
+        "direction_accuracy_pct": 96.13259668508287
+      },
+      "test_2026_H1": {
+        "rows": 116,
+        "mape_pct": 2.7881979218974497,
+        "return_corr": 0.9642194735994764,
+        "return_mae_pp": 0.41502149696126966,
+        "direction_accuracy_pct": 93.96551724137932
+      },
+      "test_2026_H2": {
+        "rows": 65,
+        "mape_pct": 1.9611869094761203,
+        "return_corr": 0.9747002171190796,
+        "return_mae_pp": 0.39843384834946083,
+        "direction_accuracy_pct": 100.0
+      }
+    },
+    "log_memory": {
+      "train": {
+        "rows": 68,
+        "mape_pct": 1.1179987983980388,
+        "return_corr": 0.8284386220215632,
+        "return_mae_pp": 0.7014487962675939,
+        "direction_accuracy_pct": 86.56716417910447
+      },
+      "test_2026": {
+        "rows": 181,
+        "mape_pct": 11.757317486219003,
+        "return_corr": 0.812692655934909,
+        "return_mae_pp": 1.0633041480531618,
+        "direction_accuracy_pct": 80.11049723756905
+      },
+      "test_2026_H1": {
+        "rows": 116,
+        "mape_pct": 12.03324285043569,
+        "return_corr": 0.784092640815509,
+        "return_mae_pp": 1.0437945116547653,
+        "direction_accuracy_pct": 79.3103448275862
+      },
+      "test_2026_H2": {
+        "rows": 65,
+        "mape_pct": 11.2648968362323,
+        "return_corr": 0.8769185821870978,
+        "return_mae_pp": 1.0981213453179925,
+        "direction_accuracy_pct": 81.53846153846153
+      }
+    }
+  },
+  "limitations": [
+    "Screenshot lacks memory definition, standardization, intercept and full coefficients; this is a new approximation.",
+    "Free float cap unavailable and omitted; cap * turnover is a trading-value proxy, not observed turnover amount.",
+    "Industry aggregation can differ from stock aggregation and constituent overlap was not deduplicated.",
+    "Only 498 industry trading days; 250-day warmup leaves a short training period.",
+    "2026 is chronological out-of-fit data but has been inspected in prior project research.",
+    "No strategy return claim and no intraday/pre-close availability assumed."
+  ],
+  "checks": {
+    "prefix_invariance": true,
+    "train_only_scaling_and_fit": true,
+    "no_original_amv_predictors": true,
+    "production_unchanged": true
+  }
+}

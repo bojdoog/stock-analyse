@@ -27,7 +27,7 @@ class Row(dict):
 
 class Result:
     def __init__(self, cursor):
-        self.lastrowid = cursor.lastrowid
+        self.lastrowid = getattr(cursor, 'lastrowid', None)
         self.rowcount = cursor.rowcount
         names = [column[0] for column in cursor.description] if cursor.description else []
         self.rows = iter(Row(zip(names, row)) for row in cursor.fetchall()) if names else iter(())
@@ -136,6 +136,8 @@ def ensure_schema(db, flow_numbers, flow_text):
         db.execute(sql + suffix)
     from intraday_store import ensure_schema as intraday_schema
     intraday_schema(db)
+    from etf_intraday import ensure_schema as etf_intraday_schema
+    etf_intraday_schema(db)
     from etf_catalog import ensure_schema as catalog_schema
     catalog_schema(db)
     db.commit()

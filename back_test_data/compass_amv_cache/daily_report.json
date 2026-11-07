@@ -1,10 +1,10 @@
 {
-  "overlap": 8215,
-  "added": 3,
+  "overlap": 8239,
+  "added": 1,
   "differences_preserved": [],
   "source": "C:\\Compass\\WavMain\\ANALYSE\\Data\\ChinaStk\\Z_SK\\day.vdat",
-  "records": 8218,
-  "latest": "2026-09-30",
+  "records": 8240,
+  "latest": "2026-11-06",
   "check_only": false,
-  "backup": "C:\\_allCode\\stock_analyse\\back_test_data\\compass_amv_cache\\0AMV-2013-2026.20261001_030746_829672.bak.csv"
+  "backup": "C:\\_allCode\\stock_analyse\\back_test_data\\compass_amv_cache\\0AMV-2013-2026.20261107_003852_455175.bak.csv"
 }

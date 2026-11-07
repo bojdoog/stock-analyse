@@ -1,0 +1,22 @@
+{
+  "databases": [
+    {
+      "database": "C:\\_allCode\\stock_analyse\\flask_backend\\instance\\stock_analyse.sqlite3",
+      "industry_rows": 15500,
+      "indicator_rows": 500,
+      "last_date": "2026-10-09",
+      "industry_sha256": "1c436b1f818a521c587fc458f312a07a4962588c16ea3dad13a9f92f8e498a3c",
+      "sha256": "23de0c0decc73b49fd8ce3c2eaf177d5a37d0026a53ea00b22cc3f7a6b0dd9bf"
+    },
+    {
+      "database": "mysql",
+      "industry_rows": 15500,
+      "indicator_rows": 500,
+      "last_date": "2026-10-09",
+      "industry_sha256": "1c436b1f818a521c587fc458f312a07a4962588c16ea3dad13a9f92f8e498a3c",
+      "sha256": "23de0c0decc73b49fd8ce3c2eaf177d5a37d0026a53ea00b22cc3f7a6b0dd9bf"
+    }
+  ],
+  "mysql_pending": 0,
+  "remaining_industry_days": 0
+}

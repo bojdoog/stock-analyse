@@ -20,9 +20,9 @@ def archive_file(path):
     import_source(key, payload)
 
 
-def read_file(path):
+def read_file(path, database='auto'):
     _, key = archive_key(path)
-    content = file_content(key, 'auto')
+    content = file_content(key, database)
     if content is not None:
         return base64.b64decode(json.loads(content)['base64'])
     return Path(path).read_bytes() if Path(path).exists() else None

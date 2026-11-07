@@ -1,6 +1,7 @@
 import copy
 import sys
 import unittest
+from datetime import date, timedelta
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
@@ -52,6 +53,36 @@ class SectorActivityTests(unittest.TestCase):
             self.calc(rows + [rows[0]])
         with self.assertRaises(ValueError):
             self.calc([r for r in rows if not (r['ts_code'] == 'a' and r['trade_date'] == '20240915')])
+
+    def test_amount_and_volume_ratio_exclude_current_day(self):
+        rows = [{**self.rows()[0], 'trade_date': (date(2024, 9, 10) + timedelta(days=i)).strftime('%Y%m%d'),
+                 'vol': 100 if i < 20 else 300, 'avg_price': 5} for i in range(22)]
+        series = calculate(rows, ['a'], {})['a']['series']
+        self.assertIsNone(series[19]['volume_ratio'])
+        self.assertEqual(series[20]['volume_ratio'], 3)
+        self.assertAlmostEqual(series[21]['volume_ratio'], 300 / 110)
+        self.assertEqual(series[20]['amount'], 150000)
+        self.assertEqual(series[:21], calculate(rows[:21], ['a'], {})['a']['series'])
+        rows[0]['vol'] = ''
+        self.assertIsNone(calculate(rows, ['a'], {})['a']['series'][20]['volume_ratio'])
+        for row in rows:
+            row['vol'] = 0
+        self.assertIsNone(calculate(rows, ['a'], {})['a']['series'][20]['volume_ratio'])
+
+    def test_kdj_real_prices_warmup_and_future_independence(self):
+        rows = [{**row, 'close': 18, 'high': 20, 'low': 10, 'vol': 100} for row in self.rows() if row['ts_code'] == 'a']
+        series = calculate(rows, ['a'], {})['a']['series']
+        self.assertIsNone(series[7]['k'])
+        self.assertAlmostEqual(series[8]['k'], 60)
+        self.assertAlmostEqual(series[8]['d'], 160 / 3)
+        self.assertAlmostEqual(series[8]['j'], 220 / 3)
+        self.assertEqual(series[8]['volume'], 100)
+        self.assertEqual(series[:10], calculate(rows[:10], ['a'], {})['a']['series'])
+        rows[9]['high'] = ''
+        self.assertIsNone(calculate(rows, ['a'], {})['a']['series'][9]['k'])
+        for row in rows:
+            row.update(close=10, high=10, low=10)
+        self.assertAlmostEqual(calculate(rows, ['a'], {})['a']['series'][8]['j'], 50)
 
 
 if __name__ == '__main__':

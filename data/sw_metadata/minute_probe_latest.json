@@ -1,0 +1,33 @@
+[
+  {
+    "params": {
+      "ts_code": "801150.SI",
+      "freq": "1min",
+      "start_date": "2026-09-30 09:30:00",
+      "end_date": "2026-09-30 09:35:00",
+      "limit": 20
+    },
+    "error": "[upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=14a2821a2a2c48609154c54080a3ec6d"
+  },
+  {
+    "params": {
+      "ts_code": "801030.SI",
+      "freq": "1min",
+      "start_date": "2026-10-09 09:30:00",
+      "end_date": "2026-10-09 09:35:00",
+      "limit": 20
+    },
+    "error": "[upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=0fbc7ba392a54a24913c1448c57ac2ae"
+  },
+  {
+    "retry_after_30s": true,
+    "params": {
+      "ts_code": "801150.SI",
+      "freq": "1min",
+      "start_date": "2026-09-30 09:30:00",
+      "end_date": "2026-09-30 09:35:00",
+      "limit": 20
+    },
+    "error": "[upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=31d39b9eb0404bae8f83792b0f6b5d61"
+  }
+]

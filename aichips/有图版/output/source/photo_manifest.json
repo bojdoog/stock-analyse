@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-18",
+  "combined_pdf": "/workspace/scratch/3aa8a65cdc55/output/美国AI算力产业链_流程图册_20261018.pdf",
+  "page_count": 35,
+  "photo_count": 32,
+  "photo_pages": [
+    {
+      "slug": "photo-00-overview",
+      "title": "看见 AI 算力产业链：从晶圆到机房",
+      "width": 1440,
+      "height": 1830,
+      "png": "/workspace/scratch/3aa8a65cdc55/output/photo-diagrams/photo-00-overview.png",
+      "pixel_width": 3840,
+      "pixel_height": 4880
+    },
+    {
+      "slug": "photo-01-equipment",
+      "title": "半导体设备长什么样：六类关键现场与设备",
+      "width": 1440,
+      "height": 1830,
+      "png": "/workspace/scratch/3aa8a65cdc55/output/photo-diagrams/photo-01-equipment.png",
+      "pixel_width": 3840,
+      "pixel_height": 4880
+    },
+    {
+      "slug": "photo-02-ddr-memory",
+      "title": "内存颗粒怎样变成一根服务器内存条",
+      "width": 1440,
+      "height": 1830,
+      "png": "/workspace/scratch/3aa8a65cdc55/output/photo-diagrams/photo-02-ddr-memory.png",
+      "pixel_width": 3840,
+      "pixel_height": 4880
+    },
+    {
+      "slug": "photo-03-hbm",
+      "title": "HBM 长什么样：外观、内部堆叠与计算封装",
+      "width": 1440,
+      "height": 1830,
+      "png": "/workspace/scratch/3aa8a65cdc55/output/photo-diagrams/photo-03-hbm.png",
+      "pixel_width": 3840,
+      "pixel_height": 4880
+    },
+    {
+      "slug": "photo-04-gpu",
+      "title": "显卡与 AI 加速器：从封装看到整机",
+      "width": 1440,
+      "height": 1550,
+      "png": "/workspace/scratch/3aa8a65cdc55/output/photo-diagrams/photo-04-gpu.png",
+      "pixel_width": 3840,
+      "pixel_height": 4134
+    },
+    {
+      "slug": "photo-05-tpu",
+      "title": "Google TPU 的封装、板卡与机架",
+      "width": 1440,
+      "height": 1690,
+      "png": "/workspace/scratch/3aa8a65cdc55/output/photo-diagrams/photo-05-tpu.png",
+      "pixel_width": 3840,
+      "pixel_height": 4507
+    },
+    {
+      "slug": "photo-06-custom-asic",
+      "title": "定制 AI 芯片的实物：芯片封装与服务器托盘",
+      "width": 1440,
+      "height": 1550,
+      "png": "/workspace/scratch/3aa8a65cdc55/output/photo-diagrams/photo-06-custom-asic.png",
+      "pixel_width": 3840,
+      "pixel_height": 4134
+    },
+    {
+      "slug": "photo-07-server",
+      "title": "服务器怎样装起来：内部、网络与机架",
+      "width": 1440,
+      "height": 2068,
+      "png": "/workspace/scratch/3aa8a65cdc55/output/photo-diagrams/photo-07-server.png",
+      "pixel_width": 3840,
+      "pixel_height": 5515
+    },
+    {
+      "slug": "photo-08-cloud",
+      "title": "CoreWeave 的算力云：服务器背后的真实现场",
+      "width": 1440,
+      "height": 1550,
+      "png": "/workspace/scratch/3aa8a65cdc55/output/photo-diagrams/photo-08-cloud.png",
+      "pixel_width": 3840,
+      "pixel_height": 4134
+    }
+  ],
+  "source_pages": 4,
+  "base_pages": 21
+}

@@ -10,7 +10,7 @@ python fetch_data/download_amv_research.py
 python fetch_data/update_latest.py --help
 ```
 
-`run_all_fetch.py` 统一执行项目使用的 ETF、指数、三类资金流向和活跃市值推导原始数据拉取，不拉取个股日线。研究数据从 2024-09-10 拉到当天。个股脚本仅保留供手动使用。
+`run_all_fetch.py` 统一执行项目使用的 ETF、指数、三类资金流向和活跃市值推导原始数据拉取，不拉取个股日线。研究数据从 2024-09-10 拉取。结束日期默认按 15 点规则（`trading_date.py`）：北京时间 15:00 前取前一交易日，15:00 后取当天，并自动回退到最近的实际交易日（周末/节假日跳过）。个股脚本仅保留供手动使用。
 
 统一流程首先调用 `fetch_compass_amv_daily.py`，读取 `C:\Compass\WavMain\ANALYSE\Data\ChinaStk\Z_SK\day.vdat`，校验块索引、日期及 OHLC 后，向 `data/core_index/0AMV-2013-2026.csv` 和共用数据库增量写入新日期。已有日期保留原值，重叠日期 OHLC 不一致时停止写入；成交量/额差异记录到报告。写入前自动备份 CSV 到 `back_test_data/compass_amv_cache/`。运行前正常退出指南针，释放文件锁；数据截止日期取决于软件已缓存的行情，不会联网补齐指南针缓存。可用 `python fetch_data/fetch_compass_amv_daily.py --check-only` 只检查不更新日线。
 

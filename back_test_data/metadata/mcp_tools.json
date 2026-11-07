@@ -3509,7 +3509,7 @@
     },
     {
       "name": "cctv_news",
-      "description": "/数据接口/另类数据/新闻联播文字稿-获取新闻联播文字稿数据，数据开始于2017年。单次最多返回 100 条。更新：每天22点第30分钟",
+      "description": "/数据接口/大模型语料专题数据/新闻联播文字稿-获取新闻联播文字稿数据，数据开始于2017年。单次最多返回 100 条。更新：每天22点第30分钟",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -6702,7 +6702,7 @@
     },
     {
       "name": "cb_price_chg",
-      "description": "/数据接口/债券/可转债转股价变动-获取可转债转股价变动。单次最多返回 2000 条。更新：每日19左右",
+      "description": "/数据接口/债券专题/可转债转股价变动-获取可转债转股价变动。单次最多返回 2000 条。更新：每日19左右",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -6793,7 +6793,7 @@
     },
     {
       "name": "us_daily",
-      "description": "/数据接口/美股/美股日线行情-获取美股行情（未复权），包括全部股票全历史行情，以及重要的市场和估值指标。单次最多返回 8000 条。更新：交易日13点",
+      "description": "/数据接口/美股数据/美股日线行情-获取美股行情（未复权），包括全部股票全历史行情，以及重要的市场和估值指标。单次最多返回 8000 条。更新：交易日13点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -7272,7 +7272,7 @@
     },
     {
       "name": "ths_daily",
-      "description": "/数据接口/沪深股票/打板专题数据/同花顺概念和行业指数行情-获取同花顺板块指数行情。单次最多返回 3000 条。更新：交易日21点",
+      "description": "/数据接口/沪深股票/打板专题数据/THS概念板块行情-获取同花顺板块指数行情。单次最多返回 3000 条。更新：交易日21点",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -8466,7 +8466,7 @@
     },
     {
       "name": "anns_d",
-      "description": "/数据接口/另类数据/上市公司公告-获取全量公告数据，提供pdf下载URL。单次最多返回 6000 条。更新：每两个小时",
+      "description": "/数据接口/大模型语料专题数据/上市公司公告-获取全量公告数据，提供pdf下载URL。单次最多返回 6000 条。更新：每两个小时",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -10961,7 +10961,7 @@
     },
     {
       "name": "fund_factor_pro",
-      "description": "/数据接口/公募基金/基金技术面因子(专业版)-获取场内基金每日技术面因子数据，用于跟踪场内基金当前走势情况，数据由Tushare社区自产，覆盖全历史；输出参数_bfq表示不复权。单次最多返回 8000 条。更新：交易日20:30。参数约束：ts_code,trade_date至少输入一个参数",
+      "description": "/数据接口/ETF专题/技术面因子(专业版)-获取场内基金每日技术面因子数据，用于跟踪场内基金当前走势情况，数据由Tushare社区自产，覆盖全历史；输出参数_bfq表示不复权。单次最多返回 8000 条。更新：交易日20:30。参数约束：ts_code,trade_date至少输入一个参数",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -13390,7 +13390,7 @@
     },
     {
       "name": "rt_idx_k",
-      "description": "/数据接口/指数专题/实时日线-获取交易所指数实时日线行情，支持按代码或代码通配符一次性提取全部交易所指数实时日k线行情。单次最多返回 1000 条。更新：盘中实时更新",
+      "description": "/数据接口/指数专题/指数实时日线-获取交易所指数实时日线行情，支持按代码或代码通配符一次性提取全部交易所指数实时日k线行情。单次最多返回 1000 条。更新：盘中实时更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -14198,7 +14198,7 @@
     },
     {
       "name": "rt_etf_sz_iopv",
-      "description": "/数据接口/ETF专题/深交所ETF实时快照-ETF实时净值和申购赎回数据参考，目前只提供深市。单次最多返回 5000 条。更新：盘中实时更新",
+      "description": "/数据接口/ETF专题/ETF实时参考-ETF实时净值和申购赎回数据参考，目前只提供深市。单次最多返回 5000 条。更新：盘中实时更新",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -14300,7 +14300,7 @@
     },
     {
       "name": "idx_anns",
-      "description": "/数据接口/ETF专题/指数公告-获取指数公司披露的相关公告信息，包括中证指数、国证指数、恒生指数和华证指数的及时与历史公告信息，跟踪指数最新信息和发展方向。单次最多返回 1000 条。更新：每日每隔1小时更新一次",
+      "description": "/数据接口/指数专题/指数公司公告-获取指数公司披露的相关公告信息，包括中证指数、国证指数、恒生指数和华证指数的及时与历史公告信息，跟踪指数最新信息和发展方向。单次最多返回 1000 条。更新：每日每隔1小时更新一次",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -14696,7 +14696,7 @@
     },
     {
       "name": "etf_mins",
-      "description": "/数据接口/ETF专题/ETF分钟行情-获取ETF分钟数据，支持1min/5min/15min/30min/60min行情。单次最多返回 8000 条。更新：每日19~20点之间",
+      "description": "/数据接口/ETF专题/ETF历史分钟-获取ETF分钟数据，支持1min/5min/15min/30min/60min行情。单次最多返回 8000 条。更新：每日19~20点之间",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -16453,12 +16453,12 @@
     },
     {
       "name": "fut_trade_param",
-      "description": "/数据接口/期货数据/期货交易参数-获取郑商所期货交易参数数据。单次最多返回 3000 条。更新：交易日19点更新",
+      "description": "/数据接口/期货数据/郑商所期货交易参数-获取郑商所期货交易参数数据。单次最多返回 3000 条。更新：交易日19点更新",
       "inputSchema": {
         "type": "object",
         "properties": {
-          "end_date": {
-            "description": "结束日期",
+          "ts_code": {
+            "description": "期货代码",
             "anyOf": [
               {
                 "type": "string"
@@ -16468,8 +16468,8 @@
               }
             ]
           },
-          "fut_code": {
-            "description": "期货代码",
+          "end_date": {
+            "description": "结束日期",
             "anyOf": [
               {
                 "type": "string"
@@ -16506,7 +16506,7 @@
             "items": {
               "type": "string"
             },
-            "description": "指定返回字段，不传则返回默认字段。\n默认字段: trade_date, fut_code, exchange, trade_unit, tick_size, pre_settle_price, price_limit, position_limit, trade_limit, min_order_qty, max_limit_order_qty, max_market_order_qty\n额外可选字段:\n  （所有字段均为默认返回，无需指定）"
+            "description": "指定返回字段，不传则返回默认字段。\n默认字段: ts_code, trade_date, exchange, trade_unit, tick_size, pre_settle_price, price_limit, position_limit, trade_limit, min_order_qty, max_limit_order_qty, max_market_order_qty\n额外可选字段:\n  （所有字段均为默认返回，无需指定）"
           }
         },
         "required": []
@@ -16618,6 +16618,261 @@
               "type": "string"
             },
             "description": "指定返回字段，不传则返回默认字段。\n默认字段: trade_date, high, low, open, pct_change, close\n额外可选字段:\n  （所有字段均为默认返回，无需指定）"
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "name": "fut_adjfactor",
+      "description": "/数据接口/期货数据/期货复权因子-获取主力合约的复权因子。单次最多返回 3000 条。更新：每天22点更新",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "ts_code": {
+            "description": "合约代码",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ]
+          },
+          "end_date": {
+            "description": "结束日期",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ]
+          },
+          "exchange": {
+            "description": "交易所代码",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ]
+          },
+          "start_date": {
+            "description": "开始日期",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ]
+          },
+          "trade_date": {
+            "description": "交易日期",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ]
+          },
+          "fields": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "指定返回字段，不传则返回默认字段。\n默认字段: ts_code, exchange, trade_date, adj_factor\n额外可选字段:\n  （所有字段均为默认返回，无需指定）"
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "name": "fut_trade_param_cfx",
+      "description": "/数据接口/期货数据/中金期货交易参数-获取中金期货交易参数数据。单次最多返回 3000 条。更新：交易日9点更新",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "ts_code": {
+            "description": "期货代码",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ]
+          },
+          "end_date": {
+            "description": "结束日期",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ]
+          },
+          "start_date": {
+            "description": "开始日期",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ]
+          },
+          "trade_date": {
+            "description": "交易日期",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ]
+          },
+          "fields": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "指定返回字段，不传则返回默认字段。\n默认字段: ts_code, trade_date, exchange, trade_type, trade_month, listing_date, product_id, upper_limit, lower_limit, end_trade_date, basis_price, long_limit, upper_limit_price, lower_limit_price\n额外可选字段:\n  （所有字段均为默认返回，无需指定）"
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "name": "fut_trade_param_gfe",
+      "description": "/数据接口/期货数据/广州期货交易参数-获取广州期货交易参数数据。单次最多返回 3000 条。更新：交易日20点更新",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "ts_code": {
+            "description": "期货代码",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ]
+          },
+          "end_date": {
+            "description": "结束日期",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ]
+          },
+          "start_date": {
+            "description": "开始日期",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ]
+          },
+          "trade_date": {
+            "description": "交易日期",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ]
+          },
+          "fields": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "指定返回字段，不传则返回默认字段。\n默认字段: ts_code, trade_date, exchange, trade_type, type, spec_buy_rate, spec_buy, hedge_buy_rate, hedge_buy, rise_limit_rate, rise_limit, fall_limit, agent_tot_buy_posi_quota, self_tot_buy_posi_quota, client_buy_posi_quota, self_tot_buy_ser_limit, client_buy_ser_limit\n额外可选字段:\n  （所有字段均为默认返回，无需指定）"
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "name": "fut_trade_param_dce",
+      "description": "/数据接口/期货数据/大连商品交易所交易参数-获取大连商品交易所交易参数数据。单次最多返回 3000 条。更新：交易日20点更新",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "ts_code": {
+            "description": "期货代码",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ]
+          },
+          "end_date": {
+            "description": "结束日期",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ]
+          },
+          "start_date": {
+            "description": "开始日期",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ]
+          },
+          "trade_date": {
+            "description": "交易日期",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ]
+          },
+          "fields": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "指定返回字段，不传则返回默认字段。\n默认字段: ts_code, trade_date, exchange, trade_type, type, spec_buy_rate, spec_buy, hedge_buy_rate, hedge_buy, rise_limit_rate, rise_limit, fall_limit, self_tot_buy_posi_quota, client_buy_posi_quota, self_tot_buy_posi_quota_ser_limit, client_buy_posi_quota_ser_limit, fut_code_limit, variety_limit\n额外可选字段:\n  （所有字段均为默认返回，无需指定）"
           }
         },
         "required": []

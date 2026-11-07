@@ -1,0 +1,135 @@
+{
+  "last": "2026-10-08",
+  "cases": {
+    "etf_gain_protectionfalse_bankfalse": {
+      "return_pct": 310.87999999999994,
+      "dd_pct": 17.09935981496329,
+      "bull_count": 45,
+      "bull_win_count": 26
+    },
+    "etf_blend20_protectionfalse_bankfalse": {
+      "return_pct": 395.58,
+      "dd_pct": 15.835593426165817,
+      "bull_count": 45,
+      "bull_win_count": 26
+    },
+    "etf_gain_protectionfalse_banktrue": {
+      "return_pct": 580.82,
+      "dd_pct": 17.09935981496329,
+      "bull_count": 45,
+      "bull_win_count": 26
+    },
+    "etf_blend20_protectionfalse_banktrue": {
+      "return_pct": 721.1800000000001,
+      "dd_pct": 15.835593426165817,
+      "bull_count": 45,
+      "bull_win_count": 26
+    },
+    "etf_gain_protectiontrue_bankfalse": {
+      "return_pct": 350.92999999999995,
+      "dd_pct": 14.445265005839047,
+      "bull_count": 45,
+      "bull_win_count": 26
+    },
+    "etf_blend20_protectiontrue_bankfalse": {
+      "return_pct": 466.84000000000003,
+      "dd_pct": 13.719327182376052,
+      "bull_count": 45,
+      "bull_win_count": 26
+    },
+    "etf_gain_protectiontrue_banktrue": {
+      "return_pct": 647.1899999999999,
+      "dd_pct": 14.445265005839047,
+      "bull_count": 45,
+      "bull_win_count": 26
+    },
+    "etf_blend20_protectiontrue_banktrue": {
+      "return_pct": 839.25,
+      "dd_pct": 13.446779993732182,
+      "bull_count": 45,
+      "bull_win_count": 26
+    }
+  },
+  "benchmarks": [
+    {
+      "code": "sh000001",
+      "name": "上证指数",
+      "first": "2019-01-02",
+      "last": "2026-10-08",
+      "hold_pct": 54.62289441692685,
+      "dd_pct": 27.27014194512889
+    },
+    {
+      "code": "sh000300",
+      "name": "沪深300",
+      "first": "2019-01-02",
+      "last": "2026-10-08",
+      "hold_pct": 45.14986570457673,
+      "dd_pct": 45.60262048486471
+    },
+    {
+      "code": "510050",
+      "name": "上证50ETF",
+      "first": "2019-01-02",
+      "last": "2026-10-08",
+      "hold_pct": 45.886346456730976,
+      "dd_pct": 41.882155060383376
+    },
+    {
+      "code": "510300",
+      "name": "沪深300ETF",
+      "first": "2019-01-02",
+      "last": "2026-10-08",
+      "hold_pct": 68.64792403886364,
+      "dd_pct": 42.155347080635785
+    },
+    {
+      "code": "563300",
+      "name": "中证2000ETF",
+      "first": "2023-09-14",
+      "last": "2026-10-08",
+      "hold_pct": 42.39350912778903,
+      "dd_pct": 32.76190476190477
+    }
+  ],
+  "broadTiming": {
+    "510050": {
+      "return_pct": 63.3,
+      "dd_pct": 13.926266430974755,
+      "bull_count": 45,
+      "bull_win_count": 26
+    },
+    "510300": {
+      "return_pct": 110.28999999999999,
+      "dd_pct": 11.277082187232368,
+      "bull_count": 45,
+      "bull_win_count": 26
+    }
+  },
+  "bull_factor": 5.66842294625845,
+  "bank_factor": 1.6569922593565516,
+  "without_best3_bull_pct": 377.5945807808149,
+  "best3": [
+    {
+      "start": "2025-06-25",
+      "end": "2025-09-04",
+      "return_pct": 29.387203273470284
+    },
+    {
+      "start": "2024-09-24",
+      "end": "2024-10-11",
+      "return_pct": 23.436011792143454
+    },
+    {
+      "start": "2020-06-01",
+      "end": "2020-07-16",
+      "return_pct": 23.137442679430407
+    }
+  ],
+  "conventions": [
+    "Frozen inputs reproduce screenshot; same close, no costs.",
+    "Displayed production benchmarks compound ONLY bull intervals, not buy-and-hold.",
+    "Index close returns exclude dividends; stored ETF OHLC adjustment provenance not independently verified.",
+    "Removing best trades is a concentration diagnostic, not an executable strategy."
+  ]
+}

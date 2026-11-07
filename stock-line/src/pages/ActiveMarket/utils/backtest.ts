@@ -12,6 +12,8 @@ export interface BacktestHolding {
   weight: number;
   day_change?: number;
   entry_20d_change?: number | null;
+  entry_sector_volume_ratio?: number | null;
+  entry_sector_amount_share?: number | null;
   holding_return: number;
   industry_name?: string; // 板块名称（仅用于资金流入排名）
 }
@@ -188,9 +190,56 @@ const ETF_TO_INDUSTRY: Record<string, string[]> = {
 export type RankingMethod =
   | 'etf_gain'
   | 'etf_blend20'
+  | 'etf_sector_40203010'
+  | 'etf_sector_403030'
   | 'ths_moneyflow'
   | 'ths_concept'
   | 'dc_moneyflow';
+
+export interface SectorVolumeData {
+  byDate: Record<string, Record<string, { volumeRatio: number; amountShare: number | null }>>;
+  coverageStart: string | null;
+  coverageEnd: string | null;
+  amountAvailable: boolean;
+  mappedNames: string[];
+  unmappedNames: string[];
+}
+
+export const isSectorVolumeRanking = (method: RankingMethod) =>
+  method === 'etf_sector_40203010' || method === 'etf_sector_403030';
+
+export function rankSectorCandidates<T extends { name: string; gain: number; gain20: number | null }>(
+  eligible: T[], candidates: T[], date: string, method: RankingMethod, data?: SectorVolumeData,
+): (T & { score: number })[] {
+  if (!data) throw new Error('正在加载同花顺板块量能，请稍候。');
+  const fourFactors = method === 'etf_sector_40203010';
+  if (fourFactors && !data.amountAvailable) {
+    throw new Error('40/20/30/10排名缺少行业成交额，请先拉取行业均价并计算成交额；可选择40/30/30排名。');
+  }
+  const features = data.byDate[date];
+  if (!features) throw new Error(`${date}缺少板块量能；当前可用范围为${data.coverageStart ?? '无'}至${data.coverageEnd ?? '无'}，请选择有数据的回测年份。`);
+  const mapped = new Set(data.mappedNames);
+  const observed = eligible.filter(row => mapped.has(row.name));
+  for (const row of observed) {
+    const f = features[row.name];
+    if (!f || !Number.isFinite(f.volumeRatio) || f.volumeRatio < 0) {
+      throw new Error(`${date} ${row.name}对应行业缺少完整的20日成交量，不能计算量能排名。`);
+    }
+    if (fourFactors && (f.amountShare == null || !Number.isFinite(f.amountShare) || f.amountShare < 0 || f.amountShare > 1)) {
+      throw new Error(`${date} ${row.name}缺少完整的行业成交额占比，不能计算四因子排名。`);
+    }
+  }
+  if (!observed.length) throw new Error(`${date}候选ETF均无可用的同花顺行业映射。`);
+  const directionalVolume = (row: T) => Math.sign(row.gain) * features[row.name].volumeRatio;
+  return eligible.map(row => {
+    const day = candidates.filter(other => other.gain < row.gain).length / Math.max(1, candidates.length - 1);
+    const twenty = eligible.filter(other => other.gain20! < row.gain20!).length / Math.max(1, eligible.length - 1);
+    const hasMapping = mapped.has(row.name);
+    const volume = hasMapping ? observed.filter(other => directionalVolume(other) < directionalVolume(row)).length / Math.max(1, observed.length - 1) : .5;
+    const amount = fourFactors && hasMapping ? observed.filter(other => features[other.name].amountShare! < features[row.name].amountShare!).length / Math.max(1, observed.length - 1) : .5;
+    return { ...row, score: .4 * day + (fourFactors ? .2 : .3) * twenty + .3 * volume + (fourFactors ? .1 * amount : 0) };
+  }).sort((a, b) => b.score - a.score);
+}
 
 export interface StrategyParams {
   leverageMultiplier?: number;
@@ -610,6 +659,7 @@ export function runBacktest(
   moneyflowData?: MoneyflowData[],
   conceptMoneyflowData?: MoneyflowData[],
   indMoneyflowData?: MoneyflowData[],
+  sectorVolumeData?: SectorVolumeData,
 ): BacktestResult {
   const { startYear, endYear, weights, bearStartYear, rankingMethod } = params;
   const leverage = params.leverageMultiplier ?? 1;
@@ -795,7 +845,7 @@ export function runBacktest(
 
       // 构建持仓：如果 topN 中的 ETF 缺少 start/end 价格数据，用候选池中的下一个补上
       // 先把所有候选收集起来，过滤有完整价格数据的
-      if (rankingMethod === 'etf_blend20') {
+      if (rankingMethod === 'etf_blend20' || isSectorVolumeRanking(rankingMethod)) {
         // Use the full AMV history for lookback, including sessions before the selected backtest year.
         const entryIndex = amvData.findIndex(row => row.date === startDate);
         const oldDate = amvData[entryIndex - 20]?.date;
@@ -815,6 +865,9 @@ export function runBacktest(
           candidates.filter(other => other.gain < row.gain).length / Math.max(1, candidates.length - 1)
           + eligible.filter(other => other.gain20! < row.gain20!).length / Math.max(1, eligible.length - 1)
         ) / 2 })).sort((a, b) => b.score - a.score).slice(0, weights.length);
+        if (isSectorVolumeRanking(rankingMethod)) {
+          topN = rankSectorCandidates(eligible, candidates, startDate, rankingMethod, sectorVolumeData).slice(0, weights.length);
+        }
       }
       const rankedCandidates = topN.map((item) => ({
         item,
@@ -824,7 +877,7 @@ export function runBacktest(
       const backupCandidates: {
         item: { name: string; day_change: number; industry_name?: string };
       }[] = [];
-      if (rankingMethod !== 'etf_gain' && rankingMethod !== 'etf_blend20') {
+      if (rankingMethod !== 'etf_gain' && rankingMethod !== 'etf_blend20' && !isSectorVolumeRanking(rankingMethod)) {
         const allCandidates = ((): {
           name: string;
           day_change: number;
@@ -979,11 +1032,16 @@ export function runBacktest(
           holding_return: holdingReturn,
           industry_name: item.industry_name,
         });
-        if (rankingMethod === 'etf_blend20') {
+        if (rankingMethod === 'etf_blend20' || isSectorVolumeRanking(rankingMethod)) {
           const oldDate = amvData[amvData.findIndex(row => row.date === startDate) - 20]?.date;
           const oldClose = data && oldDate ? getClose(data, oldDate) : null;
           holdings[holdings.length - 1].entry_20d_change = oldClose !== null && oldClose > 0
             ? (startClose / oldClose - 1) * 100 : null;
+          if (isSectorVolumeRanking(rankingMethod)) {
+            const f = sectorVolumeData?.byDate[startDate]?.[item.name];
+            holdings[holdings.length - 1].entry_sector_volume_ratio = f?.volumeRatio ?? null;
+            holdings[holdings.length - 1].entry_sector_amount_share = f?.amountShare ?? null;
+          }
         }
         if (params.profitProtectionEnabled || leverage !== 1) {
           const sectorMap = rankingMethod === 'dc_moneyflow' ? moneyflowMap

@@ -1,0 +1,420 @@
+=== 统一执行数据拉取脚本 ===
+共 9 个脚本
+
+Tushare: relay | https://tl.kaixin8.top/tushare/sdk
+
+============================================================
+开始执行: fetch_compass_amv_daily.py 
+============================================================
+{"overlap": 8225, "added": 0, "differences_preserved": [], "source": "C:\\Compass\\WavMain\\ANALYSE\\Data\\ChinaStk\\Z_SK\\day.vdat", "records": 8225, "latest": "2026-10-16", "check_only": false, "backup": "C:\\_allCode\\stock_analyse\\back_test_data\\compass_amv_cache\\0AMV-2013-2026.20261017_201806_934611.bak.csv"}
+============================================================
+fetch_compass_amv_daily.py: [OK] 完成
+============================================================
+
+
+============================================================
+开始执行: parse_compass_amv_cache.py --split-by-date --output C:\_allCode\stock_analyse\data\core_index\0AMV-intraday
+============================================================
+Exported 451230 records from 1888 files to C:\_allCode\stock_analyse\data\core_index\0AMV-intraday (1888 CSV files); errors=0
+============================================================
+parse_compass_amv_cache.py: [OK] 完成
+============================================================
+
+
+============================================================
+开始执行: import_compass_amv_intraday.py 
+============================================================
+Validated 1888 CSV files
+SQLite: 200/1888 files
+SQLite: 400/1888 files
+SQLite: 600/1888 files
+SQLite: 800/1888 files
+SQLite: 1000/1888 files
+SQLite: 1200/1888 files
+SQLite: 1400/1888 files
+SQLite: 1600/1888 files
+SQLite: 1800/1888 files
+SQLite committed; changed files=0. Replaying pending data to MySQL.
+Verified C:\_allCode\stock_analyse\flask_backend\instance\stock_analyse.sqlite3: 451230 rows and all archived CSV bytes
+Verified mysql: 451230 rows and all archived CSV bytes
+Intraday import complete: 1888 days, latest=2026-10-16; SQLite and MySQL verified.
+============================================================
+import_compass_amv_intraday.py: [OK] 完成
+============================================================
+
+
+============================================================
+开始执行: fetch_etf.py 
+============================================================
+159206.SZ 卫星ETF
+  上市日期：20250314，拉取至 20261017
+      已应用前复权
+  已保存 386 条
+159638.SZ 高端装备ETF
+  上市日期：20220812，拉取至 20261017
+      已应用前复权
+  已保存 1010 条
+159869.SZ 游戏ETF
+  上市日期：20210305，拉取至 20261017
+      已应用前复权
+  已保存 1361 条
+159915.SZ 创业板ETF
+  上市日期：20111209，拉取至 20261017
+      已应用前复权
+  已保存 3603 条
+510050.SH 上证50ETF
+  上市日期：20050223，拉取至 20261017
+    [复权因子失败] 510050.SH: fund_adj [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=dd10d956006f4ab7999ba680ede670e2
+      未获取到复权因子，使用原始价格
+  已保存 5260 条
+510300.SH 沪深300ETF
+  上市日期：20120528，拉取至 20261017
+    [失败] 510300.SH: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=45)
+  未取得行情，保留原数据
+510660.SH 创新药ETF
+  上市日期：20130508，拉取至 20261017
+      已应用前复权
+  已保存 3267 条
+512400.SH 有色ETF
+  上市日期：20170901，拉取至 20261017
+      已应用前复权
+  已保存 2211 条
+512480.SH 半导体ETF
+  上市日期：20190612，拉取至 20261017
+      已应用前复权
+  已保存 1781 条
+512690.SH 白酒ETF
+  上市日期：20190506，拉取至 20261017
+      已应用前复权
+  已保存 1807 条
+512800.SH 银行ETF
+  上市日期：20170803，拉取至 20261017
+      已应用前复权
+  已保存 2232 条
+512880.SH 证券ETF
+  上市日期：20160808，拉取至 20261017
+    [复权因子失败] 512880.SH: fund_adj [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=b546b2c2de8d4ae9a578c5f9720cad6f
+      未获取到复权因子，使用原始价格
+  已保存 2472 条
+512980.SH 传媒ETF
+  上市日期：20180119，拉取至 20261017
+    [复权因子失败] 512980.SH: fund_adj [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=ae0f2bc20c16481f9f7095af5f3098f3
+      未获取到复权因子，使用原始价格
+  已保存 2117 条
+515030.SH 新能源车ETF
+  上市日期：20200304，拉取至 20261017
+      已应用前复权
+  已保存 1605 条
+515220.SH 煤炭ETF
+  上市日期：20200302，拉取至 20261017
+      已应用前复权
+  已保存 1607 条
+515230.SH 软件ETF
+  上市日期：20210302，拉取至 20261017
+      已应用前复权
+  已保存 1364 条
+515880.SH 通信ETF
+  上市日期：20190906，拉取至 20261017
+      已应用前复权
+  已保存 1720 条
+516290.SH 光伏ETF
+  上市日期：20210823，拉取至 20261017
+      已应用前复权
+  已保存 1245 条
+561380.SH 电网设备ETF
+  上市日期：20241223，拉取至 20261017
+      已应用前复权
+  已保存 438 条
+562500.SH 机器人ETF
+  上市日期：20211229，拉取至 20261017
+      已应用前复权
+  已保存 1160 条
+563300.SH 中证2000ETF
+  上市日期：20230914，拉取至 20261017
+      已应用前复权
+  已保存 744 条
+完成，共 37390 条记录
+失败：510300.SH
+============================================================
+fetch_etf.py: [FAIL] 失败 (exit code 1)
+============================================================
+
+
+============================================================
+开始执行: fetch_index.py 
+============================================================
+开始抓取 2 只指数...
+============================================================
+
+【000001】上证指数 (000001.SH)
+    [失败] 000001.SH: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+  - 无数据
+
+【000300】沪深300 (000300.SH)
+  ✓ 3345 条记录
+    日期范围: 2013-01-04 ~ 2026-10-16
+    保存: C:\_allCode\stock_analyse\data\index\000300_沪深300.csv
+
+============================================================
+全部完成！共抓取 3345 条记录
+保存至: C:\_allCode\stock_analyse\data\index
+============================================================
+fetch_index.py: [OK] 完成
+============================================================
+
+
+============================================================
+开始执行: fetch_moneyflow_cnt_ths.py --start 20240910 --end 20261017
+============================================================
+准备拉取数据 (20240910 ~ 20261017)，共 110 周
+获取 20241029~20241104 概念资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20241029~20241104 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20241105~20241111 概念资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=15)
+20241105~20241111 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=15)
+获取 20250311~20250317 概念资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20250311~20250317 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20250401~20250407 概念资金流向失败: moneyflow_cnt_ths [503]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=44a9c9ce51f44723958df0d841d5ab80
+20250401~20250407 拉取失败: moneyflow_cnt_ths [503]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=44a9c9ce51f44723958df0d841d5ab80
+获取 20250520~20250526 概念资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20250520~20250526 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20250617~20250623 概念资金流向失败: moneyflow_cnt_ths [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=3c883bb00761412f8c2659d0861ceb96
+20250617~20250623 拉取失败: moneyflow_cnt_ths [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=3c883bb00761412f8c2659d0861ceb96
+获取 20260106~20260112 概念资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20260106~20260112 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20260120~20260126 概念资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20260120~20260126 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20260210~20260216 概念资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20260210~20260216 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20260217~20260223 概念资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Max retries exceeded with url: /tushare/sdk (Caused by ConnectTimeoutError(<HTTPSConnection(host='tl.kaixin8.top', port=443) at 0x19b91db0550>, 'Connection to tl.kaixin8.top timed out. (connect timeout=15)'))
+20260217~20260223 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Max retries exceeded with url: /tushare/sdk (Caused by ConnectTimeoutError(<HTTPSConnection(host='tl.kaixin8.top', port=443) at 0x19b91db0550>, 'Connection to tl.kaixin8.top timed out. (connect timeout=15)'))
+获取 20260825~20260831 概念资金流向失败: moneyflow_cnt_ths [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=bd60a5cffc5c4b94868ee2ff85d282f0
+20260825~20260831 拉取失败: moneyflow_cnt_ths [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=bd60a5cffc5c4b94868ee2ff85d282f0
+
+重试 11 个失败的区间...
+获取 20250401~20250407 概念资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+重试 20250401~20250407 失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+
+完成！共保存 514 天的数据
+============================================================
+fetch_moneyflow_cnt_ths.py: [OK] 完成
+============================================================
+
+
+============================================================
+开始执行: fetch_moneyflow_ind_dc.py --start 20230912 --end 20261017
+============================================================
+准备拉取数据 (20230912 ~ 20261017)，共 162 周
+获取 20230912~20230918 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20230912~20230918 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20230919~20230925 板块资金流向失败: moneyflow_ind_dc [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=54b8e951fe24488ba47124d14ede5fd9
+20230919~20230925 拉取失败: moneyflow_ind_dc [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=54b8e951fe24488ba47124d14ede5fd9
+获取 20240305~20240311 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20240305~20240311 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20240416~20240422 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=45)
+20240416~20240422 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=45)
+获取 20240514~20240520 板块资金流向失败: moneyflow_ind_dc [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=f3ab599c3a05418197dfa338f4b889c1
+20240514~20240520 拉取失败: moneyflow_ind_dc [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=f3ab599c3a05418197dfa338f4b889c1
+获取 20240521~20240527 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20240521~20240527 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20240604~20240610 板块资金流向失败: moneyflow_ind_dc [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=d4de9bbb36a34010ba1c56f47ad5e688
+20240604~20240610 拉取失败: moneyflow_ind_dc [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=d4de9bbb36a34010ba1c56f47ad5e688
+获取 20240716~20240722 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20240716~20240722 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20240723~20240729 板块资金流向失败: moneyflow_ind_dc [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=bb1f0952c98c48f6ab3443a642bbc7a7
+20240723~20240729 拉取失败: moneyflow_ind_dc [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=bb1f0952c98c48f6ab3443a642bbc7a7
+获取 20240910~20240916 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20240910~20240916 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20241126~20241202 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20241126~20241202 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20241203~20241209 板块资金流向失败: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+20241203~20241209 拉取失败: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+获取 20250114~20250120 板块资金流向失败: moneyflow_ind_dc [429]: [rate_limited] 请求额度已达到限制；建议等待30秒后重试；request_id=921eed938cc6476aafc18d9715272489
+20250114~20250120 拉取失败: moneyflow_ind_dc [429]: [rate_limited] 请求额度已达到限制；建议等待30秒后重试；request_id=921eed938cc6476aafc18d9715272489
+获取 20250128~20250203 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=45)
+20250128~20250203 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=45)
+获取 20250204~20250210 板块资金流向失败: moneyflow_ind_dc [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=b38c0e28735645cc82a6f7c12cdd627e
+20250204~20250210 拉取失败: moneyflow_ind_dc [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=b38c0e28735645cc82a6f7c12cdd627e
+获取 20250211~20250217 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20250211~20250217 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20250318~20250324 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20250318~20250324 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20250422~20250428 板块资金流向失败: moneyflow_ind_dc [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=8a397ef58a484dfc92681a8efda8fc30
+20250422~20250428 拉取失败: moneyflow_ind_dc [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=8a397ef58a484dfc92681a8efda8fc30
+获取 20250603~20250609 板块资金流向失败: moneyflow_ind_dc [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=f44d8247a35a403ea42e681ec6a059e6
+20250603~20250609 拉取失败: moneyflow_ind_dc [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=f44d8247a35a403ea42e681ec6a059e6
+获取 20250701~20250707 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20250701~20250707 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20250902~20250908 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20250902~20250908 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20250909~20250915 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20250909~20250915 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20250916~20250922 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=15)
+20250916~20250922 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=15)
+获取 20250923~20250929 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20250923~20250929 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20251007~20251013 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20251007~20251013 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20251104~20251110 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20251104~20251110 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20251111~20251117 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20251111~20251117 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20251202~20251208 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20251202~20251208 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20251209~20251215 板块资金流向失败: Tushare: entire request exceeded deadline (including response body)
+20251209~20251215 拉取失败: Tushare: entire request exceeded deadline (including response body)
+获取 20251223~20251229 板块资金流向失败: moneyflow_ind_dc [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=301d809cf43a4dcc9617af5446eb2c14
+20251223~20251229 拉取失败: moneyflow_ind_dc [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=301d809cf43a4dcc9617af5446eb2c14
+获取 20251230~20260105 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20251230~20260105 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20260203~20260209 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=45)
+20260203~20260209 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=45)
+获取 20260224~20260302 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20260224~20260302 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20260303~20260309 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20260303~20260309 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20260317~20260323 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20260317~20260323 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20260324~20260330 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=15)
+20260324~20260330 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=15)
+获取 20260414~20260420 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20260414~20260420 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20260623~20260629 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=45)
+20260623~20260629 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=45)
+获取 20260630~20260706 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20260630~20260706 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20260714~20260720 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20260714~20260720 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20260721~20260727 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20260721~20260727 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20260901~20260907 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20260901~20260907 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20260908~20260914 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=15)
+20260908~20260914 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=15)
+
+重试 43 个失败的区间...
+获取 20230919~20230925 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+重试 20230919~20230925 失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20250909~20250915 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+重试 20250909~20250915 失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20251202~20251208 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+重试 20251202~20251208 失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20260324~20260330 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=45)
+重试 20260324~20260330 失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=45)
+获取 20260414~20260420 板块资金流向失败: Tushare: entire request exceeded deadline (including response body)
+重试 20260414~20260420 失败: Tushare: entire request exceeded deadline (including response body)
+获取 20260623~20260629 板块资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+重试 20260623~20260629 失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+
+完成！共保存 716 天的数据
+============================================================
+fetch_moneyflow_ind_dc.py: [OK] 完成
+============================================================
+
+
+============================================================
+开始执行: fetch_moneyflow_ind_ths.py --start 20240910 --end 20261017
+============================================================
+准备拉取数据 (20240910 ~ 20261017)，共 110 周
+获取 20240910~20240916 行业资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=15)
+20240910~20240916 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=15)
+获取 20241022~20241028 行业资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20241022~20241028 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20250204~20250210 行业资金流向失败: moneyflow_ind_ths [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=800bf483950f411cafc267847fe2abeb
+20250204~20250210 拉取失败: moneyflow_ind_ths [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=800bf483950f411cafc267847fe2abeb
+获取 20250218~20250224 行业资金流向失败: moneyflow_ind_ths [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=2bad797d1b7a47d886ddb1fcd18d4360
+20250218~20250224 拉取失败: moneyflow_ind_ths [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=2bad797d1b7a47d886ddb1fcd18d4360
+获取 20250513~20250519 行业资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20250513~20250519 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20260203~20260209 行业资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=45)
+20260203~20260209 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=45)
+获取 20260224~20260302 行业资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=45)
+20260224~20260302 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=45)
+获取 20260324~20260330 行业资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20260324~20260330 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20260331~20260406 行业资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=15)
+20260331~20260406 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=15)
+获取 20260414~20260420 行业资金流向失败: moneyflow_ind_ths [503]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=4b0c81b8e04840da8bbeb390c7470c69
+20260414~20260420 拉取失败: moneyflow_ind_ths [503]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=4b0c81b8e04840da8bbeb390c7470c69
+获取 20260519~20260525 行业资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+20260519~20260525 拉取失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20260526~20260601 行业资金流向失败: moneyflow_ind_ths [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=dc12db8c41724ca2a0cb9d635f9f89bb
+20260526~20260601 拉取失败: moneyflow_ind_ths [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=dc12db8c41724ca2a0cb9d635f9f89bb
+获取 20260602~20260608 行业资金流向失败: moneyflow_ind_ths [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=ff00d9189e45437eac1231732228db1e
+20260602~20260608 拉取失败: moneyflow_ind_ths [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=ff00d9189e45437eac1231732228db1e
+获取 20260818~20260824 行业资金流向失败: moneyflow_ind_ths [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=42c3bbfcea224c659f5a2bcd7a79787b
+20260818~20260824 拉取失败: moneyflow_ind_ths [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=42c3bbfcea224c659f5a2bcd7a79787b
+获取 20260901~20260907 行业资金流向失败: moneyflow_ind_ths [503]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=be88ac69c4444c9d93a89cc1feca17fd
+20260901~20260907 拉取失败: moneyflow_ind_ths [503]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=be88ac69c4444c9d93a89cc1feca17fd
+获取 20260908~20260914 行业资金流向失败: moneyflow_ind_ths [503]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=5b82484cfc65453cbbd6b36bafa76f18
+20260908~20260914 拉取失败: moneyflow_ind_ths [503]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=5b82484cfc65453cbbd6b36bafa76f18
+获取 20260915~20260921 行业资金流向失败: moneyflow_ind_ths [503]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=e30a1eecf4a94706bedaee37de4e7f2c
+20260915~20260921 拉取失败: moneyflow_ind_ths [503]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=e30a1eecf4a94706bedaee37de4e7f2c
+获取 20260922~20260928 行业资金流向失败: moneyflow_ind_ths [503]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=4462d9abffb4421f881ff63d8bf2f74d
+20260922~20260928 拉取失败: moneyflow_ind_ths [503]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=4462d9abffb4421f881ff63d8bf2f74d
+获取 20260929~20261005 行业资金流向失败: moneyflow_ind_ths [503]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=2724864ef60e4e2c8fc3c287fc0fa40e
+20260929~20261005 拉取失败: moneyflow_ind_ths [503]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=2724864ef60e4e2c8fc3c287fc0fa40e
+获取 20261006~20261012 行业资金流向失败: moneyflow_ind_ths [503]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=e5785915b6b04015a896de3cd0d31f38
+20261006~20261012 拉取失败: moneyflow_ind_ths [503]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=e5785915b6b04015a896de3cd0d31f38
+
+重试 20 个失败的区间...
+获取 20260203~20260209 行业资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=45)
+重试 20260203~20260209 失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=45)
+获取 20260324~20260330 行业资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+重试 20260324~20260330 失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+获取 20260331~20260406 行业资金流向失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=15)
+重试 20260331~20260406 失败: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=15)
+
+完成！共保存 489 天的数据
+============================================================
+fetch_moneyflow_ind_ths.py: [OK] 完成
+============================================================
+
+
+============================================================
+开始执行: download_amv_research.py --start 20240910 --end 20261017
+============================================================
+AMV research download: 20240910 to 20261017
+Tushare SDK: relay | https://tl.kaixin8.top/tushare/sdk
+retry tools/call 1: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=45)
+moneyflow_ind_ths: 45270 rows
+daily_info: 6009 rows
+sz_daily_info: 7030 rows
+moneyflow_mkt_dc: 505 rows
+retry tools/call 1: ths_member [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=22485766a45f4c1888fe4cd623b6ba7d
+retry tools/call 1: ths_daily [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=1e307d31703047f185b09dd859b1b40d
+retry tools/call 1: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=45)
+retry tools/call 1: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=45)
+Industry progress 10/90; prices=5050 members=557 failures=0
+retry tools/call 1: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+retry tools/call 1: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=45)
+retry tools/call 1: ths_daily [503]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=433cf9be2e9a45699d0b24b31082d8a8
+retry tools/call 1: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+retry tools/call 1: ths_member [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=e3306c9501b34654945930b21abbd171
+Industry progress 20/90; prices=10100 members=1917 failures=0
+retry tools/call 1: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+retry tools/call 1: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+Industry progress 30/90; prices=15150 members=2437 failures=0
+retry tools/call 1: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+Industry progress 40/90; prices=20200 members=3201 failures=0
+retry tools/call 1: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=45)
+retry tools/call 1: ths_member [504]: [upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=de470bbeaa7c49d29dc387b4cb2d4508
+retry tools/call 1: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=45)
+Industry progress 50/90; prices=25250 members=3616 failures=0
+retry tools/call 1: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=45)
+retry tools/call 2: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out. (read timeout=15)
+retry tools/call 1: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+Industry progress 60/90; prices=30300 members=4091 failures=0
+Industry progress 70/90; prices=35350 members=4498 failures=0
+retry tools/call 1: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+retry tools/call 2: HTTPSConnectionPool(host='tl.kaixin8.top', port=443): Read timed out.
+Industry progress 80/90; prices=40400 members=5052 failures=0
+Industry progress 90/90; prices=45450 members=5612 failures=0
+{"complete": true, "skipped_interfaces": [], "industry_codes": 90, "expected_days": 505, "datasets": {"moneyflow_ind_ths": {"rows": 45270, "missing_days": 2}, "daily_info": {"rows": 6009, "missing_days": 0}, "sz_daily_info": {"rows": 7030, "missing_days": 1}, "moneyflow_mkt_dc": {"rows": 505, "missing_days": 0}, "ths_daily": {"rows": 45450, "missing_days": 0}, "amv": {"rows": 505, "missing_days": 0}, "local_industry_reference": {"rows": 29398, "missing_days": 2}}, "zero_flow_days": ["20240910", "20240911", "20240912", "20240913", "20240918", "20240919", "20240920", "20240923", "20240924", "20240925", "20240926", "20240927"], "failures": []}
+============================================================
+download_amv_research.py: [OK] 完成
+============================================================
+
+
+全部完成: 8 成功, 1 失败, 0 跳过
+成功：活跃市值日线、日内解析、日内入库、指数、同花顺概念资金、东财板块资金、同花顺行业资金、活跃市值研究数据
+失败：ETF

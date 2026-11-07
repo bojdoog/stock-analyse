@@ -1,0 +1,88 @@
+{
+  "request": {
+    "tool": "moneyflow_mkt_dc",
+    "arguments": {
+      "start_date": "20261101",
+      "end_date": "20261105"
+    }
+  },
+  "retrieved_at": "2026-11-05T17:17:37.767839+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"trade_date\":\"20261105\",\"close_sh\":3689.91,\"pct_change_sh\":0.1,\"close_sz\":11471.09,\"pct_change_sz\":1.19,\"net_amount\":8539443200.0,\"net_amount_rate\":0.4,\"buy_elg_amount\":8515452928.0,\"buy_elg_amount_rate\":0.4,\"buy_lg_amount\":23990272.0,\"buy_lg_amount_rate\":0.0,\"buy_md_amount\":-16809705472.0,\"buy_md_amount_rate\":-0.79,\"buy_sm_amount\":8270262272.0,\"buy_sm_amount_rate\":0.39},{\"trade_date\":\"20261104\",\"close_sh\":3686.17,\"pct_change_sh\":2.16,\"close_sz\":11335.69,\"pct_change_sz\":4.22,\"net_amount\":50028113920.0,\"net_amount_rate\":2.46,\"buy_elg_amount\":47406338048.0,\"buy_elg_amount_rate\":2.33,\"buy_lg_amount\":2621775872.0,\"buy_lg_amount_rate\":0.13,\"buy_md_amount\":-39275114496.0,\"buy_md_amount_rate\":-1.93,\"buy_sm_amount\":-10752999424.0,\"buy_sm_amount_rate\":-0.53},{\"trade_date\":\"20261103\",\"close_sh\":3608.1,\"pct_change_sh\":-0.82,\"close_sz\":10876.99,\"pct_change_sz\":-1.21,\"net_amount\":-57142505472.0,\"net_amount_rate\":-3.35,\"buy_elg_amount\":-30462361600.0,\"buy_elg_amount_rate\":-1.79,\"buy_lg_amount\":-26680143872.0,\"buy_lg_amount_rate\":-1.57,\"buy_md_amount\":9123557376.0,\"buy_md_amount_rate\":0.54,\"buy_sm_amount\":48018952192.0,\"buy_sm_amount_rate\":2.82},{\"trade_date\":\"20261102\",\"close_sh\":3638.03,\"pct_change_sh\":1.08,\"close_sz\":11010.68,\"pct_change_sz\":1.63,\"net_amount\":11743240192.0,\"net_amount_rate\":0.66,\"buy_elg_amount\":15832391680.0,\"buy_elg_amount_rate\":0.89,\"buy_lg_amount\":-4089151488.0,\"buy_lg_amount_rate\":-0.23,\"buy_md_amount\":-22678904832.0,\"buy_md_amount_rate\":-1.27,\"buy_sm_amount\":10935660544.0,\"buy_sm_amount_rate\":0.61}]"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "trade_date": "20261105",
+      "close_sh": 3689.91,
+      "pct_change_sh": 0.1,
+      "close_sz": 11471.09,
+      "pct_change_sz": 1.19,
+      "net_amount": 8539443200.0,
+      "net_amount_rate": 0.4,
+      "buy_elg_amount": 8515452928.0,
+      "buy_elg_amount_rate": 0.4,
+      "buy_lg_amount": 23990272.0,
+      "buy_lg_amount_rate": 0.0,
+      "buy_md_amount": -16809705472.0,
+      "buy_md_amount_rate": -0.79,
+      "buy_sm_amount": 8270262272.0,
+      "buy_sm_amount_rate": 0.39
+    },
+    {
+      "trade_date": "20261104",
+      "close_sh": 3686.17,
+      "pct_change_sh": 2.16,
+      "close_sz": 11335.69,
+      "pct_change_sz": 4.22,
+      "net_amount": 50028113920.0,
+      "net_amount_rate": 2.46,
+      "buy_elg_amount": 47406338048.0,
+      "buy_elg_amount_rate": 2.33,
+      "buy_lg_amount": 2621775872.0,
+      "buy_lg_amount_rate": 0.13,
+      "buy_md_amount": -39275114496.0,
+      "buy_md_amount_rate": -1.93,
+      "buy_sm_amount": -10752999424.0,
+      "buy_sm_amount_rate": -0.53
+    },
+    {
+      "trade_date": "20261103",
+      "close_sh": 3608.1,
+      "pct_change_sh": -0.82,
+      "close_sz": 10876.99,
+      "pct_change_sz": -1.21,
+      "net_amount": -57142505472.0,
+      "net_amount_rate": -3.35,
+      "buy_elg_amount": -30462361600.0,
+      "buy_elg_amount_rate": -1.79,
+      "buy_lg_amount": -26680143872.0,
+      "buy_lg_amount_rate": -1.57,
+      "buy_md_amount": 9123557376.0,
+      "buy_md_amount_rate": 0.54,
+      "buy_sm_amount": 48018952192.0,
+      "buy_sm_amount_rate": 2.82
+    },
+    {
+      "trade_date": "20261102",
+      "close_sh": 3638.03,
+      "pct_change_sh": 1.08,
+      "close_sz": 11010.68,
+      "pct_change_sz": 1.63,
+      "net_amount": 11743240192.0,
+      "net_amount_rate": 0.66,
+      "buy_elg_amount": 15832391680.0,
+      "buy_elg_amount_rate": 0.89,
+      "buy_lg_amount": -4089151488.0,
+      "buy_lg_amount_rate": -0.23,
+      "buy_md_amount": -22678904832.0,
+      "buy_md_amount_rate": -1.27,
+      "buy_sm_amount": 10935660544.0,
+      "buy_sm_amount_rate": 0.61
+    }
+  ]
+}

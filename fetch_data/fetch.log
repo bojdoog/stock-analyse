@@ -3,3 +3,67 @@
 2026-08-20 06:13:00,421 [INFO] fetch_kline.py:259 全部任务完成，数据已保存至 C:\_allCode\stock_analyse\data\stock
 2026-09-21 01:14:19,822 [INFO] fetch_kline.py:163 从 C:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 5429 只股票（排除板块：无）
 2026-09-21 01:14:19,822 [INFO] fetch_kline.py:250 开始抓取 5429 支股票 | 数据源:Tushare(日线,qfq) | 日期:20130104 → 20260921 | 排除:无
+2026-11-07 01:35:07,652 [INFO] fetch_kline.py:168 从 C:\Users\zhl\AppData\Local\Temp\stocklist_test.csv 读取到 2 只股票（排除板块：bj,gem,star）
+2026-11-07 01:35:07,653 [INFO] fetch_kline.py:255 开始抓取 2 支股票 | 数据源:Tushare(日线,qfq) | 日期:20260311 → 20261106 | 排除:bj,gem,star
+2026-11-07 01:35:27,250 [INFO] fetch_kline.py:278 全部任务完成，数据已保存至 C:\_allCode\stock_analyse\data\stock
+2026-11-07 01:39:12,705 [INFO] fetch_kline.py:168 从 C:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 5062 只股票（排除板块：bj,gem,star）
+2026-11-07 01:39:12,706 [INFO] fetch_kline.py:255 开始抓取 5062 支股票 | 数据源:Tushare(日线,qfq) | 日期:20260311 → 20261106 | 排除:bj,gem,star
+2026-11-07 01:53:22,880 [INFO] fetch_kline.py:168 从 C:\Users\zhl\AppData\Local\Temp\fetchtest\stocklist.csv 读取到 168 只股票（排除板块：bj,gem,star）
+2026-11-07 01:53:22,880 [INFO] fetch_kline.py:265 开始抓取 168 支股票 | 数据源:Tushare(日线,qfq) | 日期:20260311 → 20261106 | 排除:bj,gem,star
+2026-11-07 01:53:27,980 [INFO] fetch_kline.py:286 下载结束，开始批量写入数据库（168 个文件）...
+2026-11-07 01:53:31,277 [INFO] fetch_kline.py:290 批量入库完成
+2026-11-07 01:53:31,277 [INFO] fetch_kline.py:296 全部任务完成，数据已保存至 C:\Users\zhl\AppData\Local\Temp\fetchtest\stock
+2026-11-07 02:00:37,765 [INFO] fetch_kline.py:168 从 C:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 5062 只股票（排除板块：bj,gem,star）
+2026-11-07 02:00:37,765 [INFO] fetch_kline.py:265 开始抓取 5062 支股票 | 数据源:Tushare(日线,qfq) | 日期:20260311 → 20261106 | 排除:bj,gem,star
+2026-11-07 02:15:11,951 [INFO] fetch_kline.py:286 下载结束，开始批量写入数据库（5062 个文件）...
+2026-11-07 02:17:08,309 [INFO] fetch_kline.py:290 批量入库完成
+2026-11-07 02:17:08,310 [INFO] fetch_kline.py:296 全部任务完成，数据已保存至 C:\_allCode\stock_analyse\data\stock
+2026-11-07 02:29:02,049 [INFO] fetch_kline.py:168 从 C:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 5062 只股票（排除板块：bj,gem,star）
+2026-11-07 02:29:02,050 [INFO] fetch_kline.py:265 开始抓取 5062 支股票 | 数据源:Tushare(日线,qfq) | 日期:20260311 → 20261106 | 排除:bj,gem,star
+2026-11-07 02:45:02,702 [INFO] fetch_kline.py:208 从 C:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 5062 只股票（排除板块：bj,gem,star）
+2026-11-07 02:45:02,702 [INFO] fetch_kline.py:308 开始抓取 5062 支股票 | 数据源:Tushare(日线,qfq) | 日期:20260311 → 20261106 | 排除:bj,gem,star
+2026-11-07 02:57:52,893 [INFO] fetch_kline.py:208 从 C:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 5062 只股票（排除板块：bj,gem,star）
+2026-11-07 02:57:52,893 [INFO] fetch_kline.py:308 开始抓取 5062 支股票 | 数据源:Tushare(日线,qfq) | 日期:20260311 → 20261106 | 排除:bj,gem,star
+2026-11-07 03:05:20,226 [INFO] fetch_kline.py:208 从 C:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 5062 只股票（排除板块：bj,gem,star）
+2026-11-07 03:05:20,226 [INFO] fetch_kline.py:308 开始抓取 5062 支股票 | 数据源:Tushare(日线,qfq) | 日期:20260311 → 20261106 | 排除:bj,gem,star
+2026-11-07 03:05:53,953 [INFO] fetch_kline.py:208 从 C:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 5062 只股票（排除板块：bj,gem,star）
+2026-11-07 03:05:53,953 [INFO] fetch_kline.py:308 开始抓取 5062 支股票 | 数据源:Tushare(日线,qfq) | 日期:20260311 → 20261106 | 排除:bj,gem,star
+2026-11-07 03:07:59,105 [INFO] fetch_kline.py:208 从 C:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 5062 只股票（排除板块：bj,gem,star）
+2026-11-07 03:07:59,106 [INFO] fetch_kline.py:308 开始抓取 5062 支股票 | 数据源:Tushare(日线,qfq) | 日期:20260311 → 20261106 | 排除:bj,gem,star
+2026-11-07 03:10:46,965 [INFO] fetch_kline.py:208 从 C:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 5062 只股票（排除板块：bj,gem,star）
+2026-11-07 03:10:46,966 [INFO] fetch_kline.py:308 开始抓取 5062 支股票 | 数据源:Tushare(日线,qfq) | 日期:20260311 → 20261106 | 排除:bj,gem,star
+2026-11-07 03:14:38,400 [INFO] fetch_kline.py:208 从 C:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 5062 只股票（排除板块：bj,gem,star）
+2026-11-07 03:14:38,400 [INFO] fetch_kline.py:308 开始抓取 5062 支股票 | 数据源:Tushare(日线,qfq) | 日期:20260311 → 20261106 | 排除:bj,gem,star
+2026-11-07 03:17:24,673 [INFO] fetch_kline.py:208 从 C:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 5062 只股票（排除板块：bj,gem,star）
+2026-11-07 03:17:24,674 [INFO] fetch_kline.py:308 开始抓取 5062 支股票 | 数据源:Tushare(日线,qfq) | 日期:20250508 → 20261106 | 排除:bj,gem,star
+2026-11-07 03:18:22,700 [INFO] fetch_kline.py:208 从 C:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 5062 只股票（排除板块：bj,gem,star）
+2026-11-07 03:18:22,701 [INFO] fetch_kline.py:308 开始抓取 5062 支股票 | 数据源:Tushare(日线,qfq) | 日期:20250508 → 20261106 | 排除:bj,gem,star
+2026-11-07 03:23:01,401 [INFO] fetch_kline.py:208 从 C:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 5062 只股票（排除板块：bj,gem,star）
+2026-11-07 03:23:01,402 [INFO] fetch_kline.py:308 开始抓取 5062 支股票 | 数据源:Tushare(日线,qfq) | 日期:20250508 → 20261106 | 排除:bj,gem,star
+2026-11-07 03:26:51,586 [INFO] fetch_kline.py:230 从 C:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 5062 只股票（排除板块：bj,gem,star）
+2026-11-07 03:26:51,586 [INFO] fetch_kline.py:330 开始抓取 5062 支股票 | 数据源:Tushare(日线,qfq) | 日期:20250508 → 20261106 | 排除:bj,gem,star
+2026-11-07 03:40:52,137 [INFO] fetch_kline.py:351 下载结束，开始批量写入数据库（5062 个文件）...
+2026-11-07 03:43:56,935 [INFO] fetch_kline.py:230 从 C:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 5062 只股票（排除板块：bj,gem,star）
+2026-11-07 03:43:56,935 [INFO] fetch_kline.py:330 开始抓取 5062 支股票 | 数据源:Tushare(日线,qfq) | 日期:20250508 → 20261106 | 排除:bj,gem,star
+2026-11-07 03:45:10,569 [INFO] fetch_kline.py:230 从 C:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 5062 只股票（排除板块：bj,gem,star）
+2026-11-07 03:45:10,569 [INFO] fetch_kline.py:330 开始抓取 5062 支股票 | 数据源:Tushare(日线,qfq) | 日期:20250508 → 20261106 | 排除:bj,gem,star
+2026-11-07 03:50:11,397 [INFO] fetch_kline.py:230 从 C:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 5062 只股票（排除板块：bj,gem,star）
+2026-11-07 03:50:11,397 [INFO] fetch_kline.py:330 开始抓取 5062 支股票 | 数据源:Tushare(日线,qfq) | 日期:20250508 → 20261106 | 排除:bj,gem,star
+2026-11-07 04:13:30,403 [INFO] fetch_kline.py:230 从 C:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 5062 只股票（排除板块：bj,gem,star）
+2026-11-07 04:13:30,403 [INFO] fetch_kline.py:330 开始抓取 5062 支股票 | 数据源:Tushare(日线,qfq) | 日期:20250508 → 20261106 | 排除:bj,gem,star
+2026-11-07 04:20:47,675 [INFO] fetch_kline.py:230 从 c:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 5062 只股票（排除板块：bj）
+2026-11-07 04:20:47,697 [INFO] fetch_kline.py:230 从 c:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 3657 只股票（排除板块：bj,gem）
+2026-11-07 04:20:47,718 [INFO] fetch_kline.py:230 从 c:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 4473 只股票（排除板块：bj,star）
+2026-11-07 04:20:47,736 [INFO] fetch_kline.py:230 从 c:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 3068 只股票（排除板块：bj,gem,star）
+2026-11-07 04:28:33,496 [INFO] fetch_kline.py:230 从 C:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 3068 只股票（排除板块：bj,gem,star）
+2026-11-07 04:28:33,496 [INFO] fetch_kline.py:330 开始抓取 3068 支股票 | 数据源:Tushare(日线,qfq) | 日期:20250508 → 20261106 | 排除:bj,gem,star
+2026-11-07 04:36:20,877 [INFO] fetch_kline.py:351 下载结束，开始批量写入数据库（3068 个文件）...
+2026-11-07 04:41:14,162 [INFO] fetch_kline.py:355 批量入库完成
+2026-11-07 04:41:14,162 [INFO] fetch_kline.py:361 全部任务完成，数据已保存至 C:\_allCode\stock_analyse\data\stock
+2026-11-07 04:58:21,940 [INFO] fetch_kline.py:230 从 C:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 3068 只股票（排除板块：bj,gem,star）
+2026-11-07 04:58:21,940 [INFO] fetch_kline.py:330 开始抓取 3068 支股票 | 数据源:Tushare(日线,qfq) | 日期:20240101 → 20261106 | 排除:bj,gem,star
+2026-11-07 05:08:56,341 [INFO] fetch_kline.py:351 下载结束，开始批量写入数据库（3068 个文件）...
+2026-11-07 05:12:48,945 [INFO] fetch_kline.py:355 批量入库完成
+2026-11-07 05:12:48,946 [INFO] fetch_kline.py:361 全部任务完成，数据已保存至 C:\_allCode\stock_analyse\data\stock
+2026-11-07 06:22:03,198 [INFO] fetch_kline.py:230 从 C:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 3068 只股票（排除板块：bj,gem,star）
+2026-11-07 06:22:03,198 [INFO] fetch_kline.py:330 开始抓取 3068 支股票 | 数据源:Tushare(日线,qfq) | 日期:20240101 → 20261106 | 排除:bj,gem,star

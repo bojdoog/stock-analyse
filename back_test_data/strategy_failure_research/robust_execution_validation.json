@@ -1,0 +1,73 @@
+{
+  "prefix_checks": [
+    {
+      "config": {},
+      "mode": "same_close",
+      "max_prefix_error": 0.0
+    },
+    {
+      "config": {},
+      "mode": "next_open",
+      "max_prefix_error": 0.0
+    },
+    {
+      "config": {},
+      "mode": "next_close",
+      "max_prefix_error": 0.0
+    },
+    {
+      "config": {
+        "target": 0.2,
+        "window": 40
+      },
+      "mode": "same_close",
+      "max_prefix_error": 0.0
+    },
+    {
+      "config": {
+        "target": 0.2,
+        "window": 40
+      },
+      "mode": "next_open",
+      "max_prefix_error": 0.0
+    },
+    {
+      "config": {
+        "target": 0.2,
+        "window": 40
+      },
+      "mode": "next_close",
+      "max_prefix_error": 0.0
+    }
+  ],
+  "ensemble_statistics": {
+    "vol_window_ensemble_next_open": {
+      "annual": {
+        "2019": 33.51123475279183,
+        "2020": 26.63781207166025,
+        "2021": 15.505230941886673,
+        "2022": 0.7307026599355115,
+        "2023": 2.522066748618701,
+        "2024": 54.36584686892261,
+        "2025": 32.210862246364535,
+        "2026": 46.39561301807973
+      }
+    },
+    "vol_window_ensemble_next_close": {
+      "annual": {
+        "2019": 29.29438346049904,
+        "2020": 26.49989688375738,
+        "2021": 13.115348180053266,
+        "2022": -1.7996706691341569,
+        "2023": 0.350100775668194,
+        "2024": 43.00593806526854,
+        "2025": 39.54056280822898,
+        "2026": 39.70622597009377
+      }
+    },
+    "ensemble_cost10bps": {
+      "total_pct": 471.67116760106404,
+      "dd_pct": 12.455928541327111
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "tools": [],
+  "transport": "SDK",
+  "provider": "official",
+  "endpoint": "http://api.waditu.com/dataapi/{api_name}"
+}

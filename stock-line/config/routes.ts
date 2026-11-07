@@ -14,6 +14,16 @@ export default [
     component: './SectorActivity',
   },
   {
+    name: 'B1选股',
+    path: '/b1-picks',
+    component: './B1Picks',
+  },
+  {
+    name: '国家队持仓',
+    path: '/huijin-holdings',
+    component: './HuijinHoldings',
+  },
+  {
     name: '指标管理',
     path: '/indicators',
     component: './IndicatorManagement',

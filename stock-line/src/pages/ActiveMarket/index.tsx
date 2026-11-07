@@ -6,8 +6,9 @@ import KLineChart from './components/KLineChart';
 import IntradayModal from './components/IntradayModal';
 import BacktestChart from './components/BacktestChart';
 import NavOverviewChart from './components/NavOverviewChart';
+import IntervalReturnChart from './components/IntervalReturnChart';
 import { isCloseOnlySeries } from './utils/indicatorDisplay';
-import { runBacktest, BacktestResult, BacktestTrade, StrategyParams, DEFAULT_STRATEGY_PARAMS, calculateOptimalWeights, OptimalMethod, MoneyflowData, RankingMethod, BenchmarkReturn } from './utils/backtest';
+import { runBacktest, BacktestResult, BacktestTrade, StrategyParams, DEFAULT_STRATEGY_PARAMS, calculateOptimalWeights, OptimalMethod, MoneyflowData, RankingMethod, BenchmarkReturn, SectorVolumeData, isSectorVolumeRanking } from './utils/backtest';
 
 interface KLineData {
     date: string;
@@ -76,6 +77,25 @@ const ActiveMarket: React.FC = () => {
     const [moneyflowData, setMoneyflowData] = useState<MoneyflowData[]>([]);
     const [conceptMoneyflowData, setConceptMoneyflowData] = useState<MoneyflowData[]>([]);
     const [indMoneyflowData, setIndMoneyflowData] = useState<MoneyflowData[]>([]);
+    const [sectorVolumeData, setSectorVolumeData] = useState<SectorVolumeData>();
+    const [sectorVolumeError, setSectorVolumeError] = useState('');
+    const needsSectorVolume = isSectorVolumeRanking(strategyParams.rankingMethod);
+
+    useEffect(() => {
+        const controller = new AbortController();
+        setSectorVolumeData(undefined);
+        setSectorVolumeError('');
+        fetch('/api/etf-sector-volume', { signal: controller.signal })
+            .then(async response => {
+                const json = await response.json();
+                if (!response.ok || json.code !== 0) throw new Error(json.message || '板块量能加载失败');
+                if (!controller.signal.aborted) setSectorVolumeData(json.data);
+            })
+            .catch(error => {
+                if (!controller.signal.aborted) setSectorVolumeError(error.message || '板块量能加载失败');
+            });
+        return () => controller.abort();
+    }, [reloadKey]);
 
     // 当前页面全屏展示图表，去除 body 默认 margin/padding 避免滚动条
     useEffect(() => {
@@ -201,7 +221,9 @@ const ActiveMarket: React.FC = () => {
     useEffect(() => {
         if (data.length > 0 && allETFSeries.length > 0) {
             try {
-                const result = runBacktest(data, allETFSeries, strategyParams, moneyflowData, conceptMoneyflowData, indMoneyflowData);
+                if (needsSectorVolume && sectorVolumeError) throw new Error(sectorVolumeError);
+                if (needsSectorVolume && !sectorVolumeData) throw new Error('正在加载同花顺板块量能，请稍候。');
+                const result = runBacktest(data, allETFSeries, strategyParams, moneyflowData, conceptMoneyflowData, indMoneyflowData, sectorVolumeData);
                 setBacktestResult(result);
                 setBacktestError(null);
             } catch (error) {
@@ -212,7 +234,7 @@ const ActiveMarket: React.FC = () => {
             setBacktestResult(null);
             setBacktestError(null);
         }
-    }, [data, allETFSeries, strategyParams, moneyflowData, conceptMoneyflowData, indMoneyflowData]);
+    }, [data, allETFSeries, strategyParams, moneyflowData, conceptMoneyflowData, indMoneyflowData, sectorVolumeData, sectorVolumeError, needsSectorVolume]);
 
     // 传给 K 线图的多空区间参数，与策略设置联动
     const zoneParams = useMemo(() => ({
@@ -236,6 +258,39 @@ const ActiveMarket: React.FC = () => {
             yearly.totalReturn += trade.return;
             stats.set(trade.year, yearly);
         });
+        return stats;
+    }, [backtestResult]);
+
+    const etfTradeStats = useMemo(() => {
+        const stats = { success: 0, failure: 0, flat: 0 };
+        if (!backtestResult) return stats;
+        const openStarts = new Set(backtestResult.zones.filter(zone => zone.is_open).map(zone => zone.start_date));
+        for (const trade of backtestResult.trades) {
+            if (trade.type !== 'bull' || trade.is_open || openStarts.has(trade.start_date)) continue;
+            for (const holding of trade.holdings) {
+                if (!(holding.weight > 0) || !Number.isFinite(holding.holding_return)) continue;
+                if (holding.holding_return > 1e-10) stats.success++;
+                else if (holding.holding_return < -1e-10) stats.failure++;
+                else stats.flat++;
+            }
+        }
+        return stats;
+    }, [backtestResult]);
+
+    const bullIntervalStats = useMemo(() => {
+        const stats = { success: 0, failure: 0, flat: 0, gainSum: 0, lossSum: 0 };
+        if (!backtestResult) return stats;
+        const openStarts = new Set(backtestResult.zones.filter(zone => zone.is_open).map(zone => zone.start_date));
+        for (const trade of backtestResult.trades) {
+            if (trade.type !== 'bull' || trade.is_open || openStarts.has(trade.start_date) || !Number.isFinite(trade.return)) continue;
+            if (trade.return > 1e-10) {
+                stats.success++;
+                stats.gainSum += trade.return;
+            } else if (trade.return < -1e-10) {
+                stats.failure++;
+                stats.lossSum += trade.return;
+            } else stats.flat++;
+        }
         return stats;
     }, [backtestResult]);
 
@@ -303,7 +358,7 @@ const ActiveMarket: React.FC = () => {
             <Collapse className="strategy-panel" style={{ flexShrink: 0, backgroundColor: '#fff' }}>
                 <Collapse.Panel header="参数与回测" key="strategy">
                     <div style={{ marginBottom: 12, display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
-                        <span style={{ color: '#333', fontSize: 14, fontWeight: 500 }}>策略预设：</span>
+                        <span style={{ color: '#333', fontSize: 14, fontWeight: 500, whiteSpace: 'nowrap', flexShrink: 0 }}>策略预设：</span>
                         {[
                             { key: 'default', label: '默认策略' },
                         ].map(preset => (
@@ -327,7 +382,7 @@ const ActiveMarket: React.FC = () => {
                             </button>
                         ))}
                         <span style={{ color: '#e8e8e8', margin: '0 4px' }}>|</span>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: '#666' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: '#666', whiteSpace: 'nowrap', flexShrink: 0 }}>
                             回测区间
                             <Select
                                 value={strategyParams.startYear}
@@ -363,27 +418,40 @@ const ActiveMarket: React.FC = () => {
                                 size="small"
                                 getPopupContainer={trigger => trigger.parentElement as HTMLElement}
                             />
-                            <span style={{ color: '#e8e8e8', margin: '0 4px' }}>|</span>
-                            <label style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: '#666' }}>
-                                买入排名方式：
-                                <Select
-                                    value={strategyParams.rankingMethod}
-                                    onChange={val => {
-                                        setActivePreset('custom');
-                                        setStrategyParams(p => ({ ...p, rankingMethod: val as RankingMethod }));
-                                    }}
-                                    options={[
-                                        { value: 'etf_gain', label: 'ETF涨幅' },
-                                        { value: 'etf_blend20', label: '当天＋近20日混合排名' },
-                                        { value: 'dc_moneyflow', label: '东财板块流入' },
-                                        { value: 'ths_moneyflow', label: '同花顺板块流入' },
-                                        { value: 'ths_concept', label: '同花顺概念流入' },
-                                    ]}
-                                    style={{ width: 210 }}
-                                    size="small"
-                                />
-                            </label>
                         </div>
+                        <span style={{ color: '#e8e8e8', margin: '0 4px' }}>|</span>
+                        <label style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: '#666', whiteSpace: 'nowrap', flexShrink: 0 }}>
+                            买入排名方式：
+                            <Select
+                                value={strategyParams.rankingMethod}
+                                onChange={val => {
+                                    setActivePreset('custom');
+                                    setStrategyParams(p => ({ ...p, rankingMethod: val as RankingMethod }));
+                                }}
+                                options={[
+                                    { value: 'etf_gain', label: 'ETF涨幅' },
+                                    { value: 'etf_blend20', label: '当天＋近20日涨幅（5/5）' },
+                                    { value: 'etf_sector_40203010', label: sectorVolumeData?.amountAvailable ? '当天＋近20日涨幅＋板块量能＋成交占比（4/2/3/1）' : `四因子排名（4/2/3/1，${sectorVolumeError ? '量能加载失败' : sectorVolumeData ? '暂无行业成交额' : '检查数据中'}）`, disabled: !sectorVolumeData?.amountAvailable },
+                                    { value: 'etf_sector_403030', label: '当天＋近20日涨幅＋板块量能（4/3/3）' },
+                                    { value: 'dc_moneyflow', label: '东财板块流入' },
+                                    { value: 'ths_moneyflow', label: '同花顺板块流入' },
+                                    { value: 'ths_concept', label: '同花顺概念流入' },
+                                ]}
+                                style={{ width: needsSectorVolume ? 360 : 240, flexShrink: 0 }}
+                                popupMatchSelectWidth={480}
+                                size="small"
+                            />
+                        </label>
+                        <Tooltip title={<>
+                            量能排名权重顺序：当天涨幅／近20日涨幅／有方向的板块放量；四因子排名另含板块成交额占比。
+                            {sectorVolumeData && <> 量能覆盖：{sectorVolumeData.coverageStart ?? '暂无'}～{sectorVolumeData.coverageEnd ?? '暂无'}。
+                                {sectorVolumeData.unmappedNames.length > 0 && <> 无行业映射的品种量能取中性分：{sectorVolumeData.unmappedNames.join('、')}。</>}
+                                {sectorVolumeData.amountAvailable ? <> 行业成交额＝成交量（手）×100×平均价，单位为元；占比按固定同花顺行业集合合计计算。</> : <> 当前缺少行业成交额，请先运行行业数据拉取。</>}
+                            </>}
+                            {!sectorVolumeData && (sectorVolumeError || '正在检查行业量能数据。')}
+                        </>}>
+                            <span tabIndex={0} style={{ fontSize: 12, color: '#8c8c8c', whiteSpace: 'nowrap', flexShrink: 0, cursor: 'help' }}>排名说明</span>
+                        </Tooltip>
                     </div>
 
                     <div role="group" aria-label="多头确认条件" style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '12px 24px', marginBottom: 12 }}>
@@ -688,6 +756,28 @@ const ActiveMarket: React.FC = () => {
                                         <span style={{ marginLeft: 8 }}>平均回撤 <span style={{ color: '#006400', fontWeight: 500 }}>{((overallDD?.avgDD ?? 0) * 100).toFixed(2)}%</span></span>
                                     </div>
                                 </div>
+                                <Tooltip title="按已结束多头区间的策略组合收益统计，每个区间计一次，包含盈利保护和杠杆效果。平均涨幅只对成功区间取算术平均，平均跌幅只对失败区间取算术平均；持平单列，未结束区间和空头区间不计入。">
+                                    <div style={{ fontSize: 12, whiteSpace: 'nowrap', flexShrink: 0, lineHeight: 1.7, cursor: 'help' }}>
+                                        <div style={{ color: '#c41e3a' }}>多头成功：{bullIntervalStats.success}次
+                                            <span style={{ marginLeft: 8 }}>平均涨幅：{bullIntervalStats.success ? `+${(bullIntervalStats.gainSum / bullIntervalStats.success * 100).toFixed(2)}%` : '—'}</span>
+                                            <span style={{ marginLeft: 8 }} title="成功次数÷已结束多头区间总次数（含持平）">成功率：{bullIntervalStats.success + bullIntervalStats.failure + bullIntervalStats.flat > 0 ? `${(bullIntervalStats.success / (bullIntervalStats.success + bullIntervalStats.failure + bullIntervalStats.flat) * 100).toFixed(2)}%` : '—'}</span>
+                                        </div>
+                                        <div style={{ color: '#006400' }}>失败：{bullIntervalStats.failure}次
+                                            <span style={{ marginLeft: 8 }}>平均跌幅：{bullIntervalStats.failure ? `${(bullIntervalStats.lossSum / bullIntervalStats.failure * 100).toFixed(2)}%` : '—'}</span>
+                                            {bullIntervalStats.flat > 0 && <span style={{ color: '#999', marginLeft: 8 }}>持平：{bullIntervalStats.flat}次</span>}
+                                        </div>
+                                    </div>
+                                </Tooltip>
+                                <Tooltip title="统计已结束多头区间内的ETF持仓：盈利为成功、亏损为失败、零收益为持平。每只ETF每个区间计一次，收益包含盈利保护效果；未结束区间、零仓位和空头银行持仓不计入。">
+                                    <div style={{ fontSize: 12, whiteSpace: 'nowrap', flexShrink: 0, lineHeight: 1.7, cursor: 'help' }}>
+                                        <div style={{ color: '#c41e3a' }}>ETF成功：{etfTradeStats.success}次
+                                            <span style={{ marginLeft: 8 }} title="盈利持仓次数÷已结束ETF持仓总次数（含持平）">成功率：{etfTradeStats.success + etfTradeStats.failure + etfTradeStats.flat > 0 ? `${(etfTradeStats.success / (etfTradeStats.success + etfTradeStats.failure + etfTradeStats.flat) * 100).toFixed(2)}%` : '—'}</span>
+                                        </div>
+                                        <div style={{ color: '#006400' }}>失败：{etfTradeStats.failure}次
+                                            {etfTradeStats.flat > 0 && <span style={{ color: '#999', marginLeft: 8 }}>持平：{etfTradeStats.flat}次</span>}
+                                        </div>
+                                    </div>
+                                </Tooltip>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
                                     {backtestResult.yearResults.map(r => (
                                         <div key={r.year} style={{ textAlign: 'center', minWidth: 48 }}>
@@ -805,6 +895,7 @@ const ActiveMarket: React.FC = () => {
                             seriesType={closeOnly ? 'line' : 'candlestick'}
                             mainSeriesName={closeOnly ? '收盘估算值' : '日K'}
                             showVolume={!closeOnly}
+                            showMACD
                             highlightThreshold={4}
                             showBullZoneBg={showBullZoneBg}
                             showBearZoneBg={showBearZoneBg}
@@ -837,43 +928,43 @@ const ActiveMarket: React.FC = () => {
                                 const bullStats = yearBullStats.get(r.year);
                                 const bullAverage = bullStats ? bullStats.totalReturn / bullStats.count * 100 : undefined;
                                 return (
-                                <div
-                                    key={r.year}
-                                    onClick={() => { setSelectedYear(r.year); }}
-                                    style={{
-                                        border: '1px solid #eee',
-                                        borderRadius: 8,
-                                        padding: '12px 16px',
-                                        cursor: 'pointer',
-                                        background: '#fff',
-                                        boxShadow: '0 1px 3px rgba(0,0,0,0.04)',
-                                        transition: 'all 0.2s',
-                                    }}
-                                    onMouseEnter={e => { e.currentTarget.style.borderColor = '#c41e3a'; e.currentTarget.style.boxShadow = '0 2px 8px rgba(196,30,58,0.12)'; }}
-                                    onMouseLeave={e => { e.currentTarget.style.borderColor = '#eee'; e.currentTarget.style.boxShadow = '0 1px 3px rgba(0,0,0,0.04)'; }}
-                                >
-                                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
-                                        <span style={{ fontSize: 16, fontWeight: 600 }}>{r.year}</span>
-                                        <span style={{ fontSize: 16, fontWeight: 600, color: r.annual_return >= 0 ? '#c41e3a' : '#006400' }}>
-                                            {r.annual_return >= 0 ? '+' : ''}{r.annual_return.toFixed(2)}%
-                                        </span>
-                                    </div>
-                                    <div style={{ marginTop: 8, fontSize: 12, color: '#999', display: 'flex', justifyContent: 'space-between' }}>
-                                        <span>年初 {r.start_nav.toFixed(4)}</span>
-                                        <span>年末 {r.end_nav.toFixed(4)}</span>
-                                    </div>
-                                    <div style={{ marginTop: 4, fontSize: 12, color: '#999', display: 'flex', justifyContent: 'space-between' }}>
-                                        <span>最大回撤 <span style={{ color: '#006400' }}>{((yearDDMap.get(r.year)?.maxDD ?? 0) * 100).toFixed(2)}%</span></span>
-                                        <span>平均回撤 <span style={{ color: '#006400' }}>{((yearDDMap.get(r.year)?.avgDD ?? 0) * 100).toFixed(2)}%</span></span>
-                                    </div>
-                                    <Tooltip title={`仅统计开始于当年的已结束多头区间，按 ETF 组合收益计算；收益大于 0 为成功，平均涨幅包含亏损区间。成功 ${bullStats?.wins ?? 0} / 共 ${bullStats?.count ?? 0} 个区间。`}>
-                                        <div style={{ marginTop: 4, fontSize: 12, color: '#999', display: 'flex', justifyContent: 'space-between', gap: 8, whiteSpace: 'nowrap' }}>
-                                            <span>多头区间成败 <span style={{ color: '#c41e3a' }}>{bullStats?.wins ?? 0}√</span>{' '}<span style={{ color: '#006400' }}>{(bullStats?.count ?? 0) - (bullStats?.wins ?? 0)}×</span></span>
-                                            <span>平均涨幅 <span style={{ color: bullAverage === undefined ? '#999' : bullAverage >= 0 ? '#c41e3a' : '#006400' }}>{bullAverage === undefined ? '—' : `${bullAverage >= 0 ? '+' : ''}${bullAverage.toFixed(2)}%`}</span></span>
+                                    <div
+                                        key={r.year}
+                                        onClick={() => { setSelectedYear(r.year); }}
+                                        style={{
+                                            border: '1px solid #eee',
+                                            borderRadius: 8,
+                                            padding: '12px 16px',
+                                            cursor: 'pointer',
+                                            background: '#fff',
+                                            boxShadow: '0 1px 3px rgba(0,0,0,0.04)',
+                                            transition: 'all 0.2s',
+                                        }}
+                                        onMouseEnter={e => { e.currentTarget.style.borderColor = '#c41e3a'; e.currentTarget.style.boxShadow = '0 2px 8px rgba(196,30,58,0.12)'; }}
+                                        onMouseLeave={e => { e.currentTarget.style.borderColor = '#eee'; e.currentTarget.style.boxShadow = '0 1px 3px rgba(0,0,0,0.04)'; }}
+                                    >
+                                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                                            <span style={{ fontSize: 16, fontWeight: 600 }}>{r.year}</span>
+                                            <span style={{ fontSize: 16, fontWeight: 600, color: r.annual_return >= 0 ? '#c41e3a' : '#006400' }}>
+                                                {r.annual_return >= 0 ? '+' : ''}{r.annual_return.toFixed(2)}%
+                                            </span>
                                         </div>
-                                    </Tooltip>
-                                    <div style={{ marginTop: 8, fontSize: 13, color: '#1890ff' }}>查看交易明细</div>
-                                </div>
+                                        <div style={{ marginTop: 8, fontSize: 12, color: '#999', display: 'flex', justifyContent: 'space-between' }}>
+                                            <span>年初 {r.start_nav.toFixed(4)}</span>
+                                            <span>年末 {r.end_nav.toFixed(4)}</span>
+                                        </div>
+                                        <div style={{ marginTop: 4, fontSize: 12, color: '#999', display: 'flex', justifyContent: 'space-between' }}>
+                                            <span>最大回撤 <span style={{ color: '#006400' }}>{((yearDDMap.get(r.year)?.maxDD ?? 0) * 100).toFixed(2)}%</span></span>
+                                            <span>平均回撤 <span style={{ color: '#006400' }}>{((yearDDMap.get(r.year)?.avgDD ?? 0) * 100).toFixed(2)}%</span></span>
+                                        </div>
+                                        <Tooltip title={`仅统计开始于当年的已结束多头区间，按 ETF 组合收益计算；收益大于 0 为成功，平均涨幅包含亏损区间。成功 ${bullStats?.wins ?? 0} / 共 ${bullStats?.count ?? 0} 个区间。`}>
+                                            <div style={{ marginTop: 4, fontSize: 12, color: '#999', display: 'flex', justifyContent: 'space-between', gap: 8, whiteSpace: 'nowrap' }}>
+                                                <span>多头区间成败 <span style={{ color: '#c41e3a' }}>{bullStats?.wins ?? 0}√</span>{' '}<span style={{ color: '#006400' }}>{(bullStats?.count ?? 0) - (bullStats?.wins ?? 0)}×</span></span>
+                                                <span>平均涨幅 <span style={{ color: bullAverage === undefined ? '#999' : bullAverage >= 0 ? '#c41e3a' : '#006400' }}>{bullAverage === undefined ? '—' : `${bullAverage >= 0 ? '+' : ''}${bullAverage.toFixed(2)}%`}</span></span>
+                                            </div>
+                                        </Tooltip>
+                                        <div style={{ marginTop: 8, fontSize: 13, color: '#1890ff' }}>查看交易明细</div>
+                                    </div>
                                 );
                             })}
                         </div>
@@ -905,6 +996,7 @@ const ActiveMarket: React.FC = () => {
                                 {backtestResult.totalReturn >= 0 ? '+' : ''}{(backtestResult.totalReturn * 100).toFixed(2)}%
                             </span>
                         </div>
+                        <IntervalReturnChart trades={backtestResult.trades} />
                         <div style={{ marginTop: 16, display: 'flex', gap: 20, flexWrap: 'wrap', fontSize: 13 }}>
                             <div style={{ fontWeight: 500, color: '#666' }}>基准对比（多头）：</div>
                             {backtestResult.benchmarkReturns.map(b => (

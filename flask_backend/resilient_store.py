@@ -62,10 +62,14 @@ def replay(remote):
             # Keep the local writer lock until replay finishes, preventing stale
             # snapshots from replacing a newer fetch on another process.
             pending = local.execute('SELECT path FROM mysql_pending ORDER BY path').fetchall()
-            for row in pending:
+            for index, row in enumerate(pending, start=1):
                 content = local.execute('SELECT content FROM source_files WHERE path=?', (row['path'],)).fetchone()[0]
                 store.import_content(remote, row['path'], content)
                 local.execute('DELETE FROM mysql_pending WHERE path=?', (row['path'],))
+                # 大批量回放（如整轮日线抓取）时分段提交，避免单个事务过大。
+                if index % 200 == 0:
+                    remote.commit()
+            remote.commit()
             local.commit()
         except Exception:
             local.rollback()
@@ -119,6 +123,15 @@ def save_dataframe(frame, output_path, category=None):
         remote.close()
 
 
+def save_frames(frames, category=None, progress=None):
+    """批量保存：整批只建一条本地连接、最后统一回放一次 MySQL。"""
+    local_initialize()
+    store.save_frames(frames, sqlite_path(), category, _pending=True, progress=progress)
+    remote = try_mysql()
+    if remote is not None:
+        remote.close()
+
+
 def import_source(relative_path, content, export_path=None):
     """Import an exact snapshot and export it through the same durable queue."""
     local_initialize()
@@ -130,8 +143,7 @@ def import_source(relative_path, content, export_path=None):
             db.execute('BEGIN IMMEDIATE')
             current = db.execute('SELECT content FROM source_files WHERE path=?', (relative_path,)).fetchone()[0]
             export_path = Path(export_path)
-            export_path.parent.mkdir(parents=True, exist_ok=True)
-            export_path.write_bytes(current)
+            store.export_file(export_path, current)
             db.commit()
     remote = try_mysql()
     if remote is not None:
@@ -153,7 +165,7 @@ def refresh_index(out_dir, category=None):
         db.execute('BEGIN IMMEDIATE')
         content = db.execute('SELECT content FROM source_files WHERE path=?', (f'{category}/index.json',)).fetchone()[0]
         out_dir.mkdir(parents=True, exist_ok=True)
-        (out_dir / 'index.json').write_bytes(content)
+        store.export_file(out_dir / 'index.json', content)
         db.commit()
     remote = try_mysql()
     if remote is not None:

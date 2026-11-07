@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { init, connect, ECharts } from 'echarts';
 import { isCloseOnlySeries } from '../utils/indicatorDisplay';
+import { calculateMACD } from '../utils/macd';
 
 interface KLineData {
   date: string;
@@ -47,7 +48,9 @@ const DEFAULT_ZONE_PARAMS: ZoneParams = {
 interface KLineChartProps {
   showHolidayPeriods?: boolean;
   quoteTargetRef?: React.RefObject<HTMLDivElement>;
+  showQuoteBar?: boolean;
   onDayDoubleClick?: (date: string) => void;
+  onDayClick?: (date: string) => void;
   dateWindowRef?: React.MutableRefObject<{ start: string; end: string } | null>;
   defaultWindowYears?: number;
   data: KLineData[];
@@ -60,6 +63,7 @@ interface KLineChartProps {
   dataLabel?: string;
   mainSeriesName?: string;
   showVolume?: boolean;
+  showMACD?: boolean;
   showRanking?: boolean;
   showZones?: boolean;
   chartHeight?: number | string;
@@ -114,7 +118,9 @@ const getSpringFestivalDate = (year: string): string => {
 const KLineChart: React.FC<KLineChartProps> = ({
   showHolidayPeriods = false,
   quoteTargetRef,
+  showQuoteBar = true,
   onDayDoubleClick,
+  onDayClick,
   dateWindowRef,
   defaultWindowYears,
   data,
@@ -127,6 +133,7 @@ const KLineChart: React.FC<KLineChartProps> = ({
   dataLabel = '活跃市值',
   mainSeriesName: requestedSeriesName = '日K',
   showVolume: requestedShowVolume = true,
+  showMACD = false,
   showRanking = true,
   showZones = true,
   chartHeight = 900,
@@ -148,6 +155,8 @@ const KLineChart: React.FC<KLineChartProps> = ({
   const quoteRef = quoteTargetRef ?? localQuoteRef;
   const doubleClickRef = useRef(onDayDoubleClick);
   doubleClickRef.current = onDayDoubleClick;
+  const dayClickRef = useRef(onDayClick);
+  dayClickRef.current = onDayClick;
   const localDateWindow = useRef<{ start: string; end: string } | null>(null);
   const zoomRange = dateWindowRef ?? localDateWindow;
 
@@ -201,6 +210,9 @@ const KLineChart: React.FC<KLineChartProps> = ({
         : extraSeries);
 
     const dates = filteredData.map(item => item.date);
+    const macd = calculateMACD(filteredData.map(item => item.close));
+    const macdGrid = showVolume ? 2 : 1;
+    const zoomAxes = [0, ...(showVolume ? [1] : []), ...(showMACD ? [macdGrid] : [])];
     // Trading-day axes omit holidays: highlight the gap around each holiday anchor.
     const holidayAreas: [{ name: string; xAxis: string }, { xAxis: string }][] = [];
     if (showHolidayPeriods) {
@@ -634,6 +646,16 @@ const KLineChart: React.FC<KLineChartProps> = ({
         borderColor: '#333',
         textStyle: { color: '#fff' },
         formatter: (params: any) => {
+          if (!params.length) return '';
+          const hovered = filteredData[params[0].dataIndex];
+          if (params[0].seriesName === '成交量') {
+            return `${hovered.date}<br/>成交量：${Number.isFinite(hovered.volume) ? hovered.volume.toLocaleString('zh-CN', { maximumFractionDigits: 2 }) : '—'}`;
+          }
+          if (['DIF', 'DEA', 'MACD'].includes(params[0].seriesName)) {
+            const value = macd[params[0].dataIndex];
+            const format = (n: number | null) => n == null ? '—' : n.toFixed(2);
+            return `${hovered.date}<br/>MACD（12、26、9）<br/>DIF：${format(value.dif)}<br/>DEA：${format(value.dea)}<br/>MACD：${format(value.histogram)}`;
+          }
           const kData = params.find((p: any) => p.seriesName === mainSeriesName);
           if (!kData) return '';
 
@@ -753,62 +775,37 @@ const KLineChart: React.FC<KLineChartProps> = ({
           return tooltipHtml;
         }
       },
-      grid: showVolume
-        ? [
-          { left: 80, right: 80, bottom: '32%', top: 40 },
-          { left: 80, right: 80, top: '72%', height: '16%' }
-        ]
-        : [{ left: 80, right: 80, bottom: '10%', top: 40 }],
-      xAxis: showVolume
-        ? [
-          {
-            type: 'category',
-            data: dates,
-            scale: true,
-            boundaryGap: false,
-            axisLine: { onZero: false, lineStyle: { color: '#dce4e6' } },
-            splitLine: { show: false },
-            axisLabel: { color: '#666' },
-            min: 'dataMin',
-            max: 'dataMax'
-          },
-          {
-            type: 'category',
-            gridIndex: 1,
-            data: dates,
-            scale: true,
-            boundaryGap: false,
-            axisLine: { onZero: false, lineStyle: { color: '#dce4e6' } },
-            axisTick: { show: false },
-            splitLine: { show: false },
-            axisLabel: { show: false },
-            min: 'dataMin',
-            max: 'dataMax'
-          }
-        ]
-        : [{
-          type: 'category',
-          data: dates,
-          scale: true,
-          boundaryGap: false,
-          axisLine: { onZero: false, lineStyle: { color: '#dce4e6' } },
-          splitLine: { show: false },
-          axisLabel: { color: '#666' },
-          min: 'dataMin',
-          max: 'dataMax'
-        }],
-      yAxis: showVolume ? yAxis : yAxis.slice(0, -1),
+      grid: showMACD ? [
+        { left: 80, right: 80, top: 40, bottom: '40%' },
+        ...(showVolume ? [{ left: 80, right: 80, top: '65%', height: '9%' }] : []),
+        { left: 80, right: 80, top: showVolume ? '79%' : '69%', height: showVolume ? '10%' : '20%' },
+      ] : showVolume ? [
+        { left: 80, right: 80, bottom: '32%', top: 40 },
+        { left: 80, right: 80, top: '72%', height: '16%' },
+      ] : [{ left: 80, right: 80, bottom: '10%', top: 40 }],
+      xAxis: zoomAxes.map(gridIndex => ({
+        type: 'category', gridIndex, data: dates, scale: true, boundaryGap: false,
+        axisLine: { onZero: false, lineStyle: { color: '#dce4e6' } },
+        axisTick: { show: gridIndex === 0 }, splitLine: { show: false },
+        axisLabel: { show: gridIndex === 0, color: '#666' }, min: 'dataMin', max: 'dataMax',
+      })),
+      yAxis: [...(showVolume ? yAxis : yAxis.slice(0, -1)), ...(showMACD ? [{
+        type: 'value', gridIndex: macdGrid, scale: true, splitNumber: 2,
+        name: 'MACD (12,26,9)', nameTextStyle: { color: '#819097', fontSize: 11 },
+        axisLabel: { color: '#819097', formatter: (value: number) => value.toFixed(0) },
+        splitLine: { lineStyle: { color: '#edf1f2' } },
+      }] : [])],
       dataZoom: [
         {
           type: 'inside',
-          xAxisIndex: showVolume ? [0, 1] : [0],
+          xAxisIndex: zoomAxes,
           startValue: initialStart,
           endValue: initialEnd,
           rangeMode: ['value', 'value']
         },
         ...(showDataZoom ? [{
           show: true,
-          xAxisIndex: showVolume ? [0, 1] : [0],
+          xAxisIndex: zoomAxes,
           type: 'slider',
           top: '92%',
           startValue: initialStart,
@@ -911,12 +908,23 @@ const KLineChart: React.FC<KLineChartProps> = ({
           xAxisIndex: 1,
           yAxisIndex: yAxis.length - 1,
           data: volumes
-        }] : [])
+        }] : []),
+        ...(showMACD ? [
+          { name: 'MACD', type: 'bar', xAxisIndex: macdGrid, yAxisIndex: yAxis.length - (showVolume ? 0 : 1),
+            data: macd.map(p => ({ value: p.histogram, itemStyle: { color: (p.histogram ?? 0) >= 0 ? '#FFB6C1' : '#98FB98' } })) },
+          ...(['dif', 'dea'] as const).map((key, i) => ({ name: key.toUpperCase(), type: 'line', showSymbol: false,
+            xAxisIndex: macdGrid, yAxisIndex: yAxis.length - (showVolume ? 0 : 1),
+            data: macd.map(p => p[key]), lineStyle: { width: 1.3, color: ['#d5a057', '#518dcc'][i] }, itemStyle: { color: ['#d5a057', '#518dcc'][i] } })),
+        ] : [])
       ]
     };
 
     chartInstance.current.setOption(option);
     const chart = chartInstance.current;
+    // 未悬停（含鼠标移出图表）时，明细区固定展示最新交易日的数据。
+    const showLatestQuote = () => showQuote(filteredData.length - 1);
+    showLatestQuote();
+    chart.getZr().on('globalout', showLatestQuote);
     chart.on('legendselectchanged', (payload: unknown) => {
       const event = payload as { selected?: Record<string, boolean> };
       Object.assign(legendSelected, event.selected);
@@ -940,6 +948,14 @@ const KLineChart: React.FC<KLineChartProps> = ({
       if (day) doubleClickRef.current(day);
     };
     chart.getZr().on('dblclick', handleDayDoubleClick);
+    const handleDayClick = (event: { offsetX: number; offsetY: number }) => {
+      if (!dayClickRef.current || !chart.containPixel({ gridIndex: 0 }, [event.offsetX, event.offsetY])) return;
+      const index = chart.convertFromPixel({ xAxisIndex: 0 }, event.offsetX);
+      if (typeof index !== 'number' || !Number.isFinite(index)) return;
+      const day = dates[Math.round(index)];
+      if (day) dayClickRef.current(day);
+    };
+    chart.getZr().on('click', handleDayClick);
 
     // 设置同步组，使多个图表共享缩放/平移
     if (syncGroup) {
@@ -969,6 +985,22 @@ const KLineChart: React.FC<KLineChartProps> = ({
     };
     window.addEventListener('resize', handleResize);
 
+    // 原生 mouseleave 兜底：指针移出画布区域时回到最新交易日。
+    const chartHost = chartRef.current;
+    chartHost?.addEventListener('mouseleave', showLatestQuote);
+    let pointerInsideChart = true;
+    const handleWindowPointer = (event: MouseEvent) => {
+      const host = chartRef.current;
+      if (!host) return;
+      const rect = host.getBoundingClientRect();
+      const inside = event.clientX >= rect.left && event.clientX <= rect.right
+        && event.clientY >= rect.top && event.clientY <= rect.bottom;
+      if (inside === pointerInsideChart) return;
+      pointerInsideChart = inside;
+      if (!inside) showLatestQuote();
+    };
+    window.addEventListener('mousemove', handleWindowPointer);
+
     // 监听容器大小变化（上方副图出现/消失时高度变化），自动 resize
     let resizeObserver: ResizeObserver | null = null;
     if (typeof ResizeObserver !== 'undefined' && chartRef.current) {
@@ -978,18 +1010,22 @@ const KLineChart: React.FC<KLineChartProps> = ({
 
     return () => {
       if (quoteTargetRef?.current) quoteTargetRef.current.replaceChildren();
+      chartHost?.removeEventListener('mouseleave', showLatestQuote);
+      window.removeEventListener('mousemove', handleWindowPointer);
+      chart.getZr().off('globalout', showLatestQuote);
       chart.getZr().off('dblclick', handleDayDoubleClick);
+      chart.getZr().off('click', handleDayClick);
       window.removeEventListener('resize', handleResize);
       if (resizeObserver) {
         resizeObserver.disconnect();
       }
       chartInstance.current?.dispose();
     };
-  }, [data, highlightThreshold, showBullZoneBg, showBearZoneBg, extraSeries, allETFSeries, syncGroup, dataLabel, mainSeriesName, seriesType, showVolume, showRanking, showZones, maxDate, showDataZoom, baseDates, zoneParams, zoomRange, defaultWindowYears, quoteTargetRef, showHolidayPeriods]);
+  }, [data, highlightThreshold, showBullZoneBg, showBearZoneBg, extraSeries, allETFSeries, syncGroup, dataLabel, mainSeriesName, seriesType, showVolume, showMACD, showRanking, showZones, maxDate, showDataZoom, baseDates, zoneParams, zoomRange, defaultWindowYears, quoteTargetRef, showHolidayPeriods]);
 
   return (
     <div style={{ width: '100%', height: typeof chartHeight === 'number' ? `${chartHeight}px` : chartHeight, backgroundColor: '#fff', display: 'flex', flexDirection: 'column' }}>
-      {!quoteTargetRef && <div ref={localQuoteRef} style={{ flex: '0 0 24px', lineHeight: '24px', padding: '0 20px', color: '#526871', fontSize: 12, fontVariantNumeric: 'tabular-nums', whiteSpace: 'pre', overflowX: 'auto' }}>
+      {showQuoteBar && !quoteTargetRef && <div ref={localQuoteRef} style={{ flex: '0 0 24px', lineHeight: '24px', padding: '0 20px', color: '#526871', fontSize: 12, fontVariantNumeric: 'tabular-nums', whiteSpace: 'pre', overflowX: 'auto' }}>
         鼠标悬停查看当日日 K 与均线值
       </div>}
       <div ref={chartRef} style={{ width: '100%', flex: 1, minHeight: 0 }} />

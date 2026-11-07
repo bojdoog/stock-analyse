@@ -33,6 +33,8 @@ $code = $LASTEXITCODE
 Write-Host ''
 if ($code -eq 0) {
     Write-Host '数据拉取成功。' -ForegroundColor Green
+} elseif ($code -eq 3) {
+    Write-Host '数据拉取完成，部分无权限数据已跳过。' -ForegroundColor Yellow
 } else {
     Write-Host "数据拉取失败，退出码: $code" -ForegroundColor Red
 }

@@ -1,0 +1,1 @@
+{"tool": "moneyflow_mkt_dc", "arguments": {"start_date": "20240910", "end_date": "20260930"}, "retrieved_at": "2026-10-06T17:51:34.038598+00:00", "error": "[{'type': 'text', 'text': 'tushare API 错误 [40203]: 抱歉，您没有接口(moneyflow_mkt_dc)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。'}]"}

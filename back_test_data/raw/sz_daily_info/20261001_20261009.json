@@ -1,0 +1,175 @@
+{
+  "request": {
+    "tool": "sz_daily_info",
+    "arguments": {
+      "start_date": "20261001",
+      "end_date": "20261009"
+    }
+  },
+  "retrieved_at": "2026-10-08T16:15:41.594735+00:00",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "[{\"trade_date\": \"20261008\", \"ts_code\": \"股票\", \"count\": 2942, \"amount\": 871608924371.78, \"vol\": null, \"total_share\": null, \"total_mv\": 41720275952138.65, \"float_share\": null, \"float_mv\": 35470847234842.32}, {\"trade_date\": \"20261008\", \"ts_code\": \"期权\", \"count\": 432, \"amount\": 1416870899.0, \"vol\": null, \"total_share\": null, \"total_mv\": null, \"float_share\": null, \"float_mv\": null}, {\"trade_date\": \"20261008\", \"ts_code\": \"封闭式基金\", \"count\": 0, \"amount\": 0.0, \"vol\": null, \"total_share\": null, \"total_mv\": 0.0, \"float_share\": null, \"float_mv\": 0.0}, {\"trade_date\": \"20261008\", \"ts_code\": \"基金\", \"count\": 1062, \"amount\": 116876032453.93, \"vol\": null, \"total_share\": null, \"total_mv\": 1681083148279.31, \"float_share\": null, \"float_mv\": 1657626005400.48}, {\"trade_date\": \"20261008\", \"ts_code\": \"创业板A股\", \"count\": 1409, \"amount\": 425447324908.93, \"vol\": null, \"total_share\": null, \"total_mv\": 17362976631449.98, \"float_share\": null, \"float_mv\": 14018517873644.47}, {\"trade_date\": \"20261008\", \"ts_code\": \"债券现券\", \"count\": 18302, \"amount\": 30338386676.12, \"vol\": null, \"total_share\": null, \"total_mv\": 108459192793676.45, \"float_share\": null, \"float_mv\": 3681236291440.32}, {\"trade_date\": \"20261008\", \"ts_code\": \"债券回购\", \"count\": 27, \"amount\": 381297667690.29, \"vol\": null, \"total_share\": null, \"total_mv\": null, \"float_share\": null, \"float_mv\": null}, {\"trade_date\": \"20261008\", \"ts_code\": \"债券\", \"count\": 19134, \"amount\": 411868146985.91, \"vol\": null, \"total_share\": null, \"total_mv\": null, \"float_share\": null, \"float_mv\": null}, {\"trade_date\": \"20261008\", \"ts_code\": \"主板B股\", \"count\": 38, \"amount\": 57622158.34, \"vol\": null, \"total_share\": null, \"total_mv\": 36535790258.08, \"float_share\": null, \"float_mv\": 36520746369.42}, {\"trade_date\": \"20261008\", \"ts_code\": \"主板A股\", \"count\": 1495, \"amount\": 446103977304.51, \"vol\": null, \"total_share\": null, \"total_mv\": 24320763530430.59, \"float_share\": null, \"float_mv\": 21415808614828.43}, {\"trade_date\": \"20261008\", \"ts_code\": \"不动产基金\", \"count\": 28, \"amount\": 94307773.77, \"vol\": null, \"total_share\": null, \"total_mv\": 66306134449.29, \"float_share\": null, \"float_mv\": 42848991570.46}, {\"trade_date\": \"20261008\", \"ts_code\": \"LOF\", \"count\": 285, \"amount\": 3039740115.37, \"vol\": null, \"total_share\": null, \"total_mv\": 39535153166.74, \"float_share\": null, \"float_mv\": 39535153166.74}, {\"trade_date\": \"20261008\", \"ts_code\": \"ETF\", \"count\": 749, \"amount\": 113741984564.78, \"vol\": null, \"total_share\": null, \"total_mv\": 1575241860663.28, \"float_share\": null, \"float_mv\": 1575241860663.28}, {\"trade_date\": \"20261008\", \"ts_code\": \"ABS\", \"count\": 805, \"amount\": 232092619.5, \"vol\": null, \"total_share\": null, \"total_mv\": 548874056473.49, \"float_share\": null, \"float_mv\": 548874056473.49}]"
+      }
+    ],
+    "isError": false
+  },
+  "rows": [
+    {
+      "trade_date": "20261008",
+      "ts_code": "股票",
+      "count": 2942,
+      "amount": 871608924371.78,
+      "vol": null,
+      "total_share": null,
+      "total_mv": 41720275952138.65,
+      "float_share": null,
+      "float_mv": 35470847234842.32
+    },
+    {
+      "trade_date": "20261008",
+      "ts_code": "期权",
+      "count": 432,
+      "amount": 1416870899.0,
+      "vol": null,
+      "total_share": null,
+      "total_mv": null,
+      "float_share": null,
+      "float_mv": null
+    },
+    {
+      "trade_date": "20261008",
+      "ts_code": "封闭式基金",
+      "count": 0,
+      "amount": 0.0,
+      "vol": null,
+      "total_share": null,
+      "total_mv": 0.0,
+      "float_share": null,
+      "float_mv": 0.0
+    },
+    {
+      "trade_date": "20261008",
+      "ts_code": "基金",
+      "count": 1062,
+      "amount": 116876032453.93,
+      "vol": null,
+      "total_share": null,
+      "total_mv": 1681083148279.31,
+      "float_share": null,
+      "float_mv": 1657626005400.48
+    },
+    {
+      "trade_date": "20261008",
+      "ts_code": "创业板A股",
+      "count": 1409,
+      "amount": 425447324908.93,
+      "vol": null,
+      "total_share": null,
+      "total_mv": 17362976631449.98,
+      "float_share": null,
+      "float_mv": 14018517873644.47
+    },
+    {
+      "trade_date": "20261008",
+      "ts_code": "债券现券",
+      "count": 18302,
+      "amount": 30338386676.12,
+      "vol": null,
+      "total_share": null,
+      "total_mv": 108459192793676.45,
+      "float_share": null,
+      "float_mv": 3681236291440.32
+    },
+    {
+      "trade_date": "20261008",
+      "ts_code": "债券回购",
+      "count": 27,
+      "amount": 381297667690.29,
+      "vol": null,
+      "total_share": null,
+      "total_mv": null,
+      "float_share": null,
+      "float_mv": null
+    },
+    {
+      "trade_date": "20261008",
+      "ts_code": "债券",
+      "count": 19134,
+      "amount": 411868146985.91,
+      "vol": null,
+      "total_share": null,
+      "total_mv": null,
+      "float_share": null,
+      "float_mv": null
+    },
+    {
+      "trade_date": "20261008",
+      "ts_code": "主板B股",
+      "count": 38,
+      "amount": 57622158.34,
+      "vol": null,
+      "total_share": null,
+      "total_mv": 36535790258.08,
+      "float_share": null,
+      "float_mv": 36520746369.42
+    },
+    {
+      "trade_date": "20261008",
+      "ts_code": "主板A股",
+      "count": 1495,
+      "amount": 446103977304.51,
+      "vol": null,
+      "total_share": null,
+      "total_mv": 24320763530430.59,
+      "float_share": null,
+      "float_mv": 21415808614828.43
+    },
+    {
+      "trade_date": "20261008",
+      "ts_code": "不动产基金",
+      "count": 28,
+      "amount": 94307773.77,
+      "vol": null,
+      "total_share": null,
+      "total_mv": 66306134449.29,
+      "float_share": null,
+      "float_mv": 42848991570.46
+    },
+    {
+      "trade_date": "20261008",
+      "ts_code": "LOF",
+      "count": 285,
+      "amount": 3039740115.37,
+      "vol": null,
+      "total_share": null,
+      "total_mv": 39535153166.74,
+      "float_share": null,
+      "float_mv": 39535153166.74
+    },
+    {
+      "trade_date": "20261008",
+      "ts_code": "ETF",
+      "count": 749,
+      "amount": 113741984564.78,
+      "vol": null,
+      "total_share": null,
+      "total_mv": 1575241860663.28,
+      "float_share": null,
+      "float_mv": 1575241860663.28
+    },
+    {
+      "trade_date": "20261008",
+      "ts_code": "ABS",
+      "count": 805,
+      "amount": 232092619.5,
+      "vol": null,
+      "total_share": null,
+      "total_mv": 548874056473.49,
+      "float_share": null,
+      "float_mv": 548874056473.49
+    }
+  ]
+}

@@ -50,14 +50,24 @@ class UnifiedDownloadTests(unittest.TestCase):
         rpc.assert_not_called()
 
     def test_failed_parse_skips_import_but_other_downloads_continue(self):
+        output = io.StringIO()
         with patch.object(runner, 'run_script', side_effect=lambda name, args: name != 'parse_compass_amv_cache.py') as run:
-            with contextlib.redirect_stdout(io.StringIO()):
+            with contextlib.redirect_stdout(output):
                 with self.assertRaises(SystemExit) as error:
                     runner.main()
         self.assertEqual(error.exception.code, 1)
         names = [call.args[0] for call in run.call_args_list]
         self.assertNotIn('import_compass_amv_intraday.py', names)
         self.assertIn('download_amv_research.py', names)
+        summary = output.getvalue().split('全部完成:')[-1]
+        self.assertIn(f'{len(runner.SCRIPTS)-2} 成功, 1 失败, 1 跳过', summary)
+        self.assertIn('失败：日内解析', summary)
+        self.assertIn('跳过：日内入库', summary)
+        success_line = next(line for line in summary.splitlines() if line.startswith('成功：'))
+        self.assertIn('ETF', success_line)
+        self.assertIn('活跃市值研究数据', success_line)
+        self.assertNotIn('日内解析', success_line)
+        self.assertNotIn('日内入库', success_line)
 
     def test_failed_import_marks_overall_failure(self):
         with patch.object(runner, 'run_script', side_effect=lambda name, args: name != 'import_compass_amv_intraday.py'):

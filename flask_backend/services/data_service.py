@@ -1,7 +1,8 @@
 ﻿"""Database-backed market queries; data/ is only an export/backup directory."""
 from flask import current_app, has_app_context
 from market_store import (FLOW_TABLES, PRICE_FIELDS, connect, database_path, date_string,
-                          decode, file_content, list_files)
+                          decode, exchange_for, file_content, list_files)
+from etf_intraday import load as load_intraday, pull as pull_intraday
 
 
 class DataService:
@@ -31,9 +32,83 @@ class DataService:
         return list(reversed(rows)) if limit and limit > 0 else rows
 
     def get_kline_data(self, category, code, start_date=None, end_date=None, limit=None):
-        if category not in ('stock', 'etf', 'index'):
+        if category not in ('stock', 'etf', 'index', 'etf_hj'):
             return []
-        return self._series('daily_bars', 'category=? AND code=?', [category, code], start_date, end_date, limit)
+        # 带上 exchange 才能命中主键 (category,exchange,code,date) 前缀。
+        return self._series('daily_bars', 'category=? AND exchange=? AND code=?',
+                            [category, exchange_for(category, code), code], start_date, end_date, limit)
+
+    def get_huijin_etfs(self):
+        """汇金系宽基 ETF 最新交易日行情，按成交量从大到小排列。"""
+        with connect(self.database) as db:
+            rows = db.execute(
+                "SELECT code, name, date, close, volume, amount, change_pct FROM ("
+                " SELECT i.code, i.name, b.date, b.close, b.volume, b.amount,"
+                " (b.close / LAG(b.close) OVER (PARTITION BY b.code ORDER BY b.date) - 1) * 100 AS change_pct,"
+                " ROW_NUMBER() OVER (PARTITION BY b.code ORDER BY b.date DESC) AS rn"
+                " FROM daily_bars b JOIN instruments i"
+                " ON i.category = b.category AND i.code = b.code"
+                " WHERE b.category = 'etf_hj') t WHERE rn = 1 ORDER BY volume DESC").fetchall()
+        result = []
+        for row in rows:
+            item = dict(row)
+            item.pop('rn', None)
+            item['change_pct'] = None if item['change_pct'] is None else round(item['change_pct'], 2)
+            result.append(item)
+        return result
+
+    def get_etf_intraday(self, code, date):
+        """单只汇金系 ETF 某日的 1 分钟走势；库里没有该日时就地补拉新浪，仍无则返回空。"""
+        requested = date
+        from_sina = 'N'
+        with connect(self.database) as db:
+            rows = load_intraday(db, code, date)
+            if not rows and pull_intraday(db, code, date):
+                from_sina = 'Y'
+                rows = load_intraday(db, code, date)
+            name = db.execute("SELECT name FROM instruments WHERE category='etf_hj' AND code=?",
+                              (code,)).fetchone()
+            previous = db.execute("SELECT date, close FROM daily_bars WHERE category='etf_hj' AND code=? "
+                                  "AND date<? ORDER BY date DESC LIMIT 1", (code, date)).fetchone()
+            previous_date = db.execute("SELECT max(date) FROM etf_intraday WHERE code=? AND date<?",
+                                       (code, date)).fetchone()[0]
+            next_date = db.execute("SELECT min(date) FROM etf_intraday WHERE code=? AND date>?",
+                                   (code, date)).fetchone()[0]
+            bounds = db.execute("SELECT min(date), max(date) FROM etf_intraday WHERE code=?",
+                                (code,)).fetchone()
+        return {
+            'data': rows,
+            'meta': {
+                'code': code,
+                'name': name[0] if name else code,
+                'date': date,
+                'requestedDate': requested,
+                'fromSina': from_sina,
+                'availableFrom': bounds[0] if bounds else None,
+                'availableTo': bounds[1] if bounds else None,
+                'count': len(rows),
+                'previousClose': previous[1] if previous else None,
+                'previousCloseDate': previous[0] if previous else None,
+                'previousDate': previous_date,
+                'nextDate': next_date,
+            },
+        }
+
+    def get_b1_picks(self, date=None, refresh=False):
+        """B1 选股结果；首次按日期计算并落库，之后直接读缓存。"""
+        from b1_selector import picks_for
+        from stock_meta import describe
+        day, rows, computed = picks_for(date, refresh)
+        # 补上股票名称/板块/行业，页面直接展示，不用再单独查一次。
+        data = [{**row, **describe(row['code'])} for row in rows]
+        return {'data': data, 'meta': {'date': day, 'count': len(rows), 'computed': computed}}
+
+    def get_b1_history(self):
+        """B1 选股历史：按日期由近到远，带当天条件与股票数。"""
+        from market_store import connect
+        from b1_selector import history
+        with connect() as db:
+            return history(db)
 
     def get_indicator_data(self, indicator_id, start_date=None, end_date=None, limit=None):
         return self._series('indicator_daily', 'indicator_id=?', [indicator_id], start_date, end_date, limit)

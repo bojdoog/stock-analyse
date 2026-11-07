@@ -1,0 +1,9 @@
+{
+  "code": "AMV_THS_LOG_MEMORY",
+  "rows": 261,
+  "start": "2025-09-19",
+  "end": "2026-10-23",
+  "missing_benchmark_rows": 0,
+  "synthetic_ohlc": true,
+  "parameters_refitted": false
+}

@@ -23,12 +23,22 @@ try:
     from .storage_sqlite import save_dataframe, refresh_index, list_files, initialize, read_frame, has_file
 except ImportError:
     from storage_sqlite import save_dataframe, refresh_index, list_files, initialize, read_frame, has_file
+
+try:
+    from .trading_date import default_end_date
+except ImportError:
+    from trading_date import default_end_date
 from typing import Optional
 
 from etf_catalog import sector_mapping
 
 import pandas as pd
 import tushare as ts
+try:
+    from .tushare_client import create_client
+except ImportError:
+    from tushare_client import create_client
+
 from tqdm import tqdm
 
 # --------------------------- 全局日志配置 --------------------------- #
@@ -55,6 +65,12 @@ logger.addHandler(console_handler)
 pro: Optional[ts.pro_api] = None
 
 
+try:
+    from .permission_errors import skip_if_permission_denied
+except ImportError:
+    from permission_errors import skip_if_permission_denied
+
+
 def set_api(session) -> None:
     """由外部注入已创建好的 ts.pro_api() 会话"""
     global pro
@@ -79,6 +95,7 @@ def fetch_moneyflow_ind_dc(start_date: str, end_date: str) -> pd.DataFrame:
             )
             break  # 成功则跳出重试循环
         except Exception as e:
+            skip_if_permission_denied(e, 'moneyflow_ind_dc')
             error_msg = str(e)
             if '频率超限' in error_msg or '访问频繁' in error_msg:
                 if attempt < max_retries - 1:
@@ -237,14 +254,8 @@ def main():
     # ---------- Tushare Token ---------- #
     import os
 
-    os.environ["NO_PROXY"] = "api.waditu.com,.waditu.com,waditu.com"
-    os.environ["no_proxy"] = os.environ["NO_PROXY"]
-    ts_token = "eb0e5fcfd014dfb595b4ca773f42d29570a3fb06edcca84fe19830db"
-    if not ts_token:
-        raise ValueError("请先设置环境变量 TUSHARE_TOKEN")
-    ts.set_token(ts_token)
     global pro
-    pro = ts.pro_api()
+    pro = create_client()
 
     out_dir = Path(args.out)
 
@@ -298,11 +309,11 @@ def main():
         start_val = args.start
         end_val = args.end
     else:
-        # 默认拉取最近一个月
+        # 默认拉取最近一个月（结束日期按15点规则取交易日）
         today = dt.date.today()
         month_ago = today - dt.timedelta(days=30)
         start_val = month_ago.strftime("%Y%m%d")
-        end_val = today.strftime("%Y%m%d")
+        end_val = default_end_date()
         dates = get_all_dates_between(start_val, end_val)
 
     # 按周分批拉取，避免单月数据量过大导致API截断

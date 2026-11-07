@@ -1,0 +1,8 @@
+{
+  "industries": 90,
+  "rows": 45900,
+  "missing_amount": 0,
+  "formula": "vol * 100 * avg_price",
+  "unit": "CNY",
+  "errors": {}
+}

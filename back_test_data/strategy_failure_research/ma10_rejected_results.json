@@ -1,0 +1,1136 @@
+{
+  "last_date": "2026-10-08",
+  "params": {
+    "leverageMultiplier": 1,
+    "profitProtectionEnabled": true,
+    "profitProtectionArmPct": 13.5,
+    "profitProtectionDrawdownPct": 2.2,
+    "bullStartSingleDay": 4,
+    "bullStartTwoDay": 4,
+    "bullEndSingleDay": -2.3,
+    "bullEndUseMA10": true,
+    "bullStartUseMA10": true,
+    "weights": [
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
+    "bearStartYear": 2024,
+    "bearBuyBank": true,
+    "startYear": 2019,
+    "endYear": 2026,
+    "rankingMethod": "etf_blend20"
+  },
+  "rows": [
+    {
+      "start": "2019-05-10",
+      "end": "2019-05-13",
+      "is_open": false,
+      "type": "single",
+      "day_pct": 4.0452516682133455,
+      "two_day_sum_pct": 0.5069994635195529,
+      "close": 58861,
+      "ma10": 63406.30999999998,
+      "below_pct": -7.168545212613675,
+      "holding_days": 1,
+      "amv_pct": -2.797947707310444,
+      "etf_pct": -1.8210162955404119,
+      "etf_unprotected_pct": -1.8210162955404077,
+      "peak_amv_pct": 0,
+      "holdings": [
+        {
+          "name": "上证50ETF",
+          "weight": 0.2,
+          "day_change": 3.3879374534623974,
+          "holding_return": -0.018725243068059116,
+          "entry_20d_change": -5.8324855883350235
+        },
+        {
+          "name": "创业板ETF",
+          "weight": 0.2,
+          "day_change": 3.9744499645138376,
+          "holding_return": -0.01638225255972703,
+          "entry_20d_change": -12.117576484703052
+        },
+        {
+          "name": "创新药ETF",
+          "weight": 0.2,
+          "day_change": 3.619631901840492,
+          "holding_return": -0.014209591474245165,
+          "entry_20d_change": -10.77654516640253
+        },
+        {
+          "name": "证券ETF",
+          "weight": 0.2,
+          "day_change": 4.6875,
+          "holding_return": -0.023454157782515916,
+          "entry_20d_change": -15.72327044025158
+        },
+        {
+          "name": "沪深300ETF",
+          "weight": 0.2,
+          "day_change": 3.1327973385084418,
+          "holding_return": -0.018279569892473146,
+          "entry_20d_change": -8.374384236453182
+        }
+      ],
+      "forward": {
+        "1": -2.797947707310444,
+        "3": -4.175600142709102,
+        "5": -8.119298007169428,
+        "10": -16.920881398549128,
+        "20": -26.693736090110598
+      }
+    },
+    {
+      "start": "2019-06-11",
+      "end": "2019-06-12",
+      "is_open": false,
+      "type": "single",
+      "day_pct": 6.105847671314146,
+      "two_day_sum_pct": 5.926327748304139,
+      "close": 45783.4,
+      "ma10": 46387.780000000006,
+      "below_pct": -1.302886234262568,
+      "holding_days": 1,
+      "amv_pct": -0.45627891331793125,
+      "etf_pct": -0.5574022471415474,
+      "etf_unprotected_pct": -0.5574022471415495,
+      "peak_amv_pct": 0,
+      "holdings": [
+        {
+          "name": "证券ETF",
+          "weight": 0.2,
+          "day_change": 5.436013590033983,
+          "holding_return": -0.01611170784103111,
+          "entry_20d_change": 1.637554585152845
+        },
+        {
+          "name": "白酒ETF",
+          "weight": 0.2,
+          "day_change": 5.144694533762051,
+          "holding_return": -0.012232415902140747,
+          "entry_20d_change": 0.92592592592593
+        },
+        {
+          "name": "上证50ETF",
+          "weight": 0.2,
+          "day_change": 2.7382256297919128,
+          "holding_return": -0.004264392324093813,
+          "entry_20d_change": 3.266055045871563
+        },
+        {
+          "name": "沪深300ETF",
+          "weight": 0.2,
+          "day_change": 3.1267293857221823,
+          "holding_return": -0.007512744834987983,
+          "entry_20d_change": 2.0536692223439124
+        },
+        {
+          "name": "有色ETF",
+          "weight": 0.2,
+          "day_change": 2.672955974842761,
+          "holding_return": 0.012251148545176171,
+          "entry_20d_change": 7.755775577557733
+        }
+      ],
+      "forward": {
+        "1": -0.45627891331793125,
+        "3": -3.3147385296854237,
+        "5": -7.720047003935926,
+        "10": 2.5627192388507636,
+        "20": -3.095663493755385
+      }
+    },
+    {
+      "start": "2019-10-28",
+      "end": "2019-11-08",
+      "is_open": false,
+      "type": "single",
+      "day_pct": 4.035539913063002,
+      "two_day_sum_pct": 4.673196800719892,
+      "close": 43511.2,
+      "ma10": 43550.70000000001,
+      "below_pct": -0.0906988865850944,
+      "holding_days": 9,
+      "amv_pct": 0.2888911360753088,
+      "etf_pct": 0.8128246057472754,
+      "etf_unprotected_pct": 0.8128246057472643,
+      "peak_amv_pct": 2.214142565592314,
+      "holdings": [
+        {
+          "name": "创业板ETF",
+          "weight": 0.2,
+          "day_change": 1.856435643564347,
+          "holding_return": -0.0006075334143377242,
+          "entry_20d_change": 1.6049382716049276
+        },
+        {
+          "name": "传媒ETF",
+          "weight": 0.2,
+          "day_change": 3.462050599201061,
+          "holding_return": -0.029601029601029616,
+          "entry_20d_change": -0.5121638924455829
+        },
+        {
+          "name": "创新药ETF",
+          "weight": 0.2,
+          "day_change": 1.6000000000000014,
+          "holding_return": 0.025196850393700787,
+          "entry_20d_change": 2.6400862068965525
+        },
+        {
+          "name": "白酒ETF",
+          "weight": 0.2,
+          "day_change": 1.921317474839901,
+          "holding_return": 0.03411131059245931,
+          "entry_20d_change": -1.4159292035398008
+        },
+        {
+          "name": "半导体ETF",
+          "weight": 0.2,
+          "day_change": 3.498293515358375,
+          "holding_return": 0.01154163231657046,
+          "entry_20d_change": -10.28106508875739
+        }
+      ],
+      "forward": {
+        "1": 0.2693559359429498,
+        "3": -1.2366930813215826,
+        "5": 1.1259170052767997,
+        "10": -2.0937138024232804,
+        "20": -7.291455992939744
+      }
+    },
+    {
+      "start": "2020-02-04",
+      "end": "2020-02-28",
+      "is_open": false,
+      "type": "single",
+      "day_pct": 6.011979444321791,
+      "two_day_sum_pct": -2.570536862032557,
+      "close": 59061.5,
+      "ma10": 60224.65,
+      "below_pct": -1.9313520294431008,
+      "holding_days": 18,
+      "amv_pct": 39.436011615011466,
+      "etf_pct": 10.974932660651415,
+      "etf_unprotected_pct": 8.175014185488445,
+      "peak_amv_pct": 47.724321258349335,
+      "holdings": [
+        {
+          "name": "创业板ETF",
+          "weight": 0.2,
+          "day_change": 6.323185011709609,
+          "holding_return": 0.12802863436123346,
+          "entry_20d_change": 6.949352179034163
+        },
+        {
+          "name": "半导体ETF",
+          "weight": 0.2,
+          "day_change": 4.305639781685877,
+          "holding_return": 0.23343023255813966,
+          "entry_20d_change": 20.27972027972027
+        },
+        {
+          "name": "传媒ETF",
+          "weight": 0.2,
+          "day_change": 5.316455696202516,
+          "holding_return": 0.09915865384615397,
+          "entry_20d_change": 0.7263922518159882
+        },
+        {
+          "name": "创新药ETF",
+          "weight": 0.2,
+          "day_change": 3.3557046979865612,
+          "holding_return": 0.0267232767232769,
+          "entry_20d_change": 6.94444444444442
+        },
+        {
+          "name": "沪深300ETF",
+          "weight": 0.2,
+          "day_change": 3.033615742006024,
+          "holding_return": 0.06140583554376644,
+          "entry_20d_change": -6.148867313915851
+        }
+      ],
+      "forward": {
+        "1": 5.1378647680807354,
+        "3": 13.975093758201185,
+        "5": 15.876501612725713,
+        "10": 26.79071814972529,
+        "20": 48.20178965993074
+      }
+    },
+    {
+      "start": "2022-04-27",
+      "end": "2022-04-28",
+      "is_open": false,
+      "type": "single",
+      "day_pct": 5.576033209372833,
+      "two_day_sum_pct": 4.252255020863038,
+      "close": 77163.2,
+      "ma10": 80163.14,
+      "below_pct": -3.7422935279231906,
+      "holding_days": 1,
+      "amv_pct": 0.1376303730275641,
+      "etf_pct": 0.5679156380672179,
+      "etf_unprotected_pct": 0.5679156380672135,
+      "peak_amv_pct": 0.1376303730275641,
+      "holdings": [
+        {
+          "name": "新能源车ETF",
+          "weight": 0.2,
+          "day_change": 9.523809523809534,
+          "holding_return": -0.0018633540372671176,
+          "entry_20d_change": -15.35226077812828
+        },
+        {
+          "name": "创业板ETF",
+          "weight": 0.2,
+          "day_change": 5.46500479386387,
+          "holding_return": -0.01909090909090916,
+          "entry_20d_change": -12.420382165605092
+        },
+        {
+          "name": "有色ETF",
+          "weight": 0.2,
+          "day_change": 8.102564102564113,
+          "holding_return": -0.006641366223908873,
+          "entry_20d_change": -16.082802547770704
+        },
+        {
+          "name": "沪深300ETF",
+          "weight": 0.2,
+          "day_change": 2.80200898757601,
+          "holding_return": 0.006685523270763882,
+          "entry_20d_change": -6.153474903474909
+        },
+        {
+          "name": "煤炭ETF",
+          "weight": 0.2,
+          "day_change": 4.502251125562795,
+          "holding_return": 0.04930588798468194,
+          "entry_20d_change": -8.936355710549272
+        }
+      ],
+      "forward": {
+        "1": 0.1376303730275641,
+        "3": 7.212116656644629,
+        "5": 3.3462842391191794,
+        "10": 6.014654654031992,
+        "20": 6.521372882410281
+      }
+    },
+    {
+      "start": "2022-10-13",
+      "end": "2022-11-22",
+      "is_open": false,
+      "type": "two_day",
+      "day_pct": 0.7444077902187596,
+      "two_day_sum_pct": 4.090885930294186,
+      "close": 68804.3,
+      "ma10": 69677.12000000001,
+      "below_pct": -1.2526637151478281,
+      "holding_days": 28,
+      "amv_pct": 28.20739401461827,
+      "etf_pct": 7.471845994638016,
+      "etf_unprotected_pct": 7.471845994638011,
+      "peak_amv_pct": 33.849483244506516,
+      "holdings": [
+        {
+          "name": "软件ETF",
+          "weight": 0.2,
+          "day_change": 3.151862464183375,
+          "holding_return": 0.1263888888888891,
+          "entry_20d_change": -3.8718291054739673
+        },
+        {
+          "name": "创新药ETF",
+          "weight": 0.2,
+          "day_change": 2.77777777777779,
+          "holding_return": 0.1505791505791505,
+          "entry_20d_change": -4.740498569677165
+        },
+        {
+          "name": "高端装备ETF",
+          "weight": 0.2,
+          "day_change": 1.1402508551881407,
+          "holding_return": 0.05524239007891785,
+          "entry_20d_change": -5.938494167550368
+        },
+        {
+          "name": "创业板ETF",
+          "weight": 0.2,
+          "day_change": 0.3518029903254227,
+          "holding_return": -0.003943908851884226,
+          "entry_20d_change": -8.463698355395099
+        },
+        {
+          "name": "机器人ETF",
+          "weight": 0.2,
+          "day_change": 0.14184397163119478,
+          "holding_return": 0.04532577903682733,
+          "entry_20d_change": -9.254498714652959
+        }
+      ],
+      "forward": {
+        "1": 4.603636691311452,
+        "3": 7.6259768648180515,
+        "5": 6.700743994198022,
+        "10": 11.807692251792389,
+        "20": 23.6515741022
+      }
+    },
+    {
+      "start": "2023-12-28",
+      "end": "2024-01-05",
+      "is_open": false,
+      "type": "single",
+      "day_pct": 4.149087051868805,
+      "two_day_sum_pct": 3.813374579727291,
+      "close": 69908.2,
+      "ma10": 70489.53,
+      "below_pct": -0.8247040376067272,
+      "holding_days": 5,
+      "amv_pct": -1.0525231660949652,
+      "etf_pct": -4.965917626935501,
+      "etf_unprotected_pct": -4.9659176269354965,
+      "peak_amv_pct": 2.490408850463899,
+      "holdings": [
+        {
+          "name": "光伏ETF",
+          "weight": 0.2,
+          "day_change": 7.9766536964980705,
+          "holding_return": -0.05945945945945952,
+          "entry_20d_change": 3.1598513011152463
+        },
+        {
+          "name": "新能源车ETF",
+          "weight": 0.2,
+          "day_change": 5.225863596102731,
+          "holding_return": -0.047138047138047146,
+          "entry_20d_change": -0.1680672268907557
+        },
+        {
+          "name": "有色ETF",
+          "weight": 0.2,
+          "day_change": 2.8353326063249584,
+          "holding_return": -0.012725344644750725,
+          "entry_20d_change": 2.1668472372697645
+        },
+        {
+          "name": "通信ETF",
+          "weight": 0.2,
+          "day_change": 3.2487309644669837,
+          "holding_return": -0.058013765978367604,
+          "entry_20d_change": -0.19627085377822429
+        },
+        {
+          "name": "软件ETF",
+          "weight": 0.2,
+          "day_change": 3.256445047489831,
+          "holding_return": -0.07095926412614983,
+          "entry_20d_change": -1.040312093628093
+        }
+      ],
+      "forward": {
+        "1": 2.328053075318781,
+        "3": 1.8434175103921868,
+        "5": -1.0525231660949652,
+        "10": -3.790399409511336,
+        "20": 1.6783438852666865
+      }
+    },
+    {
+      "start": "2024-04-17",
+      "end": "2024-04-19",
+      "is_open": false,
+      "type": "single",
+      "day_pct": 4.82078963223449,
+      "two_day_sum_pct": 1.6048489243562503,
+      "close": 85249.7,
+      "ma10": 85997.45999999999,
+      "below_pct": -0.8695140530894707,
+      "holding_days": 2,
+      "amv_pct": -0.3943708892817144,
+      "etf_pct": -1.5359385980652007,
+      "etf_unprotected_pct": -1.5359385980652007,
+      "peak_amv_pct": 0.5610576928716471,
+      "holdings": [
+        {
+          "name": "通信ETF",
+          "weight": 0.2,
+          "day_change": 4.4343891402714775,
+          "holding_return": -0.020797227036395194,
+          "entry_20d_change": -6.860371267150955
+        },
+        {
+          "name": "有色ETF",
+          "weight": 0.2,
+          "day_change": 2.1296296296296147,
+          "holding_return": 0.0072529465095194645,
+          "entry_20d_change": 6.570048309178755
+        },
+        {
+          "name": "中证2000ETF",
+          "weight": 0.2,
+          "day_change": 4.474002418379697,
+          "holding_return": -0.01620370370370372,
+          "entry_20d_change": -8.377518557794271
+        },
+        {
+          "name": "传媒ETF",
+          "weight": 0.2,
+          "day_change": 4.117647058823515,
+          "holding_return": -0.02824858757062154,
+          "entry_20d_change": -8.171206225680939
+        },
+        {
+          "name": "新能源车ETF",
+          "weight": 0.2,
+          "day_change": 2.2893772893772812,
+          "holding_return": -0.018800358102059045,
+          "entry_20d_change": -5.097706032285476
+        }
+      ],
+      "forward": {
+        "1": 0.5610576928716471,
+        "3": -1.6933783931204371,
+        "5": -1.9628221565589077,
+        "10": 9.870181361342034,
+        "20": 5.29855237027228
+      }
+    },
+    {
+      "start": "2025-01-14",
+      "end": "2025-01-15",
+      "is_open": false,
+      "type": "single",
+      "day_pct": 5.4116022151641685,
+      "two_day_sum_pct": 3.5923512115802025,
+      "close": 111580.5,
+      "ma10": 112872.68999999999,
+      "below_pct": -1.1448207710828773,
+      "holding_days": 1,
+      "amv_pct": -1.2334592513924991,
+      "etf_pct": -1.2152857289303154,
+      "etf_unprotected_pct": -1.215285728930311,
+      "peak_amv_pct": 0,
+      "holdings": [
+        {
+          "name": "机器人ETF",
+          "weight": 0.2,
+          "day_change": 6.806282722513091,
+          "holding_return": -0.009803921568627305,
+          "entry_20d_change": -0.7299270072992692
+        },
+        {
+          "name": "半导体ETF",
+          "weight": 0.2,
+          "day_change": 4.0164778578784865,
+          "holding_return": -0.000990099009901102,
+          "entry_20d_change": 3.0612244897959107
+        },
+        {
+          "name": "通信ETF",
+          "weight": 0.2,
+          "day_change": 4.856687898089174,
+          "holding_return": -0.015945330296127436,
+          "entry_20d_change": -1.93596425912137
+        },
+        {
+          "name": "创业板ETF",
+          "weight": 0.2,
+          "day_change": 4.840370751802281,
+          "holding_return": -0.018172888015717037,
+          "entry_20d_change": -5.653382761816495
+        },
+        {
+          "name": "软件ETF",
+          "weight": 0.2,
+          "day_change": 6.7700987306065,
+          "holding_return": -0.015852047556142668,
+          "entry_20d_change": -9.773539928486286
+        }
+      ],
+      "forward": {
+        "1": -1.2334592513924991,
+        "3": -1.7450181707377221,
+        "5": -1.4147633323026931,
+        "10": -2.8266587799839593,
+        "20": 19.82111569673912
+      }
+    },
+    {
+      "start": "2025-04-08",
+      "end": "2025-04-09",
+      "is_open": false,
+      "type": "single",
+      "day_pct": 4.005592013787074,
+      "two_day_sum_pct": -3.0473204347269194,
+      "close": 109957,
+      "ma10": 118133.29,
+      "below_pct": -6.921241252148313,
+      "holding_days": 1,
+      "amv_pct": 5.780805223860241,
+      "etf_pct": 0.8372611136666208,
+      "etf_unprotected_pct": 0.8372611136666143,
+      "peak_amv_pct": 5.780805223860241,
+      "holdings": [
+        {
+          "name": "白酒ETF",
+          "weight": 0.2,
+          "day_change": 3.367003367003374,
+          "holding_return": 0.013029315960912058,
+          "entry_20d_change": 0.16313213703098572
+        },
+        {
+          "name": "煤炭ETF",
+          "weight": 0.2,
+          "day_change": 3.644158628081451,
+          "holding_return": 0.0010341261633921572,
+          "entry_20d_change": -4.162537165510405
+        },
+        {
+          "name": "上证50ETF",
+          "weight": 0.2,
+          "day_change": 2.2170361726954635,
+          "holding_return": 0.007610350076103334,
+          "entry_20d_change": -3.630363036303619
+        },
+        {
+          "name": "创新药ETF",
+          "weight": 0.2,
+          "day_change": 0.19212295869357465,
+          "holding_return": -0.0009587727708532112,
+          "entry_20d_change": -3.021850302185025
+        },
+        {
+          "name": "证券ETF",
+          "weight": 0.2,
+          "day_change": 1.430030643513791,
+          "holding_return": 0.02114803625377637,
+          "entry_20d_change": -10.621062106210621
+        }
+      ],
+      "forward": {
+        "1": 5.780805223860241,
+        "3": 10.981747410351318,
+        "5": 9.447875078439761,
+        "10": 1.4938566894331373,
+        "20": 2.205771346981078
+      }
+    },
+    {
+      "start": "2026-07-21",
+      "end": "2026-07-22",
+      "is_open": false,
+      "type": "single",
+      "day_pct": 6.62828997830367,
+      "two_day_sum_pct": 5.276356827818651,
+      "close": 217907.61,
+      "ma10": 226573.396,
+      "below_pct": -3.824714707458421,
+      "holding_days": 1,
+      "amv_pct": -1.0763323043192385,
+      "etf_pct": -1.375698512829715,
+      "etf_unprotected_pct": -1.3756985128297152,
+      "peak_amv_pct": 0,
+      "holdings": [
+        {
+          "name": "半导体ETF",
+          "weight": 0.2,
+          "day_change": 9.999999999999986,
+          "holding_return": 0.006993006993007089,
+          "entry_20d_change": -8.917197452229308
+        },
+        {
+          "name": "创业板ETF",
+          "weight": 0.2,
+          "day_change": 6.6724187517975375,
+          "holding_return": -0.033162577514154856,
+          "entry_20d_change": -11.900237529691204
+        },
+        {
+          "name": "游戏ETF",
+          "weight": 0.2,
+          "day_change": 1.5813953488372112,
+          "holding_return": -0.04029304029304037,
+          "entry_20d_change": 3.1161473087818914
+        },
+        {
+          "name": "上证50ETF",
+          "weight": 0.2,
+          "day_change": 2.394413036248788,
+          "holding_return": 0.002273465410847386,
+          "entry_20d_change": 2.4625623960066623
+        },
+        {
+          "name": "沪深300ETF",
+          "weight": 0.2,
+          "day_change": 2.94623655913977,
+          "holding_return": -0.0045957802381449975,
+          "entry_20d_change": -3.136382031566176
+        }
+      ],
+      "forward": {
+        "1": -1.0763323043192385,
+        "3": -6.442689174554294,
+        "5": -9.81388396669579,
+        "10": -8.545965879759777,
+        "20": -3.4834992683367094
+      }
+    }
+  ],
+  "raw_events": [
+    {
+      "date": "2019-05-10",
+      "alreadyBull": false,
+      "in_relaxed_wave": true
+    },
+    {
+      "date": "2019-06-11",
+      "alreadyBull": false,
+      "in_relaxed_wave": true
+    },
+    {
+      "date": "2019-10-28",
+      "alreadyBull": false,
+      "in_relaxed_wave": true
+    },
+    {
+      "date": "2020-02-04",
+      "alreadyBull": false,
+      "in_relaxed_wave": true
+    },
+    {
+      "date": "2022-04-27",
+      "alreadyBull": false,
+      "in_relaxed_wave": true
+    },
+    {
+      "date": "2022-04-28",
+      "alreadyBull": false,
+      "in_relaxed_wave": false
+    },
+    {
+      "date": "2022-10-13",
+      "alreadyBull": false,
+      "in_relaxed_wave": true
+    },
+    {
+      "date": "2023-12-28",
+      "alreadyBull": false,
+      "in_relaxed_wave": true
+    },
+    {
+      "date": "2024-04-17",
+      "alreadyBull": false,
+      "in_relaxed_wave": true
+    },
+    {
+      "date": "2025-01-14",
+      "alreadyBull": false,
+      "in_relaxed_wave": true
+    },
+    {
+      "date": "2025-04-08",
+      "alreadyBull": false,
+      "in_relaxed_wave": true
+    },
+    {
+      "date": "2025-04-09",
+      "alreadyBull": false,
+      "in_relaxed_wave": false
+    },
+    {
+      "date": "2026-07-21",
+      "alreadyBull": false,
+      "in_relaxed_wave": true
+    }
+  ],
+  "summary": {
+    "amv": {
+      "n": 11,
+      "wins": 5,
+      "losses": 6,
+      "flat": 0,
+      "win_pct": 45.45454545454545,
+      "mean_pct": 6.076347284625097,
+      "median_pct": -0.3943708892817144,
+      "best_pct": 39.436011615011466,
+      "worst_pct": -2.797947707310444
+    },
+    "etf": {
+      "n": 11,
+      "wins": 5,
+      "losses": 6,
+      "flat": 0,
+      "win_pct": 45.45454545454545,
+      "mean_pct": 0.8357746366661687,
+      "median_pct": -0.5574022471415474,
+      "best_pct": 10.974932660651415,
+      "worst_pct": -4.965917626935501
+    },
+    "mean_holding_days": 6.181818181818182,
+    "one_day_exits": 6
+  },
+  "normal": {
+    "amv": {
+      "n": 45,
+      "wins": 32,
+      "losses": 13,
+      "flat": 0,
+      "win_pct": 71.11111111111111,
+      "mean_pct": 17.652284236858012,
+      "median_pct": 4.254008255082997,
+      "best_pct": 147.8098828580515,
+      "worst_pct": -4.492971170283743
+    },
+    "etf": {
+      "n": 45,
+      "wins": 26,
+      "losses": 19,
+      "flat": 0,
+      "win_pct": 57.77777777777777,
+      "mean_pct": 4.199413834814534,
+      "median_pct": 1.8210944550728136,
+      "best_pct": 29.387203273470284,
+      "worst_pct": -4.102712912966333
+    },
+    "mean_holding_days": 14.2,
+    "one_day_exits": 1
+  },
+  "by_trigger": {
+    "single": {
+      "amv": {
+        "n": 10,
+        "wins": 4,
+        "losses": 6,
+        "flat": 0,
+        "win_pct": 40,
+        "mean_pct": 3.863242611625779,
+        "median_pct": -0.4253249012998228,
+        "best_pct": 39.436011615011466,
+        "worst_pct": -2.797947707310444
+      },
+      "etf": {
+        "n": 10,
+        "wins": 4,
+        "losses": 6,
+        "flat": 0,
+        "win_pct": 40,
+        "mean_pct": 0.17216750086898375,
+        "median_pct": -0.8863439880359314,
+        "best_pct": 10.974932660651415,
+        "worst_pct": -4.965917626935501
+      },
+      "mean_holding_days": 4,
+      "one_day_exits": 6
+    },
+    "two_day": {
+      "amv": {
+        "n": 1,
+        "wins": 1,
+        "losses": 0,
+        "flat": 0,
+        "win_pct": 100,
+        "mean_pct": 28.20739401461827,
+        "median_pct": 28.20739401461827,
+        "best_pct": 28.20739401461827,
+        "worst_pct": 28.20739401461827
+      },
+      "etf": {
+        "n": 1,
+        "wins": 1,
+        "losses": 0,
+        "flat": 0,
+        "win_pct": 100,
+        "mean_pct": 7.471845994638016,
+        "median_pct": 7.471845994638016,
+        "best_pct": 7.471845994638016,
+        "worst_pct": 7.471845994638016
+      },
+      "mean_holding_days": 28,
+      "one_day_exits": 0
+    }
+  },
+  "by_year": {
+    "2019": {
+      "amv": {
+        "n": 3,
+        "wins": 1,
+        "losses": 2,
+        "flat": 0,
+        "win_pct": 33.33333333333333,
+        "mean_pct": -0.9884451615176889,
+        "median_pct": -0.45627891331793125,
+        "best_pct": 0.2888911360753088,
+        "worst_pct": -2.797947707310444
+      },
+      "etf": {
+        "n": 3,
+        "wins": 1,
+        "losses": 2,
+        "flat": 0,
+        "win_pct": 33.33333333333333,
+        "mean_pct": -0.5218646456448947,
+        "median_pct": -0.5574022471415474,
+        "best_pct": 0.8128246057472754,
+        "worst_pct": -1.8210162955404119
+      },
+      "mean_holding_days": 3.6666666666666665,
+      "one_day_exits": 2
+    },
+    "2020": {
+      "amv": {
+        "n": 1,
+        "wins": 1,
+        "losses": 0,
+        "flat": 0,
+        "win_pct": 100,
+        "mean_pct": 39.436011615011466,
+        "median_pct": 39.436011615011466,
+        "best_pct": 39.436011615011466,
+        "worst_pct": 39.436011615011466
+      },
+      "etf": {
+        "n": 1,
+        "wins": 1,
+        "losses": 0,
+        "flat": 0,
+        "win_pct": 100,
+        "mean_pct": 10.974932660651415,
+        "median_pct": 10.974932660651415,
+        "best_pct": 10.974932660651415,
+        "worst_pct": 10.974932660651415
+      },
+      "mean_holding_days": 18,
+      "one_day_exits": 0
+    },
+    "2021": {
+      "amv": {
+        "n": 0,
+        "wins": 0,
+        "losses": 0,
+        "flat": 0,
+        "win_pct": null,
+        "mean_pct": null,
+        "median_pct": null,
+        "best_pct": null,
+        "worst_pct": null
+      },
+      "etf": {
+        "n": 0,
+        "wins": 0,
+        "losses": 0,
+        "flat": 0,
+        "win_pct": null,
+        "mean_pct": null,
+        "median_pct": null,
+        "best_pct": null,
+        "worst_pct": null
+      },
+      "mean_holding_days": null,
+      "one_day_exits": 0
+    },
+    "2022": {
+      "amv": {
+        "n": 2,
+        "wins": 2,
+        "losses": 0,
+        "flat": 0,
+        "win_pct": 100,
+        "mean_pct": 14.172512193822918,
+        "median_pct": 14.172512193822918,
+        "best_pct": 28.20739401461827,
+        "worst_pct": 0.1376303730275641
+      },
+      "etf": {
+        "n": 2,
+        "wins": 2,
+        "losses": 0,
+        "flat": 0,
+        "win_pct": 100,
+        "mean_pct": 4.019880816352616,
+        "median_pct": 4.019880816352616,
+        "best_pct": 7.471845994638016,
+        "worst_pct": 0.5679156380672179
+      },
+      "mean_holding_days": 14.5,
+      "one_day_exits": 1
+    },
+    "2023": {
+      "amv": {
+        "n": 1,
+        "wins": 0,
+        "losses": 1,
+        "flat": 0,
+        "win_pct": 0,
+        "mean_pct": -1.0525231660949652,
+        "median_pct": -1.0525231660949652,
+        "best_pct": -1.0525231660949652,
+        "worst_pct": -1.0525231660949652
+      },
+      "etf": {
+        "n": 1,
+        "wins": 0,
+        "losses": 1,
+        "flat": 0,
+        "win_pct": 0,
+        "mean_pct": -4.965917626935501,
+        "median_pct": -4.965917626935501,
+        "best_pct": -4.965917626935501,
+        "worst_pct": -4.965917626935501
+      },
+      "mean_holding_days": 5,
+      "one_day_exits": 0
+    },
+    "2024": {
+      "amv": {
+        "n": 1,
+        "wins": 0,
+        "losses": 1,
+        "flat": 0,
+        "win_pct": 0,
+        "mean_pct": -0.3943708892817144,
+        "median_pct": -0.3943708892817144,
+        "best_pct": -0.3943708892817144,
+        "worst_pct": -0.3943708892817144
+      },
+      "etf": {
+        "n": 1,
+        "wins": 0,
+        "losses": 1,
+        "flat": 0,
+        "win_pct": 0,
+        "mean_pct": -1.5359385980652007,
+        "median_pct": -1.5359385980652007,
+        "best_pct": -1.5359385980652007,
+        "worst_pct": -1.5359385980652007
+      },
+      "mean_holding_days": 2,
+      "one_day_exits": 0
+    },
+    "2025": {
+      "amv": {
+        "n": 2,
+        "wins": 1,
+        "losses": 1,
+        "flat": 0,
+        "win_pct": 50,
+        "mean_pct": 2.273672986233871,
+        "median_pct": 2.273672986233871,
+        "best_pct": 5.780805223860241,
+        "worst_pct": -1.2334592513924991
+      },
+      "etf": {
+        "n": 2,
+        "wins": 1,
+        "losses": 1,
+        "flat": 0,
+        "win_pct": 50,
+        "mean_pct": -0.1890123076318473,
+        "median_pct": -0.1890123076318473,
+        "best_pct": 0.8372611136666208,
+        "worst_pct": -1.2152857289303154
+      },
+      "mean_holding_days": 1,
+      "one_day_exits": 2
+    },
+    "2026": {
+      "amv": {
+        "n": 1,
+        "wins": 0,
+        "losses": 1,
+        "flat": 0,
+        "win_pct": 0,
+        "mean_pct": -1.0763323043192385,
+        "median_pct": -1.0763323043192385,
+        "best_pct": -1.0763323043192385,
+        "worst_pct": -1.0763323043192385
+      },
+      "etf": {
+        "n": 1,
+        "wins": 0,
+        "losses": 1,
+        "flat": 0,
+        "win_pct": 0,
+        "mean_pct": -1.375698512829715,
+        "median_pct": -1.375698512829715,
+        "best_pct": -1.375698512829715,
+        "worst_pct": -1.375698512829715
+      },
+      "mean_holding_days": 1,
+      "one_day_exits": 1
+    }
+  },
+  "forward": {
+    "1": {
+      "n": 11,
+      "wins": 7,
+      "losses": 4,
+      "flat": 0,
+      "win_pct": 63.63636363636363,
+      "mean_pct": 1.2049441440066597,
+      "median_pct": 0.2693559359429498,
+      "best_pct": 5.780805223860241,
+      "worst_pct": -2.797947707310444
+    },
+    "3": {
+      "n": 11,
+      "wins": 5,
+      "losses": 6,
+      "flat": 0,
+      "win_pct": 45.45454545454545,
+      "mean_pct": 2.0936577007526194,
+      "median_pct": -1.2366930813215826,
+      "best_pct": 13.975093758201185,
+      "worst_pct": -6.442689174554294
+    },
+    "5": {
+      "n": 11,
+      "wins": 5,
+      "losses": 6,
+      "flat": 0,
+      "win_pct": 45.45454545454545,
+      "mean_pct": 0.5830894815456152,
+      "median_pct": -1.0525231660949652,
+      "best_pct": 15.876501612725713,
+      "worst_pct": -9.81388396669579
+    },
+    "10": {
+      "n": 11,
+      "wins": 6,
+      "losses": 5,
+      "flat": 0,
+      "win_pct": 54.54545454545454,
+      "mean_pct": 2.2147457340861934,
+      "median_pct": 1.4938566894331373,
+      "best_pct": 26.79071814972529,
+      "worst_pct": -16.920881398549128
+    },
+    "20": {
+      "n": 11,
+      "wins": 7,
+      "losses": 4,
+      "flat": 0,
+      "win_pct": 63.63636363636363,
+      "mean_pct": 6.074015008968886,
+      "median_pct": 2.205771346981078,
+      "best_pct": 48.20178965993074,
+      "worst_pct": -26.693736090110598
+    }
+  },
+  "conventions": [
+    "MA10 condition means close strictly above MA10, not necessarily a same-day cross from below.",
+    "Strict >4%; two-day trigger requires both days positive and sums percentage changes, not compounded return.",
+    "Disable entry MA10 only. Original exits unchanged: next/future close below MA10 OR single-day decline below -2.3%. Signals while already long do not open duplicate positions.",
+    "Trade return excludes trigger-day rise: entry close to exit close. Success means strictly positive return; flat separate. Open waves excluded from wave summary.",
+    "Forward returns ignore exit signals and are AMV diagnostic event returns, not executable portfolio strategy returns.",
+    "Current enabled ETF universe and existing same-close execution retained; no fees/slippage. ETF protection enabled at13.5/2.2, weights equal20%."
+  ]
+}

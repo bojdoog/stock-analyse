@@ -1,0 +1,230 @@
+[
+  {
+    "date": "2025-01-09",
+    "code": "801030.SI",
+    "industry": "基础化工",
+    "complete": false,
+    "error": "[upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=d3537c8dbeba474381b53ec7074b34ea",
+    "retry": {
+      "complete": false,
+      "error": "[upstream_pool_exhausted] 数据当前不可用，请稍后重试；建议等待30秒后重试；request_id=986320abdacf4933b3e157a76bc47071"
+    }
+  },
+  {
+    "date": "2025-02-07",
+    "code": "801740.SI",
+    "industry": "国防军工",
+    "rows": 1,
+    "data": [
+      {
+        "ts_code": "801740.SI",
+        "trade_date": "20250207",
+        "name": "国防军工",
+        "open": 1427.05,
+        "high": 1450.93,
+        "low": 1419.64,
+        "close": 1437.23,
+        "vol": 222635.0,
+        "amount": 4063492.0,
+        "float_mv": 101921734.0,
+        "total_mv": 240830886.417958
+      }
+    ],
+    "complete": true
+  },
+  {
+    "date": "2025-05-08",
+    "code": "801110.SI",
+    "industry": "家用电器",
+    "rows": 1,
+    "data": [
+      {
+        "ts_code": "801110.SI",
+        "trade_date": "20250508",
+        "name": "家用电器",
+        "open": 8467.05,
+        "high": 8575.42,
+        "low": 8450.48,
+        "close": 8551.39,
+        "vol": 206370.0,
+        "amount": 2673196.0,
+        "float_mv": 102832059.0,
+        "total_mv": 180395257.0
+      }
+    ],
+    "complete": true
+  },
+  {
+    "date": "2026-01-07",
+    "code": "801210.SI",
+    "industry": "社会服务",
+    "rows": 1,
+    "data": [
+      {
+        "ts_code": "801210.SI",
+        "trade_date": "20260107",
+        "name": "社会服务",
+        "open": 8952.22,
+        "high": 9046.06,
+        "low": 8935.03,
+        "close": 8988.04,
+        "vol": 181077.0,
+        "amount": 1948235.0,
+        "float_mv": 27759653.0,
+        "total_mv": 55604059.0
+      }
+    ],
+    "complete": true
+  },
+  {
+    "date": "2026-01-16",
+    "code": "801150.SI",
+    "industry": "医药生物",
+    "rows": 1,
+    "data": [
+      {
+        "ts_code": "801150.SI",
+        "trade_date": "20260116",
+        "name": "医药生物",
+        "open": 8776.77,
+        "high": 8801.87,
+        "low": 8643.42,
+        "close": 8657.19,
+        "vol": 832376.0,
+        "amount": 13547513.0,
+        "float_mv": 333651667.0,
+        "total_mv": 674290247.0
+      }
+    ],
+    "complete": true
+  },
+  {
+    "date": "2026-08-27",
+    "code": "801760.SI",
+    "industry": "传媒",
+    "rows": 1,
+    "data": [
+      {
+        "ts_code": "801760.SI",
+        "trade_date": "20260827",
+        "name": "传媒",
+        "open": 662.59,
+        "high": 664.78,
+        "low": 657.94,
+        "close": 664.78,
+        "vol": 267707.0,
+        "amount": 2746542.0,
+        "float_mv": 79633537.0,
+        "total_mv": 140670704.0
+      }
+    ],
+    "complete": true
+  },
+  {
+    "date": "2026-08-27",
+    "code": "801030.SI",
+    "industry": "基础化工",
+    "rows": 1,
+    "data": [
+      {
+        "ts_code": "801030.SI",
+        "trade_date": "20260827",
+        "name": "基础化工",
+        "open": 4298.25,
+        "high": 4406.52,
+        "low": 4298.25,
+        "close": 4406.52,
+        "vol": 739484.0,
+        "amount": 11306600.0,
+        "float_mv": 224219000.0,
+        "total_mv": 462684000.0
+      }
+    ],
+    "complete": true
+  },
+  {
+    "date": "2026-08-27",
+    "code": "801150.SI",
+    "industry": "医药生物",
+    "rows": 1,
+    "data": [
+      {
+        "ts_code": "801150.SI",
+        "trade_date": "20260827",
+        "name": null,
+        "open": null,
+        "high": null,
+        "low": null,
+        "close": null,
+        "vol": null,
+        "amount": null,
+        "float_mv": null,
+        "total_mv": null
+      }
+    ],
+    "complete": false,
+    "retry": {
+      "rows": 1,
+      "data": [
+        {
+          "ts_code": "801150.SI",
+          "trade_date": "20260827",
+          "name": null,
+          "open": null,
+          "high": null,
+          "low": null,
+          "close": null,
+          "vol": null,
+          "amount": null,
+          "float_mv": null,
+          "total_mv": null
+        }
+      ],
+      "complete": false
+    }
+  },
+  {
+    "date": "2026-09-03",
+    "code": "801110.SI",
+    "industry": "家用电器",
+    "rows": 1,
+    "data": [
+      {
+        "ts_code": "801110.SI",
+        "trade_date": "20260903",
+        "name": "家用电器",
+        "open": 8698.7,
+        "high": 8780.3,
+        "low": 8698.7,
+        "close": 8725.95,
+        "vol": 152365.0,
+        "amount": 1860853.0,
+        "float_mv": 103529181.0,
+        "total_mv": 181261840.0
+      }
+    ],
+    "complete": true
+  },
+  {
+    "date": "2026-09-03",
+    "code": "801150.SI",
+    "industry": "医药生物",
+    "rows": 1,
+    "data": [
+      {
+        "ts_code": "801150.SI",
+        "trade_date": "20260903",
+        "name": "医药生物",
+        "open": 7777.48,
+        "high": 7800.44,
+        "low": 7716.39,
+        "close": 7780.44,
+        "vol": 639617.0,
+        "amount": 9377228.0,
+        "float_mv": 306494355.0,
+        "total_mv": 598145632.0
+      }
+    ],
+    "complete": true
+  }
+]

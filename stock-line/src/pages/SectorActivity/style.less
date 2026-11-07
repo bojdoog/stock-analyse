@@ -1,11 +1,20 @@
 .sector-date { display: flex; align-items: center; gap: 12px; color: #7a898f; font-size: 12px; }
-.sector-layout { display: grid; grid-template-columns: minmax(360px, .6fr) minmax(500px, 1.7fr); gap: 20px; align-items: start; }
+.sector-layout { display: grid; grid-template-columns: minmax(610px, .9fr) minmax(500px, 1.7fr); gap: 20px; align-items: stretch; }
+.sector-left-column { display: flex; flex-direction: column; min-width: 0; }
+.sector-left-column > .sector-panel-title, .sector-left-column > .sector-filters, .sector-left-column > .ant-table-wrapper { flex-shrink: 0; }
+.sector-market-panel { flex: 1; display: flex; flex-direction: column; min-height: 380px; margin-bottom: 16px; }
+.sector-market-title { font-size: 12px; font-weight: 600; color: #617780; margin-bottom: 6px; }
+.sector-market-chart { flex: 1; position: relative; min-height: 300px; }
+.sector-market-chart > .ant-spin-container { position: absolute; inset: 0; height: 100%; }
 .sector-panel { padding: 20px; background: #fff; border: 1px solid #e2e8e9; border-radius: 12px; min-width: 0; }
 .sector-panel-title { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 18px; }
 .sector-panel-title strong { font-size: 16px; color: #23434c; }
 .sector-panel-title > span { font-size: 11px; color: #819097; }
-.sector-list .ant-input-search { margin-bottom: 18px; }
+.sector-filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.sector-filters .ant-input-search { flex: 1; min-width: 180px; }
+.sector-filters .ant-picker { width: 145px; flex-shrink: 0; }
 .sector-list .ant-table { font-size: 12px; }
+.sector-list .ant-table-cell { white-space: nowrap; font-variant-numeric: tabular-nums; }
 .sector-list .sector-name { padding: 0; font-size: 12px; color: #344f57; }
 .sector-list .ant-table-thead > tr > th { background: #f5f8f8; color: #72858d; font-size: 11px; }
 .sector-list .sector-selected > td { background: #edf6f5 !important; }
@@ -41,3 +50,4 @@
 .sector-backtest-total { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 14px; padding: 20px; border: 1px solid #f1c9d1; background: #fff8f9; border-radius: 10px; margin-bottom: 16px; }
 @media (max-width: 1250px) { .sector-layout { grid-template-columns: 1fr; } }
 @media (max-width: 600px) { .sector-panel { padding: 14px; } .sector-metrics strong { font-size: 20px; } }
+

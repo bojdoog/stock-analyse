@@ -1,0 +1,1 @@
+{"tool": "sw_mins", "arguments": {"ts_code": "801010.SI", "freq": "5min", "start_date": "2026-09-30 09:00:00", "end_date": "2026-09-30 15:10:00"}, "retrieved_at": "2026-10-06T17:51:39.206314+00:00", "error": "[{'type': 'text', 'text': 'tushare API 错误 [40203]: 抱歉，您没有接口(sw_mins)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。'}]"}

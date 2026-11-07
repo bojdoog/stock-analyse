@@ -1,0 +1,1 @@
+{"files": 500, "rows": 15409, "layout": "one CSV per trading day; industries sorted by ts_code", "archive": "C:\\_allCode\\stock_analyse\\back_test_data\\sw_daily_layout_backup_20261010_014141", "databases_verified": ["sqlite", "mysql"], "flow_dependency": false}
