@@ -122,7 +122,6 @@ const buildOption = (bars: Bar[]) => {
     ],
     dataZoom: [
       { type: 'inside', xAxisIndex: [0, 1], start, end: 100 },
-      { type: 'slider', xAxisIndex: [0, 1], start, end: 100, bottom: 6, height: 18, borderColor: 'transparent' },
     ],
     series: [
       {

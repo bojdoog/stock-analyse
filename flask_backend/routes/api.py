@@ -39,8 +39,9 @@ def get_huijin_etfs():
 
 @api_bp.route('/b1-picks/history', methods=['GET'])
 def get_b1_history():
-    """B1 选股历史：日期、当天条件、命中数量，按日期由近到远。"""
-    return jsonify({'code': 0, 'message': 'success', 'data': data_service.get_b1_history()})
+    """B1 选股历史：日期、当天条件、命中数量，按日期由近到远；date 为个股日线最新交易日。"""
+    return jsonify({'code': 0, 'message': 'success', 'data': data_service.get_b1_history(),
+                    'date': data_service.latest_stock_date()})
 
 
 @api_bp.route('/b1-picks', methods=['GET'])
@@ -195,6 +196,17 @@ def get_etf_intraday(code):
         return jsonify({'code': 400, 'message': '缺少 date 参数', 'data': []}), 400
     result = data_service.get_etf_intraday(code, date)
     return jsonify({'code': 0, 'message': 'success', **result})
+
+
+@api_bp.route('/stocks/<code>/basic', methods=['GET'])
+def get_stock_basic(code):
+    """个股每日指标（市值、股本、PE、PB、换手率、量比），date 缺省取最新一条。"""
+    from market_store import connect
+    from stock_basic_daily import latest
+    day = request.args.get('date') or None
+    with connect(current_app.config['DATABASE_PATH']) as db:
+        row = latest(db, code, day)
+    return jsonify({'code': 0, 'message': 'success', 'data': row})
 
 
 @api_bp.route('/kline/<category>/<code>', methods=['GET'])
@@ -361,7 +373,8 @@ def get_sector_data():
         fields: 返回字段，逗号分隔，如 etf_data,index_data（默认都返回）
     """
     fields_param = request.args.get('fields', 'etf_data,index_data')
-    all_data = data_service.get_all_sector_data()
+    compact = request.args.get('compact') in ('1', 'true')
+    all_data = data_service.get_all_sector_data(compact=compact)
     
     fields = [f.strip() for f in fields_param.split(',') if f.strip() in all_data]
     if not fields:

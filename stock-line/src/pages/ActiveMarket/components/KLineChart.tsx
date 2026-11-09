@@ -68,7 +68,6 @@ interface KLineChartProps {
   showZones?: boolean;
   chartHeight?: number | string;
   maxDate?: string;
-  showDataZoom?: boolean;
   baseDates?: string[];
   zones?: ChartZones;
   onZonesChange?: (zones: ChartZones) => void;
@@ -138,7 +137,6 @@ const KLineChart: React.FC<KLineChartProps> = ({
   showZones = true,
   chartHeight = 900,
   maxDate,
-  showDataZoom = true,
   baseDates,
   zones: externalZones,
   onZonesChange,
@@ -802,20 +800,7 @@ const KLineChart: React.FC<KLineChartProps> = ({
           startValue: initialStart,
           endValue: initialEnd,
           rangeMode: ['value', 'value']
-        },
-        ...(showDataZoom ? [{
-          show: true,
-          xAxisIndex: zoomAxes,
-          type: 'slider',
-          top: '92%',
-          startValue: initialStart,
-          endValue: initialEnd,
-          rangeMode: ['value', 'value'],
-          textStyle: { color: '#666' },
-          borderColor: '#e3ebec',
-          fillerColor: 'rgba(22,125,141,0.09)',
-          handleStyle: { color: '#6b9ba3' }
-        }] : [])
+        }
       ],
       series: [
         ...(seriesType === 'line' ? [{
@@ -1021,7 +1006,7 @@ const KLineChart: React.FC<KLineChartProps> = ({
       }
       chartInstance.current?.dispose();
     };
-  }, [data, highlightThreshold, showBullZoneBg, showBearZoneBg, extraSeries, allETFSeries, syncGroup, dataLabel, mainSeriesName, seriesType, showVolume, showMACD, showRanking, showZones, maxDate, showDataZoom, baseDates, zoneParams, zoomRange, defaultWindowYears, quoteTargetRef, showHolidayPeriods]);
+  }, [data, highlightThreshold, showBullZoneBg, showBearZoneBg, extraSeries, allETFSeries, syncGroup, dataLabel, mainSeriesName, seriesType, showVolume, showMACD, showRanking, showZones, maxDate, baseDates, zoneParams, zoomRange, defaultWindowYears, quoteTargetRef, showHolidayPeriods]);
 
   return (
     <div style={{ width: '100%', height: typeof chartHeight === 'number' ? `${chartHeight}px` : chartHeight, backgroundColor: '#fff', display: 'flex', flexDirection: 'column' }}>

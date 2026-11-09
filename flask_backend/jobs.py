@@ -186,6 +186,37 @@ def _board_args(options):
     return excluded
 
 
+def _run_daily_basic(job, python, env):
+    """日线抓取完成后增量更新个股每日指标（市值/估值/换手率）。"""
+    script = ROOT / 'fetch_data' / 'fetch_daily_basic.py'
+    job.log(f'启动个股每日指标抓取：{script.name}')
+    try:
+        proc = subprocess.Popen(
+            [python, '-u', str(script), '--start', '20240101', '--end', 'today'],
+            cwd=str(ROOT), env=env,
+            stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+            text=True, encoding='utf-8', errors='replace', bufsize=1,
+        )
+        job.proc = proc
+        for chunk in proc.stdout:
+            for line in chunk.replace('\r', '\n').split('\n'):
+                line = line.strip()
+                if not line:
+                    continue
+                percent = _TQDM.search(line)
+                if percent:
+                    raw = min(100, int(percent.group(1)))
+                    job.stage = '指标'
+                    job.stage_percent = raw
+                    job.progress = max(job.progress, min(99, 95 + int(raw * 0.04)))
+                    continue
+                job.log(line)
+        return proc.wait()
+    except Exception as exc:  # noqa: BLE001 - 指标失败不影响已完成的日线
+        job.log(f'每日指标抓取失败：{exc}')
+        return 1
+
+
 def _run_fetch(job):
     python = shutil.which('python') or sys.executable
     script = ROOT / 'fetch_data' / 'fetch_kline.py'
@@ -244,10 +275,21 @@ def _run_fetch(job):
         if job.cancelled:
             job.status = 'cancelled'
             job.log('抓取已取消（已下载的股票已保存，未下载的不再继续）')
+        elif code == 0:
+            job.progress = max(job.progress, 95)
+            job.log('个股日线抓取完成，继续更新每日指标')
+            code = _run_daily_basic(job, python, env)
+            job.progress = 100
+            if job.cancelled:
+                job.status = 'cancelled'
+                job.log('抓取已取消（每日指标更新中断）')
+            else:
+                job.status = 'done' if code == 0 else 'error'
+                job.log('抓取完成' if code == 0 else f'每日指标结束，退出码 {code}')
         else:
             job.progress = 100
-            job.status = 'done' if code == 0 else 'error'
-            job.log('抓取完成' if code == 0 else f'抓取结束，退出码 {code}')
+            job.status = 'error'
+            job.log(f'抓取结束，退出码 {code}')
     except Exception as exc:  # noqa: BLE001
         job.status = 'error'
         job.wait = None

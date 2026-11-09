@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-从 stocklist.csv 读取股票池并用 Tushare 抓取日线K线（固定 qfq，全量覆盖）
+从数据库（stock_daily_basic）读取股票池并用 Tushare 抓取日线K线（固定 qfq，全量覆盖）
 - 保存到 ../public/data/stock/{code}.csv
 
 用法：
   python fetch_data/fetch_kline.py
   python fetch_data/fetch_kline.py --start 20250101 --end today
-  python fetch_data/fetch_kline.py --stocklist ./stocklist.csv --workers 8
+  python fetch_data/fetch_kline.py --workers 8
 """
 from __future__ import annotations
 
@@ -180,10 +180,10 @@ def _get_kline_tushare(code: str, start: str, end: str) -> pd.DataFrame:
         return pd.DataFrame()
 
     df = df.rename(columns={"trade_date": "date", "vol": "volume"})[
-        ["date", "open", "close", "high", "low", "volume"]
+        ["date", "open", "close", "high", "low", "volume", "amount"]
     ].copy()
     df["date"] = pd.to_datetime(df["date"])
-    for c in ["open", "close", "high", "low", "volume"]:
+    for c in ["open", "close", "high", "low", "volume", "amount"]:
         df[c] = pd.to_numeric(df[c], errors="coerce")
     return df.sort_values("date").reset_index(drop=True)
 
@@ -199,9 +199,9 @@ def validate(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-# --------------------------- 读取 stocklist.csv & 过滤板块 --------------------------- #
+# --------------------------- 读取数据库股票池 & 过滤板块 ---------------------------
 
-def _filter_by_boards_stocklist(df: pd.DataFrame, exclude_boards: set[str]) -> pd.DataFrame:
+def _filter_by_boards(df: pd.DataFrame, exclude_boards: set[str]) -> pd.DataFrame:
     """
     exclude_boards 子集：{'gem','star','bj'}
     - gem  : 创业板 300/301（.SZ）
@@ -222,13 +222,24 @@ def _filter_by_boards_stocklist(df: pd.DataFrame, exclude_boards: set[str]) -> p
     return df[mask].copy()
 
 
-def load_codes_from_stocklist(stocklist_csv: Path, exclude_boards: set[str]) -> List[str]:
-    df = pd.read_csv(stocklist_csv)
-    df = _filter_by_boards_stocklist(df, exclude_boards)
-    codes = df["symbol"].astype(str).str.zfill(6).tolist()
-    codes = list(dict.fromkeys(codes))  # 去重保持顺序
-    logger.info("从 %s 读取到 %d 只股票（排除板块：%s）",
-                stocklist_csv, len(codes), ",".join(sorted(exclude_boards)) or "无")
+def load_codes_from_database(exclude_boards: set[str]) -> List[str]:
+    """股票池取自数据库 stock_daily_basic（近 120 天出现过的个股），不再依赖本地 stocklist.csv。"""
+    from market_store import connect
+    from stock_basic_daily import pool
+    with connect() as db:
+        rows = pool(db)
+    if not rows:
+        return []
+    symbols, ts_codes = [], []
+    for row in rows:
+        code = str(row["code"]).zfill(6)
+        suffix = "SH" if code.startswith("6") else "SZ" if code[0] in "03" else "BJ"
+        symbols.append(code)
+        ts_codes.append(f"{code}.{suffix}")
+    df = _filter_by_boards(pd.DataFrame({"symbol": symbols, "ts_code": ts_codes}), exclude_boards)
+    codes = list(dict.fromkeys(df["symbol"].tolist()))
+    logger.info("从数据库读取到 %d 只股票（排除板块：%s）",
+                len(codes), ",".join(sorted(exclude_boards)) or "无")
     return codes
 
 
@@ -248,7 +259,7 @@ def fetch_one(
             new_df = _get_kline_tushare(code, start, end)
             if new_df.empty:
                 logger.debug("%s 无数据，生成空表。", code)
-                new_df = pd.DataFrame(columns=["date", "open", "close", "high", "low", "volume"])
+                new_df = pd.DataFrame(columns=["date", "open", "close", "high", "low", "volume", "amount"])
             new_df = validate(new_df)
             if defer_db:
                 # 先落 CSV，全部下载结束后再统一入库，避免每只股票都建连接、重写历史。
@@ -272,17 +283,11 @@ def fetch_one(
 # --------------------------- 主入口 --------------------------- #
 def main():
     parser = argparse.ArgumentParser(
-        description="从 stocklist.csv 读取股票池并用 Tushare 抓取日线K线（固定qfq，全量覆盖）"
+        description="从数据库 stock_daily_basic 读取股票池并用 Tushare 抓取日线K线（固定qfq，全量覆盖）"
     )
     default_start = '20240101'
     parser.add_argument("--start", default=default_start, help="起始日期 YYYYMMDD 或 'today'")
     parser.add_argument("--end", default="today", help="结束日期 YYYYMMDD 或 'today'（today=15点前取前一交易日，15点后取当天）")
-    parser.add_argument(
-        "--stocklist",
-        type=Path,
-        default=Path(__file__).resolve().parent / "stocklist.csv",
-        help="股票清单CSV路径（需含 ts_code 或 symbol）",
-    )
     parser.add_argument(
         "--exclude-boards",
         nargs="*",
@@ -319,12 +324,12 @@ def main():
     out_dir = Path(args.out)
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    # ---------- 从 stocklist.csv 读取股票池 ---------- #
+    # ---------- 从数据库读取股票池 ---------- #
     exclude_boards = set(args.exclude_boards or [])
-    codes = load_codes_from_stocklist(args.stocklist, exclude_boards)
+    codes = load_codes_from_database(exclude_boards)
 
     if not codes:
-        logger.error("stocklist 为空或被过滤后无代码，请检查。")
+        logger.error("数据库中暂无股票池，请先运行 fetch_data/fetch_daily_basic.py 初始化。")
         sys.exit(1)
 
     logger.info(

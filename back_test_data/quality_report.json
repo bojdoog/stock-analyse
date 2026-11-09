@@ -1,7 +1,7 @@
 {
   "start": "20240910",
-  "end": "20261106",
-  "expected_trading_days": 520,
+  "end": "20261109",
+  "expected_trading_days": 521,
   "ths_daily_amount": {
     "formula": "vol * 100 * avg_price",
     "unit": "CNY",
@@ -10,10 +10,10 @@
   "calendar_disagreements": [],
   "datasets": {
     "moneyflow_ind_ths": {
-      "rows": 46620,
-      "dates": 518,
+      "rows": 46710,
+      "dates": 519,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [
         "20241104",
         "20250120"
@@ -537,7 +537,8 @@
         "20261103": 90,
         "20261104": 90,
         "20261105": 90,
-        "20261106": 90
+        "20261106": 90,
+        "20261109": 90
       },
       "null_counts": {
         "trade_date": 0,
@@ -556,10 +557,10 @@
       "duplicate_keys": 0
     },
     "daily_info": {
-      "rows": 6188,
-      "dates": 520,
+      "rows": 6200,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "rows_per_date": {
@@ -1082,31 +1083,32 @@
         "20261103": 12,
         "20261104": 12,
         "20261105": 12,
-        "20261106": 12
+        "20261106": 12,
+        "20261109": 12
       },
       "null_counts": {
         "trade_date": 0,
         "ts_code": 0,
         "ts_name": 0,
         "com_count": 0,
-        "total_share": 4628,
-        "float_share": 4628,
-        "total_mv": 2086,
-        "float_mv": 2086,
+        "total_share": 4637,
+        "float_share": 4637,
+        "total_mv": 2090,
+        "float_mv": 2090,
         "amount": 0,
-        "vol": 520,
-        "trans_count": 6188,
-        "pe": 2548,
-        "tr": 3126,
+        "vol": 521,
+        "trans_count": 6200,
+        "pe": 2553,
+        "tr": 3132,
         "exchange": 0
       },
       "duplicate_keys": 0
     },
     "sz_daily_info": {
-      "rows": 7240,
-      "dates": 519,
+      "rows": 7254,
+      "dates": 520,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [
         "20241112"
       ],
@@ -1630,26 +1632,27 @@
         "20261103": 14,
         "20261104": 14,
         "20261105": 14,
-        "20261106": 14
+        "20261106": 14,
+        "20261109": 14
       },
       "null_counts": {
         "trade_date": 0,
         "ts_code": 0,
         "count": 0,
         "amount": 0,
-        "vol": 7240,
-        "total_share": 7240,
-        "total_mv": 1553,
-        "float_share": 7240,
-        "float_mv": 1553
+        "vol": 7254,
+        "total_share": 7254,
+        "total_mv": 1556,
+        "float_share": 7254,
+        "float_mv": 1556
       },
       "duplicate_keys": 0
     },
     "moneyflow_mkt_dc": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "rows_per_date": {
@@ -2172,7 +2175,8 @@
         "20261103": 1,
         "20261104": 1,
         "20261105": 1,
-        "20261106": 1
+        "20261106": 1,
+        "20261109": 1
       },
       "null_counts": {
         "trade_date": 0,
@@ -2194,10 +2198,10 @@
       "duplicate_keys": 0
     },
     "ths_daily": {
-      "rows": 46800,
-      "dates": 520,
+      "rows": 46890,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "rows_per_date": {
@@ -2720,7 +2724,8 @@
         "20261103": 90,
         "20261104": 90,
         "20261105": 90,
-        "20261106": 90
+        "20261106": 90,
+        "20261109": 90
       },
       "null_counts": {
         "ts_code": 0,
@@ -2741,10 +2746,10 @@
       "duplicate_keys": 0
     },
     "amv": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "rows_per_date": {
@@ -3267,7 +3272,8 @@
         "20261103": 1,
         "20261104": 1,
         "20261105": 1,
-        "20261106": 1
+        "20261106": 1,
+        "20261109": 1
       },
       "null_counts": {
         "date": 0,
@@ -3281,10 +3287,10 @@
       "duplicate_keys": 0
     },
     "local_industry_reference": {
-      "rows": 30044,
-      "dates": 518,
+      "rows": 30102,
+      "dates": 519,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [
         "20241104",
         "20250120"
@@ -3808,7 +3814,8 @@
         "20261103": 58,
         "20261104": 58,
         "20261105": 58,
-        "20261106": 58
+        "20261106": 58,
+        "20261109": 58
       },
       "null_counts": {
         "date": 0,
@@ -3833,10 +3840,10 @@
   "skipped_interfaces": [],
   "industry_prices": {
     "881101.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -3858,10 +3865,10 @@
       "duplicate_keys": 0
     },
     "881102.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -3883,10 +3890,10 @@
       "duplicate_keys": 0
     },
     "881103.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -3908,10 +3915,10 @@
       "duplicate_keys": 0
     },
     "881105.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -3933,10 +3940,10 @@
       "duplicate_keys": 0
     },
     "881107.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -3958,10 +3965,10 @@
       "duplicate_keys": 0
     },
     "881108.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -3983,10 +3990,10 @@
       "duplicate_keys": 0
     },
     "881109.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4008,10 +4015,10 @@
       "duplicate_keys": 0
     },
     "881112.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4033,10 +4040,10 @@
       "duplicate_keys": 0
     },
     "881114.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4058,10 +4065,10 @@
       "duplicate_keys": 0
     },
     "881115.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4083,10 +4090,10 @@
       "duplicate_keys": 0
     },
     "881116.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4108,10 +4115,10 @@
       "duplicate_keys": 0
     },
     "881117.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4133,10 +4140,10 @@
       "duplicate_keys": 0
     },
     "881118.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4158,10 +4165,10 @@
       "duplicate_keys": 0
     },
     "881121.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4183,10 +4190,10 @@
       "duplicate_keys": 0
     },
     "881122.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4208,10 +4215,10 @@
       "duplicate_keys": 0
     },
     "881123.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4233,10 +4240,10 @@
       "duplicate_keys": 0
     },
     "881124.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4258,10 +4265,10 @@
       "duplicate_keys": 0
     },
     "881125.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4283,10 +4290,10 @@
       "duplicate_keys": 0
     },
     "881126.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4308,10 +4315,10 @@
       "duplicate_keys": 0
     },
     "881128.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4333,10 +4340,10 @@
       "duplicate_keys": 0
     },
     "881129.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4358,10 +4365,10 @@
       "duplicate_keys": 0
     },
     "881130.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4383,10 +4390,10 @@
       "duplicate_keys": 0
     },
     "881131.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4408,10 +4415,10 @@
       "duplicate_keys": 0
     },
     "881132.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4433,10 +4440,10 @@
       "duplicate_keys": 0
     },
     "881133.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4458,10 +4465,10 @@
       "duplicate_keys": 0
     },
     "881134.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4483,10 +4490,10 @@
       "duplicate_keys": 0
     },
     "881135.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4508,10 +4515,10 @@
       "duplicate_keys": 0
     },
     "881136.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4533,10 +4540,10 @@
       "duplicate_keys": 0
     },
     "881137.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4558,10 +4565,10 @@
       "duplicate_keys": 0
     },
     "881138.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4583,10 +4590,10 @@
       "duplicate_keys": 0
     },
     "881139.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4608,10 +4615,10 @@
       "duplicate_keys": 0
     },
     "881140.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4633,10 +4640,10 @@
       "duplicate_keys": 0
     },
     "881141.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4658,10 +4665,10 @@
       "duplicate_keys": 0
     },
     "881142.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4683,10 +4690,10 @@
       "duplicate_keys": 0
     },
     "881143.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4708,10 +4715,10 @@
       "duplicate_keys": 0
     },
     "881144.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4733,10 +4740,10 @@
       "duplicate_keys": 0
     },
     "881145.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4758,10 +4765,10 @@
       "duplicate_keys": 0
     },
     "881146.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4783,10 +4790,10 @@
       "duplicate_keys": 0
     },
     "881148.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4808,10 +4815,10 @@
       "duplicate_keys": 0
     },
     "881149.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4833,10 +4840,10 @@
       "duplicate_keys": 0
     },
     "881151.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4858,10 +4865,10 @@
       "duplicate_keys": 0
     },
     "881152.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4883,10 +4890,10 @@
       "duplicate_keys": 0
     },
     "881153.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4908,10 +4915,10 @@
       "duplicate_keys": 0
     },
     "881155.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4933,10 +4940,10 @@
       "duplicate_keys": 0
     },
     "881156.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4958,10 +4965,10 @@
       "duplicate_keys": 0
     },
     "881157.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -4983,10 +4990,10 @@
       "duplicate_keys": 0
     },
     "881158.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5008,10 +5015,10 @@
       "duplicate_keys": 0
     },
     "881159.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5033,10 +5040,10 @@
       "duplicate_keys": 0
     },
     "881160.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5058,10 +5065,10 @@
       "duplicate_keys": 0
     },
     "881162.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5083,10 +5090,10 @@
       "duplicate_keys": 0
     },
     "881164.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5108,10 +5115,10 @@
       "duplicate_keys": 0
     },
     "881165.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5133,10 +5140,10 @@
       "duplicate_keys": 0
     },
     "881166.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5158,10 +5165,10 @@
       "duplicate_keys": 0
     },
     "881167.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5183,10 +5190,10 @@
       "duplicate_keys": 0
     },
     "881168.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5208,10 +5215,10 @@
       "duplicate_keys": 0
     },
     "881169.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5233,10 +5240,10 @@
       "duplicate_keys": 0
     },
     "881170.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5258,10 +5265,10 @@
       "duplicate_keys": 0
     },
     "881171.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5283,10 +5290,10 @@
       "duplicate_keys": 0
     },
     "881172.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5308,10 +5315,10 @@
       "duplicate_keys": 0
     },
     "881173.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5333,10 +5340,10 @@
       "duplicate_keys": 0
     },
     "881174.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5358,10 +5365,10 @@
       "duplicate_keys": 0
     },
     "881175.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5383,10 +5390,10 @@
       "duplicate_keys": 0
     },
     "881177.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5408,10 +5415,10 @@
       "duplicate_keys": 0
     },
     "881178.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5433,10 +5440,10 @@
       "duplicate_keys": 0
     },
     "881179.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5458,10 +5465,10 @@
       "duplicate_keys": 0
     },
     "881180.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5483,10 +5490,10 @@
       "duplicate_keys": 0
     },
     "881181.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5508,10 +5515,10 @@
       "duplicate_keys": 0
     },
     "881182.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5533,10 +5540,10 @@
       "duplicate_keys": 0
     },
     "881263.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5558,10 +5565,10 @@
       "duplicate_keys": 0
     },
     "881264.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5583,10 +5590,10 @@
       "duplicate_keys": 0
     },
     "881265.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5608,10 +5615,10 @@
       "duplicate_keys": 0
     },
     "881266.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5633,10 +5640,10 @@
       "duplicate_keys": 0
     },
     "881267.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5658,10 +5665,10 @@
       "duplicate_keys": 0
     },
     "881268.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5683,10 +5690,10 @@
       "duplicate_keys": 0
     },
     "881269.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5708,10 +5715,10 @@
       "duplicate_keys": 0
     },
     "881270.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5733,10 +5740,10 @@
       "duplicate_keys": 0
     },
     "881271.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5758,10 +5765,10 @@
       "duplicate_keys": 0
     },
     "881272.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5783,10 +5790,10 @@
       "duplicate_keys": 0
     },
     "881273.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5808,10 +5815,10 @@
       "duplicate_keys": 0
     },
     "881274.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5833,10 +5840,10 @@
       "duplicate_keys": 0
     },
     "881275.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5858,10 +5865,10 @@
       "duplicate_keys": 0
     },
     "881276.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5883,10 +5890,10 @@
       "duplicate_keys": 0
     },
     "881277.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5908,10 +5915,10 @@
       "duplicate_keys": 0
     },
     "881278.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5933,10 +5940,10 @@
       "duplicate_keys": 0
     },
     "881279.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5958,10 +5965,10 @@
       "duplicate_keys": 0
     },
     "881280.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -5983,10 +5990,10 @@
       "duplicate_keys": 0
     },
     "881281.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -6008,10 +6015,10 @@
       "duplicate_keys": 0
     },
     "881282.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -6033,10 +6040,10 @@
       "duplicate_keys": 0
     },
     "881283.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {
@@ -6058,10 +6065,10 @@
       "duplicate_keys": 0
     },
     "881284.TI": {
-      "rows": 520,
-      "dates": 520,
+      "rows": 521,
+      "dates": 521,
       "min_date": "20240910",
-      "max_date": "20261106",
+      "max_date": "20261109",
       "missing_dates": [],
       "unexpected_dates": [],
       "null_counts": {

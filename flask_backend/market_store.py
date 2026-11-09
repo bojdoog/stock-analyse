@@ -447,7 +447,9 @@ def save_dataframe(frame, output_path, path=None, category=None, _pending=False)
 
     Each flow file is a complete daily snapshot (duplicate occurrences retained).
     Price fetches can be partial histories; dates outside the fetched range survive.
+    category 缺省时按输出目录名推断，与 save_frames 的口径一致。
     """
+    category = category or Path(output_path).parent.name
     if str(path or database_path()) == 'auto':
         from resilient_store import save_dataframe as automatic_save
         return automatic_save(frame, output_path, category)

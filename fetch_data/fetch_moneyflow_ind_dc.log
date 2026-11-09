@@ -1960,3 +1960,4 @@
 2026-11-07 00:45:03,796 [ERROR] fetch_moneyflow_ind_dc.py:106 获取 20250902~20250908 板块资金流向失败: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
 2026-11-07 00:45:03,796 [ERROR] fetch_moneyflow_ind_dc.py:333 20250902~20250908 拉取失败: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
 2026-11-07 00:45:48,612 [INFO] fetch_moneyflow_ind_dc.py:231 Database file index updated: 761 files
+2026-11-09 20:33:16,626 [INFO] fetch_moneyflow_ind_dc.py:231 Database file index updated: 762 files

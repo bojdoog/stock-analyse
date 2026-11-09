@@ -110,6 +110,13 @@ class DataService:
         with connect() as db:
             return history(db)
 
+    def latest_stock_date(self):
+        """个股日线的最新交易日，用于 B1 页面日期初始化。"""
+        from market_store import connect
+        with connect() as db:
+            row = db.execute("SELECT max(date) FROM daily_bars WHERE category='stock'").fetchone()
+        return row[0] if row else None
+
     def get_indicator_data(self, indicator_id, start_date=None, end_date=None, limit=None):
         return self._series('indicator_daily', 'indicator_id=?', [indicator_id], start_date, end_date, limit)
 
@@ -143,12 +150,20 @@ class DataService:
         content = self.get_file_bytes(row[0]) if row else None
         return decode(content) if content is not None else None
 
-    def get_all_sector_data(self):
+    def get_all_sector_data(self, compact=False):
         result = {}
         for category in ('etf', 'index'):
-            result[category + '_data'] = [
-                {'name': item['name'], 'id': ('sh' if category == 'index' else '') + item['code'],
-                 'data': self.get_kline_data(category, item['code'])} for item in self.get_data_list(category)]
+            items = []
+            for item in self.get_data_list(category):
+                series = self.get_kline_data(category, item['code'])
+                if compact:
+                    # 前端只用这些序列画 K 线与算收益，成交量/成交额不必下发。
+                    series = [{'date': bar['date'], 'open': bar['open'], 'high': bar['high'],
+                               'low': bar['low'], 'close': bar['close']} for bar in series]
+                items.append({'name': item['name'],
+                              'id': ('sh' if category == 'index' else '') + item['code'],
+                              'data': series})
+            result[category + '_data'] = items
         return result
 
     def get_moneyflow_data(self, flow_type, start_date=None, end_date=None, industry=None, limit=None, filename=None):

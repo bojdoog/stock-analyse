@@ -67,3 +67,29 @@
 2026-11-07 05:12:48,946 [INFO] fetch_kline.py:361 全部任务完成，数据已保存至 C:\_allCode\stock_analyse\data\stock
 2026-11-07 06:22:03,198 [INFO] fetch_kline.py:230 从 C:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 3068 只股票（排除板块：bj,gem,star）
 2026-11-07 06:22:03,198 [INFO] fetch_kline.py:330 开始抓取 3068 支股票 | 数据源:Tushare(日线,qfq) | 日期:20240101 → 20261106 | 排除:bj,gem,star
+2026-11-10 05:52:35,628 [INFO] fetch_kline.py:230 从 C:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 3068 只股票（排除板块：bj,gem,star）
+2026-11-10 05:52:35,628 [INFO] fetch_kline.py:330 开始抓取 3068 支股票 | 数据源:Tushare(日线,qfq) | 日期:20240101 → 20261109 | 排除:bj,gem,star
+2026-11-10 06:01:26,931 [INFO] fetch_kline.py:351 下载结束，开始批量写入数据库（3068 个文件）...
+2026-11-10 06:03:13,759 [INFO] fetch_kline.py:355 批量入库完成
+2026-11-10 06:03:13,760 [INFO] fetch_kline.py:361 全部任务完成，数据已保存至 C:\_allCode\stock_analyse\data\stock
+2026-11-10 06:34:47,533 [INFO] fetch_kline.py:230 从 C:\Users\zhl\AppData\Local\Temp\amount_check\stocklist.csv 读取到 1 只股票（排除板块：bj,gem,star）
+2026-11-10 06:34:47,533 [INFO] fetch_kline.py:330 开始抓取 1 支股票 | 数据源:Tushare(日线,qfq) | 日期:20261102 → 20261109 | 排除:bj,gem,star
+2026-11-10 06:34:49,332 [INFO] fetch_kline.py:361 全部任务完成，数据已保存至 C:\Users\zhl\AppData\Local\Temp\amount_check\out
+2026-11-10 06:36:17,360 [INFO] fetch_kline.py:230 从 C:\_allCode\stock_analyse\fetch_data\stocklist.csv 读取到 3068 只股票（排除板块：bj,gem,star）
+2026-11-10 06:36:17,360 [INFO] fetch_kline.py:330 开始抓取 3068 支股票 | 数据源:Tushare(日线,qfq) | 日期:20240101 → 20261109 | 排除:bj,gem,star
+2026-11-10 06:48:02,108 [INFO] fetch_daily_basic.py:118 区间 20261105 → 20261109 共 3 个交易日，已入库 0 天，待抓取 3 天
+2026-11-10 06:48:13,493 [INFO] fetch_daily_basic.py:118 区间 20261105 → 20261109 共 3 个交易日，已入库 0 天，待抓取 3 天
+2026-11-10 06:48:14,672 [INFO] fetch_daily_basic.py:123 抓取完成，共写入 16717 行
+2026-11-10 06:48:28,738 [INFO] fetch_daily_basic.py:118 区间 20250102 → 20261109 共 447 个交易日，已入库 3 天，待抓取 444 天
+2026-11-10 06:49:02,521 [WARNING] fetch_daily_basic.py:79 20250115 抓取失败（HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.），15 秒后重试
+2026-11-10 06:49:54,751 [WARNING] fetch_daily_basic.py:79 20250221 抓取失败（HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.），15 秒后重试
+2026-11-10 06:50:43,935 [WARNING] fetch_daily_basic.py:79 20250311 抓取失败（HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.），15 秒后重试
+2026-11-10 06:51:40,643 [WARNING] fetch_daily_basic.py:79 20250428 抓取失败（HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.），15 秒后重试
+2026-11-10 06:52:29,001 [WARNING] fetch_daily_basic.py:79 20250513 抓取失败（HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.），15 秒后重试
+2026-11-10 06:53:16,465 [WARNING] fetch_daily_basic.py:79 20250520 抓取失败（HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.），15 秒后重试
+2026-11-10 06:55:57,434 [INFO] fetch_daily_basic.py:123 抓取完成，共写入 2421461 行
+2026-11-10 07:01:15,418 [INFO] fetch_kline.py:241 从数据库读取到 3559 只股票（排除板块：bj,gem,star）
+2026-11-10 07:01:33,543 [INFO] fetch_kline.py:241 从数据库读取到 3203 只股票（排除板块：bj,gem,star）
+2026-11-10 07:08:06,861 [INFO] fetch_daily_basic.py:145 区间 20240102 → 20261109 共 689 个交易日，已入库 447 天，待抓取 242 天
+2026-11-10 07:09:52,727 [WARNING] fetch_daily_basic.py:79 20240723 抓取失败（HTTPConnectionPool(host='api.waditu.com', port=80): Read timed out.），15 秒后重试
+2026-11-10 07:10:56,862 [INFO] fetch_daily_basic.py:151 抓取完成，共写入 1293893 行

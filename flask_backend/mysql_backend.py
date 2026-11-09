@@ -116,6 +116,7 @@ def ensure_schema(db, flow_numbers, flow_text):
             volume DOUBLE, amount DOUBLE, source_path VARCHAR(512) NOT NULL,
             `row_number` BIGINT NOT NULL, PRIMARY KEY(category,exchange,code,date),
             INDEX daily_bars_date(date,category,code),
+            INDEX daily_bars_cat_date(category,date),
             FOREIGN KEY(source_path) REFERENCES source_files(path))''',
         '''CREATE TABLE IF NOT EXISTS indicator_daily (
             indicator_id BIGINT NOT NULL, date VARCHAR(10) NOT NULL,

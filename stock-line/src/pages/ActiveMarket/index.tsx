@@ -10,6 +10,13 @@ import IntervalReturnChart from './components/IntervalReturnChart';
 import { isCloseOnlySeries } from './utils/indicatorDisplay';
 import { runBacktest, BacktestResult, BacktestTrade, StrategyParams, DEFAULT_STRATEGY_PARAMS, calculateOptimalWeights, OptimalMethod, MoneyflowData, RankingMethod, BenchmarkReturn, SectorVolumeData, isSectorVolumeRanking } from './utils/backtest';
 
+// 排名口径到资金流类型的映射；未列出的口径（ETF 涨幅、20 日加权等）不需要资金流数据。
+const MONEYFLOW_TYPES: Partial<Record<RankingMethod, 'ind_dc' | 'cnt_ths' | 'ind_ths'>> = {
+    dc_moneyflow: 'ind_dc',
+    ths_concept: 'cnt_ths',
+    ths_moneyflow: 'ind_ths',
+};
+
 interface KLineData {
     date: string;
     open: number;
@@ -174,7 +181,7 @@ const ActiveMarket: React.FC = () => {
             return result.data;
         };
         setEtfListError('');
-        Promise.all([load('/api/etf-types'), load('/api/list/index'), load('/api/sector-data')])
+        Promise.all([load('/api/etf-types'), load('/api/list/index'), load('/api/sector-data?compact=1')])
             .then(([etfs, indices, series]) => {
                 if (controller.signal.aborted) return;
                 const options: { value: string; label: string }[] = [
@@ -201,20 +208,31 @@ const ActiveMarket: React.FC = () => {
         setExtraSeries(allETFSeries.filter(s => selectedETFs.includes(s.id)));
     }, [selectedETFs, allETFSeries]);
 
-    // 加载资金流向数据（通过后端 API，1615 → 1 个请求）
+    // 资金流数据按当前排名口径懒加载：默认的 ETF 涨幅口径完全不拉资金流，
+    // 切换口径时只补对应的一份，避免每次进页都传三份全量历史。
     useEffect(() => {
-        fetch('/api/moneyflow/batch?types=ind_dc,cnt_ths,ind_ths')
+        const type = MONEYFLOW_TYPES[strategyParams.rankingMethod];
+        if (!type) return undefined;
+        const loaded = {
+            ind_dc: moneyflowData.length,
+            cnt_ths: conceptMoneyflowData.length,
+            ind_ths: indMoneyflowData.length,
+        }[type];
+        if (loaded) return undefined;
+        const controller = new AbortController();
+        fetch(`/api/moneyflow/${type}`, { signal: controller.signal })
             .then(res => res.json())
             .then(json => {
-                if (json.code === 0) {
-                    const { ind_dc, cnt_ths, ind_ths } = json.data;
-                    setMoneyflowData(ind_dc || []);
-                    setConceptMoneyflowData(cnt_ths || []);
-                    setIndMoneyflowData(ind_ths || []);
-                }
+                if (json.code !== 0) return;
+                if (type === 'ind_dc') setMoneyflowData(json.data || []);
+                else if (type === 'cnt_ths') setConceptMoneyflowData(json.data || []);
+                else setIndMoneyflowData(json.data || []);
             })
-            .catch(err => console.error('加载资金流向数据失败:', err));
-    }, []);
+            .catch(err => {
+                if (!controller.signal.aborted) console.error('加载资金流向数据失败:', err);
+            });
+        return () => controller.abort();
+    }, [strategyParams.rankingMethod, moneyflowData.length, conceptMoneyflowData.length, indMoneyflowData.length]);
 
     const [backtestError, setBacktestError] = useState<string | null>(null);
     // 数据加载完成后运行多空区间策略回测
@@ -828,7 +846,6 @@ const ActiveMarket: React.FC = () => {
                                 chartHeight="100%"
                                 syncGroup="active-market-sync"
                                 maxDate={activeMarketLastDate}
-                                showDataZoom={false}
                                 baseDates={activeMarketDates}
                                 zones={chartZones}
                             />

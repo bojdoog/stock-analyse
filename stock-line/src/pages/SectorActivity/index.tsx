@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Alert, Button, Checkbox, Collapse, DatePicker, Input, InputNumber, Spin, Table, Tag } from 'antd';
+import { Alert, Button, Checkbox, Collapse, DatePicker, Empty, Input, InputNumber, Modal, Spin, Table, Tag } from 'antd';
 import dayjs from 'dayjs';
 import type { ColumnsType } from 'antd/es/table';
 import KLineChart, { type KBar, type MarkZone } from '../../components/KLineChart';
@@ -21,9 +21,21 @@ interface Point {
 }
 interface Sector extends Point { code: string; name: string }
 interface Detail { code: string; name: string; series: Point[] }
+interface StockQuote { code: string; name: string; change: number | null; change5: number | null; volume: number | null; turnover: number | null; cross: boolean | null }
+interface StockBasic {
+  date: string;
+  turnover_rate: number | null;
+  pe_ttm: number | null;
+  total_mv: number | null;
+  circ_mv: number | null;
+}
 const fmt = (n: number | null | undefined, unit = '%') => n == null ? '—' : `${n > 0 ? '+' : ''}${n.toFixed(2)}${unit}`;
 const color = (n: number | null | undefined) => n == null || n === 0 ? '#7a898f' : n > 0 ? '#c45e65' : '#238672';
 const numberCell = (n: number | null) => <span style={{ color: color(n), fontVariantNumeric: 'tabular-nums' }}>{fmt(n)}</span>;
+// 市值单位换算：Tushare 返回万元，这里统一显示为亿元。
+const fmtMoney = (n: number | null | undefined) => n == null ? '—' : `${(n / 10000).toFixed(2)}亿`;
+// 成交量单位换算：接口返回手，这里显示为万手。
+const fmtVolume = (n: number | null | undefined) => n == null ? '—' : (n / 10000).toFixed(2);
 async function get<T>(path: string, signal: AbortSignal): Promise<T> {
   const response = await fetch(path, { signal });
   const body = await response.json();
@@ -167,6 +179,54 @@ export default function SectorActivity() {
   const handleHoverDate = useCallback<HoverHandler>((date) => { hoverRef.current?.(date); }, []);
   const [signalParams, setSignalParams] = useState<SignalParams>(DEFAULT_SIGNAL_PARAMS);
   const [showZones, setShowZones] = useState(true);
+  // 成分股弹窗：只在打开时请求，关闭后清空，避免常驻内存。
+  const [stockTarget, setStockTarget] = useState<{ code: string; name: string } | null>(null);
+  const [stocks, setStocks] = useState<StockQuote[]>([]);
+  const [stocksDate, setStocksDate] = useState('');
+  const [stocksLoading, setStocksLoading] = useState(false);
+  const [stocksError, setStocksError] = useState('');
+  // 弹窗右侧个股日 K：跟随左侧选中行。
+  const [activeStock, setActiveStock] = useState<StockQuote | null>(null);
+  const [stockBars, setStockBars] = useState<KBar[]>([]);
+  const [stockBarsLoading, setStockBarsLoading] = useState(false);
+  const [stockBarsError, setStockBarsError] = useState('');
+  // 右侧日 K 右上角的个股信息（总市值/流通市值/PE/换手率）。
+  const [stockBasic, setStockBasic] = useState<StockBasic | null>(null);
+  useEffect(() => {
+    if (!stockTarget) return undefined;
+    const controller = new AbortController();
+    setStocks([]); setStocksDate(''); setStocksError(''); setStocksLoading(true);
+    get<{ data: StockQuote[]; date: string }>(`/api/sector-activity/${encodeURIComponent(stockTarget.code)}/stocks?date=${encodeURIComponent(asOf)}`, controller.signal)
+      .then(r => {
+        if (controller.signal.aborted) return;
+        setStocks(r.data); setStocksDate(r.date);
+        setActiveStock(r.data[0] ?? null);
+      })
+      .catch(e => { if (!controller.signal.aborted) setStocksError(e.message); })
+      .finally(() => { if (!controller.signal.aborted) setStocksLoading(false); });
+    return () => controller.abort();
+  }, [stockTarget, asOf]);
+  useEffect(() => {
+    if (!activeStock) { setStockBars([]); return undefined; }
+    const controller = new AbortController();
+    setStockBars([]); setStockBarsError(''); setStockBarsLoading(true);
+    get<{ data: KBar[] }>(`/api/kline/stock/${encodeURIComponent(activeStock.code)}?limit=400`, controller.signal)
+      .then(r => { if (!controller.signal.aborted) setStockBars(r.data); })
+      .catch(e => { if (!controller.signal.aborted) setStockBarsError(e.message); })
+      .finally(() => { if (!controller.signal.aborted) setStockBarsLoading(false); });
+    return () => controller.abort();
+  }, [activeStock]);
+  useEffect(() => {
+    if (!activeStock) { setStockBasic(null); return undefined; }
+    const controller = new AbortController();
+    setStockBasic(null);
+    const date = stocksDate || asOf;
+    const query = date ? `?date=${encodeURIComponent(date)}` : '';
+    get<{ data: StockBasic | null }>(`/api/stocks/${encodeURIComponent(activeStock.code)}/basic${query}`, controller.signal)
+      .then(r => { if (!controller.signal.aborted) setStockBasic(r.data); })
+      .catch(() => { if (!controller.signal.aborted) setStockBasic(null); });
+    return () => controller.abort();
+  }, [activeStock, stocksDate, asOf]);
   useEffect(() => {
     const controller = new AbortController();
     setLoading(true); setError('');
@@ -208,6 +268,15 @@ export default function SectorActivity() {
     { title: '价格涨幅', dataIndex: 'price_change', width: 115, render: numberCell, sorter: (a, b) => (a.price_change ?? -Infinity) - (b.price_change ?? -Infinity) },
     { title: <span title="同花顺行业成交量（手）×100×均价，换算为亿元">成交额（亿）</span>, dataIndex: 'amount', width: 90, align: 'right', render: (n: number | null) => n == null ? '—' : (n / 1e8).toFixed(2), sorter: (a, b) => (a.amount ?? -Infinity) - (b.amount ?? -Infinity) },
     { title: <span title="当日行业成交量 ÷ 此前20个交易日平均成交量，不含当天">板块放量比</span>, dataIndex: 'volume_ratio', width: 90, align: 'right', render: (n: number | null) => n == null ? '—' : `${n.toFixed(2)}倍`, sorter: (a, b) => (a.volume_ratio ?? -Infinity) - (b.volume_ratio ?? -Infinity) },
+    { title: '个股', key: 'stocks', width: 66, align: 'center', render: (_, r) => <Button type="link" size="small" onClick={e => { e.stopPropagation(); setStockTarget({ code: r.code, name: r.name }); }}>查看</Button> },
+  ], []);
+  const stockColumns: ColumnsType<StockQuote> = useMemo(() => [
+    { title: '名称', dataIndex: 'name', width: 92, ellipsis: true },
+    { title: '当日涨跌幅', dataIndex: 'change', width: 92, align: 'right', render: numberCell, defaultSortOrder: 'descend', sorter: (a, b) => (a.change ?? -Infinity) - (b.change ?? -Infinity) },
+    { title: '5日涨跌幅', dataIndex: 'change5', width: 92, align: 'right', render: numberCell, sorter: (a, b) => (a.change5 ?? -Infinity) - (b.change5 ?? -Infinity) },
+    { title: <span title="该个股截至所选交易日的成交量，单位万手">成交量（万手）</span>, dataIndex: 'volume', width: 110, align: 'right', render: (v: number | null) => <span style={{ fontVariantNumeric: 'tabular-nums' }}>{fmtVolume(v)}</span>, sorter: (a, b) => (a.volume ?? -Infinity) - (b.volume ?? -Infinity) },
+    { title: <span title="该个股不晚于所选交易日的最近一期换手率">换手率</span>, dataIndex: 'turnover', width: 84, align: 'right', render: (v: number | null) => <span style={{ fontVariantNumeric: 'tabular-nums' }}>{v == null ? '—' : `${v.toFixed(2)}%`}</span>, sorter: (a, b) => (a.turnover ?? -Infinity) - (b.turnover ?? -Infinity) },
+    { title: <span title="当天知行短期趋势线（EMA10 二次平滑）是否大于知行多空线（MA14/28/57/114 均值）">是否上穿</span>, dataIndex: 'cross', width: 76, align: 'center', render: (v: boolean | null) => v == null ? '—' : <Tag color={v ? 'success' : 'error'}>{v ? '是' : '否'}</Tag>, sorter: (a, b) => Number(a.cross ?? false) - Number(b.cross ?? false) },
   ], []);
   return <div className="research-page sector-page">
     {error && <Alert showIcon type="error" message={error} action={<Button onClick={() => setRetry(n => n + 1)}>重试</Button>} />}
@@ -225,7 +294,7 @@ export default function SectorActivity() {
         </div>
         <Table<Sector> key={asOf} size="small" rowKey="code" columns={columns} loading={loading}
           dataSource={items.filter(i => i.name.includes(search.trim()) || i.code.includes(search.trim()))}
-          pagination={{ defaultPageSize: 8, showSizeChanger: false, size: 'small' }} scroll={{ x: 517 }}
+          pagination={{ defaultPageSize: 8, showSizeChanger: false, size: 'small' }} scroll={{ x: 583 }}
           rowClassName={r => r.code === selected ? 'sector-selected' : ''}
           onRow={r => ({ onClick: () => setSelected(r.code), style: { cursor: 'pointer' } })} />
       </section>
@@ -271,7 +340,43 @@ export default function SectorActivity() {
         <p>行业观察使用同花顺行业日线。成交额 = 成交量（手）×100×均价，以亿元展示；板块放量比 = 当日成交量 ÷ 此前20个交易日平均成交量（不含当天）。缺失数据、历史不足20日或均量为零时显示“—”。</p>
         <p>成交量副图使用行业真实成交量，单位万手，按行业收盘较前日涨跌着色。KDJ使用行业真实最高、最低和收盘价，参数（9、3、3）：RSV=(收盘−9日最低)/(9日最高−9日最低)×100，K=2/3×前K+1/3×RSV，D=2/3×前D+1/3×K，J=3K−2D。K、D初值50，满9日开始显示，区间高低相等时RSV取50；缺失行情后重新初始化。缩放不重算指标。</p>
         <p>这是原反推模型的行业分量，不是指南针官方板块指标，也不代表真实资金净流入。板块使用合成日K：收盘为当日估算值，开盘为前日收盘（首日用自身收盘），高低取开收盘极值，不代表真实盘中价格。启动、退出阈值用于研究，尚未验证收益。表格和图表均截至最新数据日期。</p>
+        <p>板块为同花顺行业（881xxx.TI），成分股来自 back_test_data/ths_member 下的 ts_code → 个股对照表；弹窗行情取自个股日线，停牌个股按最后一个交易日计算涨跌幅。</p>
       </div>
     }]} />
+    <Modal open={!!stockTarget} width="80vw" footer={null} onCancel={() => setStockTarget(null)}
+      title={stockTarget ? `${stockTarget.name} · 成分股` : '成分股'} styles={{ body: { paddingTop: 10 } }}>
+      <div style={{ display: 'flex', gap: 16, alignItems: 'stretch' }}>
+        <div style={{ flex: '0 1 560px', minWidth: 460 }}>
+          <div className="sector-stock-meta">行情截至 {stocksDate || asOf || '—'} · 共 {stocks.length} 只</div>
+          {stocksError ? <Alert showIcon type="error" message={stocksError}
+            action={<Button onClick={() => setStockTarget(target => target && { ...target })}>重试</Button>} /> :
+            <Table<StockQuote> className="sector-stock-table" size="small" rowKey="code" columns={stockColumns}
+              loading={stocksLoading} dataSource={stocks}
+              rowClassName={record => `sector-stock-row${record.code === activeStock?.code ? ' is-active' : ''}`}
+              onRow={record => ({ onClick: () => setActiveStock(record) })}
+              pagination={{ defaultPageSize: 10, size: 'small', showSizeChanger: false }} />}
+        </div>
+        <div style={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column' }}>
+          <div style={{ marginBottom: 8, display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 12 }}>
+            <div style={{ color: '#33484f', fontSize: 13, fontWeight: 600, whiteSpace: 'nowrap' }}>
+              {activeStock ? `${activeStock.name} ${activeStock.code} · 日K` : '选择左侧个股查看日K'}
+            </div>
+            {activeStock && <div className="sector-stock-basic">
+              <span>总市值 <b>{fmtMoney(stockBasic?.total_mv)}</b></span>
+              <span>流通市值 <b>{fmtMoney(stockBasic?.circ_mv)}</b></span>
+              <span>PE(TTM) <b>{stockBasic?.pe_ttm == null ? '—' : stockBasic.pe_ttm < 0 ? '亏损' : stockBasic.pe_ttm.toFixed(2)}</b></span>
+              <span>换手率 <b>{stockBasic?.turnover_rate == null ? '—' : `${stockBasic.turnover_rate.toFixed(2)}%`}</b></span>
+              {stockBasic?.date && <em>指标日期 {stockBasic.date}</em>}
+            </div>}
+          </div>
+          <div style={{ height: 'min(700px, calc(100vh - 200px))', minHeight: 300, display: 'flex', flexDirection: 'column' }}>
+            {stockBarsError ? <Alert showIcon type="error" message={stockBarsError} /> :
+              activeStock && !stockBarsLoading && !stockBars.length ? <Empty description="该个股暂无日线数据" /> :
+                stockBarsLoading ? <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Spin /></div> :
+                  <KLineChart bars={stockBars} initialBars={125} subHeights={{ volume: 72, kdj: 74 }} ariaLabel="个股日K走势图" />}
+          </div>
+        </div>
+      </div>
+    </Modal>
   </div>;
 }

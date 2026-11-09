@@ -24,6 +24,18 @@ interface PickGroup {
   created_at: string | null;
 }
 
+interface StockBasic {
+  date: string;
+  close: number | null;
+  turnover_rate: number | null;
+  pe_ttm: number | null;
+  pb: number | null;
+  total_mv: number | null;
+  circ_mv: number | null;
+  float_share: number | null;
+  volume_ratio: number | null;
+}
+
 const BOARD_LABEL: Record<string, string> = { gem: '创业板', star: '科创板', bj: '北交所' };
 const boardText = (boards: string[]) =>
   boards.length ? `排除${boards.map((item) => BOARD_LABEL[item] || item).join('、')}` : '全部板块';
@@ -65,6 +77,10 @@ const changeColor = (value: number | null | undefined) =>
 const formatPercent = (value: number | null | undefined) =>
   value == null ? '--' : `${value > 0 ? '+' : ''}${value.toFixed(2)}%`;
 
+// 市值单位换算：Tushare 返回万元，这里统一显示为亿元。
+const formatMoney = (value: number | null | undefined) =>
+  value == null ? '—' : `${(value / 10000).toFixed(2)}亿`;
+
 async function fetchJson<T>(url: string): Promise<T> {
   const response = await fetch(url);
   if (!response.ok) throw new Error(`请求失败（${response.status}）`);
@@ -76,6 +92,7 @@ const B1Picks: React.FC = () => {
   const [asOf, setAsOf] = useState('');
   const [selected, setSelected] = useState('');
   const [bars, setBars] = useState<KBar[]>([]);
+  const [basic, setBasic] = useState<StockBasic | null>(null);
   const [loadingList, setLoadingList] = useState(true);
   const [loadingBars, setLoadingBars] = useState(false);
   const [error, setError] = useState('');
@@ -112,10 +129,12 @@ const B1Picks: React.FC = () => {
   }, []);
 
   const loadHistory = useCallback((openDate?: string) => {
-    fetchJson<{ data: PickGroup[] }>('/api/b1-picks/history')
+    fetchJson<{ data: PickGroup[]; date?: string }>('/api/b1-picks/history')
       .then((result) => {
         const rows = result.data || [];
         setGroups(rows);
+        // 初始化日期取个股日线最新交易日，用户手动改过则保留其选择。
+        if (result.date) setPickDate((prev) => prev || result.date || '');
         const target = openDate && rows.some((item) => item.date === openDate)
           ? openDate : (rows[0]?.date || '');
         setExpanded(target);
@@ -279,6 +298,18 @@ const B1Picks: React.FC = () => {
       .finally(() => setLoadingBars(false));
   }, [selected]);
 
+  // 个股每日指标：取选股日（含）之前最新一条，用于日 K 上方信息条。
+  useEffect(() => {
+    if (!selected) {
+      setBasic(null);
+      return;
+    }
+    const query = asOf ? `?date=${encodeURIComponent(asOf)}` : '';
+    fetchJson<{ data: StockBasic | null }>(`/api/stocks/${encodeURIComponent(selected)}/basic${query}`)
+      .then((result) => setBasic(result.data))
+      .catch(() => setBasic(null));
+  }, [selected, asOf]);
+
   const current = useMemo(() => picks.find((item) => item.code === selected), [picks, selected]);
 
   // 底部状态行：拉取数据用下载/入库进度，B1 选股用计算进度，运行结束显示任务状态。
@@ -368,6 +399,15 @@ const B1Picks: React.FC = () => {
               {current && <em className="b1-chart-legend"><i />紫色虚线 = B1 选股日</em>}
             </span>
           </div>
+          {basic && (
+            <div className="b1-stock-info">
+              <span>总市值 <b>{formatMoney(basic.total_mv)}</b></span>
+              <span>流通市值 <b>{formatMoney(basic.circ_mv)}</b></span>
+              <span>PE(TTM) <b>{basic.pe_ttm == null ? '—' : basic.pe_ttm < 0 ? '亏损' : basic.pe_ttm.toFixed(1)}</b></span>
+              <span>换手率 <b>{basic.turnover_rate == null ? '—' : `${basic.turnover_rate.toFixed(2)}%`}</b></span>
+              <em>指标日期 {basic.date}</em>
+            </div>
+          )}
           {error && <Alert type="error" showIcon message={error} style={{ marginBottom: 12 }} />}
           <Spin spinning={loadingBars}>
             <KLineChart bars={bars} markDate={asOf} initialBars={125} legend ariaLabel="B1 选股日K走势图" />
